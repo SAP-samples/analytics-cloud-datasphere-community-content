@@ -22,18 +22,39 @@ Community Content for SAP Analytics Cloud and SAP Datasphere
 
 ## Description
 <!-- Please include SEO-friendly description -->
+Download content packages for SAP Analytics Cloud and SAP Datasphere. 
+Find technical samples, best practices or business scenarios.
+Packages contain data models, visualisations and sample data (if applicable).
 
 ## Requirements
+Depending on the project, an SAP Analytics Cloud tenant and an SAP Datasphere tenant are required. 
+The connection between SAP Analytics Cloud and SAP Datasphere must have the technical name "SAPDWC" (description is free).
+To upload content, the user has to have administration privileges.
 
 ## Download and Installation
+Content is organised in projects. Each project has one folder on this GitHub which is self-contained:
+It contains the Content packages and CSN files for download.
+It contains a detailed description of the content and how to install it. It may also point to additional sources of information if available such as a blog.
+It may contain additional assets such as sample data files.
 
+In a nutshell:
+Download the CSN and the .package files to your local PC.
+Use the SAP Datasphere capabilites to upload and deploy the CSN file.
+Upload the .package file into the Content Network of SAP Analytics Cloud following the documentation [here](https://help.sap.com/doc/00f68c2e08b941f081002fd3691d86a7/2023.15/en-US/bf932365c52545ed9fcafd7406b4ee76.html)
+.
+Use the sample data files to populate the SAP Datasphere data models.
+
+For more details, check the documentation on help.sap.com (provide link) and follow the detailed instruction shared in the readme of each project.
 ## Known Issues
 <!-- You may simply state "No known issues. -->
+no known issues
 
 ## How to obtain support
-[Create an issue](https://github.com/SAP-samples/<repository-name>/issues) in this repository if you find a bug or have questions about the content.
+[Create an issue](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content/issues) in this repository if you find a bug or have questions about the content.
  
 For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
+
+You may also contact the HD&A Content Factory by mail to mailto:sap_analytics_cloud_content@sap.com
 
 ## Contributing
 If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
