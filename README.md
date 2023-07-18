@@ -27,7 +27,7 @@ Find technical samples, best practices or business scenarios.
 Packages contain data models, visualisations and sample data (if applicable).
 
 ## Requirements
-Depending on the project, an SAP Analytics Cloud tenant and an SAP Datasphere tenant are required. 
+Depending on the project, an SAP Analytics Cloud tenant and an SAP Datasphere tenant are required.
 The connection between SAP Analytics Cloud and SAP Datasphere must have the technical name "SAPDWC" (description is free).
 To upload content, the user has to have administration privileges.
 
@@ -47,7 +47,7 @@ Use the sample data files to populate the SAP Datasphere data models.
 For more details, check the documentation on help.sap.com (provide link) and follow the detailed instruction shared in the readme of each project.
 ## Known Issues
 <!-- You may simply state "No known issues. -->
-no known issues
+No known issues.
 
 ## How to obtain support
 [Create an issue](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content/issues) in this repository if you find a bug or have questions about the content.
