@@ -13,8 +13,6 @@ The [Reuse Tool](https://reuse.software/) must be used for your samples project.
 Please edit this file as it is the primary description file for your project. You can find some placeholder titles for sections below.
 
 # Community Content for SAP Analytics Cloud and SAP Datasphere
-<!-- Please include descriptive title -->
-Community Content for SAP Analytics Cloud and SAP Datasphere
 
 <!--- Register repository https://api.reuse.software/register, then add REUSE badge:
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/REPO-NAME)](https://api.reuse.software/info/github.com/SAP-samples/REPO-NAME)
@@ -33,7 +31,7 @@ To upload content, the user has to have administration privileges.
 
 ## Download and Installation
 Content is organised in projects. Each project has one folder on this GitHub which is self-contained:
-It contains the Content packages and CSN files for download.
+It contains the Content packages and/or CSN files for download.
 It contains a detailed description of the content and how to install it. It may also point to additional sources of information if available such as a blog.
 It may contain additional assets such as sample data files.
 
@@ -65,11 +63,11 @@ For the time being, contributions are limited to SAP projects. If you are a cust
 The content samples offered on this GitHub may be downloaded and installed without additional license fees. Content samples are provided to support an implementation project, to share best practices and to inspire your own content development. 
 It is forbidden to sell these content samples or use them commercially in any way. 
 
-Content samples have been tested and reviewed by SAP. However, they come as they are: In case of errors or other problems, SAP is not liable to offer fixes nor any kind of support, maintenance or even finanical compensation. It is recommended that you thoroughly test the content, ideally in a test environment. It is allowed to use the content samples productively at your own risk. You can also edit, enhance, copy or otherwise use the content in your own projects. If you do this, potential updates of the sample content may not be installable without additional effort or not at all.
+Content samples have been tested and reviewed by SAP. However, they come as they are: In case of errors or other problems, SAP is not liable to offer fixes nor any kind of support, maintenance. It is recommended that you test the content, ideally in a test environment first. You can also edit, enhance, copy or otherwise use the content in your own projects. If you do this, potential updates of the sample content may not be installable without additional effort or not at all.
 
 Content samples do not necessarily follow a naming convention, so please analyse carefully if they can be imported into your destination tenant without overwriting. Overwriting existing content in your destination tenant is not recommended.
 
-Content samples in general are not supported. No maintenance is offered and SAP does not guarantee that the content works as designed. Content or sample data may become outdated and SAP has no obligations to keep the content up-to-date. SAP may at any time without offering alternative packages deprecate content projects. 
+Content or sample data may become outdated and SAP has no obligations to keep the content up-to-date. SAP may at any time without offering alternative packages deprecate content projects. 
 
 
 ## License
