@@ -57,15 +57,15 @@ For additional support, [ask a question in SAP Community](https://answers.sap.co
 You may also contact the HD&A Content Factory by mail to mailto:sap_analytics_cloud_content@sap.com
 
 ## Contributing
-for the time being, contributions are limited to SAP projects. If you are a customer, partner or any other 3rd party, and wish to publish your content, please contact the HD&A Content Factory to learn about more options.
+For the time being, contributions are limited to SAP projects. If you are a customer, partner or any other 3rd party, and wish to publish your content, please contact the HD&A Content Factory to learn about more options.
 
-[REVISE or Delete this section]If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
+[REVISE or Delete this section] If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
 
 ## Terms and Conditions
-The content samples offered on this GitHub may be downloaded and installed with additional license fees. Content samples are provided to support an implementation project, to share best practices and to inspire your own content development. 
+The content samples offered on this GitHub may be downloaded and installed without additional license fees. Content samples are provided to support an implementation project, to share best practices and to inspire your own content development. 
 It is forbidden to sell these content samples or use them commercially in any way. 
 
-Content samples have been tested and reviewed by SAP. However, they come as they are: In case of errors or other problems, SAP is not liable to offer any kind of support, maintenance or even finanical compensation. It is recommended to thoroughly test the content, ideally in a test environment. It is allowed to use the content samples productively at your own risk.
+Content samples have been tested and reviewed by SAP. However, they come as they are: In case of errors or other problems, SAP is not liable to offer fixes nor any kind of support, maintenance or even finanical compensation. It is recommended that you thoroughly test the content, ideally in a test environment. It is allowed to use the content samples productively at your own risk. You can also edit, enhance, copy or otherwise use the content in your own projects. If you do this, potential updates of the sample content may not be installable without additional effort or not at all.
 
 Content samples do not necessarily follow a naming convention, so please analyse carefully if they can be imported into your destination tenant without overwriting. Overwriting existing content in your destination tenant is not recommended.
 
