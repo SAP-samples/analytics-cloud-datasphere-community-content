@@ -26,9 +26,9 @@ Download content packages for SAP Analytics Cloud and SAP Datasphere.
 Find technical samples, best practices or business scenarios.
 Packages contain data models, visualisations and sample data (if applicable).
 
+
 ## Requirements
-Depending on the project, an SAP Analytics Cloud tenant and an SAP Datasphere tenant are required.
-The connection between SAP Analytics Cloud and SAP Datasphere must have the technical name "SAPDWC" (description is free).
+Depending on the samples project, an SAP Analytics Cloud tenant and an SAP Datasphere tenant are required. The connection between SAP Analytics Cloud and SAP Datasphere must have the technical name "SAPDWC" (description is free).
 To upload content, the user has to have administration privileges.
 
 ## Download and Installation
@@ -57,7 +57,20 @@ For additional support, [ask a question in SAP Community](https://answers.sap.co
 You may also contact the HD&A Content Factory by mail to mailto:sap_analytics_cloud_content@sap.com
 
 ## Contributing
-If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
+for the time being, contributions are limited to SAP projects. If you are a customer, partner or any other 3rd party, and wish to publish your content, please contact the HD&A Content Factory to learn about more options.
+
+[REVISE or Delete this section]If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
+
+## Terms and Conditions
+The content samples offered on this GitHub may be downloaded and installed with additional license fees. Content samples are provided to support an implementation project, to share best practices and to inspire your own content development. 
+It is forbidden to sell these content samples or use them commercially in any way. 
+
+Content samples have been tested and reviewed by SAP. However, they come as they are: In case of errors or other problems, SAP is not liable to offer any kind of support, maintenance or even finanical compensation. It is recommended to thoroughly test the content, ideally in a test environment. It is allowed to use the content samples productively at your own risk.
+
+Content samples do not necessarily follow a naming convention, so please analyse carefully if they can be imported into your destination tenant without overwriting. Overwriting existing content in your destination tenant is not recommended.
+
+Content samples in general are not supported. No maintenance is offered and SAP does not guarantee that the content works as designed. Content or sample data may become outdated and SAP has no obligations to keep the content up-to-date. SAP may at any time without offering alternative packages deprecate content projects. 
+
 
 ## License
 Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
