@@ -48,7 +48,6 @@ For more details, check the documentation on help.sap.com (provide link) and fol
 No known issues.
 
 ## How to obtain support
-[Create an issue](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content/issues) in this repository if you find a bug or have questions about the content.
  
 For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
 
