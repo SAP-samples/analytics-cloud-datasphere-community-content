@@ -56,8 +56,6 @@ You may also contact the HD&A Content Factory by mail to mailto:sap_analytics_cl
 ## Contributing
 For the time being, contributions are limited to SAP projects. If you are a customer, partner or any other 3rd party, and wish to publish your content, please contact the HD&A Content Factory to learn about more options.
 
-[REVISE or Delete this section] If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
-
 ## Terms and Conditions
 The content samples offered on this GitHub may be downloaded and installed without additional license fees. Content samples are provided to support an implementation project, to share best practices and to inspire your own content development. 
 It is forbidden to sell these content samples or use them commercially in any way. 
