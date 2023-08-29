@@ -6,7 +6,7 @@
 
 ## Description
 <!-- Please include SEO-friendly description -->
-Welcome to our GIitHub repository of community content packages for SAP Analytics Cloud (SAC) and SAP Datasphere (DSP). In this repository you can download various SAC and/or DSP packages.
+Welcome to our GitHub repository of community content packages for SAP Analytics Cloud (SAC) and SAP Datasphere (DSP). In this repository you can download various SAC and/or DSP packages.
 You can find technical samples, demos, best practices or business scenarios.
 The packages itself contain data models, visualisations and sample data (if applicable). 
 
