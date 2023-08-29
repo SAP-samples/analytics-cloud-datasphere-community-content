@@ -14,12 +14,15 @@ The packages itself contain data models, visualisations and sample data (if appl
 Depending on the samples project, an SAP Analytics Cloud tenant and an SAP Datasphere tenant are required. The connection between SAP Analytics Cloud and SAP Datasphere must have the technical name "SAPDWC" (description is free).
 To upload content, the user has to have administration privileges.
 
+Please follow the process description (provide link) for content development and publication on this GitHub.
+
 ## Download and Installation
 Content is organised in projects. Each project has one folder on this repository which is self-contained:
 It contains two main type of files for download the SAC content in the .package format and/or DSP content in the .csn format.
 Depending on the use case it may contain additional assets such as sample data files.
 Each project folder contains a detailed description of the content and how to install it the README file. It may also include additional sources of information if available such as a blog or a pdf documentation.
 
+(delete this paragraph once docu on help.sap.com can be linked to)
 In a nutshell:
 Download the .csn and the .package files to your local PC.
 Use the SAP Datasphere capabilites to upload and deploy the CSN file.
