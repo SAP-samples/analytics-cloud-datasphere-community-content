@@ -46,7 +46,7 @@ For the time being, contributions are limited to SAP projects. If you are a cust
 The content samples offered on this GitHub may be downloaded and installed without additional license fees. Content samples are provided to support an implementation project, to share best practices and to inspire your own content development. 
 It is forbidden to sell these content samples or use them commercially in any way. 
 
-Content samples have been tested and reviewed by SAP. However, they come as they are: In case of errors or other problems, SAP is not liable to offer fixes nor any kind of support, maintenance. It is recommended that you test the content, ideally in a test environment first. You can also edit, enhance, copy or otherwise use the content in your own projects. If you do this, potential later updates of the sample content may not be installable without additional effort or not at all.
+Content samples have been tested and reviewed by SAP. However, they come as they are: In case of errors or other problems, SAP is not liable to offer fixes nor any kind of support and maintenance. It is recommended that you test the content first, ideally in a test environment. You can also edit, enhance, copy or otherwise use the content in your own projects. If you do this, potential later updates of the sample content may not be installable without additional effort or not at all.
 
 Content samples do not necessarily follow a naming convention, so please analyse carefully if they can be imported into your destination tenant without overwriting. Overwriting existing content in your destination tenant is not recommended.
 
