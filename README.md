@@ -14,22 +14,16 @@ The packages itself contain data models, visualisations and sample data (if appl
 Depending on the samples project, an SAP Analytics Cloud tenant and an SAP Datasphere tenant are required. The connection between SAP Analytics Cloud and SAP Datasphere must have the technical name "SAPDWC" (description is free).
 To upload content, the user has to have administration privileges.
 
-Please follow the process description (provide link) for content development and publication on this GitHub.
+Please follow the process description on our [sharepoint](https://sap.sharepoint.com/sites/126676/SitePages/Products/SAP%20DWC%20and%20SAC%20Content.aspx) for content development and publication on this GitHub.
 
 ## Download and Installation
 Content is organised in projects. Each project has one folder on this repository which is self-contained:
 It contains two main type of files for download the SAC content in the .package format and/or DSP content in the .csn format.
 Depending on the use case it may contain additional assets such as sample data files.
-Each project folder contains a detailed description of the content and how to install it the README file. It may also include additional sources of information if available such as a blog or a pdf documentation.
 
-(delete this paragraph once docu on help.sap.com can be linked to)
-In a nutshell:
-Download the .csn and the .package files to your local PC.
-Use the SAP Datasphere capabilites to upload and deploy the CSN file.
-Upload the .package file into the Content Network of SAP Analytics Cloud following the documentation [here](https://help.sap.com/doc/00f68c2e08b941f081002fd3691d86a7/2023.15/en-US/bf932365c52545ed9fcafd7406b4ee76.html).
-Use the sample data files to populate the SAP Datasphere data models.
+Please check the documentation ["Getting Started"](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7fa519b44ed842588c367ec105d3e4f6.html) and how to download and install community content and follow the instructions shared in the readme of each project.
 
-For more details, check the documentation on help.sap.com (provide link) and follow the instructions shared in the readme of each project.
+Each project folder contains a detailed description of the content in its README file. It may also include additional sources of information if available such as a blog or a pdf documentation.
 
 ## Known Issues
 No known issues.
