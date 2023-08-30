@@ -11,11 +11,11 @@ You can find technical samples, demos, best practices or business scenarios.
 The packages itself contain data models, visualisations and sample data (if applicable). 
 
 ## Requirements
-Using Community Content:
+Using Community Content:  
 Depending on the samples project, an SAP Analytics Cloud tenant and an SAP Datasphere tenant are required. The connection between SAP Analytics Cloud and SAP Datasphere must have the technical name "SAPDWC" (description is free).
 To upload content, the user has to have administration privileges.
 
-Contributing to Community Content:
+Contributing to Community Content:  
 Please follow the process description on our [sharepoint](https://sap.sharepoint.com/sites/126676/SitePages/Products/SAP%20DWC%20and%20SAC%20Content.aspx) for content development and publication on this GitHub.
 
 ## Download and Installation
