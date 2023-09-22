@@ -42,6 +42,8 @@ Content samples have been tested and reviewed by SAP. However, they come as they
 
 Content samples do not necessarily follow a naming convention, so please analyse carefully if they can be imported into your destination tenant without overwriting. Overwriting existing content in your destination tenant is not recommended.
 
+Content samples are not necessarily based on specific SAP products and data sources.
+
 Content or sample data may become outdated and SAP has no obligations to keep the content up-to-date. SAP may at any time without offering alternative packages deprecate content projects. 
 
 
