@@ -33,5 +33,5 @@ Please find more information about the content [here
 ](https://innofactory-g5dwlmm2ol.dispatcher.jp1.hana.ondemand.com/#!/showcase/548).
 
 ## Contact
-mailto:rafiq.islam@sap.com
+[Rafiq Islam](mailto:rafiq.islam@sap.com)
 
