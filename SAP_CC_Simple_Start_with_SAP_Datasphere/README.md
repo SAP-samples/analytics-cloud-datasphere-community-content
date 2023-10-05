@@ -4,7 +4,7 @@
 Simple_Start_with_SAP_Datasphere.zip
 
 ### Last Released:
-2023.Q4
+2023.10
 
 ## What´s New
 Initial Release
