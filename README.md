@@ -32,7 +32,7 @@ For additional support, [ask a question in SAP Community](https://answers.sap.co
 You may also contact the HD&A Content Factory by mail to [sap_analytics_cloud_content](mailto:sap_analytics_cloud_content@sap.com)
 
 ## Contributing
-For the time being, contributions are limited to SAP projects. If you are a customer, partner or any other 3rd party, and wish to publish your content, please contact the HD&A Content Factory by mail to mailto:sap_analytics_cloud_content@sap.com to learn about more options.
+For the time being, contributions are limited to SAP projects. If you are a customer, partner or any other 3rd party, and wish to publish your content, please contact the HD&A Content Factory by mail to [sap_analytics_cloud_content](mailto:sap_analytics_cloud_content@sap.com) to learn about more options.
 
 ## Terms and Conditions
 The content samples offered on this GitHub may be downloaded and installed without additional license fees. Content samples are provided to support an implementation project, to share best practices and to inspire your own content development. 
