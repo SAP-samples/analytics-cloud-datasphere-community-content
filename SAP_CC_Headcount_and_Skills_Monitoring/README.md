@@ -1,12 +1,13 @@
-# Headcount and Skills Monitoring
-
+# Headcount and Skills Monitoring--
 
 ## Name of Zip File
 Skills_Monitoring.zip
 
 ## Last Released:
-October 2023
+2023.09
 
+## What´s New
+N/A
 
 ## Descripton
 Business Challenge:
@@ -21,17 +22,14 @@ Story "Skills Monitoring" based on Model "HCLSampleData"
 Model comes with sample data.
 
 ## Connectivity
-Acquired data model from excel 
-
+Acquired data from excel 
 
 ## Download/Install Instructions
-Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7fa519b44ed842588c367ec105d3e4f6.html).
-
+Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html).
 
 ## More Information
 Please find more information about the content [here
-](https://innofactory-g5dwlmm2ol.dispatcher.jp1.hana.ondemand.com/#!/showcase/548).
+](https://innofactory-g5dwlmm2ol.dispatcher.jp1.hana.ondemand.com/#!/showcase/548)
 
 ## Contact
-[Rafiq Islam](mailto:rafiq.islam@sap.com)
-
+Please reach out to [Rafiq Islam](mailto:rafiq.islam@sap.com).
