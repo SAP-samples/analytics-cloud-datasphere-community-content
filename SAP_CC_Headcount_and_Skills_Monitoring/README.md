@@ -1,6 +1,6 @@
 # Headcount and Skills Monitoring
 
-## Name of Content File
+## Content Package File
 SAP_CC_HC_Skills_Monitoring.package
 
 ## Last Released:
@@ -22,7 +22,7 @@ Story "Skills Monitoring" based on Model "HCLSampleData"
 Model comes with sample data.
 
 ## Connectivity
-Acquired data from excel 
+N/A 
 
 ## Download/Install Instructions
 Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html).

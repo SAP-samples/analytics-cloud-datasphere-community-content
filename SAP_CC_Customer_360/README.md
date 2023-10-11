@@ -1,6 +1,6 @@
 # Customer 360
 
-## Name of Content File
+## Content Package File
 SAP_CC_Customer_360.package
 
 ## Last Released:
