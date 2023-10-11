@@ -46,6 +46,8 @@ Content samples are not necessarily based on specific SAP products and data sour
 
 Content or sample data may become outdated and SAP has no obligations to keep the content up-to-date. SAP may at any time without offering alternative packages deprecate content projects. 
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/analytics-cloud-datasphere-community-content)](https://api.reuse.software/info/github.com/SAP-samples/analytics-cloud-datasphere-community-content)
+
 
 ## License
 Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
