@@ -1,10 +1,10 @@
 # Customer 360
 
-## Name of Zip File
-SAP_CC_Customer_360.zip
+## Name of Content File
+SAP_CC_Customer_360.package
 
 ## Last Released:
-2023.09
+2023.10
 
 ## What´s New
 N/A
@@ -19,7 +19,7 @@ The models come with sample data, however the sample data files have also been i
 In addition, find the demo script "SAP_CC_Customer_360_Script.pdf" attached as well.
 
 ## Connectivity
-Offline datasets (included)
+Offline datasets (included in Folder DEMO_17913_Technical Document and Dataset)
 
 ## Download/Install Instructions
 Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html).
