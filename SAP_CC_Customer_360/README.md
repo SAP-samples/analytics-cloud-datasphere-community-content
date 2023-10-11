@@ -14,12 +14,12 @@ The Customer 360 Dashboard is created in SAP Analytic Cloud by combining the dat
 
 ## Details
 This package includes 3 stories and 9 models. 
-The models come with sample data, however the sample data files have also been included.
+The models come with sample data, however the sample data files have also been included in Folder "Sample_Data".
 
 In addition, find the demo script "SAP_CC_Customer_360_Script.pdf" attached as well.
 
 ## Connectivity
-Offline datasets (included in Folder "Sample_Data")
+N/A
 
 ## Download/Install Instructions
 Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html).
