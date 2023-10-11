@@ -16,10 +16,10 @@ To upload content, the user has to have administration privileges.
 
 ## Download and Installation
 Content is organised in projects. Each project has one folder on this repository which is self-contained:
-It contains two main type of files for download the SAC content in the .package format and/or DSP content in the .csn format.
+It contains files for download of the SAC content and/or DSP content in the .package format.
 Depending on the use case it may contain additional assets such as sample data files.
 
-Please check the documentation ["Getting Started"](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7fa519b44ed842588c367ec105d3e4f6.html) and how to download and install community content and follow the instructions shared in the readme of each project.
+Please check the documentation ["Community Content"](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html) how to download and install community content. Please follow the specific instructions shared in the readme of each project.
 
 Each project folder contains a detailed description of the content in its README file. It may also include additional sources of information if available such as a blog or a pdf documentation.
 
@@ -45,6 +45,8 @@ Content samples do not necessarily follow a naming convention, so please analyse
 Content samples are not necessarily based on specific SAP products and data sources.
 
 Content or sample data may become outdated and SAP has no obligations to keep the content up-to-date. SAP may at any time without offering alternative packages deprecate content projects. 
+
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/analytics-cloud-datasphere-community-content)](https://api.reuse.software/info/github.com/SAP-samples/analytics-cloud-datasphere-community-content)
 
 
 ## License

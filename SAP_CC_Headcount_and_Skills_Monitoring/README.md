@@ -1,10 +1,10 @@
 # Headcount and Skills Monitoring--
 
-## Name of Zip File
-Skills_Monitoring.zip
+## Name of Content File
+SAP_CC_HC_Skills_Monitoring.package
 
 ## Last Released:
-2023.09
+2023.10
 
 ## What´s New
 N/A
