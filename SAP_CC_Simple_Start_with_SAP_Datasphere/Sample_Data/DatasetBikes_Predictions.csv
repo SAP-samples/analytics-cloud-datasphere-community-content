@@ -1,0 +1,2514 @@
+Predicted Order Value,Date,Customer,Customer Segment,Country,Customer Status,Product,Product Type
+2687,Oct-17,Bicycles Co,Retail,Afghanistan,Prospect,R100 Bike,Racing
+6679,Dec-17,Cyclist Cove,Direct,Afghanistan,Prior Customer,R200 Bike 4s,Racing
+2511,Jun-18,Cyclist Dot ,Retail,Afghanistan,Prospect,C990 Bike,Racing
+3702,Aug-18,Lucent Rides,Direct,Afghanistan,Prior Customer,C990 Bike,Racing
+2328,Apr-18,Rides Citrus,Wholesale,Afghanistan,Prospect,R300 Bike,Racing
+7933,Jun-18,Rides Classic ,Retail,Afghanistan,Current Customer,R100 Bike,Racing
+2978,Oct-17,Underground Rides BC,Retail,Afghanistan,Current Customer,M525 Bike,Mountain
+16145,Dec-18,Adrenaline Rush BC,Wholesale,Albania,Current Customer,C990 Bike,Racing
+4032,Apr-19,BikeStrong,Direct,Albania,Prior Customer,R200 Bike 4s,Racing
+15779,Mar-19,Boardwalk Bicycles,Wholesale,Albania,Prospect,eBike E148,Mountain
+1612,May-19,Chrome Wheels ,Wholesale,Albania,Prospect,R300 Bike,Racing
+2715,Jul-19,HighLine Wheels,Retail,Albania,Prior Customer,C990 Bike,Racing
+5071,Jun-19,Ignition Speed,Retail,Albania,Prior Customer,C900 Bike,Mountain
+3853,Dec-18,Important Bicycles,Direct,Albania,Prior Customer,C900 Bike,Mountain
+14839,Nov-17,Instant Cyclist ,Wholesale,Albania,Current Customer,C990 Bike,Racing
+5187,Sep-18,Oldsmobiles,Direct,Albania,Prior Customer,M525 Bike,Mountain
+1452,Feb-19,Preferred Bikes,Retail,Albania,Current Customer,R100 Bike,Racing
+1783,Oct-17,Sunshine Speed,Retail,Albania,Prospect,C990 Bike,Racing
+2913,May-19,Swift Bikes ,Retail,Albania,Prospect,R100 Bike,Racing
+4931,Oct-17,Tandem Starter,Direct,Albania,Current Customer,M550 Bike,Mountain
+9214,Dec-17,West Bicycles,Wholesale,Albania,Current Customer,R200 Bike 4s,Racing
+4765,Jul-19,Wheel Woes,Direct,Albania,Prior Customer,R100 Bike,Racing
+4397,Mar-19,Your Local Bike Shop NY,Direct,Albania,Prospect,M550 Bike,Mountain
+1218,Jan-18,Airborne Cycle Studio ML,Direct,Algeria,Prospect,M525 Bike,Mountain
+11086,Jun-18,Bike Bar,Wholesale,Algeria,Current Customer,R300 Bike,Racing
+2182,Sep-19,Forecast Cycle ,Retail,Algeria,Prior Customer,C900 Bike,Mountain
+8854,Feb-19,Integrate Speed,Direct,Algeria,Prior Customer,C950 Bike,Mountain
+3405,Jul-19,Mike's Bikes,Retail,Algeria,Prior Customer,C990 Bike,Racing
+2628,Apr-18,Shuffle Speed,Retail,Algeria,Current Customer,M525 Bike,Mountain
+3182,Jan-18,Tandem Supreme,Direct,Algeria,Prior Customer,C990 Bike,Racing
+3368,Oct-17,VeloticSports,Direct,Algeria,Prior Customer,M550 Bike,Mountain
+2173,Jun-18,Adrenaline Rush SK,Retail,American Samoa,Prospect,R200 Bike 4s,Racing
+16672,Oct-17,Bicycles Networks,Wholesale,American Samoa,Current Customer,C990 Bike,Racing
+2354,Nov-18,Carousel Bikes ,Retail,American Samoa,Prospect,R100 Bike,Racing
+4838,Dec-18,Cruise Crew,Wholesale,American Samoa,Prior Customer,R300 Bike,Racing
+3347,Jun-19,Global Bicycles,Wholesale,American Samoa,Prior Customer,R300 Bike,Racing
+4202,Dec-18,Impression Bicycles,Retail,American Samoa,Prior Customer,M525 Bike,Mountain
+1888,Oct-18,Manhattan Bikes ,Retail,American Samoa,Current Customer,M550 Bike,Mountain
+4294,Jan-18,PedalFast,Direct,American Samoa,Prospect,C900 Bike,Mountain
+6299,Aug-19,Razor Bicycles,Direct,American Samoa,Prior Customer,C900 Bike,Mountain
+3315,Aug-18,Switch Wheels ,Retail,American Samoa,Prior Customer,C990 Bike,Racing
+6652,Apr-19,Universal Bicycles,Direct,American Samoa,Prior Customer,R200 Bike 4s,Racing
+4663,Sep-18,World Sports NU,Direct,American Samoa,Prior Customer,M525 Bike,Mountain
+4049,Jan-19,Blackbird Cycle BC,Retail,Andorra,Current Customer,C950 Bike,Mountain
+2223,Nov-18,Blackhawk Bicycles,Retail,Andorra,Prospect,C900 Bike,Mountain
+2365,Jul-18,Cycle Experience,Retail,Andorra,Prospect,R200 Bike 4s,Racing
+3834,Jun-19,CycleFast,Direct,Andorra,Prior Customer,M550 Bike,Mountain
+2243,Jun-18,Cyclist Coral ,Retail,Andorra,Prospect,C950 Bike,Mountain
+3239,Oct-17,Eureka,Wholesale,Andorra,Prior Customer,M550 Bike,Mountain
+367,Apr-18,Front Cycle ,Direct,Andorra,Prior Customer,C990 Bike,Racing
+4283,Feb-18,Newton Cycle   ,Retail,Andorra,Prospect,M525 Bike,Mountain
+2752,Sep-19,NorthField Sports,Retail,Andorra,Prospect,C950 Bike,Mountain
+1279,Jun-19,Renewable Rides,Direct,Andorra,Current Customer,R200 Bike 4s,Racing
+6669,Nov-17,Rides Bit,Retail,Andorra,Prospect,eBike E148,Mountain
+5033,Dec-18,Rides Channels,Wholesale,Andorra,Current Customer,R100 Bike,Racing
+2448,Nov-17,Riviera Rides,Retail,Andorra,Prior Customer,M550 Bike,Mountain
+8495,Jul-19,Skyridek,Direct,Andorra,Prior Customer,M550 Bike,Mountain
+393,May-19,Wheel Power BC,Direct,Andorra,Prospect,C950 Bike,Mountain
+937,Jul-19,Bicycles Options,Retail,Angola,Prospect,M550 Bike,Mountain
+727,Sep-18,CHOMP,Direct,Angola,Prior Customer,C900 Bike,Mountain
+949,Feb-19,Flagship Sports,Direct,Angola,Prior Customer,R200 Bike 4s,Racing
+15087,Oct-17,Manhattan Wheels ,Wholesale,Angola,Current Customer,eBike E148,Mountain
+2513,Sep-19,Pragma Cycle ,Retail,Angola,Prior Customer,C990 Bike,Racing
+2015,Nov-18,Universe Wheels ,Retail,Angola,Prospect,M550 Bike,Mountain
+8022,Oct-18,Your Local Bike Shop JF,Direct,Angola,Prospect,M550 Bike,Mountain
+4674,Apr-18,August Rides,Retail,Anguilla,Current Customer,R100 Bike,Racing
+2774,Mar-19,Bike Shark,Direct,Anguilla,Prior Customer,M550 Bike,Mountain
+6587,Sep-18,Blitz Bicycles,Direct,Anguilla,Prior Customer,M525 Bike,Mountain
+408,Jun-19,Cycle Innovative ,Retail,Anguilla,Current Customer,eBike E148,Mountain
+3606,Nov-18,Cycle On Bike Shop,Retail,Anguilla,Prior Customer,R200 Bike 4s,Racing
+4893,Feb-19,Cycleasia,Direct,Anguilla,Prospect,C900 Bike,Mountain
+4594,Feb-19,Exolvuntur,Direct,Anguilla,Prior Customer,M550 Bike,Mountain
+3252,Nov-18,Final Mile,Retail,Anguilla,Prospect,eBike E148,Mountain
+132,Jul-18,Kingsley,Retail,Anguilla,Prospect,M525 Bike,Mountain
+2167,May-18,Motorstore QB,Wholesale,Anguilla,Prior Customer,R100 Bike,Racing
+2401,Jun-18,NumberOne Rides,Retail,Anguilla,Prospect,C900 Bike,Mountain
+13073,Sep-19,Retina Cyclist ,Wholesale,Anguilla,Current Customer,R300 Bike,Racing
+5685,Jul-19,Ride Alpha,Direct,Anguilla,Prior Customer,M525 Bike,Mountain
+695,Nov-18,Rides Back ,Wholesale,Anguilla,Current Customer,C900 Bike,Mountain
+4104,Oct-17,Rotam,Retail,Anguilla,Prior Customer,M550 Bike,Mountain
+6004,Mar-18,Scorpio Rides RC,Direct,Anguilla,Prior Customer,M525 Bike,Mountain
+4629,Mar-18,Trail Blazer MF,Wholesale,Anguilla,Prior Customer,C900 Bike,Mountain
+4709,Sep-18,Vertigo,Direct,Anguilla,Prior Customer,M550 Bike,Mountain
+1168,Nov-18,Wheel Power OH,Retail,Anguilla,Prospect,C950 Bike,Mountain
+5202,Jan-18,Bicycles Value,Direct,Antarctica,Prior Customer,eBike E148,Mountain
+2337,Jun-18,Biggest Watts,Wholesale,Antarctica,Prospect,R300 Bike,Racing
+12548,Apr-18,Dynamocraft,Wholesale,Antarctica,Current Customer,M525 Bike,Mountain
+631,Jul-19,Freeway Rides,Wholesale,Antarctica,Current Customer,M550 Bike,Mountain
+13766,Nov-18,Mayride,Wholesale,Antarctica,Current Customer,eBike E148,Mountain
+10678,Mar-19,Motourze,Wholesale,Antarctica,Current Customer,R200 Bike 4s,Racing
+6666,Aug-19,One Stop Bike Shop,Direct,Antarctica,Prior Customer,M525 Bike,Mountain
+2012,May-18,Reflections Bicycles,Direct,Antarctica,Prior Customer,eBike E148,Mountain
+2622,Nov-18,Rides Robot,Direct,Antarctica,Prior Customer,R200 Bike 4s,Racing
+199,Dec-17,Sky Tandem,Retail,Antarctica,Prospect,C950 Bike,Mountain
+12482,Nov-17,Valiant,Wholesale,Antarctica,Current Customer,C950 Bike,Mountain
+3306,Nov-18,Vanguard Rides,Wholesale,Antarctica,Prospect,R300 Bike,Racing
+683,May-18,Virtual Rides ,Retail,Antarctica,Prior Customer,C900 Bike,Mountain
+7439,Nov-18,Wheels Club ,Direct,Antarctica,Prior Customer,R200 Bike 4s,Racing
+3764,Jan-19,Bike Whisperer MN,Retail,Antigua and Barbuda,Prospect,R200 Bike 4s,Racing
+4419,Oct-17,Bike Wizard,Direct,Antigua and Barbuda,Prior Customer,C990 Bike,Racing
+5519,Mar-18,Cycle Streams ,Retail,Antigua and Barbuda,Prospect,eBike E148,Mountain
+4658,Mar-18,Cycle Strong,Wholesale,Antigua and Barbuda,Prospect,eBike E148,Mountain
+2793,Nov-18,Enhanced Cycle ,Retail,Antigua and Barbuda,Current Customer,C900 Bike,Mountain
+4775,Sep-19,Grouse Mountain Bicycles,Direct,Antigua and Barbuda,Prior Customer,C900 Bike,Mountain
+3423,Jan-19,Muddy Travelers,Direct,Antigua and Barbuda,Prior Customer,C990 Bike,Racing
+6391,Jun-19,Mystic Bikes KL,Wholesale,Antigua and Barbuda,Prior Customer,M550 Bike,Mountain
+14863,Feb-18,Rides Adventure ,Wholesale,Antigua and Barbuda,Current Customer,R300 Bike,Racing
+1174,Feb-19,Rides Weekly,Retail,Antigua and Barbuda,Prior Customer,C950 Bike,Mountain
+4195,Apr-19,Sports Edge,Direct,Antigua and Barbuda,Prior Customer,M550 Bike,Mountain
+3422,Feb-19,Volcam,Retail,Antigua and Barbuda,Prospect,R100 Bike,Racing
+1148,Aug-18,Vortex Cycle HS,Wholesale,Antigua and Barbuda,Prospect,M550 Bike,Mountain
+854,Apr-19,Agora Wheels BC,Wholesale,Argentina,Current Customer,R300 Bike,Racing
+3845,Jul-19,Bike Whisperer NV,Direct,Argentina,Current Customer,R100 Bike,Racing
+5065,Nov-17,Blackbird Sports,Direct,Argentina,Prior Customer,C990 Bike,Racing
+7872,Mar-19,Bradshaw Bikes,Direct,Argentina,Prior Customer,M550 Bike,Mountain
+5335,Jan-18,Cyclists's Soul,Wholesale,Argentina,Prospect,M525 Bike,Mountain
+2943,May-18,First Star Bikes,Wholesale,Argentina,Prospect,R300 Bike,Racing
+3645,Apr-18,Mystic Bikes AB,Direct,Argentina,Current Customer,R100 Bike,Racing
+4455,Feb-18,North Cycle Customization Shop,Retail,Argentina,Prospect,C950 Bike,Mountain
+17167,Apr-18,Rides Envy,Wholesale,Argentina,Current Customer,M525 Bike,Mountain
+5882,Apr-18,See You Cycle,Direct,Argentina,Prospect,M550 Bike,Mountain
+16489,Jul-19,Vortex Cycle BC,Retail,Argentina,Current Customer,C900 Bike,Mountain
+7713,Mar-18,World Sports NA,Direct,Argentina,Current Customer,R100 Bike,Racing
+923,Jan-18,Bike Space,Retail,Armenia,Current Customer,M550 Bike,Mountain
+4663,Aug-19,Bohemian Bikes,Wholesale,Armenia,Prior Customer,R200 Bike 4s,Racing
+2757,Mar-19,Cycle Seek ,Wholesale,Armenia,Prior Customer,R300 Bike,Racing
+1501,Aug-18,Day Rides,Retail,Armenia,Prospect,M550 Bike,Mountain
+3803,May-19,Fuller Bicycles,Wholesale,Armenia,Prospect,R300 Bike,Racing
+3463,Jul-19,Motoshop MB,Direct,Armenia,Prior Customer,C950 Bike,Mountain
+1012,Mar-19,Olympia Rides ,Wholesale,Armenia,Current Customer,R300 Bike,Racing
+2429,Dec-18,Ride On It Bike Store,Wholesale,Armenia,Prospect,R300 Bike,Racing
+6391,Aug-19,Rides Grid ,Direct,Armenia,Current Customer,C900 Bike,Mountain
+10037,Jun-18,Smithe Bike Shop Ltd,Wholesale,Armenia,Current Customer,R300 Bike,Racing
+5289,Aug-19,Victory Lap,Direct,Armenia,Prior Customer,C950 Bike,Mountain
+3124,Apr-19,Wheel You Ride?,Wholesale,Armenia,Prior Customer,R300 Bike,Racing
+6283,Mar-19,Apogee Wheen,Direct,Aruba,Prior Customer,R100 Bike,Racing
+4817,Aug-19,Bicycles Selector,Direct,Aruba,Prior Customer,R100 Bike,Racing
+15638,Jun-18,Infinite Tandem,Wholesale,Aruba,Current Customer,C900 Bike,Mountain
+4629,Nov-17,Jarvis Speed,Retail,Aruba,Prospect,C950 Bike,Mountain
+125,Nov-18,Plumb Cycle   ,Retail,Aruba,Prospect,R200 Bike 4s,Racing
+7247,Jun-19,Tandem Fixer,Wholesale,Aruba,Prior Customer,R300 Bike,Racing
+5092,Aug-19,ThierryWheel Company,Retail,Aruba,Prior Customer,C950 Bike,Mountain
+2057,Jun-19,Upscale Rides,Retail,Aruba,Prospect,C990 Bike,Racing
+15954,Apr-18,Brookside Cyclist Studio,Wholesale,Australia,Current Customer,R200 Bike 4s,Racing
+5084,Aug-18,Calypso Bicycles,Direct,Australia,Prior Customer,R200 Bike 4s,Racing
+4089,Sep-18,Fierce Cycling Studio,Direct,Australia,Prior Customer,C950 Bike,Mountain
+4511,Nov-18,FirstChoice Bicycles,Direct,Australia,Prior Customer,M525 Bike,Mountain
+16033,Aug-19,Iron Rod Bicycles ON,Wholesale,Australia,Current Customer,C990 Bike,Racing
+11795,Mar-19,Iron Rod Bicycles PE,Wholesale,Australia,Current Customer,R100 Bike,Racing
+13269,Aug-19,Legend Cycle,Wholesale,Australia,Current Customer,R100 Bike,Racing
+17414,Jan-18,New Westminster Cycle Studio,Wholesale,Australia,Prospect,eBike E148,Mountain
+15698,Mar-19,Paradise Sports,Retail,Australia,Prospect,eBike E148,Mountain
+5741,Jan-18,Respect Bikes ,Wholesale,Australia,Prospect,R300 Bike,Racing
+4841,Feb-18,Rides Property ,Direct,Australia,Prior Customer,eBike E148,Mountain
+351,Jul-19,Scorpio Rides NJ,Direct,Australia,Prior Customer,M550 Bike,Mountain
+2651,May-19,Seed Speed,Direct,Australia,Prior Customer,M525 Bike,Mountain
+15551,Sep-19,Speed Centers,Wholesale,Australia,Prospect,eBike E148,Mountain
+15094,Nov-17,Ultimate Bikes,Retail,Australia,Current Customer,C900 Bike,Mountain
+16376,Apr-18,Wheel Wisdom,Wholesale,Australia,Prior Customer,eBike E148,Mountain
+2932,Aug-18,Witness the Fitness Studio,Retail,Australia,Prospect,R200 Bike 4s,Racing
+17165,Aug-19,World Sports NB,Wholesale,Australia,Current Customer,C950 Bike,Mountain
+4564,May-19,Bicycles Rating,Retail,Austria,Prior Customer,R200 Bike 4s,Racing
+8669,Oct-17,Cycle History,Wholesale,Austria,Current Customer,C900 Bike,Mountain
+1838,Jul-18,Cycle Millions ,Retail,Austria,Current Customer,M550 Bike,Mountain
+17932,Dec-17,Edmonds Rides,Wholesale,Austria,Current Customer,M525 Bike,Mountain
+3799,Feb-18,Marietta Rides ,Retail,Austria,Prospect,eBike E148,Mountain
+2196,May-19,Resistance,Retail,Austria,Prospect,R100 Bike,Racing
+3224,May-18,Richmond Cycle Studio,Retail,Austria,Prior Customer,R200 Bike 4s,Racing
+10553,Sep-18,Rides Stone ,Wholesale,Austria,Current Customer,R200 Bike 4s,Racing
+8318,Nov-17,Upfront Cycle   ,Wholesale,Austria,Prior Customer,C990 Bike,Racing
+8015,May-19,2Chains,Direct,Azerbaijan,Prior Customer,R200 Bike 4s,Racing
+13182,Aug-18,Bicycles Agency,Wholesale,Azerbaijan,Current Customer,R300 Bike,Racing
+8307,Mar-19,Bicycles Catalog,Wholesale,Azerbaijan,Current Customer,R300 Bike,Racing
+3536,May-18,CRUISE,Retail,Azerbaijan,Prior Customer,C900 Bike,Mountain
+19,Oct-17,Camelot Sports NJ,Retail,Azerbaijan,Prospect,eBike E148,Mountain
+1432,Jun-19,Complete Cycle ,Retail,Azerbaijan,Prior Customer,R200 Bike 4s,Racing
+4267,May-18,Cycle Way,Retail,Azerbaijan,Prospect,C990 Bike,Racing
+4125,Jan-18,Full Wheels,Direct,Azerbaijan,Prior Customer,M550 Bike,Mountain
+5359,Apr-18,Gear for You,Wholesale,Azerbaijan,Current Customer,C990 Bike,Racing
+433,Nov-17,HighQuality Bikes ,Retail,Azerbaijan,Prospect,R200 Bike 4s,Racing
+4222,Dec-18,Logic Rides ,Retail,Azerbaijan,Prospect,M550 Bike,Mountain
+1288,Jan-19,LowCountry Wheels ,Retail,Azerbaijan,Prospect,M525 Bike,Mountain
+4956,Dec-17,Pathfinder Rides,Retail,Azerbaijan,Prospect,C950 Bike,Mountain
+3724,Jul-19,Pursuit Rides,Direct,Azerbaijan,Prior Customer,R200 Bike 4s,Racing
+9267,Dec-18,Razer,Wholesale,Azerbaijan,Current Customer,C990 Bike,Racing
+3162,May-18,Rides AndMore ,Direct,Azerbaijan,Prospect,M550 Bike,Mountain
+10014,Jun-19,Smash Cyclist ,Direct,Azerbaijan,Prior Customer,C950 Bike,Mountain
+8255,Sep-19,Southern Cycle ,Direct,Azerbaijan,Prospect,eBike E148,Mountain
+9398,Dec-17,Ultra Rides ,Wholesale,Azerbaijan,Current Customer,C990 Bike,Racing
+967,Jul-19,Underground Rides ,Direct,Azerbaijan,Prior Customer,M525 Bike,Mountain
+4382,Jun-19,Wolverine Rides ,Retail,Azerbaijan,Current Customer,R100 Bike,Racing
+161,Dec-17,Cycle Power Group,Retail,Bahamas,Prior Customer,M525 Bike,Mountain
+2028,Jun-18,Entity Bicycles,Retail,Bahamas,Prior Customer,C990 Bike,Racing
+133,Nov-17,Quick Release,Retail,Bahamas,Prior Customer,M550 Bike,Mountain
+7429,Aug-18,Ride Devil,Direct,Bahamas,Prior Customer,M550 Bike,Mountain
+82,Apr-18,All Wheels Alright,Direct,Bahrain,Prior Customer,C990 Bike,Racing
+12536,May-19,Eternal Bicycles,Wholesale,Bahrain,Current Customer,R200 Bike 4s,Racing
+5192,Mar-18,Iron Rod Bicycles BC,Direct,Bahrain,Prior Customer,C990 Bike,Racing
+4601,Sep-18,Slick,Direct,Bahrain,Current Customer,M525 Bike,Mountain
+3029,May-18,TestDrive Bicycles,Retail,Bahrain,Prior Customer,C950 Bike,Mountain
+14659,Oct-17,Bullet Rides,Wholesale,Bangladesh,Current Customer,C900 Bike,Mountain
+10842,Apr-18,Camelot Sports RC,Wholesale,Bangladesh,Current Customer,R300 Bike,Racing
+3392,Mar-18,Cort Wheel Company,Wholesale,Bangladesh,Prospect,R300 Bike,Racing
+4222,Jan-18,Cycle Network,Wholesale,Bangladesh,Prior Customer,R300 Bike,Racing
+7806,Apr-19,Finish First,Direct,Bangladesh,Prior Customer,R200 Bike 4s,Racing
+2009,Mar-18,Outdoor Cycling Store,Direct,Bangladesh,Prior Customer,R100 Bike,Racing
+2255,May-18,Patriots,Retail,Bangladesh,Prior Customer,M550 Bike,Mountain
+1769,Mar-18,Quinton's Vintage Rides,Retail,Bangladesh,Prospect,M550 Bike,Mountain
+7117,Feb-18,Richmont Bike Bar,Direct,Bangladesh,Prior Customer,R100 Bike,Racing
+5882,Mar-19,Scorpion Bikes ,Direct,Bangladesh,Current Customer,M525 Bike,Mountain
+4222,May-19,Wheels R Us,Direct,Bangladesh,Prospect,M525 Bike,Mountain
+3257,Mar-19,World Sports BC,Direct,Bangladesh,Prior Customer,R100 Bike,Racing
+24,Oct-18,Bike Doctor,Retail,Barbados,Prospect,eBike E148,Mountain
+3822,Aug-19,CycleCentric,Retail,Barbados,Prospect,R100 Bike,Racing
+6581,Mar-18,Dolphin Rides,Retail,Barbados,Prospect,C900 Bike,Mountain
+6753,Oct-17,Every Pedal,Direct,Barbados,Prior Customer,eBike E148,Mountain
+5275,Feb-18,Miss Molly's Rides,Wholesale,Barbados,Prior Customer,R100 Bike,Racing
+3468,May-19,Rides Bio ,Direct,Barbados,Prior Customer,M525 Bike,Mountain
+1554,Nov-17,Rides One ,Retail,Barbados,Prior Customer,M550 Bike,Mountain
+9513,Feb-19,Road Rash,Wholesale,Barbados,Current Customer,R300 Bike,Racing
+3969,Jun-19,Venus Cycle CH,Wholesale,Barbados,Prior Customer,R300 Bike,Racing
+4718,Apr-19,Atomic Rides,Direct,Belarus,Prior Customer,eBike E148,Mountain
+331,Jun-19,Bik Appeal,Retail,Belarus,Current Customer,R200 Bike 4s,Racing
+6048,May-19,Glass Tandem,Wholesale,Belarus,Prior Customer,R300 Bike,Racing
+378,Jul-19,Kingdom Bicycles,Direct,Belarus,Prior Customer,M525 Bike,Mountain
+2565,Jun-18,Melton,Direct,Belarus,Current Customer,C900 Bike,Mountain
+2084,May-19,Speed Rater,Retail,Belarus,Prospect,M550 Bike,Mountain
+16247,Nov-18,Trail Blazer DV,Wholesale,Belarus,Current Customer,C900 Bike,Mountain
+419,May-18,Variety Speed,Direct,Belarus,Prospect,M525 Bike,Mountain
+15682,Mar-19,Aster Bicycles,Wholesale,Belgium,Current Customer,C900 Bike,Mountain
+2326,May-19,Construct Rides ,Retail,Belgium,Prior Customer,eBike E148,Mountain
+2862,Feb-19,Dawson's Cycle Company,Direct,Belgium,Prospect,C990 Bike,Racing
+3017,Jul-19,Health Rides,Direct,Belgium,Prior Customer,R200 Bike 4s,Racing
+2858,Nov-17,Keynote Rides,Retail,Belgium,Prospect,C990 Bike,Racing
+3244,Jun-19,Quartz Speed,Retail,Belgium,Current Customer,C990 Bike,Racing
+2073,Oct-18,Rides Grade,Direct,Belgium,Prior Customer,M550 Bike,Mountain
+15541,Nov-18,SpringHill Speed,Wholesale,Belgium,Current Customer,C900 Bike,Mountain
+652,Jan-18,Studio Eight,Wholesale,Belgium,Current Customer,C900 Bike,Mountain
+3911,Sep-19,Town Cycle,Direct,Belgium,Prior Customer,M550 Bike,Mountain
+5536,Sep-18,Adonis Wheels ,Wholesale,Belize,Prior Customer,eBike E148,Mountain
+3547,Sep-19,Arrowhead Rides ,Direct,Belize,Prior Customer,M525 Bike,Mountain
+2178,May-19,Bike Genius,Wholesale,Belize,Prospect,C990 Bike,Racing
+9649,Jun-19,Company Bicycles,Retail,Belize,Prior Customer,C990 Bike,Racing
+1699,May-18,Gears On Us,Wholesale,Belize,Current Customer,R300 Bike,Racing
+3434,Feb-19,Hummingbird Rides,Retail,Belize,Prior Customer,C950 Bike,Mountain
+687,Sep-18,Mobilize,Direct,Belize,Prior Customer,eBike E148,Mountain
+577,Sep-19,Pulse Cycles Shop,Retail,Belize,Prospect,eBike E148,Mountain
+6163,May-19,SouthSide Cyclist ,Direct,Belize,Prior Customer,M550 Bike,Mountain
+2051,Nov-18,Sunny Rides,Retail,Belize,Prospect,C990 Bike,Racing
+3242,Nov-18,Venus Cycle MW,Direct,Belize,Prospect,M525 Bike,Mountain
+4967,Apr-19,52 West,Retail,Benin,Prospect,C900 Bike,Mountain
+3644,Apr-19,Agent Bikes ,Wholesale,Benin,Prior Customer,R100 Bike,Racing
+3546,May-18,Aries,Direct,Benin,Prospect,R100 Bike,Racing
+11172,Nov-17,Honorable Bikes,Wholesale,Benin,Current Customer,R300 Bike,Racing
+8535,Apr-18,Indy Cycle ,Direct,Benin,Prior Customer,C990 Bike,Racing
+1406,May-19,JRA,Retail,Benin,Prospect,R100 Bike,Racing
+709,Nov-17,Structural Cycle ,Retail,Benin,Current Customer,M550 Bike,Mountain
+133,Nov-18,Tandem Beauty,Direct,Benin,Current Customer,R100 Bike,Racing
+5043,Apr-19,Top Athletes,Retail,Benin,Prospect,M550 Bike,Mountain
+5708,Aug-18,Bik Training,Direct,Bermuda,Prior Customer,R100 Bike,Racing
+2712,Jul-19,Bikers R Us,Direct,Bermuda,Current Customer,R200 Bike 4s,Racing
+8834,Jul-18,Cycle Letter ,Direct,Bermuda,Prior Customer,C900 Bike,Mountain
+7236,Jul-19,Cycle Machine,Direct,Bermuda,Prior Customer,R100 Bike,Racing
+3388,Aug-19,Messenger Bicycles,Retail,Bermuda,Prior Customer,R100 Bike,Racing
+4967,Apr-19,Namaste Speed,Direct,Bermuda,Prior Customer,R100 Bike,Racing
+4809,Aug-19,Revelation Rides,Direct,Bermuda,Prior Customer,eBike E148,Mountain
+3277,Oct-17,Rhino Biking,Direct,Bermuda,Prospect,eBike E148,Mountain
+4522,Jun-19,Veer ,Direct,Bermuda,Prospect,eBike E148,Mountain
+1938,Oct-17,Vortex Cycle WA,Retail,Bermuda,Prospect,C950 Bike,Mountain
+4587,Mar-18,Delphi Rides,Direct,Bhutan,Prior Customer,M525 Bike,Mountain
+5438,Oct-18,Festiva & Benton,Wholesale,Bhutan,Prior Customer,R300 Bike,Racing
+3695,Nov-17,Heart Bikes ,Direct,Bhutan,Prior Customer,R200 Bike 4s,Racing
+6759,Nov-18,Rides Impact,Retail,Bhutan,Prospect,C990 Bike,Racing
+11936,Jan-19,Scorpio Rides AB,Wholesale,Bhutan,Current Customer,C950 Bike,Mountain
+11267,Dec-17,Sprint Cycle ,Wholesale,Bhutan,Prospect,eBike E148,Mountain
+13076,May-18,Bike Whisperer RC,Wholesale,Bolivia,Current Customer,R200 Bike 4s,Racing
+13732,Dec-18,Cyclist Spotter ,Wholesale,Bolivia,Current Customer,R300 Bike,Racing
+11088,Sep-19,Force Tandem,Wholesale,Bolivia,Current Customer,M525 Bike,Mountain
+3637,May-18,Mystic Bikes BN,Direct,Bolivia,Prior Customer,C950 Bike,Mountain
+2836,Dec-17,Rides Digital,Direct,Bolivia,Prior Customer,M550 Bike,Mountain
+2741,Nov-17,Show Tandem,Retail,Bolivia,Current Customer,C900 Bike,Mountain
+5755,Feb-18,Vortex Cycle DT,Direct,Bolivia,Prior Customer,C900 Bike,Mountain
+3288,May-18,Aeyre in Your Tires,Retail,Bosnia and Herzegovina,Prospect,C950 Bike,Mountain
+9635,Jun-18,Artemis' Rides,Wholesale,Bosnia and Herzegovina,Current Customer,R300 Bike,Racing
+2859,Sep-18,Assure Cyclist ,Direct,Bosnia and Herzegovina,Prior Customer,R100 Bike,Racing
+2317,May-19,Bike Whisperer PE,Retail,Bosnia and Herzegovina,Prospect,R100 Bike,Racing
+5116,Jun-19,BikeDemand,Direct,Bosnia and Herzegovina,Current Customer,C950 Bike,Mountain
+5655,Nov-17,Cyclist Shops ,Direct,Bosnia and Herzegovina,Prior Customer,eBike E148,Mountain
+3268,Sep-19,Efficient Cycle ,Retail,Bosnia and Herzegovina,Current Customer,M525 Bike,Mountain
+6897,Aug-19,Geek Bikes ,Direct,Bosnia and Herzegovina,Current Customer,R200 Bike 4s,Racing
+1899,Jul-18,Indoor Cycling Store,Wholesale,Bosnia and Herzegovina,Prior Customer,C950 Bike,Mountain
+3255,Jun-19,Just Riding Along,Direct,Bosnia and Herzegovina,Prior Customer,R100 Bike,Racing
+2705,Oct-17,Kernel Sports,Retail,Bosnia and Herzegovina,Prior Customer,M525 Bike,Mountain
+2825,Aug-18,Mystic Bikes AP,Retail,Bosnia and Herzegovina,Prospect,eBike E148,Mountain
+5594,May-18,Mystic Bikes MW,Direct,Bosnia and Herzegovina,Prior Customer,eBike E148,Mountain
+3061,Nov-18,Rides Digest ,Direct,Bosnia and Herzegovina,Prior Customer,C900 Bike,Mountain
+7112,Mar-18,Southside Rides,Direct,Bosnia and Herzegovina,Prior Customer,C990 Bike,Racing
+6615,Jul-18,Tailored Ride,Retail,Bosnia and Herzegovina,Prior Customer,R200 Bike 4s,Racing
+1802,Aug-18,TopDog Rides ,Direct,Bosnia and Herzegovina,Prior Customer,C990 Bike,Racing
+2181,Aug-19,Towers Wheels,Retail,Bosnia and Herzegovina,Prospect,M525 Bike,Mountain
+2752,Mar-18,Vortex Cycle BCPE,Direct,Bosnia and Herzegovina,Current Customer,M550 Bike,Mountain
+559,Apr-18,Vortex Cycle JO,Wholesale,Bosnia and Herzegovina,Current Customer,R300 Bike,Racing
+1774,Jun-18,Aspect Sports,Wholesale,Botswana,Prior Customer,R300 Bike,Racing
+3478,Apr-18,Bike Whisperer MX,Direct,Botswana,Prior Customer,R200 Bike 4s,Racing
+3026,Jul-18,Charge Rides ,Retail,Botswana,Current Customer,M550 Bike,Mountain
+5005,Jul-18,Cycle Corner,Direct,Botswana,Prospect,C990 Bike,Racing
+4375,Mar-19,Cyclists R Us,Direct,Botswana,Prior Customer,M550 Bike,Mountain
+8985,Jun-19,Destination Rides ,Wholesale,Botswana,Current Customer,M525 Bike,Mountain
+2922,Aug-18,Gemini Rides ,Direct,Botswana,Current Customer,C950 Bike,Mountain
+6129,Oct-17,HighClass Bikes ,Direct,Botswana,Prior Customer,C900 Bike,Mountain
+229,Dec-18,Karma Ride,Wholesale,Botswana,Prospect,C950 Bike,Mountain
+95,Apr-19,Multiple Bicycles,Direct,Botswana,Prior Customer,C990 Bike,Racing
+5058,May-18,Podium Finish,Retail,Botswana,Prior Customer,R200 Bike 4s,Racing
+7017,Jan-18,Release Bikes ,Direct,Botswana,Prior Customer,C990 Bike,Racing
+4987,Oct-18,Rides Dot,Wholesale,Botswana,Prior Customer,eBike E148,Mountain
+5035,Jan-19,Rides Lists ,Retail,Botswana,Prospect,C950 Bike,Mountain
+4854,Jun-19,Sparta Rides ,Retail,Botswana,Prospect,C900 Bike,Mountain
+1241,Jun-18,Statement Cycles SF,Retail,Botswana,Current Customer,M550 Bike,Mountain
+14087,Feb-19,Totally Tandem,Wholesale,Botswana,Prospect,eBike E148,Mountain
+11237,Mar-19,Vortex Cycle AB,Retail,Botswana,Current Customer,C950 Bike,Mountain
+3082,Sep-18,Yosemite Rides ON,Retail,Botswana,Prospect,C950 Bike,Mountain
+4598,Nov-18,Bicycles Leads,Retail,Bouvet Island,Prospect,C950 Bike,Mountain
+457,Feb-19,Blackbird Cycle PG,Direct,Bouvet Island,Prospect,R200 Bike 4s,Racing
+2673,May-18,Camelot Sports NY,Retail,Bouvet Island,Prior Customer,C990 Bike,Racing
+3728,Feb-18,ClassRides,Wholesale,Bouvet Island,Prior Customer,R300 Bike,Racing
+6016,Nov-18,Enchanted Rides,Retail,Bouvet Island,Prospect,C900 Bike,Mountain
+3526,Sep-19,Flip Speed,Retail,Bouvet Island,Prospect,C900 Bike,Mountain
+6769,Mar-19,Hagrid's Wicked Rides,Retail,Bouvet Island,Prospect,C950 Bike,Mountain
+6316,Nov-17,MainStreet Bicycles,Direct,Bouvet Island,Prospect,M550 Bike,Mountain
+3528,Dec-18,Niagara Rides,Direct,Bouvet Island,Prior Customer,M550 Bike,Mountain
+2976,Nov-18,Primal Wheels ,Retail,Bouvet Island,Current Customer,C950 Bike,Mountain
+5111,Aug-19,Rides Ticket ,Direct,Bouvet Island,Prior Customer,C900 Bike,Mountain
+3961,Apr-19,SouthSide Bicycles,Direct,Bouvet Island,Prior Customer,R200 Bike 4s,Racing
+1194,Aug-18,Spirit Tandem,Retail,Bouvet Island,Prospect,M550 Bike,Mountain
+6835,Jun-19,Sports Independent,Direct,Bouvet Island,Prospect,M550 Bike,Mountain
+4742,Mar-19,Underground Rides WY,Direct,Bouvet Island,Prior Customer,R200 Bike 4s,Racing
+1365,Dec-17,WONce,Wholesale,Bouvet Island,Current Customer,M525 Bike,Mountain
+3905,Mar-19,Wheel Depot PS,Retail,Bouvet Island,Prospect,C900 Bike,Mountain
+899,Mar-19,Windsor Wheels,Retail,Bouvet Island,Current Customer,C950 Bike,Mountain
+6103,Apr-19,Zen Rides CA,Direct,Bouvet Island,Prospect,M525 Bike,Mountain
+11936,Feb-19,Bike Anywhere,Wholesale,Brazil,Current Customer,R300 Bike,Racing
+14149,May-18,BikeLaunch,Wholesale,Brazil,Current Customer,C950 Bike,Mountain
+2659,May-19,Choice Wheels ,Retail,Brazil,Prior Customer,C950 Bike,Mountain
+14022,Jan-19,Coral Tandem,Wholesale,Brazil,Current Customer,R100 Bike,Racing
+9944,Aug-19,Cycle Ball,Retail,Brazil,Current Customer,R200 Bike 4s,Racing
+13234,Nov-17,Cycle Emporium,Wholesale,Brazil,Current Customer,C950 Bike,Mountain
+10341,May-18,Cyclist Hand ,Wholesale,Brazil,Current Customer,R100 Bike,Racing
+2911,Apr-18,Fidelity Speed,Retail,Brazil,Prospect,C990 Bike,Racing
+13705,Jun-18,Impact Rides,Wholesale,Brazil,Current Customer,M525 Bike,Mountain
+20138,Jul-18,Moment Rides,Wholesale,Brazil,Current Customer,R200 Bike 4s,Racing
+5135,Jan-18,Power Pedals,Direct,Brazil,Prior Customer,R200 Bike 4s,Racing
+19434,Jun-19,Quake Tandem,Wholesale,Brazil,Current Customer,M525 Bike,Mountain
+17486,Apr-18,Rides Complete ,Direct,Brazil,Current Customer,C900 Bike,Mountain
+17915,May-18,Rover Bikes,Wholesale,Brazil,Current Customer,C900 Bike,Mountain
+2769,Mar-19,Scorpio Rides BC,Wholesale,Brazil,Current Customer,R300 Bike,Racing
+11881,Mar-18,Top Speed,Retail,Brazil,Current Customer,R200 Bike 4s,Racing
+10562,Jan-18,Wheel Depot TX,Wholesale,Brazil,Current Customer,R300 Bike,Racing
+18123,May-18,Wheels Rules ,Wholesale,Brazil,Current Customer,C990 Bike,Racing
+15806,Dec-18,Your Local Bike Shop ED,Wholesale,Brazil,Current Customer,M525 Bike,Mountain
+16,May-19,Cycle Hammerheads,Retail,British Indian Ocean Territory,Current Customer,M525 Bike,Mountain
+3662,May-19,Cycle Seek,Wholesale,British Indian Ocean Territory,Prior Customer,C900 Bike,Mountain
+4435,Dec-18,Cyclist Anytime ,Retail,British Indian Ocean Territory,Prospect,C900 Bike,Mountain
+4052,Apr-19,Residential Rides,Retail,British Indian Ocean Territory,Prospect,M550 Bike,Mountain
+2007,Aug-19,Ride On,Direct,British Indian Ocean Territory,Prior Customer,M525 Bike,Mountain
+2009,Jan-18,Rides Brand,Direct,British Indian Ocean Territory,Prior Customer,R100 Bike,Racing
+5234,Jan-18,Bike Specialty Shop,Retail,Brunei Darussalam,Prospect,eBike E148,Mountain
+11669,Jun-18,Cycle Finest ,Wholesale,Brunei Darussalam,Current Customer,R200 Bike 4s,Racing
+344,Jun-18,Cycle Special   ,Direct,Brunei Darussalam,Prior Customer,M525 Bike,Mountain
+6778,May-19,Expedite Rides,Direct,Brunei Darussalam,Prior Customer,eBike E148,Mountain
+1684,Jan-18,Research Bicycles,Retail,Brunei Darussalam,Prospect,M550 Bike,Mountain
+5102,Feb-19,Ride Engine,Direct,Brunei Darussalam,Prior Customer,R200 Bike 4s,Racing
+14117,Jan-19,Rideers,Wholesale,Brunei Darussalam,Current Customer,R200 Bike 4s,Racing
+12067,Apr-18,Rouge Bikes,Wholesale,Brunei Darussalam,Current Customer,R200 Bike 4s,Racing
+6641,Feb-18,Victory Rides,Retail,Brunei Darussalam,Prior Customer,R100 Bike,Racing
+8843,Nov-18,Cyclist Corporate ,Retail,Bulgaria,Prior Customer,C990 Bike,Racing
+4329,Oct-17,Rides Chase ,Direct,Bulgaria,Prior Customer,M550 Bike,Mountain
+413,Apr-19,Cell Cyclist ,Direct,Burkina Faso,Prior Customer,M550 Bike,Mountain
+3626,Aug-18,Clean Rides,Direct,Burkina Faso,Prior Customer,C900 Bike,Mountain
+5299,Jan-19,Gallant Rides,Direct,Burkina Faso,Prior Customer,C990 Bike,Racing
+687,Aug-18,Hwel,Wholesale,Burkina Faso,Prospect,R300 Bike,Racing
+9017,Feb-19,Pepper Speed,Direct,Burkina Faso,Current Customer,C950 Bike,Mountain
+12863,Jul-18,Pilgrim Tandem,Wholesale,Burkina Faso,Current Customer,C990 Bike,Racing
+11594,Jun-18,Primary Ride,Wholesale,Burkina Faso,Current Customer,R100 Bike,Racing
+2509,Feb-19,Rides Artist,Retail,Burkina Faso,Prospect,C950 Bike,Mountain
+1034,Feb-18,Rides Build,Retail,Burkina Faso,Prospect,M525 Bike,Mountain
+4125,Jul-18,Solution Speed,Direct,Burkina Faso,Prior Customer,M550 Bike,Mountain
+7154,Sep-19,World Sports VA,Direct,Burkina Faso,Prior Customer,C900 Bike,Mountain
+6075,Nov-18,Yan Performance Designs,Direct,Burkina Faso,Current Customer,M550 Bike,Mountain
+2231,Jan-19,Zen Rides DL,Retail,Burkina Faso,Current Customer,R200 Bike 4s,Racing
+10335,May-19,Adrenaline,Retail,Burundi,Prospect,M525 Bike,Mountain
+9679,Jan-19,Bike Street,Wholesale,Burundi,Current Customer,R300 Bike,Racing
+4045,Jun-18,Camelot Sports ED,Retail,Burundi,Prospect,R200 Bike 4s,Racing
+10281,Oct-18,Doc Bikes ,Retail,Burundi,Prior Customer,R200 Bike 4s,Racing
+14277,Jun-19,Hasty,Wholesale,Burundi,Current Customer,R200 Bike 4s,Racing
+4239,Nov-17,Hwel,Direct,Burundi,Prior Customer,R200 Bike 4s,Racing
+6929,Jan-19,Motoshop ON,Retail,Burundi,Prospect,M525 Bike,Mountain
+7968,Feb-19,Passionate Cyclist ,Retail,Burundi,Current Customer,C950 Bike,Mountain
+2642,Nov-18,Rides Omega,Retail,Burundi,Prior Customer,M525 Bike,Mountain
+4415,Dec-18,Sports Stocks,Direct,Burundi,Prospect,R200 Bike 4s,Racing
+2319,Nov-18,SunRay Cycle ,Retail,Burundi,Prospect,R100 Bike,Racing
+12884,Feb-18,Viewpoint Tandem,Wholesale,Burundi,Current Customer,R100 Bike,Racing
+6647,Jun-18,WolfPack Cycle QB,Direct,Burundi,Prior Customer,eBike E148,Mountain
+4597,Aug-18,Diablo Rides ,Retail,Cambodia,Prospect,R100 Bike,Racing
+2512,Oct-17,Forefront Rides ,Wholesale,Cambodia,Current Customer,R300 Bike,Racing
+1948,Apr-18,Rides Load ,Retail,Cambodia,Current Customer,R200 Bike 4s,Racing
+5709,Aug-18,Sidebike,Retail,Cambodia,Prospect,eBike E148,Mountain
+5998,Mar-18,Calibre Speed,Direct,Cameroon,Prior Customer,eBike E148,Mountain
+2255,Jun-18,Cyclist Archive ,Direct,Cameroon,Current Customer,C990 Bike,Racing
+2976,Oct-18,Fenders,Direct,Cameroon,Prior Customer,C950 Bike,Mountain
+1579,Jul-18,Paper Ride,Retail,Cameroon,Prospect,M525 Bike,Mountain
+1794,Aug-19,Rides Bus ,Retail,Cameroon,Prior Customer,R200 Bike 4s,Racing
+1825,Feb-19,Scoott Scoot,Retail,Cameroon,Prospect,C900 Bike,Mountain
+252,May-18,Winners R Us,Retail,Cameroon,Prospect,C990 Bike,Racing
+12624,Nov-17,Ayre Tires,Wholesale,Canada,Current Customer,C950 Bike,Mountain
+8108,Jan-18,Bedrock Rides ,Direct,Canada,Current Customer,M550 Bike,Mountain
+3063,Jun-19,Breeze Bicycles,Wholesale,Canada,Current Customer,R300 Bike,Racing
+20918,Oct-17,Byeking,Wholesale,Canada,Current Customer,C990 Bike,Racing
+3668,May-19,Camelot Sports BO,Retail,Canada,Prospect,C990 Bike,Racing
+19956,Apr-18,Celebration Wheels ,Wholesale,Canada,Current Customer,C900 Bike,Mountain
+5677,Aug-18,Champion Secrets,Direct,Canada,Prior Customer,C950 Bike,Mountain
+1593,Oct-17,Cycle Shoot,Wholesale,Canada,Current Customer,M525 Bike,Mountain
+13532,Oct-17,Ember Rides,Wholesale,Canada,Current Customer,R100 Bike,Racing
+1026,Oct-17,Endurides,Direct,Canada,Prior Customer,M550 Bike,Mountain
+12007,Feb-18,Garage Wheels ,Wholesale,Canada,Current Customer,R100 Bike,Racing
+4253,Dec-17,HighQuality Sports,Wholesale,Canada,Prospect,R300 Bike,Racing
+20237,Dec-17,Jamie & Paige,Wholesale,Canada,Current Customer,C900 Bike,Mountain
+3917,Oct-17,Junior Wheels ,Wholesale,Canada,Prior Customer,R300 Bike,Racing
+6101,Sep-18,LAPS,Wholesale,Canada,Prospect,R100 Bike,Racing
+11021,Dec-18,Lightning Quick,Wholesale,Canada,Current Customer,R100 Bike,Racing
+3723,Dec-17,Motorstore ON,Wholesale,Canada,Current Customer,R300 Bike,Racing
+4016,Jul-18,Olympus Cyclist ,Wholesale,Canada,Current Customer,R300 Bike,Racing
+11893,Aug-18,Parkway Bikes ,Wholesale,Canada,Current Customer,M525 Bike,Mountain
+14571,Jul-19,Platinum Rides,Retail,Canada,Prospect,eBike E148,Mountain
+3018,Feb-19,Rides Tv,Wholesale,Canada,Current Customer,M550 Bike,Mountain
+4508,Feb-19,Tandem Solutions,Wholesale,Canada,Prior Customer,R300 Bike,Racing
+17078,Jul-18,Transcend Rides,Wholesale,Canada,Current Customer,eBike E148,Mountain
+5948,Sep-19,Twilight Rides QB,Retail,Canada,Current Customer,C900 Bike,Mountain
+4345,Sep-18,Venus Cycle JA,Wholesale,Canada,Prospect,R300 Bike,Racing
+3914,Sep-18,Wheel Horizon,Wholesale,Canada,Current Customer,R300 Bike,Racing
+884,Oct-17,WolfPack Cycle MN,Wholesale,Canada,Current Customer,C990 Bike,Racing
+7637,Nov-18,Yosemite Rides MN,Direct,Canada,Prospect,M525 Bike,Mountain
+4992,Nov-17,Bicycle Zone,Direct,Cape Verde,Prior Customer,C900 Bike,Mountain
+1785,Aug-19,Bike Pick,Retail,Cape Verde,Prospect,M550 Bike,Mountain
+2722,Dec-17,Britannia Ride,Retail,Cape Verde,Prospect,C990 Bike,Racing
+14625,May-18,Building Cyclist ,Wholesale,Cape Verde,Prospect,eBike E148,Mountain
+5458,Sep-18,Head Ride,Direct,Cape Verde,Current Customer,eBike E148,Mountain
+4789,Sep-18,Motorstore AB,Wholesale,Cape Verde,Prior Customer,R300 Bike,Racing
+9182,Apr-19,Outdoor Bike Shop,Wholesale,Cape Verde,Current Customer,R200 Bike 4s,Racing
+9043,Jan-18,Spot Rides ,Wholesale,Cape Verde,Current Customer,R300 Bike,Racing
+6918,Nov-17,Ultimate Cycles,Retail,Cape Verde,Prospect,M550 Bike,Mountain
+3234,May-18,Verde Ride,Direct,Cape Verde,Prior Customer,R100 Bike,Racing
+1881,Feb-19,Wheels Profit ,Retail,Cape Verde,Prospect,C900 Bike,Mountain
+10790,Feb-19,Breakaway,Wholesale,Cayman Islands,Current Customer,M525 Bike,Mountain
+3951,May-19,Onlita,Direct,Cayman Islands,Current Customer,M525 Bike,Mountain
+2653,Feb-18,Wheels Cycle ,Direct,Cayman Islands,Prior Customer,M550 Bike,Mountain
+11666,Nov-17,Bike Couse,Wholesale,Central African Republic,Current Customer,R200 Bike 4s,Racing
+6889,Jun-18,Bike Guru,Wholesale,Central African Republic,Prior Customer,C900 Bike,Mountain
+113,Sep-18,Dumfries Bike Shop,Wholesale,Central African Republic,Current Customer,M525 Bike,Mountain
+1977,Oct-17,Friends Cyclist ,Retail,Central African Republic,Prior Customer,M525 Bike,Mountain
+3892,Nov-17,Mint Cycle ,Retail,Central African Republic,Prospect,R200 Bike 4s,Racing
+3785,Dec-18,Modern Champion,Retail,Central African Republic,Prospect,eBike E148,Mountain
+3901,Jul-18,Rides Planner ,Direct,Central African Republic,Prior Customer,M525 Bike,Mountain
+5964,Jul-19,Skynet Sports,Retail,Central African Republic,Prior Customer,C950 Bike,Mountain
+3498,Jul-19,Venus Cycle AB,Direct,Central African Republic,Prior Customer,C990 Bike,Racing
+3961,Jun-18,Venus Cycle NJ,Retail,Central African Republic,Prospect,R200 Bike 4s,Racing
+3265,Dec-17,Adrenaline Rush NW,Retail,Chad,Prospect,R100 Bike,Racing
+8044,May-19,Bike Head,Wholesale,Chad,Current Customer,M550 Bike,Mountain
+2929,Sep-19,Castle Rock Wheel,Retail,Chad,Prospect,M525 Bike,Mountain
+6613,Nov-17,Cycle Connection ,Retail,Chad,Prior Customer,eBike E148,Mountain
+505,Apr-18,Cycle Kit ,Retail,Chad,Current Customer,M550 Bike,Mountain
+3247,Sep-18,Engineering Rides ,Direct,Chad,Prior Customer,R200 Bike 4s,Racing
+7635,Dec-18,Impact,Direct,Chad,Prospect,eBike E148,Mountain
+407,Dec-18,Mickey Performance Designs,Retail,Chad,Prospect,R200 Bike 4s,Racing
+12256,Apr-18,Moe's Auto Shop,Wholesale,Chad,Current Customer,C990 Bike,Racing
+1264,May-19,Pelican Cyclist ,Wholesale,Chad,Current Customer,R300 Bike,Racing
+6109,Oct-17,Retro Bikes,Wholesale,Chad,Prior Customer,M525 Bike,Mountain
+2604,Jun-18,Rides Visual ,Retail,Chad,Prospect,M525 Bike,Mountain
+3959,Feb-18,RiverView Cycle,Direct,Chad,Prospect,M525 Bike,Mountain
+7114,Jan-18,Surrey Bike Bar,Direct,Chad,Current Customer,C900 Bike,Mountain
+1554,Nov-18,Velocipede,Retail,Chad,Current Customer,M550 Bike,Mountain
+13979,Feb-18,World Sports SD,Wholesale,Chad,Current Customer,R300 Bike,Racing
+4547,Jun-19,Bike Elements,Direct,Chile,Prior Customer,R200 Bike 4s,Racing
+1714,Dec-17,Bike Site,Wholesale,Chile,Prospect,R300 Bike,Racing
+5408,Feb-18,Brother Cycle ,Wholesale,Chile,Prospect,R300 Bike,Racing
+3949,Mar-19,Mission Rides,Retail,Chile,Prospect,C900 Bike,Mountain
+3864,Mar-18,Motorstore YK,Direct,Chile,Prospect,M550 Bike,Mountain
+13054,Apr-19,Other Cyclist ,Wholesale,Chile,Current Customer,R100 Bike,Racing
+3033,Apr-18,Venus Cycle DC,Retail,Chile,Prospect,M525 Bike,Mountain
+2808,Nov-18,Vertigo Bicycles,Retail,Chile,Prospect,R100 Bike,Racing
+4835,Mar-18,Wheels Offers ,Retail,Chile,Prior Customer,C990 Bike,Racing
+4247,Dec-17,Abbey Cycle Studio,Retail,China,Prior Customer,C990 Bike,Racing
+1598,Feb-19,Associate Sports,Wholesale,China,Current Customer,C990 Bike,Racing
+15877,Oct-18,BDO Bikes,Retail,China,Prior Customer,eBike E148,Mountain
+16585,May-18,BrickHouse Cyclist ,Wholesale,China,Current Customer,R200 Bike 4s,Racing
+12073,May-19,Cycle Zone,Wholesale,China,Current Customer,R100 Bike,Racing
+12315,Mar-19,Cycling is Life,Wholesale,China,Current Customer,R300 Bike,Racing
+789,Nov-17,Cyclist Life ,Retail,China,Prior Customer,eBike E148,Mountain
+6293,Apr-18,Excel Cycle ,Wholesale,China,Prospect,R300 Bike,Racing
+13847,Nov-18,GameOn Tandem,Wholesale,China,Current Customer,R300 Bike,Racing
+19045,Sep-18,Grand Prix,Wholesale,China,Prospect,eBike E148,Mountain
+3303,Jan-19,Half Wheel,Retail,China,Current Customer,M550 Bike,Mountain
+8215,Aug-18,Hopper Bikes,Direct,China,Current Customer,eBike E148,Mountain
+18751,Mar-18,Iron Rod Bicycles OH,Wholesale,China,Prospect,eBike E148,Mountain
+3987,May-18,Lexicore,Retail,China,Prior Customer,C990 Bike,Racing
+11203,Feb-18,LifeCyclers,Retail,China,Current Customer,R200 Bike 4s,Racing
+17309,Sep-19,Motoshop NB,Wholesale,China,Prospect,eBike E148,Mountain
+11599,Dec-17,NowBike,Wholesale,China,Current Customer,R100 Bike,Racing
+20385,Aug-19,Patchwork Cycle ,Wholesale,China,Prospect,eBike E148,Mountain
+16099,Mar-19,Principal Rides ,Wholesale,China,Prospect,eBike E148,Mountain
+8053,Oct-18,Rides Content ,Retail,China,Current Customer,M550 Bike,Mountain
+5502,Apr-19,Rollers,Wholesale,China,Prior Customer,C900 Bike,Mountain
+4301,Aug-18,Sports Lines,Direct,China,Prior Customer,C900 Bike,Mountain
+1117,Apr-18,Structured Sports,Wholesale,China,Current Customer,C990 Bike,Racing
+19098,Nov-18,Tubular,Wholesale,China,Current Customer,C950 Bike,Mountain
+20957,Dec-18,Wingman Sports,Direct,China,Prospect,eBike E148,Mountain
+11797,Jul-18,Zoom Fast ,Retail,China,Current Customer,R200 Bike 4s,Racing
+6792,Oct-18,2T Cycling,Retail,Christmas Island,Prospect,R100 Bike,Racing
+4338,Apr-18,Bik Girl,Direct,Christmas Island,Current Customer,R100 Bike,Racing
+7177,Mar-18,Cycle Light   ,Direct,Christmas Island,Prior Customer,eBike E148,Mountain
+1841,May-18,General Rides ,Retail,Christmas Island,Current Customer,R200 Bike 4s,Racing
+4025,Jun-18,Helios Rides ,Retail,Christmas Island,Prior Customer,C950 Bike,Mountain
+4258,Aug-19,Meryl's Tandem Bikes,Direct,Christmas Island,Prior Customer,eBike E148,Mountain
+952,Dec-18,Revive Bikes ,Retail,Christmas Island,Prior Customer,M550 Bike,Mountain
+1577,Jan-18,Speed Bikes Company,Retail,Christmas Island,Prospect,R100 Bike,Racing
+4677,Aug-19,Strato Cyclist,Direct,Christmas Island,Prior Customer,M550 Bike,Mountain
+7942,Jun-18,,,Christmas Island,,C950 Bike,Mountain
+3051,Feb-18,Vector Sports,Direct,Christmas Island,Prospect,C950 Bike,Mountain
+3165,Apr-19,Camelot Sports DL,Wholesale,Cocos (Keeling) Islands,Prospect,R300 Bike,Racing
+12037,Dec-17,Cyclone,Wholesale,Cocos (Keeling) Islands,Current Customer,R100 Bike,Racing
+7181,Feb-19,Proven Rides ,Wholesale,Cocos (Keeling) Islands,Current Customer,C990 Bike,Racing
+3379,Mar-18,Sidekick Rides,Direct,Cocos (Keeling) Islands,Prior Customer,eBike E148,Mountain
+3736,Aug-18,WolfPack Cycle ON,Direct,Cocos (Keeling) Islands,Prior Customer,R200 Bike 4s,Racing
+3572,Feb-19,Agora Wheels TO,Direct,Colombia,Prior Customer,C950 Bike,Mountain
+4921,Sep-18,Charmed ,Direct,Colombia,Prior Customer,R200 Bike 4s,Racing
+4476,Mar-18,Inner Ride,Wholesale,Colombia,Prior Customer,R300 Bike,Racing
+4769,Mar-18,Point Rides ,Direct,Colombia,Prior Customer,C900 Bike,Mountain
+2312,Jun-19,Tandem Planet,Retail,Colombia,Current Customer,R200 Bike 4s,Racing
+3952,Apr-18,Yosemite Rides QB,Direct,Colombia,Prior Customer,C990 Bike,Racing
+5587,Mar-19,AMP Bikes,Direct,Comoros,Prior Customer,C990 Bike,Racing
+2393,Aug-19,Airborne Cycle Studio AB,Retail,Comoros,Current Customer,R200 Bike 4s,Racing
+53,Nov-17,Bike Town,Retail,Comoros,Current Customer,M525 Bike,Mountain
+8268,Mar-19,BikeFast,Direct,Comoros,Prior Customer,M550 Bike,Mountain
+752,Oct-18,Cycle Barn ,Direct,Comoros,Prior Customer,C950 Bike,Mountain
+706,Aug-19,Flip Cycle,Retail,Comoros,Prospect,eBike E148,Mountain
+11979,Feb-18,Insta Cycle ,Direct,Comoros,Current Customer,R300 Bike,Racing
+6672,Jan-18,Iron Rod Bicycles TO,Direct,Comoros,Prior Customer,C900 Bike,Mountain
+4298,Aug-18,Motour,Direct,Comoros,Prior Customer,R100 Bike,Racing
+2189,Sep-19,Mystic Bikes NF,Retail,Comoros,Prior Customer,R200 Bike 4s,Racing
+4445,Nov-17,Refresh Speed,Direct,Comoros,Current Customer,C950 Bike,Mountain
+6958,Nov-18,Shadow Tandem,Direct,Comoros,Current Customer,M550 Bike,Mountain
+4764,Sep-18,Tandem Start,Direct,Comoros,Prior Customer,M525 Bike,Mountain
+4817,May-19,The Fastest Cycle,Retail,Comoros,Current Customer,M550 Bike,Mountain
+3196,Feb-19,Virginia Cycle Studio,Wholesale,Comoros,Prospect,C900 Bike,Mountain
+2444,Apr-18,Airborne Cycle Studio ON,Wholesale,Congo,Current Customer,M525 Bike,Mountain
+3987,Mar-19,Columbia Bike Customization Shop,Retail,Congo,Prior Customer,R100 Bike,Racing
+13009,Feb-18,Electra Bike Shop,Wholesale,Congo,Current Customer,R200 Bike 4s,Racing
+1577,Apr-18,Flow Rides ,Retail,Congo,Prospect,R200 Bike 4s,Racing
+4779,Jul-18,High Quality Cycles,Retail,Congo,Prospect,M525 Bike,Mountain
+3331,Nov-17,IntelligentBikes,Direct,Congo,Prior Customer,eBike E148,Mountain
+3968,Aug-19,Prototype Bicycles,Direct,Congo,Current Customer,C990 Bike,Racing
+5546,Apr-19,Rides Stuff,Direct,Congo,Prior Customer,R200 Bike 4s,Racing
+4897,Jun-19,Shift Tandem,Wholesale,Congo,Current Customer,R100 Bike,Racing
+1244,Mar-19,Statement Cycles PM,Retail,Congo,Prospect,C950 Bike,Mountain
+11898,Oct-17,Tandem Terrain,Wholesale,Congo,Current Customer,C950 Bike,Mountain
+9098,Mar-18,Zoom Zoom Zoom,Wholesale,Congo,Current Customer,C900 Bike,Mountain
+1804,May-19,Countdown Speed,Retail,Cook Islands,Current Customer,R200 Bike 4s,Racing
+6174,Jun-18,Cycle Bazaar ,Wholesale,Cook Islands,Prior Customer,R300 Bike,Racing
+6978,May-19,RaceCar Wheels ,Wholesale,Cook Islands,Current Customer,eBike E148,Mountain
+1318,Jun-18,Regency Rides ,Retail,Cook Islands,Prior Customer,R200 Bike 4s,Racing
+6753,Oct-18,BluePlanet Cyclist ,Direct,Costa Rica,Prior Customer,M525 Bike,Mountain
+7511,May-18,Dario Luiso ,Direct,Costa Rica,Prior Customer,M550 Bike,Mountain
+5549,Dec-18,Fortune Rides ,Direct,Costa Rica,Current Customer,R100 Bike,Racing
+2198,Nov-18,Gratuitous Rides,Retail,Costa Rica,Prospect,R200 Bike 4s,Racing
+9201,May-18,Off-Roaders,Direct,Costa Rica,Prior Customer,C990 Bike,Racing
+3337,Jul-18,Rides General,Retail,Costa Rica,Prospect,C950 Bike,Mountain
+2232,Mar-19,SilverStar Wheels ,Direct,Costa Rica,Current Customer,M550 Bike,Mountain
+648,Apr-18,Sports Bear,Direct,Costa Rica,Prior Customer,C990 Bike,Racing
+1833,Feb-18,Wheel Town ,Wholesale,Costa Rica,Prospect,R300 Bike,Racing
+11314,Aug-18,Centurion Cycle,Wholesale,Croatia,Current Customer,C950 Bike,Mountain
+953,Feb-18,Cycle Sheet ,Wholesale,Croatia,Current Customer,C900 Bike,Mountain
+4911,Nov-17,Epiphany Cycle ,Direct,Croatia,Prior Customer,M550 Bike,Mountain
+889,Aug-19,Perform Speed,Wholesale,Croatia,Current Customer,M550 Bike,Mountain
+3185,Aug-19,Rides Video,Retail,Croatia,Prospect,C900 Bike,Mountain
+505,May-18,Riding Nerdy,Retail,Croatia,Prospect,R100 Bike,Racing
+5279,Oct-18,Wynd,Direct,Croatia,Prior Customer,eBike E148,Mountain
+3665,Mar-19,Butterfly Sports,Retail,Cuba,Prospect,C950 Bike,Mountain
+3757,Sep-19,Overseas Wheels ,Direct,Cuba,Prospect,eBike E148,Mountain
+304,Aug-18,WildWolf Rides,Direct,Cuba,Prior Customer,C990 Bike,Racing
+4346,Dec-17,Allegro Rides,Wholesale,Cyprus,Prospect,R100 Bike,Racing
+3188,Sep-19,Creekside Bicycles,Retail,Cyprus,Prospect,M525 Bike,Mountain
+2835,Feb-19,Iron Rod Bicycles ED,Direct,Cyprus,Prior Customer,C900 Bike,Mountain
+6662,Jan-19,Rans Cycle Company,Direct,Cyprus,Prior Customer,C950 Bike,Mountain
+1535,May-18,TestDrive Cyclist ,Retail,Cyprus,Current Customer,M550 Bike,Mountain
+2545,Sep-18,Adrenaline Rush RE,Direct,Czech Republic,Prior Customer,M525 Bike,Mountain
+1344,Aug-18,BlackHills Cycle ,Wholesale,Czech Republic,Current Customer,M550 Bike,Mountain
+5045,Dec-17,Component Speed,Wholesale,Czech Republic,Current Customer,R300 Bike,Racing
+5483,Feb-18,Cycling Enthusiasts,Wholesale,Czech Republic,Prior Customer,C900 Bike,Mountain
+657,Sep-19,Cyclist Title ,Direct,Czech Republic,Prior Customer,C990 Bike,Racing
+560,Dec-17,Evolved Cycle,Retail,Czech Republic,Prior Customer,M550 Bike,Mountain
+3562,Feb-18,Gazelle Tandem,Direct,Czech Republic,Prospect,C990 Bike,Racing
+4125,Dec-18,Impress Wheels ,Direct,Czech Republic,Prospect,C990 Bike,Racing
+8071,Sep-18,Little Bicycles,Retail,Czech Republic,Prospect,eBike E148,Mountain
+4756,Jan-19,Nguyen Wheel Company,Retail,Czech Republic,Prospect,C990 Bike,Racing
+4042,May-18,NorthField Wheels ,Retail,Czech Republic,Prospect,R200 Bike 4s,Racing
+5086,Jun-19,Rides Block ,Wholesale,Czech Republic,Prospect,R300 Bike,Racing
+3846,Aug-19,Rides Divine,Direct,Czech Republic,Prior Customer,R200 Bike 4s,Racing
+1373,Feb-18,Robin Hood Bikes,Retail,Czech Republic,Prospect,M550 Bike,Mountain
+446,Sep-18,South Cycle Customization Shop,Direct,Czech Republic,Prior Customer,eBike E148,Mountain
+3046,Jul-18,Wheel Power BN,Retail,Czech Republic,Prospect,C900 Bike,Mountain
+11432,Jun-18,Affinity Rides ,Wholesale,Denmark,Prospect,eBike E148,Mountain
+293,May-18,BadA Rides,Retail,Denmark,Prospect,C990 Bike,Racing
+5355,Sep-18,BadBoy Cycle   ,Wholesale,Denmark,Prior Customer,R300 Bike,Racing
+22,Jun-18,Bike Whisperer DC,Direct,Denmark,Prior Customer,M550 Bike,Mountain
+3909,Apr-18,Bikings,Retail,Denmark,Prior Customer,C990 Bike,Racing
+3176,Mar-19,Burst Cyclist ,Direct,Denmark,Prior Customer,M550 Bike,Mountain
+1657,Apr-18,Camelot Sports AB,Retail,Denmark,Prospect,R100 Bike,Racing
+4204,May-18,Checkpoints,Retail,Denmark,Prospect,M550 Bike,Mountain
+583,Jan-19,Engage Rides ,Direct,Denmark,Current Customer,M550 Bike,Mountain
+2652,Feb-19,Gyrus,Direct,Denmark,Current Customer,M525 Bike,Mountain
+5305,Jan-18,Industrial Cycle,Retail,Denmark,Current Customer,M550 Bike,Mountain
+7263,Dec-17,Last Lap,Retail,Denmark,Current Customer,R200 Bike 4s,Racing
+8727,Jul-18,Last Mile,Wholesale,Denmark,Current Customer,C990 Bike,Racing
+7921,Sep-18,Movement Bikes,Direct,Denmark,Prospect,C950 Bike,Mountain
+1004,Jan-18,NewLook Cycle ,Retail,Denmark,Prior Customer,M550 Bike,Mountain
+12756,Feb-19,Overseas Rides ,Direct,Denmark,Current Customer,eBike E148,Mountain
+2604,Aug-19,Paradiso Fitness Studio,Retail,Denmark,Prospect,M525 Bike,Mountain
+464,Apr-19,Portside,Direct,Denmark,Prior Customer,R100 Bike,Racing
+1579,Jul-19,Rides Victory,Retail,Denmark,Prospect,C900 Bike,Mountain
+6716,Jun-19,Sports Hub,Direct,Denmark,Current Customer,C950 Bike,Mountain
+395,Nov-17,Tallyhassy Wheel Company,Direct,Denmark,Prior Customer,C950 Bike,Mountain
+2727,Nov-17,Triathalon Store,Retail,Denmark,Prospect,R100 Bike,Racing
+13172,May-19,Tribe Rides,Wholesale,Denmark,Prior Customer,eBike E148,Mountain
+2567,Apr-18,Vivian Bicycles,Wholesale,Denmark,Prior Customer,M550 Bike,Mountain
+5911,Apr-18,WNS Bicycles,Direct,Denmark,Prior Customer,R200 Bike 4s,Racing
+3905,Nov-18,West Cycle Cuztomization Shop,Direct,Denmark,Current Customer,R100 Bike,Racing
+189,Sep-19,WildWest Rides,Retail,Denmark,Prospect,R100 Bike,Racing
+3774,Apr-18,Your Local Bike Shop CL,Direct,Denmark,Prior Customer,R200 Bike 4s,Racing
+3943,Dec-18,BadBoy Rides ,Direct,Djibouti,Prior Customer,C990 Bike,Racing
+932,Jan-19,Bikepacking,Retail,Djibouti,Current Customer,M550 Bike,Mountain
+2537,Feb-18,LastMinute Ride,Direct,Djibouti,Prior Customer,eBike E148,Mountain
+1028,Dec-17,Mystic Bikes SF,Retail,Djibouti,Current Customer,M550 Bike,Mountain
+3825,Nov-18,Trip Rides ,Direct,Djibouti,Prior Customer,R200 Bike 4s,Racing
+2169,Feb-19,Vortex Cycle SB,Wholesale,Djibouti,Prospect,C900 Bike,Mountain
+8902,May-18,Chaos Rides,Direct,Dominican Republic,Prior Customer,C900 Bike,Mountain
+3896,Aug-19,Fast Pass,Direct,Dominican Republic,Prior Customer,C900 Bike,Mountain
+791,Jan-19,Pluto Rides,Wholesale,Dominican Republic,Current Customer,C900 Bike,Mountain
+9652,Feb-19,Sapient Wheels ,Wholesale,Dominican Republic,Current Customer,M525 Bike,Mountain
+3754,Apr-18,Yosemite Rides NY,Retail,Dominican Republic,Prospect,R100 Bike,Racing
+7215,Oct-17,Allister-Jones Shop,Direct,Ecuador,Current Customer,M525 Bike,Mountain
+5618,Feb-18,Exceed Rides ,Retail,Ecuador,Prior Customer,eBike E148,Mountain
+13954,Dec-18,Iron Rod Bicycles LB,Wholesale,Ecuador,Prospect,eBike E148,Mountain
+1388,Oct-17,Rides Precision ,Wholesale,Ecuador,Current Customer,R300 Bike,Racing
+7248,Jun-19,Rockstar Rides ,Wholesale,Ecuador,Current Customer,R300 Bike,Racing
+4003,May-18,Thames Speed,Direct,Ecuador,Current Customer,eBike E148,Mountain
+8238,Jan-18,All Season Rides,Direct,Egypt,Prior Customer,R100 Bike,Racing
+5612,Jul-18,Bikes Collections ,Wholesale,Egypt,Prior Customer,R300 Bike,Racing
+18,Jan-18,Cranbrook Cycle Studio,Direct,Egypt,Prospect,C900 Bike,Mountain
+2515,Apr-19,Cycle Spaces ,Retail,Egypt,Current Customer,eBike E148,Mountain
+16025,Dec-17,Invest Bicycles,Wholesale,Egypt,Current Customer,C990 Bike,Racing
+706,Aug-19,Natsume,Retail,Egypt,Current Customer,M550 Bike,Mountain
+2027,Nov-17,Range Ride,Retail,Egypt,Prospect,R200 Bike 4s,Racing
+4601,Oct-17,Ride4Ride,Direct,Egypt,Prior Customer,M525 Bike,Mountain
+2578,Dec-18,Ten Speed,Direct,Egypt,Prospect,C990 Bike,Racing
+2994,Jan-19,Wally's Bikes,Wholesale,Egypt,Current Customer,R300 Bike,Racing
+1554,Aug-19,Bike Bazaar,Retail,El Salvador,Prior Customer,C900 Bike,Mountain
+2761,Dec-17,Canadian Maple Bikes,Wholesale,El Salvador,Prior Customer,R300 Bike,Racing
+5742,Sep-18,Cyclist Card ,Direct,El Salvador,Prior Customer,C990 Bike,Racing
+2879,Feb-19,Growing Rides ,Retail,El Salvador,Prospect,M550 Bike,Mountain
+6303,Jan-18,Milestones,Wholesale,El Salvador,Prospect,C990 Bike,Racing
+2436,Jul-18,Pavlov Wheel Company,Direct,El Salvador,Prior Customer,M525 Bike,Mountain
+5974,Apr-19,Rides Buys,Direct,El Salvador,Prior Customer,R200 Bike 4s,Racing
+3195,Sep-19,Sports Essence,Retail,El Salvador,Prior Customer,R200 Bike 4s,Racing
+8502,Apr-19,Vendi Vidi Vici Bike Shop,Direct,El Salvador,Prior Customer,C990 Bike,Racing
+869,Aug-18,World Sports DS,Retail,El Salvador,Prior Customer,C900 Bike,Mountain
+18,Jun-19,Cycle Guru,Retail,Equatorial Guinea,Prospect,R100 Bike,Racing
+6436,Jun-18,Ellington Group,Retail,Equatorial Guinea,Current Customer,eBike E148,Mountain
+3534,Oct-17,Equi Champion,Direct,Equatorial Guinea,Prospect,R200 Bike 4s,Racing
+297,Aug-18,Reserve Rides ,Wholesale,Equatorial Guinea,Prospect,R200 Bike 4s,Racing
+3013,Feb-18,Rides Tax,Direct,Equatorial Guinea,Prior Customer,M550 Bike,Mountain
+3358,May-19,Righteous Rides,Retail,Equatorial Guinea,Prior Customer,C990 Bike,Racing
+1732,May-18,Bayside Design,Retail,Eritrea,Prior Customer,R200 Bike 4s,Racing
+1936,Aug-18,Cycle Junkie ,Retail,Eritrea,Prospect,C900 Bike,Mountain
+3753,Jun-18,Ebony Cycle ,Retail,Eritrea,Prior Customer,M550 Bike,Mountain
+2179,May-19,Enlightened Bicycles,Retail,Eritrea,Current Customer,R100 Bike,Racing
+10657,Jan-19,Harry's Handlebars,Wholesale,Eritrea,Current Customer,C990 Bike,Racing
+4201,Oct-18,Legends Wheels ,Direct,Eritrea,Prior Customer,M550 Bike,Mountain
+7633,Jan-19,Retina Speed,Direct,Eritrea,Prior Customer,R100 Bike,Racing
+4765,Sep-18,Ride Ship,Direct,Eritrea,Prior Customer,C950 Bike,Mountain
+4452,Dec-18,Rides Specials ,Wholesale,Eritrea,Current Customer,C950 Bike,Mountain
+2834,Nov-18,Rides Zilla,Direct,Eritrea,Prior Customer,R200 Bike 4s,Racing
+6582,Sep-19,Sports Soup,Direct,Eritrea,Prior Customer,R100 Bike,Racing
+4368,Dec-18,TrueLife Cyclist ,Retail,Eritrea,Prospect,M525 Bike,Mountain
+7425,Sep-18,Bike Extraordinaire,Wholesale,Estonia,Current Customer,M525 Bike,Mountain
+3286,Jul-18,Epiphany Tandem,Retail,Estonia,Prior Customer,C990 Bike,Racing
+3193,Apr-18,Gladitator Bike Shop,Retail,Estonia,Prospect,M550 Bike,Mountain
+1791,Jun-19,Rides Pal,Retail,Estonia,Prospect,M525 Bike,Mountain
+317,Feb-19,Riding Phase,Retail,Estonia,Prospect,M550 Bike,Mountain
+6099,Dec-17,Speed Info,Direct,Estonia,Prior Customer,R200 Bike 4s,Racing
+15048,Mar-18,Bicycles Cloud,Wholesale,Ethiopia,Prospect,eBike E148,Mountain
+1622,Aug-18,Bicycles Trip,Retail,Ethiopia,Prior Customer,M525 Bike,Mountain
+6599,May-18,Cycle Rule ,Wholesale,Ethiopia,Current Customer,C990 Bike,Racing
+1763,Jul-18,LSD Trips,Wholesale,Ethiopia,Current Customer,M550 Bike,Mountain
+9363,Feb-18,Match Cycle   ,Wholesale,Ethiopia,Current Customer,C900 Bike,Mountain
+3868,Mar-18,Ride Links,Retail,Ethiopia,Prospect,R200 Bike 4s,Racing
+6225,Dec-17,Urban Planet Bikes,Wholesale,Ethiopia,Prospect,R300 Bike,Racing
+5186,Nov-18,Ardent Rides,Direct,Falkland Islands (Malvinas),Prior Customer,eBike E148,Mountain
+2839,Dec-18,BrickHouse Tandem,Direct,Falkland Islands (Malvinas),Prior Customer,R100 Bike,Racing
+535,Dec-18,Charten & Co.,Retail,Falkland Islands (Malvinas),Current Customer,C990 Bike,Racing
+3213,Mar-19,Cycle Ball,Retail,Falkland Islands (Malvinas),Prior Customer,M525 Bike,Mountain
+2271,Feb-18,Intuitive Cyclist ,Direct,Falkland Islands (Malvinas),Prospect,C900 Bike,Mountain
+2877,Jul-18,James & Dave's Bike Shop,Retail,Falkland Islands (Malvinas),Prospect,M525 Bike,Mountain
+4386,Aug-18,Joy Rides,Direct,Falkland Islands (Malvinas),Prior Customer,R100 Bike,Racing
+2449,Jul-19,Orange Bikes,Retail,Falkland Islands (Malvinas),Prospect,M525 Bike,Mountain
+10985,Feb-18,Pop Cycle,Wholesale,Falkland Islands (Malvinas),Current Customer,R100 Bike,Racing
+5686,Dec-17,Theory Wheels ,Retail,Falkland Islands (Malvinas),Prior Customer,M550 Bike,Mountain
+1151,Mar-18,Tiptop Cyclist,Wholesale,Falkland Islands (Malvinas),Current Customer,C990 Bike,Racing
+5896,Mar-19,Wheels Kit ,Direct,Falkland Islands (Malvinas),Current Customer,R100 Bike,Racing
+408,Apr-18,Yosemite Rides TR,Direct,Falkland Islands (Malvinas),Prospect,R200 Bike 4s,Racing
+3901,Mar-18,Beater Bikes BC,Retail,Faroe Islands,Prospect,M525 Bike,Mountain
+2162,Mar-18,Bike Zone,Retail,Faroe Islands,Prospect,C900 Bike,Mountain
+5166,Sep-19,BrightStar Speed,Direct,Faroe Islands,Current Customer,C950 Bike,Mountain
+1552,Feb-18,Envision Cycle ,Retail,Faroe Islands,Current Customer,M550 Bike,Mountain
+6839,Jun-19,Finesse Wheels,Wholesale,Faroe Islands,Prior Customer,M525 Bike,Mountain
+1826,Dec-18,Glide Rides,Direct,Faroe Islands,Prior Customer,R100 Bike,Racing
+3472,Nov-17,Liberty Rides ,Retail,Faroe Islands,Prospect,M550 Bike,Mountain
+2261,Mar-19,Mystic Bikes KT,Retail,Faroe Islands,Prior Customer,M525 Bike,Mountain
+157,Oct-17,Orient Cycles,Retail,Faroe Islands,Prospect,M550 Bike,Mountain
+5378,Jul-18,Ridgeway Vehicles,Wholesale,Faroe Islands,Prospect,C950 Bike,Mountain
+3606,Apr-18,Scorpio Rides VA,Wholesale,Faroe Islands,Prospect,R100 Bike,Racing
+1272,Jul-18,Speed Rewards,Retail,Faroe Islands,Current Customer,M550 Bike,Mountain
+4157,Jan-19,Sports Control,Direct,Faroe Islands,Prior Customer,C900 Bike,Mountain
+4594,Oct-18,Twilight Rides AE,Retail,Faroe Islands,Prospect,M550 Bike,Mountain
+3033,Jul-18,Twilight Rides BC,Retail,Faroe Islands,Prior Customer,R200 Bike 4s,Racing
+2691,Feb-19,Wheels Maven ,Wholesale,Faroe Islands,Prospect,C990 Bike,Racing
+3739,Feb-18,Analytical Cycle ,Retail,Fiji,Prior Customer,C990 Bike,Racing
+3819,Jan-18,Choose Speed,Direct,Fiji,Prior Customer,R100 Bike,Racing
+4076,Jun-19,Cyclist Technologies ,Retail,Fiji,Prospect,C900 Bike,Mountain
+5627,Jul-18,GoBiking,Wholesale,Fiji,Current Customer,R300 Bike,Racing
+14133,Nov-18,Island Speed,Wholesale,Fiji,Prospect,eBike E148,Mountain
+8809,Apr-19,Precious Speed,Direct,Fiji,Prospect,eBike E148,Mountain
+4638,Nov-18,Rides Director ,Direct,Fiji,Current Customer,R100 Bike,Racing
+6548,Jul-19,Speedsters,Direct,Fiji,Prior Customer,C900 Bike,Mountain
+4543,Jul-18,The Lincoln Studio,Wholesale,Fiji,Prior Customer,R300 Bike,Racing
+3814,Aug-18,Your Local Bike Shop MC,Direct,Fiji,Prospect,C900 Bike,Mountain
+4508,Jun-19,Betty's Better Rides,Direct,Finland,Prior Customer,R100 Bike,Racing
+9504,Feb-18,Blackbird Cycle DL,Direct,Finland,Prior Customer,eBike E148,Mountain
+4658,Apr-19,Blackbird Cycle ON,Direct,Finland,Prior Customer,C950 Bike,Mountain
+4654,Aug-19,Brown Bikes ,Retail,Finland,Prospect,C950 Bike,Mountain
+5308,Aug-18,Doomsday Bikes ,Retail,Finland,Prospect,R200 Bike 4s,Racing
+12223,Aug-18,Hard Pulls,Wholesale,Finland,Current Customer,R300 Bike,Racing
+3014,Aug-18,NewWave Bik,Wholesale,Finland,Prospect,M525 Bike,Mountain
+3906,Jul-19,Otter Bikes,Direct,Finland,Prior Customer,C990 Bike,Racing
+16108,Jul-19,Pursuit Wheels ,Wholesale,Finland,Current Customer,M525 Bike,Mountain
+2821,Feb-19,Rides Organizer ,Wholesale,Finland,Prospect,C990 Bike,Racing
+3473,Aug-18,Sports School,Retail,Finland,Current Customer,C950 Bike,Mountain
+6834,May-18,Swipe Rides,Retail,Finland,Prospect,C950 Bike,Mountain
+6054,May-19,Tycoon Cycle ,Direct,Finland,Prior Customer,C900 Bike,Mountain
+5087,Jun-19,Westside Tandem,Wholesale,Finland,Prospect,R300 Bike,Racing
+6778,Dec-18,Wheel Depot MX,Direct,Finland,Current Customer,M550 Bike,Mountain
+4395,Mar-18,Wheels Options ,Direct,Finland,Current Customer,M525 Bike,Mountain
+15568,Apr-19,Bike Traders,Wholesale,France,Current Customer,C990 Bike,Racing
+19916,Oct-17,Blackbird Cycle PJ,Wholesale,France,Current Customer,M525 Bike,Mountain
+12883,Nov-17,Camelot Sports PN,Retail,France,Prospect,eBike E148,Mountain
+11608,Oct-18,Eagle Eye Rides ,Wholesale,France,Current Customer,R300 Bike,Racing
+12746,Aug-18,Finance Speed,Wholesale,France,Current Customer,R300 Bike,Racing
+11128,Feb-19,Maverick Sports,Retail,France,Current Customer,R100 Bike,Racing
+8729,Feb-19,Patriotic Cycle ,Retail,France,Prospect,eBike E148,Mountain
+20719,Apr-19,Relief Rides,Direct,France,Prospect,eBike E148,Mountain
+18124,Dec-17,Rides Booster ,Wholesale,France,Current Customer,M525 Bike,Mountain
+10689,Apr-18,Workforce Rides ,Wholesale,France,Current Customer,C950 Bike,Mountain
+4596,Nov-18,Add More Rides,Direct,French Guiana,Prior Customer,C990 Bike,Racing
+2283,Dec-18,Bicycles Ease,Direct,French Guiana,Prospect,M550 Bike,Mountain
+4384,Oct-17,Creative Cyclist ,Direct,French Guiana,Prior Customer,M550 Bike,Mountain
+4395,Jun-19,Human Cogs,Direct,French Guiana,Prior Customer,eBike E148,Mountain
+1293,Nov-18,Macerana Bike Shop,Wholesale,French Guiana,Current Customer,R300 Bike,Racing
+1938,Jun-19,Range Tandem,Wholesale,French Guiana,Prospect,R300 Bike,Racing
+3927,Feb-19,Underground Rides NY,Retail,French Guiana,Prior Customer,C950 Bike,Mountain
+7118,Sep-18,Cyclist Keeper ,Wholesale,French Polynesia,Prior Customer,eBike E148,Mountain
+4315,Mar-19,Growth Sports,Retail,French Polynesia,Prior Customer,M525 Bike,Mountain
+4666,Sep-19,Horizon Cyclist ,Direct,French Polynesia,Current Customer,C950 Bike,Mountain
+3026,Apr-19,Nice Rides ,Retail,French Polynesia,Prospect,C900 Bike,Mountain
+10467,Aug-18,Rides Collective ,Wholesale,French Polynesia,Current Customer,R200 Bike 4s,Racing
+6188,Sep-19,Sports Express,Retail,French Polynesia,Prospect,R100 Bike,Racing
+523,Mar-19,Studio Eight,Direct,French Polynesia,Prior Customer,R200 Bike 4s,Racing
+2592,Jul-19,Wheel Depot QV,Retail,French Polynesia,Prospect,C990 Bike,Racing
+12512,Jan-19,Agile Sports ,Wholesale,French Southern Territories,Current Customer,R300 Bike,Racing
+7852,Nov-18,Carrie Red Bike Shop,Direct,French Southern Territories,Prior Customer,eBike E148,Mountain
+9611,Jul-18,Peleton,Direct,French Southern Territories,Prior Customer,eBike E148,Mountain
+12913,Jul-18,Tandem Channels,Retail,French Southern Territories,Current Customer,C950 Bike,Mountain
+14533,Jul-19,World Sports QB,Wholesale,French Southern Territories,Current Customer,C900 Bike,Mountain
+2837,Jul-19,Beacon Cycle ,Direct,Gabon,Prior Customer,C990 Bike,Racing
+3199,Sep-18,Bike Whisperer QV,Direct,Gabon,Prospect,C950 Bike,Mountain
+3697,Jan-18,Cogz,Direct,Gabon,Prior Customer,C900 Bike,Mountain
+199,Mar-18,Cycle Logic ,Direct,Gabon,Prior Customer,C900 Bike,Mountain
+6493,Oct-18,Generation Bike,Direct,Gabon,Prior Customer,C950 Bike,Mountain
+2615,Feb-19,Liberation Sports,Direct,Gabon,Current Customer,eBike E148,Mountain
+2896,Jul-18,Mystic Bikes BC,Retail,Gabon,Prospect,M550 Bike,Mountain
+5484,Dec-18,Pronto Tandem,Retail,Gabon,Prior Customer,C950 Bike,Mountain
+9533,Jan-18,Revv ,Direct,Gabon,Current Customer,C990 Bike,Racing
+10591,Jul-18,Speed Client,Retail,Gabon,Prospect,eBike E148,Mountain
+1181,Oct-18,Twilight Rides AB,Retail,Gabon,Prior Customer,M550 Bike,Mountain
+2771,Jan-19,Vortex Cycle CL,Retail,Gabon,Prospect,C990 Bike,Racing
+9264,Oct-17,Zeus Bikes,Wholesale,Gabon,Current Customer,eBike E148,Mountain
+1633,Nov-18,Angel Bike Customization Shop,Retail,Gambia,Prospect,R200 Bike 4s,Racing
+3148,Jun-19,EasyCycles,Retail,Gambia,Current Customer,M550 Bike,Mountain
+2418,Jan-18,GroundTravellers,Direct,Gambia,Prior Customer,M550 Bike,Mountain
+2866,Apr-18,List Bicycles,Wholesale,Gambia,Current Customer,C990 Bike,Racing
+13176,Jul-18,Pavement,Wholesale,Gambia,Current Customer,C900 Bike,Mountain
+4646,Jan-19,Remedy Bicycles,Direct,Gambia,Prospect,C950 Bike,Mountain
+2049,Apr-19,Rides Smile ,Retail,Gambia,Prospect,R200 Bike 4s,Racing
+4679,Nov-17,Sports Craft,Retail,Gambia,Prospect,R100 Bike,Racing
+3033,Apr-19,The Ride Shop,Direct,Gambia,Prior Customer,eBike E148,Mountain
+5113,May-19,Two-Seaters,Direct,Gambia,Prior Customer,R200 Bike 4s,Racing
+5623,Apr-18,World Sports CU,Direct,Gambia,Prospect,C990 Bike,Racing
+957,Mar-18,Airborne Cycle Studio,Retail,Georgia,Prospect,C900 Bike,Mountain
+14808,Jun-18,Axion Tandem,Wholesale,Georgia,Current Customer,M525 Bike,Mountain
+6137,Sep-18,Bike Talk,Retail,Georgia,Current Customer,M525 Bike,Mountain
+3871,Jun-19,Camelot Sports MC,Retail,Georgia,Prospect,C950 Bike,Mountain
+9164,Mar-18,Cursoriam,Wholesale,Georgia,Prior Customer,R300 Bike,Racing
+475,Oct-17,Herculean Helmets,Wholesale,Georgia,Prospect,R300 Bike,Racing
+3835,Jun-19,Insta Bicycles,Retail,Georgia,Prospect,C900 Bike,Mountain
+4992,Jun-19,Lap Leader,Retail,Georgia,Prospect,eBike E148,Mountain
+3872,Sep-18,Motoshop SK,Direct,Georgia,Prior Customer,R200 Bike 4s,Racing
+1593,Oct-17,Redefine Wheels ,Retail,Georgia,Prior Customer,M550 Bike,Mountain
+3828,Jul-18,Statement Cycles BC,Wholesale,Georgia,Prior Customer,eBike E148,Mountain
+7107,Aug-18,Trail Blazer WA,Direct,Georgia,Prior Customer,eBike E148,Mountain
+4466,Feb-19,VIP Bikes,Retail,Georgia,Prospect,R200 Bike 4s,Racing
+16816,Mar-18,WolfPack Cycle SK,Wholesale,Georgia,Current Customer,C950 Bike,Mountain
+17547,Apr-18,Adrenaline Rush PM,Wholesale,Germany,Current Customer,C950 Bike,Mountain
+14328,Jan-19,Cycle Authority,Wholesale,Germany,Current Customer,C990 Bike,Racing
+18889,Jun-18,East Point Group,Wholesale,Germany,Current Customer,C990 Bike,Racing
+15894,Feb-18,Frequency Bicycles,Retail,Germany,Current Customer,R200 Bike 4s,Racing
+3843,Apr-19,GreenThumb Rides,Direct,Germany,Prior Customer,C950 Bike,Mountain
+5709,Aug-18,Imperium Cycle ,Direct,Germany,Prior Customer,M550 Bike,Mountain
+14693,Aug-19,Kindle Rides ,Wholesale,Germany,Current Customer,R100 Bike,Racing
+2648,Jul-19,Reflect Cycle,Retail,Germany,Prospect,C900 Bike,Mountain
+13665,May-18,Ride Quest,Wholesale,Germany,Current Customer,R100 Bike,Racing
+16758,Jun-19,Serious Cyclist ,Retail,Germany,Current Customer,R200 Bike 4s,Racing
+3758,Jan-18,Sports Consulting,Wholesale,Germany,Prior Customer,C990 Bike,Racing
+776,Oct-17,Swerve,Wholesale,Germany,Prospect,eBike E148,Mountain
+19592,Mar-18,The Wright Method,Wholesale,Germany,Current Customer,C950 Bike,Mountain
+18481,Jan-19,Vortex Cycle AR,Retail,Germany,Current Customer,R200 Bike 4s,Racing
+12515,Mar-19,Wheel Power SR,Wholesale,Germany,Current Customer,R100 Bike,Racing
+7301,Apr-19,Greenfield Speed,Direct,Ghana,Prior Customer,M525 Bike,Mountain
+3851,Jun-18,Sports Calculator,Direct,Ghana,Prior Customer,C950 Bike,Mountain
+9328,Dec-18,Bicycles Event,Wholesale,Gibraltar,Current Customer,R100 Bike,Racing
+15142,Aug-18,Cerulean Cycles,Wholesale,Gibraltar,Prospect,eBike E148,Mountain
+2768,Aug-18,Cyclist Learning ,Direct,Gibraltar,Prior Customer,C990 Bike,Racing
+3299,Jun-19,Family Sports,Direct,Gibraltar,Prospect,C900 Bike,Mountain
+2993,Jun-19,HighDesert Rides,Direct,Gibraltar,Prior Customer,C950 Bike,Mountain
+4839,Nov-18,Machineaux,Retail,Gibraltar,Prospect,C990 Bike,Racing
+2672,Nov-18,Perspective Bicycles,Retail,Gibraltar,Prospect,R200 Bike 4s,Racing
+2841,Apr-19,Research Wheels ,Wholesale,Gibraltar,Prior Customer,R300 Bike,Racing
+4778,Oct-18,Rides Commerce,Retail,Gibraltar,Prior Customer,M550 Bike,Mountain
+243,Dec-18,Saddle Up,Direct,Gibraltar,Prospect,eBike E148,Mountain
+3402,Jul-19,Statement Cycles WO,Wholesale,Gibraltar,Prior Customer,R300 Bike,Racing
+3666,Sep-18,X Chains,Direct,Gibraltar,Prior Customer,C900 Bike,Mountain
+5687,Jun-19,Concordia Sports,Direct,Greece,Prospect,C990 Bike,Racing
+4346,May-18,Crystal Wheels ,Wholesale,Greece,Prior Customer,M550 Bike,Mountain
+12749,Sep-18,Equity Rides,Wholesale,Greece,Current Customer,C950 Bike,Mountain
+4894,Mar-18,Quabiker,Retail,Greece,Prior Customer,C900 Bike,Mountain
+6829,Jun-18,Recharge Tandem,Direct,Greece,Prospect,C990 Bike,Racing
+2287,May-18,Riley Bicycle Works,Wholesale,Greece,Prior Customer,R300 Bike,Racing
+4856,Oct-17,Arc Cyclist ,Direct,Greenland,Prior Customer,C900 Bike,Mountain
+3238,Oct-18,Jenny's Tandem Bike Stop,Direct,Greenland,Prior Customer,M550 Bike,Mountain
+5504,Feb-18,Thunder Cycle ,Direct,Greenland,Prior Customer,C990 Bike,Racing
+2362,Mar-18,Bikes Tec ,Retail,Grenada,Prospect,R200 Bike 4s,Racing
+3156,Sep-19,Cycle Genius,Retail,Grenada,Prospect,R200 Bike 4s,Racing
+10887,Mar-18,GoldenRule Sports,Wholesale,Grenada,Current Customer,eBike E148,Mountain
+3179,Apr-19,Net Rides ,Direct,Grenada,Current Customer,C990 Bike,Racing
+3878,Nov-18,Reservation Speed,Direct,Grenada,Prior Customer,C950 Bike,Mountain
+342,Nov-18,Sphere Tandem,Wholesale,Grenada,Prospect,R300 Bike,Racing
+8765,Feb-18,Web Speed,Direct,Grenada,Prior Customer,C950 Bike,Mountain
+411,Jan-19,Cobra Wheel Company,Retail,Guadeloupe,Current Customer,M525 Bike,Mountain
+3717,Sep-18,Curon,Retail,Guadeloupe,Prospect,C900 Bike,Mountain
+16047,Jun-19,Promote Speed,Wholesale,Guadeloupe,Current Customer,C900 Bike,Mountain
+3422,Dec-18,Redefine Cycle,Retail,Guadeloupe,Prior Customer,R200 Bike 4s,Racing
+4332,Apr-18,Zenith Rides,Direct,Guadeloupe,Prior Customer,R100 Bike,Racing
+1487,Apr-19,Bentley Bike,Direct,Guam,Current Customer,C990 Bike,Racing
+536,Jun-19,Dynamo Bicycles,Direct,Guam,Current Customer,eBike E148,Mountain
+9875,Dec-17,High Tandem,Direct,Guam,Current Customer,R100 Bike,Racing
+3233,May-18,Link Bikes ,Direct,Guam,Prior Customer,C950 Bike,Mountain
+4936,Jan-19,Rides Request,Retail,Guam,Prospect,C900 Bike,Mountain
+8406,Jan-18,Statement Cycles RC,Wholesale,Guam,Prior Customer,R300 Bike,Racing
+1985,Nov-17,Twilight Rides SJ,Wholesale,Guam,Prospect,C900 Bike,Mountain
+15622,Oct-17,Bicycles Lift,Wholesale,Guatemala,Current Customer,C950 Bike,Mountain
+787,Jan-19,Cycle Source,Retail,Guatemala,Current Customer,M550 Bike,Mountain
+566,Jul-18,GreenMountain Rides ,Wholesale,Guatemala,Prior Customer,C900 Bike,Mountain
+1057,Aug-18,Majesty Cycle ,Retail,Guatemala,Prior Customer,C950 Bike,Mountain
+4155,Jan-19,Ride Wizard,Wholesale,Guatemala,Prior Customer,R300 Bike,Racing
+14,Dec-17,Sports Comparison,Retail,Guatemala,Prospect,R200 Bike 4s,Racing
+1405,Aug-19,Underground Rides YK,Wholesale,Guatemala,Current Customer,C900 Bike,Mountain
+116,Jun-18,Bicycles Season,Retail,Guinea,Prospect,C950 Bike,Mountain
+1326,Oct-18,Bradbury Bike Shop,Wholesale,Guinea,Current Customer,R200 Bike 4s,Racing
+4008,Apr-18,Candor Rides ,Direct,Guinea,Prior Customer,R200 Bike 4s,Racing
+1742,May-19,Cyclist Letter ,Retail,Guinea,Prior Customer,R100 Bike,Racing
+4161,Mar-19,Cyclist Lite ,Wholesale,Guinea,Prior Customer,R300 Bike,Racing
+3605,Nov-18,David & Thompson Wheel Company,Retail,Guinea,Prospect,C900 Bike,Mountain
+1846,Sep-19,Encore,Retail,Guinea,Prospect,C990 Bike,Racing
+4421,Oct-18,Galaxy Rides ,Direct,Guinea,Prior Customer,M550 Bike,Mountain
+3004,Jun-19,Marshall Speed,Direct,Guinea,Prior Customer,M550 Bike,Mountain
+11336,May-19,One Sports,Wholesale,Guinea,Current Customer,R100 Bike,Racing
+227,May-18,Pedal Back,Direct,Guinea,Prospect,M550 Bike,Mountain
+6977,May-19,Rides Creator ,Direct,Guinea,Prior Customer,C950 Bike,Mountain
+6736,Feb-19,Rides Goddess ,Wholesale,Guinea,Current Customer,eBike E148,Mountain
+4857,Sep-18,Rides Tours ,Direct,Guinea,Prospect,C990 Bike,Racing
+2703,Mar-18,Solaris Rides ,Retail,Guinea,Prospect,M550 Bike,Mountain
+8021,Feb-18,Uplift Cyclist ,Direct,Guinea,Prior Customer,eBike E148,Mountain
+1655,Jan-19,Wheels Client ,Retail,Guinea,Prior Customer,R200 Bike 4s,Racing
+6135,Jul-18,World Sports HA,Direct,Guinea,Prior Customer,C950 Bike,Mountain
+5,Mar-19,Agora Wheels WA,Direct,Guinea-bissau,Current Customer,R100 Bike,Racing
+8077,Jul-19,Cycle Rater,Wholesale,Guinea-bissau,Current Customer,R300 Bike,Racing
+6647,Oct-18,Grand Bikes Co.,Direct,Guinea-bissau,Prior Customer,C990 Bike,Racing
+9231,Jun-19,Inside Track,Wholesale,Guinea-bissau,Current Customer,eBike E148,Mountain
+4794,Apr-18,Ride for Life,Direct,Guinea-bissau,Prior Customer,R100 Bike,Racing
+2621,Aug-19,Spinner Shop,Wholesale,Guinea-bissau,Prospect,M550 Bike,Mountain
+2876,Nov-17,Tandem Red,Retail,Guinea-bissau,Prospect,M525 Bike,Mountain
+3977,Jan-18,Bicycles Check,Wholesale,Guyana,Prospect,R300 Bike,Racing
+3745,Mar-18,Bike Fixers,Direct,Guyana,Prior Customer,M525 Bike,Mountain
+3724,May-18,CycleStrong,Retail,Guyana,Prior Customer,C950 Bike,Mountain
+609,Feb-18,Cyclist Driven ,Retail,Guyana,Prior Customer,eBike E148,Mountain
+1824,Aug-18,Freerids,Retail,Guyana,Prior Customer,C990 Bike,Racing
+1349,Aug-18,Loyal Cyclist ,Retail,Guyana,Current Customer,M550 Bike,Mountain
+1826,Jan-19,Mitra Rides,Retail,Guyana,Current Customer,M550 Bike,Mountain
+6275,May-18,Rides Black,Direct,Guyana,Current Customer,eBike E148,Mountain
+2954,Jan-18,Rides Clone ,Retail,Guyana,Prospect,C900 Bike,Mountain
+15067,Jan-19,Skubikes,Wholesale,Guyana,Current Customer,C900 Bike,Mountain
+3569,Oct-18,Underground Rides AB,Wholesale,Guyana,Current Customer,R300 Bike,Racing
+5285,May-18,Venus Cycle LB,Retail,Guyana,Current Customer,C900 Bike,Mountain
+4266,Nov-17,Cooperative Wheels ,Direct,Haiti,Prior Customer,R200 Bike 4s,Racing
+8309,Jun-18,Core Ride,Direct,Haiti,Prior Customer,M525 Bike,Mountain
+2707,Jun-19,E bike 201,Retail,Haiti,Prospect,C950 Bike,Mountain
+3938,Sep-18,Fixer Upper,Retail,Haiti,Prior Customer,R100 Bike,Racing
+2542,Dec-18,Flash Cycle ,Direct,Haiti,Prior Customer,R100 Bike,Racing
+2625,Oct-18,Higher Rides ,Direct,Haiti,Current Customer,M525 Bike,Mountain
+3102,Jan-19,QUIK,Retail,Haiti,Prospect,R200 Bike 4s,Racing
+6057,Jun-19,QuikSports,Direct,Haiti,Prior Customer,R100 Bike,Racing
+3415,Apr-18,Rides Room,Wholesale,Haiti,Prior Customer,R300 Bike,Racing
+3427,Feb-19,Sell Cycle ,Direct,Haiti,Prior Customer,R200 Bike 4s,Racing
+5103,Aug-18,Senate Bikes ,Retail,Haiti,Prior Customer,R200 Bike 4s,Racing
+13535,Jan-19,Steep Jump,Wholesale,Haiti,Current Customer,R200 Bike 4s,Racing
+6877,Jan-19,AirTime,Direct,Heard Island and Mcdonald Islands,Prior Customer,M525 Bike,Mountain
+2088,Apr-18,Intuition Sports,Direct,Heard Island and Mcdonald Islands,Current Customer,C950 Bike,Mountain
+5466,Jul-18,Tandi-Bikes,Wholesale,Heard Island and Mcdonald Islands,Prior Customer,R300 Bike,Racing
+291,Jun-19,Bluebird Cycle ,Wholesale,Holy See (Vatican City State),Current Customer,M550 Bike,Mountain
+1134,May-19,K+L Bikes,Direct,Holy See (Vatican City State),Current Customer,M550 Bike,Mountain
+3275,Aug-18,Kappa Tandem,Retail,Holy See (Vatican City State),Prior Customer,eBike E148,Mountain
+314,Oct-18,Off Crank,Retail,Holy See (Vatican City State),Current Customer,M550 Bike,Mountain
+3974,Jan-19,Perfect Bicycles,Direct,Holy See (Vatican City State),Prior Customer,eBike E148,Mountain
+9203,Dec-17,Torrence Wheel Company,Direct,Holy See (Vatican City State),Prospect,R100 Bike,Racing
+13029,Dec-17,Wheel Power WB,Wholesale,Holy See (Vatican City State),Current Customer,C900 Bike,Mountain
+3386,May-19,Write Speed,Direct,Holy See (Vatican City State),Current Customer,M525 Bike,Mountain
+1757,May-18,Analytical Sports,Retail,Honduras,Prior Customer,M550 Bike,Mountain
+12456,Jun-19,BestOf Bikes ,Wholesale,Honduras,Current Customer,C900 Bike,Mountain
+4762,Mar-18,Corporation Cyclist ,Retail,Honduras,Prospect,C990 Bike,Racing
+14715,Apr-18,Cycle Gods,Wholesale,Honduras,Current Customer,R300 Bike,Racing
+5733,Mar-18,Cyclist Home ,Retail,Honduras,Prior Customer,M525 Bike,Mountain
+4314,Oct-17,Iverton,Wholesale,Honduras,Prospect,R300 Bike,Racing
+5005,Apr-18,Liquid Sports,Direct,Honduras,Prospect,M550 Bike,Mountain
+5455,Aug-18,Quill Cycle ,Direct,Honduras,Prior Customer,M525 Bike,Mountain
+15977,Apr-19,Reserve Cycle   ,Wholesale,Honduras,Prior Customer,eBike E148,Mountain
+3696,Jun-19,Rides Cobra,Wholesale,Honduras,Current Customer,M525 Bike,Mountain
+8761,Jun-19,The Ride Club,Wholesale,Honduras,Current Customer,M525 Bike,Mountain
+3186,Sep-18,Two by Two,Direct,Honduras,Prior Customer,eBike E148,Mountain
+11954,Apr-18,Aerys,Wholesale,Hong Kong,Prospect,eBike E148,Mountain
+16045,Nov-17,BlueMarble Speed,Wholesale,Hong Kong,Current Customer,C990 Bike,Racing
+465,Jun-18,Cycle Horizon ,Direct,Hong Kong,Prior Customer,R100 Bike,Racing
+572,Dec-17,FAST,Direct,Hong Kong,Prospect,R100 Bike,Racing
+6614,May-18,Glide On,Direct,Hong Kong,Prior Customer,C950 Bike,Mountain
+3653,Mar-19,Indoor Bike Shop,Direct,Hong Kong,Prospect,M550 Bike,Mountain
+2469,Nov-18,Official Bikes ,Direct,Hong Kong,Prior Customer,C990 Bike,Racing
+6643,Apr-19,Response Rides,Retail,Hong Kong,Current Customer,R200 Bike 4s,Racing
+11112,May-18,Sage Bicycles,Wholesale,Hong Kong,Current Customer,R300 Bike,Racing
+4505,Sep-19,Speed Red,Wholesale,Hong Kong,Prospect,R300 Bike,Racing
+2338,Apr-18,Tahini Mountain Bikes,Direct,Hong Kong,Current Customer,M525 Bike,Mountain
+5067,Jan-19,Wheel See ,Wholesale,Hong Kong,Current Customer,R300 Bike,Racing
+9174,Aug-18,Bicycles Ratings,Direct,Hungary,Prior Customer,R100 Bike,Racing
+4006,Dec-17,Blackbird Cycle LL,Retail,Hungary,Current Customer,M550 Bike,Mountain
+8674,Aug-19,Blink Bicycles,Wholesale,Hungary,Current Customer,R300 Bike,Racing
+3688,Jul-18,Cheapest Rides,Retail,Hungary,Prior Customer,M525 Bike,Mountain
+2338,Feb-18,Confidence Wheels ,Wholesale,Hungary,Prospect,eBike E148,Mountain
+4424,Nov-17,Fit Bikes ,Retail,Hungary,Prospect,M525 Bike,Mountain
+2019,Aug-19,Fletcher & Nye Cycles,Wholesale,Hungary,Prospect,R100 Bike,Racing
+2169,Apr-18,Market Cycle ,Retail,Hungary,Prospect,R100 Bike,Racing
+62,Aug-19,NextDoor Rides,Retail,Hungary,Current Customer,eBike E148,Mountain
+4413,Aug-19,Nuclear Sports,Direct,Hungary,Current Customer,R200 Bike 4s,Racing
+4922,Jul-18,Portal Rides ,Direct,Hungary,Prior Customer,C990 Bike,Racing
+4783,Dec-18,QualityBikes,Direct,Hungary,Current Customer,C950 Bike,Mountain
+7329,May-19,Selective Cycle ,Direct,Hungary,Prior Customer,C950 Bike,Mountain
+4615,Sep-18,Sequoia Sports,Direct,Hungary,Prior Customer,C950 Bike,Mountain
+5067,Jan-18,Uphill,Retail,Hungary,Prior Customer,R100 Bike,Racing
+4452,Jul-19,Wheel Depot AB,Direct,Hungary,Prior Customer,M550 Bike,Mountain
+8169,Nov-18,Wheel Power MS,Wholesale,Hungary,Current Customer,R200 Bike 4s,Racing
+2262,Feb-18,Your Local Bike Shop BC,Retail,Hungary,Current Customer,C950 Bike,Mountain
+3316,Dec-18,Agora Wheels PL,Wholesale,Iceland,Prior Customer,C950 Bike,Mountain
+8739,May-19,Almond Tandem,Retail,Iceland,Current Customer,R100 Bike,Racing
+11606,Apr-18,Camelot Sports MN,Wholesale,Iceland,Current Customer,C900 Bike,Mountain
+1331,Sep-19,Composite Sports,Retail,Iceland,Prior Customer,M550 Bike,Mountain
+4236,Oct-17,Curb Your Enthusiasm,Direct,Iceland,Prior Customer,R100 Bike,Racing
+3327,Jun-18,Entourage Cycle ,Direct,Iceland,Prior Customer,M525 Bike,Mountain
+10343,Nov-18,Ink Bikes ,Wholesale,Iceland,Prior Customer,R100 Bike,Racing
+5804,Aug-18,Pathfinder,Direct,Iceland,Prior Customer,C990 Bike,Racing
+6678,Jul-19,PushStrong,Wholesale,Iceland,Prior Customer,C900 Bike,Mountain
+1899,Nov-17,Red Bikes,Retail,Iceland,Prospect,R200 Bike 4s,Racing
+124,Jul-19,Rides Gems,Direct,Iceland,Prospect,M550 Bike,Mountain
+5163,Apr-19,Ridge Cycle,Direct,Iceland,Prospect,R100 Bike,Racing
+1388,Nov-17,Tandem Inside,Retail,Iceland,Current Customer,M550 Bike,Mountain
+4914,Apr-18,The Bike Life,Direct,Iceland,Prior Customer,C990 Bike,Racing
+3292,Oct-17,WolfPack Cycle YK,Direct,Iceland,Prior Customer,M550 Bike,Mountain
+18506,Mar-18,Beater Bikes OH,Wholesale,India,Prospect,eBike E148,Mountain
+16436,Jun-19,Cervill,Direct,India,Current Customer,eBike E148,Mountain
+1241,Aug-18,Contrast Cycle ,Wholesale,India,Current Customer,R100 Bike,Racing
+10646,Aug-19,Firehouse Speed,Wholesale,India,Current Customer,R300 Bike,Racing
+16171,Mar-18,Herman Wheel Company,Wholesale,India,Current Customer,M525 Bike,Mountain
+17888,Jun-18,Incentive Bicycles,Wholesale,India,Current Customer,C990 Bike,Racing
+3341,Mar-18,Pharos Cyclist ,Retail,India,Prospect,R100 Bike,Racing
+17489,Mar-19,Reinvented Rides ,Wholesale,India,Current Customer,C950 Bike,Mountain
+14165,Nov-17,SoarWheel,Wholesale,India,Current Customer,C950 Bike,Mountain
+4442,Jan-18,Xfactor,Direct,India,Current Customer,C990 Bike,Racing
+4625,Mar-19,Adrenaline Rush CO,Retail,Indonesia,Current Customer,R100 Bike,Racing
+38,Aug-19,Burnaby Bike Bar,Direct,Indonesia,Prior Customer,R100 Bike,Racing
+3878,Feb-18,Cyclist Properties ,Direct,Indonesia,Prior Customer,M550 Bike,Mountain
+5255,Jan-19,Distinctive Bikes ,Direct,Indonesia,Prior Customer,C900 Bike,Mountain
+7735,Nov-18,Epoch Bicycles,Direct,Indonesia,Prior Customer,R200 Bike 4s,Racing
+3966,Aug-18,Fastest Ride,Retail,Indonesia,Current Customer,R200 Bike 4s,Racing
+5626,Oct-18,Goodwin Rides ,Direct,Indonesia,Prior Customer,M550 Bike,Mountain
+9269,Sep-18,Immediate Bikes ,Direct,Indonesia,Prior Customer,eBike E148,Mountain
+501,Mar-19,Outreach Bicycles,Wholesale,Indonesia,Prospect,R100 Bike,Racing
+4443,May-19,Pelotop,Wholesale,Indonesia,Prospect,R300 Bike,Racing
+16821,Jan-19,Rides Deals ,Wholesale,Indonesia,Current Customer,C990 Bike,Racing
+10885,Sep-18,Rides Node ,Wholesale,Indonesia,Current Customer,R300 Bike,Racing
+4059,Feb-18,Right Rides,Retail,Indonesia,Prior Customer,M550 Bike,Mountain
+3448,Apr-18,Scarlet Ride,Direct,Indonesia,Prior Customer,R100 Bike,Racing
+4795,Oct-17,Spin Society,Direct,Indonesia,Prior Customer,R100 Bike,Racing
+4535,Jul-19,Surf Rides,Retail,Indonesia,Prior Customer,M525 Bike,Mountain
+3243,Dec-18,Wheels Switch ,Direct,Indonesia,Prior Customer,M525 Bike,Mountain
+11392,Jun-18,World Sports SU,Wholesale,Indonesia,Current Customer,R300 Bike,Racing
+7186,Jul-18,Cycle Pick,Direct,Iran, Islamic Republic of,Prospect,C990 Bike,Racing
+1847,Feb-18,Ego Bikes,Wholesale,Iran, Islamic Republic of,Prospect,R300 Bike,Racing
+4143,Dec-18,Enhanced Bicycles,Wholesale,Iran, Islamic Republic of,Prior Customer,R200 Bike 4s,Racing
+2068,May-18,Ride Cycle Ggroup,Wholesale,Iran, Islamic Republic of,Prospect,R300 Bike,Racing
+6302,Jan-19,Rides Story,Wholesale,Iran, Islamic Republic of,Current Customer,R200 Bike 4s,Racing
+1724,Oct-17,Rides Watch ,Retail,Iran, Islamic Republic of,Current Customer,M550 Bike,Mountain
+2888,Apr-18,BigRed Bicycles,Direct,Iraq,Current Customer,C950 Bike,Mountain
+9038,Dec-18,BlackTie Bikes ,Direct,Iraq,Prior Customer,R100 Bike,Racing
+2971,Apr-19,Cool Girl Rides,Retail,Iraq,Prospect,M550 Bike,Mountain
+462,Sep-19,Cycle Score ,Direct,Iraq,Current Customer,R200 Bike 4s,Racing
+1449,Apr-18,GameFace,Retail,Iraq,Prospect,R100 Bike,Racing
+1783,Apr-19,Happy Guys Bike Shop,Wholesale,Iraq,Current Customer,M525 Bike,Mountain
+6611,Jan-18,Mecca,Retail,Iraq,Prospect,M550 Bike,Mountain
+3076,Jun-19,Quicksilver Cycle,Wholesale,Iraq,Current Customer,C900 Bike,Mountain
+13195,Mar-18,Ride Machine,Wholesale,Iraq,Current Customer,R300 Bike,Racing
+4228,Jul-19,Sonic Rides,Retail,Iraq,Prospect,C900 Bike,Mountain
+556,Jan-19,Sports Rain,Direct,Iraq,Prior Customer,C950 Bike,Mountain
+1664,Nov-17,Vapor Cyclist ,Retail,Iraq,Prospect,R100 Bike,Racing
+10407,Dec-17,Wheel Power KN,Wholesale,Iraq,Current Customer,C990 Bike,Racing
+49,May-19,Bike Curious,Direct,Ireland,Prior Customer,R200 Bike 4s,Racing
+4777,Dec-18,Bike Out,Direct,Ireland,Prior Customer,R200 Bike 4s,Racing
+13422,Aug-18,Bikes, Trikes, and More,Retail,Ireland,Prior Customer,eBike E148,Mountain
+4027,Feb-19,Commuter Bikes,Direct,Ireland,Prior Customer,C990 Bike,Racing
+1716,Jul-18,Guild Cycle ,Retail,Ireland,Prospect,C900 Bike,Mountain
+2871,Apr-18,Miracle Rides,Retail,Ireland,Prospect,C990 Bike,Racing
+3567,Oct-17,Motion Speed,Retail,Ireland,Prospect,R200 Bike 4s,Racing
+13867,Apr-18,New Cyclist ,Wholesale,Ireland,Prior Customer,eBike E148,Mountain
+9589,Sep-18,Proximity Wheels ,Direct,Ireland,Prior Customer,eBike E148,Mountain
+5255,Jan-18,Sports Hot,Direct,Ireland,Prior Customer,R200 Bike 4s,Racing
+1955,Oct-18,Venus Cycle BC,Retail,Ireland,Prospect,C990 Bike,Racing
+2781,Dec-18,Venus Cycle WS,Wholesale,Ireland,Prospect,R200 Bike 4s,Racing
+4369,Jul-18,Web Wheels ,Direct,Ireland,Current Customer,C990 Bike,Racing
+162,May-18,Beater Bikes NZ,Retail,Israel,Current Customer,M525 Bike,Mountain
+3712,Apr-18,Blackbird Cycle SU,Direct,Israel,Prior Customer,C950 Bike,Mountain
+2882,Apr-18,BrakeSteady,Direct,Israel,Prospect,C990 Bike,Racing
+2954,Sep-19,Lifestyle Tandem,Direct,Israel,Prior Customer,M550 Bike,Mountain
+5662,Jun-19,Nomad Rides ,Direct,Israel,Prior Customer,C990 Bike,Racing
+8483,Mar-19,OneWorld Co.,Wholesale,Israel,Current Customer,C950 Bike,Mountain
+1517,Feb-19,Twilight Rides MN,Retail,Israel,Prior Customer,C900 Bike,Mountain
+4828,May-18,Wheel Depot SR,Direct,Israel,Prior Customer,M525 Bike,Mountain
+3631,Jul-19,Wheels Crown ,Direct,Israel,Prospect,C950 Bike,Mountain
+12126,Mar-18,All American Bicycles,Wholesale,Italy,Current Customer,R100 Bike,Racing
+3738,Dec-18,Breeze Cyclist ,Retail,Italy,Prospect,R100 Bike,Racing
+7343,Nov-18,Commuter Rides,Wholesale,Italy,Current Customer,R300 Bike,Racing
+7694,Dec-18,Free Range,Retail,Italy,Prospect,eBike E148,Mountain
+2865,Aug-19,Gala-ta,Direct,Italy,Prior Customer,R100 Bike,Racing
+14046,Jan-18,Jupiter Rides ,Wholesale,Italy,Current Customer,C900 Bike,Mountain
+907,May-19,Opportunity Rides,Wholesale,Italy,Current Customer,R300 Bike,Racing
+15302,Jul-18,Rides Store,Direct,Italy,Prospect,eBike E148,Mountain
+2437,Dec-17,Skilled Rides ,Direct,Italy,Prior Customer,C990 Bike,Racing
+15825,Sep-18,Solace Tandem,Wholesale,Italy,Current Customer,C950 Bike,Mountain
+15699,Nov-18,Sundial Speed,Wholesale,Italy,Current Customer,C990 Bike,Racing
+11392,Feb-19,Wheels Images ,Wholesale,Italy,Prospect,eBike E148,Mountain
+5202,Sep-18,Helmet Head,Direct,Jamaica,Prior Customer,eBike E148,Mountain
+8896,Apr-19,Stallion Bicycles,Wholesale,Jamaica,Prospect,R300 Bike,Racing
+14013,Oct-17,Above Rides ,Wholesale,Japan,Prior Customer,eBike E148,Mountain
+10465,Dec-18,Avant Rides,Wholesale,Japan,Current Customer,R100 Bike,Racing
+1188,Jan-19,BikeNets ,Retail,Japan,Current Customer,M550 Bike,Mountain
+2068,Apr-18,Bikes Security ,Wholesale,Japan,Prospect,R300 Bike,Racing
+1687,Jul-18,Continuity Rides ,Retail,Japan,Prospect,R200 Bike 4s,Racing
+2357,Jun-19,Indy Cyclist ,Retail,Japan,Current Customer,R200 Bike 4s,Racing
+20078,Apr-19,Killarney Ride,Retail,Japan,Prospect,eBike E148,Mountain
+11342,Aug-19,Mini Einstein Bikes,Wholesale,Japan,Current Customer,R300 Bike,Racing
+2472,Mar-19,Mystic Bikes SD,Wholesale,Japan,Prior Customer,R300 Bike,Racing
+10322,Feb-19,N-ERGY,Wholesale,Japan,Current Customer,R300 Bike,Racing
+2581,Aug-19,PacificCoast Tandem,Wholesale,Japan,Prospect,R300 Bike,Racing
+5112,Feb-19,Quick Cycle ,Direct,Japan,Prospect,M525 Bike,Mountain
+2544,Aug-19,Reason Cyclist ,Direct,Japan,Prior Customer,M525 Bike,Mountain
+21606,Oct-18,Rides Advisor,Direct,Japan,Prospect,eBike E148,Mountain
+3352,Mar-19,Vortex Cycle QC,Direct,Japan,Prospect,M550 Bike,Mountain
+4599,Jan-18,Web Cycle ,Direct,Japan,Prior Customer,R200 Bike 4s,Racing
+1887,Jun-18,Cycle Out ,Direct,Jordan,Prior Customer,C950 Bike,Mountain
+606,Jul-18,HD Rides ,Direct,Jordan,Prior Customer,C900 Bike,Mountain
+2,Apr-18,Mystic Bikes OH,Retail,Jordan,Current Customer,R200 Bike 4s,Racing
+3087,Sep-18,Ride Anywhere,Wholesale,Jordan,Current Customer,R200 Bike 4s,Racing
+2078,Nov-17,Sports Wisdom,Direct,Jordan,Prior Customer,C900 Bike,Mountain
+2905,Dec-18,Vortex Cycle LB,Retail,Jordan,Prior Customer,C950 Bike,Mountain
+4921,Aug-19,Abaci Wheels,Wholesale,Kazakhstan,Prior Customer,eBike E148,Mountain
+2082,Dec-18,Always Wheels,Retail,Kazakhstan,Prior Customer,eBike E148,Mountain
+1572,May-18,Bicycle Soulmates,Retail,Kazakhstan,Current Customer,M550 Bike,Mountain
+8277,Jul-18,Camelot Sports PO,Wholesale,Kazakhstan,Current Customer,eBike E148,Mountain
+4119,Oct-17,Cyclist Markets ,Wholesale,Kazakhstan,Prior Customer,R300 Bike,Racing
+1094,Mar-19,Foresight Tandem,Retail,Kazakhstan,Current Customer,M550 Bike,Mountain
+2429,Jun-18,Little Wheels ,Direct,Kazakhstan,Prospect,C950 Bike,Mountain
+5042,Nov-18,Patriotic Speed,Retail,Kazakhstan,Prospect,eBike E148,Mountain
+4238,Nov-17,Rides Cure,Retail,Kazakhstan,Prior Customer,M550 Bike,Mountain
+4922,Jan-18,Siders,Direct,Kazakhstan,Prior Customer,R100 Bike,Racing
+6042,May-18,Structured Bikes ,Direct,Kazakhstan,Prior Customer,R200 Bike 4s,Racing
+1215,Mar-18,Ultimate Bicycles,Retail,Kazakhstan,Current Customer,M550 Bike,Mountain
+8265,Apr-18,Workforce Tandem,Wholesale,Kazakhstan,Prospect,R300 Bike,Racing
+4005,Jan-18,hop On Hop Off,Direct,Kazakhstan,Prior Customer,eBike E148,Mountain
+12714,Feb-18,Cycle Notes ,Wholesale,Kenya,Current Customer,R100 Bike,Racing
+343,Mar-19,RIDE,Retail,Kenya,Prospect,C990 Bike,Racing
+3225,Apr-18,Backseat Rider,Retail,Kiribati,Current Customer,C900 Bike,Mountain
+15488,Oct-18,Illuminate Tandem,Wholesale,Kiribati,Current Customer,C900 Bike,Mountain
+479,Mar-19,Larry Performance Designs,Retail,Kiribati,Prospect,R100 Bike,Racing
+1092,Dec-17,SunValley Speed,Retail,Kiribati,Current Customer,M550 Bike,Mountain
+4897,Nov-18,Transportation Extraordinaire,Retail,Kiribati,Prior Customer,M525 Bike,Mountain
+14036,Sep-19,Aslan's Pedals,Direct,Korea,Current Customer,eBike E148,Mountain
+2578,Dec-17,Bike Whisperer BC,Retail,Korea,Current Customer,R100 Bike,Racing
+4516,Feb-18,BikeMaster,Direct,Korea,Current Customer,C990 Bike,Racing
+3615,Mar-18,Circuitus,Direct,Korea,Prospect,M550 Bike,Mountain
+2753,Apr-18,Cycle Pals   ,Retail,Korea,Prospect,C990 Bike,Racing
+5627,Apr-18,Cycle Wizard,Retail,Korea,Prospect,R200 Bike 4s,Racing
+5568,Apr-18,Everest Bicycles,Retail,Korea,Prospect,R100 Bike,Racing
+12156,Mar-18,Helmetz,Wholesale,Korea,Current Customer,R100 Bike,Racing
+9153,Jan-18,Mountain Cycle ,Wholesale,Korea,Current Customer,C900 Bike,Mountain
+17922,Sep-18,Mystic Bikes RV,Wholesale,Korea,Current Customer,C900 Bike,Mountain
+4743,Jan-18,Northeast Cyclist ,Direct,Korea,Prior Customer,M550 Bike,Mountain
+5705,Oct-17,Pascal Cycle ,Direct,Korea,Prior Customer,R200 Bike 4s,Racing
+2002,Dec-18,Presence Wheels ,Wholesale,Korea,Prospect,R200 Bike 4s,Racing
+4206,Feb-19,Ride Connections,Wholesale,Korea,Prior Customer,C900 Bike,Mountain
+3573,Mar-18,Stardust Speed,Direct,Korea,Prior Customer,M550 Bike,Mountain
+5023,Oct-17,Strategy Ride,Direct,Korea,Prior Customer,M550 Bike,Mountain
+7386,Jun-19,Visionary Tandem,Wholesale,Korea,Prior Customer,R300 Bike,Racing
+2677,Mar-18,Vortex Cycle OP,Direct,Korea,Prior Customer,R200 Bike 4s,Racing
+1749,Sep-18,Your Sports,Retail,Korea,Prior Customer,R200 Bike 4s,Racing
+3121,Jan-19,Agora Wheels ON,Direct,Korea, Republic of,Prospect,M550 Bike,Mountain
+7766,Jul-18,BlackDog Sports,Direct,Korea, Republic of,Prior Customer,C990 Bike,Racing
+3056,Sep-18,Byte Sports,Direct,Korea, Republic of,Prospect,C900 Bike,Mountain
+3584,Jun-18,Generation B,Direct,Korea, Republic of,Prior Customer,C900 Bike,Mountain
+2273,May-19,Helio Cycle ,Retail,Korea, Republic of,Current Customer,C900 Bike,Mountain
+732,Apr-18,Initial Wheels ,Direct,Korea, Republic of,Prior Customer,M525 Bike,Mountain
+3293,Mar-18,PacificCoast Tandem,Direct,Korea, Republic of,Prior Customer,R200 Bike 4s,Racing
+7914,Feb-19,Speed Circle,Direct,Korea, Republic of,Prior Customer,R100 Bike,Racing
+1693,Dec-18,Sprocket,Direct,Korea, Republic of,Prior Customer,M550 Bike,Mountain
+139,Feb-19,Tandem Heart,Wholesale,Korea, Republic of,Current Customer,R100 Bike,Racing
+2158,May-18,Wheel Lovers,Wholesale,Korea, Republic of,Prospect,R300 Bike,Racing
+974,Aug-18,Windsor Wheels,Retail,Korea, Republic of,Prior Customer,C900 Bike,Mountain
+4303,May-19,Agora Wheels YK,Direct,Kuwait,Prior Customer,C900 Bike,Mountain
+12925,Feb-18,Bicycle Hot Spot,Wholesale,Kuwait,Current Customer,C950 Bike,Mountain
+10472,Dec-18,Bike Emporium,Wholesale,Kuwait,Current Customer,R100 Bike,Racing
+1389,Dec-18,Bike Whisperer DA,Retail,Kuwait,Prospect,M550 Bike,Mountain
+5676,Jul-18,Flight Rides ,Direct,Kuwait,Prior Customer,R200 Bike 4s,Racing
+548,Sep-18,Forrest Speed,Retail,Kuwait,Current Customer,M550 Bike,Mountain
+2938,Jan-19,Inside Wheels ,Retail,Kuwait,Prospect,C990 Bike,Racing
+322,Aug-19,Little Tykes Shop,Direct,Kuwait,Prior Customer,M525 Bike,Mountain
+1864,Oct-18,Movement,Retail,Kuwait,Current Customer,M550 Bike,Mountain
+7443,Mar-18,Silicon Wheels ,Direct,Kuwait,Prospect,C990 Bike,Racing
+3537,Oct-17,Skyline Cycle ,Direct,Kuwait,Prior Customer,eBike E148,Mountain
+625,Feb-19,Tandem Reference,Retail,Kuwait,Prospect,M550 Bike,Mountain
+2172,Oct-18,Uber Bikes ,Wholesale,Kuwait,Prior Customer,M550 Bike,Mountain
+3984,Jan-19,Venus Cycle HA,Retail,Kuwait,Current Customer,eBike E148,Mountain
+4668,Mar-18,Vitamin Wheels ,Direct,Kuwait,Prior Customer,M550 Bike,Mountain
+5602,Aug-18,Cluster Roll,Direct,Kyrgyzstan,Prior Customer,M525 Bike,Mountain
+382,Jan-19,Fortune Tandem,Direct,Kyrgyzstan,Prior Customer,M525 Bike,Mountain
+1759,Jul-18,High Voltage,Retail,Kyrgyzstan,Prospect,R100 Bike,Racing
+1094,Aug-18,Prominent Rides ,Retail,Kyrgyzstan,Current Customer,M550 Bike,Mountain
+559,Jan-18,Simplicity Rides,Direct,Kyrgyzstan,Prior Customer,eBike E148,Mountain
+698,Jun-19,Statement Cycles SD,Retail,Kyrgyzstan,Current Customer,M550 Bike,Mountain
+973,Mar-19,Zen Rides VD,Retail,Kyrgyzstan,Current Customer,M550 Bike,Mountain
+8815,Jan-19,Competitive Edge,Wholesale,Latvia,Current Customer,M550 Bike,Mountain
+2007,Jan-18,Concord Bikes ,Retail,Latvia,Prospect,M525 Bike,Mountain
+2526,Mar-18,Pursuit of Happiness,Direct,Latvia,Prior Customer,C990 Bike,Racing
+4432,Jun-18,Pyramid Bikes,Direct,Latvia,Prior Customer,C950 Bike,Mountain
+8213,Jun-19,Base Cycle   ,Wholesale,Lebanon,Current Customer,R100 Bike,Racing
+7835,Jun-19,Cycle Wholesale ,Direct,Lebanon,Prior Customer,eBike E148,Mountain
+1904,Mar-18,FunRides,Retail,Lebanon,Prospect,C900 Bike,Mountain
+1121,Nov-18,Lean Sports,Wholesale,Lebanon,Prospect,M550 Bike,Mountain
+7688,Mar-18,Rides Answers,Direct,Lebanon,Prior Customer,R200 Bike 4s,Racing
+8125,Apr-19,SOAR,Wholesale,Lebanon,Current Customer,C990 Bike,Racing
+13756,Jan-19,Sound Wheels ,Wholesale,Lebanon,Prospect,eBike E148,Mountain
+5277,Oct-18,TrueBlue Cycle ,Wholesale,Lebanon,Prior Customer,R300 Bike,Racing
+8875,Sep-19,All Star Scooters,Wholesale,Lesotho,Current Customer,C950 Bike,Mountain
+2229,Jul-18,Atlantic Cycle ,Retail,Lesotho,Prospect,M550 Bike,Mountain
+13446,Jan-18,Cyclist Track ,Wholesale,Lesotho,Current Customer,C950 Bike,Mountain
+1393,Nov-18,Emergent Cycle ,Wholesale,Lesotho,Prospect,R300 Bike,Racing
+2762,May-18,Iridium Cycle ,Wholesale,Lesotho,Current Customer,M550 Bike,Mountain
+7457,Jan-18,Kindle Rides,Direct,Lesotho,Prospect,eBike E148,Mountain
+4714,Oct-18,Rides Docs ,Retail,Lesotho,Prior Customer,R100 Bike,Racing
+6817,Mar-18,Rides Thunder ,Retail,Lesotho,Current Customer,eBike E148,Mountain
+3225,Dec-17,Terrace Wheels ,Direct,Lesotho,Current Customer,M550 Bike,Mountain
+10373,Apr-19,Bicycles Dog,Wholesale,Liberia,Current Customer,C950 Bike,Mountain
+5896,Jul-19,Bicycles Minds,Direct,Liberia,Current Customer,R200 Bike 4s,Racing
+5956,Apr-18,Bicycles Synergy,Direct,Liberia,Prior Customer,eBike E148,Mountain
+4899,Sep-19,Clark Cycles,Wholesale,Liberia,Prior Customer,R300 Bike,Racing
+1612,Apr-18,Cyclist Cart ,Retail,Liberia,Current Customer,M550 Bike,Mountain
+323,Mar-18,Gifted Bicycles,Direct,Liberia,Prior Customer,eBike E148,Mountain
+9017,Feb-19,Herculean Bikes,Wholesale,Liberia,Current Customer,M550 Bike,Mountain
+623,Apr-18,Luxury Cycle Shop,Direct,Liberia,Prior Customer,M550 Bike,Mountain
+1276,Mar-18,Manage Tandem,Retail,Liberia,Prior Customer,R200 Bike 4s,Racing
+6219,May-18,Masri Bicycles,Wholesale,Liberia,Prior Customer,R300 Bike,Racing
+7564,Oct-17,Rides Cart ,Direct,Liberia,Current Customer,R100 Bike,Racing
+173,May-18,Speed Energy,Retail,Liberia,Prospect,C950 Bike,Mountain
+1436,Mar-18,StarStart Inc.,Wholesale,Liberia,Prospect,R300 Bike,Racing
+7872,Apr-19,Underground Rides NL,Direct,Liberia,Prior Customer,R200 Bike 4s,Racing
+7659,Feb-19,Unique Cycle   ,Direct,Liberia,Prospect,M525 Bike,Mountain
+4874,Feb-19,Upward Bicycles,Wholesale,Liberia,Prospect,R300 Bike,Racing
+2448,Jul-19,Zen Rides BA,Direct,Liberia,Prospect,M550 Bike,Mountain
+813,Oct-18,Beater Bikes MS,Direct,Libyan Arab Jamahiriya,Prospect,R200 Bike 4s,Racing
+4051,Sep-19,JF Bikes,Direct,Libyan Arab Jamahiriya,Prior Customer,R200 Bike 4s,Racing
+5552,Apr-19,Lifestyle Rides,Direct,Libyan Arab Jamahiriya,Prospect,R200 Bike 4s,Racing
+265,Nov-18,Mystic Bikes MW,Retail,Libyan Arab Jamahiriya,Prospect,C950 Bike,Mountain
+376,Jul-18,Thunderbird Rides,Direct,Libyan Arab Jamahiriya,Prior Customer,eBike E148,Mountain
+3956,Apr-19,Blackbird Cycle MN,Direct,Liechtenstein,Current Customer,C990 Bike,Racing
+811,Jul-18,NextDoor Rides ,Direct,Liechtenstein,Current Customer,R100 Bike,Racing
+3159,Jan-19,Wheel Depot BC,Direct,Liechtenstein,Prospect,C990 Bike,Racing
+225,Jul-18,Derby Bikes,Retail,Lithuania,Prospect,M525 Bike,Mountain
+171,Sep-18,Rides Level ,Retail,Lithuania,Prospect,R100 Bike,Racing
+1651,Jan-19,Dunder & Mifflin,Retail,Luxembourg,Current Customer,M550 Bike,Mountain
+1582,Aug-19,Eddy-Davidson Cycles,Wholesale,Luxembourg,Current Customer,C990 Bike,Racing
+913,Oct-18,FAST PACE,Retail,Luxembourg,Current Customer,M550 Bike,Mountain
+6725,Feb-18,Rides Points ,Wholesale,Luxembourg,Prospect,R300 Bike,Racing
+5458,Feb-19,Rides Station ,Retail,Luxembourg,Prior Customer,C950 Bike,Mountain
+1269,Nov-18,Samano Cycles,Retail,Luxembourg,Prospect,M550 Bike,Mountain
+1525,Apr-19,Agora Wheels CD,Retail,Macao,Prospect,M550 Bike,Mountain
+7503,Jul-18,American Eagle Bikes,Direct,Macao,Prior Customer,C900 Bike,Mountain
+8482,Aug-19,Inform Speed,Wholesale,Macao,Current Customer,C900 Bike,Mountain
+355,Jan-19,Iron Rod Bicycles SF,Direct,Macao,Prior Customer,C900 Bike,Mountain
+5825,Aug-19,Optima Cycle ,Retail,Macao,Prospect,C990 Bike,Racing
+5217,Jun-18,Tandem Grace,Retail,Macao,Prospect,C990 Bike,Racing
+3387,Aug-18,The English Bike Company,Retail,Macao,Prospect,eBike E148,Mountain
+2587,Oct-18,Wheels Infinity ,Wholesale,Macao,Prospect,C950 Bike,Mountain
+13663,Apr-18,Adrenaline Rush AB,Wholesale,Macedonia,Current Customer,M525 Bike,Mountain
+123,Nov-18,Athlead,Retail,Macedonia,Prospect,M550 Bike,Mountain
+4426,Apr-19,Awesome Trikes,Wholesale,Macedonia,Current Customer,C990 Bike,Racing
+7352,May-19,Benjamin Wheel Company,Wholesale,Macedonia,Prospect,eBike E148,Mountain
+5293,Oct-18,Click Sports,Direct,Macedonia,Prior Customer,M550 Bike,Mountain
+509,Jul-19,Coastside,Retail,Macedonia,Prospect,eBike E148,Mountain
+4307,Oct-18,Cycle Experts ,Direct,Macedonia,Prior Customer,eBike E148,Mountain
+5144,Apr-19,Iconic Speed,Wholesale,Macedonia,Prior Customer,R300 Bike,Racing
+425,Jan-19,Kick Rides ,Retail,Macedonia,Prior Customer,R100 Bike,Racing
+7143,May-19,LA Wings,Wholesale,Macedonia,Prior Customer,R300 Bike,Racing
+8577,Nov-18,Limit Speed,Direct,Macedonia,Current Customer,C990 Bike,Racing
+2727,Nov-18,Probiking Group,Retail,Macedonia,Prior Customer,C900 Bike,Mountain
+8003,May-18,Promo Cycle ,Wholesale,Macedonia,Current Customer,C990 Bike,Racing
+3213,Nov-17,SunSeekers,Direct,Macedonia,Prior Customer,M550 Bike,Mountain
+441,Dec-18,Trading Bicycles,Direct,Macedonia,Prospect,R200 Bike 4s,Racing
+6438,Oct-18,Trail Blazer SD,Direct,Macedonia,Prior Customer,M525 Bike,Mountain
+3063,Oct-17,Twilight Rides SF,Wholesale,Macedonia,Prospect,R300 Bike,Racing
+259,Jan-19,Zen Rides SK,Retail,Macedonia,Prospect,C950 Bike,Mountain
+6207,Jul-18,Zen Rides WE,Direct,Macedonia,Prior Customer,M550 Bike,Mountain
+3788,Jun-18,Bing's Best Rides,Retail,Madagascar,Prospect,C990 Bike,Racing
+4175,Aug-18,Brunei Bikes,Wholesale,Madagascar,Prior Customer,R300 Bike,Racing
+2035,Nov-17,Camelot Sports BC,Retail,Madagascar,Prior Customer,C950 Bike,Mountain
+5603,Jul-19,Civic Bikes ,Direct,Madagascar,Prospect,R200 Bike 4s,Racing
+2494,Aug-18,NewStar,Retail,Madagascar,Prospect,C990 Bike,Racing
+2181,Feb-19,Our Bicycles,Retail,Madagascar,Current Customer,M550 Bike,Mountain
+3616,Aug-18,Parker Wheel Company,Retail,Madagascar,Prospect,M525 Bike,Mountain
+2981,Jan-18,President Rides,Retail,Madagascar,Current Customer,R200 Bike 4s,Racing
+6368,Jul-19,West Cycle Studio,Direct,Madagascar,Prior Customer,M525 Bike,Mountain
+2943,Jul-19,Wheels Personal ,Retail,Madagascar,Prior Customer,M525 Bike,Mountain
+10271,Dec-18,WolfPack Cycle LB,Wholesale,Madagascar,Current Customer,M525 Bike,Mountain
+8143,May-19,Youth Bicycles,Wholesale,Madagascar,Current Customer,M550 Bike,Mountain
+1524,Jul-18,Braid Bike Bar,Retail,Malawi,Prior Customer,M550 Bike,Mountain
+6333,Dec-17,Clearly Cyclist ,Retail,Malawi,Prospect,C900 Bike,Mountain
+3152,Jan-18,Construct Cyclist ,Wholesale,Malawi,Current Customer,R300 Bike,Racing
+2323,Dec-17,One Stop Cycle Shop,Direct,Malawi,Prior Customer,R200 Bike 4s,Racing
+7854,Jun-18,Wheels Consult ,Wholesale,Malawi,Current Customer,M550 Bike,Mountain
+44,Aug-19,Zen Rides LO,Direct,Malawi,Current Customer,R200 Bike 4s,Racing
+5071,Oct-18,Agora Wheels AB,Direct,Malaysia,Prior Customer,M550 Bike,Mountain
+4049,Mar-18,Bicycles Mark,Retail,Malaysia,Prospect,R100 Bike,Racing
+2538,Aug-18,Brainwave Rides ,Retail,Malaysia,Current Customer,R100 Bike,Racing
+561,Jan-18,Carnival Bikes ,Retail,Malaysia,Current Customer,R100 Bike,Racing
+4473,May-19,CentralPark Rides,Retail,Malaysia,Prior Customer,M525 Bike,Mountain
+14931,Sep-18,Exposed Wheels ,Wholesale,Malaysia,Current Customer,C950 Bike,Mountain
+5554,Oct-18,Floor It,Retail,Malaysia,Prospect,eBike E148,Mountain
+5457,Feb-18,Inferno Sports,Direct,Malaysia,Prior Customer,eBike E148,Mountain
+2131,Oct-18,Makenna Bikes,Direct,Malaysia,Prospect,M525 Bike,Mountain
+631,Sep-19,OneStop Speed,Direct,Malaysia,Prior Customer,M525 Bike,Mountain
+2673,Aug-18,Pedal Zone,Direct,Malaysia,Prior Customer,C990 Bike,Racing
+8524,Apr-18,Perception Cycle ,Wholesale,Malaysia,Prior Customer,R300 Bike,Racing
+8795,Mar-19,Rude Rides,Direct,Malaysia,Prior Customer,C950 Bike,Mountain
+6452,Jun-18,Sharp Rides,Wholesale,Malaysia,Current Customer,R100 Bike,Racing
+1389,Jul-18,Tandem Control,Retail,Malaysia,Prospect,M525 Bike,Mountain
+3664,Dec-18,Uniform Wheels ,Retail,Malaysia,Prospect,M550 Bike,Mountain
+4801,Jul-18,Wheels Craft ,Direct,Malaysia,Prior Customer,R200 Bike 4s,Racing
+834,Feb-18,World Sports ND,Wholesale,Malaysia,Current Customer,M525 Bike,Mountain
+2814,Feb-19,World Sports YK,Retail,Malaysia,Prospect,C990 Bike,Racing
+1997,Sep-19,Archer & Sterling Co.,Retail,Maldives,Prospect,M550 Bike,Mountain
+4067,Apr-18,Giuriato Performance Designs,Direct,Maldives,Prior Customer,R100 Bike,Racing
+5603,Aug-18,Joker Cycle ,Direct,Maldives,Current Customer,R200 Bike 4s,Racing
+1682,Oct-17,Speed Igniter,Retail,Maldives,Current Customer,M550 Bike,Mountain
+1267,May-19,Timber Bicycles,Retail,Maldives,Prior Customer,C950 Bike,Mountain
+4654,Mar-19,Awesome Speed,Retail,Mali,Prior Customer,C990 Bike,Racing
+7919,May-19,Composite Cycle,Direct,Mali,Prospect,M550 Bike,Mountain
+4414,Apr-18,Gifted Sports,Retail,Mali,Prior Customer,R200 Bike 4s,Racing
+1325,Feb-19,Kronos,Retail,Mali,Current Customer,R200 Bike 4s,Racing
+6544,Aug-19,Push Outdoor Biking,Wholesale,Mali,Current Customer,R200 Bike 4s,Racing
+4103,Jan-18,Speed Exchange,Direct,Mali,Current Customer,M550 Bike,Mountain
+12652,Jan-19,Trail Blazer SC,Wholesale,Mali,Current Customer,C950 Bike,Mountain
+3043,Feb-18,Bike Authority,Direct,Malta,Prior Customer,R200 Bike 4s,Racing
+4167,Nov-18,Carly's Cycles,Direct,Malta,Prior Customer,C900 Bike,Mountain
+4465,Aug-18,Chainring Tattoo,Direct,Malta,Prior Customer,R100 Bike,Racing
+2412,Jul-19,Discover Tandem,Direct,Malta,Prior Customer,M550 Bike,Mountain
+9976,Feb-19,Mikan,Direct,Malta,Current Customer,eBike E148,Mountain
+2696,Sep-18,Pedal to the Metal,Direct,Malta,Prior Customer,R100 Bike,Racing
+5229,Jun-19,Phoenix Bicycles,Wholesale,Malta,Current Customer,C990 Bike,Racing
+1905,Aug-18,Rides Meta ,Wholesale,Malta,Current Customer,M525 Bike,Mountain
+4175,May-19,Velocity Rides ,Direct,Malta,Prior Customer,M525 Bike,Mountain
+1295,Dec-17,xtraordinary Bikes,Wholesale,Malta,Current Customer,M550 Bike,Mountain
+8385,Nov-17,Evolve Wheel,Wholesale,Martinique,Current Customer,M550 Bike,Mountain
+4095,Oct-18,GreenLight Cycle ,Direct,Martinique,Prior Customer,C990 Bike,Racing
+6322,Jun-18,Old School Bikes,Direct,Martinique,Prior Customer,R100 Bike,Racing
+6274,Oct-18,Roadrunner Rides,Retail,Martinique,Prior Customer,R200 Bike 4s,Racing
+5698,Sep-19,Sports Channels,Direct,Martinique,Prior Customer,C990 Bike,Racing
+7135,Jun-18,4 Wheelers,Direct,Mauritania,Prior Customer,R200 Bike 4s,Racing
+12515,Dec-17,Adrenaline Rush VC,Direct,Mauritania,Current Customer,C990 Bike,Racing
+3996,Apr-19,Amazing Rides,Direct,Mauritania,Current Customer,R200 Bike 4s,Racing
+2859,Oct-17,Bicycles Consultancy,Direct,Mauritania,Current Customer,M550 Bike,Mountain
+1905,Apr-19,Blackbird Cycle SD,Retail,Mauritania,Prior Customer,R100 Bike,Racing
+2998,Apr-19,Cadence Cycles,Retail,Mauritania,Prior Customer,M550 Bike,Mountain
+1347,Dec-18,Holiday Rides ,Wholesale,Mauritania,Current Customer,M550 Bike,Mountain
+6614,May-19,In the Zone,Direct,Mauritania,Prior Customer,R200 Bike 4s,Racing
+2202,Nov-17,Iron Rod Bicycles SD,Retail,Mauritania,Prospect,R200 Bike 4s,Racing
+775,Sep-18,Lucora,Retail,Mauritania,Current Customer,M550 Bike,Mountain
+6388,Sep-18,NobleBikes,Direct,Mauritania,Current Customer,M550 Bike,Mountain
+3343,Jan-19,Page Rides,Retail,Mauritania,Prospect,R100 Bike,Racing
+1127,Nov-18,Streetwise Speed,Wholesale,Mauritania,Prospect,M550 Bike,Mountain
+1828,Oct-18,Syclist,Retail,Mauritania,Prior Customer,C950 Bike,Mountain
+1384,Jun-19,The Cycle Shop,Retail,Mauritania,Current Customer,M550 Bike,Mountain
+2295,Oct-17,Underground Rides JL,Retail,Mauritania,Current Customer,M550 Bike,Mountain
+9081,Dec-18,Vortex Cycle SK,Wholesale,Mauritania,Current Customer,C900 Bike,Mountain
+1946,Mar-18,Wheel Depot SA,Wholesale,Mauritania,Prospect,R300 Bike,Racing
+2565,Sep-19,Adrenaline Rush NY,Retail,Mauritius,Prospect,C950 Bike,Mountain
+5253,Oct-18,Airborne Cycle Studio WN,Direct,Mauritius,Prior Customer,C990 Bike,Racing
+4269,May-19,Bicycles Haven,Direct,Mauritius,Prior Customer,C950 Bike,Mountain
+3113,Jan-19,Bicycles Sys,Retail,Mauritius,Current Customer,eBike E148,Mountain
+2085,Jun-18,Cyclist Proxy ,Retail,Mauritius,Prospect,C950 Bike,Mountain
+5581,May-18,Drake,Direct,Mauritius,Prior Customer,M525 Bike,Mountain
+206,Feb-19,Escape Ride,Retail,Mauritius,Current Customer,C990 Bike,Racing
+5356,Jul-19,Magnificent Wheels ,Retail,Mauritius,Prospect,eBike E148,Mountain
+782,Sep-18,Master Rides ,Direct,Mauritius,Prior Customer,C990 Bike,Racing
+3907,Jun-18,Rides Delivery ,Retail,Mauritius,Prior Customer,C990 Bike,Racing
+196,Mar-18,Rides Pages,Direct,Mauritius,Prospect,C950 Bike,Mountain
+2949,Aug-18,Riley Sports Pacific,Direct,Mauritius,Prior Customer,M550 Bike,Mountain
+15438,Apr-19,Surrey Cycle Studio,Wholesale,Mauritius,Prospect,eBike E148,Mountain
+5649,Nov-18,Tandem United,Direct,Mauritius,Prospect,C990 Bike,Racing
+7085,Jul-18,Underground Rides SF,Direct,Mauritius,Prior Customer,M550 Bike,Mountain
+10002,Aug-19,Upward Sports,Wholesale,Mauritius,Current Customer,C990 Bike,Racing
+5037,Jul-19,Bike Cave,Direct,Mayotte,Prior Customer,C990 Bike,Racing
+5521,Jul-19,Champion Cyclists,Retail,Mayotte,Prospect,C990 Bike,Racing
+6748,Mar-19,Planet Y Bikes,Wholesale,Mayotte,Current Customer,eBike E148,Mountain
+2598,Mar-18,Venue Tandem,Direct,Mayotte,Prior Customer,C900 Bike,Mountain
+6995,Apr-19,Yosemite Rides BC,Wholesale,Mayotte,Prior Customer,C950 Bike,Mountain
+4962,Feb-19,Atlantassian Cycles,Wholesale,Mexico,Prior Customer,R300 Bike,Racing
+5145,Jun-18,Kickstand,Wholesale,Mexico,Prospect,R300 Bike,Racing
+4941,Apr-18,Traffic Ride,Wholesale,Mexico,Prior Customer,eBike E148,Mountain
+8617,Oct-18,Air Heir,Direct,Micronesia,Prior Customer,M525 Bike,Mountain
+4598,Jul-18,Bike Smart,Retail,Micronesia,Prior Customer,C950 Bike,Mountain
+2962,Aug-18,Dedicated Bikes ,Retail,Micronesia,Prospect,M550 Bike,Mountain
+2259,Feb-18,Drew's Cruises,Wholesale,Micronesia,Prospect,R100 Bike,Racing
+3734,Jul-18,Inspiring Cyclist ,Direct,Micronesia,Current Customer,M550 Bike,Mountain
+10319,Mar-19,Motoshop BC,Wholesale,Micronesia,Prior Customer,R300 Bike,Racing
+3329,Aug-18,Rides Guys ,Direct,Micronesia,Current Customer,M525 Bike,Mountain
+4479,Feb-19,Rides Party,Direct,Micronesia,Current Customer,C950 Bike,Mountain
+3213,Mar-18,Tandem Rings,Direct,Micronesia,Current Customer,M525 Bike,Mountain
+5688,May-19,Vertus Indoor Cycling,Wholesale,Micronesia,Prior Customer,C900 Bike,Mountain
+4561,Sep-19,Bike Whisperer AM,Retail,Moldova,Current Customer,eBike E148,Mountain
+3099,Sep-19,Canal Rides ,Direct,Moldova,Prior Customer,eBike E148,Mountain
+3034,Dec-17,Clear Route,Direct,Moldova,Prospect,M550 Bike,Mountain
+5959,May-18,Cycle Over,Wholesale,Moldova,Prospect,R100 Bike,Racing
+10715,Oct-18,Cyclist Shared ,Wholesale,Moldova,Current Customer,C950 Bike,Mountain
+8953,Feb-18,Guardrail Bikes,Direct,Moldova,Prior Customer,R100 Bike,Racing
+1597,Jul-18,Mount Baker Bicycles,Retail,Moldova,Prospect,R200 Bike 4s,Racing
+9371,Nov-18,Payne Bikes ,Wholesale,Moldova,Current Customer,C990 Bike,Racing
+3686,Apr-19,Primavera Bicycles,Retail,Moldova,Prior Customer,M525 Bike,Mountain
+2766,Jun-18,Ride Bag,Wholesale,Moldova,Prospect,R300 Bike,Racing
+5484,Feb-19,Rides Diary,Direct,Moldova,Prior Customer,M525 Bike,Mountain
+1676,Jun-18,Sports Helper,Retail,Moldova,Prospect,C900 Bike,Mountain
+5019,Nov-18,Visionary Bicycles,Direct,Moldova,Prior Customer,R100 Bike,Racing
+4676,Jan-19,World Sports FI,Wholesale,Moldova,Prospect,R100 Bike,Racing
+6385,Oct-17,Zen Rides GM,Direct,Moldova,Prior Customer,R200 Bike 4s,Racing
+1719,Jan-18,Bridgewater Rides,Retail,Monaco,Prospect,M525 Bike,Mountain
+1584,Oct-18,Orange Rides ,Retail,Monaco,Prior Customer,C900 Bike,Mountain
+8806,Oct-18,Wheels Land ,Retail,Monaco,Current Customer,C900 Bike,Mountain
+289,Apr-18,Cipher Speed,Retail,Mongolia,Prospect,R100 Bike,Racing
+2358,Aug-18,Cynthia's Shop,Retail,Mongolia,Prospect,M525 Bike,Mountain
+6773,Oct-17,Elite Rides,Wholesale,Mongolia,Current Customer,R300 Bike,Racing
+2945,Jul-19,Fountain Cyclist ,Wholesale,Mongolia,Current Customer,R300 Bike,Racing
+306,Apr-18,Genuine Tandem,Direct,Mongolia,Current Customer,eBike E148,Mountain
+11672,Nov-17,Premier Rides,Wholesale,Mongolia,Current Customer,R100 Bike,Racing
+4776,Jan-19,Rides First,Wholesale,Mongolia,Prospect,C990 Bike,Racing
+5802,Aug-19,Rides Tales,Direct,Mongolia,Prior Customer,M550 Bike,Mountain
+5953,Jul-19,Site Bikes ,Retail,Mongolia,Prospect,M550 Bike,Mountain
+9383,Apr-19,Speed Designing,Wholesale,Mongolia,Current Customer,M550 Bike,Mountain
+4066,Jan-19,Your Local Bike Shop TO,Direct,Mongolia,Prior Customer,eBike E148,Mountain
+3062,Nov-18,CircleShop,Retail,Montserrat,Current Customer,C950 Bike,Mountain
+3385,Jun-19,Commission Bicycles,Direct,Montserrat,Prior Customer,M550 Bike,Mountain
+2221,Jul-19,Premium Rides,Retail,Montserrat,Prospect,C950 Bike,Mountain
+13855,Jan-18,Providence Rides,Wholesale,Montserrat,Current Customer,M525 Bike,Mountain
+3184,Nov-17,Rides Aware,Direct,Montserrat,Prospect,R200 Bike 4s,Racing
+3356,May-18,Your Local Bike Shop VR,Retail,Montserrat,Current Customer,M550 Bike,Mountain
+454,Apr-18,Advance Sports,Wholesale,Morocco,Prospect,C950 Bike,Mountain
+1139,Jun-19,Bike Monday,Wholesale,Morocco,Current Customer,eBike E148,Mountain
+8284,Sep-18,Canyon Vast Bikes,Direct,Morocco,Current Customer,C950 Bike,Mountain
+11465,Jan-18,Final Lap,Wholesale,Morocco,Current Customer,R300 Bike,Racing
+10164,Mar-18,Morita,Direct,Morocco,Prior Customer,eBike E148,Mountain
+4117,Sep-19,Pedal For Me,Retail,Morocco,Prior Customer,R100 Bike,Racing
+7211,Feb-18,Scorpio Rides PM,Wholesale,Morocco,Current Customer,R300 Bike,Racing
+1035,Apr-19,Sylvan Cycle ,Retail,Morocco,Prospect,M550 Bike,Mountain
+7392,Apr-19,Venus Cycle TO,Wholesale,Morocco,Prior Customer,R300 Bike,Racing
+3489,Feb-18,World Sports LO,Direct,Morocco,Current Customer,M550 Bike,Mountain
+4033,Oct-17,Bike Source,Retail,Mozambique,Prior Customer,M525 Bike,Mountain
+2694,Jan-18,Bold Moves,Retail,Mozambique,Prospect,R100 Bike,Racing
+1538,Nov-18,Cycle Signs ,Wholesale,Mozambique,Prospect,C950 Bike,Mountain
+5048,Jul-18,Motoshop LB,Retail,Mozambique,Prospect,eBike E148,Mountain
+6064,Sep-18,Ride Verse,Wholesale,Mozambique,Prior Customer,R300 Bike,Racing
+17063,Jan-19,Verve Bikes ,Wholesale,Mozambique,Prior Customer,eBike E148,Mountain
+14849,Jul-18,Wheelies,Wholesale,Mozambique,Current Customer,M525 Bike,Mountain
+4237,Apr-19,AdonisTandem,Direct,Myanmar,Prior Customer,C950 Bike,Mountain
+2749,Apr-19,Bicycles Training,Retail,Myanmar,Current Customer,R200 Bike 4s,Racing
+4875,Sep-19,Every Rides ,Wholesale,Myanmar,Prior Customer,R300 Bike,Racing
+1132,Jun-18,Forecast Bikes ,Retail,Myanmar,Current Customer,R200 Bike 4s,Racing
+1754,May-18,Heaven Bikes ,Retail,Myanmar,Prior Customer,C900 Bike,Mountain
+9732,Jul-18,Hunter Bicycles,Wholesale,Myanmar,Current Customer,C950 Bike,Mountain
+3933,Oct-17,Rides Out,Direct,Myanmar,Current Customer,C900 Bike,Mountain
+12605,Sep-18,Riding Phase,Wholesale,Myanmar,Current Customer,R100 Bike,Racing
+4402,Mar-19,Road Rush,Direct,Myanmar,Current Customer,C990 Bike,Racing
+624,Feb-18,Shrek Cycles,Direct,Myanmar,Prior Customer,C950 Bike,Mountain
+3819,Dec-17,Sprint Cyclists,Wholesale,Myanmar,Prospect,R100 Bike,Racing
+10509,Jul-19,SunRay Bicycles,Wholesale,Myanmar,Current Customer,C900 Bike,Mountain
+2029,Nov-18,Urban Competitor ,Retail,Myanmar,Prospect,eBike E148,Mountain
+1725,Aug-18,APlus Wheels ,Retail,Namibia,Prospect,R200 Bike 4s,Racing
+4231,Aug-18,Cycle Anytime,Direct,Namibia,Prior Customer,eBike E148,Mountain
+1842,Jan-19,Jarvis Cyclist ,Retail,Namibia,Prospect,M550 Bike,Mountain
+3665,Dec-18,Kerb,Retail,Namibia,Prospect,R200 Bike 4s,Racing
+6564,Sep-19,Thermal Sports,Direct,Namibia,Prior Customer,C990 Bike,Racing
+336,Nov-17,Tour de World,Retail,Namibia,Prospect,R100 Bike,Racing
+4713,Mar-19,Beater Bikes PV,Retail,Nauru,Prospect,C990 Bike,Racing
+5685,Dec-17,Bikes Aero ,Direct,Nauru,Prospect,C900 Bike,Mountain
+24,Jun-18,Blizzard Cycle ,Retail,Nauru,Prospect,R100 Bike,Racing
+4269,Mar-18,Condor Cycle ,Direct,Nauru,Prior Customer,C950 Bike,Mountain
+187,Aug-18,CuttingEdge Ride,Retail,Nauru,Prospect,R200 Bike 4s,Racing
+3282,Mar-19,Cycle Forward,Retail,Nauru,Prospect,C990 Bike,Racing
+4131,Jun-18,Definitive Cycle ,Retail,Nauru,Current Customer,C950 Bike,Mountain
+4254,Mar-18,Forbidden Cycle ,Retail,Nauru,Prior Customer,C950 Bike,Mountain
+1279,Nov-17,Gere's Gears,Wholesale,Nauru,Current Customer,R300 Bike,Racing
+4197,Nov-17,Lifetime Wheels ,Retail,Nauru,Prospect,M550 Bike,Mountain
+8904,Sep-19,Namaste Wheels ,Direct,Nauru,Prior Customer,eBike E148,Mountain
+2419,May-19,OakTree Bikes ,Direct,Nauru,Prospect,M550 Bike,Mountain
+7244,Feb-19,Redeye Bicycles,Direct,Nauru,Prior Customer,C950 Bike,Mountain
+7632,Nov-17,Research Wheels ,Wholesale,Nauru,Current Customer,M550 Bike,Mountain
+6755,Sep-18,Rides HQ,Direct,Nauru,Prior Customer,M550 Bike,Mountain
+3184,Jan-18,Shopping Bicycles,Direct,Nauru,Prior Customer,C990 Bike,Racing
+5234,Dec-18,Speed Dish,Direct,Nauru,Prior Customer,R200 Bike 4s,Racing
+4046,Jun-19,Twilight Rides ON,Direct,Nauru,Prospect,C900 Bike,Mountain
+8147,Nov-18,Vortex Cycle WD,Retail,Nauru,Current Customer,C900 Bike,Mountain
+2447,Oct-18,Wheel Power ON,Retail,Nauru,Prospect,C990 Bike,Racing
+7732,Sep-19,Bike Master,Direct,Nepal,Prior Customer,C900 Bike,Mountain
+3163,Sep-19,Bike Whisperer MT,Direct,Nepal,Prior Customer,R100 Bike,Racing
+3266,Aug-18,Clever Cycle   ,Direct,Nepal,Prior Customer,eBike E148,Mountain
+1102,Apr-18,Moonlight Rides ,Direct,Nepal,Prospect,eBike E148,Mountain
+2222,Jun-19,Mulaney Wheel Company,Retail,Nepal,Current Customer,M550 Bike,Mountain
+8776,Jul-18,Venus Cycle SO,Direct,Nepal,Prior Customer,M525 Bike,Mountain
+2375,May-18,Zen Rides PM,Wholesale,Nepal,Prospect,eBike E148,Mountain
+14767,Jun-18,Commerce Tandem,Wholesale,Netherlands,Current Customer,C950 Bike,Mountain
+681,Apr-19,EastEnd Wheels ,Direct,Netherlands,Prior Customer,C900 Bike,Mountain
+4287,Apr-18,Fired Up Cycles,Retail,Netherlands,Prospect,R100 Bike,Racing
+11941,Sep-18,Match Bikes ,Wholesale,Netherlands,Current Customer,R100 Bike,Racing
+10932,Jul-18,Pathway Speed,Wholesale,Netherlands,Current Customer,R100 Bike,Racing
+16577,Nov-17,Report Rides ,Wholesale,Netherlands,Current Customer,M525 Bike,Mountain
+4057,Oct-18,Rides Signals,Direct,Netherlands,Current Customer,C950 Bike,Mountain
+2597,Apr-19,Sea Bike Bar,Direct,Netherlands,Current Customer,C900 Bike,Mountain
+14739,May-18,Trail Blazer SK,Wholesale,Netherlands,Current Customer,R300 Bike,Racing
+16298,May-19,Underground Rides LB,Retail,Netherlands,Current Customer,R200 Bike 4s,Racing
+3099,Apr-18,Agora Wheels RV,Retail,Netherlands Antilles,Prospect,C990 Bike,Racing
+433,Feb-18,Bicycles Call,Retail,Netherlands Antilles,Prospect,M525 Bike,Mountain
+4784,Jun-18,BluePlanet Bicycles,Direct,Netherlands Antilles,Prior Customer,M525 Bike,Mountain
+3401,Jan-19,Clincher Cycles,Retail,Netherlands Antilles,Current Customer,C990 Bike,Racing
+1509,Feb-19,Curious Cycles,Retail,Netherlands Antilles,Prospect,R100 Bike,Racing
+6145,May-19,Essential Bikes,Direct,Netherlands Antilles,Prior Customer,R100 Bike,Racing
+12784,Nov-17,Genial Rides ,Wholesale,Netherlands Antilles,Current Customer,C990 Bike,Racing
+2932,May-18,Good Cycle   ,Retail,Netherlands Antilles,Prospect,R100 Bike,Racing
+3206,Aug-19,Inner Bicycles,Direct,Netherlands Antilles,Current Customer,C990 Bike,Racing
+9282,Feb-19,Lookup Cycle ,Wholesale,Netherlands Antilles,Prior Customer,R100 Bike,Racing
+3275,Sep-18,Official Tandem Bike Store,Wholesale,Netherlands Antilles,Prospect,R100 Bike,Racing
+1086,May-19,Professional Speed,Wholesale,Netherlands Antilles,Prospect,M550 Bike,Mountain
+1242,Aug-19,RedDoor Wheels ,Wholesale,Netherlands Antilles,Prior Customer,R300 Bike,Racing
+3875,Jan-19,Risky the Bike Store,Retail,Netherlands Antilles,Prospect,M550 Bike,Mountain
+3588,Jan-19,Speed Cowboy,Direct,Netherlands Antilles,Prior Customer,R100 Bike,Racing
+4319,Jul-18,Spicy Bicycles,Direct,Netherlands Antilles,Prior Customer,C950 Bike,Mountain
+2944,Nov-18,Tandem Iron,Direct,Netherlands Antilles,Prior Customer,C950 Bike,Mountain
+2788,Mar-19,Underdog Sports,Direct,Netherlands Antilles,Prior Customer,M525 Bike,Mountain
+3631,Jan-19,Wheel Square,Direct,Netherlands Antilles,Current Customer,C990 Bike,Racing
+4719,Jan-18,Zen Rides SR,Retail,Netherlands Antilles,Current Customer,R100 Bike,Racing
+7108,Nov-17,Bicycles Personal,Direct,New Caledonia,Prior Customer,R100 Bike,Racing
+1547,May-18,Champion Essense,Wholesale,New Caledonia,Prospect,R300 Bike,Racing
+2116,Jun-18,Dynamo Cycle ,Retail,New Caledonia,Prospect,C950 Bike,Mountain
+7338,Feb-18,Goddess Bikes ,Direct,New Caledonia,Prior Customer,C900 Bike,Mountain
+2581,Oct-18,MarcoPolo Rides ,Retail,New Caledonia,Prospect,R200 Bike 4s,Racing
+2876,Aug-18,Plasma Bicycles,Direct,New Caledonia,Prior Customer,R100 Bike,Racing
+2328,Oct-18,Rides Response ,Direct,New Caledonia,Prior Customer,R200 Bike 4s,Racing
+2508,May-19,Rides Server,Retail,New Caledonia,Prospect,M525 Bike,Mountain
+9922,Apr-18,Speedway Tandem,Wholesale,New Caledonia,Current Customer,C990 Bike,Racing
+432,May-18,Upbeat Rides,Direct,New Caledonia,Prior Customer,R100 Bike,Racing
+725,Apr-18,Yosemite Rides CH,Retail,New Caledonia,Prospect,M550 Bike,Mountain
+3126,Oct-18,Adrenaline Rush DL,Wholesale,New Zealand,Current Customer,R300 Bike,Racing
+2221,Jul-19,All Seasons Cycle,Direct,New Zealand,Prior Customer,R100 Bike,Racing
+4819,Apr-18,Avo,Direct,New Zealand,Prior Customer,R100 Bike,Racing
+11946,Oct-17,Best Quality Bikes,Wholesale,New Zealand,Current Customer,R100 Bike,Racing
+15782,Nov-18,Blush Rides ,Wholesale,New Zealand,Current Customer,C900 Bike,Mountain
+2116,Feb-19,Converse Rides,Retail,New Zealand,Current Customer,R100 Bike,Racing
+8697,Aug-19,Executive Rides ,Wholesale,New Zealand,Current Customer,C900 Bike,Mountain
+9115,Sep-19,Gemini Wheels ,Wholesale,New Zealand,Current Customer,C950 Bike,Mountain
+19429,Nov-17,Immortal Rides,Wholesale,New Zealand,Current Customer,eBike E148,Mountain
+6826,Nov-17,Investment Rides,Retail,New Zealand,Current Customer,R200 Bike 4s,Racing
+15618,Jan-18,Kona,Wholesale,New Zealand,Current Customer,R200 Bike 4s,Racing
+7029,Oct-18,Quick Ride,Wholesale,New Zealand,Prior Customer,R300 Bike,Racing
+4838,Dec-17,Ronnie's Bike Stop,Direct,New Zealand,Prior Customer,C900 Bike,Mountain
+7485,Apr-18,Spartan Cycle   ,Wholesale,New Zealand,Current Customer,C990 Bike,Racing
+11612,Aug-18,Sports Sprint,Wholesale,New Zealand,Current Customer,R300 Bike,Racing
+16663,Jan-19,Statement Cycles OH,Wholesale,New Zealand,Prospect,eBike E148,Mountain
+3357,Mar-19,SurfSide Bikes,Retail,New Zealand,Current Customer,C990 Bike,Racing
+4932,Mar-18,TenLaps,Direct,New Zealand,Prior Customer,R100 Bike,Racing
+3888,Nov-18,Trail Blazer OH,Retail,New Zealand,Prospect,C900 Bike,Mountain
+496,Jan-18,Fast Cycle ,Direct,Nicaragua,Prior Customer,C990 Bike,Racing
+1073,May-19,Sage Rides,Retail,Nicaragua,Prospect,M550 Bike,Mountain
+12021,Oct-18,BRX,Wholesale,Niger,Current Customer,M525 Bike,Mountain
+2965,Sep-19,Beater Bikes VA,Retail,Niger,Prospect,C950 Bike,Mountain
+2337,Oct-17,Cheap Speed,Retail,Niger,Prospect,M525 Bike,Mountain
+3124,Sep-19,FrontRange Rides,Retail,Niger,Prospect,M550 Bike,Mountain
+7916,Feb-19,Liger,Wholesale,Niger,Current Customer,R100 Bike,Racing
+2114,Oct-18,Our Comminity Cycles,Retail,Niger,Prospect,C990 Bike,Racing
+3576,Jul-18,Portable Bicycles,Direct,Niger,Prior Customer,R200 Bike 4s,Racing
+7117,Jul-19,Slick,Direct,Niger,Prospect,C900 Bike,Mountain
+7619,May-18,Twilight Rides PR,Direct,Niger,Prior Customer,eBike E148,Mountain
+7211,May-19,Wheels Pride ,Direct,Niger,Prior Customer,C990 Bike,Racing
+263,Mar-18,Young Sports,Retail,Niger,Prospect,M550 Bike,Mountain
+1788,Dec-17,Alias Rides,Wholesale,Nigeria,Prospect,R300 Bike,Racing
+9588,Aug-18,Barney's Lucky Shop,Wholesale,Nigeria,Prior Customer,R300 Bike,Racing
+10655,Dec-18,Bullet Speed,Wholesale,Nigeria,Current Customer,eBike E148,Mountain
+945,Aug-18,Fierce Speed,Wholesale,Nigeria,Current Customer,R100 Bike,Racing
+7691,Feb-18,Guaranteed Tandem,Direct,Nigeria,Prior Customer,R100 Bike,Racing
+10291,Jun-18,Invention Cycle,Wholesale,Nigeria,Current Customer,M525 Bike,Mountain
+401,Feb-18,Latitude Tandem,Direct,Nigeria,Current Customer,R100 Bike,Racing
+9629,Jul-18,Outlaw Rides ,Wholesale,Nigeria,Current Customer,R100 Bike,Racing
+2317,Aug-19,Scorpio Rides NY,Retail,Nigeria,Prior Customer,M550 Bike,Mountain
+2062,Aug-18,Sports Flash,Retail,Nigeria,Prospect,R100 Bike,Racing
+1439,Jul-18,TRM Inc,Retail,Nigeria,Prospect,M550 Bike,Mountain
+3384,Mar-18,Team Speed,Retail,Nigeria,Prospect,R200 Bike 4s,Racing
+5211,Sep-19,Bikes Basics ,Direct,Niue,Prior Customer,C950 Bike,Mountain
+3103,Apr-19,Burning Quads,Direct,Niue,Prior Customer,R100 Bike,Racing
+1463,May-18,Capulet,Wholesale,Niue,Current Customer,C900 Bike,Mountain
+4645,Oct-17,Overland Rides,Retail,Niue,Prospect,C950 Bike,Mountain
+12407,Jun-18,Pedal Pusher,Wholesale,Niue,Current Customer,C990 Bike,Racing
+4325,Apr-19,Rides Exchange,Wholesale,Niue,Prospect,R300 Bike,Racing
+3984,Sep-18,SurfSide Cycle,Retail,Niue,Prior Customer,R100 Bike,Racing
+2145,Jul-19,Vortex Cycle WO,Retail,Niue,Prospect,C950 Bike,Mountain
+4879,Aug-18,Wild Cyclist ,Direct,Niue,Prior Customer,R100 Bike,Racing
+7482,May-18,Bik Ever,Direct,Norfolk Island,Current Customer,M525 Bike,Mountain
+3141,Sep-18,Blackjack Rides ,Retail,Norfolk Island,Prospect,M550 Bike,Mountain
+1673,Dec-17,Camelot Sports AD,Direct,Norfolk Island,Prior Customer,R100 Bike,Racing
+1356,Dec-18,Field Tandem,Retail,Norfolk Island,Current Customer,M550 Bike,Mountain
+16443,Apr-18,Fireside Speed,Wholesale,Norfolk Island,Current Customer,C990 Bike,Racing
+1746,Sep-19,Mercross,Retail,Norfolk Island,Prior Customer,R100 Bike,Racing
+315,Jan-19,NorthPoint Speed,Direct,Norfolk Island,Prior Customer,C900 Bike,Mountain
+14576,Mar-18,Pariders,Wholesale,Norfolk Island,Current Customer,C900 Bike,Mountain
+1472,Apr-19,Scorpio Rides DL,Retail,Norfolk Island,Prior Customer,R100 Bike,Racing
+5074,Jan-19,Sedona Rides,Retail,Norfolk Island,Prior Customer,M525 Bike,Mountain
+382,Oct-18,VDL Bikes,Retail,Norfolk Island,Prior Customer,C990 Bike,Racing
+4274,Jul-18,Wheel Power FE,Direct,Norfolk Island,Prior Customer,C900 Bike,Mountain
+1788,Jul-18,WolfPack Cycle AB,Wholesale,Norfolk Island,Prior Customer,R300 Bike,Racing
+5834,Apr-19,Advanced Wheels ,Wholesale,Northern Mariana Islands,Prior Customer,C950 Bike,Mountain
+2599,Oct-18,Arrow Cyclist ,Retail,Northern Mariana Islands,Prospect,C990 Bike,Racing
+13306,Jul-18,Asher Rides,Wholesale,Northern Mariana Islands,Prospect,eBike E148,Mountain
+3251,Aug-19,Jumper Cycles,Wholesale,Northern Mariana Islands,Prior Customer,R300 Bike,Racing
+2523,Jun-18,K5 Sports,Retail,Northern Mariana Islands,Current Customer,R200 Bike 4s,Racing
+7132,Feb-18,Syrel,Wholesale,Northern Mariana Islands,Current Customer,C900 Bike,Mountain
+816,Feb-18,Top Performers ,Wholesale,Northern Mariana Islands,Current Customer,M525 Bike,Mountain
+4453,Jun-18,Tornado Rides,Retail,Northern Mariana Islands,Prospect,R200 Bike 4s,Racing
+2288,Dec-17,Arcadia Tandem,Retail,Norway,Prospect,M525 Bike,Mountain
+3467,Jul-19,Booming Bike,Direct,Norway,Prior Customer,R200 Bike 4s,Racing
+5189,Oct-18,Diamond Speed,Wholesale,Norway,Prior Customer,R300 Bike,Racing
+17602,Jan-18,EastCoast Tandem,Retail,Norway,Current Customer,C900 Bike,Mountain
+4486,Mar-19,Electric Horse,Direct,Norway,Prior Customer,C990 Bike,Racing
+3561,May-19,Joint Cyclist ,Retail,Norway,Prospect,C950 Bike,Mountain
+5463,Apr-18,On Rides ,Direct,Norway,Prior Customer,C990 Bike,Racing
+9257,Dec-18,Rides Locator,Wholesale,Norway,Current Customer,C950 Bike,Mountain
+13212,Sep-19,Rides Shows,Wholesale,Norway,Current Customer,C990 Bike,Racing
+3473,Apr-19,Rides Supreme ,Retail,Norway,Prior Customer,R200 Bike 4s,Racing
+4522,Aug-18,Tight Grip,Retail,Norway,Prospect,R100 Bike,Racing
+12991,Mar-18,Wheels Bold ,Retail,Norway,Current Customer,R100 Bike,Racing
+6353,Oct-17,Air Rides,Direct,Oman,Prior Customer,C990 Bike,Racing
+8799,Jul-19,Clearly Rides,Retail,Oman,Prior Customer,C900 Bike,Mountain
+1404,May-18,Dominion Tandem,Retail,Oman,Prospect,C950 Bike,Mountain
+4781,Feb-19,Field Cyclist ,Direct,Oman,Prospect,R200 Bike 4s,Racing
+10410,Mar-18,Greatest Rides,Wholesale,Oman,Current Customer,C950 Bike,Mountain
+6417,Jun-18,Havanna Cycle Shop,Direct,Oman,Prior Customer,M525 Bike,Mountain
+6153,May-18,Insignia Wheel,Wholesale,Oman,Current Customer,R300 Bike,Racing
+6339,Jan-19,Inspiring Speed,Wholesale,Oman,Current Customer,M550 Bike,Mountain
+8772,Jul-18,Iron Rod Bicycles NL,Wholesale,Oman,Current Customer,eBike E148,Mountain
+15538,Feb-18,Privilege Rides ,Wholesale,Oman,Current Customer,R200 Bike 4s,Racing
+10362,May-19,Scorpio Rides BU,Direct,Oman,Prior Customer,eBike E148,Mountain
+6213,Nov-17,Sports Venture,Wholesale,Oman,Prior Customer,C990 Bike,Racing
+2071,Mar-19,Tandem Run,Retail,Oman,Prospect,R200 Bike 4s,Racing
+2573,Sep-18,The B Factor,Direct,Oman,Prior Customer,C900 Bike,Mountain
+4278,Aug-19,Zen Rides NJ,Direct,Oman,Current Customer,C990 Bike,Racing
+4351,Jul-19,4mation,Direct,Pakistan,Prior Customer,R200 Bike 4s,Racing
+6927,Jan-18,Advanced Sports,Wholesale,Pakistan,Current Customer,M550 Bike,Mountain
+3227,Sep-19,BlueGreen Rides ,Retail,Pakistan,Current Customer,C900 Bike,Mountain
+3171,Nov-18,Central Spokes,Wholesale,Pakistan,Prospect,C990 Bike,Racing
+13255,Nov-18,Cyclist Manage ,Wholesale,Pakistan,Current Customer,R100 Bike,Racing
+3479,Oct-17,Delta Cycle Studio,Direct,Pakistan,Current Customer,R100 Bike,Racing
+9404,Mar-18,Extra Rides ,Direct,Pakistan,Prospect,M550 Bike,Mountain
+15465,Jan-19,Harvest Rides ,Wholesale,Pakistan,Current Customer,M525 Bike,Mountain
+2161,Jul-19,Hometown Sports,Direct,Pakistan,Current Customer,R200 Bike 4s,Racing
+11329,Apr-19,Incredible Bicycles,Wholesale,Pakistan,Current Customer,eBike E148,Mountain
+4841,May-18,Official Bike Shop,Direct,Pakistan,Prior Customer,M550 Bike,Mountain
+3111,Aug-19,Pepper Wheels ,Direct,Pakistan,Current Customer,M525 Bike,Mountain
+4073,Aug-19,Rides Credit,Direct,Pakistan,Prior Customer,R200 Bike 4s,Racing
+8943,Sep-18,Rides Jet,Wholesale,Pakistan,Current Customer,R300 Bike,Racing
+5878,Nov-17,Ryde,Retail,Pakistan,Prospect,eBike E148,Mountain
+12296,Jun-19,Strong Finish,Wholesale,Pakistan,Current Customer,R100 Bike,Racing
+1789,May-19,Synapse,Retail,Pakistan,Prospect,C990 Bike,Racing
+1253,Apr-18,Wheel Season,Retail,Pakistan,Prospect,M550 Bike,Mountain
+786,Aug-19,World Sports WY,Retail,Pakistan,Prospect,M550 Bike,Mountain
+5172,May-19,Build Rides,Retail,Palau,Prior Customer,C950 Bike,Mountain
+2504,Feb-19,Camelot Sports AL,Wholesale,Palau,Prospect,eBike E148,Mountain
+3363,Sep-18,Civic Cycle,Retail,Palau,Prior Customer,C990 Bike,Racing
+5467,Jun-19,Cycle Fast,Direct,Palau,Prior Customer,R100 Bike,Racing
+5164,Aug-18,Cycle Master,Direct,Palau,Prospect,R200 Bike 4s,Racing
+4457,Jan-18,Koala Cycle ,Retail,Palau,Prospect,C990 Bike,Racing
+2701,Apr-18,Out Rides ,Retail,Palau,Prospect,R100 Bike,Racing
+2482,Aug-18,Park Riders,Retail,Palau,Current Customer,M550 Bike,Mountain
+8829,Apr-19,Presta,Wholesale,Palau,Prospect,R300 Bike,Racing
+9612,Dec-18,Request Tandem,Wholesale,Palau,Current Customer,M525 Bike,Mountain
+3114,Apr-18,Rich Bicycles,Direct,Palau,Prior Customer,C900 Bike,Mountain
+2067,Sep-19,Trail Blazer NE,Wholesale,Palau,Current Customer,R300 Bike,Racing
+2049,Jan-18,Wheels Professionals ,Direct,Palau,Prior Customer,M525 Bike,Mountain
+2486,Sep-18,WolfPack Cycle BC,Retail,Palau,Prior Customer,C990 Bike,Racing
+3988,Nov-18,Zap Tandem,Wholesale,Palau,Current Customer,R300 Bike,Racing
+2173,Jul-18,Bike Sense,Wholesale,Palestinian Territory, Occupied,Prior Customer,R300 Bike,Racing
+3103,May-19,BlackDog Rides ,Direct,Palestinian Territory, Occupied,Prior Customer,C900 Bike,Mountain
+9359,Jan-18,Champ Rides ,Direct,Palestinian Territory, Occupied,Prior Customer,C900 Bike,Mountain
+3868,Oct-18,Chau Performance Designs,Direct,Palestinian Territory, Occupied,Prior Customer,C950 Bike,Mountain
+2416,Apr-18,Dynamics Bicycles,Retail,Palestinian Territory, Occupied,Prospect,M550 Bike,Mountain
+725,Nov-18,NorthCoast Bicycles,Direct,Palestinian Territory, Occupied,Prior Customer,C950 Bike,Mountain
+3441,Feb-18,PlanB Rides,Wholesale,Palestinian Territory, Occupied,Prior Customer,R300 Bike,Racing
+4089,Oct-18,Pop Tate Tricycles,Wholesale,Palestinian Territory, Occupied,Prospect,R300 Bike,Racing
+3546,Aug-19,Rides Radar ,Retail,Palestinian Territory, Occupied,Prior Customer,M525 Bike,Mountain
+6833,Jan-19,Vertical Speed,Direct,Palestinian Territory, Occupied,Prior Customer,eBike E148,Mountain
+6061,Nov-17,Yosemite Rides AB,Direct,Palestinian Territory, Occupied,Prior Customer,M550 Bike,Mountain
+2307,Feb-18,Yosemite Rides YK,Retail,Palestinian Territory, Occupied,Prior Customer,C900 Bike,Mountain
+2346,Dec-17,2 Wheelers,Retail,Panama,Prior Customer,R100 Bike,Racing
+7921,Jun-18,Archer Rides,Retail,Panama,Prior Customer,R100 Bike,Racing
+1539,Sep-18,Ask Tandem,Retail,Panama,Prospect,C900 Bike,Mountain
+1731,Oct-18,Bicycles Paragon,Retail,Panama,Prospect,R200 Bike 4s,Racing
+14687,Apr-18,BigTime Wheels ,Wholesale,Panama,Current Customer,R100 Bike,Racing
+3592,Apr-19,Challenger Rides ,Retail,Panama,Current Customer,C950 Bike,Mountain
+4276,Feb-18,Charming Rides,Direct,Panama,Prior Customer,C900 Bike,Mountain
+3287,Aug-18,Collapsable Bikes,Retail,Panama,Current Customer,M550 Bike,Mountain
+3513,Feb-18,Formal Sports,Direct,Panama,Prior Customer,R100 Bike,Racing
+6893,Sep-18,Highpoint Tandem,Direct,Panama,Prior Customer,R200 Bike 4s,Racing
+9326,Jan-19,Jorce-bike,Direct,Panama,Prior Customer,M525 Bike,Mountain
+1612,Nov-17,Kangaroo Cycles,Retail,Panama,Prospect,C900 Bike,Mountain
+5654,May-18,MapleLeaf Rides,Wholesale,Panama,Prior Customer,R300 Bike,Racing
+18352,Apr-18,Media Tandem,Wholesale,Panama,Current Customer,C990 Bike,Racing
+187,Feb-19,Pinch Flat,Wholesale,Panama,Prior Customer,C950 Bike,Mountain
+9006,Nov-17,Pointer Cycle ,Direct,Panama,Prior Customer,C900 Bike,Mountain
+7575,Jan-19,Proto Rides ,Direct,Panama,Prior Customer,M550 Bike,Mountain
+5272,Nov-18,Silent Tandem,Direct,Panama,Prior Customer,C950 Bike,Mountain
+6418,Aug-18,Storbikes,Direct,Panama,Prior Customer,R100 Bike,Racing
+3516,Dec-17,Time Trials,Direct,Panama,Prospect,eBike E148,Mountain
+6768,Nov-17,Tornado Rides ,Direct,Panama,Current Customer,C950 Bike,Mountain
+1126,Apr-19,Unlimited Bikes ,Direct,Panama,Prior Customer,C900 Bike,Mountain
+4196,Dec-18,Variety Cycle ,Retail,Panama,Prospect,eBike E148,Mountain
+875,Jul-18,Yellow Cycle,Direct,Panama,Prior Customer,C900 Bike,Mountain
+2524,Jul-18,Yosemite Rides TO,Wholesale,Panama,Prior Customer,R300 Bike,Racing
+2825,Sep-19,4ce,Retail,Paraguay,Prospect,C950 Bike,Mountain
+10643,Dec-17,Accelerate Cycle,Wholesale,Paraguay,Current Customer,eBike E148,Mountain
+299,Nov-17,Bandit Cycle ,Wholesale,Paraguay,Prospect,R300 Bike,Racing
+444,Aug-18,Bicycles Cover,Direct,Paraguay,Current Customer,R100 Bike,Racing
+172,Jan-18,Bike Prodigy,Wholesale,Paraguay,Current Customer,M550 Bike,Mountain
+1815,Nov-18,Cycle Rider ,Retail,Paraguay,Current Customer,M550 Bike,Mountain
+7022,Jan-19,Cyclomaniac,Direct,Paraguay,Prior Customer,M550 Bike,Mountain
+68,Sep-18,Eagle Fly Bikes,Direct,Paraguay,Prior Customer,R100 Bike,Racing
+4621,Oct-18,HomeTeam Rides ,Direct,Paraguay,Current Customer,M525 Bike,Mountain
+1933,Nov-17,Host Speed,Retail,Paraguay,Prospect,C990 Bike,Racing
+8109,Jan-19,Latest Rides,Wholesale,Paraguay,Current Customer,R100 Bike,Racing
+5397,Jun-19,Lumen Rides,Wholesale,Paraguay,Prospect,eBike E148,Mountain
+8039,Mar-18,Motorstore BC,Direct,Paraguay,Prior Customer,C990 Bike,Racing
+5426,Aug-18,Ride Fortune,Retail,Paraguay,Prior Customer,C990 Bike,Racing
+827,Sep-19,Rides Essentials ,Wholesale,Paraguay,Prior Customer,R200 Bike 4s,Racing
+578,Apr-18,Rides Run,Direct,Paraguay,Prospect,C950 Bike,Mountain
+1409,Jan-18,Strictly Cyclist ,Wholesale,Paraguay,Current Customer,M550 Bike,Mountain
+3857,Nov-17,Suburban Rides ,Direct,Paraguay,Prior Customer,C990 Bike,Racing
+939,Jan-18,Triple Rides,Retail,Paraguay,Current Customer,M550 Bike,Mountain
+2212,Mar-19,Veronica's Vehicles,Retail,Paraguay,Current Customer,C990 Bike,Racing
+6558,Aug-18,Bike Bike Bike,Retail,Peru,Prior Customer,R200 Bike 4s,Racing
+6328,Oct-17,Cycle Tiger ,Wholesale,Peru,Prior Customer,C950 Bike,Mountain
+3971,Jul-19,FullMoon Cycle ,Wholesale,Peru,Prior Customer,R300 Bike,Racing
+2185,Nov-17,Global Rides,Retail,Peru,Current Customer,C950 Bike,Mountain
+2187,Jun-18,MindBody Tandem,Retail,Peru,Prospect,C900 Bike,Mountain
+1977,Aug-19,Rides Affiliate ,Wholesale,Peru,Prospect,R300 Bike,Racing
+2202,Sep-18,Snapshot Cycles,Retail,Peru,Current Customer,M525 Bike,Mountain
+13,Sep-19,Speediest,Retail,Peru,Current Customer,R200 Bike 4s,Racing
+5184,Aug-18,Venture Bicycles,Direct,Peru,Current Customer,C900 Bike,Mountain
+55,Jun-18,Beyond Cycle,Retail,Philippines,Prospect,R200 Bike 4s,Racing
+2973,Apr-19,Bicycles Team,Direct,Philippines,Prior Customer,M550 Bike,Mountain
+4637,Jun-19,Charge Bike,Direct,Philippines,Prior Customer,M525 Bike,Mountain
+5491,Jun-19,Cyberspace Sports,Direct,Philippines,Prior Customer,C990 Bike,Racing
+1566,Feb-19,Little Tykes ,Retail,Philippines,Prospect,C950 Bike,Mountain
+13169,Feb-18,Master Sports,Wholesale,Philippines,Current Customer,M525 Bike,Mountain
+347,Jul-19,Pocket Rides ,Retail,Philippines,Prior Customer,M550 Bike,Mountain
+657,May-19,RedSea Cyclist ,Retail,Philippines,Prior Customer,M550 Bike,Mountain
+2777,Feb-18,Tyre,Retail,Philippines,Prospect,M550 Bike,Mountain
+763,Oct-18,Urban Behaviour Bikes,Wholesale,Philippines,Current Customer,M550 Bike,Mountain
+4538,Aug-19,Yosemite Rides OH,Direct,Philippines,Prior Customer,C900 Bike,Mountain
+1371,Oct-17,Contract Ride,Retail,Pitcairn,Current Customer,M550 Bike,Mountain
+7254,Sep-18,H+N Cycles,Retail,Pitcairn,Prospect,eBike E148,Mountain
+824,Jul-19,Happy Labrador,Retail,Pitcairn,Prospect,M550 Bike,Mountain
+10562,Oct-17,Quick Quick Store,Retail,Pitcairn,Current Customer,eBike E148,Mountain
+3388,Jun-18,Rides Coast ,Direct,Pitcairn,Prior Customer,M550 Bike,Mountain
+7839,Nov-18,Sports Hybrid,Wholesale,Pitcairn,Current Customer,R200 Bike 4s,Racing
+10204,Oct-17,Backtrack ,Wholesale,Poland,Current Customer,M550 Bike,Mountain
+1061,Dec-17,Camelot Sports CH,Wholesale,Poland,Current Customer,M550 Bike,Mountain
+288,Oct-17,Cycle Anywhere,Direct,Poland,Prior Customer,C900 Bike,Mountain
+2151,Sep-19,FreeWheel,Direct,Poland,Current Customer,M550 Bike,Mountain
+2765,Jul-18,Gala Bikes,Direct,Poland,Prior Customer,C990 Bike,Racing
+291,Nov-17,Last Kilometer,Wholesale,Poland,Prior Customer,R300 Bike,Racing
+5496,May-19,Partners Cyclist ,Retail,Poland,Current Customer,eBike E148,Mountain
+3811,May-18,Reflect Bikes ,Retail,Poland,Prospect,C950 Bike,Mountain
+2428,Mar-19,Seahorse Rides ,Retail,Poland,Prospect,M550 Bike,Mountain
+10221,Nov-17,Skybikes,Wholesale,Poland,Current Customer,R300 Bike,Racing
+13309,Jun-19,Trekk,Wholesale,Poland,Current Customer,R300 Bike,Racing
+7935,Jul-18,WolfPack Cycle NF,Direct,Poland,Prior Customer,C990 Bike,Racing
+10526,May-19,Athea's Specialty Bike Shop,Wholesale,Portugal,Current Customer,R100 Bike,Racing
+4299,Sep-18,Bright Route,Direct,Portugal,Prior Customer,R200 Bike 4s,Racing
+363,Dec-18,Express Tandem,Direct,Portugal,Prior Customer,C900 Bike,Mountain
+3952,Aug-18,Keynote Wheels ,Retail,Portugal,Prior Customer,C950 Bike,Mountain
+894,Jan-19,Ordinary Sports,Direct,Portugal,Prior Customer,M525 Bike,Mountain
+3222,Apr-18,Rumble Cycle ,Direct,Portugal,Current Customer,C950 Bike,Mountain
+4958,Oct-17,Traction,Direct,Portugal,Prior Customer,R100 Bike,Racing
+2653,Dec-18,Wheels Logistics ,Wholesale,Portugal,Prospect,C990 Bike,Racing
+1759,Jul-19,Athena,Wholesale,Puerto Rico,Current Customer,eBike E148,Mountain
+1788,Jan-19,Blackbird Cycle SF,Retail,Puerto Rico,Prior Customer,R100 Bike,Racing
+2519,Dec-17,Camelot Sports RD,Wholesale,Puerto Rico,Prospect,R300 Bike,Racing
+6455,Jul-19,Countryside Rides,Wholesale,Puerto Rico,Current Customer,C990 Bike,Racing
+2794,Jul-18,Cycle Scouts ,Retail,Puerto Rico,Prior Customer,R200 Bike 4s,Racing
+4134,Mar-19,Cyclist Passion ,Direct,Puerto Rico,Prior Customer,C950 Bike,Mountain
+4488,Oct-18,Engineering Cycle ,Direct,Puerto Rico,Prospect,C990 Bike,Racing
+6528,Apr-18,Equinox Tandem,Direct,Puerto Rico,Prior Customer,C950 Bike,Mountain
+2244,Jun-19,Final Rides,Direct,Puerto Rico,Prior Customer,M550 Bike,Mountain
+6378,Sep-19,Kick Bicycles,Direct,Puerto Rico,Current Customer,M550 Bike,Mountain
+5483,Jun-19,Nobu,Direct,Puerto Rico,Prior Customer,R100 Bike,Racing
+8591,Apr-18,Patrol,Wholesale,Puerto Rico,Current Customer,M550 Bike,Mountain
+11986,Jan-18,Radical Rides,Wholesale,Puerto Rico,Current Customer,C990 Bike,Racing
+2048,Jan-18,Ride Mobile,Wholesale,Puerto Rico,Prior Customer,R300 Bike,Racing
+6294,Sep-18,Rides Dash ,Direct,Puerto Rico,Prior Customer,eBike E148,Mountain
+3933,Jun-19,RightWay Rides ,Wholesale,Puerto Rico,Prior Customer,R100 Bike,Racing
+272,Jan-19,Scorpio Rides SK,Direct,Puerto Rico,Prior Customer,M525 Bike,Mountain
+2163,Feb-19,Traction Wheels ,Wholesale,Puerto Rico,Current Customer,R300 Bike,Racing
+3061,Mar-18,Wheel Depot SF,Direct,Puerto Rico,Prospect,eBike E148,Mountain
+1631,May-18,World Sports BW,Retail,Puerto Rico,Current Customer,R200 Bike 4s,Racing
+3989,Apr-19,Achievement Cycle ,Direct,Qatar,Prior Customer,eBike E148,Mountain
+2297,Nov-18,Bikes Post ,Retail,Qatar,Prior Customer,C990 Bike,Racing
+13561,May-18,Cypress Mountain Bicycles,Wholesale,Qatar,Prospect,eBike E148,Mountain
+2874,Jul-18,Foster Rides ,Direct,Qatar,Prior Customer,R200 Bike 4s,Racing
+10344,Oct-17,Freelance Rides,Wholesale,Qatar,Current Customer,C950 Bike,Mountain
+6003,Dec-18,Function Rides,Wholesale,Qatar,Prospect,R300 Bike,Racing
+5512,Jun-18,Granny Gear,Retail,Qatar,Prospect,R200 Bike 4s,Racing
+2209,Apr-19,Hubbub,Retail,Qatar,Prospect,M525 Bike,Mountain
+12071,Aug-18,Navigators,Wholesale,Qatar,Current Customer,M525 Bike,Mountain
+269,Feb-19,Rides Fun,Retail,Qatar,Prior Customer,C900 Bike,Mountain
+864,Aug-18,Simplified Ride,Direct,Qatar,Prior Customer,C990 Bike,Racing
+7361,May-19,Skilled Sports,Wholesale,Qatar,Prior Customer,R200 Bike 4s,Racing
+7168,Oct-18,Snapshot Ride,Wholesale,Qatar,Current Customer,R300 Bike,Racing
+1126,Feb-19,Sports Advice,Direct,Qatar,Prior Customer,M550 Bike,Mountain
+622,Jul-18,Suite Cyclist ,Wholesale,Qatar,Current Customer,C990 Bike,Racing
+3304,Apr-19,Watermark Cycle ,Wholesale,Qatar,Prior Customer,R100 Bike,Racing
+4959,Jun-18,ClunkerBikes,Direct,Reunion,Prior Customer,R100 Bike,Racing
+125,Jan-19,Cycle Paradise   ,Retail,Reunion,Prior Customer,M550 Bike,Mountain
+5621,May-19,Program Speed,Retail,Reunion,Prospect,C950 Bike,Mountain
+8431,Nov-17,Ride Course,Direct,Reunion,Prior Customer,M550 Bike,Mountain
+3441,Aug-18,Sonic Speed,Wholesale,Reunion,Prospect,C950 Bike,Mountain
+1841,May-19,Traffic Rides ,Retail,Reunion,Current Customer,R100 Bike,Racing
+5956,Nov-17,Zen Rides VA,Retail,Reunion,Prior Customer,C950 Bike,Mountain
+4972,Sep-18,Bonita Wheels ,Direct,Romania,Prior Customer,R100 Bike,Racing
+4926,Mar-19,DiamondStrong Bikes,Wholesale,Romania,Prospect,C900 Bike,Mountain
+9642,Jul-19,Omega Bike Shop,Direct,Romania,Prior Customer,M550 Bike,Mountain
+4962,Dec-18,Rides Logistics,Retail,Romania,Prospect,M550 Bike,Mountain
+7523,May-19,Wheels Back ,Direct,Romania,Prior Customer,R100 Bike,Racing
+5719,Nov-17,Adrenaline Rush CL,Wholesale,Russian Federation,Current Customer,C990 Bike,Racing
+5906,Jul-19,Breeze Breathers,Retail,Russian Federation,Prospect,R100 Bike,Racing
+18946,Apr-19,GreenWorld Tandem,Wholesale,Russian Federation,Prospect,eBike E148,Mountain
+18925,May-19,Iron Rod Bicycles DL,Wholesale,Russian Federation,Current Customer,M525 Bike,Mountain
+16829,Sep-18,Mister Quick,Wholesale,Russian Federation,Current Customer,C950 Bike,Mountain
+2718,Oct-18,Operation Rides ,Retail,Russian Federation,Prior Customer,C900 Bike,Mountain
+18962,Aug-18,Original Rides,Wholesale,Russian Federation,Current Customer,M525 Bike,Mountain
+15975,Apr-19,RedZone Cycle ,Wholesale,Russian Federation,Current Customer,M525 Bike,Mountain
+13239,Apr-18,Rides Views,Retail,Russian Federation,Current Customer,R100 Bike,Racing
+5226,Jun-19,Voltage Rides,Retail,Russian Federation,Current Customer,R100 Bike,Racing
+13075,Jun-19,Wheels Groups ,Direct,Russian Federation,Prior Customer,eBike E148,Mountain
+3223,Feb-18,Arbitrage Cycle ,Retail,Rwanda,Prospect,C950 Bike,Mountain
+1495,Jul-18,Armada Bikes ,Retail,Rwanda,Prior Customer,R100 Bike,Racing
+4661,Jun-18,Crafted Cyclist ,Direct,Rwanda,Prior Customer,C950 Bike,Mountain
+10953,May-18,Crossroad Rides ,Wholesale,Rwanda,Current Customer,C990 Bike,Racing
+1414,May-18,Cycle Venture,Retail,Rwanda,Prospect,C950 Bike,Mountain
+6875,May-19,Getaway Bicycles,Direct,Rwanda,Current Customer,R100 Bike,Racing
+3609,Jun-19,Jenn & Ben,Wholesale,Rwanda,Prospect,R300 Bike,Racing
+1713,Oct-18,Jubilee Bicycles,Retail,Rwanda,Prospect,C950 Bike,Mountain
+3633,Feb-19,Rain or Shine,Wholesale,Rwanda,Prior Customer,C900 Bike,Mountain
+5443,Jan-18,Raven & Braun Wheel Company,Direct,Rwanda,Prior Customer,C990 Bike,Racing
+2641,Dec-17,Rides Anchor ,Retail,Rwanda,Prospect,C900 Bike,Mountain
+2449,Oct-17,Speed Draw,Retail,Rwanda,Prospect,M550 Bike,Mountain
+3347,Apr-18,Three Stripes,Wholesale,Rwanda,Prospect,R300 Bike,Racing
+3986,Jan-19,Top Notch Rides,Direct,Rwanda,Prior Customer,R100 Bike,Racing
+655,Jan-18,Bike Whisperer AB,Direct,Saint Helena,Prior Customer,eBike E148,Mountain
+2944,Sep-18,Champsion Source,Direct,Saint Helena,Prior Customer,C900 Bike,Mountain
+2244,May-18,Genesis,Direct,Saint Helena,Prior Customer,C950 Bike,Mountain
+9165,Dec-18,Motra ,Wholesale,Saint Helena,Prior Customer,eBike E148,Mountain
+8119,Mar-18,Plumb Cycle   ,Wholesale,Saint Helena,Current Customer,C950 Bike,Mountain
+2493,Mar-19,Speed Connect,Wholesale,Saint Helena,Prospect,R300 Bike,Racing
+442,Aug-19,Virtue Rides ,Retail,Saint Helena,Current Customer,eBike E148,Mountain
+276,Aug-18,Yosemite Rides NL,Retail,Saint Helena,Prospect,eBike E148,Mountain
+2374,Nov-17,Biker Zone,Retail,Saint Kitts and Nevis,Prospect,R100 Bike,Racing
+11912,Apr-18,East Cycle Customization Shop,Wholesale,Saint Kitts and Nevis,Current Customer,C900 Bike,Mountain
+2701,Aug-19,Mystic Bikes VN,Retail,Saint Kitts and Nevis,Prospect,R100 Bike,Racing
+3571,Jun-18,Neat Bicycles,Direct,Saint Kitts and Nevis,Prospect,M525 Bike,Mountain
+3593,Jun-18,Rides Safe,Retail,Saint Kitts and Nevis,Current Customer,R100 Bike,Racing
+2741,Mar-19,Vortex Cycle VN,Direct,Saint Kitts and Nevis,Prior Customer,R200 Bike 4s,Racing
+4414,Jan-18,Watts,Direct,Saint Kitts and Nevis,Prior Customer,C950 Bike,Mountain
+4632,Jun-18,Airborne Cycle Studio MN,Direct,Saint Lucia,Prospect,M525 Bike,Mountain
+3883,Aug-18,Bike Sleep Repeat,Retail,Saint Lucia,Prospect,R200 Bike 4s,Racing
+5784,Sep-18,BluePlanet Sports,Wholesale,Saint Lucia,Prospect,M525 Bike,Mountain
+5715,Jun-18,Foster Sports,Retail,Saint Lucia,Prospect,M525 Bike,Mountain
+2974,Jul-18,Intelli Bicycles,Retail,Saint Lucia,Prior Customer,C990 Bike,Racing
+7584,Sep-19,Motoshop AB,Wholesale,Saint Lucia,Current Customer,R200 Bike 4s,Racing
+3774,Sep-18,Offset Cycle,Retail,Saint Lucia,Prospect,eBike E148,Mountain
+523,Mar-19,Single Cog,Direct,Saint Lucia,Prior Customer,R200 Bike 4s,Racing
+5573,Nov-17,Tandem Synergy,Direct,Saint Lucia,Prior Customer,M550 Bike,Mountain
+1539,Mar-19,Vertigo Tandem,Retail,Saint Lucia,Prior Customer,C900 Bike,Mountain
+12941,Oct-18,Wheel Whales,Wholesale,Saint Lucia,Current Customer,M525 Bike,Mountain
+183,Nov-18,AeroDynamo,Retail,Saint Pierre and Miquelon,Prospect,C950 Bike,Mountain
+347,Jun-18,Cylinder,Direct,Saint Pierre and Miquelon,Prospect,eBike E148,Mountain
+1938,Jan-18,Individual Cyclist ,Wholesale,Saint Pierre and Miquelon,Prior Customer,eBike E148,Mountain
+8282,May-19,Official Bike Company,Direct,Saint Pierre and Miquelon,Prior Customer,eBike E148,Mountain
+3144,Sep-19,Rides Expo ,Retail,Saint Pierre and Miquelon,Prospect,R100 Bike,Racing
+2204,Aug-18,Rides Thread,Wholesale,Saint Pierre and Miquelon,Prospect,R300 Bike,Racing
+13388,Jun-18,Tag Cycling,Retail,Saint Pierre and Miquelon,Current Customer,M525 Bike,Mountain
+2549,Apr-18,Wheel Raven,Direct,Saint Pierre and Miquelon,Prospect,M550 Bike,Mountain
+1381,Feb-18,Adrenaline Rush OX,Retail,Saint Vincent and The Grenadines,Prior Customer,M525 Bike,Mountain
+1351,Aug-18,Blackbird Cycle VA,Retail,Saint Vincent and The Grenadines,Current Customer,M550 Bike,Mountain
+2277,Nov-17,Cycle Trends ,Direct,Saint Vincent and The Grenadines,Current Customer,M550 Bike,Mountain
+3268,Nov-17,EasyWay Sports,Direct,Saint Vincent and The Grenadines,Current Customer,M525 Bike,Mountain
+1469,Nov-18,Imperial Sports,Wholesale,Saint Vincent and The Grenadines,Current Customer,M550 Bike,Mountain
+6419,Nov-18,Neighborhood Cyclist ,Direct,Saint Vincent and The Grenadines,Prior Customer,C990 Bike,Racing
+2332,Jul-18,Norbikes,Wholesale,Saint Vincent and The Grenadines,Prior Customer,C950 Bike,Mountain
+3292,Aug-19,Rides Analyst ,Direct,Saint Vincent and The Grenadines,Prior Customer,C950 Bike,Mountain
+10220,Oct-17,Rides Solution,Wholesale,Saint Vincent and The Grenadines,Current Customer,R200 Bike 4s,Racing
+4215,Jul-18,Sweet Rides,Direct,Saint Vincent and The Grenadines,Prior Customer,eBike E148,Mountain
+5031,Sep-18,We Love Bikes,Wholesale,Saint Vincent and The Grenadines,Current Customer,C950 Bike,Mountain
+4798,Nov-17,Wheel Depot TO,Retail,Saint Vincent and The Grenadines,Current Customer,C950 Bike,Mountain
+3593,Dec-17,Archie's Best,Retail,Samoa,Current Customer,C950 Bike,Mountain
+3195,Feb-19,Bit Rides ,Wholesale,Samoa,Prospect,R300 Bike,Racing
+5265,Apr-19,Cycle Collect ,Retail,Samoa,Prior Customer,R200 Bike 4s,Racing
+2598,Oct-18,Cyklurs Society,Direct,Samoa,Prior Customer,C900 Bike,Mountain
+2854,May-18,Discreet Speed,Retail,Samoa,Prospect,R200 Bike 4s,Racing
+1907,Jul-19,Geek Cyclist ,Wholesale,Samoa,Prospect,R300 Bike,Racing
+2714,Jul-19,Joustes,Direct,Samoa,Prior Customer,C990 Bike,Racing
+2634,Dec-18,NewStar Cyclist ,Retail,Samoa,Prospect,M525 Bike,Mountain
+583,Jul-18,Reign Bikes ,Wholesale,Samoa,Prospect,R100 Bike,Racing
+8526,Jan-19,Rides Exclusive,Direct,Samoa,Prior Customer,R200 Bike 4s,Racing
+4452,Jun-19,Rides Mob,Wholesale,Samoa,Prior Customer,R300 Bike,Racing
+5496,Jul-19,Scorpio Rides TO,Wholesale,Samoa,Prior Customer,C990 Bike,Racing
+5117,Jul-19,Soylent Bikes,Retail,Samoa,Prospect,C950 Bike,Mountain
+394,Sep-19,Timeless Cycle ,Direct,Samoa,Prior Customer,C990 Bike,Racing
+3001,Feb-19,West Side Cycles,Direct,Samoa,Current Customer,C990 Bike,Racing
+5361,Feb-19,Bicycles Crafter,Retail,San Marino,Prospect,R200 Bike 4s,Racing
+1231,Jan-18,Bloom Cycle ,Direct,San Marino,Current Customer,R100 Bike,Racing
+7891,Jan-19,Lumina,Direct,San Marino,Prior Customer,M550 Bike,Mountain
+4214,May-19,OakTree Rides,Retail,San Marino,Prior Customer,eBike E148,Mountain
+8586,Oct-17,Underground Rides NJ,Wholesale,San Marino,Current Customer,R100 Bike,Racing
+3007,Aug-19,Wheel Power SD,Retail,San Marino,Current Customer,C950 Bike,Mountain
+692,Nov-18,ANSAN,Retail,Sao Tome and Principe,Prior Customer,M525 Bike,Mountain
+4963,Nov-17,Bike King,Direct,Sao Tome and Principe,Prior Customer,R200 Bike 4s,Racing
+1397,Oct-17,Fast Route,Wholesale,Sao Tome and Principe,Prospect,R300 Bike,Racing
+13349,Sep-18,Money Tandem,Wholesale,Sao Tome and Principe,Current Customer,R300 Bike,Racing
+1812,Jun-19,Satori Wheels ,Retail,Sao Tome and Principe,Prior Customer,M525 Bike,Mountain
+5922,Jun-18,Thermal Rides,Direct,Sao Tome and Principe,Prior Customer,M550 Bike,Mountain
+4635,Dec-18,Venus Cycle ON,Direct,Sao Tome and Principe,Prior Customer,R100 Bike,Racing
+15126,Dec-17,BDBikes,Wholesale,Saudi Arabia,Current Customer,C950 Bike,Mountain
+337,Mar-18,Blackbird Cycle IN,Retail,Saudi Arabia,Prospect,R200 Bike 4s,Racing
+21,Dec-18,Burnt Rubber,Wholesale,Saudi Arabia,Prospect,R300 Bike,Racing
+2641,Sep-19,Compare Rides ,Wholesale,Saudi Arabia,Prior Customer,M550 Bike,Mountain
+6392,May-19,Fixie,Retail,Saudi Arabia,Prior Customer,M525 Bike,Mountain
+2977,Jul-18,Leverage Bikes ,Retail,Saudi Arabia,Prospect,M525 Bike,Mountain
+1211,Nov-18,NEXT UP Bikes,Retail,Saudi Arabia,Prospect,M550 Bike,Mountain
+1505,Jun-18,Overnight Bicycles,Retail,Saudi Arabia,Prospect,C950 Bike,Mountain
+10496,Dec-17,Pure Bikes,Retail,Saudi Arabia,Prior Customer,C990 Bike,Racing
+10056,Jul-19,Sell Rides,Wholesale,Saudi Arabia,Current Customer,C950 Bike,Mountain
+14986,Jan-18,Tsunami Cycles,Wholesale,Saudi Arabia,Current Customer,R300 Bike,Racing
+5399,Sep-18,Wheel Broker,Direct,Saudi Arabia,Prior Customer,R100 Bike,Racing
+2671,Feb-18,Wild Ride,Direct,Saudi Arabia,Current Customer,C990 Bike,Racing
+2922,Dec-18,2Wheels,Retail,Senegal,Prospect,C950 Bike,Mountain
+4123,Mar-19,Bicycle Spots Atlantic,Direct,Senegal,Prior Customer,M525 Bike,Mountain
+6827,Jan-18,HighVoltage Bicycles,Wholesale,Senegal,Prior Customer,R300 Bike,Racing
+3652,May-18,Live Rides,Retail,Senegal,Prospect,R100 Bike,Racing
+285,Aug-19,Strawberry Rides ,Direct,Senegal,Prior Customer,C950 Bike,Mountain
+587,Aug-19,100 Rides,Wholesale,Serbia and Montenegro,Prior Customer,R100 Bike,Racing
+5907,Dec-17,Along for the Ride,Retail,Serbia and Montenegro,Prospect,C950 Bike,Mountain
+6318,May-19,Bicycles Side,Direct,Serbia and Montenegro,Prior Customer,C900 Bike,Mountain
+3124,Jun-18,Big Girl Bikes,Retail,Serbia and Montenegro,Prior Customer,eBike E148,Mountain
+6263,Jan-19,Magna Tandem,Direct,Serbia and Montenegro,Prior Customer,C950 Bike,Mountain
+12395,Apr-18,Marvelous Cycle ,Retail,Serbia and Montenegro,Current Customer,R200 Bike 4s,Racing
+3356,Jan-19,Maximum Rides ,Wholesale,Serbia and Montenegro,Prospect,C990 Bike,Racing
+1413,Aug-19,Rides America,Wholesale,Serbia and Montenegro,Prior Customer,R300 Bike,Racing
+8045,Sep-19,StepUp Rides ,Direct,Serbia and Montenegro,Prior Customer,C990 Bike,Racing
+3639,Apr-18,The Bike Method,Retail,Serbia and Montenegro,Prospect,eBike E148,Mountain
+2143,Mar-19,Underground Rides SD,Retail,Serbia and Montenegro,Current Customer,M550 Bike,Mountain
+7056,Aug-19,Upstate Tandem,Direct,Serbia and Montenegro,Prospect,eBike E148,Mountain
+6461,Mar-19,Vancouver Bike Bar,Retail,Serbia and Montenegro,Prior Customer,R100 Bike,Racing
+2383,Feb-18,Decathalon Stop Shop,Retail,Seychelles,Prospect,C950 Bike,Mountain
+1433,Jun-19,Gifted Rides,Retail,Seychelles,Prior Customer,R200 Bike 4s,Racing
+4998,Dec-18,Rides Grow,Direct,Seychelles,Current Customer,M550 Bike,Mountain
+1142,Apr-18,Speed Engine,Wholesale,Seychelles,Current Customer,R100 Bike,Racing
+15895,May-18,BlackDiamond Tandem,Wholesale,Sierra Leone,Current Customer,M525 Bike,Mountain
+10630,Jan-18,Champions Wheels ,Wholesale,Sierra Leone,Current Customer,M525 Bike,Mountain
+2578,Dec-17,Country Wheels,Wholesale,Sierra Leone,Prior Customer,R300 Bike,Racing
+385,Sep-19,Expressive Sports,Wholesale,Sierra Leone,Prior Customer,eBike E148,Mountain
+1193,Dec-18,Full Cycle,Wholesale,Sierra Leone,Current Customer,C990 Bike,Racing
+9789,Jun-18,North Cycle Studio,Wholesale,Sierra Leone,Current Customer,C990 Bike,Racing
+7013,Feb-18,Plexus Wheels ,Direct,Sierra Leone,Prior Customer,R100 Bike,Racing
+513,Sep-18,Racing Stripes,Wholesale,Sierra Leone,Prospect,eBike E148,Mountain
+3856,Sep-18,Rural Champ,Direct,Sierra Leone,Prior Customer,R200 Bike 4s,Racing
+8394,Mar-19,Slipstream,Wholesale,Sierra Leone,Prior Customer,C990 Bike,Racing
+3738,Dec-18,Wheel Depot VA,Retail,Sierra Leone,Prior Customer,R100 Bike,Racing
+681,Oct-17,Yosemite Rides NJ,Retail,Sierra Leone,Current Customer,M550 Bike,Mountain
+4542,Apr-18,Allure Wheel,Retail,Singapore,Prospect,M525 Bike,Mountain
+4126,Jun-18,Bicycles Integral,Direct,Singapore,Prospect,C900 Bike,Mountain
+2447,Jan-19,Blueberry Bicycles,Direct,Singapore,Current Customer,M550 Bike,Mountain
+12627,May-18,Delta Bike Bar,Direct,Singapore,Prospect,eBike E148,Mountain
+275,Dec-18,Foundation Bikes,Direct,Singapore,Prior Customer,C950 Bike,Mountain
+3458,Mar-18,Iron Rod Bicycles MA,Wholesale,Singapore,Prospect,C990 Bike,Racing
+2061,Aug-18,Magnus Ride,Retail,Singapore,Prospect,M550 Bike,Mountain
+3768,Feb-19,Obsidian Tandem,Direct,Singapore,Prior Customer,M550 Bike,Mountain
+18327,Sep-19,Rides Jaguar ,Wholesale,Singapore,Prospect,eBike E148,Mountain
+8613,Nov-17,Single-Speed,Wholesale,Singapore,Current Customer,eBike E148,Mountain
+3533,Aug-19,The American Bike Company,Retail,Singapore,Prospect,C950 Bike,Mountain
+9577,Apr-19,Underground Rides SU,Wholesale,Singapore,Current Customer,C900 Bike,Mountain
+3227,Jun-19,Wheel Power VA,Wholesale,Singapore,Prospect,C950 Bike,Mountain
+5794,Jun-19,Bicycles Reviews,Direct,Slovakia,Prospect,C990 Bike,Racing
+13666,Aug-19,Exhale,Wholesale,Slovakia,Current Customer,R100 Bike,Racing
+3932,Mar-19,Market Rides,Retail,Slovakia,Current Customer,C900 Bike,Mountain
+5379,Nov-17,Rosetta Rides ,Direct,Slovakia,Prior Customer,M550 Bike,Mountain
+2426,Jul-19,Virginia Cycle Studio,Wholesale,Slovakia,Prior Customer,C950 Bike,Mountain
+11348,May-18,Catching Air ,Wholesale,Slovenia,Current Customer,M525 Bike,Mountain
+16786,Sep-18,Gryphon Rides,Wholesale,Slovenia,Prospect,eBike E148,Mountain
+3297,Mar-18,Pelobike,Retail,Slovenia,Prior Customer,C900 Bike,Mountain
+4956,Nov-18,Sports Favorite,Direct,Slovenia,Prior Customer,R200 Bike 4s,Racing
+1567,Jul-18,World Sports SF,Wholesale,Slovenia,Current Customer,R200 Bike 4s,Racing
+2462,Apr-18,Atlas Wheels ,Retail,Solomon Islands,Prior Customer,C990 Bike,Racing
+4574,Jun-18,Averbike,Wholesale,Solomon Islands,Prior Customer,C950 Bike,Mountain
+3213,Feb-19,Chariza's Cycles,Direct,Solomon Islands,Prior Customer,R100 Bike,Racing
+2148,Jun-19,Cheery Cycles,Wholesale,Solomon Islands,Current Customer,R300 Bike,Racing
+4338,Oct-17,Flawkes,Direct,Solomon Islands,Prior Customer,M525 Bike,Mountain
+4041,Nov-17,Fraserview Route,Wholesale,Solomon Islands,Prior Customer,R300 Bike,Racing
+3939,Apr-19,Koala Cycles,Wholesale,Solomon Islands,Prospect,M550 Bike,Mountain
+6611,Feb-18,Podium Rides,Retail,Solomon Islands,Current Customer,M550 Bike,Mountain
+6819,Jun-18,Potential Star,Retail,Solomon Islands,Prospect,C990 Bike,Racing
+13271,Sep-19,Send Cycle ,Wholesale,Solomon Islands,Current Customer,R200 Bike 4s,Racing
+2602,Feb-18,Skierch,Wholesale,Solomon Islands,Prospect,R300 Bike,Racing
+57,Jun-19,Trail Blazer BC,Direct,Solomon Islands,Prior Customer,eBike E148,Mountain
+2414,Aug-19,Trail Blazer NW,Retail,Solomon Islands,Prospect,R100 Bike,Racing
+2442,Jan-18,Yosemite Rides PE,Retail,Solomon Islands,Current Customer,R100 Bike,Racing
+11148,May-18,Your Local Bike Shop DL,Wholesale,Solomon Islands,Current Customer,C900 Bike,Mountain
+9727,Jan-19,kinetic,Wholesale,Solomon Islands,Current Customer,M525 Bike,Mountain
+6041,Jul-19,Advanced Rides ,Direct,Somalia,Prior Customer,M525 Bike,Mountain
+4274,Jul-18,Big Boy Bikes,Retail,Somalia,Current Customer,M525 Bike,Mountain
+4544,Aug-19,Bike Whisperer KS,Wholesale,Somalia,Current Customer,M525 Bike,Mountain
+1811,May-18,Cycle Inc ,Retail,Somalia,Prospect,R200 Bike 4s,Racing
+1529,Apr-19,Forlun Wheel Company,Wholesale,Somalia,Prospect,M550 Bike,Mountain
+405,Feb-19,Hard Tandem,Retail,Somalia,Prior Customer,M550 Bike,Mountain
+2648,Aug-18,Incline Bikes,Direct,Somalia,Prospect,eBike E148,Mountain
+3455,Mar-19,Lifetime Potential ,Direct,Somalia,Prior Customer,R200 Bike 4s,Racing
+1637,Aug-19,Maximo Sports,Direct,Somalia,Prospect,R100 Bike,Racing
+2138,Feb-18,Moyota,Direct,Somalia,Prospect,R100 Bike,Racing
+10021,May-18,Responsible Rides,Direct,Somalia,Current Customer,C950 Bike,Mountain
+6663,Jan-19,Sienna Sports,Direct,Somalia,Current Customer,R100 Bike,Racing
+1279,Jan-19,Sports Smarts,Retail,Somalia,Current Customer,M550 Bike,Mountain
+4626,Jan-18,Symmetry Wheels,Direct,Somalia,Current Customer,M525 Bike,Mountain
+2044,Jan-18,Twilight Rides OH,Wholesale,Somalia,Prospect,M525 Bike,Mountain
+8594,Dec-17,Vamanos Bikes,Retail,Somalia,Prior Customer,R100 Bike,Racing
+1671,Jun-19,Vivid Tandem,Retail,Somalia,Prior Customer,R100 Bike,Racing
+105,May-18,Bicycles Zone,Wholesale,South Africa,Current Customer,M550 Bike,Mountain
+17439,Sep-19,ColdFusion Cycle,Wholesale,South Africa,Current Customer,C950 Bike,Mountain
+1566,Aug-18,Happy Speed,Wholesale,South Africa,Current Customer,C990 Bike,Racing
+5886,Oct-18,Maximo Bikes ,Retail,South Africa,Prior Customer,M525 Bike,Mountain
+5174,Jul-19,Proof Cyclist ,Direct,South Africa,Prior Customer,C950 Bike,Mountain
+4058,Jul-19,Sports River,Retail,South Africa,Prior Customer,C900 Bike,Mountain
+3482,Nov-17,Valley Sports,Direct,South Africa,Current Customer,M550 Bike,Mountain
+18623,Apr-18,Zigzag,Wholesale,South Africa,Prospect,eBike E148,Mountain
+11602,Jul-19,Backpedal,Wholesale,South Georgia and The South Sandwich Islands,Current Customer,C900 Bike,Mountain
+1213,Jan-19,Curb,Retail,South Georgia and The South Sandwich Islands,Prior Customer,R200 Bike 4s,Racing
+5617,Mar-19,Electra Bicycles,Direct,South Georgia and The South Sandwich Islands,Prospect,C990 Bike,Racing
+5353,Jun-18,Full Kit,Wholesale,South Georgia and The South Sandwich Islands,Current Customer,R300 Bike,Racing
+5258,Oct-17,Large Cyclist ,Retail,South Georgia and The South Sandwich Islands,Prior Customer,M550 Bike,Mountain
+3792,Mar-19,Recruit Bicycles,Direct,South Georgia and The South Sandwich Islands,Prior Customer,C950 Bike,Mountain
+2294,Aug-19,Rides Strategies ,Retail,South Georgia and The South Sandwich Islands,Prospect,C900 Bike,Mountain
+3952,Mar-18,SmallWorld Rides ,Retail,South Georgia and The South Sandwich Islands,Prior Customer,C990 Bike,Racing
+6341,Aug-19,TRANSFER,Direct,South Georgia and The South Sandwich Islands,Prior Customer,M525 Bike,Mountain
+11852,Jun-18,Bike Machine,Wholesale,Spain,Current Customer,R300 Bike,Racing
+16154,Nov-18,Bike Whisperer WY,Wholesale,Spain,Current Customer,M525 Bike,Mountain
+3553,Jul-18,BlackPearl Tandem,Direct,Spain,Prior Customer,M550 Bike,Mountain
+2137,Dec-18,Forge Cycle ,Retail,Spain,Prospect,R100 Bike,Racing
+9783,Jan-18,Going the Distance,Retail,Spain,Prospect,eBike E148,Mountain
+2974,Aug-19,Montecarlo Rides ,Direct,Spain,Prospect,C950 Bike,Mountain
+4758,Nov-17,Notion Cyclist ,Wholesale,Spain,Current Customer,C900 Bike,Mountain
+16867,May-19,Quartz Bikes ,Wholesale,Spain,Current Customer,R200 Bike 4s,Racing
+2838,Dec-18,SPEEDY,Direct,Spain,Current Customer,C900 Bike,Mountain
+139,Dec-17,Sidewalk Rides,Wholesale,Spain,Current Customer,R300 Bike,Racing
+2851,Sep-19,Venus Cycle PL,Retail,Spain,Prospect,R100 Bike,Racing
+2161,Jun-18,Wheel Power FL,Retail,Spain,Current Customer,M550 Bike,Mountain
+1711,Nov-17,Wheels of Fortune,Wholesale,Spain,Current Customer,C900 Bike,Mountain
+5034,Mar-18,Accredited Bicycles,Direct,Sri Lanka,Prior Customer,R100 Bike,Racing
+3362,Dec-18,Bike Whisperer CH,Wholesale,Sri Lanka,Prior Customer,R300 Bike,Racing
+587,Jul-18,Bike Whisperer NB,Retail,Sri Lanka,Current Customer,M550 Bike,Mountain
+9486,Jun-18,Bikes Mall ,Wholesale,Sri Lanka,Current Customer,C950 Bike,Mountain
+1194,May-18,East Side Rides,Wholesale,Sri Lanka,Current Customer,R100 Bike,Racing
+2535,Feb-18,Finisher,Retail,Sri Lanka,Prospect,R100 Bike,Racing
+4459,Sep-19,Glass Speed,Direct,Sri Lanka,Prospect,M550 Bike,Mountain
+1301,Apr-18,Hot Wheelz,Wholesale,Sri Lanka,Current Customer,R200 Bike 4s,Racing
+2123,Dec-18,Mountain Rides,Retail,Sri Lanka,Prior Customer,R100 Bike,Racing
+2707,Jun-19,Mustang Cycle ,Retail,Sri Lanka,Prospect,C900 Bike,Mountain
+4065,Mar-18,Natures Speed,Direct,Sri Lanka,Prior Customer,R200 Bike 4s,Racing
+7004,Sep-19,Rides Booth,Direct,Sri Lanka,Current Customer,eBike E148,Mountain
+818,Mar-19,Rides Show,Wholesale,Sri Lanka,Prior Customer,R300 Bike,Racing
+5729,Feb-19,Scott's Scooters,Direct,Sri Lanka,Prior Customer,C990 Bike,Racing
+5151,Apr-18,Speed Mission,Direct,Sri Lanka,Prior Customer,C950 Bike,Mountain
+142,Feb-18,Suggins Flyers,Retail,Sri Lanka,Prospect,M525 Bike,Mountain
+1006,Sep-19,Visionary Wheels ,Retail,Sri Lanka,Current Customer,R200 Bike 4s,Racing
+6798,Aug-18,Want Speed,Retail,Sri Lanka,Prior Customer,eBike E148,Mountain
+3671,Jul-18,Airborne Cycle Studio YK,Direct,Sudan,Prior Customer,M550 Bike,Mountain
+2308,Jun-18,CoolRidez,Retail,Sudan,Current Customer,R100 Bike,Racing
+338,Jul-19,Intrepid Wheels ,Retail,Sudan,Current Customer,M525 Bike,Mountain
+2462,Oct-18,Quicksilver Cycle ,Retail,Sudan,Prospect,C900 Bike,Mountain
+3486,Feb-19,Tandem Zone,Direct,Sudan,Prior Customer,C990 Bike,Racing
+7813,Mar-19,Axiom,Retail,Suriname,Prior Customer,M525 Bike,Mountain
+17742,Oct-17,Cycle One ,Wholesale,Suriname,Current Customer,R200 Bike 4s,Racing
+3311,May-18,DreamCatcher Cyclist ,Retail,Suriname,Prospect,R100 Bike,Racing
+3163,Jul-18,Glamour Cycle ,Retail,Suriname,Prior Customer,M550 Bike,Mountain
+3142,Nov-18,Group Rides,Wholesale,Suriname,Prior Customer,R300 Bike,Racing
+5153,Jan-19,Lakefront Bikes ,Retail,Suriname,Current Customer,M525 Bike,Mountain
+4088,Jul-18,Ride Anytime,Direct,Suriname,Prospect,C900 Bike,Mountain
+1504,Dec-17,Rides Pal,Retail,Suriname,Prospect,C900 Bike,Mountain
+3791,Oct-18,Speed Innovations,Retail,Suriname,Prospect,C900 Bike,Mountain
+2467,May-19,Sports Culture,Retail,Suriname,Prior Customer,C950 Bike,Mountain
+546,Aug-18,Trail Blazer SU,Wholesale,Suriname,Prior Customer,M550 Bike,Mountain
+2663,May-19,Academy Bicycles,Retail,Svalbard and Jan Mayen,Prior Customer,R200 Bike 4s,Racing
+2528,Aug-19,BlueOcean Rides ,Direct,Svalbard and Jan Mayen,Current Customer,R100 Bike,Racing
+11847,Jul-18,Challenge Champion,Retail,Svalbard and Jan Mayen,Current Customer,C990 Bike,Racing
+1614,Aug-18,Fat PSI,Retail,Svalbard and Jan Mayen,Current Customer,M550 Bike,Mountain
+10505,Nov-18,Frame ,Wholesale,Svalbard and Jan Mayen,Current Customer,R100 Bike,Racing
+8293,Aug-19,Glass Cyclist ,Direct,Svalbard and Jan Mayen,Prior Customer,M550 Bike,Mountain
+1235,Apr-18,Hornet Bikes,Retail,Svalbard and Jan Mayen,Prospect,M550 Bike,Mountain
+4063,Apr-18,Official Challenge,Direct,Svalbard and Jan Mayen,Prior Customer,M550 Bike,Mountain
+204,Jan-19,Physicks,Retail,Svalbard and Jan Mayen,Prospect,R100 Bike,Racing
+8184,Jan-19,Scherwitz,Wholesale,Svalbard and Jan Mayen,Current Customer,C950 Bike,Mountain
+207,Jul-18,Sk8 Shop,Wholesale,Svalbard and Jan Mayen,Prospect,C950 Bike,Mountain
+5907,May-19,Speed Institute,Direct,Svalbard and Jan Mayen,Prior Customer,C990 Bike,Racing
+3927,Feb-18,Wheel Specialty Shop,Direct,Svalbard and Jan Mayen,Prospect,C900 Bike,Mountain
+486,Nov-17,xTreme ,Wholesale,Svalbard and Jan Mayen,Prior Customer,M550 Bike,Mountain
+4147,Feb-19,Agora Wheels CL,Direct,Swaziland,Prior Customer,M550 Bike,Mountain
+6152,Jun-18,Angelic Ride,Direct,Swaziland,Prospect,C950 Bike,Mountain
+2877,Feb-18,Barron Bicycles,Retail,Swaziland,Prospect,M550 Bike,Mountain
+4979,Feb-19,Crystal Rides,Direct,Swaziland,Prior Customer,C990 Bike,Racing
+2019,Apr-18,Cyclist Scout ,Retail,Swaziland,Prior Customer,M525 Bike,Mountain
+3419,Oct-18,Firefly,Retail,Swaziland,Prospect,M525 Bike,Mountain
+3041,Apr-18,Flying Pigs,Direct,Swaziland,Prospect,M550 Bike,Mountain
+656,Nov-18,Gratis Rides ,Direct,Swaziland,Prior Customer,R100 Bike,Racing
+7762,Dec-18,Hammock Cycle ,Wholesale,Swaziland,Current Customer,R300 Bike,Racing
+1163,Jan-18,Herculean Handlebars,Direct,Swaziland,Current Customer,M525 Bike,Mountain
+1127,Jun-19,Inhail,Retail,Swaziland,Prospect,M550 Bike,Mountain
+10792,Sep-18,Jade Star,Wholesale,Swaziland,Current Customer,R300 Bike,Racing
+6072,Mar-19,Launchpad Cyclist ,Retail,Swaziland,Prior Customer,C950 Bike,Mountain
+10866,Apr-19,RealWorld Rides ,Wholesale,Swaziland,Current Customer,eBike E148,Mountain
+985,Sep-18,Rides Devil,Retail,Swaziland,Prospect,R200 Bike 4s,Racing
+7416,Oct-17,Seacoast Wheels ,Direct,Swaziland,Prior Customer,R200 Bike 4s,Racing
+14946,Mar-18,Shoestring Rides,Wholesale,Swaziland,Current Customer,M525 Bike,Mountain
+733,May-19,Sports Bazaar,Retail,Swaziland,Current Customer,M550 Bike,Mountain
+7673,Dec-18,Sports Logic,Direct,Swaziland,Current Customer,M550 Bike,Mountain
+2067,Dec-18,Statement Cycles AB,Retail,Swaziland,Current Customer,M550 Bike,Mountain
+2109,Oct-17,Tandem Grade,Retail,Swaziland,Current Customer,R100 Bike,Racing
+2026,Dec-18,The Spin Shop,Direct,Swaziland,Prior Customer,R200 Bike 4s,Racing
+4567,Jan-19,True Bikers,Retail,Swaziland,Current Customer,C950 Bike,Mountain
+1241,Apr-18,Bicycles Themes,Wholesale,Sweden,Current Customer,eBike E148,Mountain
+11555,Dec-17,Eureka Tandem,Wholesale,Sweden,Current Customer,R100 Bike,Racing
+5108,Jun-18,FrontRange Cycle ,Direct,Sweden,Current Customer,M525 Bike,Mountain
+6195,Sep-19,Mastery Speed,Retail,Sweden,Prospect,M525 Bike,Mountain
+4081,Aug-18,Riviting Rides,Retail,Sweden,Prospect,M525 Bike,Mountain
+626,Dec-18,Skyridge,Wholesale,Sweden,Prior Customer,R300 Bike,Racing
+3589,Feb-18,Urban Bikes ,Retail,Sweden,Prospect,M550 Bike,Mountain
+2646,Jun-19,Arthur,Direct,Switzerland,Prior Customer,C990 Bike,Racing
+341,Jun-18,Blackbird Cycle OH,Retail,Switzerland,Prospect,C990 Bike,Racing
+8389,Oct-17,Bomb Rides,Wholesale,Switzerland,Current Customer,M525 Bike,Mountain
+7226,Aug-19,Cycle Stop ,Direct,Switzerland,Prospect,R100 Bike,Racing
+2637,Jun-19,JustRight Rides,Direct,Switzerland,Prospect,C950 Bike,Mountain
+2192,Nov-17,Ngu Performance Designs,Retail,Switzerland,Prior Customer,R100 Bike,Racing
+2324,May-18,Olympus Tandem,Retail,Switzerland,Current Customer,M550 Bike,Mountain
+5151,Oct-17,Rides Ability,Direct,Switzerland,Prior Customer,M550 Bike,Mountain
+6873,Jun-19,TopGun Cycle ,Wholesale,Switzerland,Current Customer,R200 Bike 4s,Racing
+4012,Jan-19,Wheel Depot LU,Direct,Switzerland,Current Customer,R200 Bike 4s,Racing
+473,Sep-18,Wheels,Wholesale,Switzerland,Prior Customer,C900 Bike,Mountain
+796,Dec-17,Aqua Rides,Wholesale,Syrian Arab Republic,Current Customer,M550 Bike,Mountain
+2992,Jan-19,Cadence Cycling Shop,Direct,Syrian Arab Republic,Prior Customer,C950 Bike,Mountain
+1868,Sep-19,Cogsworth Cycles,Retail,Syrian Arab Republic,Prospect,eBike E148,Mountain
+5249,Dec-18,Dynamic Rides,Direct,Syrian Arab Republic,Prior Customer,eBike E148,Mountain
+3472,Feb-19,Flatiron Cyclist ,Direct,Syrian Arab Republic,Prior Customer,R100 Bike,Racing
+4367,Oct-17,Handlebars,Retail,Syrian Arab Republic,Prospect,M550 Bike,Mountain
+2995,Apr-19,Jeiel-Bikes,Retail,Syrian Arab Republic,Prior Customer,M550 Bike,Mountain
+7541,Jun-19,Pannier,Wholesale,Syrian Arab Republic,Prospect,R200 Bike 4s,Racing
+443,Oct-18,Pronto,Retail,Syrian Arab Republic,Prior Customer,eBike E148,Mountain
+5268,Nov-17,QuikRides,Direct,Syrian Arab Republic,Prior Customer,R200 Bike 4s,Racing
+14349,Jan-18,Rides Property ,Wholesale,Syrian Arab Republic,Current Customer,M525 Bike,Mountain
+4498,Apr-18,Senate Rides ,Direct,Syrian Arab Republic,Prior Customer,R200 Bike 4s,Racing
+1564,Jun-19,Sports Lot,Retail,Syrian Arab Republic,Current Customer,M550 Bike,Mountain
+1355,Aug-18,Thinter Wheel Company,Retail,Syrian Arab Republic,Prior Customer,M550 Bike,Mountain
+7879,Aug-19,Winner Speed,Retail,Syrian Arab Republic,Current Customer,R100 Bike,Racing
+5942,Aug-18,Agora Wheels VR,Direct,Taiwan, Province of China,Prior Customer,M550 Bike,Mountain
+5791,May-18,Bike Armstrong,Direct,Taiwan, Province of China,Prior Customer,R100 Bike,Racing
+1074,Mar-18,Excel,Retail,Taiwan, Province of China,Prospect,M550 Bike,Mountain
+2208,Oct-17,Fellowship Wheels ,Wholesale,Taiwan, Province of China,Prior Customer,M550 Bike,Mountain
+1649,Sep-19,Innovative Bikes,Retail,Taiwan, Province of China,Prior Customer,M550 Bike,Mountain
+7218,Aug-19,Mighty Rides,Direct,Taiwan, Province of China,Prior Customer,M550 Bike,Mountain
+2923,Apr-18,Ride Or Die,Retail,Taiwan, Province of China,Prospect,C990 Bike,Racing
+4895,Jan-19,Ride Vibe,Direct,Taiwan, Province of China,Prior Customer,R100 Bike,Racing
+1941,Feb-19,Rockwell Wheel,Wholesale,Taiwan, Province of China,Prior Customer,R300 Bike,Racing
+14573,Jan-19,Scooters, Bikes, and More,Wholesale,Taiwan, Province of China,Current Customer,eBike E148,Mountain
+1774,Nov-17,Tandem Premium,Retail,Taiwan, Province of China,Prior Customer,R200 Bike 4s,Racing
+10792,Feb-19,Velocities ,Wholesale,Taiwan, Province of China,Current Customer,R300 Bike,Racing
+3304,Feb-18,Athlete's High,Retail,Tajikistan,Prospect,R200 Bike 4s,Racing
+499,Sep-18,Cycle Cup ,Retail,Tajikistan,Prospect,R200 Bike 4s,Racing
+5189,Aug-19,Kick Wheels ,Retail,Tajikistan,Current Customer,R100 Bike,Racing
+3767,Feb-18,Psychle Shop,Retail,Tajikistan,Prospect,C990 Bike,Racing
+8297,Sep-19,Relic Cycle,Direct,Tajikistan,Prospect,C950 Bike,Mountain
+4049,Aug-19,Traffic Cycle ,Retail,Tajikistan,Current Customer,R200 Bike 4s,Racing
+3204,Sep-19,A-Cycles,Retail,Tanzania, United Republic of,Current Customer,M550 Bike,Mountain
+5158,Jul-19,ColdFusion Cycle ,Direct,Tanzania, United Republic of,Prospect,R100 Bike,Racing
+1411,Apr-18,HighClass Rides,Retail,Tanzania, United Republic of,Prospect,R100 Bike,Racing
+3917,Sep-18,Hubert's,Retail,Tanzania, United Republic of,Prospect,eBike E148,Mountain
+2406,Feb-19,Prose Cycle ,Retail,Tanzania, United Republic of,Current Customer,C990 Bike,Racing
+3782,Jun-19,Statement Cycles SU,Wholesale,Tanzania, United Republic of,Current Customer,R300 Bike,Racing
+2948,Jan-18,Sunday Bikes ,Direct,Tanzania, United Republic of,Prior Customer,C990 Bike,Racing
+8534,Jul-19,Zip Cycle,Direct,Tanzania, United Republic of,Prospect,C950 Bike,Mountain
+11394,Jan-19,Bicycles Fresh,Wholesale,Thailand,Current Customer,R300 Bike,Racing
+10360,Feb-19,Biker Life,Retail,Thailand,Current Customer,C990 Bike,Racing
+4102,Sep-19,Bikes Brothers ,Retail,Thailand,Prospect,eBike E148,Mountain
+10723,Apr-18,Cycle Prodigy,Wholesale,Thailand,Current Customer,C900 Bike,Mountain
+11899,May-18,Gear Shifts,Wholesale,Thailand,Current Customer,R200 Bike 4s,Racing
+13079,Aug-18,Jacob & Jane,Wholesale,Thailand,Current Customer,M525 Bike,Mountain
+3693,Jun-18,Narita Transportation,Retail,Thailand,Prospect,C900 Bike,Mountain
+13128,Jan-18,Semantic Speed,Wholesale,Thailand,Current Customer,R300 Bike,Racing
+6524,Jun-19,Vulcan Bike,Direct,Thailand,Prospect,R100 Bike,Racing
+12085,Jun-19,Westmond Bike Bar,Wholesale,Thailand,Current Customer,R300 Bike,Racing
+2455,May-18,Arrowhead Cycle,Direct,Timor-leste,Prior Customer,C900 Bike,Mountain
+2503,Jun-18,Bicycles Atlas,Retail,Timor-leste,Prior Customer,eBike E148,Mountain
+4733,Aug-19,Bicycles Folder,Retail,Timor-leste,Prospect,M550 Bike,Mountain
+6224,Jun-18,Cyclist Renaissance ,Direct,Timor-leste,Prior Customer,eBike E148,Mountain
+956,Jan-19,Exeter Ride,Retail,Timor-leste,Current Customer,M550 Bike,Mountain
+9419,Jul-18,LoneWolf Bikes ,Wholesale,Timor-leste,Current Customer,C950 Bike,Mountain
+10554,Jun-19,Magical Rides,Wholesale,Timor-leste,Current Customer,C950 Bike,Mountain
+8627,Mar-19,Rides Destiny ,Wholesale,Timor-leste,Current Customer,R200 Bike 4s,Racing
+258,Feb-19,Ron's Rides,Direct,Timor-leste,Prior Customer,M525 Bike,Mountain
+5778,Nov-17,Top Rated Wheels,Direct,Timor-leste,Prior Customer,C950 Bike,Mountain
+2232,Aug-18,Undercuvver,Direct,Timor-leste,Prior Customer,M550 Bike,Mountain
+336,Dec-18,Underground Rides QC,Direct,Timor-leste,Prior Customer,eBike E148,Mountain
+5777,Aug-18,BlueBox Bicycles,Direct,Togo,Current Customer,R200 Bike 4s,Racing
+9961,Feb-19,Cyclist Tutor ,Wholesale,Togo,Prospect,eBike E148,Mountain
+129,Aug-19,Equalizer,Wholesale,Togo,Prospect,R300 Bike,Racing
+3579,May-18,OffGrid Speed,Retail,Togo,Prior Customer,C900 Bike,Mountain
+3683,Feb-19,Rides Doctors,Direct,Togo,Current Customer,R200 Bike 4s,Racing
+4632,Dec-18,RightBrain Cyclist ,Direct,Togo,Prior Customer,eBike E148,Mountain
+2099,Sep-18,Wheel Power WS,Wholesale,Togo,Prospect,R300 Bike,Racing
+2703,Jul-19,3Wheelz,Wholesale,Tokelau,Prior Customer,R300 Bike,Racing
+6261,Aug-18,Airborne Cycle Studio LB,Direct,Tokelau,Prior Customer,R100 Bike,Racing
+1285,Sep-18,Barry Cycle Company,Wholesale,Tokelau,Prospect,M550 Bike,Mountain
+1965,Feb-18,Competitive Advantage,Retail,Tokelau,Current Customer,M550 Bike,Mountain
+4323,Oct-18,Hillside Cyclist ,Direct,Tokelau,Current Customer,M550 Bike,Mountain
+7454,Aug-19,Integra Rides ,Direct,Tokelau,Current Customer,C900 Bike,Mountain
+3492,Dec-18,Launchpad Rides,Direct,Tokelau,Prior Customer,C950 Bike,Mountain
+4943,Jun-18,Pure Ride,Direct,Tokelau,Current Customer,R100 Bike,Racing
+111,Dec-18,Street Bikes ,Retail,Tokelau,Current Customer,M550 Bike,Mountain
+9022,Nov-17,Atlas Rides ,Wholesale,Tonga,Current Customer,R200 Bike 4s,Racing
+6964,Nov-18,Axels and Gears,Direct,Tonga,Prospect,M525 Bike,Mountain
+6475,Mar-19,Bicycles Leader,Direct,Tonga,Prior Customer,C900 Bike,Mountain
+15029,Mar-19,Commuter Cycles,Wholesale,Tonga,Current Customer,C950 Bike,Mountain
+555,Aug-18,Ladybug Rides,Direct,Tonga,Prior Customer,C900 Bike,Mountain
+6322,Apr-19,Main Street Bikes,Direct,Tonga,Prior Customer,R200 Bike 4s,Racing
+5402,Apr-18,Oslo,Direct,Tonga,Prior Customer,R100 Bike,Racing
+5053,Jan-18,Prudent Sports,Retail,Tonga,Prior Customer,C950 Bike,Mountain
+3084,Jun-18,Trail Blazer AJ,Direct,Tonga,Prior Customer,M525 Bike,Mountain
+11835,Mar-18,Underground Rides VI,Wholesale,Tonga,Current Customer,M525 Bike,Mountain
+3349,Feb-19,AllAccess Bikes ,Direct,Trinidad and Tobago,Prior Customer,C900 Bike,Mountain
+6603,Aug-19,Bicycles Stick,Direct,Trinidad and Tobago,Prior Customer,M550 Bike,Mountain
+4575,Nov-17,Bunny Hops,Direct,Trinidad and Tobago,Prior Customer,R200 Bike 4s,Racing
+1602,May-18,Curbachio,Retail,Trinidad and Tobago,Prospect,R100 Bike,Racing
+2974,Nov-17,Inventive Rides,Retail,Trinidad and Tobago,Prospect,M550 Bike,Mountain
+414,Aug-18,Maryx,Direct,Trinidad and Tobago,Prior Customer,R200 Bike 4s,Racing
+2632,Oct-17,Outpost Rides,Retail,Trinidad and Tobago,Prospect,C900 Bike,Mountain
+2428,Nov-18,Reddan,Retail,Trinidad and Tobago,Prospect,C990 Bike,Racing
+7207,Aug-19,Tech Cycle ,Direct,Trinidad and Tobago,Prior Customer,R100 Bike,Racing
+1354,Dec-17,TestDrive Cycle ,Direct,Trinidad and Tobago,Prospect,C950 Bike,Mountain
+2859,Oct-18,Uptown Rides,Wholesale,Trinidad and Tobago,Prior Customer,R300 Bike,Racing
+2685,May-18,Wheels Service ,Retail,Trinidad and Tobago,Prior Customer,C990 Bike,Racing
+1466,Oct-17,Awesome Rides,Retail,Tunisia,Current Customer,M550 Bike,Mountain
+3697,Mar-19,Bicycles West,Direct,Tunisia,Prospect,C990 Bike,Racing
+1367,Dec-17,Blackbird Cycle PL,Retail,Tunisia,Current Customer,M550 Bike,Mountain
+1921,Apr-19,Cinch Bikes ,Retail,Tunisia,Prospect,eBike E148,Mountain
+3271,Sep-18,Koncrete,Direct,Tunisia,Prior Customer,M525 Bike,Mountain
+4535,Nov-17,Nitro Wheels ,Wholesale,Tunisia,Prospect,M525 Bike,Mountain
+4805,Mar-18,Premier Cycle   ,Direct,Tunisia,Prior Customer,C990 Bike,Racing
+337,Oct-17,Trail Blazer PL,Retail,Tunisia,Prospect,M525 Bike,Mountain
+4674,Aug-19,Valley Cycle ,Direct,Tunisia,Prior Customer,C900 Bike,Mountain
+7539,Jul-19,Wheel Depot RN,Wholesale,Tunisia,Current Customer,M550 Bike,Mountain
+4832,Apr-18,Your Local Bike Shop RO,Direct,Tunisia,Current Customer,eBike E148,Mountain
+5907,Apr-19,Bike Hub,Direct,Turkey,Prior Customer,R100 Bike,Racing
+8636,Sep-18,Bike for Life,Wholesale,Turkey,Prior Customer,M525 Bike,Mountain
+5073,Nov-18,Blackbird Cycle HI,Direct,Turkey,Prior Customer,R200 Bike 4s,Racing
+4707,Jun-19,Bowrides,Direct,Turkey,Prior Customer,M525 Bike,Mountain
+5297,Dec-17,Brisk Bicycles,Direct,Turkey,Prior Customer,R100 Bike,Racing
+2736,Aug-19,ByeCycle,Retail,Turkey,Current Customer,C990 Bike,Racing
+5746,Dec-18,DeepBlue Bikes ,Retail,Turkey,Prior Customer,eBike E148,Mountain
+2945,Jan-19,Estate Rides,Retail,Turkey,Prospect,C950 Bike,Mountain
+9141,Aug-18,Globe Rides,Direct,Turkey,Prior Customer,eBike E148,Mountain
+4498,Dec-17,Headset,Wholesale,Turkey,Current Customer,eBike E148,Mountain
+401,Aug-19,Mix Rides ,Retail,Turkey,Prospect,R200 Bike 4s,Racing
+6245,Jan-18,Next Rides ,Direct,Turkey,Prior Customer,C900 Bike,Mountain
+2906,Oct-18,OnDemand Wheels ,Retail,Turkey,Prospect,C950 Bike,Mountain
+4048,Mar-18,Oriental Rides,Retail,Turkey,Current Customer,M550 Bike,Mountain
+6803,Oct-18,Owen Performance Designs,Direct,Turkey,Prior Customer,M525 Bike,Mountain
+6397,Dec-17,Rides Here,Wholesale,Turkey,Prior Customer,eBike E148,Mountain
+5613,Apr-19,Riverdale Rides,Wholesale,Turkey,Prospect,R300 Bike,Racing
+8914,Oct-17,Speedology,Wholesale,Turkey,Current Customer,C900 Bike,Mountain
+829,Jun-19,Spring Cycle,Direct,Turkey,Prior Customer,eBike E148,Mountain
+5779,May-18,Venus Cycle MN,Direct,Turkey,Prior Customer,C900 Bike,Mountain
+3928,Feb-19,Venus Cycle OH,Retail,Turkey,Prior Customer,R100 Bike,Racing
+2359,Apr-18,WINd,Wholesale,Turkey,Current Customer,R300 Bike,Racing
+4512,Dec-17,Weylie & Wah,Direct,Turkey,Prior Customer,R200 Bike 4s,Racing
+2232,Jun-19,Wheels Meeting ,Retail,Turkey,Prior Customer,C990 Bike,Racing
+2226,Jan-18,Golden Girls Bikes,Retail,Turkmenistan,Prior Customer,eBike E148,Mountain
+2857,Feb-19,Speedy Gonzales,Retail,Turkmenistan,Current Customer,R100 Bike,Racing
+6924,Oct-18,Battlefield Ride,Direct,Turks and Caicos Islands,Prior Customer,M525 Bike,Mountain
+2283,Mar-18,Clout Rides ,Retail,Turks and Caicos Islands,Prior Customer,M550 Bike,Mountain
+9432,Jan-19,Mystic Bikes DP,Wholesale,Turks and Caicos Islands,Current Customer,C900 Bike,Mountain
+3352,Jun-19,Profile Bicycles,Direct,Turks and Caicos Islands,Prior Customer,R100 Bike,Racing
+5093,Aug-18,TrueBlue Sports,Direct,Turks and Caicos Islands,Prior Customer,M550 Bike,Mountain
+1192,Jan-18,Vortex Cycle FL,Retail,Turks and Caicos Islands,Current Customer,M550 Bike,Mountain
+2602,Jan-18,Zen Rides UA,Wholesale,Turks and Caicos Islands,Prior Customer,R300 Bike,Racing
+9611,Oct-17,Agora Wheels MN,Direct,Tuvalu,Prior Customer,M525 Bike,Mountain
+3506,Oct-17,Clever Tandem,Retail,Tuvalu,Prior Customer,R100 Bike,Racing
+3389,Apr-19,Gorilla Rides,Wholesale,Tuvalu,Prospect,M550 Bike,Mountain
+5753,Dec-17,Pro Cycle,Direct,Tuvalu,Current Customer,eBike E148,Mountain
+1539,May-19,Spine Bikes ,Wholesale,Tuvalu,Current Customer,M550 Bike,Mountain
+5415,Feb-18,Tandem Harbor,Direct,Tuvalu,Prior Customer,C950 Bike,Mountain
+703,Feb-18,Zen Rides RW,Wholesale,Tuvalu,Current Customer,M550 Bike,Mountain
+2086,Aug-18,100 RPM,Retail,Uganda,Prospect,C950 Bike,Mountain
+5562,Oct-18,Cycle Smart,Direct,Uganda,Prior Customer,R100 Bike,Racing
+6809,Dec-17,HighLine Wheels,Wholesale,Uganda,Prior Customer,R300 Bike,Racing
+7398,Jun-18,Ride Vibe,Wholesale,Uganda,Current Customer,R200 Bike 4s,Racing
+3217,Mar-18,Statement Cycles DL,Wholesale,Uganda,Current Customer,R300 Bike,Racing
+15045,Dec-17,Stone Rides ,Wholesale,Uganda,Current Customer,M525 Bike,Mountain
+3269,Jun-19,Cycle Deals ,Direct,Ukraine,Prior Customer,R200 Bike 4s,Racing
+6304,Mar-18,Final Kilometer,Retail,Ukraine,Prospect,M525 Bike,Mountain
+4511,Jul-18,Gear for Life,Direct,Ukraine,Prior Customer,C900 Bike,Mountain
+3958,Jul-19,Gold Medal Pedals,Retail,Ukraine,Prospect,eBike E148,Mountain
+774,Aug-18,Grand Speed,Wholesale,Ukraine,Current Customer,M550 Bike,Mountain
+2828,Aug-18,Scorpio Rides OH,Retail,Ukraine,Prospect,C900 Bike,Mountain
+3611,May-19,South Cycle Studio,Direct,Ukraine,Prior Customer,C950 Bike,Mountain
+2991,Aug-18,Speedy Bee,Direct,Ukraine,Prospect,R200 Bike 4s,Racing
+10807,Nov-18,Spitfire Wheel,Wholesale,Ukraine,Current Customer,C900 Bike,Mountain
+3837,Jul-18,Bicycles Elf,Retail,United Arab Emirates,Current Customer,M550 Bike,Mountain
+924,Nov-18,Bike2Go,Wholesale,United Arab Emirates,Current Customer,M550 Bike,Mountain
+4605,Jul-18,Blackbird Cycle NG,Wholesale,United Arab Emirates,Prior Customer,M525 Bike,Mountain
+3515,Jan-18,Flexycle,Direct,United Arab Emirates,Current Customer,M550 Bike,Mountain
+1511,Feb-18,Machine,Retail,United Arab Emirates,Prospect,C950 Bike,Mountain
+4258,Apr-19,Mystic Bikes MN,Retail,United Arab Emirates,Prospect,M525 Bike,Mountain
+4677,Dec-18,NextGen Cycle ,Retail,United Arab Emirates,Prospect,C900 Bike,Mountain
+5713,Mar-19,Serenity Tandem,Retail,United Arab Emirates,Prospect,C900 Bike,Mountain
+8149,Oct-17,Underground Rides OD,Direct,United Arab Emirates,Prospect,M525 Bike,Mountain
+715,Feb-18,Vortex Cycle JN,Wholesale,United Arab Emirates,Prior Customer,C900 Bike,Mountain
+3115,Sep-18,Wheel Depot LK,Direct,United Arab Emirates,Prior Customer,C900 Bike,Mountain
+12538,Feb-19,Adrenaline Rush ES,Retail,United Kingdom,Current Customer,R200 Bike 4s,Racing
+12532,Jun-19,Adrenaline Rush QS,Wholesale,United Kingdom,Current Customer,R300 Bike,Racing
+24222,Dec-18,Bikes Rule ,Wholesale,United Kingdom,Prospect,eBike E148,Mountain
+2538,Jan-18,Bliss Rides,Wholesale,United Kingdom,Prospect,C990 Bike,Racing
+7453,Mar-19,Carpe Diem Cycle Shop,Direct,United Kingdom,Prior Customer,C990 Bike,Racing
+4436,Aug-18,Cycle Course,Retail,United Kingdom,Current Customer,C900 Bike,Mountain
+12483,Jun-19,DarkHorse Rides ,Wholesale,United Kingdom,Current Customer,C900 Bike,Mountain
+19001,Dec-18,Drafting,Retail,United Kingdom,Current Customer,R200 Bike 4s,Racing
+14497,Sep-19,Engineered Ride,Wholesale,United Kingdom,Prospect,eBike E148,Mountain
+5024,Mar-18,Enigma,Direct,United Kingdom,Prior Customer,C990 Bike,Racing
+6038,Nov-18,Happy Dragon Cycles,Direct,United Kingdom,Prior Customer,C900 Bike,Mountain
+4511,Jul-18,Impress Cycle ,Direct,United Kingdom,Prior Customer,R200 Bike 4s,Racing
+15958,May-18,Number One Bike Shop,Wholesale,United Kingdom,Prospect,eBike E148,Mountain
+4775,Sep-18,Pedals R Us,Direct,United Kingdom,Prior Customer,M525 Bike,Mountain
+20029,Jul-19,Primal Rides ,Wholesale,United Kingdom,Current Customer,C950 Bike,Mountain
+17259,Jun-19,Prize Cyclist ,Wholesale,United Kingdom,Current Customer,M525 Bike,Mountain
+6355,Jun-18,Reliance Rides ,Direct,United Kingdom,Prior Customer,C950 Bike,Mountain
+2795,Sep-18,Rides Glamour ,Retail,United Kingdom,Prospect,M550 Bike,Mountain
+17599,Feb-18,Rides Wild,Wholesale,United Kingdom,Current Customer,R200 Bike 4s,Racing
+4882,Jan-18,Sports Path,Retail,United Kingdom,Prospect,M525 Bike,Mountain
+2886,Jul-19,Sports Reach,Retail,United Kingdom,Prospect,R200 Bike 4s,Racing
+18317,Dec-18,Stylus Rides,Wholesale,United Kingdom,Current Customer,M525 Bike,Mountain
+1765,Aug-18,Swift Cycles,Retail,United Kingdom,Prospect,R200 Bike 4s,Racing
+13999,Mar-18,Vortex Cycle KL,Wholesale,United Kingdom,Current Customer,R300 Bike,Racing
+4623,Sep-19,Wheel Power MX,Direct,United Kingdom,Prior Customer,C900 Bike,Mountain
+4982,Feb-19,World Sports OH,Retail,United Kingdom,Prospect,C950 Bike,Mountain
+16437,Aug-19,Airborne Cycle Studio BC,Wholesale,United States,Current Customer,C950 Bike,Mountain
+1854,Aug-18,Albert's Wheels,Wholesale,United States,Current Customer,M525 Bike,Mountain
+7557,Nov-18,Ascent Bikes ,Direct,United States,Prior Customer,M550 Bike,Mountain
+17379,Mar-19,Atlantic Bikes,Wholesale,United States,Current Customer,M525 Bike,Mountain
+13199,Jun-19,Beater Bikes AB,Direct,United States,Prospect,eBike E148,Mountain
+15214,Jan-19,BetterRidez,Wholesale,United States,Current Customer,R300 Bike,Racing
+3376,Jun-19,Bicycles Monkey,Direct,United States,Prior Customer,C950 Bike,Mountain
+10051,Mar-18,Bikes Ranger ,Wholesale,United States,Current Customer,eBike E148,Mountain
+18793,Jul-19,Bluegrass Cycle ,Wholesale,United States,Prospect,eBike E148,Mountain
+5832,Feb-18,Camelot Sports TO,Wholesale,United States,Prospect,R300 Bike,Racing
+3687,Jul-19,Capstone,Retail,United States,Current Customer,R200 Bike 4s,Racing
+9335,Nov-17,Centurion Bikes,Wholesale,United States,Current Customer,R200 Bike 4s,Racing
+10586,May-19,Challenge Chasers,Wholesale,United States,Current Customer,C900 Bike,Mountain
+4885,Jun-19,Cycle Queen ,Retail,United States,Prospect,M550 Bike,Mountain
+14051,Oct-18,Cycle Town,Wholesale,United States,Current Customer,R100 Bike,Racing
+18874,Jan-18,Daily Cycle   ,Wholesale,United States,Prior Customer,eBike E148,Mountain
+16913,Apr-18,Dunek ,Wholesale,United States,Current Customer,C990 Bike,Racing
+24554,Sep-18,Ethos Wheel,Wholesale,United States,Prospect,eBike E148,Mountain
+5058,Sep-18,Force Bikes ,Retail,United States,Prospect,M550 Bike,Mountain
+6259,Apr-19,Foremost Sports,Wholesale,United States,Prospect,R300 Bike,Racing
+6813,Jun-18,Hermione Helmets,Wholesale,United States,Prior Customer,R300 Bike,Racing
+15196,Jul-19,Highlands Bicycles,Wholesale,United States,Current Customer,R200 Bike 4s,Racing
+13323,Oct-17,Incredible Cycles,Wholesale,United States,Current Customer,R300 Bike,Racing
+4723,Dec-18,Initial Tandem,Wholesale,United States,Current Customer,R300 Bike,Racing
+6741,Feb-19,Internet Cycle ,Wholesale,United States,Current Customer,R300 Bike,Racing
+10578,Jun-18,LiveOak Rides ,Wholesale,United States,Current Customer,R100 Bike,Racing
+4523,Jun-19,Managed Wheels ,Direct,United States,Prior Customer,C990 Bike,Racing
+10851,May-18,Mystic Bikes SO,Wholesale,United States,Current Customer,M525 Bike,Mountain
+10520,Nov-18,Nano Tandem,Wholesale,United States,Current Customer,C900 Bike,Mountain
+15364,Apr-19,Pedal For You,Wholesale,United States,Current Customer,R200 Bike 4s,Racing
+12952,Mar-18,PedalStrong,Wholesale,United States,Current Customer,R100 Bike,Racing
+3546,Mar-19,Ride Eyes,Direct,United States,Current Customer,C900 Bike,Mountain
+15613,Jun-18,Rides Exchange,Wholesale,United States,Current Customer,R300 Bike,Racing
+5328,Sep-18,Rides Letter ,Wholesale,United States,Prior Customer,R300 Bike,Racing
+869,Jun-19,Rides Order,Wholesale,United States,Current Customer,M525 Bike,Mountain
+14822,Aug-19,Short Bikes ,Retail,United States,Current Customer,R200 Bike 4s,Racing
+15927,Nov-17,Speed Storm,Wholesale,United States,Current Customer,C900 Bike,Mountain
+23186,Oct-17,Sports Bunny,Wholesale,United States,Prospect,eBike E148,Mountain
+5237,Oct-17,Tandem Supplies,Retail,United States,Prospect,R100 Bike,Racing
+17899,Apr-19,Tandem Tires,Wholesale,United States,Current Customer,C990 Bike,Racing
+7323,Jun-19,Targeted Bicycles,Wholesale,United States,Prior Customer,R300 Bike,Racing
+12149,Aug-19,The Cycle Life,Retail,United States,Current Customer,R100 Bike,Racing
+4619,Feb-19,Torch Co.,Wholesale,United States,Prior Customer,R300 Bike,Racing
+17152,Jan-18,Trail Blazer AB,Wholesale,United States,Current Customer,M525 Bike,Mountain
+10101,Apr-18,True Sports,Wholesale,United States,Current Customer,R100 Bike,Racing
+5513,May-19,Twilight Rides JA,Wholesale,United States,Prospect,R300 Bike,Racing
+17952,Oct-17,Underground Rides AV,Wholesale,United States,Current Customer,C900 Bike,Mountain
+16575,Sep-19,,,United States,,C900 Bike,Mountain
+10285,Aug-19,Underground Rides OH,Wholesale,United States,Current Customer,R100 Bike,Racing
+371,Feb-19,Unite Bikes ,Wholesale,United States,Prospect,R300 Bike,Racing
+1308,Aug-18,Venus Cycle NY,Wholesale,United States,Current Customer,R100 Bike,Racing
+7264,Apr-19,Vortex Cycle JA,Wholesale,United States,Prospect,R300 Bike,Racing
+17542,Mar-19,Web Cycle ,Wholesale,United States,Current Customer,C950 Bike,Mountain
+5164,Jan-19,Wheels Circuit ,Wholesale,United States,Prior Customer,R300 Bike,Racing
+1734,Dec-17,Wheels Movement,Wholesale,United States,Current Customer,C900 Bike,Mountain
+253,Sep-18,World Sports MS,Wholesale,United States,Prospect,R300 Bike,Racing
+16744,Jun-18,Zeron,Wholesale,United States,Current Customer,R200 Bike 4s,Racing
+533,Jul-19,Airborne Cycle Studio TK,Direct,United States Minor Outlying Islands,Prior Customer,M550 Bike,Mountain
+4176,Jan-19,Burnaby Cycle Studio,Wholesale,United States Minor Outlying Islands,Prior Customer,C900 Bike,Mountain
+1591,Jan-18,Intense Sports,Wholesale,United States Minor Outlying Islands,Prospect,R300 Bike,Racing
+5259,Aug-19,Overall Wheels ,Direct,United States Minor Outlying Islands,Prior Customer,C900 Bike,Mountain
+5988,May-19,Wicked Tandem,Retail,United States Minor Outlying Islands,Prior Customer,C950 Bike,Mountain
+8174,Jul-19,Bicycles Trivia,Wholesale,Uruguay,Current Customer,C950 Bike,Mountain
+5104,Jul-18,Carriage Sports,Retail,Uruguay,Prospect,M525 Bike,Mountain
+1948,Jul-18,Cycle Specialty Shop,Retail,Uruguay,Prospect,M550 Bike,Mountain
+5,Sep-19,Forreal ,Direct,Uruguay,Prior Customer,M550 Bike,Mountain
+5764,Jun-19,Maven Speed,Direct,Uruguay,Prior Customer,M525 Bike,Mountain
+10034,Jan-18,Ridegetop,Wholesale,Uruguay,Current Customer,C990 Bike,Racing
+3094,Jun-19,Silicon Cycle ,Retail,Uruguay,Prior Customer,C990 Bike,Racing
+3845,Mar-19,Utopia,Direct,Uruguay,Prospect,R200 Bike 4s,Racing
+3342,Jun-18,World Sports PR,Wholesale,Uruguay,Prospect,R300 Bike,Racing
+3514,Feb-18,All The Right Bikes,Direct,Uzbekistan,Current Customer,C990 Bike,Racing
+9245,Sep-19,Formal Cyclist ,Wholesale,Uzbekistan,Current Customer,R200 Bike 4s,Racing
+4621,Aug-18,Handmade Rides,Direct,Uzbekistan,Prior Customer,C950 Bike,Mountain
+2014,May-19,Iron Rod Bicycles AB,Direct,Uzbekistan,Prior Customer,eBike E148,Mountain
+597,Apr-19,New Rides,Retail,Uzbekistan,Prospect,C900 Bike,Mountain
+3179,Nov-17,Sigma Bikes,Direct,Uzbekistan,Prior Customer,R200 Bike 4s,Racing
+2337,Jul-18,Sports Main,Direct,Uzbekistan,Prior Customer,R200 Bike 4s,Racing
+4361,Dec-18,Terrain,Direct,Uzbekistan,Prospect,M525 Bike,Mountain
+38,Jun-19,Weekly Bikes ,Direct,Uzbekistan,Prior Customer,R200 Bike 4s,Racing
+2938,Jul-19,Your Local Bike Shop TO,Wholesale,Uzbekistan,Prior Customer,R100 Bike,Racing
+3892,Apr-19,Appliance Rides,Retail,Vanuatu,Prior Customer,eBike E148,Mountain
+2612,Oct-17,Bike Chains Co.,Retail,Vanuatu,Prior Customer,C990 Bike,Racing
+2271,Aug-18,Ckydesdale,Direct,Vanuatu,Prospect,eBike E148,Mountain
+6399,Mar-19,Cruz On,Direct,Vanuatu,Prior Customer,R200 Bike 4s,Racing
+4132,Jul-18,Cyberspace Cyclist ,Retail,Vanuatu,Prospect,M550 Bike,Mountain
+2503,Dec-17,Cycle Rise ,Direct,Vanuatu,Prior Customer,C950 Bike,Mountain
+347,Nov-17,Fallon-Beesley Bikes,Direct,Vanuatu,Prior Customer,M550 Bike,Mountain
+12117,Apr-18,Jasmine Rides,Retail,Vanuatu,Prior Customer,eBike E148,Mountain
+1448,Feb-19,Minibus,Retail,Vanuatu,Prospect,C950 Bike,Mountain
+387,Dec-17,Presto Tandem,Retail,Vanuatu,Prospect,C990 Bike,Racing
+1684,Nov-17,Real Rides,Retail,Vanuatu,Prior Customer,R100 Bike,Racing
+6974,Dec-18,RedHat Speed,Retail,Vanuatu,Current Customer,R100 Bike,Racing
+5033,Jul-19,Ride Kings,Direct,Vanuatu,Prior Customer,M550 Bike,Mountain
+4808,Oct-18,Sable Rides ,Direct,Vanuatu,Prior Customer,eBike E148,Mountain
+4612,May-19,ThinkBig Cycle ,Direct,Vanuatu,Prior Customer,R100 Bike,Racing
+4697,Jul-18,Venus Bicycles,Direct,Vanuatu,Prior Customer,M525 Bike,Mountain
+5182,Jul-19,Zeal,Direct,Vanuatu,Prior Customer,R200 Bike 4s,Racing
+8894,Nov-17,Aspire Rides ,Wholesale,Venezuela,Current Customer,C900 Bike,Mountain
+2899,Jan-18,Aster Cycle ,Direct,Venezuela,Prospect,M525 Bike,Mountain
+6067,Sep-19,East Cycle Studio,Direct,Venezuela,Prospect,C900 Bike,Mountain
+1924,Sep-18,Exceed Rides,Direct,Venezuela,Current Customer,M550 Bike,Mountain
+5922,Sep-19,Kent-Clark,Direct,Venezuela,Prior Customer,C950 Bike,Mountain
+4127,Jul-18,Keynote Sports,Direct,Venezuela,Prior Customer,R100 Bike,Racing
+4486,May-18,Rides Scene,Direct,Venezuela,Prospect,R100 Bike,Racing
+6869,Apr-18,Rocket Launch,Retail,Venezuela,Prior Customer,C900 Bike,Mountain
+10373,Mar-19,Search Cyclist ,Direct,Venezuela,Current Customer,M525 Bike,Mountain
+1269,Jun-18,The Bike Life,Direct,Venezuela,Prospect,C950 Bike,Mountain
+4197,Jan-18,Touchstone Champsion,Direct,Venezuela,Prior Customer,C990 Bike,Racing
+4627,Jun-18,Tracks,Retail,Venezuela,Current Customer,R100 Bike,Racing
+7728,Apr-18,Best Bikes,Wholesale,Viet Nam,Current Customer,eBike E148,Mountain
+8469,Jul-18,Dusters,Wholesale,Viet Nam,Current Customer,C990 Bike,Racing
+4311,Sep-19,Lion Cyclist ,Direct,Viet Nam,Prior Customer,eBike E148,Mountain
+1653,Feb-18,Pacific Bikes,Retail,Viet Nam,Prior Customer,M550 Bike,Mountain
+3684,Jul-18,Rides Promotional,Retail,Viet Nam,Prior Customer,M525 Bike,Mountain
+5149,May-19,Twilight Rides WO,Retail,Viet Nam,Prospect,R200 Bike 4s,Racing
+3684,Jul-19,Wind Catchers,Retail,Viet Nam,Prospect,C950 Bike,Mountain
+2175,Jan-18,Agile Tandem,Retail,Virgin Islands, British,Prospect,M525 Bike,Mountain
+8391,May-19,Aurora Wheel,Wholesale,Virgin Islands, British,Current Customer,C990 Bike,Racing
+4977,Jul-18,Cheaper Bicycles,Wholesale,Virgin Islands, British,Current Customer,R300 Bike,Racing
+4481,Nov-18,Cycle Doctor,Direct,Virgin Islands, British,Prior Customer,R100 Bike,Racing
+4756,Oct-18,Gen Cycle,Wholesale,Virgin Islands, British,Prospect,R300 Bike,Racing
+7649,Jun-19,Ineptus,Wholesale,Virgin Islands, British,Current Customer,C950 Bike,Mountain
+6232,May-18,Know Speed,Wholesale,Virgin Islands, British,Current Customer,R300 Bike,Racing
+4934,Sep-19,Portable Rides ,Direct,Virgin Islands, British,Prospect,M525 Bike,Mountain
+3403,Jul-19,Reload Wheels ,Retail,Virgin Islands, British,Prospect,C950 Bike,Mountain
+624,Jun-18,Sped,Wholesale,Virgin Islands, British,Prior Customer,R300 Bike,Racing
+11115,Nov-17,Tandem Con,Retail,Virgin Islands, British,Prospect,eBike E148,Mountain
+159,Feb-19,Trail Blazer MS,Retail,Virgin Islands, British,Prospect,R100 Bike,Racing
+2001,Feb-18,Your Local Bike Shop AB,Retail,Virgin Islands, British,Prospect,C950 Bike,Mountain
+4371,Nov-17,Ample Cycle,Wholesale,Virgin Islands, U.S.,Prior Customer,C990 Bike,Racing
+373,Oct-17,Bike Anytime,Retail,Virgin Islands, U.S.,Prospect,R200 Bike 4s,Racing
+813,Mar-18,Grand Tour,Wholesale,Virgin Islands, U.S.,Current Customer,C990 Bike,Racing
+1482,Feb-19,Iron Rod Bicycles VA,Retail,Virgin Islands, U.S.,Current Customer,M550 Bike,Mountain
+4203,Mar-18,Method Bicycles,Retail,Virgin Islands, U.S.,Current Customer,C950 Bike,Mountain
+2518,Dec-17,Spokes,Retail,Virgin Islands, U.S.,Prior Customer,C990 Bike,Racing
+9531,Apr-18,The LBS,Wholesale,Virgin Islands, U.S.,Current Customer,R100 Bike,Racing
+2775,Apr-19,Vehicles R Us,Retail,Virgin Islands, U.S.,Prospect,eBike E148,Mountain
+9392,Jun-18,Road Burns,Wholesale,Wallis and Futuna,Current Customer,M525 Bike,Mountain
+6731,Sep-18,Boundless Bicycles,Retail,Western Sahara,Prospect,eBike E148,Mountain
+10514,Apr-19,Canbikes,Wholesale,Western Sahara,Prospect,R300 Bike,Racing
+624,Jan-19,Economic Cycle ,Direct,Western Sahara,Prior Customer,C900 Bike,Mountain
+7203,Oct-18,OnAir Bikes ,Wholesale,Western Sahara,Current Customer,C990 Bike,Racing
+5278,Dec-18,Peace of Mind Cycle,Direct,Western Sahara,Prior Customer,R200 Bike 4s,Racing
+7415,Jan-18,Rides Spree ,Direct,Western Sahara,Prior Customer,M550 Bike,Mountain
+2455,Mar-19,Wheels Channel ,Retail,Western Sahara,Prospect,C900 Bike,Mountain
+4665,May-19,World Sports FL,Wholesale,Western Sahara,Prior Customer,C950 Bike,Mountain
+7963,May-19,Bike Strong,Direct,Yemen,Prior Customer,eBike E148,Mountain
+6662,Apr-19,Cirrus Cycle,Direct,Yemen,Prior Customer,C900 Bike,Mountain
+6413,Jun-19,Cycle Mates,Retail,Yemen,Current Customer,R100 Bike,Racing
+1697,May-18,Depth Rides ,Retail,Yemen,Prospect,M550 Bike,Mountain
+2075,Oct-18,Motoshop QB,Wholesale,Yemen,Current Customer,R300 Bike,Racing
+1958,Nov-17,OpenRoad Rides,Wholesale,Yemen,Prospect,R300 Bike,Racing
+2599,Apr-19,Presentation Wheels ,Retail,Yemen,Prospect,M550 Bike,Mountain
+4987,Mar-19,Richard Gears,Retail,Yemen,Current Customer,R100 Bike,Racing
+3117,Aug-19,Viewpoint Wheels ,Retail,Yemen,Prior Customer,C990 Bike,Racing
+8168,Dec-17,Wheels Friend ,Wholesale,Yemen,Current Customer,C990 Bike,Racing
+2548,Nov-18,Your Tandem,Wholesale,Yemen,Current Customer,R300 Bike,Racing
+1487,Feb-19,Another Round,Retail,Zambia,Prospect,M550 Bike,Mountain
+1232,Feb-18,BlueBars,Retail,Zambia,Current Customer,M550 Bike,Mountain
+3663,Apr-18,Cycle Extraordinaire,Direct,Zambia,Prior Customer,M525 Bike,Mountain
+457,Jan-19,JAM,Retail,Zambia,Prior Customer,C900 Bike,Mountain
+6799,May-19,Oasis Rides ,Wholesale,Zambia,Current Customer,R200 Bike 4s,Racing
+4872,Aug-19,Report Speed,Direct,Zambia,Prior Customer,R100 Bike,Racing
+7521,Apr-19,Ahead Rides,Wholesale,Zimbabwe,Current Customer,C900 Bike,Mountain
+668,Sep-18,Beachside Wheels,Retail,Zimbabwe,Prospect,M550 Bike,Mountain
+2798,Nov-18,Blue Water Bikes,Retail,Zimbabwe,Prospect,C900 Bike,Mountain
+4365,May-18,Everyone's LBS,Direct,Zimbabwe,Current Customer,M550 Bike,Mountain
+2716,Dec-17,Experike,Retail,Zimbabwe,Prior Customer,R100 Bike,Racing
+4454,Jan-19,Insignia Wheel,Retail,Zimbabwe,Prospect,R200 Bike 4s,Racing
+5659,May-18,Liberation Cyclist ,Wholesale,Zimbabwe,Current Customer,M550 Bike,Mountain
+4659,Mar-18,Lion Rides ,Wholesale,Zimbabwe,Current Customer,M525 Bike,Mountain
+2353,Aug-19,Oasis Cyclist ,Wholesale,Zimbabwe,Current Customer,M525 Bike,Mountain
+7981,May-19,Roadie,Retail,Zimbabwe,Prospect,eBike E148,Mountain
+6013,Sep-18,Tandem Rides,Wholesale,Zimbabwe,Prior Customer,R300 Bike,Racing
+644,Jan-18,Turnaround Bikes ,Retail,Zimbabwe,Current Customer,M550 Bike,Mountain
+2732,Jan-19,Twilight Rides WY,Retail,Zimbabwe,Prospect,R100 Bike,Racing
+1239,Jan-19,Wheel Power SF,Retail,Zimbabwe,Prospect,M550 Bike,Mountain

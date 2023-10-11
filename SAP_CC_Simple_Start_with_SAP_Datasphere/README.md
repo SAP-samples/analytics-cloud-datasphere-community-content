@@ -1,7 +1,8 @@
 # Simple Start with SAP Datasphere.
 
-### Name of Zip File
-Simple_Start_with_SAP_Datasphere.zip
+### Content Package Files
+SAP_CC_DSP_Simple_Start_with_SAP_Datasphere.package
+SAP_CC_SAC_Simple_Start_with_SAP_Datasphere.package
 
 ### Last Released:
 2023.10
@@ -17,10 +18,11 @@ BestRun is interested in a Cloud enabled Data Warehouse and Analytics solution i
 With SAP Datasphere and SAP Analytics Cloud SAP exactly delivers solutions enabling one unified user experience to enable fast, flexible, End-to-End, collaborative enterprise Data Warehousing. Even Business Users can combine heterogeneous data sources easily on their own to answer their specific questions.
 
 ## Details
-N/A
+Check the included demo script for further details [SAP_CC__Simple Start with Data Warehouse Cloud_CC.pdf](SAP_CC_Simple_Start_with_SAP_Datasphere/SAP_CC__Simple Start with Data Warehouse Cloud_CC.pdf)
+Find sample data for the included models in the folder Sample_Data
 
 ## Connectivity
-Data acquisition (sample data)
+N/A
 
 ## Download/Install Instructions
 Follow the script for further instructions.
