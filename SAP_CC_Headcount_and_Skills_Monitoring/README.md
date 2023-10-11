@@ -1,4 +1,4 @@
-# Headcount and Skills Monitoring--
+# Headcount and Skills Monitoring
 
 ## Name of Content File
 SAP_CC_HC_Skills_Monitoring.package
