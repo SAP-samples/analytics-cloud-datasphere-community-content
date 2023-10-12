@@ -28,8 +28,7 @@ N/A
 Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html).
 
 ## More Information
-Please find more information about the content [here
-](https://innofactory-g5dwlmm2ol.dispatcher.jp1.hana.ondemand.com/#!/showcase/548)
+N/A
 
 ## Contact
 Please reach out to [Rafiq Islam](mailto:rafiq.islam@sap.com).
