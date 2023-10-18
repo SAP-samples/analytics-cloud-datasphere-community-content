@@ -1,10 +1,13 @@
 # Carbon Emission Dashboard
 
-## Name of Zip File
-Carbon_Emission.Zip
+## Content Package File
+SAP_CC_Carbon_Emission.package
 
 ## Last Released:
 2023.10
+
+## What´s New
+N/A
 
 ## Descripton
 Business Challenge:
@@ -30,4 +33,4 @@ Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CL
 N/A
 
 ## Contact
-Please contact [Rafiq Islam](mailto:rafiq.islam@sap.com).
+N/A
