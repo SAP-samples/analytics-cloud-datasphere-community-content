@@ -1,7 +1,7 @@
 # Background Verification Dashboard
 
-## Name of Zip File
-Background_Verification.zip
+## Content Package Files
+SAP_CC_Background_Verification.package
 
 ## Last Released:
 2023.10
