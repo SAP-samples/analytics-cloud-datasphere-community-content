@@ -22,6 +22,7 @@ Depending on the use case it may contain additional assets such as sample data f
 Please check the documentation ["Community Content"](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html) how to download and install community content. Please follow the specific instructions shared in the readme of each project.
 
 Each project folder contains a detailed description of the content in its README file. It may also include additional sources of information if available such as a blog or a pdf documentation.
+Navigate to ["Releases"](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content/releases) to download the content package.
 
 ## Known Issues
 No known issues.
