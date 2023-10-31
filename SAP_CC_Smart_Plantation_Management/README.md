@@ -1,14 +1,10 @@
-# Community Content Title
-> Smart Plantation Management
+# Smart Plantation Management
 
-### Name of Zip File
+### Content Package Files
 > SAP_CC_Smart_Plantation_Management.package
 
 ### Last Released:
-> 2023 Q4
-
-## What´s New
-> N/A
+> 2023.10
 
 ## Descripton
 > 
@@ -25,14 +21,11 @@ SAP Analytics Cloud would give Plantation Managers a high-level overview of plan
 > N/A. Acquired data model from excel
 
 ## Download/Install Instructions
-> Basic approach
-
-
-> __Optional__. Before installing this package, ensure that the Currency Conversion tables have been generated in the destination space. Details [here](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/b462239ffb644d9baab4442a10a72edf.html).
+Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7fa519b44ed842588c367ec105d3e4f6.html).
 
 
 ## More Information
-> __Optional__. Link here other sources of information regarding this package, if any.
+> N/A
 
 ## Contact
 > N/A
