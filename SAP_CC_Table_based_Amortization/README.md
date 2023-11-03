@@ -13,7 +13,7 @@ N/A
 In the Media industry there are business requirements for certain Media assets (Films and TV shows) to amortize Costs based on pre-defined Amortization tables (“Curves”).
 
 Curve Example 3M30_SL: 30% amortization for one quarter, then stragith line for remaining periods.
-This data action has been optimized 
+This data action has been optimized. 
 
 ## Details
 Story: Table Based Amortization       
