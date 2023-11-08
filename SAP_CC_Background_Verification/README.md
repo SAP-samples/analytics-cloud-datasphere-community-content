@@ -30,4 +30,4 @@ Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CL
 N/A 
 
 ## Contact
-Please contact [Rafiq Islam](mailto:rafiq.islam@sap.com)
+Please contact [Rafiq Islam](mailto:rafiq.islam@sap.com).
