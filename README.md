@@ -50,6 +50,13 @@ Content or sample data may become outdated and SAP has no obligations to keep th
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/analytics-cloud-datasphere-community-content)](https://api.reuse.software/info/github.com/SAP-samples/analytics-cloud-datasphere-community-content)
 
+## Where to find more information about Content for SAP Analytics Cloud and SAP Datasphere
+Next to Community Content, SAP offers so-called Business Content to be downloaded in-app in SAP Analytics Cloud and SAP Datasphere.
+For more details and a complete overview of all content packages offered, please refer to 
+
+* List of all SAP Analytics Cloud content packages [here](https://community.sap.com/topics/cloud-analytics/business-content)
+* List of all SAP Datasphere content packages [here](https://community.sap.com/topics/datasphere/business-content)
+
 
 ## License
 Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
