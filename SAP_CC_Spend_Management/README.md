@@ -13,6 +13,8 @@ N/A
 A leading German high-tech manufacturing company is looking for better ways to keep all their costs on track. While having three manufacturing centers and hundreds of suppliers which are supporting different departments and provide various services to the company, in the past, it was extremely hard to manage all costs in one single place and overlook everything to plan.
 In this demo, we will be able to have a peek of the bright future of how SAP Analytics Cloud help to smooth the cooperation among different departments and help the company to plan as a whole.
 
+![Spend Management](Spend_Management_Screenshot.png)
+
 ## Details
 The package includes 4 stories (Overview and one story each for Procurement, Travel and Expense as well as Vendor Management).
 

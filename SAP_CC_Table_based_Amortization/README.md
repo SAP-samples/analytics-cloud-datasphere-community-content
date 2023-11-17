@@ -15,13 +15,15 @@ In the Media industry there are business requirements for certain Media assets (
 Curve Example 3M30_SL: 30% amortization for one quarter, then stragith line for remaining periods.
 This data action has been optimized. 
 
+![Table based amortization](Table_based_Amortization_Screenshot.png)
+
 ## Details
 Story: Table Based Amortization       
 Model: TABLE_BASED_AMORTIZATION; comes with sample data and two data actions:      
-<ul>
-<li>CTA_END_SL - data action for Amortization Expense calculation</li>
-<li>Seed Test Data - data action to generate large volume of test data</li>
-</ul>
+
+* CTA_END_SL - data action for Amortization Expense calculation
+* Seed Test Data - data action to generate large volume of test data
+
 
 Detailed Table_Based_Amortization.pdf instructions how to set up and use the amortization package.
 

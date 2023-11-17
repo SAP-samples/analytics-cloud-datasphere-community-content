@@ -16,6 +16,8 @@ The company's current talent management solution did not provide a visual overvi
 Solution:
 Our team used SAP Analytics Cloud (SAC) to offer the company's HR team a rich visual representation of the current workforce and recruitment statuses globally. Talent demands could be reviewed alongside demographics, qualifications, verticals and roles. This provided valuable perspective. Historical data on skills growth by role and broader teams offered insights into potential future trends. Rich charts drew instant attention to problem areas like low utilisation, high bench hours, low performance and high attrition. Machine learning was leveraged to predict which requests in the pipeline would be converted into actual hiring. This enabled decision makers to prioritise requests with a high likelihood of conversion. Lastly, an overview of people seeking mentorship and those willing to mentor, viewed by skills, current performance, role and team, helped the company's HR team recognise areas where more support and guidance were needed.
 
+![Headcount and Skills Monitoring](Headcount_and_Skills_Screenshot.png)
+
 ## Details
 Story "Skills Monitoring" based on Model "HCLSampleData" 
 

@@ -18,6 +18,8 @@ Solution:
 
 The solution built on SAP Analytics Cloud, summarizes data from 5 main emission categories— energy production, industrial emissions, transportation, public facilities and residential buildings. It highlights top contributors, historical and forecasted emission trends, location analysis, the consequential extent of various carbon emissions and other similar insights. “What If” scenarios were also taken into account, where potential emission data was simulated and measured against a target value to better understand how exactly we can reduce future emissions, and to identify where quick wins can be achieved.
 
+![Carbon Emission](Background_Verification_Screenshot.png)
+
 ## Details
 SAC story: Carbon Emission Dashboard
 

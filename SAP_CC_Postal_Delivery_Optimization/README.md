@@ -17,6 +17,8 @@ Unpredictable events like delays in arrival of cargo flights, traffic congestion
 Solution:
 We built this scenario onto SAP Analytics Cloud, on top of data from the optimization models. Regional managers can have a quick overview of postal delivery volumes, SLA violations, route utilizations and more. They can delve deeper into individual routes and investigate the causes of SLA disruptions in regions with more lapses than others and drivers with a higher tendency to be late than others. They can track their delivery fleets in real time by nature of vehicle, drivers and the source collection centres. The tactical and strategic routing sheets analyze both internal or external reasons for delays to derive re-route recommendations, where users can communicate re-route approvals to operational managers. The retrospective analysis of different outcomes if different routes are adopted allow for better decision making. Social media sentiment analysis and Qualtrics surveys then help regional managers gauge how consumers feels about the delivery service.
 
+![Postal Delivery Route Optimization](Postal_Route_Screenshot.png)
+
 ## Details
 > SAC stories, Models with acquired data
 
