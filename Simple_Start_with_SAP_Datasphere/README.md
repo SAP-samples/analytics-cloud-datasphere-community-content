@@ -1,10 +1,10 @@
 # Simple Start with SAP Datasphere.
 
-### Content Package Files
+## Content Package Files
 SAP_CC_DSP_Simple_Start_with_SAP_Datasphere.package<br>
 SAP_CC_SAC_Simple_Start_with_SAP_Datasphere.package
 
-### Last Released:
+## Last Released:
 2023.10
 
 ## What´s New
