@@ -1,10 +1,10 @@
 # Smart Plantation Management
 
-### Content Package Files
-SAP_CC_Smart_Plantation_Management.package
+## Content Package Files
+SAP_CC_SAC_Smart_Plantation_Management.package
 
-### Last Released:
-2023.10
+## Last Released:
+2023.11
 
 ## Descripton
  
@@ -27,7 +27,7 @@ Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CL
 
 
 ## More Information
-> N/A
+N/A
 
 ## Contact
-> N/A
+N/A
