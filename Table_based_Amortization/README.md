@@ -1,7 +1,7 @@
 # Table based amortization
 
 ## Content Package Files
-SAP_CC_Table_based_Amortization.package
+SAP_CC_SAC_Table_based_Amortization.package
 
 ## Last Released:
 2023.11
@@ -13,17 +13,15 @@ N/A
 In the Media industry there are business requirements for certain Media assets (Films and TV shows) to amortize Costs based on pre-defined Amortization tables (“Curves”).
 
 Curve Example 3M30_SL: 30% amortization for one quarter, then stragith line for remaining periods.
-This data action has been optimized. 
-
-![Table based amortization](Table_based_Amortization_Screenshot.png)
+This data action has been optimized 
 
 ## Details
 Story: Table Based Amortization       
 Model: TABLE_BASED_AMORTIZATION; comes with sample data and two data actions:      
-
-* CTA_END_SL - data action for Amortization Expense calculation
-* Seed Test Data - data action to generate large volume of test data
-
+<ul>
+<li>CTA_END_SL - data action for Amortization Expense calculation</li>
+<li>Seed Test Data - data action to generate large volume of test data</li>
+</ul>
 
 Detailed Table_Based_Amortization.pdf instructions how to set up and use the amortization package.
 
