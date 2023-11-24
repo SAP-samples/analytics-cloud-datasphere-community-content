@@ -1,10 +1,10 @@
 # Carbon Emission Dashboard
 
-## Content Package File
-SAP_CC_Carbon_Emission.package
+## Content Package Files
+SAP_CC_SAC_Carbon_Emission.package
 
 ## Last Released:
-2023.10
+2023.11
 
 ## What´s New
 N/A
