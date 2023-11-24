@@ -15,6 +15,8 @@ Solution:
 
 This solution was built on SAP Analytics Cloud. It summarises the status of ongoing background checks across diverse segments and demographics. It also provides the vendor liaison officer with an overview of operations. A user-friendly interface allows for the quick identification of bottlenecks in the system, so the early mitigation of problems becomes possible.
 
+![Background_Verification](Background_Verification_Screenshot.png)
+
 ## Details
 SAC story: Background Verification Dashboard
 
