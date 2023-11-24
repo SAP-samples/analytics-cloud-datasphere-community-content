@@ -6,24 +6,33 @@
 
 ## Description
 <!-- Please include SEO-friendly description -->
-Welcome to our GitHub repository of community content packages for SAP Analytics Cloud (SAC) and SAP Datasphere (DSP). In this repository you can download various SAC and/or DSP packages.
-You can find technical samples, demos, best practices or business scenarios.
-The packages itself contain data models, visualisations and sample data (if applicable). 
+Welcome to our GitHub repository of community content packages for SAP Analytics Cloud (SAC) and SAP Datasphere (DSP). In this repository you can find various SAC and/or DSP content packages: technical samples, demos, best practices or business scenarios. 
+
+The packages each consist of the importable content in so-called .package files – the file format for content in SAC and DSP. In addition, packages may offer demo scripts and other background information as well as sample data files. Each package is self-contained and does not require other packages to work unless indicated otherwise.
+
+Each content package has its own folder on this repository. The folders contain all necessary files and information to install and run a package. 
+
 
 ## Requirements
-Depending on the samples project, an SAP Analytics Cloud tenant and an SAP Datasphere tenant are required. The connection between SAP Analytics Cloud and SAP Datasphere must have the technical name "SAPDWC" (description is free).
-To upload content, the user has to have administration privileges.
+Depending on the content package, an SAP Analytics Cloud tenant and/or an SAP Datasphere tenant are required. The connection between SAP Analytics Cloud and SAP Datasphere must have the technical name "SAPDWC" (description is free). To upload content, the user must have administration privileges.
+
+## Versions and Releases
+This repository offers independent content packages. 
+[Semantic versioning](https://semver.org/) is applied with the following logic regarding version number increments: 
+
+* Major: new content package added or deprecated
+* Minor: significant changes to a content package, e.g. enhancements or changes
+* Patch: corrections of a content package
+
+A release corresponds to a new content package. The release name follows the package and folder names. The release includes a zip file for convenient download of the content package. 
+
 
 ## Download and Installation
-Content is organised in projects. Each project has one folder on this repository which is self-contained:
-It contains files for download of the SAC content and/or DSP content in the .package format.
-Depending on the use case it may contain additional assets such as sample data files.
+Please check the documentation ["Community Content"](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html) how to download and install community content in general. 
 
-Please check the documentation ["Community Content"](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html) how to download and install community content. Please follow the specific instructions shared in the readme of each project.
+Each folder contains a detailed description of the content package in its README file. Always check for specific installation instructions first.
 
-Each project folder contains a detailed description of the content in its README file. It may also include additional sources of information if available such as a blog or a pdf documentation.
-
-Navigate to ["Releases"](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content/releases) to download the content package.
+Navigate to ["Releases"](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content/releases) to download the zip file.
 
 ## Known Issues
 No known issues.
@@ -37,16 +46,15 @@ You may also contact the HD&A Content Factory by mail to [sap_analytics_cloud_co
 For the time being, contributions are limited to SAP projects. If you are a customer, partner or any other 3rd party, and wish to publish your content, please contact the HD&A Content Factory by mail to [sap_analytics_cloud_content](mailto:sap_analytics_cloud_content@sap.com) to learn about more options.
 
 ## Terms and Conditions
-The content samples offered on this GitHub may be downloaded and installed without additional license fees. Content samples are provided to support an implementation project, to share best practices and to inspire your own content development. 
-It is forbidden to sell these content samples or use them commercially in any way. 
+The content samples offered on this GitHub may be downloaded and installed without additional license fees. Content samples are provided to support an implementation project, to share best practices and to inspire your own content development. It is forbidden to sell these content samples or use them commercially in any way.
 
 Content samples have been tested and reviewed by SAP. However, they come as they are: In case of errors or other problems, SAP is not liable to offer fixes nor any kind of support and maintenance. It is recommended that you test the content first, ideally in a test environment. You can also edit, enhance, copy or otherwise use the content in your own projects. If you do this, potential later updates of the sample content may not be installable without additional effort or not at all.
 
-Content samples do not necessarily follow a naming convention, so please analyse carefully if they can be imported into your destination tenant without overwriting. Overwriting existing content in your destination tenant is not recommended.
+Content samples do not necessarily follow a naming convention, so please analyze carefully if they can be imported into your destination tenant without overwriting. Overwriting existing content in your destination tenant is not recommended.
 
 Content samples are not necessarily based on specific SAP products and data sources.
+Content or sample data may become outdated, and SAP has no obligations to keep the content up-to-date. SAP may at any time without offering alternative packages deprecate content projects.
 
-Content or sample data may become outdated and SAP has no obligations to keep the content up-to-date. SAP may at any time without offering alternative packages deprecate content projects. 
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/analytics-cloud-datasphere-community-content)](https://api.reuse.software/info/github.com/SAP-samples/analytics-cloud-datasphere-community-content)
 
