@@ -22,6 +22,8 @@ Please check DEMO_15636_Tech_Info.xlsx first. In this file, you find the informa
 
 Finally, the demo script "Spend_Management_DEMO_156363_Script - Fiori.pdf" is provided.
 
+![Spend_Management](Spend_Management_Screenshot.png)
+
 ## Connectivity
 N/A
 
