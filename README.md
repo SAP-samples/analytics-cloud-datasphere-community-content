@@ -17,15 +17,9 @@ Each content package has its own folder on this repository. The folders contain 
 Depending on the content package, an SAP Analytics Cloud tenant and/or an SAP Datasphere tenant are required. The connection between SAP Analytics Cloud and SAP Datasphere must have the technical name "SAPDWC" (description is free). To upload content, the user must have administration privileges.
 
 ## Versions and Releases
-This repository offers independent content packages. 
-[Semantic versioning](https://semver.org/) is applied with the following logic regarding version number increments: 
+This repository offers independent content packages. A content package corresponds to a release. The release name follows the package and folder names. The release includes a zip file for convenient download of the content package. 
 
-* Major: new content package added or deprecated
-* Minor: significant changes to a content package, e.g. enhancements or changes
-* Patch: corrections of a content package
-
-A release corresponds to a new content package. The release name follows the package and folder names. The release includes a zip file for convenient download of the content package. 
-
+[Semantic versioning](https://semver.org/) is applied. 
 
 ## Download and Installation
 Please check the documentation ["Community Content"](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html) how to download and install community content in general. 
