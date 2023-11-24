@@ -12,7 +12,7 @@ N/A
 ## Descripton
 The Customer 360 Dashboard is created in SAP Analytic Cloud by combining the data from C4C, S/4HANA, and Qualtrics. It connects the marketing, sales, commerce, and service teams together with a single view of your customer data, helping grow relationships with your customer. This demo includes three customer-360 dashboards in total, covering from ToB to ToC business. They are embedded into the C4C system, users could directly access these analytical dashboards while browsing in C4C, which not only enriches the customer information but also gives easy access to check while exploring potential opportunities and upcoming tasks. 
 
-![Customer_360](Customer_360_Sceenshot.png)
+![Customer_360](Customer_360_Screenshot.png)
 
 ## Details
 This package includes 3 stories and 9 models. 
