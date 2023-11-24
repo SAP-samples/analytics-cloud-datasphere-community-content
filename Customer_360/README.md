@@ -1,7 +1,7 @@
 # Customer 360
 
-## Name of Zip File
-SAP_CC_SAC_Customer_360.zip
+## Content Package Files
+SAP_CC_SAC_Customer_360.package
 
 ## Last Released:
 2023.11
