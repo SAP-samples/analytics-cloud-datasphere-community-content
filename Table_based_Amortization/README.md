@@ -25,6 +25,8 @@ Model: TABLE_BASED_AMORTIZATION; comes with sample data and two data actions:
 
 Detailed Table_Based_Amortization.pdf instructions how to set up and use the amortization package.
 
+![Table based Amortization](Table_based_Amortization_Screenshot.png)
+
 ## Connectivity
 N/A
 
