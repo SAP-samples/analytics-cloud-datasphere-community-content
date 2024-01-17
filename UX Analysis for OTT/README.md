@@ -17,7 +17,7 @@ The key ask from the customer was to make the app more desirable, more intellige
 Solution:
 The existing app interface was enhanced by adding intelligence at every touchpoint, dynamically adapting to users' preferences. A super personalized chat assistant that caters to user needs based on context can recommend ideas to users on how to spend the evening based on their lifestyle habits by combining content recommendations with dine-in options. All recommendations are tailored to historical user preferences, where all in-app consumer feedback is collected for the Machine Learning models that drive these recommendations for future. Even online shopping options can be linked for users interested in buying items seen on their favorite shows worn by its characters, creating a new ecosystem of social commerce. This elevates the OTT app from simply being a content provider, offering various options for dining, shopping, learning and more. Furthermore, trends in subscriptions are tied in with sentiment data from social media, sources of subscription referrals and user locations. Content managers can analyze viewing behavior by user demographics and revenue managers can have insights on costs vs revenue by subscription type or location, among other factors. And marketing managers can track expenditure by campaigns, reach, ROI and A-B testing for measuring campaign impact.
 
-![SAP_UX_Analysis_Screenshot](SAP_UX_Analysis_screenshot.png)
+![SAP_UX_Analysis_Screenshot](SAP_UX_Analysis_Screenshot.png)
 
 ## Details
 SAP Analytics Cloud Story "TV Analytics Control Tower" plus models with pre-filled sample data 
