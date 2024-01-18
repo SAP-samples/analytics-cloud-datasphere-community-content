@@ -20,7 +20,7 @@ SAP_CC_DSP_Hierarchy_With_Directory_Sample_CostCenter_for_Remote_Table_for_S4HCl
 ## Descripton
 These community content packages help you to easily utilize the SAP Datasphere feature _"Hierarchies with External Hierarchy Directory"_.
 
-**Note**: Don't miss to read the blog series _Hierarchy with Directory in SAP Datasphere_ of currently 5 blog post starting with: [An Introduction to Hierarchy with Directory in SAP Datasphere](https://blogs.sap.com/2024/01/15/an-introduction-to-hierarchy-with-directory-in-sap-datasphere)  
+**Note**: Don't miss to read the blog series _Hierarchy with Directory in SAP Datasphere_ of currently 5 blog post starting with:   [An Introduction to Hierarchy with Directory in SAP Datasphere](https://blogs.sap.com/2024/01/15/an-introduction-to-hierarchy-with-directory-in-sap-datasphere)  
 
 
 The packages includes examples for the G/L Account Hierarchy and the Cost Center Hierarchy for the following scenarios:
