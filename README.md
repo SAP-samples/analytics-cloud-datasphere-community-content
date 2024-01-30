@@ -12,6 +12,10 @@ The packages each consist of the importable content in so-called .package files 
 
 Each content package has its own folder on this repository. The folders contain all necessary files and information to install and run a package. 
 
+**Note**: After uploading a .package file, the following warning may be issued instead of a success message:
+“Importing may not work for [package-name].package as it was created in an older version of SAP Analytics Cloud/SAP Datasphere”.
+This warning can be ignored.
+
 
 ## Requirements
 Depending on the content package, an SAP Analytics Cloud tenant and/or an SAP Datasphere tenant are required. The connection between SAP Analytics Cloud and SAP Datasphere must have the technical name "SAPDWC" (description is free). To upload content, the user must have administration privileges.
