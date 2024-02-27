@@ -26,7 +26,8 @@ This repository offers independent content packages. A content package correspon
 [Semantic versioning](https://semver.org/) is applied. 
 
 ## Download and Installation
-Please check the documentation ["Community Content"](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html) how to download and install community content in general. 
+Please check the documentation ["Community Content"](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/ef516563b3fe4c69b6f718f17ed94cdf.html) how to download and install community
+ content in general. 
 
 Each folder contains a detailed description of the content package in its README file. Always check for specific installation instructions first.
 
