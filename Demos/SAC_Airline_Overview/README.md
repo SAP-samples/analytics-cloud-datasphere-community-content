@@ -50,7 +50,7 @@ Sample data has been uploaded from csv files.
 Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html).
 
 ## More Information
-N/A
+For more information, please check out the related blog [here](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/airline-community-content-available-on-sap-analytics-cloud/ba-p/13631317).
 
 ## Contact
 Questions may be adressed to [Adeem Zia Ul Haq](mailto:adeem.zia.ul.haq@sap.com), [Enrico Micalucci](mailto:enrico.micalucci@sap.com) and [Sebastien Turpin](mailto:sebastien.turpin@sap.com).
