@@ -26,5 +26,9 @@ If you are planning to host the custom widget within different GitHub repository
 ## How to obtain support
 You can send an email to [Marouene Ferchichi](mailto:m.ferchichi@sap.com).
 
+Check out this Blog in order to know more about the Custom Widget Samples available in this GitHub repository 👇👇
+
+https://community.sap.com/t5/technology-blogs-by-sap/sap-analytics-cloud-custom-widget-amp-widget-add-ons-samples-preview/ba-p/13585313
+
 ## Contributing
 If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
