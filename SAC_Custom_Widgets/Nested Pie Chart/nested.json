@@ -1,0 +1,154 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.echarts.nested_chart",
+  "icon": "data:image/png;base64,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",
+  "version": "2.0.0",
+  "name": "ECharts Nested Pie Chart",
+  "newInstancePrefix": "EChartNestedPieChart",
+  "description": "A sample custom widget EChart Nested Pie Chart",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-echarts-nested_chart",
+      "url": "/main_nested.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+		"width": {
+			"type": "integer",
+			"default": 600
+		},
+		"height": {
+			"type": "integer",
+			"default": 420
+		},
+    "dimensionFeed": {
+			"type": "string[]",
+			"default": []
+		},
+		"measureFeed": {
+			"type": "string[]",
+			"default": []
+		},
+    "caption": {
+  		"type": "string",
+  		"description": "",
+  		"default": ""
+  	}
+  },
+  "dataBindings": {
+		"myDataSource": {
+			"feeds": [
+				{
+          "id": "dimensions",
+          "description": "Dimensions",
+          "type": "dimension"
+        },
+        {
+          "id": "measures",
+          "description": "Measures",
+          "type": "mainStructureMember"
+        }
+			]
+		}
+	},
+  "methods": {
+    "getCaption": {
+      "returnType": "string",
+      "description": "The caption of the bar chart",
+      "parameters": [],
+      "body": "return this.caption;"
+    },
+    "setCaption": {
+      "description": "The caption of the bar chart",
+      "parameters": [
+        {
+          "name": "caption",
+          "type": "string",
+          "description": "The new caption"
+        }
+      ],
+      "body": "this.caption = caption;"
+    },
+    "openSelectModelDialog": {
+      "parameters": [],
+      "body": "this.dataBindings.getDataBinding('myDataSource').openSelectModelDialog();"
+    },
+    "getDimensions": {
+      "parameters": [],
+      "body": "return this.dataBindings.getDataBinding('myDataSource').getDataSource().getDimensions();",
+      "returnType": "DimensionInfo[]"
+    },
+    "getMeasures": {
+      "parameters": [],
+      "body": "return this.dataBindings.getDataBinding('myDataSource').getDataSource().getMeasures();",
+      "returnType": "MeasureInfo[]"
+    },
+    "addDimension": {
+      "parameters": [
+        {
+          "name": "dimensionId",
+          "type": "string"
+        }
+      ]
+    },
+    "addMeasure": {
+      "parameters": [
+        {
+          "name": "measureId",
+          "type": "string"
+        }
+      ]
+    },
+    "removeDimension": {
+      "parameters": [
+        {
+          "name": "dimensionId",
+          "type": "string"
+        }
+      ]
+    },
+    "removeMeasure": {
+      "parameters": [
+        {
+          "name": "measureId",
+          "type": "string"
+        }
+      ]
+    },
+    "getDimensionsOnFeed": {
+      "parameters": [],
+      "returnType": "string[]"
+    },
+    "getMeasuresOnFeed": {
+      "parameters": [],
+      "returnType": "string[]"
+    },
+    "getDataSource": {
+      "parameters": [],
+      "body": "return this.dataBindings.getDataBinding('myDataSource').getDataSource();",
+      "returnType": "DataSource"
+    },
+    "setModel": {
+      "parameters": [
+        {
+          "name": "modelId",
+          "type": "string"
+        }
+      ],
+      "body": "this.dataBindings.getDataBinding('myDataSource').setModel(modelId);"
+    }
+
+  },
+  "events": {
+    "onResultChanged": {
+      "description": "called when the result set of the widget changes"
+    },
+    "onClick": {
+      "description": "called when the result set of the widget changes"
+    }
+}}

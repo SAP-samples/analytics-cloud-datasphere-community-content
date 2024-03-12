@@ -1,0 +1,73 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.init.example.echarts.sunburst",
+  "icon": "data:image/png;base64,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",
+  "version": "1.0.0",
+  "supportsMobile": true,
+  "supportsBookmark": true,
+  "supportsLinkedAnalysisFilterOnSelection": true,
+  "name": "EChartsSunburstStyling",
+  "newInstancePrefix": "EChartsSunburstStyling",
+  "description": "A Sample Sunburst Chart with Styling Panel",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-init-example-echarts-sunburst",
+      "url": "/main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    },
+    {
+      "kind": "styling",
+      "tag": "com-sap-sample-init-example-echarts-sunburst-styling",
+      "url": "/styling.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "width": {
+      "type": "integer",
+      "default": 600
+    },
+    "height": {
+      "type": "integer",
+      "default": 320
+    },
+    "drillUpArea": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "stops": {
+      "type": "string[]",
+      "default": ["#0070F2", "#4CB1FF", "#A6E0FF", "#D2EFFF", "#0057D2"]
+    },
+    "showAll": {
+      "type": "boolean",
+      "default": false
+    },
+    "labelAll": {
+      "type": "string"
+    }
+  },
+  "methods": {},
+  "events": {},
+  "dataBindings": {
+    "dataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "description": "Dimensions",
+          "type": "dimension"
+        },
+        {
+          "id": "measures",
+          "description": "Measures",
+          "type": "mainStructureMember"
+        }
+      ]
+    }
+  }
+}

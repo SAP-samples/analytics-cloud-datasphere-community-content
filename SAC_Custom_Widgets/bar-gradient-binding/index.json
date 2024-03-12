@@ -1,0 +1,49 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.echarts.bargradientbindingdemo",
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAABACAYAAABP97SyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAwUlEQVRoge3XwQ3CMAxGYRsxDXCDgWANFugYTMStmccsQMnBRO4fve8aRc1TI1kxA1DJqw/Qc70vzd1O39bCor1fz8uv/Ycxx/qfrTgzMzc/9/bvPjCLQHUEqiNQHYHqCFRHoLrpA4+jP5B9z2UN/4PZ91zW9FeUQHUEqps+sDsHq+dYVvcPVs+xrOmvKIHqCFRHoDoC1RGojkB1BKojUB2B6ghU1w0Mi7a5FrbufT+AWn57LFF9iJEYE+qmDwRQ6wO/gymA985iUgAAAABJRU5ErkJggg==",
+  "version": "1.0.0",
+  "supportsMobile": true,
+  "name": "ECharts BarGradientBinding",
+  "newInstancePrefix": "EChartBarGradientBinding",
+  "description": "A sample custom widget wrapped EChart BarGradientBinding",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-echarts-bar-gradient-binding",
+      "url": "/main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "width": {
+      "type": "integer",
+      "default": 600
+    },
+    "height": {
+      "type": "integer",
+      "default": 420
+    }
+  },
+  "methods": {},
+  "events": {},
+  "dataBindings": {
+    "myDataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "description": "Dimensions",
+          "type": "dimension"
+        },
+        {
+          "id": "measures",
+          "description": "Measures",
+          "type": "mainStructureMember"
+        }
+      ]
+    }
+  }
+}

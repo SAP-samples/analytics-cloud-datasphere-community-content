@@ -1,0 +1,154 @@
+{
+    "eula": "",
+    "vendor": "SAP",
+    "license": "Apache Echart",
+    "id": "com.sap.sac.sample.echarts.funnel",
+    "icon": "data:image/png;base64,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",
+    "version": "1.0.0",
+    "name": "Funnel Charrt",
+    "newInstancePrefix": "funnelChart",
+    "description": "A Sample Custom Widget EChart Funnel Chart",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "github-sap-funnel-chart",
+            "url": "/funnelchart.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "width": {
+            "type": "integer",
+            "default": 600
+        },
+        "height": {
+            "type": "integer",
+            "default": 420
+        },
+    "dimensionFeed": {
+            "type": "string[]",
+            "default": []
+        },
+        "measureFeed": {
+            "type": "string[]",
+            "default": []
+        },
+    "caption": {
+        "type": "string",
+        "description": "The caption of the gauge chart",
+        "default": ""
+    }
+  },
+  "dataBindings": {
+        "myDataSource": {
+            "feeds": [
+                {
+                    "id": "dimensions",
+                    "description": "Dimensions",
+                    "type": "dimension"
+                },
+                {
+                    "id": "measures",
+                    "description": "Measures",
+                    "type": "mainStructureMember"
+                }
+            ]
+        }
+    },
+  "methods": {
+    "getCaption": {
+      "returnType": "string",
+      "description": "The caption of the bar chart",
+      "parameters": [],
+      "body": "return this.caption;"
+    },
+    "setCaption": {
+      "description": "The caption of the bar chart",
+      "parameters": [
+        {
+          "name": "caption",
+          "type": "string",
+          "description": "The new caption"
+        }
+      ],
+      "body": "this.caption = caption;"
+    },
+    "openSelectModelDialog": {
+      "parameters": [],
+      "body": "this.dataBindings.getDataBinding('myDataSource').openSelectModelDialog();"
+    },
+    "getDimensions": {
+      "parameters": [],
+      "body": "return this.dataBindings.getDataBinding('myDataSource').getDataSource().getDimensions();",
+      "returnType": "DimensionInfo[]"
+    },
+    "getMeasures": {
+      "parameters": [],
+      "body": "return this.dataBindings.getDataBinding('myDataSource').getDataSource().getMeasures();",
+      "returnType": "MeasureInfo[]"
+    },
+    "addDimension": {
+      "parameters": [
+        {
+          "name": "dimensionId",
+          "type": "string"
+        }
+      ]
+    },
+    "addMeasure": {
+      "parameters": [
+        {
+          "name": "measureId",
+          "type": "string"
+        }
+      ]
+    },
+    "removeDimension": {
+      "parameters": [
+        {
+          "name": "dimensionId",
+          "type": "string"
+        }
+      ]
+    },
+    "removeMeasure": {
+      "parameters": [
+        {
+          "name": "measureId",
+          "type": "string"
+        }
+      ]
+    },
+    "getDimensionsOnFeed": {
+      "parameters": [],
+      "returnType": "string[]"
+    },
+    "getMeasuresOnFeed": {
+      "parameters": [],
+      "returnType": "string[]"
+    },
+    "getDataSource": {
+      "parameters": [],
+      "body": "return this.dataBindings.getDataBinding('myDataSource').getDataSource();",
+      "returnType": "DataSource"
+    },
+    "setModel": {
+      "parameters": [
+        {
+          "name": "modelId",
+          "type": "string"
+        }
+      ],
+      "body": "this.dataBindings.getDataBinding('myDataSource').setModel(modelId);"
+    }
+  
+  },
+  "events": {
+    "onResultChanged": {
+      "description": "called when the result set of the widget changes"
+    },
+    "onClick": {
+      "description": "called when the result set of the widget changes"
+    }
+  }}
