@@ -20,13 +20,17 @@ All the exisiting Custom Widget Samples are developed with the new property: Dat
 ## Download and Installation
 Developers/Users can download the Custom Widgets files (JSON/JavaScript) and host them into their favorite cloud hosting service.
 
+See how to host the custom widgets in SAC [here](https://community.sap.com/t5/technology-blogs-by-sap/hosting-and-uploading-custom-widgets-resource-files-into-sap-analytics/ba-p/13563064).
+
+See how to host the custom widgets in GitHub [here](https://community.sap.com/t5/technology-blogs-by-sap/hosting-sap-analytics-cloud-custom-widgets-into-github/ba-p/13566633).
+
 ## Known Issues
 If you are planning to host the custom widget within different GitHub repository or different web server, don't forget to change the path to the web componenet files in the JSON file. 
 
 ## How to obtain support
 You can send an email to [Marouene Ferchichi](mailto:m.ferchichi@sap.com).
 
-Check out this Blog in order to know more about the Custom Widget Samples available in this GitHub repository 👇👇
+Check out this Blog in order to know more about the Custom Widget Samples available in this GitHub repository 
 
 https://community.sap.com/t5/technology-blogs-by-sap/sap-analytics-cloud-custom-widget-amp-widget-add-ons-samples-preview/ba-p/13585313
 
