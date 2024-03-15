@@ -7,7 +7,6 @@
   "version": "1.0.0",
   "supportsMobile": true,
   "supportsBookmark": true,
-  "supportExport": true,
   "supportsLinkedAnalysisFilterOnSelection": true,
   "name": "EChartsSankeyStyling",
   "newInstancePrefix": "EChartsSankeyStyling",
@@ -17,15 +16,15 @@
       "kind": "main",
       "tag": "com-sap-sac-sample-echarts-sankeyyg",
       "url": "/main.js",
-      "integrity": "",
-      "ignoreIntegrity": true
+      "integrity": "sha256-6Jr/asl/QIhzXIKTPujY2A2VAuwjaTeRt2xMkIsgmE4=",
+      "ignoreIntegrity": false
     },
     {
       "kind": "styling",
       "tag": "com-sap-sac-sample-echarts-sankeyyg-styling",
       "url": "/sankeyChartStyling.js",
-      "integrity": "",
-      "ignoreIntegrity": true
+      "integrity": "sha256-AR0uDO+9h8nu9EyJotSinZ2APDWD5Ja2JmdFcZCH1Xo=",
+      "ignoreIntegrity": false
     }
   ],
   "properties": {
