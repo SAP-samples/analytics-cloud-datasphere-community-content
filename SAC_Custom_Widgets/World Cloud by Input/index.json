@@ -1,0 +1,55 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.echarts.wordcloudbyinput",
+  "icon": "data:image/png;base64,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",
+  "version": "1.0.0",
+  "supportsMobile": true,
+  "name": "EChartsWordCloudByInput",
+  "newInstancePrefix": "EChartsWordCloudByInput",
+  "description": "A sample custom widget project",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sac-sample-echarts-wordcloudbyinput",
+      "url": "/main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    },
+    {
+      "kind": "builder",
+      "tag": "com-sap-sac-sample-echarts-wordcloudbyinput-builder",
+      "url": "/builder.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "width": {
+      "type": "integer",
+      "default": 600
+    },
+    "height": {
+      "type": "integer",
+      "default": 320
+    },
+    "text": {
+      "type": "string"
+    }
+  },
+  "methods": {
+    "setText": {
+      "description": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": ""
+        }
+      ],
+      "body": "this.text = value;"
+    }
+  },
+  "events": {}
+}

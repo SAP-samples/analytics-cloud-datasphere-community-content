@@ -1,0 +1,48 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.echarts.ring_kpi",
+  "icon": "data:image/png;base64,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",
+  "version": "1.0.0",
+  "name": "ECharts Kpi Ring Prepared",
+  "newInstancePrefix": "EChartPrepared",
+  "description": "A sample custom widget wrapped EChart gauge ring Prepared",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-echarts-ring_kpi",
+      "url": "/kpi_ring.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "width": {
+      "type": "integer",
+      "default": 600
+    },
+    "height": {
+      "type": "integer",
+      "default": 420
+    }
+  },
+  "dataBindings": {
+    "myDataSource": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "description": "Dimensions",
+          "type": "dimension"
+        },
+        {
+          "id": "measures",
+          "description": "Measures",
+          "type": "mainStructureMember"
+        }
+      ]
+    }
+  },
+  "methods": {},
+  "events": {}
+}

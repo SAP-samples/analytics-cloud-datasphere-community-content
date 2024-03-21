@@ -1,0 +1,83 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.echarts.gaugegrade",
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAI7ElEQVR4nO2ae3BU1R3Hv9+zm90kBCXSsVWpCMbiYIsDmyA6dexLrK2tVsVX1Ty0YLHYMlSTDdLt2pKEKnRQ6VjaPIivsehIaUsZrGOpWlKza7QojI7FUupj7AhB8tzs3m//SDZuYO/mbnYTOtP9zGQm5/7O73F+995zz/mdBXLkyJEjR44cOf5P4UQ5mr00UDSpO69ELteZEKZCOgGgB4RbQj+JQ5AOA9jHGPa1P1z74UTENW4JOK9izVlRE/syLH6e1IUAT0/Pgj4AsAvki4R5rr2pOjQecWY1AfNvbZhmRa3rQF4PYF42bUt4G9CTlqVHOlpX/j1bdrOSgLk3r55jDO8kcC3IvGzYTI3+DOmB0PTIFgSDViaWMkrA3KqfTDeWay2JKwFO2HwSR8AroKrDTbU7xmpjTEH7Fv8yDwMf1lCsAVE4VudZZJtxcclLv675d7qKaSegtLJ+JqTHQc5PV3ec6SSxvL3J35KOUloJ8FXUX05oE8gT0wptCEkHCbwl4J8AOwENkJSEYhLFgqYQnA1gyljsDzpBY09339I9m4MRJ90dJ8BX0bAEtDYQdDmORToIYgvB56DozlDLqgMOtOgrr5sFY+YTuhDgVQCKnfoc9Iudvd19C50kwVECfJV1Kwn+NI0QnpG4obe7749O74QdJcvWe0880vNNQuUALwVhUnoG2kksCTX5O5zYHzUBvsqG7xL6hRNjAp6FYW24seYlJ/3TZX5l/bmW8DMQC5M47xK1cmZXyYbNm6+JAcCiRb9xvVn4+uRXNwU77WymTICvfPUVMHxy1Mde+A+Nlrc31T7qbCiZ4auqWwhhHcFzBt1ju8XobR1Nq/bH+5Td3HCOjJZ3Ti68/a0Hvt9vZ8s2AaVVa2ZBsTDASaPE86I7Fru2rfXud9IeSQaULFvvPbGrJ0BLe0Obah+OX0/8RIv6Uri59m+p7CRNwOxFAU9hUf4ujLKcldQCz9TF4Y1LBsY0iiwzr7zeR6qR5LkA1oWa/SuAwWQVH+4taW+tef1oHXcyQ4VF+fdg9LX8g+EW/x0AlXHkGbJg0dqCaFEkIGEFSTeEt+TpWxWXT+nqvtty8bKLAoGyncFgNFH3mHfbV776bAKtoP17L+CJcHPNrf8Lgy+taLjA8sa2AbiChAEkkNeFG1e9AQztU8hWkqdFDrs733vl2bZE/WM+KSTvS7mhkV44XFRYfrwHf0HVmsm+iroHAT0P4OwE0cZQs/9PAHBRIOA2ho3D45GCc6vWnJpoZ0QCfFWrvwjy6yn8dgKxG1LNqhPBvIqGSyKWtZvk7YnrAgEHTKT/rni7+0D+cpKl8TbJyS5ZdyTaGpEAyvxwFN/LnK3mxofP3VBfXFpZ32Ko7SCmH9NBuu2lR4MfAYMFGUnBJGYWz14aKIo3hhPgK199NqBLU/h/PtTsfySD+DOitGL1lR6v9gAoTyaX9Ei4pXbbUItRWL8iWJCka3FBr7cq3vj4K2B4m/2eXoKwYszRZ8CCW9aeFI1FHgRxvf2qTR+YGH4w3Az8mNzvPdl2mSN+B8D9QPwJCAQMwKtTxLEj1FLbnnb0GVJaUf+NaCzyGojrU/WT+L0RRdRg0BK11q4/ic+W3VT3GWAoAaX7CxYQOM3ewWC2JopzywNTSivrW0BsBXFKqr6Sng63+DcfI8iLPA7Adg8gF64C4k8AdZVtR+Cd8PT+7Q5jz5iy8rqvuundDZt3/SgOwWPdnkwQ3hjsgbTVTlHEZcDHc8AX7DoSeDrTwqMT5n87cIKVl79OVBUd1xe1Irzx7vdsxYZbIdycTETBV7JsvdfMXhookjDHzoYlPO0smLHjq6pbGPPkvwbiFsfFVWFHqDl1+csDswNS8jUL6S3u7p5nCvo8ZWTyPQGAiKfbs8tRQGNgzo33TiqtrHuIwnYCn3asKHTFTHTxaKvRvzZVHwFpe6Ai4TxDiz57P3i1bfOKXseBpcG88npfnnsgDHBJuiV1Qf7EvX/KvsIxO8AEWYlb5Aw77xTC6QTmiEDA+Pbn30niHoCetPWlF8LT+x1VqACA1F679QDJGW5IM2xvgMG+tANMgW/xT0/Bflcria+MRV9AH43r1nQmZRF77F4UCWe4CZxhqyzr7bSjtMF3U8PpjFi7QJw6eu/kkPhRqKn6jXR0rKjed7ls37CpRkxRciaydEQt0m09AfLjwUt7BQQh3SnAwTpDbTOOnLkuXc95HuuInYxQvptgvq3LmCsrE6Cvas3XIC4Ytis9VaT+G3e2BPuGLt3nq6y7g+D6pHEAfZYxVfFqbzrETMERxmwrdvlGgG0CXIj22cnSgZa+NdyQ+vNc3sU7NwVH2A43194PqO0YZQCAFehorNk7Ft95h9htHxi9hpDXTh6D2zY56SCgJOH/PW2NKw4m78cXklxtm9l1lu3GZjR6Cz+yHR8Ey0CI2sldiI1WEncEE09zUs05wtSj2j2Monwsj34ct1Vwgn1giBrRPgFwGeers1RIw18Tgmf4KhouPrrLnBvvPRnQ5SPUoOr2h2vfzMQ13bEZKQIbSPkEyMLMTJwnWPrtiKBgPTavouGSeLu0as0sj3vgdyRPStB5Jtzi35C5bzPLXsaIG+RHACYnEwvZSUBoemRL6b/yX0b8rIH8hIG2+yrqBn/QIGta4mJM0PsWXRVZqjzbJ0D40ED6IIVydp6AYNBSzHXN0C+/hiE5jeS0kUGp35DXdjRVv5sV3yNL5iMh3jMA99jr6iR7WXqEW+/6B8DzAbxs6w04YEEXtzf5/5ItvwA+mcLfbgMh1eFhVr4CcULN/n2h0/vKQFwN6DEAYQmvDc0RS/K6PLNebln5fDZ9SiqykxHY5bZc5imj2M+THoGT9tWWsRIMWiHgKQz+jTsEDtuIIv39+IPpaKp+F2JjUmVhyzjGNlFsS3pVeGj3Y/5DBgAiEdQMPooJcuH3Pd19901AgONK5+RJDcBRN1Lay5juARIqBQsWrS0YmNR/DcBPwagj3OR/5ngfgGaTsqq682VhLmQOytu7Nbwx2HO8Y8qRI0eOHDly5Diu/Bcp5loxepgBaQAAAABJRU5ErkJggg==",
+  "version": "1.0.0",
+  "supportsMobile": true,
+  "name": "EChartsGaugeGrade",
+  "newInstancePrefix": "EChartsGaugeGrade",
+  "description": "A sample custom widget project",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sac-sample-echarts-gaugegrade",
+      "url": "/main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    },
+    {
+      "kind": "styling",
+      "tag": "com-sap-sac-sample-echarts-gaugegrade-styling",
+      "url": "/styling.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "width": {
+      "type": "integer",
+      "default": 600
+    },
+    "height": {
+      "type": "integer",
+      "default": 320
+    },
+    "stops": {
+      "type": "integer[]",
+      "default": [0, 25, 50, 75, 100]
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "events": {},
+  "methods": {},
+  "types": {
+    "Range": {
+      "description": "",
+      "properties": [
+        {
+          "name": "value",
+          "type": "number",
+          "description": "",
+          "mandatory": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "description": "",
+          "mandatory": true
+        }
+      ]
+    }
+  },
+  "dataBindings": {
+    "dataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "description": "Dimensions",
+          "type": "dimension"
+        },
+        {
+          "id": "measures",
+          "description": "Measures",
+          "type": "mainStructureMember"
+        }
+      ]
+    }
+  }
+}

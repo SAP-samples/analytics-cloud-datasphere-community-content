@@ -1,0 +1,170 @@
+{
+    "id": "com.demo.localVizAddOns",
+    "version": "1.0.0",
+    "name": "Widget Customization Local Add-on",
+    "description": "A widget customization add-on demo",
+    "icon": "undefined",
+    "vendor": "Demo",
+    "eula": "EULA",
+    "license": "1.0",
+    "extensions": [
+        {
+            "extensionPoint": "sap.addOn.viz.tooltip",
+            "webcomponents": [
+                {
+                    "kind": "main",
+                    "tag": "viz-tooltip",
+                    "url": "/viz-tooltip.js",
+                    "integrity": "",
+                    "ignoreIntegrity": true
+                },
+                {
+                    "kind": "builder",
+                    "tag": "viz-tooltip-build",
+                    "url": "/viz-tooltip-builder-panel.js",
+                    "integrity": "",
+                    "ignoreIntegrity": true
+                }
+            ],
+            "properties": {
+                "max": {
+                    "type": "number",
+                    "description": "The max of range value",
+                    "default": "100"
+                },
+                "color": {
+                    "type": "string",
+                    "description": "Text Color info",
+                    "default": "lightblue"
+                }
+            }
+        },
+        {
+            "extensionPoint": "sap.addOn.viz.plotarea.general",
+            "webcomponents": [
+                {
+                    "kind": "main",
+                    "tag": "viz-plotarea",
+                    "url": "/viz-plotarea.js",
+                    "integrity": "",
+                    "ignoreIntegrity": true
+                },
+                {
+                    "kind": "builder",
+                    "tag": "viz-plotarea-build",
+                    "url": "/viz-plotarea-builder-panel.js",
+                    "integrity": "",
+                    "ignoreIntegrity": true
+                }
+            ],
+            "properties": {
+                "sapHideOriginalDataPointMarks": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "sapHideOriginalDataPointLabels": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "sapHideOriginalXAxisLabels": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "sapHideOriginalYAxisLabels": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "sapHideOriginalXAxisStackLabels": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "sapHideOriginalYAxisStackLabels": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "rounded": {
+                    "type": "boolean",
+                    "description": "Should bar/column be rounded",
+                    "default": true
+                },
+                "donutDataLabel": {
+                    "type": "boolean",
+                    "description": "Should display data label as donut",
+                    "default": true
+                },
+                "donutDataLabelSize": {
+                    "type": "number",
+                    "description": "The percentage of donut data label size",
+                    "default": 100
+                },
+                "dataMarkerSize": {
+                    "type": "number",
+                    "description": "The percentage of data marker size",
+                    "default": 100
+                },
+                "axisLabelColor": {
+                    "type": "string",
+                    "description": "The chart axis label color",
+                    "default": "#333"
+                }
+            }
+        },
+        {
+            "extensionPoint": "sap.addOn.viz.plotarea.numericPoint",
+            "webcomponents": [
+                {
+                    "kind": "main",
+                    "tag": "viz-metric-plotarea",
+                    "url": "/viz-metric-plotarea.js",
+                    "integrity": "",
+                    "ignoreIntegrity": true
+                },
+                {
+                    "kind": "builder",
+                    "tag": "viz-metric-plotarea-build",
+                    "url": "/viz-metric-plotarea-builder-panel.js",
+                    "integrity": "",
+                    "ignoreIntegrity": true
+                }
+            ],
+            "properties": {
+                "sapHideOriginalPrimaryNumber": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "sapHideOriginalPrimaryLabel": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "sapHideOriginalSecondaryNumber": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "sapHideOriginalSecondaryLabel": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "labelColor": {
+                    "type": "string",
+                    "description": "The row label color",
+                    "default": "#666"
+                },
+                "numberBarColor": {
+                    "type": "string",
+                    "description": "The bar color of completion progress",
+                    "default": "#488ccc"
+                },
+                "numberTrackColor": {
+                    "type": "string",
+                    "description": "The track color of completion progress",
+                    "default": "#ddd"
+                },
+                "max": {
+                    "type": "number",
+                    "description": "The target value of completion progress",
+                    "default": "100"
+                }
+            }
+        }
+    ]
+}

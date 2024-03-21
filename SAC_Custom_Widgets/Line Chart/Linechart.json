@@ -1,0 +1,48 @@
+{
+    "eula": "",
+    "vendor": "SAP",
+    "license": "",
+    "id": "com.sap.sac.sample.echarts.line_chart",
+    "icon": "data:image/png;base64,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",
+    "version": "1.0.1",
+    "name": "ECharts Line Chart Hosted In SAP",
+    "newInstancePrefix": "EChartLineChart",
+    "description": "A sample custom widget Line Chart",
+    "webcomponents": [
+      {
+        "kind": "main",
+        "tag": "com-sap-sample-echarts-line_chart",
+        "url": "/Linechart.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      }
+    ],
+    "properties": {
+      "width": {
+        "type": "integer",
+        "default": 600
+      },
+      "height": {
+        "type": "integer",
+        "default": 420
+      }
+    },
+    "methods": {},
+    "events": {},
+    "dataBindings": {
+      "dataBinding": {
+        "feeds": [
+          {
+            "id": "dimensions",
+            "description": "Dimensions",
+            "type": "dimension"
+          },
+          {
+            "id": "measures",
+            "description": "Measures",
+            "type": "mainStructureMember"
+          }
+        ]
+      }
+    }
+  }
