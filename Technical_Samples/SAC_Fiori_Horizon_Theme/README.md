@@ -1,16 +1,16 @@
 # Fiori Morning Horizon Theme
 
 ## Content Package Files
-SAP_CC_SAC_Fiori_Morning_Horizon_Theme.Package
+SAP_CC_SAC_Fiori_Morning_Horizon_Theme.package
 
 ## Last Released:
 2024.03
 
 ## What´s New
-N/and
+N/A
 
 ## Descripton
-This content package includes the Fiori Morning Horizon sample theme, along with a related sample story and 2 story templates. 
+This content package includes the Fiori Morning Horizon sample theme, along with a related sample story and two story templates. 
 
 ## Details
 The content packages includes:
