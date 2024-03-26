@@ -31,4 +31,4 @@ Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CL
 Before installing this package, ensure that the Time Tables & Date Dimensions have been generated in the destination space. Details [here](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/b462239ffb644d9baab4442a10a72edf.html).
 
 ## Contact
-rafiq.islam@sap.com, hamza.jamal@sap.com
+[Rafiq Islam](mailto:rafiq.islam@sap.com), [Hamza Jamal](mailto:hamza.jamal@sap.com) 
