@@ -24,6 +24,8 @@ See how to host the custom widgets in SAC [here](https://community.sap.com/t5/te
 
 See how to host the custom widgets in GitHub [here](https://community.sap.com/t5/technology-blogs-by-sap/hosting-sap-analytics-cloud-custom-widgets-into-github/ba-p/13566633).
 
+Also a GitHub release has been created that includes all Custom Widgets in one file for a convenient download.
+
 ## Known Issues
 If you are planning to host the custom widget within different GitHub repository or different web server, don't forget to change the path to the web componenet files in the JSON file. 
 
