@@ -1,5 +1,4 @@
-# Community Content Title
-Analytic Model Sample Data Model (Sales Opportunity)
+# Analytic Model Sample Data Model (Sales Opportunity)
 
 ## Content Package Files
 see download / install Instructions
