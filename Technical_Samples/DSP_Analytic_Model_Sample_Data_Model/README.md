@@ -2,13 +2,13 @@
 Analytic Model Sample Data Model (Sales Opportunity)
 
 ## Content Package Files
-SAP_CC_DSP_AM_SAMPLE_DATAMODEL_SALES_OPPORTUNITY.zip
+see download / install Instructions
 
 ## Last Released:
 2023.04
 
 ## What´s New
-N/Analytic
+N/A
 
 ## Descripton
 This is the Sales opportunity sample data model which was created and used in the blog - https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-analytic-model-series-data-model-introduction/ba-p/13550812. 
@@ -26,6 +26,7 @@ This package contains the following:
 Upload the CSV files as mentioned in the blog.
 
 ## Download/Install Instructions
+Please download the release for both the CSN file and the CSV files.
 For further information, please check the blog - https://community.sap.com/t5/technology-blogs-by-sap/sap-datasphere-analytic-model-series-data-model-introduction/ba-p/13550812 .
 
 
