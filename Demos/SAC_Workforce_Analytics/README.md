@@ -4,10 +4,10 @@
 SAP_CC_SAC_Workforce_Analytics.package 
 
 ## Last Released:
-2023.12
+2024.03
 
 ## What´s New
-N/A
+Converted to Optimized Design Experience
 
 ## Descripton
 A service offering melding together the functionality of SAP SuccessFactors Workforce Analytics (WFA) with
