@@ -1,0 +1,22 @@
+﻿ID;Name;ProductCategory;ProductGroup;ProductManager
+PR-1000;Data Warehouse Cloud;2;2;400000010
+PR-1001;HANA Cloud;1;2;400000011
+PR-1002;Analytics Cloud;3;2;400000012
+PR-1003;Analytics Cloud Planning;3;2;400000013
+PR-1004;BW/4;2;1;400000014
+PR-1005;S/4 on Premise;4;1;400000015
+PR-1006;S/4 single Tenant;4;1;400000010
+PR-1007;S/4 multi Tenant;4;1;400000011
+PR-1008;SuccessFactors;6;2;400000012
+PR-1009;Fieldglass;8;1;400000013
+PR-1010;Concur;8;2;400000014
+PR-1011;Ariba;8;2;400000015
+PR-1012;HANA 2.0;1;1;400000010
+PR-1013;HANA 1.0;1;1;400000011
+PR-1014;Integrated Business Planning;4;1;400000012
+PR-1015;Cloud Platform CPEA;7;2;400000013
+PR-1016;Mobile Services;7;2;400000014
+PR-1017;Sales Cloud;5;2;400000015
+PR-1018;Marketing Cloud;5;2;400000005
+PR-1019;Commerce Cloud;5;2;400000006
+PR-1020;Manufacturing Execution;4;1;400000007
