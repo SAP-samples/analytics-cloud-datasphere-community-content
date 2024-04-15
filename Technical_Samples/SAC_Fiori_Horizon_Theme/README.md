@@ -29,7 +29,7 @@ Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CL
 In case you have downloaded on older version of the content, please delete the old content first or move it to a different folder before importing the attached content package. 
 
 ## More Information
-N/A
+For more details, please refer to our blog [here](https://community.sap.com/t5/technology-blogs-by-sap/horizon-theme-and-templates-for-stories-in-sap-analytics-cloud/ba-p/13657027).
 
 ## Contact
 N/A
