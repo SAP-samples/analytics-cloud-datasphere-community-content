@@ -2,7 +2,7 @@
 
 
 ## Content Package Files
-UI_theming_basics_content.package
+SAP_CC_SAC_UI_Theming_Basics.package
 
 ## Last Released:
 2024.04
