@@ -13,18 +13,21 @@ UI_theming_basics_content.package
 This easy-to-follow guide will walk you through UI-theming basics, with a focus on the canvas page layout. By following these steps, you'll be able to create a unique look and feel for your SAC stories.
 
 Here are some of the things you'll learn in this post:
-• Create Canvas Layout
-• Create Theme
-• Set your global settings in your theme Custom CSS
-• Packaging up the theme and CSS codes
-• Adjust layout with grid
-
+ <ul> 
+  <li>Create Canvas Layout</li>
+  <li>Create Theme</li>
+  <li>Set your global settings in your theme Custom CSS</li>
+  <li>Packaging up the theme and CSS codes</li>
+  <li>Adjust layout with grid</li>
+</ul>
 The following objects are included:
-• UI_Theming_Basics_END (Story file)
-• UI_Theming_Basics_START (Story file)
-• SAP_BestRun (Sample Data)
-• UI_basics_light_theme (Theme file)
-
+<ul> 
+  <li>UI_Theming_Basics_END (Story file)</li>
+  <li>UI_Theming_Basics_START (Story file)</li>
+  <li>SAP_BestRun (Sample Data)</li>
+  <li>UI_basics_light_theme (Theme file)</li>
+</ul>
+<br>
 
 ![SAC UI Theming Basics](SAC_UI_Theming_Basics.png)
 
