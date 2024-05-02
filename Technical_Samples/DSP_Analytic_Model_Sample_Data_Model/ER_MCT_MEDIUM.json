@@ -1,0 +1,1998 @@
+{
+  "definitions": {
+    "V_MCT_OpportunityItems_v2": {
+      "kind": "entity",
+      "elements": {
+        "ItemID": {
+          "@EndUserText.label": "Item ID",
+          "type": "cds.Integer64",
+          "key": true,
+          "notNull": true
+        },
+        "Opportunity": {
+          "@EndUserText.label": "Opportunity ID",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "_MCT_Oppor"
+          }
+        },
+        "Product": {
+          "@EndUserText.label": "Product ID",
+          "type": "cds.String",
+          "length": 5000,
+          "@ObjectModel.foreignKey.association": {
+            "=": "_MCT_Produ"
+          }
+        },
+        "Quantity": {
+          "@EndUserText.label": "Quantity",
+          "precision": 20,
+          "scale": 3,
+          "type": "cds.Decimal",
+          "@AnalyticsDetails.measureType": {
+            "#": "BASE"
+          },
+          "@Semantics.quantity.unitOfMeasure": {
+            "=": "Unit"
+          },
+          "@Aggregation.default": {
+            "#": "SUM"
+          }
+        },
+        "Value": {
+          "@EndUserText.label": "Value",
+          "precision": 20,
+          "scale": 2,
+          "type": "cds.Decimal",
+          "@AnalyticsDetails.measureType": {
+            "#": "BASE"
+          },
+          "@Semantics.amount.currencyCode": {
+            "=": "Currency"
+          },
+          "@Aggregation.default": {
+            "#": "SUM"
+          }
+        },
+        "Unit": {
+          "@EndUserText.label": "Unit",
+          "type": "cds.String",
+          "length": 5000,
+          "@Semantics.unitOfMeasure": true
+        },
+        "Currency": {
+          "@EndUserText.label": "Currency",
+          "type": "cds.String",
+          "length": 5000,
+          "@Semantics.currencyCode": true
+        },
+        "FactAttr": {
+          "@EndUserText.label": "FactAttr",
+          "type": "cds.String",
+          "length": 5000,
+          "@ObjectModel.text.element": [
+            {
+              "=": "FactAttrLabel"
+            }
+          ]
+        },
+        "FactAttrLabel": {
+          "@EndUserText.label": "FactAttrLabel",
+          "type": "cds.String",
+          "length": 5000,
+          "@Semantics.text": true
+        },
+        "ItemStatus": {
+          "@EndUserText.label": "ItemStatus ID",
+          "type": "cds.Integer64"
+        },
+        "ControllingArea": {
+          "@EndUserText.label": "Controlling Area",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "_MCT_Contr"
+          }
+        },
+        "SendingCostCenter": {
+          "@EndUserText.label": "Sending Cost Center",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "MCT_CCSending"
+          }
+        },
+        "ReceivingCostCenter": {
+          "@EndUserText.label": "Receiving Cost Center",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "MCT_CCReceiving"
+          }
+        },
+        "_MCT_Produ": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "Product"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_MCT_Produ",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_Products",
+          "@EndUserText.label": "to MCT Products"
+        },
+        "_MCT_Contr": {
+          "type": "cds.Association",
+          "@EndUserText.label": "V_MCT_OpportunityItems_v2 to MCT Controlling Area",
+          "on": [
+            {
+              "ref": [
+                "ControllingArea"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_MCT_Contr",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_ControllingArea"
+        },
+        "_MCT_Oppor": {
+          "type": "cds.Association",
+          "@EndUserText.label": "V_MCT_OpportunityItems_v2 to MCT Opportunity Header",
+          "on": [
+            {
+              "ref": [
+                "Opportunity"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_MCT_Oppor",
+                "OpportunityID"
+              ]
+            }
+          ],
+          "target": "MCT_Opportunities"
+        }
+      },
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "MCT_OpportunityItems"
+            ]
+          },
+          "columns": [
+            {
+              "key": true,
+              "ref": [
+                "ItemID"
+              ]
+            },
+            {
+              "ref": [
+                "Opportunity"
+              ]
+            },
+            {
+              "ref": [
+                "Product"
+              ]
+            },
+            {
+              "ref": [
+                "Quantity"
+              ]
+            },
+            {
+              "ref": [
+                "Value"
+              ]
+            },
+            {
+              "ref": [
+                "Unit"
+              ]
+            },
+            {
+              "ref": [
+                "Currency"
+              ]
+            },
+            {
+              "ref": [
+                "FactAttr"
+              ]
+            },
+            {
+              "ref": [
+                "FactAttrLabel"
+              ]
+            },
+            {
+              "ref": [
+                "ItemStatus"
+              ]
+            },
+            {
+              "ref": [
+                "ControllingArea"
+              ]
+            },
+            {
+              "ref": [
+                "SendingCostCenter"
+              ]
+            },
+            {
+              "ref": [
+                "ReceivingCostCenter"
+              ]
+            },
+            {
+              "ref": [
+                "_MCT_Produ"
+              ]
+            },
+            {
+              "ref": [
+                "_MCT_Contr"
+              ]
+            },
+            {
+              "ref": [
+                "_MCT_Oppor"
+              ]
+            }
+          ],
+          "mixin": {
+            "_MCT_Produ": {
+              "type": "cds.Association",
+              "@EndUserText.label": "to MCT Products",
+              "on": [
+                {
+                  "ref": [
+                    "$projection",
+                    "Product"
+                  ]
+                },
+                "=",
+                {
+                  "ref": [
+                    "_MCT_Produ",
+                    "ID"
+                  ]
+                }
+              ],
+              "target": "MCT_Products"
+            },
+            "_MCT_Contr": {
+              "type": "cds.Association",
+              "@EndUserText.label": "V_MCT_OpportunityItems_v2 to MCT Controlling Area",
+              "on": [
+                {
+                  "ref": [
+                    "$projection",
+                    "ControllingArea"
+                  ]
+                },
+                "=",
+                {
+                  "ref": [
+                    "_MCT_Contr",
+                    "ID"
+                  ]
+                }
+              ],
+              "target": "MCT_ControllingArea"
+            },
+            "_MCT_Oppor": {
+              "type": "cds.Association",
+              "@EndUserText.label": "V_MCT_OpportunityItems_v2 to MCT Opportunity Header",
+              "on": [
+                {
+                  "ref": [
+                    "$projection",
+                    "Opportunity"
+                  ]
+                },
+                "=",
+                {
+                  "ref": [
+                    "_MCT_Oppor",
+                    "OpportunityID"
+                  ]
+                }
+              ],
+              "target": "MCT_Opportunities"
+            }
+          }
+        }
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "ANALYTICAL_PROVIDER"
+        },
+        {
+          "#": "ANALYTICAL_FACT"
+        }
+      ],
+      "@EndUserText.label": "V_MCT_OpportunityItems_v2",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_FACT"
+      },
+      "@DataWarehouse.querybuilder.model": "{\"contents\":{\"30a6a7b7-5016-40ab-8061-43ad5229edc9\":{\"classDefinition\":\"sap.cdw.querybuilder.Model\",\"name\":\"V_MCT_OpportunityItems_v2\",\"label\":\"V_MCT_OpportunityItems_v2\",\"modificationDate\":1669187456101,\"deploymentDate\":0,\"#objectStatus\":\"0\",\"output\":\"62e3db68-6bf7-4566-b087-a907b3e4a1de\",\"nodes\":{\"62e3db68-6bf7-4566-b087-a907b3e4a1de\":{\"name\":\"V_MCT_OpportunityItems\"},\"6aea9bca-01ad-4ab9-9922-a07b9fa88d8c\":{\"name\":\"MCT_OpportunityItems\"},\"c93db8c8-cb22-4cca-a2af-af1e47ebe204\":{\"name\":\"MCT_Products\"}},\"associations\":{\"2e618a22-6845-4481-ae21-92250a8a4398\":{\"name\":\"_MCT_Produ\"}},\"diagrams\":{\"78c6775d-4820-4632-af20-615a4037c0ad\":{}}},\"62e3db68-6bf7-4566-b087-a907b3e4a1de\":{\"classDefinition\":\"sap.cdw.querybuilder.Output\",\"name\":\"V_MCT_OpportunityItems\",\"type\":\"graphicView\",\"isPinToMemoryEnabled\":false,\"dataCategory\":\"FACT\",\"modificationDate\":1669187456101,\"deploymentDate\":0,\"#objectStatus\":\"0\",\"elements\":{\"51718014-4c22-4cc6-8cdc-e29d0e8403b8\":{\"name\":\"ItemID\"},\"2a0fe509-0529-4b55-80b6-d52a499a8126\":{\"name\":\"Opportunity\"},\"88a13920-b7ea-4074-9a8b-002bc786a8eb\":{\"name\":\"Product\"},\"88d7345e-9863-43ea-9417-58dfe41cf9e6\":{\"name\":\"Quantity\"},\"97feabd2-01ea-44b8-910d-81f5e5022124\":{\"name\":\"Value\"},\"63f7eb35-8052-4268-bf5c-ca5baf77f6ad\":{\"name\":\"Unit\"},\"9cbe5213-c6ec-44fc-9269-8b94bf80a0ee\":{\"name\":\"Currency\"},\"74f892cb-d37a-4010-ac21-60424ebe95ba\":{\"name\":\"FactAttr\"},\"6d7254f1-bbdf-475e-9efa-4d619150ce14\":{\"name\":\"FactAttrLabel\"},\"6d4242ff-9460-4f5a-9d70-8b20d48f44fc\":{\"name\":\"ItemStatus\"},\"9493f407-33bf-4f99-91a3-959efc6c92e9\":{\"name\":\"ControllingArea\"},\"146f554d-4f87-4a57-8588-c73c608ab17f\":{\"name\":\"SendingCostCenter\"},\"252e448c-962d-4a51-9f06-4d48a524716e\":{\"name\":\"ReceivingCostCenter\"}}},\"6aea9bca-01ad-4ab9-9922-a07b9fa88d8c\":{\"classDefinition\":\"sap.cdw.querybuilder.Entity\",\"name\":\"MCT_OpportunityItems\",\"label\":\"MCT Opportunity Items\",\"type\":11,\"isPinToMemoryEnabled\":false,\"dataCategory\":\"FACT\",\"isAllowConsumption\":false,\"isHiddenInUi\":false,\"modificationDate\":1669039816407,\"deploymentDate\":1669045432432,\"#objectStatus\":\"1\",\"elements\":{\"f0f16c18-148a-4102-b1f8-21c0e57d5ccf\":{\"name\":\"ItemID\"},\"d396828e-23a5-40bd-8e8a-04c0b6291c9a\":{\"name\":\"Opportunity\"},\"dfe2cd98-1ac7-430f-941e-762869997813\":{\"name\":\"Product\"},\"ed24d53b-3ae5-4216-a52b-2b3123bb1d1c\":{\"name\":\"Quantity\"},\"47a80ba1-44fc-4ff7-aada-7d45ef841304\":{\"name\":\"Value\"},\"218853df-7fef-44cb-b201-27443351d2af\":{\"name\":\"Unit\"},\"a6697a60-c9d3-450a-9d07-7a86e1a2f593\":{\"name\":\"Currency\"},\"dd9ad267-2960-4e28-9221-55fcccbb485e\":{\"name\":\"FactAttr\"},\"89839fd3-441f-4f3a-8c60-314e8c747291\":{\"name\":\"FactAttrLabel\"},\"069057f0-b5fb-4ec2-be0e-0483d058162a\":{\"name\":\"ItemStatus\"},\"b6437552-bb88-4199-bb84-d06324c7a356\":{\"name\":\"ControllingArea\"},\"beda521d-1f67-41ec-88b6-52ce59aaa2fb\":{\"name\":\"SendingCostCenter\"},\"b492435b-82e4-4f67-8334-4e6ad3dcc3a5\":{\"name\":\"ReceivingCostCenter\"}},\"successorNode\":\"62e3db68-6bf7-4566-b087-a907b3e4a1de\"},\"c93db8c8-cb22-4cca-a2af-af1e47ebe204\":{\"classDefinition\":\"sap.cdw.querybuilder.DimensionNode\",\"name\":\"MCT_Products\",\"label\":\"MCT Products\",\"isPinToMemoryEnabled\":false,\"dataCategory\":\"DIMENSION\",\"isAllowConsumption\":false,\"modificationDate\":1669045362242,\"deploymentDate\":1669045432432,\"#objectStatus\":\"1\",\"elements\":{\"2edb5603-c1a3-4b5b-973d-5f3b7e9eaa69\":{\"name\":\"ID\"},\"eb6f5c3f-3762-44fe-84d6-a8863df4fc40\":{\"name\":\"Name\"},\"795781ea-f7fd-4eb1-b949-d6422ea5945d\":{\"name\":\"ProductCategory\"},\"ed17ade9-162a-4507-9293-b1273a082bbd\":{\"name\":\"ProductGroup\"},\"1751e6c7-e253-4d9b-af3c-9144cb156803\":{\"name\":\"ProductManager\"}},\"hierarchies\":{\"4d20d6ab-3774-4f8a-ae01-28beb7d46daf\":{\"name\":\"Prod_Categ\"},\"4e408f61-d36b-410b-83c3-1bfb530e68cd\":{\"name\":\"Prod_Group\"}}},\"2e618a22-6845-4481-ae21-92250a8a4398\":{\"classDefinition\":\"sap.cdw.querybuilder.Association\",\"initiatedFrom\":\"_MCT_Produ\",\"name\":\"_MCT_Produ\",\"label\":\"to MCT Products\",\"source\":\"62e3db68-6bf7-4566-b087-a907b3e4a1de\",\"target\":\"c93db8c8-cb22-4cca-a2af-af1e47ebe204\",\"mappings\":{\"50de1911-fb1a-41f9-880e-6ec000e59abf\":{}}},\"78c6775d-4820-4632-af20-615a4037c0ad\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.Diagram\",\"symbols\":{\"912d2577-10ce-4969-8631-763413dabcef\":{},\"7082efb8-b6ed-443b-a50f-c5fbd26f453e\":{\"name\":\"Entity Symbol 1\"},\"ae23532c-1426-4220-aba2-784ecfbc4f0a\":{}}},\"51718014-4c22-4cc6-8cdc-e29d0e8403b8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ItemID\",\"label\":\"Item ID\",\"newName\":\"ItemID\",\"indexOrder\":0,\"isKey\":true,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true},\"2a0fe509-0529-4b55-80b6-d52a499a8126\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Opportunity\",\"label\":\"Opportunity ID\",\"newName\":\"Opportunity\",\"indexOrder\":1,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0},\"88a13920-b7ea-4074-9a8b-002bc786a8eb\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Product\",\"label\":\"Product ID\",\"newName\":\"Product\",\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"foreignKey\":\"_MCT_Produ\"},\"88d7345e-9863-43ea-9417-58dfe41cf9e6\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Quantity\",\"label\":\"Quantity\",\"newName\":\"Quantity\",\"indexOrder\":3,\"defaultAggregation\":\"SUM\",\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":20,\"scale\":3,\"isMeasure\":true,\"semanticType\":\"@Semantics.quantity.unitOfMeasure\",\"unitTypeElement\":\"63f7eb35-8052-4268-bf5c-ca5baf77f6ad\"},\"97feabd2-01ea-44b8-910d-81f5e5022124\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Value\",\"label\":\"Value\",\"newName\":\"Value\",\"indexOrder\":4,\"defaultAggregation\":\"SUM\",\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":20,\"scale\":2,\"isMeasure\":true,\"semanticType\":\"@Semantics.amount.currencyCode\",\"unitTypeElement\":\"9cbe5213-c6ec-44fc-9269-8b94bf80a0ee\"},\"63f7eb35-8052-4268-bf5c-ca5baf77f6ad\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Unit\",\"label\":\"Unit\",\"newName\":\"Unit\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"semanticType\":\"@Semantics.unitOfMeasure\"},\"9cbe5213-c6ec-44fc-9269-8b94bf80a0ee\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Currency\",\"label\":\"Currency\",\"newName\":\"Currency\",\"indexOrder\":6,\"length\":5000,\"precision\":0,\"scale\":0,\"semanticType\":\"@Semantics.currencyCode\"},\"74f892cb-d37a-4010-ac21-60424ebe95ba\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"FactAttr\",\"label\":\"FactAttr\",\"newName\":\"FactAttr\",\"indexOrder\":7,\"length\":5000,\"precision\":0,\"scale\":0,\"labelElement\":\"6d7254f1-bbdf-475e-9efa-4d619150ce14\"},\"6d7254f1-bbdf-475e-9efa-4d619150ce14\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"FactAttrLabel\",\"label\":\"FactAttrLabel\",\"newName\":\"FactAttrLabel\",\"indexOrder\":8,\"length\":5000,\"precision\":0,\"scale\":0,\"semanticType\":\"@Semantics.text\"},\"6d4242ff-9460-4f5a-9d70-8b20d48f44fc\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ItemStatus\",\"label\":\"ItemStatus ID\",\"newName\":\"ItemStatus\",\"indexOrder\":9,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0},\"9493f407-33bf-4f99-91a3-959efc6c92e9\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ControllingArea\",\"label\":\"Controlling Area\",\"newName\":\"ControllingArea\",\"indexOrder\":10,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0},\"146f554d-4f87-4a57-8588-c73c608ab17f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"SendingCostCenter\",\"label\":\"Sending Cost Center\",\"newName\":\"SendingCostCenter\",\"indexOrder\":11,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"foreignKey\":\"MCT_CCSending\"},\"252e448c-962d-4a51-9f06-4d48a524716e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ReceivingCostCenter\",\"label\":\"Receiving Cost Center\",\"newName\":\"ReceivingCostCenter\",\"indexOrder\":12,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"foreignKey\":\"MCT_CCReceiving\"},\"f0f16c18-148a-4102-b1f8-21c0e57d5ccf\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ItemID\",\"label\":\"Item ID\",\"newName\":\"ItemID\",\"indexOrder\":0,\"isKey\":true,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"51718014-4c22-4cc6-8cdc-e29d0e8403b8\"},\"d396828e-23a5-40bd-8e8a-04c0b6291c9a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Opportunity\",\"label\":\"Opportunity ID\",\"newName\":\"Opportunity\",\"indexOrder\":1,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"foreignKey\":\"_MCT_Oppor\",\"successorElement\":\"2a0fe509-0529-4b55-80b6-d52a499a8126\"},\"dfe2cd98-1ac7-430f-941e-762869997813\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Product\",\"label\":\"Product ID\",\"newName\":\"Product\",\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"foreignKey\":\"_MCT_Produ\",\"successorElement\":\"88a13920-b7ea-4074-9a8b-002bc786a8eb\"},\"ed24d53b-3ae5-4216-a52b-2b3123bb1d1c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Quantity\",\"label\":\"Quantity\",\"newName\":\"Quantity\",\"indexOrder\":3,\"defaultAggregation\":\"SUM\",\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":20,\"scale\":3,\"isMeasure\":true,\"semanticType\":\"@Semantics.quantity.unitOfMeasure\",\"successorElement\":\"88d7345e-9863-43ea-9417-58dfe41cf9e6\",\"unitTypeElement\":\"218853df-7fef-44cb-b201-27443351d2af\"},\"47a80ba1-44fc-4ff7-aada-7d45ef841304\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Value\",\"label\":\"Value\",\"newName\":\"Value\",\"indexOrder\":4,\"defaultAggregation\":\"SUM\",\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":20,\"scale\":2,\"isMeasure\":true,\"semanticType\":\"@Semantics.amount.currencyCode\",\"successorElement\":\"97feabd2-01ea-44b8-910d-81f5e5022124\",\"unitTypeElement\":\"a6697a60-c9d3-450a-9d07-7a86e1a2f593\"},\"218853df-7fef-44cb-b201-27443351d2af\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Unit\",\"label\":\"Unit\",\"newName\":\"Unit\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"semanticType\":\"@Semantics.unitOfMeasure\",\"successorElement\":\"63f7eb35-8052-4268-bf5c-ca5baf77f6ad\"},\"a6697a60-c9d3-450a-9d07-7a86e1a2f593\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Currency\",\"label\":\"Currency\",\"newName\":\"Currency\",\"indexOrder\":6,\"length\":5000,\"precision\":0,\"scale\":0,\"semanticType\":\"@Semantics.currencyCode\",\"successorElement\":\"9cbe5213-c6ec-44fc-9269-8b94bf80a0ee\"},\"dd9ad267-2960-4e28-9221-55fcccbb485e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"FactAttr\",\"label\":\"FactAttr\",\"newName\":\"FactAttr\",\"indexOrder\":7,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"74f892cb-d37a-4010-ac21-60424ebe95ba\",\"labelElement\":\"89839fd3-441f-4f3a-8c60-314e8c747291\"},\"89839fd3-441f-4f3a-8c60-314e8c747291\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"FactAttrLabel\",\"label\":\"FactAttrLabel\",\"newName\":\"FactAttrLabel\",\"indexOrder\":8,\"length\":5000,\"precision\":0,\"scale\":0,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"6d7254f1-bbdf-475e-9efa-4d619150ce14\"},\"069057f0-b5fb-4ec2-be0e-0483d058162a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ItemStatus\",\"label\":\"ItemStatus ID\",\"newName\":\"ItemStatus\",\"indexOrder\":9,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"foreignText\":\"_MCT_ItemS\",\"successorElement\":\"6d4242ff-9460-4f5a-9d70-8b20d48f44fc\"},\"b6437552-bb88-4199-bb84-d06324c7a356\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ControllingArea\",\"label\":\"Controlling Area\",\"newName\":\"ControllingArea\",\"indexOrder\":10,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"foreignKey\":\"MCT_ControlingArea\",\"successorElement\":\"9493f407-33bf-4f99-91a3-959efc6c92e9\"},\"beda521d-1f67-41ec-88b6-52ce59aaa2fb\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"SendingCostCenter\",\"label\":\"Sending Cost Center\",\"newName\":\"SendingCostCenter\",\"indexOrder\":11,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"foreignKey\":\"MCT_CCSending\",\"successorElement\":\"146f554d-4f87-4a57-8588-c73c608ab17f\"},\"b492435b-82e4-4f67-8334-4e6ad3dcc3a5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ReceivingCostCenter\",\"label\":\"Receiving Cost Center\",\"newName\":\"ReceivingCostCenter\",\"indexOrder\":12,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"foreignKey\":\"MCT_CCReceiving\",\"successorElement\":\"252e448c-962d-4a51-9f06-4d48a524716e\"},\"2edb5603-c1a3-4b5b-973d-5f3b7e9eaa69\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ID\",\"label\":\"ID\",\"newName\":\"ID\",\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"labelElement\":\"eb6f5c3f-3762-44fe-84d6-a8863df4fc40\"},\"eb6f5c3f-3762-44fe-84d6-a8863df4fc40\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Name\",\"label\":\"Name\",\"newName\":\"Name\",\"indexOrder\":1,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\"},\"795781ea-f7fd-4eb1-b949-d6422ea5945d\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ProductCategory\",\"label\":\"ProductCategory\",\"newName\":\"ProductCategory\",\"indexOrder\":2,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"foreignKey\":\"_MCT_Produ\"},\"ed17ade9-162a-4507-9293-b1273a082bbd\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ProductGroup\",\"label\":\"ProductGroup\",\"newName\":\"ProductGroup\",\"indexOrder\":3,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"foreignText\":\"_MCT_Prod1\"},\"1751e6c7-e253-4d9b-af3c-9144cb156803\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ProductManager\",\"label\":\"Product Manager\",\"newName\":\"ProductManager\",\"indexOrder\":4,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"isDimension\":true,\"foreignKey\":\"to_employee\"},\"4d20d6ab-3774-4f8a-ae01-28beb7d46daf\":{\"classDefinition\":\"sap.cdw.commonmodel.LevelBasedHierarchy\",\"name\":\"Prod_Categ\",\"label\":\"Product Category Hierarchy\",\"levels\":{\"22b45c43-ef72-4ba9-b509-52e00c60fc61\":{},\"71e3aa14-3579-4885-b92f-ed8b4307025f\":{}}},\"4e408f61-d36b-410b-83c3-1bfb530e68cd\":{\"classDefinition\":\"sap.cdw.commonmodel.LevelBasedHierarchy\",\"name\":\"Prod_Group\",\"label\":\"Product Group Hiearchy\",\"levels\":{\"f16c39da-689a-4483-8eb6-62cc44b486f4\":{},\"a2d3693e-478e-4d5f-ad69-7a1d944bc594\":{}}},\"50de1911-fb1a-41f9-880e-6ec000e59abf\":{\"classDefinition\":\"sap.cdw.commonmodel.ElementMapping\",\"source\":\"88a13920-b7ea-4074-9a8b-002bc786a8eb\",\"target\":\"2edb5603-c1a3-4b5b-973d-5f3b7e9eaa69\"},\"912d2577-10ce-4969-8631-763413dabcef\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.OutputSymbol\",\"x\":47,\"y\":-20,\"width\":140,\"height\":40,\"object\":\"62e3db68-6bf7-4566-b087-a907b3e4a1de\"},\"7082efb8-b6ed-443b-a50f-c5fbd26f453e\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.EntitySymbol\",\"name\":\"Entity Symbol 1\",\"x\":-163,\"y\":-20,\"width\":160,\"height\":40,\"displayName\":\"Entity Symbol 1\",\"object\":\"6aea9bca-01ad-4ab9-9922-a07b9fa88d8c\"},\"ae23532c-1426-4220-aba2-784ecfbc4f0a\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"-3,0 47,0\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"7082efb8-b6ed-443b-a50f-c5fbd26f453e\",\"targetSymbol\":\"912d2577-10ce-4969-8631-763413dabcef\"},\"22b45c43-ef72-4ba9-b509-52e00c60fc61\":{\"classDefinition\":\"sap.cdw.commonmodel.LevelElement\",\"indexOrder\":0,\"element\":\"795781ea-f7fd-4eb1-b949-d6422ea5945d\"},\"71e3aa14-3579-4885-b92f-ed8b4307025f\":{\"classDefinition\":\"sap.cdw.commonmodel.LevelElement\",\"indexOrder\":1,\"element\":\"2edb5603-c1a3-4b5b-973d-5f3b7e9eaa69\"},\"f16c39da-689a-4483-8eb6-62cc44b486f4\":{\"classDefinition\":\"sap.cdw.commonmodel.LevelElement\",\"indexOrder\":0,\"element\":\"ed17ade9-162a-4507-9293-b1273a082bbd\"},\"a2d3693e-478e-4d5f-ad69-7a1d944bc594\":{\"classDefinition\":\"sap.cdw.commonmodel.LevelElement\",\"indexOrder\":1,\"element\":\"2edb5603-c1a3-4b5b-973d-5f3b7e9eaa69\"}}}"
+    },
+    "MCT_Products": {
+      "kind": "entity",
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "ANALYTICAL_DIMENSION"
+        }
+      ],
+      "elements": {
+        "ID": {
+          "@EndUserText.label": "ID",
+          "type": "cds.String",
+          "length": 5000,
+          "key": true,
+          "notNull": true,
+          "@Analytics.dimension": true,
+          "@ObjectModel.text.element": [
+            {
+              "=": "Name"
+            }
+          ]
+        },
+        "Name": {
+          "@EndUserText.label": "Name",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        },
+        "ProductCategory": {
+          "@EndUserText.label": "ProductCategory",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "_MCT_Produ"
+          }
+        },
+        "ProductGroup": {
+          "@EndUserText.label": "ProductGroup",
+          "type": "cds.Integer64",
+          "@ObjectModel.text.association": {
+            "=": "_MCT_Prod1"
+          }
+        },
+        "ProductManager": {
+          "@EndUserText.label": "Product Manager",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "to_employee"
+          },
+          "@Analytics.dimension": true
+        },
+        "_MCT_Produ": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "ProductCategory"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_MCT_Produ",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_ProductCategories",
+          "@EndUserText.label": "MCT_Products to MCT Product Categories"
+        },
+        "to_employee": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "ProductManager"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "to_employee",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_Employees",
+          "@EndUserText.label": "MCT Products to MCT Employees"
+        },
+        "_MCT_Prod1": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "ProductGroup"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_MCT_Prod1",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_ProductGroupTexts",
+          "@EndUserText.label": "MCT_Products to MCT Product Group Texts"
+        }
+      },
+      "@EndUserText.label": "MCT Products",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_DIMENSION"
+      },
+      "@Hierarchy.leveled": [
+        {
+          "name": "Prod_Categ",
+          "label": "Product Category Hierarchy",
+          "levels": [
+            {
+              "element": {
+                "=": "ProductCategory"
+              }
+            },
+            {
+              "element": {
+                "=": "ID"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Prod_Group",
+          "label": "Product Group Hiearchy",
+          "levels": [
+            {
+              "element": {
+                "=": "ProductGroup"
+              }
+            },
+            {
+              "element": {
+                "=": "ID"
+              }
+            }
+          ]
+        }
+      ],
+      "@DataWarehouse.dataSource.schema": "WRG_FWW67PIAQ9HG8KE8",
+      "@DataWarehouse.dataSource.entity": "sap.dataset.conf_c0dd10b5-f16c-4dcc-9f10-0466947bd757_view"
+    },
+    "MCT_ProductCategories": {
+      "kind": "entity",
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "ANALYTICAL_DIMENSION"
+        }
+      ],
+      "elements": {
+        "ID": {
+          "@EndUserText.label": "ID",
+          "type": "cds.Integer64",
+          "key": true,
+          "notNull": true,
+          "@Analytics.dimension": true,
+          "@ObjectModel.text.element": [
+            {
+              "=": "Name"
+            }
+          ]
+        },
+        "Name": {
+          "@EndUserText.label": "Name",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        }
+      },
+      "@EndUserText.label": "MCT Product Categories",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_DIMENSION"
+      },
+      "@DataWarehouse.dataSource.schema": "WRG_FWW67PIAQ9HG8KE8",
+      "@DataWarehouse.dataSource.entity": "sap.dataset.conf_a1ec919b-8cc7-47a5-9a21-31754f8f5b97_view"
+    },
+    "MCT_Employees": {
+      "kind": "entity",
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "ANALYTICAL_DIMENSION"
+        }
+      ],
+      "elements": {
+        "ID": {
+          "@EndUserText.label": "ID",
+          "type": "cds.Integer64",
+          "key": true,
+          "notNull": true,
+          "@Analytics.dimension": true,
+          "@ObjectModel.text.element": [
+            {
+              "=": "FullName"
+            }
+          ]
+        },
+        "FirstName": {
+          "@EndUserText.label": "First Name",
+          "type": "cds.String",
+          "length": 200,
+          "@Analytics.dimension": true
+        },
+        "MiddleName": {
+          "@EndUserText.label": "Middle Name",
+          "type": "cds.String",
+          "length": 200,
+          "@Analytics.dimension": true
+        },
+        "LastName": {
+          "@EndUserText.label": "Last Name",
+          "type": "cds.String",
+          "length": 200,
+          "@Analytics.dimension": true
+        },
+        "FullName": {
+          "@EndUserText.label": "Full Name",
+          "type": "cds.String",
+          "length": 200,
+          "@Semantics.text": true
+        },
+        "Gender": {
+          "@EndUserText.label": "Gender",
+          "type": "cds.String",
+          "length": 200,
+          "@Analytics.dimension": true
+        },
+        "Manager": {
+          "@EndUserText.label": "Manager",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "to_manager"
+          }
+        },
+        "to_manager": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "Manager"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "to_manager",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_Employees",
+          "@EndUserText.label": "MCT Employees to MCT Employees"
+        }
+      },
+      "@EndUserText.label": "MCT Employees",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_DIMENSION"
+      },
+      "@Hierarchy.parentChild": [
+        {
+          "name": "OrgHier",
+          "label": "Organizational Hierarchy",
+          "recurse": {
+            "parent": [
+              {
+                "=": "Manager"
+              }
+            ],
+            "child": [
+              {
+                "=": "ID"
+              }
+            ]
+          }
+        }
+      ],
+      "@DataWarehouse.dataSource.schema": "WRG_FWW67PIAQ9HG8KE8",
+      "@DataWarehouse.dataSource.entity": "sap.dataset.conf_9ae4345f-6f10-401f-b2f7-d2819307dfe7_view"
+    },
+    "MCT_ControllingArea": {
+      "kind": "entity",
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "ANALYTICAL_DIMENSION"
+        }
+      ],
+      "elements": {
+        "ID": {
+          "@EndUserText.label": "ID",
+          "type": "cds.Integer64",
+          "key": true,
+          "notNull": true,
+          "@Analytics.dimension": true,
+          "@ObjectModel.text.element": [
+            {
+              "=": "Name"
+            }
+          ]
+        },
+        "Name": {
+          "@EndUserText.label": "Name",
+          "type": "cds.String",
+          "length": 100,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        },
+        "Manager": {
+          "@EndUserText.label": "Manager",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "to_employee"
+          }
+        },
+        "to_employee": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "Manager"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "to_employee",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_Employees",
+          "@EndUserText.label": "MCT Controlling Area to MCT Employees"
+        }
+      },
+      "@EndUserText.label": "MCT Controlling Area",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_DIMENSION"
+      },
+      "@DataWarehouse.dataSource.schema": "WRG_FWW67PIAQ9HG8KE8",
+      "@DataWarehouse.dataSource.entity": "sap.dataset.conf_e82da3ec-0b00-40bc-80c5-91ffe8ead662_view"
+    },
+    "MCT_Opportunities": {
+      "kind": "entity",
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "ANALYTICAL_DIMENSION"
+        }
+      ],
+      "elements": {
+        "OpportunityID": {
+          "@EndUserText.label": "OpportunityID",
+          "type": "cds.Integer64",
+          "key": true,
+          "notNull": true,
+          "@Analytics.dimension": true
+        },
+        "SalesOrg": {
+          "@EndUserText.label": "SalesOrg",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "_MCT_Sales"
+          }
+        },
+        "ExpectedClosingDate": {
+          "@EndUserText.label": "ExpectedClosingDate",
+          "type": "cds.Date",
+          "@ObjectModel.foreignKey.association": {
+            "=": "_VIEW_DIME"
+          },
+          "@Analytics.dimension": true
+        },
+        "Status": {
+          "@EndUserText.label": "Status",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "Responsible": {
+          "@EndUserText.label": "Responsible",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "to_employee"
+          }
+        },
+        "Customer": {
+          "@EndUserText.label": "Customer",
+          "type": "cds.Integer64"
+        },
+        "to_employee": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "Responsible"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "to_employee",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_Employees",
+          "@EndUserText.label": "MCT Opportunity Header to MCT Employees"
+        },
+        "to_closing_date": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "ExpectedClosingDate"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "to_closing_date",
+                "DATE_SQL"
+              ]
+            }
+          ],
+          "target": "SAP.TIME.VIEW_DIMENSION_DAY",
+          "@EndUserText.label": "Expected Closing Date"
+        },
+        "_VIEW_DIME": {
+          "type": "cds.Association",
+          "@EndUserText.label": "MCT Opportunity Header to Time Dimension - Day",
+          "on": [
+            {
+              "ref": [
+                "ExpectedClosingDate"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_VIEW_DIME",
+                "DATE_SQL"
+              ]
+            }
+          ],
+          "target": "SAP.TIME.VIEW_DIMENSION_DAY"
+        },
+        "_MCT_Sales": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "SalesOrg"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_MCT_Sales",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_SalesOrganization",
+          "@EndUserText.label": "Sales Organization"
+        }
+      },
+      "@EndUserText.label": "MCT Opportunity Header",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_DIMENSION"
+      },
+      "@DataWarehouse.dataSource.schema": "WRG_FWW67PIAQ9HG8KE8",
+      "@DataWarehouse.dataSource.entity": "sap.dataset.conf_c7355da9-02ce-4a93-9fed-603ffe9795bb_view"
+    },
+    "SAP.TIME.VIEW_DIMENSION_DAY": {
+      "kind": "entity",
+      "elements": {
+        "DATE_SQL": {
+          "key": true,
+          "type": "cds.Date",
+          "@Analytics.dimension": true,
+          "@EndUserText.label": "Date",
+          "@Semantics.date": true,
+          "@ObjectModel.text.element": [
+            {
+              "=": "DAY_INT"
+            }
+          ]
+        },
+        "DATE_SAP": {
+          "type": "cds.String",
+          "@Analytics.dimension": true,
+          "@Semantics.date": true,
+          "@EndUserText.label": "Date (String)",
+          "length": 8,
+          "@ObjectModel.text.element": [
+            {
+              "=": "DAY_INT"
+            }
+          ]
+        },
+        "DAY_OF_WEEK": {
+          "type": "cds.String",
+          "@Analytics.dimension": true,
+          "@Semantics.calendar.dayOfYear": true,
+          "@EndUserText.label": "Day of Week",
+          "length": 2,
+          "@ObjectModel.text.association": {
+            "=": "_DAY_OF_WEEK"
+          }
+        },
+        "CALWEEK": {
+          "type": "cds.String",
+          "@Analytics.dimension": true,
+          "@Semantics.calendar.yearWeek": true,
+          "@EndUserText.label": "Calendar Week",
+          "length": 6
+        },
+        "CALMONTH": {
+          "type": "cds.String",
+          "@Analytics.dimension": true,
+          "@Semantics.calendar.yearMonth": true,
+          "@EndUserText.label": "Calendar Month",
+          "@ObjectModel.text.association": {
+            "=": "_MONTH"
+          },
+          "length": 6
+        },
+        "MONTH": {
+          "type": "cds.String",
+          "@Analytics.dimension": true,
+          "@Semantics.calendar.month": true,
+          "@EndUserText.label": "Month",
+          "length": 2
+        },
+        "CALQUARTER": {
+          "type": "cds.String",
+          "@Analytics.dimension": true,
+          "@Semantics.calendar.yearQuarter": true,
+          "@EndUserText.label": "Calendar Quarter",
+          "length": 5,
+          "@ObjectModel.text.association": {
+            "=": "_QUARTER"
+          }
+        },
+        "QUARTER": {
+          "type": "cds.String",
+          "@Analytics.dimension": true,
+          "@EndUserText.label": "Quarter",
+          "length": 2
+        },
+        "YEAR": {
+          "type": "cds.String",
+          "@Analytics.dimension": true,
+          "@Semantics.calendar.year": true,
+          "@EndUserText.label": "Year",
+          "length": 4
+        },
+        "_DAY_OF_WEEK": {
+          "on": [
+            {
+              "ref": [
+                "DAY_OF_WEEK"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_DAY_OF_WEEK",
+                "ID"
+              ]
+            }
+          ],
+          "target": "SAP.TIME.M_TIME_DIMENSION_TDAY",
+          "type": "cds.Association"
+        },
+        "DAY_INT": {
+          "@EndUserText.label": "Day (Number)",
+          "type": "cds.Integer",
+          "@Semantics.text": true
+        },
+        "_MONTH": {
+          "on": [
+            {
+              "ref": [
+                "MONTH"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_MONTH",
+                "ID"
+              ]
+            }
+          ],
+          "target": "SAP.TIME.M_TIME_DIMENSION_TMONTH",
+          "type": "cds.Association"
+        },
+        "_QUARTER": {
+          "on": [
+            {
+              "ref": [
+                "QUARTER"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_QUARTER",
+                "ID"
+              ]
+            }
+          ],
+          "target": "SAP.TIME.M_TIME_DIMENSION_TQUARTER",
+          "type": "cds.Association"
+        }
+      },
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "SAP.TIME.M_TIME_DIMENSION"
+            ],
+            "as": "M_TIME_DIMENSION"
+          },
+          "distinct": true,
+          "columns": [
+            {
+              "ref": [
+                "DATE_SQL"
+              ]
+            },
+            {
+              "ref": [
+                "DATE_SAP"
+              ]
+            },
+            {
+              "ref": [
+                "DAY_OF_WEEK"
+              ]
+            },
+            {
+              "ref": [
+                "CALWEEK"
+              ]
+            },
+            {
+              "ref": [
+                "CALMONTH"
+              ]
+            },
+            {
+              "ref": [
+                "MONTH"
+              ]
+            },
+            {
+              "ref": [
+                "CALQUARTER"
+              ]
+            },
+            {
+              "ref": [
+                "YEAR"
+              ]
+            },
+            {
+              "ref": [
+                "QUARTER"
+              ]
+            },
+            {
+              "ref": [
+                "_DAY_OF_WEEK"
+              ]
+            },
+            {
+              "ref": [
+                "DAY_INT"
+              ]
+            },
+            {
+              "ref": [
+                "_MONTH"
+              ]
+            },
+            {
+              "ref": [
+                "_QUARTER"
+              ]
+            }
+          ],
+          "mixin": {
+            "_DAY_OF_WEEK": {
+              "on": [
+                {
+                  "ref": [
+                    "$projection",
+                    "DAY_OF_WEEK"
+                  ]
+                },
+                "=",
+                {
+                  "ref": [
+                    "_DAY_OF_WEEK",
+                    "ID"
+                  ]
+                }
+              ],
+              "target": "SAP.TIME.M_TIME_DIMENSION_TDAY",
+              "type": "cds.Association"
+            },
+            "_MONTH": {
+              "on": [
+                {
+                  "ref": [
+                    "$projection",
+                    "MONTH"
+                  ]
+                },
+                "=",
+                {
+                  "ref": [
+                    "_MONTH",
+                    "ID"
+                  ]
+                }
+              ],
+              "target": "SAP.TIME.M_TIME_DIMENSION_TMONTH",
+              "type": "cds.Association"
+            },
+            "_QUARTER": {
+              "on": [
+                {
+                  "ref": [
+                    "$projection",
+                    "QUARTER"
+                  ]
+                },
+                "=",
+                {
+                  "ref": [
+                    "_QUARTER",
+                    "ID"
+                  ]
+                }
+              ],
+              "target": "SAP.TIME.M_TIME_DIMENSION_TQUARTER",
+              "type": "cds.Association"
+            }
+          }
+        }
+      },
+      "@EndUserText.label": "Time Dimension - Day",
+      "@Hierarchy.leveled": [
+        {
+          "name": "YQMD",
+          "label": "Year, Quarter, Month, Day",
+          "levels": [
+            {
+              "element": {
+                "=": "YEAR"
+              }
+            },
+            {
+              "element": {
+                "=": "CALQUARTER"
+              }
+            },
+            {
+              "element": {
+                "=": "CALMONTH"
+              }
+            },
+            {
+              "element": {
+                "=": "DATE_SQL"
+              }
+            }
+          ]
+        },
+        {
+          "name": "YMD",
+          "label": "Year, Month, Day",
+          "levels": [
+            {
+              "element": {
+                "=": "YEAR"
+              }
+            },
+            {
+              "element": {
+                "=": "CALMONTH"
+              }
+            },
+            {
+              "element": {
+                "=": "DATE_SQL"
+              }
+            }
+          ]
+        },
+        {
+          "name": "YWD",
+          "label": "Year, Week, Day",
+          "levels": [
+            {
+              "element": {
+                "=": "YEAR"
+              }
+            },
+            {
+              "element": {
+                "=": "CALWEEK"
+              }
+            },
+            {
+              "element": {
+                "=": "DATE_SQL"
+              }
+            }
+          ]
+        }
+      ],
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_DIMENSION"
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "ANALYTICAL_PROVIDER"
+        },
+        {
+          "#": "ANALYTICAL_DIMENSION"
+        }
+      ],
+      "@Analytics.dimensionType": "#TIME",
+      "@Internal.Entity.Hidden": true
+    },
+    "MCT_CostCenter": {
+      "kind": "entity",
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "ANALYTICAL_DIMENSION"
+        }
+      ],
+      "elements": {
+        "ControllingArea": {
+          "@EndUserText.label": "ControllingArea",
+          "type": "cds.Integer64",
+          "key": true,
+          "notNull": true,
+          "@ObjectModel.foreignKey.association": {
+            "=": "_MCT_Contr"
+          },
+          "@Analytics.dimension": true
+        },
+        "CostCenter": {
+          "@EndUserText.label": "Cost Center",
+          "type": "cds.Integer64",
+          "key": true,
+          "notNull": true,
+          "@Analytics.dimension": true,
+          "@ObjectModel.text.element": [
+            {
+              "=": "Name"
+            }
+          ]
+        },
+        "Name": {
+          "@EndUserText.label": "Name",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        },
+        "Manager": {
+          "@EndUserText.label": "Manager",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "to_manager"
+          }
+        },
+        "_MCT_Contr": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "ControllingArea"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_MCT_Contr",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_ControllingArea",
+          "@EndUserText.label": "MCT Cost Center to MCT Controlling Area"
+        },
+        "to_manager": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "Manager"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "to_manager",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_Employees",
+          "@EndUserText.label": "MCT Cost Center to MCT Employees"
+        }
+      },
+      "@ObjectModel.representativeKey": {
+        "=": "CostCenter"
+      },
+      "@DataWarehouse.compoundKeySequence": [
+        {
+          "=": "ControllingArea"
+        },
+        {
+          "=": "CostCenter"
+        }
+      ],
+      "@EndUserText.label": "MCT Cost Center",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_DIMENSION"
+      },
+      "@DataWarehouse.dataSource.schema": "WRG_FWW67PIAQ9HG8KE8",
+      "@DataWarehouse.dataSource.entity": "sap.dataset.conf_a329db37-0f66-44b6-9777-a42533d00aff_view"
+    },
+    "MCT_ItemStatusTexts": {
+      "kind": "entity",
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "LANGUAGE_DEPENDENT_TEXT"
+        }
+      ],
+      "elements": {
+        "ItemStatus": {
+          "@EndUserText.label": "Item Status",
+          "type": "cds.Integer64",
+          "key": true,
+          "notNull": true,
+          "@ObjectModel.text.element": [
+            {
+              "=": "Text"
+            }
+          ]
+        },
+        "Language": {
+          "@EndUserText.label": "Language",
+          "type": "cds.String",
+          "length": 2,
+          "key": true,
+          "notNull": true,
+          "@Semantics.language": true
+        },
+        "Text": {
+          "@EndUserText.label": "Text",
+          "type": "cds.String",
+          "length": 50,
+          "@Semantics.text": true
+        }
+      },
+      "@EndUserText.label": "MCT Item Status Texts",
+      "@ObjectModel.modelingPattern": {
+        "#": "LANGUAGE_DEPENDENT_TEXT"
+      },
+      "@DataWarehouse.dataSource.schema": "WRG_FWW67PIAQ9HG8KE8",
+      "@DataWarehouse.dataSource.entity": "sap.dataset.conf_d224e576-c845-4c2a-adc9-1387d236dbba_view"
+    },
+    "MCT_OpportunityItems": {
+      "kind": "entity",
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "ANALYTICAL_FACT"
+        }
+      ],
+      "elements": {
+        "ItemID": {
+          "@EndUserText.label": "Item ID",
+          "type": "cds.Integer64",
+          "key": true,
+          "notNull": true
+        },
+        "Opportunity": {
+          "@EndUserText.label": "Opportunity ID",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "_MCT_Oppor"
+          }
+        },
+        "Product": {
+          "@EndUserText.label": "Product ID",
+          "type": "cds.String",
+          "length": 5000,
+          "@ObjectModel.foreignKey.association": {
+            "=": "_MCT_Produ"
+          }
+        },
+        "Quantity": {
+          "@EndUserText.label": "Quantity",
+          "precision": 20,
+          "scale": 3,
+          "type": "cds.Decimal",
+          "@AnalyticsDetails.measureType": {
+            "#": "BASE"
+          },
+          "@Semantics.quantity.unitOfMeasure": {
+            "=": "Unit"
+          },
+          "@Aggregation.default": {
+            "#": "SUM"
+          }
+        },
+        "Value": {
+          "@EndUserText.label": "Value",
+          "precision": 20,
+          "scale": 2,
+          "type": "cds.Decimal",
+          "@AnalyticsDetails.measureType": {
+            "#": "BASE"
+          },
+          "@Semantics.amount.currencyCode": {
+            "=": "Currency"
+          },
+          "@Aggregation.default": {
+            "#": "SUM"
+          }
+        },
+        "Unit": {
+          "@EndUserText.label": "Unit",
+          "type": "cds.String",
+          "length": 5000,
+          "@Semantics.unitOfMeasure": true
+        },
+        "Currency": {
+          "@EndUserText.label": "Currency",
+          "type": "cds.String",
+          "length": 5000,
+          "@Semantics.currencyCode": true
+        },
+        "FactAttr": {
+          "@EndUserText.label": "FactAttr",
+          "type": "cds.String",
+          "length": 5000,
+          "@ObjectModel.text.element": [
+            {
+              "=": "FactAttrLabel"
+            }
+          ]
+        },
+        "FactAttrLabel": {
+          "@EndUserText.label": "FactAttrLabel",
+          "type": "cds.String",
+          "length": 5000,
+          "@Semantics.text": true
+        },
+        "ItemStatus": {
+          "@EndUserText.label": "ItemStatus ID",
+          "type": "cds.Integer64",
+          "@ObjectModel.text.association": {
+            "=": "_MCT_ItemS"
+          }
+        },
+        "ControllingArea": {
+          "@EndUserText.label": "Controlling Area",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "MCT_ControlingArea"
+          }
+        },
+        "SendingCostCenter": {
+          "@EndUserText.label": "Sending Cost Center",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "MCT_CCSending"
+          }
+        },
+        "ReceivingCostCenter": {
+          "@EndUserText.label": "Receiving Cost Center",
+          "type": "cds.Integer64",
+          "@ObjectModel.foreignKey.association": {
+            "=": "MCT_CCReceiving"
+          }
+        },
+        "_MCT_Oppor": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "Opportunity"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_MCT_Oppor",
+                "OpportunityID"
+              ]
+            }
+          ],
+          "target": "MCT_Opportunities",
+          "@EndUserText.label": "MCT_OpportunityItems to MCT_Opportunities"
+        },
+        "_MCT_Produ": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "Product"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_MCT_Produ",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_Products",
+          "@EndUserText.label": "MCT_OpportunityItems to MCT_Products"
+        },
+        "_MCT_ItemS": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "ItemStatus"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_MCT_ItemS",
+                "ItemStatus"
+              ]
+            }
+          ],
+          "target": "MCT_ItemStatusTexts",
+          "@EndUserText.label": "MCT Opportunity Items to MCT Item Status Texts"
+        },
+        "MCT_ControlingArea": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "ControllingArea"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "MCT_ControlingArea",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_ControllingArea",
+          "@EndUserText.label": "MCT Opportunity Items to MCT Controlling Area"
+        },
+        "MCT_CCReceiving": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "ControllingArea"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "MCT_CCReceiving",
+                "ControllingArea"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "ReceivingCostCenter"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "MCT_CCReceiving",
+                "CostCenter"
+              ]
+            }
+          ],
+          "target": "MCT_CostCenter",
+          "@EndUserText.label": "MCT Opportunity Items to MCT Cost Center1"
+        },
+        "MCT_CCSending": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "ControllingArea"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "MCT_CCSending",
+                "ControllingArea"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "SendingCostCenter"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "MCT_CCSending",
+                "CostCenter"
+              ]
+            }
+          ],
+          "target": "MCT_CostCenter",
+          "@EndUserText.label": "MCT Opportunity Items to MCT Cost Center"
+        }
+      },
+      "@EndUserText.label": "MCT Opportunity Items",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_FACT"
+      },
+      "@DataWarehouse.dataSource.schema": "WRG_FWW67PIAQ9HG8KE8",
+      "@DataWarehouse.dataSource.entity": "sap.dataset.conf_e1a95c13-aef7-4d8f-909b-5a7f23cd66b6_view"
+    },
+    "SAP": {
+      "kind": "context",
+      "@EndUserText.label": "SAP"
+    },
+    "SAP.TIME": {
+      "kind": "context",
+      "@EndUserText.label": "TIME"
+    },
+    "SAP.TIME.M_TIME_DIMENSION": {
+      "kind": "entity",
+      "@readonly": true,
+      "elements": {
+        "MONTH": {
+          "type": "cds.String",
+          "@EndUserText.label": "Month",
+          "length": 2
+        },
+        "MONTH_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Month (Number)"
+        },
+        "MONTH_LAST_DAY": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Month Last Day"
+        },
+        "QUARTER": {
+          "type": "cds.String",
+          "@EndUserText.label": "Quarter",
+          "length": 2
+        },
+        "QUARTER_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Quarter (Number)"
+        },
+        "SECOND": {
+          "type": "cds.String",
+          "@EndUserText.label": "Second",
+          "length": 2
+        },
+        "SECOND_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Second (Number)"
+        },
+        "TZNTSTMPL": {
+          "type": "cds.Decimal",
+          "@EndUserText.label": "UTC Timestamp (long form)",
+          "precision": 21,
+          "scale": 7
+        },
+        "TZNTSTMPS": {
+          "type": "cds.Decimal",
+          "@EndUserText.label": "UTC Timestamp (short form)",
+          "precision": 15,
+          "scale": 0
+        },
+        "WEEK": {
+          "type": "cds.String",
+          "@EndUserText.label": "Week",
+          "length": 2
+        },
+        "WEEK_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Week (Number)"
+        },
+        "WEEK_YEAR": {
+          "type": "cds.String",
+          "@EndUserText.label": "Week Year",
+          "length": 4
+        },
+        "WEEK_YEAR_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Week Year (Number)"
+        },
+        "YEAR": {
+          "type": "cds.String",
+          "@EndUserText.label": "Year",
+          "length": 4
+        },
+        "YEAR_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Year (Number)"
+        },
+        "MINUTE_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Minute (Number)"
+        },
+        "MINUTE": {
+          "type": "cds.String",
+          "length": 2,
+          "@EndUserText.label": "Minute"
+        },
+        "HOUR_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Hour (Number)"
+        },
+        "HOUR": {
+          "type": "cds.String",
+          "length": 2,
+          "@EndUserText.label": "Hour"
+        },
+        "DAY_OF_WEEK_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Day of Week (Number)"
+        },
+        "DAY_OF_WEEK": {
+          "type": "cds.String",
+          "@EndUserText.label": "Day of Week",
+          "length": 2
+        },
+        "DAY_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Day (Number)"
+        },
+        "DAY": {
+          "type": "cds.String",
+          "@EndUserText.label": "Day",
+          "length": 2
+        },
+        "DATE_SQL": {
+          "type": "cds.Date",
+          "@EndUserText.label": "Date"
+        },
+        "DATE_SAP": {
+          "type": "cds.String",
+          "@EndUserText.label": "Date (String)",
+          "length": 8
+        },
+        "DATETIME_SAP": {
+          "type": "cds.String",
+          "@EndUserText.label": "Timestamp (String)",
+          "length": 14
+        },
+        "DATETIMESTAMP": {
+          "type": "cds.Timestamp",
+          "@EndUserText.label": "Timestamp",
+          "key": true
+        },
+        "CALWEEK": {
+          "type": "cds.String",
+          "@EndUserText.label": "Calendar Week",
+          "length": 6
+        },
+        "CALQUARTER": {
+          "type": "cds.String",
+          "@EndUserText.label": "Calendar Quarter",
+          "length": 5
+        },
+        "CALMONTH": {
+          "type": "cds.String",
+          "@EndUserText.label": "Calendar Month",
+          "length": 6
+        }
+      },
+      "@EndUserText.label": "Time Table",
+      "@cds.persistence.exists": true
+    },
+    "SAP.TIME.M_TIME_DIMENSION_TMONTH": {
+      "kind": "entity",
+      "@readonly": true,
+      "elements": {
+        "ID": {
+          "type": "cds.String",
+          "key": true,
+          "@EndUserText.label": "Identifier",
+          "length": 2
+        },
+        "_DESCRIPTION": {
+          "type": "cds.String",
+          "@Semantics.text": true,
+          "@EndUserText.label": "Month Name",
+          "length": 50
+        },
+        "_LANGU": {
+          "type": "cds.String",
+          "key": true,
+          "@Semantics.language": true,
+          "@EndUserText.label": "Language",
+          "length": 6
+        }
+      },
+      "@ObjectModel.modelingPattern": {
+        "#": "LANGUAGE_DEPENDENT_TEXT"
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "LANGUAGE_DEPENDENT_TEXT"
+        }
+      ],
+      "@EndUserText.label": "Translation Table - Month",
+      "@cds.persistence.exists": true
+    },
+    "SAP.TIME.M_TIME_DIMENSION_TQUARTER": {
+      "kind": "entity",
+      "@readonly": true,
+      "elements": {
+        "ID": {
+          "type": "cds.String",
+          "key": true,
+          "@EndUserText.label": "Identifier",
+          "length": 2
+        },
+        "_DESCRIPTION": {
+          "type": "cds.String",
+          "@Semantics.text": true,
+          "@EndUserText.label": "Quarter Name",
+          "length": 50
+        },
+        "_LANGU": {
+          "type": "cds.String",
+          "key": true,
+          "@Semantics.language": true,
+          "@EndUserText.label": "Language",
+          "length": 6
+        }
+      },
+      "@ObjectModel.modelingPattern": {
+        "#": "LANGUAGE_DEPENDENT_TEXT"
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "LANGUAGE_DEPENDENT_TEXT"
+        }
+      ],
+      "@EndUserText.label": "Translation Table - Quarter",
+      "@cds.persistence.exists": true
+    },
+    "SAP.TIME.M_TIME_DIMENSION_TDAY": {
+      "kind": "entity",
+      "@readonly": true,
+      "elements": {
+        "ID": {
+          "type": "cds.String",
+          "key": true,
+          "@EndUserText.label": "Identifier",
+          "length": 2
+        },
+        "_DESCRIPTION": {
+          "type": "cds.String",
+          "@Semantics.text": true,
+          "@EndUserText.label": "Day Name",
+          "length": 50
+        },
+        "_LANGU": {
+          "type": "cds.String",
+          "key": true,
+          "@Semantics.language": true,
+          "@EndUserText.label": "Language",
+          "length": 6
+        }
+      },
+      "@ObjectModel.modelingPattern": {
+        "#": "LANGUAGE_DEPENDENT_TEXT"
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "LANGUAGE_DEPENDENT_TEXT"
+        }
+      ],
+      "@EndUserText.label": "Translation Table - Day",
+      "@cds.persistence.exists": true
+    },
+    "MCT_ProductGroupTexts": {
+      "kind": "entity",
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "LANGUAGE_DEPENDENT_TEXT"
+        }
+      ],
+      "elements": {
+        "ID": {
+          "@EndUserText.label": "ID",
+          "type": "cds.Integer64",
+          "key": true,
+          "notNull": true,
+          "@Analytics.dimension": true,
+          "@ObjectModel.text.element": [
+            {
+              "=": "Name"
+            }
+          ]
+        },
+        "Language": {
+          "@EndUserText.label": "Language",
+          "type": "cds.String",
+          "length": 2,
+          "key": true,
+          "notNull": true,
+          "@Analytics.dimension": true,
+          "@Semantics.language": true
+        },
+        "Name": {
+          "@EndUserText.label": "Name",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        }
+      },
+      "@EndUserText.label": "MCT Product Group Texts",
+      "@ObjectModel.modelingPattern": {
+        "#": "LANGUAGE_DEPENDENT_TEXT"
+      },
+      "@DataWarehouse.dataSource.schema": "WRG_FWW67PIAQ9HG8KE8",
+      "@DataWarehouse.dataSource.entity": "sap.dataset.conf_d138698f-6929-4c8d-a3c9-777326b6bece_view"
+    },
+    "MCT_SalesOrgText": {
+      "kind": "entity",
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "LANGUAGE_DEPENDENT_TEXT"
+        }
+      ],
+      "elements": {
+        "ID": {
+          "@EndUserText.label": "ID",
+          "type": "cds.Integer64",
+          "key": true,
+          "notNull": true,
+          "@ObjectModel.text.element": [
+            {
+              "=": "Name"
+            }
+          ]
+        },
+        "Language": {
+          "@EndUserText.label": "Language",
+          "type": "cds.String",
+          "length": 2,
+          "key": true,
+          "notNull": true,
+          "@Semantics.language": true
+        },
+        "Name": {
+          "@EndUserText.label": "Name",
+          "type": "cds.String",
+          "length": 50,
+          "@Semantics.text": true
+        }
+      },
+      "@EndUserText.label": "MCT Sales Organization Text",
+      "@ObjectModel.modelingPattern": {
+        "#": "LANGUAGE_DEPENDENT_TEXT"
+      },
+      "@DataWarehouse.dataSource.schema": "WRG_FWW67PIAQ9HG8KE8",
+      "@DataWarehouse.dataSource.entity": "sap.dataset.conf_f96af6af-778c-4a84-b543-140827b4cc14_view"
+    },
+    "MCT_SalesOrganization": {
+      "kind": "entity",
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "ANALYTICAL_DIMENSION"
+        }
+      ],
+      "elements": {
+        "ID": {
+          "@EndUserText.label": "ID",
+          "type": "cds.Integer64",
+          "key": true,
+          "notNull": true,
+          "@ObjectModel.text.association": {
+            "=": "_MCT_SalesT"
+          }
+        },
+        "Country": {
+          "@EndUserText.label": "Country",
+          "type": "cds.String",
+          "length": 2,
+          "@Analytics.dimension": true
+        },
+        "CurrencyCode": {
+          "@EndUserText.label": "CurrencyCode",
+          "type": "cds.String",
+          "length": 4,
+          "@Analytics.dimension": true,
+          "@Semantics.currencyCode": true
+        },
+        "_MCT_SalesT": {
+          "type": "cds.Association",
+          "on": [
+            {
+              "ref": [
+                "ID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_MCT_SalesT",
+                "ID"
+              ]
+            }
+          ],
+          "target": "MCT_SalesOrgText",
+          "@EndUserText.label": "to Sales Organization Text"
+        }
+      },
+      "@EndUserText.label": "MCT Sales Organization",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_DIMENSION"
+      },
+      "@DataWarehouse.dataSource.schema": "WRG_FWW67PIAQ9HG8KE8",
+      "@DataWarehouse.dataSource.entity": "sap.dataset.conf_5904262f-5eef-4e26-9628-5b816ca4c233_view"
+    }
+  },
+  "version": {
+    "csn": "1.0"
+  },
+  "meta": {
+    "creator": "ER Modeler",
+    "kind": "sap.dwc.ermodel",
+    "label": "ER MCT MEDIUM"
+  },
+  "$version": "1.0"
+}
