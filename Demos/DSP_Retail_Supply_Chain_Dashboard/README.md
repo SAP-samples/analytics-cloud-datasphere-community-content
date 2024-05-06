@@ -14,7 +14,6 @@ Inital release
 The Supply-Chain dashboard brings together select KPIs from procurement, demand, and sales for an end-to-end visibility of the inventory at a plant (Warehouse) level to aid with daily operations. The primary target for this dashboard is Retail. Within the Retail vertical, the dashboard may be applicable to industries utilizing the Vendor-Warehouse-Store model or the Vendor-Store model. The Supply-Chain dashboard provides a tabular view of KPIs at the product and plant level. Company Code and Organization selection is mandatory; the Users are encouraged to select additional categories such as Plant, Merchandising Category or Purchasing Manager for data volume management and for an in-depth look at a specific product. From the summary view, the User can select a plant-product combination for a deep dive into Purchase Orders, Sales and/or Invoicing documents.
 
 ![SAP_CC_Retail_Supply_Chain_Dashboard](SAP_CC_Retail_Supply_Chain_Screenshot.png)
-SAP_CC_Retail_Supply_Chain_Screenshot.png
 
 ## Details
 N/A
@@ -23,7 +22,7 @@ N/A
 Based on SAP Datasphere data models. Connect to your SAP S/4HANA system to load data in the SAP Datasphere models.
 
 ## Download/Install Instructions
-Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html).
+Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/ef516563b3fe4c69b6f718f17ed94cdf.html).
 
 Before installing this package, ensure that the Time Data (Time tables and dimensions) have been generated in the destination space. Details [here](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/c5cfce4d22b04650b2fd6078762cdeb9.html).  ---
 
