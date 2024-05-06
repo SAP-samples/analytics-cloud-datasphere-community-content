@@ -195,7 +195,7 @@ For the cost center and profit center hierarchy you need to filter your Fact Vie
 Dependent on the connectivity scenario the respective packages either (A.) uses local tables to be loaded via Replication Flow technology, (B.) remote tables with an SAP S/4HANA (on premise) connection names SAP_S4H or (C.) remote tables with an SAP S/4HANA Cloud Connection named SAP_S4HC.
 
 ## Download/Install Instructions
-Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html).
+Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/ef516563b3fe4c69b6f718f17ed94cdf.html).
 
 ## More Information
 N/A  
