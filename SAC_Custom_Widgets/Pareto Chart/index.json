@@ -1,0 +1,98 @@
+{
+    "eula": "",
+    "vendor": "SAP",
+    "license": "",
+    "id": "com.sap.sac.pareto.eric",
+    "version": "1.0.0",
+    "name": "Pareto Eric",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAAH6ji2bAAAACXBIWXMAAAsSAAALEgHS3X78AAAAsElEQVQ4jWP8//8/AwjMnz3rPxOIMe+oGViEiXHNc4gUAwMDXBlcCVwaLgXTyHgtBaIZ2QAUlTD74AYia0cRRAZM6ObhVIliETqAWQwCLOiSyI5gZEiBi7Mg2/0/RJIRl+lY3UORQqI9Q7SJKL5G9nGS9SkUj1HfMyjhOFeSCiYOoEK8MYMPIMcaWX4hFmCkb2SAHPPIAD0V0NSF1PcytlKCgUCuxQcGv5cHuYEMDAwAufZSHBX0TY8AAAAASUVORK5CYII=",
+    "newInstancePrefix": "ParetoEric",
+    "description": "An pareto custom widget",
+    "webcomponents": [
+      {
+        "kind": "main",
+        "tag": "com-sap-sac-pareto-eric-main",
+        "url": "/main.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      }
+    ],
+    "properties": {
+      "width": {
+        "type": "integer",
+        "default": 600
+      },
+      "height": {
+        "type": "integer",
+        "default": 420
+      },
+      "seriesType": {
+        "type": "string",
+        "default": "line",
+        "description": "Series type"
+      }
+    },
+    "methods": {
+      "changeOrder": {
+        "description": "Change order"
+      },
+      "getSelectedDataPoint": {
+        "description": "Get selected data point",
+        "returnType": "EChartDataPoint"
+      }
+    },
+    "events": {
+      "onClick": {
+        "description": "Dispatch when user click a data point on eChart"
+      }
+    },
+    "types": {
+      "EChartDataPoint": {
+        "description": "EChart data point",
+        "properties": [
+          {
+            "name": "seriesIndex",
+            "type": "integer",
+            "description": "series index in incoming option.series (make sense when componentType is 'series')"
+          },
+          {
+            "name": "seriesName",
+            "type": "string",
+            "description": "series name (make sense when componentType is 'series')"
+          },
+          {
+            "name": "dataIndex",
+            "type": "integer",
+            "description": "data index in input data array"
+          },
+          {
+            "name": "data",
+            "type": "number",
+            "description": "data value"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "data name, or category name"
+          }
+        ]
+      }
+    },
+    "dataBindings": {
+      "dataBinding": {
+        "feeds": [
+          {
+            "id": "dimensions",
+            "description": "Dimensions",
+            "type": "dimension"
+          },
+          {
+            "id": "measures",
+            "description": "Measures",
+            "type": "mainStructureMember"
+          }
+        ]
+      }
+    }
+  }
+  
