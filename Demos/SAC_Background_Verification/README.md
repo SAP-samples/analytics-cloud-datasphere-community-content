@@ -18,7 +18,7 @@ This solution was built on SAP Analytics Cloud. It summarises the status of ongo
 ![Background_Verification](Background_Verification_Screenshot.png)
 
 ## Details
-SAC story: Background Verification Dashboard
+SAC Story: Background Verification Dashboard
 
 SAC Model: Process Hires (comes with sample data)
 
