@@ -25,7 +25,7 @@ Please check SAP_CC_Workforce_Analytics_Demo_19130.pdf for details about this co
 Data Models already include sample data.
 
 ## Download/Install Instructions
-Import the content package into your tenant, following the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html). 
+Import the content package into your tenant, following the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/ef516563b3fe4c69b6f718f17ed94cdf.html). 
 
 To setup the predictive scenario, please follow the instructions in SAP_CC_Workforce_Analytics_Demo_19130 - Predictive_Setup.pdf.
 
