@@ -38,7 +38,7 @@ The following objects are included:
 N/A
 
 ## Download/Install Instructions
-Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html).
+Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/ef516563b3fe4c69b6f718f17ed94cdf.html).
 
 ## More Information
 Check our Blogs [here](https://community.sap.com/t5/c-khhcw49343/SAP+Analytics+Cloud/pd-p/67838200100800006884) and [here](https://community.sap.com/t5/c-khhcw49343/Data+and+Analytics/pd-p/87817424-f4e7-46f2-af14-88bf0f4ba034)
