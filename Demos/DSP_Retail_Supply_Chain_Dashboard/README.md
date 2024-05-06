@@ -1,8 +1,8 @@
-# Supply-Chain Dashboard
+# Retail Supply Chain Dashboard
 
 ## Content Package Files
-SAP_CC_SAC_RetailSupplyChain.package  
-SAP_CC_DSP_RetailSupplyChain.package
+SAP_CC_SAC_Retail_Supply_Chain.package  
+SAP_CC_DSP_Retail_Supply_Chain.package
 
 ## Last Released:
 2023.05
