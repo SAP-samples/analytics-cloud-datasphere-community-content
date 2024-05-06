@@ -21,9 +21,9 @@ The solution built on SAP Analytics Cloud, summarizes data from 5 main emission 
 ![Carbon Emission](Carbon_Emisson_Screenshot.png)
 
 ## Details
-SAC story: Carbon Emission Dashboard
+SAP Analytics Cloud story: Carbon Emission Dashboard
 
-14 SAC Models (come with sample data) 
+14 SAP Analytics Cloud Models (come with sample data) 
 
 ## Connectivity
 N/A
