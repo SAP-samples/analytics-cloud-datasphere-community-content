@@ -32,7 +32,7 @@ N/A
 
 
 ## Download/Install Instructions
-Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html).
+Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/ef516563b3fe4c69b6f718f17ed94cdf.html).
 
 ## More Information
 Please read the attached Table_Based_Amortization.pdf carefully before working with the content.
