@@ -51,7 +51,7 @@ Please follow the setup and configuration instructions below to setup the SAP Da
   - Ensure that the DigiCert Global Root CA and DigiCert Global Root G2 are uploaded in SAP Datasphere - see also [here](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-security-guide/secure-communication-between-sap-hana-and-sap-hana-clients) and [here](https://www.digicert.com/kb/digicert-root-certificates.htm)
   - Update the Remote Connection REMOTE_MONITORING_DATA with the Analysis User credentials
   - Use the information of the Analysis User
-  - Save, deploy and verify that the connection is valid.
+  - Save, deploy and verify that the connection is valid
 
 ### Update existing remote/local tables (only mandatory if already in the repository)
 
@@ -90,7 +90,7 @@ Import the .package file **SAP_CC_DSP_Monitoring_Reporting_Tables.package** and 
  - Folder **DataReplication** contains all dataflows required to update the replicated date
  - Folder **Configuration** contains all configuration tables.
 
-Note: the version 1.0.0 does currently not contain all folder yet, but this will be fixed in a next update soon.
+**Note:** The version 1.0.0 of the content does not contain all folders yet. This should be fixed in a next update soon.
 
 We have finished the inital import of the reporting entities. The next chapter describes the initial configuration of the content, how to enable authorization on the data and how to schedule the replication.
 
