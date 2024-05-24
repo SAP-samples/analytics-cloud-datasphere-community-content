@@ -1,16 +1,16 @@
 # Data Product League
 
 ## Content Files
-DP Appropriate Wages.json
-DP Employee for CSRD.json
-DP Headcount Actuals.json
-DP Headcount for Employee.json
-DP Headcount per Age Group.json
-DP Headcount Top Management.json
-DP Minimum Wage.json
-DP Salary Analysis.json
-DP Salary.json
-DP Workforce Location.json
+DP Appropriate Wages.json <br>
+DP Employee for CSRD.json <br>
+DP Headcount Actuals.json <br>
+DP Headcount for Employee.json <br>
+DP Headcount per Age Group.json <br>
+DP Headcount Top Management.json <br>
+DP Minimum Wage.json <br>
+DP Salary Analysis.json <br>
+DP Salary.json <br>
+DP Workforce Location.json <br>
 
 ## Last Released:
 2024.05
@@ -55,7 +55,7 @@ Follow the Description section for more information.
 N/A
 
 ## Contact
-[Oliver Huth](oliver.huth@sap.com)
-[Bejanmin Koehler](benjamin.koehler@sap.com)
-[Thomas Bauer](thomas.bauer@sap.com)
-[Gregory Rohloff](gregory.rohloff@sap.com)
+[Oliver Huth](oliver.huth@sap.com) <br>
+[Bejanmin Koehler](benjamin.koehler@sap.com) <br>
+[Thomas Bauer](thomas.bauer@sap.com) <br>
+[Gregory Rohloff](gregory.rohloff@sap.com) <br>
