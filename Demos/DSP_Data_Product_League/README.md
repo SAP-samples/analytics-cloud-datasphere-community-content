@@ -59,7 +59,7 @@ N/A
 Follow the Details section for more information. 
 
 ## More Information
-N/A
+This content is a preview that is planned for delivery in 2024.Q3
 
 ## Contact
 If you have feedback for the content, need help with the installation or want to join the Data Product league, reach out to us [Data Product League email](dataproductleague@sap.com)  
