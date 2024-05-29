@@ -1,0 +1,1040 @@
+{
+  "definitions": {
+    "3VF_Y_PWC_PPL_TOPMGMT_C": {
+      "kind": "entity",
+      "elements": {
+        "GENDER_EXTERNAL_ID": {
+          "@EndUserText.label": "GENDER_EXTERNAL_ID",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "CONTRACT_TYPE_ID": {
+          "@EndUserText.label": "CONTRACT_TYPE_ID",
+          "type": "cds.String",
+          "length": 5
+        },
+        "WORKING_TIME_ID": {
+          "@EndUserText.label": "WORKING_TIME_ID",
+          "type": "cds.Integer"
+        },
+        "BUSINESS_LOC_EXTERNAL_ID": {
+          "@EndUserText.label": "BUSINESS_LOC_EXTERNAL_ID",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "PERIOD_YEAR": {
+          "@EndUserText.label": "PERIOD_YEAR",
+          "type": "cds.String",
+          "length": 4,
+          "@Analytics.dimension": true,
+          "@Semantics.calendar.year": true,
+          "notNull": true
+        },
+        "MEASURE_VALUE": {
+          "@EndUserText.label": "MEASURE_VALUE",
+          "type": "cds.Double",
+          "@AnalyticsDetails.measureType": {
+            "#": "BASE"
+          },
+          "@Aggregation.default": {
+            "#": "SUM"
+          }
+        },
+        "MEASURE_ID": {
+          "@EndUserText.label": "MEASURE_ID",
+          "type": "cds.String",
+          "length": 19
+        },
+        "MEASURE_UNIT": {
+          "@EndUserText.label": "MEASURE_UNIT",
+          "type": "cds.String",
+          "length": 9,
+          "@Analytics.dimension": true,
+          "@Semantics.calendar.year": true,
+          "notNull": true
+        },
+        "SOURCE_EXTERNAL_ID": {
+          "@EndUserText.label": "SOURCE_EXTERNAL_ID",
+          "type": "cds.String",
+          "length": 17
+        }
+      },
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "3VF_HEADCOUNT_TOP_MGMT"
+            ]
+          },
+          "columns": [
+            {
+              "ref": [
+                "Gender"
+              ],
+              "as": "GENDER_EXTERNAL_ID"
+            },
+            {
+              "ref": [
+                "CSRD_Contract_Type"
+              ],
+              "as": "CONTRACT_TYPE_ID"
+            },
+            {
+              "ref": [
+                "CSRD_Working_Time"
+              ],
+              "as": "WORKING_TIME_ID"
+            },
+            {
+              "ref": [
+                "Location"
+              ],
+              "as": "BUSINESS_LOC_EXTERNAL_ID"
+            },
+            {
+              "ref": [
+                "YEAR"
+              ],
+              "as": "PERIOD_YEAR"
+            },
+            {
+              "ref": [
+                "EopHc"
+              ],
+              "as": "MEASURE_VALUE"
+            },
+            {
+              "val": "Y_PWC_PPL_TOPMGMT_C",
+              "as": "MEASURE_ID"
+            },
+            {
+              "val": "HEADCOUNT",
+              "as": "MEASURE_UNIT"
+            },
+            {
+              "val": "CUSTOMER_PROVIDED",
+              "as": "SOURCE_EXTERNAL_ID"
+            }
+          ]
+        }
+      },
+      "@EndUserText.label": "3VF_Y_PWC_PPL_TOPMGMT_C",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_FACT"
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "DATA_STRUCTURE"
+        }
+      ],
+      "@DataWarehouse.consumption.external": false,
+      "@DataWarehouse.sqlEditor.query": "SELECT \"Gender\" AS \"GENDER_EXTERNAL_ID\",\n\t\"CSRD_Contract_Type\" AS \"CONTRACT_TYPE_ID\",\n\t\"CSRD_Working_Time\" AS \"WORKING_TIME_ID\",\n\t\"Location\" AS \"BUSINESS_LOC_EXTERNAL_ID\",\n\t\"YEAR\" AS \"PERIOD_YEAR\",\n\t\"EopHc\" AS \"MEASURE_VALUE\",\n\t'Y_PWC_PPL_TOPMGMT_C' AS \"MEASURE_ID\",\n\t'HEADCOUNT' AS \"MEASURE_UNIT\",\n\t'CUSTOMER_PROVIDED' AS \"SOURCE_EXTERNAL_ID\"\nFROM \"3VF_HEADCOUNT_TOP_MGMT\"",
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": "Folder_UJFXVDHJ"
+        }
+      }
+    },
+    "C2D04C3066B04FE6BE5C": {
+      "kind": "context",
+      "@EndUserText.label": "Headcount Actuals",
+      "@DataWarehouse.space.schema": "C2D04C3066B04FE6BE5C",
+      "@DataWarehouse.space.name": "C2D04C3066B04FE6BE5C"
+    },
+    "D8D90336A0E24D678F9D": {
+      "kind": "context",
+      "@EndUserText.label": "Employee for CSRD",
+      "@DataWarehouse.space.schema": "D8D90336A0E24D678F9D",
+      "@DataWarehouse.space.name": "D8D90336A0E24D678F9D"
+    },
+    "D8D90336A0E24D678F9D.3VD_EMPLOYEE_CSRD_ATTR_VIEW": {
+      "kind": "entity",
+      "elements": {
+        "EmployeeId": {
+          "@EndUserText.label": "EmployeeId",
+          "type": "cds.String",
+          "length": 5000,
+          "key": true,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "PersonId": {
+          "@EndUserText.label": "PersonId",
+          "type": "cds.Integer"
+        },
+        "PersonUuid": {
+          "@EndUserText.label": "PersonUuid",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "Gender": {
+          "@EndUserText.label": "Gender",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "EeoJobGroup": {
+          "@EndUserText.label": "EeoJobGroup",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "EthnicBackground": {
+          "@EndUserText.label": "EthnicBackground",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "VeteranStatus": {
+          "@EndUserText.label": "VeteranStatus",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "Location": {
+          "@EndUserText.label": "Location",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "CalenderYear": {
+          "@EndUserText.label": "CalenderYear",
+          "type": "cds.Integer"
+        },
+        "Company": {
+          "@EndUserText.label": "Company",
+          "type": "cds.String",
+          "length": 500,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "OrganizationalUnit": {
+          "@EndUserText.label": "OrganizationalUnit",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "Agegroup_ID": {
+          "@EndUserText.label": "Agegroup_ID",
+          "type": "cds.String",
+          "length": 5
+        },
+        "EmploymentStatus": {
+          "@EndUserText.label": "EmploymentStatus (CONTRACT_STATUS_ID))",
+          "type": "cds.String",
+          "length": 5000
+        },
+        "IsContingentWorker": {
+          "@EndUserText.label": "IsContingentWorker",
+          "type": "cds.Boolean"
+        },
+        "IsFullTimeEmployee": {
+          "@EndUserText.label": "IsFullTimeEmployee",
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Target_Currency": {
+          "@EndUserText.label": "Target Currency",
+          "type": "cds.String",
+          "length": 3
+        },
+        "EmployeeClass_CONTRACT_TYPE_ID": {
+          "@EndUserText.label": "EmployeeClass CONTRACT_TYPE_ID",
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FromDate": {
+          "@EndUserText.label": "FromDate",
+          "type": "cds.Date",
+          "notNull": true
+        },
+        "ToDate": {
+          "@EndUserText.label": "ToDate",
+          "type": "cds.Date",
+          "key": true,
+          "notNull": true
+        },
+        "Division": {
+          "@EndUserText.label": "Division",
+          "type": "cds.String",
+          "length": 5000,
+          "notNull": true
+        },
+        "EeoJobCategory": {
+          "@EndUserText.label": "EeoJobCategory",
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RELEASE_ID": {
+          "@EndUserText.label": "Release ID",
+          "type": "cds.Integer"
+        }
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "ANALYTICAL_DIMENSION"
+        },
+        {
+          "#": "ANALYTICAL_PROVIDER"
+        }
+      ],
+      "@EndUserText.label": "3VD_EMPLOYEE_CSRD_ATTR_VIEW",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_DIMENSION"
+      },
+      "@DataWarehouse.consumption.external": true,
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": null
+        }
+      },
+      "@cds.persistence.exists": true
+    },
+    "C2D04C3066B04FE6BE5C.3VF_HEADCOUNT_ACTUALS": {
+      "kind": "entity",
+      "elements": {
+        "PersonUuid": {
+          "@EndUserText.label": "PersonUuid",
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ToDate": {
+          "@EndUserText.label": "ToDate",
+          "type": "cds.Date"
+        },
+        "EopHc": {
+          "@EndUserText.label": "EopHc",
+          "type": "cds.Double"
+        },
+        "AverageHc": {
+          "@EndUserText.label": "AverageHc",
+          "type": "cds.Double"
+        },
+        "Time": {
+          "@EndUserText.label": "Time",
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RELEASE_ID": {
+          "@EndUserText.label": "Release ID",
+          "type": "cds.Integer"
+        }
+      },
+      "@EndUserText.label": "3VF_HEADCOUNT_ACTUALS",
+      "@ObjectModel.modelingPattern": {
+        "#": "DATA_STRUCTURE"
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "DATA_STRUCTURE"
+        },
+        {
+          "#": "ANALYTICAL_PROVIDER"
+        }
+      ],
+      "@DataWarehouse.consumption.external": true,
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": null
+        }
+      },
+      "@cds.persistence.exists": true
+    },
+    "SAP": {
+      "kind": "context",
+      "@EndUserText.label": "SAP",
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": null
+        }
+      }
+    },
+    "SAP.TIME": {
+      "kind": "context",
+      "@EndUserText.label": "TIME",
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": null
+        }
+      }
+    },
+    "SAP.TIME.M_TIME_DIMENSION": {
+      "kind": "entity",
+      "@readonly": true,
+      "elements": {
+        "MONTH": {
+          "type": "cds.String",
+          "@EndUserText.label": "Month",
+          "length": 2
+        },
+        "MONTH_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Month (Number)"
+        },
+        "MONTH_LAST_DAY": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Month Last Day"
+        },
+        "QUARTER": {
+          "type": "cds.String",
+          "@EndUserText.label": "Quarter",
+          "length": 2
+        },
+        "QUARTER_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Quarter (Number)"
+        },
+        "SECOND": {
+          "type": "cds.String",
+          "@EndUserText.label": "Second",
+          "length": 2
+        },
+        "SECOND_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Second (Number)"
+        },
+        "TZNTSTMPL": {
+          "type": "cds.Decimal",
+          "@EndUserText.label": "UTC Timestamp (long form)",
+          "precision": 21,
+          "scale": 7
+        },
+        "TZNTSTMPS": {
+          "type": "cds.Decimal",
+          "@EndUserText.label": "UTC Timestamp (short form)",
+          "precision": 15,
+          "scale": 0
+        },
+        "WEEK": {
+          "type": "cds.String",
+          "@EndUserText.label": "Week",
+          "length": 2
+        },
+        "WEEK_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Week (Number)"
+        },
+        "WEEK_YEAR": {
+          "type": "cds.String",
+          "@EndUserText.label": "Week Year",
+          "length": 4
+        },
+        "WEEK_YEAR_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Week Year (Number)"
+        },
+        "YEAR": {
+          "type": "cds.String",
+          "@EndUserText.label": "Year",
+          "length": 4
+        },
+        "YEAR_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Year (Number)"
+        },
+        "MINUTE_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Minute (Number)"
+        },
+        "MINUTE": {
+          "type": "cds.String",
+          "length": 2,
+          "@EndUserText.label": "Minute"
+        },
+        "HOUR_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Hour (Number)"
+        },
+        "HOUR": {
+          "type": "cds.String",
+          "length": 2,
+          "@EndUserText.label": "Hour"
+        },
+        "DAY_OF_WEEK_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Day of Week (Number)"
+        },
+        "DAY_OF_WEEK": {
+          "type": "cds.String",
+          "@EndUserText.label": "Day of Week",
+          "length": 2
+        },
+        "DAY_INT": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Day (Number)"
+        },
+        "DAY": {
+          "type": "cds.String",
+          "@EndUserText.label": "Day",
+          "length": 2
+        },
+        "DATE_SQL": {
+          "type": "cds.Date",
+          "@EndUserText.label": "Date"
+        },
+        "DATE_SAP": {
+          "type": "cds.String",
+          "@EndUserText.label": "Date (String)",
+          "length": 8
+        },
+        "DATETIME_SAP": {
+          "type": "cds.String",
+          "@EndUserText.label": "Timestamp (String)",
+          "length": 14
+        },
+        "DATETIMESTAMP": {
+          "type": "cds.Timestamp",
+          "@EndUserText.label": "Timestamp",
+          "key": true
+        },
+        "CALWEEK": {
+          "type": "cds.String",
+          "@EndUserText.label": "Calendar Week",
+          "length": 6
+        },
+        "CALQUARTER": {
+          "type": "cds.String",
+          "@EndUserText.label": "Calendar Quarter",
+          "length": 5
+        },
+        "CALMONTH": {
+          "type": "cds.String",
+          "@EndUserText.label": "Calendar Month",
+          "length": 6
+        }
+      },
+      "@EndUserText.label": "Time Table",
+      "@cds.persistence.exists": true,
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": "Folder_GBXOPQME"
+        }
+      }
+    },
+    "3VF_HEADCOUNT_TOP_MGMT": {
+      "kind": "entity",
+      "elements": {
+        "Gender": {
+          "@EndUserText.label": "Gender",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "CSRD_Contract_Type": {
+          "@EndUserText.label": "CSRD Contract Type",
+          "type": "cds.String",
+          "length": 5
+        },
+        "CSRD_Working_Time": {
+          "@EndUserText.label": "CSRD Working Time",
+          "type": "cds.Integer"
+        },
+        "EmployeeId": {
+          "@EndUserText.label": "EmployeeId",
+          "type": "cds.String",
+          "length": 5000,
+          "key": true,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "PersonId": {
+          "@EndUserText.label": "PersonId",
+          "type": "cds.Integer"
+        },
+        "Location": {
+          "@EndUserText.label": "Location",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "Time": {
+          "@EndUserText.label": "Time",
+          "type": "cds.String",
+          "length": 5000
+        },
+        "YEAR": {
+          "@EndUserText.label": "Calendar Year",
+          "type": "cds.String",
+          "length": 4,
+          "@Analytics.dimension": true,
+          "@Semantics.calendar.year": true,
+          "notNull": true
+        },
+        "EopHc": {
+          "@EndUserText.label": "EopHc",
+          "type": "cds.Double",
+          "@AnalyticsDetails.measureType": {
+            "#": "BASE"
+          },
+          "@Aggregation.default": {
+            "#": "SUM"
+          }
+        },
+        "AverageHc": {
+          "@EndUserText.label": "AverageHc",
+          "type": "cds.Double",
+          "@AnalyticsDetails.measureType": {
+            "#": "BASE"
+          },
+          "@Aggregation.default": {
+            "#": "SUM"
+          }
+        }
+      },
+      "query": {
+        "SELECT": {
+          "from": {
+            "join": "left",
+            "args": [
+              {
+                "SELECT": {
+                  "from": {
+                    "join": "left",
+                    "args": [
+                      {
+                        "ref": [
+                          "C2D04C3066B04FE6BE5C.3VF_HEADCOUNT_ACTUALS"
+                        ],
+                        "as": "3VD_HEADCOUNT_ACTUALS(1)"
+                      },
+                      {
+                        "SELECT": {
+                          "from": {
+                            "ref": [
+                              "D8D90336A0E24D678F9D.3VD_EMPLOYEE_CSRD_ATTR_VIEW"
+                            ],
+                            "as": "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)"
+                          },
+                          "columns": [
+                            {
+                              "key": true,
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "EmployeeId"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "PersonId"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "PersonUuid"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "Gender"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "EeoJobGroup"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "EthnicBackground"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "VeteranStatus"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "Location"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "CalenderYear"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "Company"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "OrganizationalUnit"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "Agegroup_ID"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "EmploymentStatus"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "IsContingentWorker"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "IsFullTimeEmployee"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "Target_Currency"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "EmployeeClass_CONTRACT_TYPE_ID"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "FromDate"
+                              ]
+                            },
+                            {
+                              "key": true,
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "ToDate"
+                              ]
+                            },
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "Division"
+                              ]
+                            }
+                          ],
+                          "where": [
+                            {
+                              "ref": [
+                                "3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)",
+                                "EeoJobCategory"
+                              ]
+                            },
+                            "=",
+                            {
+                              "val": "9197"
+                            }
+                          ]
+                        },
+                        "as": "Projection 5"
+                      }
+                    ],
+                    "on": [
+                      {
+                        "ref": [
+                          "3VD_HEADCOUNT_ACTUALS(1)",
+                          "ToDate"
+                        ]
+                      },
+                      "=",
+                      {
+                        "ref": [
+                          "Projection 5",
+                          "ToDate"
+                        ]
+                      },
+                      "and",
+                      {
+                        "ref": [
+                          "3VD_HEADCOUNT_ACTUALS(1)",
+                          "PersonUuid"
+                        ]
+                      },
+                      "=",
+                      {
+                        "ref": [
+                          "Projection 5",
+                          "PersonUuid"
+                        ]
+                      }
+                    ],
+                    "cardinality": {
+                      "min": 1,
+                      "max": 1
+                    }
+                  },
+                  "columns": [
+                    {
+                      "as": "EmployeeId",
+                      "key": true,
+                      "ref": [
+                        "Projection 5",
+                        "EmployeeId"
+                      ]
+                    },
+                    {
+                      "as": "PersonId",
+                      "ref": [
+                        "Projection 5",
+                        "PersonId"
+                      ]
+                    },
+                    {
+                      "as": "EopHc",
+                      "ref": [
+                        "3VD_HEADCOUNT_ACTUALS(1)",
+                        "EopHc"
+                      ]
+                    },
+                    {
+                      "as": "AverageHc",
+                      "ref": [
+                        "3VD_HEADCOUNT_ACTUALS(1)",
+                        "AverageHc"
+                      ]
+                    },
+                    {
+                      "as": "Gender",
+                      "ref": [
+                        "Projection 5",
+                        "Gender"
+                      ]
+                    },
+                    {
+                      "as": "Time",
+                      "ref": [
+                        "3VD_HEADCOUNT_ACTUALS(1)",
+                        "Time"
+                      ]
+                    },
+                    {
+                      "as": "CSRD_Contract_Type",
+                      "xpr": [
+                        "case",
+                        "when",
+                        {
+                          "ref": [
+                            "Projection 5",
+                            "IsContingentWorker"
+                          ]
+                        },
+                        "=",
+                        {
+                          "val": true
+                        },
+                        "then",
+                        {
+                          "val": "CONTR"
+                        },
+                        "else",
+                        {
+                          "val": "EMP"
+                        },
+                        "end"
+                      ]
+                    },
+                    {
+                      "as": "CSRD_Working_Time",
+                      "xpr": [
+                        "case",
+                        "when",
+                        {
+                          "ref": [
+                            "Projection 5",
+                            "IsFullTimeEmployee"
+                          ]
+                        },
+                        "=",
+                        {
+                          "val": true
+                        },
+                        "then",
+                        {
+                          "val": 1
+                        },
+                        "else",
+                        {
+                          "val": 0
+                        },
+                        "end"
+                      ]
+                    },
+                    {
+                      "as": "Location",
+                      "ref": [
+                        "Projection 5",
+                        "Location"
+                      ]
+                    },
+                    {
+                      "as": "IsContingentWorker",
+                      "ref": [
+                        "Projection 5",
+                        "IsContingentWorker"
+                      ]
+                    },
+                    {
+                      "as": "IsFullTimeEmployee",
+                      "ref": [
+                        "Projection 5",
+                        "IsFullTimeEmployee"
+                      ]
+                    }
+                  ]
+                },
+                "as": "Calculated Columns 1"
+              },
+              {
+                "ref": [
+                  "SAP.TIME.M_TIME_DIMENSION"
+                ],
+                "as": "M_TIME_DIMENSION"
+              }
+            ],
+            "on": [
+              {
+                "ref": [
+                  "Calculated Columns 1",
+                  "Time"
+                ]
+              },
+              "=",
+              {
+                "ref": [
+                  "M_TIME_DIMENSION",
+                  "CALMONTH"
+                ]
+              }
+            ],
+            "cardinality": {
+              "max": 1
+            }
+          },
+          "columns": [
+            {
+              "as": "Gender",
+              "ref": [
+                "Calculated Columns 1",
+                "Gender"
+              ]
+            },
+            {
+              "as": "CSRD_Contract_Type",
+              "ref": [
+                "Calculated Columns 1",
+                "CSRD_Contract_Type"
+              ]
+            },
+            {
+              "as": "CSRD_Working_Time",
+              "ref": [
+                "Calculated Columns 1",
+                "CSRD_Working_Time"
+              ]
+            },
+            {
+              "as": "EmployeeId",
+              "key": true,
+              "ref": [
+                "Calculated Columns 1",
+                "EmployeeId"
+              ]
+            },
+            {
+              "as": "PersonId",
+              "ref": [
+                "Calculated Columns 1",
+                "PersonId"
+              ]
+            },
+            {
+              "as": "Location",
+              "ref": [
+                "Calculated Columns 1",
+                "Location"
+              ]
+            },
+            {
+              "as": "Time",
+              "ref": [
+                "Calculated Columns 1",
+                "Time"
+              ]
+            },
+            {
+              "ref": [
+                "M_TIME_DIMENSION",
+                "YEAR"
+              ]
+            },
+            {
+              "as": "EopHc",
+              "ref": [
+                "Calculated Columns 1",
+                "EopHc"
+              ]
+            },
+            {
+              "as": "AverageHc",
+              "ref": [
+                "Calculated Columns 1",
+                "AverageHc"
+              ]
+            }
+          ]
+        }
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "DATA_STRUCTURE"
+        }
+      ],
+      "@EndUserText.label": "3VF_HEADCOUNT_TOP_MGMT",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_FACT"
+      },
+      "@DataWarehouse.consumption.external": false,
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": "Folder_UJFXVDHJ"
+        }
+      }
+    }
+  },
+  "version": {
+    "csn": "1.0"
+  },
+  "meta": {
+    "creator": "CDS Compiler v1.19.2"
+  },
+  "editorSettings": {
+    "3VF_HEADCOUNT_TOP_MGMT": {
+      "editor": {
+        "lastModifier": "GRAPHICALVIEWBUILDER",
+        "default": "GRAPHICALVIEWBUILDER"
+      },
+      "uiModel": "{\"contents\":{\"c76d12d0-1502-4e7e-9b47-0ca36600c80f\":{\"classDefinition\":\"sap.cdw.querybuilder.Model\",\"name\":\"3VF_HEADCOUNT_TOP_MGMT\",\"label\":\"3VF_HEADCOUNT_TOP_MGMT\",\"modificationDate\":1716041870479,\"deploymentDate\":0,\"#objectStatus\":\"0\",\"output\":\"299e286c-1713-4bf2-aeda-4bb882102d69\",\"nodes\":{\"299e286c-1713-4bf2-aeda-4bb882102d69\":{\"name\":\"3VF_HEADCOUNT_TOP_MGMT\"},\"137fc70e-8e8c-4fe2-bd22-b5dcfc5704cc\":{\"name\":\"D8D90336A0E24D678F9D.3VD_EMPLOYEE_CSRD_ATTR_VIEW\"},\"62deb887-7db0-468d-90c8-935e035c7fdd\":{\"name\":\"Projection 1\"},\"c1eb6444-b165-4935-869d-ffd0e887e8cb\":{\"name\":\"Calculated Columns 1\"},\"52599ad5-c66b-47d0-9421-d5ef368c0e09\":{\"name\":\"C2D04C3066B04FE6BE5C.3VF_HEADCOUNT_ACTUALS\"},\"ace659e1-0940-41da-94fe-413b8f204484\":{\"name\":\"Join 1\"},\"e505ed1b-a921-4ced-979c-b7db20e1a69f\":{\"name\":\"SAP.TIME.M_TIME_DIMENSION\"},\"e29e44b7-a875-4ef3-be65-21908c09335b\":{\"name\":\"Join 2\"},\"564ee930-f8f0-4cce-88f4-496f5e9cac69\":{\"name\":\"Projection 2\"},\"100b66ad-8e4e-4761-9356-fb1fe2523e49\":{\"name\":\"Projection 3\"},\"3debad97-e258-4845-9ec2-e66ef73de855\":{\"name\":\"Projection 4\"},\"9725f024-893b-470d-bcaf-7eaaaa86da4f\":{\"name\":\"Projection 5\"},\"32121e10-12e6-48c6-b30f-b34ccaf3c4b4\":{\"name\":\"Filter 1\"}},\"contexts\":{\"5a9e6f9c-69ec-4263-9c6b-3c1404441d95\":{\"name\":\"C2D04C3066B04FE6BE5C\"},\"7ec914ef-ab4c-448d-b128-0b488bfcd629\":{\"name\":\"D8D90336A0E24D678F9D\"}},\"diagrams\":{\"fc1a6d9e-e207-4c6d-a8e4-930870fc8eef\":{}}},\"299e286c-1713-4bf2-aeda-4bb882102d69\":{\"classDefinition\":\"sap.cdw.querybuilder.Output\",\"name\":\"3VF_HEADCOUNT_TOP_MGMT\",\"type\":\"graphicView\",\"isPinToMemoryEnabled\":false,\"dataCategory\":\"SQLFACT\",\"isAllowConsumption\":false,\"modificationDate\":1716041870479,\"deploymentDate\":0,\"#objectStatus\":\"0\",\"elements\":{\"1f03410e-b478-4c4e-9642-f89d993d2090\":{\"name\":\"Gender\"},\"00a067ce-fd74-40a0-835c-f9a67bc70b22\":{\"name\":\"Calculated_1\"},\"9983f37c-55ad-4d17-bfbf-a19531308f95\":{\"name\":\"Calculated_1\"},\"e7a560fc-3181-4248-9fa4-d0b83084a2c0\":{\"name\":\"EmployeeId\"},\"08080450-2799-4721-9f9d-0cdf2530153b\":{\"name\":\"PersonId\"},\"1a88b02e-dd9a-4c3e-871f-54cded48c656\":{\"name\":\"Location\"},\"2b339543-0660-4dee-87dc-fbbd712f4d57\":{\"name\":\"EopHc\"},\"8d5785eb-0c33-4ec0-b88f-cbf41f762f9b\":{\"name\":\"AverageHc\"},\"61ea8735-dcb8-4d4d-a447-3e81244de031\":{\"name\":\"Time\"},\"7ee9f705-5114-4aae-8958-32674a83ae62\":{\"name\":\"YEAR\"}}},\"137fc70e-8e8c-4fe2-bd22-b5dcfc5704cc\":{\"classDefinition\":\"sap.cdw.querybuilder.Entity\",\"name\":\"D8D90336A0E24D678F9D.3VD_EMPLOYEE_CSRD_ATTR_VIEW\",\"label\":\"3VD_EMPLOYEE_CSRD_ATTR_VIEW\",\"type\":3,\"isPersistenceExists\":true,\"isPinToMemoryEnabled\":false,\"dataCategory\":\"DIMENSION\",\"isHiddenInUi\":false,\"modificationDate\":1715875898673,\"deploymentDate\":1715875913950,\"#objectStatus\":\"1\",\"alias\":\"3VD_EMPLOYEE_CSRD_ATTR_VIEW(1)\",\"context\":\"7ec914ef-ab4c-448d-b128-0b488bfcd629\",\"elements\":{\"d21aa51f-0a8f-467c-af7e-700205eee549\":{\"name\":\"EmployeeId\"},\"b26aac78-f504-4bab-8be3-cf6c8b5cc382\":{\"name\":\"PersonId\"},\"1b8bfe87-9bbe-461a-9008-d1cdcd50893e\":{\"name\":\"PersonUuid\"},\"21b005b9-574e-4d74-8733-eea43c273181\":{\"name\":\"Gender\"},\"cf33ad46-1ec5-4abe-81f3-3e8750b62ee3\":{\"name\":\"EeoJobGroup\"},\"c6785ae7-1357-4aa8-922e-8c7ff7181adb\":{\"name\":\"EthnicBackground\"},\"f7116e69-3dcd-400f-83b3-c458d7fc4cb4\":{\"name\":\"VeteranStatus\"},\"4e8bd02d-4c22-4562-a12d-bd7db2d0adec\":{\"name\":\"Location\"},\"0ac74a0c-3544-4fad-94f3-15ac135b0144\":{\"name\":\"CalenderYear\"},\"812b5d6b-1bda-4abf-9f03-972c40596ef8\":{\"name\":\"Company\"},\"db825078-2bc8-4668-98c9-904c6fa22667\":{\"name\":\"OrganizationalUnit\"},\"b5bb2621-b7bc-4e15-940c-f4c1b5b64249\":{\"name\":\"Agegroup_ID\"},\"91f8d483-3019-48e9-9ee4-9dac0a48f964\":{\"name\":\"EmploymentStatus\"},\"6cdd4c8e-decb-4c48-a723-c074a29701e5\":{\"name\":\"IsContingentWorker\"},\"4cfe2feb-e2dd-4821-9d24-bc8da3acb2ff\":{\"name\":\"IsFullTimeEmployee\"},\"d1efe6d9-ded3-4b7e-be98-43efabbde2ba\":{\"name\":\"Target_Currency\"},\"41f42d06-f28d-4aa7-8921-a7f9823b7aa3\":{\"name\":\"EmployeeClass_CONTRACT_TYPE_ID\"},\"b457aacb-a5ed-469c-a49e-e2be0bf9ee04\":{\"name\":\"FromDate\"},\"a18fcf70-bd11-4eb1-821f-dfa2e9c8dd2e\":{\"name\":\"ToDate\"},\"4f00faa6-8c8b-47f1-af24-fbd091fa0601\":{\"name\":\"Division\"},\"544b1847-97e0-4030-91fb-f1572e881ec7\":{\"name\":\"EeoJobCategory\"},\"17bff26b-cee2-47bf-90c2-bc38599b1623\":{\"name\":\"RELEASE_ID\"}},\"successorNode\":\"32121e10-12e6-48c6-b30f-b34ccaf3c4b4\"},\"62deb887-7db0-468d-90c8-935e035c7fdd\":{\"classDefinition\":\"sap.cdw.querybuilder.RenameElements\",\"_isProjectionNode\":false,\"name\":\"Projection 1\",\"elements\":{\"03054256-aea0-436d-8990-a2a445fa7431\":{\"name\":\"EmployeeId\"},\"fbe35fda-88f1-4c3d-a38c-329ade8b763a\":{\"name\":\"PersonId\"},\"d1eab22b-0861-4e0f-8727-bfbcd757bff0\":{\"name\":\"PersonUuid\"},\"78ec8af1-4a2e-4401-a681-2ce78120ac9d\":{\"name\":\"Gender\"},\"000e948f-2140-4f0a-af02-acf654d770c8\":{\"name\":\"EeoJobGroup\"},\"53467de8-5ec7-48bd-b78e-aedac977158f\":{\"name\":\"EthnicBackground\"},\"c1101519-b330-4b4d-a38d-9b4d8426cb72\":{\"name\":\"VeteranStatus\"},\"977477bb-0ebd-4409-8013-85fd4ae2e10e\":{\"name\":\"Location\"},\"970a0387-1cff-4998-8e7f-bc3a48954e72\":{\"name\":\"CalenderYear\"},\"f793131a-e7d1-403f-95b6-9160caa9cea6\":{\"name\":\"Company\"},\"b2c41783-d990-4444-b8a3-ad737a7f06c7\":{\"name\":\"OrganizationalUnit\"},\"ff4f7e8a-6d3b-4a2f-b088-641deee80294\":{\"name\":\"Agegroup_ID\"},\"b618758a-27bb-4a04-aef8-01f2c7e46a98\":{\"name\":\"EmploymentStatus\"},\"cc428355-31d1-4d02-93c3-bfec3879d4b7\":{\"name\":\"IsContingentWorker\"},\"a49d99a7-1443-47c5-8f33-54ef0d44b928\":{\"name\":\"IsFullTimeEmployee\"},\"11a05456-62ec-4c51-b1be-303df90caaeb\":{\"name\":\"Target_Currency\"},\"8ea74547-0fdf-4d38-b9e8-87ed4e73d6ab\":{\"name\":\"EmployeeClass_CONTRACT_TYPE_ID\"},\"200186c7-197e-49d7-93bc-388ad885b356\":{\"name\":\"FromDate\"},\"454fda15-b67b-411d-b95b-28fa86e66af1\":{\"name\":\"ToDate\"},\"a8c4d3b0-4b50-4686-b5e9-91d8b2c2972c\":{\"name\":\"Division\"},\"693ee4b0-a30d-47b4-827e-80caed9a26ff\":{\"name\":\"PersonUuid\"},\"9d9b3177-44d0-4a08-9102-9f0b42da3cee\":{\"name\":\"EopHc\"},\"d66f7536-5681-404c-bcbc-8eaff6806240\":{\"name\":\"AverageHc\"},\"e875675f-0353-455d-a486-7c91c24dabd7\":{\"name\":\"ToDate\"},\"9e471b8e-0a65-4351-9540-cb7eba3543f6\":{\"name\":\"Time\"}},\"successorNode\":\"c1eb6444-b165-4935-869d-ffd0e887e8cb\"},\"c1eb6444-b165-4935-869d-ffd0e887e8cb\":{\"classDefinition\":\"sap.cdw.querybuilder.CalculatedElements\",\"name\":\"Calculated Columns 1\",\"elements\":{\"d3db8c73-b3e8-457d-83eb-c5aa7dd74b2f\":{\"name\":\"Gender\"},\"4e996645-eb7d-4d09-b599-238e78f40b44\":{\"name\":\"Calculated_1\"},\"4fdf7337-3aa9-43ed-9b19-59fb8a998449\":{\"name\":\"Calculated_1\"},\"eb5b91cf-372c-43d9-99fe-6ecd660ecf1a\":{\"name\":\"EmployeeId\"},\"a00620fe-1e31-4308-999e-7988e2a51714\":{\"name\":\"PersonId\"},\"ea38a71f-e03f-435a-8958-aeb9c0668514\":{\"name\":\"Location\"},\"1ab2b8cc-41cd-4126-986c-f269175934bb\":{\"name\":\"EopHc\"},\"5d22ae6b-7e36-4b7b-86de-c00ca70425d3\":{\"name\":\"AverageHc\"},\"c65a56f5-3797-4d19-949e-8c02603e6055\":{\"name\":\"Time\"},\"2c5203b0-a6d5-4d42-9bfd-2b58d4c324ff\":{\"name\":\"IsContingentWorker\"},\"d81999c5-390e-4ef3-827e-ba8512db6c11\":{\"name\":\"IsFullTimeEmployee\"}},\"successorNode\":\"e29e44b7-a875-4ef3-be65-21908c09335b\"},\"52599ad5-c66b-47d0-9421-d5ef368c0e09\":{\"classDefinition\":\"sap.cdw.querybuilder.Entity\",\"name\":\"C2D04C3066B04FE6BE5C.3VF_HEADCOUNT_ACTUALS\",\"label\":\"3VF_HEADCOUNT_ACTUALS\",\"type\":3,\"isPersistenceExists\":true,\"isPinToMemoryEnabled\":false,\"isHiddenInUi\":false,\"modificationDate\":1715875523767,\"deploymentDate\":1715875538793,\"#objectStatus\":\"1\",\"alias\":\"3VD_HEADCOUNT_ACTUALS(1)\",\"context\":\"5a9e6f9c-69ec-4263-9c6b-3c1404441d95\",\"elements\":{\"7de9b398-c3db-4d5a-852f-23d3e9fa9f09\":{\"name\":\"PersonUuid\"},\"3075c9b4-004d-434a-b5a6-79ae3dfb449b\":{\"name\":\"EopHc\"},\"bff54861-31d6-42a4-9d9c-9b67cc544f04\":{\"name\":\"AverageHc\"},\"8887801b-ae48-4759-a833-feae9faa2561\":{\"name\":\"ToDate\"},\"19d81388-6435-43bf-a080-cb0abf151176\":{\"name\":\"Time\"},\"0f0e4dcb-0174-4459-8c3b-5e280ccd0bb9\":{\"name\":\"RELEASE_ID\"}},\"successorNode\":\"3debad97-e258-4845-9ec2-e66ef73de855\"},\"ace659e1-0940-41da-94fe-413b8f204484\":{\"classDefinition\":\"sap.cdw.querybuilder.Join\",\"type\":\"left\",\"leftCardinality\":\"*\",\"rightCardinality\":\"1\",\"name\":\"Join 1\",\"mappings\":{\"c57c5f69-7f97-4475-8582-9f7da5b8205f\":{},\"651d601a-540e-4b9a-846a-4b01cdf88155\":{}},\"leftInput\":\"3debad97-e258-4845-9ec2-e66ef73de855\",\"rightInput\":\"9725f024-893b-470d-bcaf-7eaaaa86da4f\",\"elements\":{\"ad1c7fdd-9bb7-4019-848a-ab7c8ab71467\":{\"name\":\"EmployeeId\"},\"0182a13c-b1f5-4235-b33d-de65ca81ddb6\":{\"name\":\"PersonId\"},\"f0558f89-e9ac-4ed0-b781-bd79f99b5d43\":{\"name\":\"PersonUuid\"},\"a427457d-65e4-428f-b14d-602f8222ae13\":{\"name\":\"Gender\"},\"55f2b6ac-9f69-45a9-a508-0b3ea627995e\":{\"name\":\"EeoJobGroup\"},\"d441e8e0-a08d-48a3-898a-b60bc501f53a\":{\"name\":\"EthnicBackground\"},\"a148780c-b3a4-433f-83fd-a8ade8e833fd\":{\"name\":\"VeteranStatus\"},\"e06d1a30-8ed1-4539-a12f-9bf06b632181\":{\"name\":\"Location\"},\"125659fd-07f4-4a09-8597-63fd0988024a\":{\"name\":\"CalenderYear\"},\"0e24bad9-ae9c-4e00-844c-ade58337aa88\":{\"name\":\"Company\"},\"d47410fd-460d-41d5-af8c-25065f8d6429\":{\"name\":\"OrganizationalUnit\"},\"76e72580-965c-47e9-a515-1f70d1ed06a6\":{\"name\":\"Agegroup_ID\"},\"bf86fae1-0223-4dc2-ab1d-a2b073b38df7\":{\"name\":\"EmploymentStatus\"},\"1aa52ad0-e067-4359-8397-35cdddfe0bb2\":{\"name\":\"IsContingentWorker\"},\"5bfaec77-9fde-47e8-be0b-9c0d160a9bbd\":{\"name\":\"IsFullTimeEmployee\"},\"710dc721-7254-44aa-85cb-b7432d7947b2\":{\"name\":\"Target_Currency\"},\"66dd89a8-d129-4c1c-bace-15943ee45cf4\":{\"name\":\"EmployeeClass_CONTRACT_TYPE_ID\"},\"cd4e4492-6250-4ee6-a7b8-0820c0d188fa\":{\"name\":\"FromDate\"},\"a09d9b6a-3a9b-48cc-bcbb-ef8cd2d04bf2\":{\"name\":\"ToDate\"},\"2ce0bda6-c464-44b3-9bd1-41dc773d2354\":{\"name\":\"Division\"},\"bb6d0293-5d8e-471b-80b8-1ef8fd1587a1\":{\"name\":\"PersonUuid\"},\"00dcd0f7-0c52-40d8-abb6-32d747588993\":{\"name\":\"EopHc\"},\"3e597547-2ebe-4c1f-9fb5-d96f7a4d5d07\":{\"name\":\"AverageHc\"},\"5609f37f-8007-455d-a157-b69f82ca2454\":{\"name\":\"ToDate\"},\"6239401c-1713-4e9c-8732-3c65bcda493b\":{\"name\":\"Time\"}},\"successorNode\":\"62deb887-7db0-468d-90c8-935e035c7fdd\"},\"e505ed1b-a921-4ced-979c-b7db20e1a69f\":{\"classDefinition\":\"sap.cdw.querybuilder.Entity\",\"name\":\"SAP.TIME.M_TIME_DIMENSION\",\"label\":\"Time Table\",\"type\":9,\"isPersistenceExists\":true,\"isPinToMemoryEnabled\":false,\"isHiddenInUi\":false,\"modificationDate\":1715928804741,\"deploymentDate\":1715928832583,\"#objectStatus\":\"1\",\"hierarchies\":{\"b276665a-7666-4479-909c-d45aabf5f04d\":{\"name\":\"YYYY\"}},\"elements\":{\"0755087c-a53c-48e8-89ae-05863c6a8a39\":{\"name\":\"YEAR\"},\"7ec601cd-47d5-453b-9bfb-b00013fda9f4\":{\"name\":\"MONTH\"},\"81142010-542f-42d9-bcba-d8a591cf3695\":{\"name\":\"MONTH_INT\"},\"4fb7693b-a97f-44a4-bcdf-02b3553420c4\":{\"name\":\"MONTH_LAST_DAY\"},\"00a9ede7-e74e-4594-8868-849f7aa4e7e5\":{\"name\":\"QUARTER\"},\"bd0a94a7-01a6-4900-a791-98391847a84e\":{\"name\":\"QUARTER_INT\"},\"8225abb5-42bf-4fc3-bcfc-c25e64bd558f\":{\"name\":\"SECOND\"},\"71250948-a489-40fa-bac9-42b234d32de5\":{\"name\":\"SECOND_INT\"},\"0ef9350f-e910-4512-a250-a406a5f5eff4\":{\"name\":\"TZNTSTMPL\"},\"6374494d-5aad-4e66-a74d-b04331faf4d2\":{\"name\":\"TZNTSTMPS\"},\"92ec203a-45c3-4490-bb57-cd1d44c246b1\":{\"name\":\"WEEK\"},\"7f3f365c-1d31-491f-97b8-f05b8e1447c7\":{\"name\":\"WEEK_INT\"},\"8f920240-0af1-47ef-a9a5-734230d2fea0\":{\"name\":\"WEEK_YEAR\"},\"770a9c3d-d422-4f92-b42a-766aedca848f\":{\"name\":\"WEEK_YEAR_INT\"},\"aaf16e8c-c9e4-4f75-98da-daa695cd2fd5\":{\"name\":\"YEAR_INT\"},\"ac63d7c5-1b16-4930-8cb0-035a15c2c1b5\":{\"name\":\"MINUTE_INT\"},\"fcb41dcc-4ca9-4fac-8bcb-826e35cbd0e8\":{\"name\":\"MINUTE\"},\"408755b6-1a33-4e6d-be12-8cf9a7392d9c\":{\"name\":\"HOUR_INT\"},\"77e47d86-403b-45ca-a77c-726dea6fdaf5\":{\"name\":\"HOUR\"},\"49d6e0c4-7f68-4611-936e-da9d5522db3f\":{\"name\":\"DAY_OF_WEEK_INT\"},\"002950f9-96df-405a-956e-0fcfae635822\":{\"name\":\"DAY_OF_WEEK\"},\"f7f3748a-55ba-4795-8a30-24a16476deda\":{\"name\":\"DAY_INT\"},\"d007254d-eb86-4faa-a984-0fb1ea26ee1c\":{\"name\":\"DAY\"},\"bd9e5040-6a53-4a37-ae8a-f26b7b94d1fc\":{\"name\":\"DATE_SQL\"},\"bc6bf4a9-dc50-489b-9e18-c1747d7f6c30\":{\"name\":\"DATE_SAP\"},\"d3cb3c8d-0eff-44bf-a2b8-79b95bb6e175\":{\"name\":\"DATETIME_SAP\"},\"236312c7-ac5a-4d57-9295-e7c44d63a66c\":{\"name\":\"DATETIMESTAMP\"},\"51ac69e3-e78f-40da-8421-d90256dc204e\":{\"name\":\"CALWEEK\"},\"6edf2e8f-095b-42b3-af53-9eebf42b509c\":{\"name\":\"CALQUARTER\"},\"607cc71f-8197-4faa-8452-6083dd9a4543\":{\"name\":\"CALMONTH\"}},\"successorNode\":\"564ee930-f8f0-4cce-88f4-496f5e9cac69\"},\"e29e44b7-a875-4ef3-be65-21908c09335b\":{\"classDefinition\":\"sap.cdw.querybuilder.Join\",\"type\":\"left\",\"leftCardinality\":\"*\",\"rightCardinality\":\"0,1\",\"name\":\"Join 2\",\"mappings\":{\"65982fab-035a-4064-a785-638abfaf54c8\":{}},\"leftInput\":\"c1eb6444-b165-4935-869d-ffd0e887e8cb\",\"rightInput\":\"564ee930-f8f0-4cce-88f4-496f5e9cac69\",\"elements\":{\"6ac3450c-6e56-45be-b88d-058b98a6fee0\":{\"name\":\"Gender\"},\"f8debdea-ae70-4ea3-af83-af699571c232\":{\"name\":\"Calculated_1\"},\"d3c941ce-cdf1-4e5e-858e-2766de782855\":{\"name\":\"Calculated_1\"},\"e942e884-09da-493b-aeab-28c51e77abb2\":{\"name\":\"EmployeeId\"},\"810076f7-be0a-4591-9ede-44c56e1b28f9\":{\"name\":\"PersonId\"},\"238cc4ca-cf8e-43dc-af04-d30a85a7c60c\":{\"name\":\"Location\"},\"80bbf0db-bb4b-4f2a-a2ea-30a5c5ded4fa\":{\"name\":\"EopHc\"},\"23dbae3f-c6f2-449d-b8af-aa45e836e1d0\":{\"name\":\"AverageHc\"},\"33f3cf1a-78ad-4ea1-a017-c7182197f5c1\":{\"name\":\"Time\"},\"439ad2ec-a9be-4997-a3f2-98709a093e8c\":{\"name\":\"YEAR\"},\"cf16207e-4f58-4422-bbbb-5af24be8b941\":{\"name\":\"CALMONTH\"},\"92331c63-638b-4197-8c74-1026d95678c8\":{\"name\":\"IsContingentWorker\"},\"6d65c754-3ac9-49d0-b4a3-90945321140c\":{\"name\":\"IsFullTimeEmployee\"}},\"successorNode\":\"100b66ad-8e4e-4761-9356-fb1fe2523e49\"},\"564ee930-f8f0-4cce-88f4-496f5e9cac69\":{\"classDefinition\":\"sap.cdw.querybuilder.RenameElements\",\"_isProjectionNode\":false,\"name\":\"Projection 2\",\"elements\":{\"3ed61c05-582e-4548-9dcb-65e7a20c9cc8\":{\"name\":\"YEAR\"},\"1097a9df-1069-47b1-8a1c-b8c4a5fc9867\":{\"name\":\"MONTH\"},\"2a1ed9fc-cd90-44fe-8d15-882e7fd8ab59\":{\"name\":\"MONTH_INT\"},\"e476b877-fe5a-4a61-a9f1-ae124a7159b3\":{\"name\":\"MONTH_LAST_DAY\"},\"8e9b95f4-997a-4feb-936f-a353f3c8b68b\":{\"name\":\"QUARTER\"},\"c52d5915-a3d8-4da1-8084-2a8c1710e903\":{\"name\":\"QUARTER_INT\"},\"d6faf050-2416-4f84-b780-8c94469ef4c0\":{\"name\":\"SECOND\"},\"bc4f3799-57eb-4b14-963e-5c996d74c7aa\":{\"name\":\"SECOND_INT\"},\"f63c6995-8bc4-4af4-84c5-5c1dbd84676a\":{\"name\":\"TZNTSTMPL\"},\"30b564d4-e91b-4772-8073-a858d02ea7b6\":{\"name\":\"TZNTSTMPS\"},\"e871e7c0-12b7-4da2-8f7f-86984d0167cb\":{\"name\":\"WEEK\"},\"790b9e9e-0fe6-44fd-b0cc-bd06186aafba\":{\"name\":\"WEEK_INT\"},\"9232fd49-0b44-4235-9dd2-c94cc2d214c5\":{\"name\":\"WEEK_YEAR\"},\"616ab486-9237-4b70-9353-f821f9074d6a\":{\"name\":\"WEEK_YEAR_INT\"},\"9913f002-9691-44fa-8df9-a7c66a75ff5a\":{\"name\":\"YEAR_INT\"},\"791b1e60-6ab3-4460-8d44-9e6ecda488f1\":{\"name\":\"MINUTE_INT\"},\"9f315193-c6d2-4974-8a08-1a698620718a\":{\"name\":\"MINUTE\"},\"02d3ce0e-9421-46c9-abe9-ab682709ef2e\":{\"name\":\"HOUR_INT\"},\"bbae9f06-165d-40f1-8bce-188487f87f8b\":{\"name\":\"HOUR\"},\"79a65d97-50dd-4339-b425-f87a381d646a\":{\"name\":\"DAY_OF_WEEK_INT\"},\"268b1244-4350-468b-9452-0c7a2cb79fd5\":{\"name\":\"DAY_OF_WEEK\"},\"341c6e02-d8c3-4586-a41e-9c4221ec4383\":{\"name\":\"DAY_INT\"},\"06230800-c5c5-4c00-9130-99db3b86c8af\":{\"name\":\"DAY\"},\"3f5d3ad3-9cfc-4375-b3d4-cf7394a58c6b\":{\"name\":\"DATE_SQL\"},\"150d2637-3059-4b2f-b090-733cc9f7c4cc\":{\"name\":\"DATE_SAP\"},\"0f6d2ac7-3fec-4107-9a53-7e2cb8b7bfff\":{\"name\":\"DATETIME_SAP\"},\"2a70b6b9-b0e9-4591-b829-fe1b202012e1\":{\"name\":\"DATETIMESTAMP\"},\"366c6b02-21ca-4bcd-9559-bdddc203cbaf\":{\"name\":\"CALWEEK\"},\"5b839040-b9ad-4978-b498-28d32ff8f708\":{\"name\":\"CALQUARTER\"},\"4430ba93-2dd8-48d1-9c51-cfb3b8c2fce7\":{\"name\":\"CALMONTH\"}},\"successorNode\":\"e29e44b7-a875-4ef3-be65-21908c09335b\"},\"100b66ad-8e4e-4761-9356-fb1fe2523e49\":{\"classDefinition\":\"sap.cdw.querybuilder.RenameElements\",\"_isProjectionNode\":false,\"name\":\"Projection 3\",\"elements\":{\"79249c72-375c-4216-bc4a-bf047e70aca6\":{\"name\":\"Gender\"},\"73e6ddde-8d08-4e4d-8177-dc773b8d2a5b\":{\"name\":\"Calculated_1\"},\"71f038c5-768c-48f9-84ed-b89a24c36e2c\":{\"name\":\"Calculated_1\"},\"7ebbba3d-be05-41c8-b5af-22abfa48a497\":{\"name\":\"EmployeeId\"},\"7b75f147-ce9b-4ff3-950a-48ef7a407824\":{\"name\":\"PersonId\"},\"247ba0ce-9a36-4099-8df2-3a942d8bc186\":{\"name\":\"Location\"},\"702c9cff-569e-4942-8670-99d735cfe8a6\":{\"name\":\"EopHc\"},\"992db9e6-46c9-44fd-973f-89189619ce20\":{\"name\":\"AverageHc\"},\"14cf84b8-1020-4264-9176-8c6b7f864f76\":{\"name\":\"Time\"},\"d348d853-f685-4533-89c5-229a330f6b4d\":{\"name\":\"YEAR\"},\"0778ab03-cafe-4cf3-a70a-f68276dcae8d\":{\"name\":\"CALMONTH\"},\"be82bbf9-21ab-45b0-9b34-9c781e590bf0\":{\"name\":\"IsContingentWorker\"},\"6fad3ed7-3061-4b65-8150-57e508212f72\":{\"name\":\"IsFullTimeEmployee\"}},\"successorNode\":\"299e286c-1713-4bf2-aeda-4bb882102d69\"},\"3debad97-e258-4845-9ec2-e66ef73de855\":{\"classDefinition\":\"sap.cdw.querybuilder.RenameElements\",\"_isProjectionNode\":false,\"name\":\"Projection 4\",\"elements\":{\"ea41ef81-3b78-4ae0-8353-48910c94839a\":{\"name\":\"PersonUuid\"},\"7d84189f-9c3d-4b4c-8f91-17d0eb821b56\":{\"name\":\"EopHc\"},\"28536743-3c8a-4239-a6f3-0b85bd8c62df\":{\"name\":\"AverageHc\"},\"3fe78c1e-03a1-4dfb-ba90-8ff796960eb4\":{\"name\":\"ToDate\"},\"9c0c756b-a15a-4ef8-9b90-197b946f2be1\":{\"name\":\"Time\"},\"9ddd3133-ea9b-40fb-9cd1-56b064f68842\":{\"name\":\"RELEASE_ID\"}},\"successorNode\":\"ace659e1-0940-41da-94fe-413b8f204484\"},\"9725f024-893b-470d-bcaf-7eaaaa86da4f\":{\"classDefinition\":\"sap.cdw.querybuilder.RenameElements\",\"_isProjectionNode\":false,\"name\":\"Projection 5\",\"elements\":{\"144b9886-0e13-4c62-afe5-579d753959ee\":{\"name\":\"EmployeeId\"},\"89b0103d-78d7-4801-8eb9-ef5263b865bd\":{\"name\":\"PersonId\"},\"c2c41ab1-7d88-4e4b-a31c-c5fba627dbaf\":{\"name\":\"PersonUuid\"},\"a17a621b-4878-43dd-b81d-0c4818b9e31e\":{\"name\":\"Gender\"},\"9765e1af-7294-4fd9-bb2c-8ffcd87ed282\":{\"name\":\"EeoJobGroup\"},\"b5a887bb-cfeb-4755-a821-64aba2b62a5f\":{\"name\":\"EthnicBackground\"},\"fe2f69e6-01ca-40bb-b84f-cac40d9650cd\":{\"name\":\"VeteranStatus\"},\"a6f70312-e334-43de-9241-1973c351b1a4\":{\"name\":\"Location\"},\"59dce2b4-ecd2-4a44-b4fa-d2e1a13a724b\":{\"name\":\"CalenderYear\"},\"97a93b75-d9ed-4e5b-b7be-b679ae27ab63\":{\"name\":\"Company\"},\"0acf928f-c770-4535-b61e-9ed7f0dcf735\":{\"name\":\"OrganizationalUnit\"},\"4550c0e2-4b2f-428d-b6ed-920ce7133909\":{\"name\":\"Agegroup_ID\"},\"0e3000a0-6426-4d97-81dc-7314bd7e2564\":{\"name\":\"EmploymentStatus\"},\"3b8b7ddd-f024-423f-88d5-2590df38afd4\":{\"name\":\"IsContingentWorker\"},\"b3e24d1c-1540-4bec-9e40-5e1a3cd54ec3\":{\"name\":\"IsFullTimeEmployee\"},\"7dacc1ac-6c57-4069-b47c-c5b4d8e8bbba\":{\"name\":\"Target_Currency\"},\"9ca31f77-fdd4-4493-80f7-aedcdf61d274\":{\"name\":\"EmployeeClass_CONTRACT_TYPE_ID\"},\"75c42718-7973-4be2-aa16-9aff9cc4f077\":{\"name\":\"FromDate\"},\"14976470-1e26-48e6-af06-c4b1bb205dcc\":{\"name\":\"ToDate\"},\"c8d1182b-8ce3-4074-be50-db272024a556\":{\"name\":\"Division\"},\"0e9153f3-5b24-4466-9a4f-6bb2130d9863\":{\"name\":\"EeoJobCategory\"},\"861d2600-a9df-4841-b5fa-46e6703ac070\":{\"name\":\"RELEASE_ID\"}},\"successorNode\":\"ace659e1-0940-41da-94fe-413b8f204484\"},\"5a9e6f9c-69ec-4263-9c6b-3c1404441d95\":{\"classDefinition\":\"sap.cdw.commonmodel.Context\",\"name\":\"C2D04C3066B04FE6BE5C\",\"label\":\"Headcount Actuals\",\"crossSpace\":{\"schema\":\"C2D04C3066B04FE6BE5C\",\"space\":\"C2D04C3066B04FE6BE5C\"}},\"7ec914ef-ab4c-448d-b128-0b488bfcd629\":{\"classDefinition\":\"sap.cdw.commonmodel.Context\",\"name\":\"D8D90336A0E24D678F9D\",\"label\":\"Employee for CSRD\",\"crossSpace\":{\"schema\":\"D8D90336A0E24D678F9D\",\"space\":\"D8D90336A0E24D678F9D\"}},\"fc1a6d9e-e207-4c6d-a8e4-930870fc8eef\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.Diagram\",\"symbols\":{\"012712c5-f6db-4509-976e-340d8f384100\":{},\"7ad6a98a-0f03-4ccc-9609-4cfb670f9915\":{},\"00f86e64-77fe-4a70-9695-5e82e82de6de\":{},\"aa444229-0b76-43b8-a7e2-f1116c8c049a\":{},\"5ee345bc-82d7-47f7-b804-706c47693fd3\":{},\"a401a363-325b-4c4f-8814-67d546a22c06\":{},\"2d4510cd-7d42-4ba9-b1ce-08a6e198d3a5\":{},\"02c55ccd-34cc-40fa-9580-a0da3ba4f21e\":{},\"01a7a680-9997-4270-84e9-5eb34e621c22\":{},\"380e49d0-8ca5-4ea5-9c20-e3675032333c\":{},\"8d997130-fafd-4843-af65-adebe01191b2\":{},\"0276ab38-4a9e-42ce-8e42-6ef06c191b1a\":{},\"052ac92c-2d97-44e3-89eb-53d0688d3177\":{},\"87cd82df-1745-40b8-bf00-05c81cf39cc1\":{},\"69b682bf-8be7-4697-ba08-5cc09be42ba8\":{},\"328a1357-b310-43cc-9b6d-64e6e9b739c6\":{},\"009a88f1-1472-4cfc-a937-2dbc4db85453\":{},\"1985cb7c-9f95-4084-a399-aa440b7476d2\":{},\"61471de8-c918-4fe8-b89b-5238a34b8a70\":{},\"ade0d2eb-ef21-49be-98b6-1cbb69c1d70d\":{},\"6c4606fe-68a2-4860-8f03-338695d25fef\":{},\"cbe18851-45ba-4e02-b5c7-1fe00fb423ca\":{},\"98ed902a-ab7f-4fe9-8462-62742edbef22\":{},\"e1c03e95-f74b-4a22-85c5-5c64b523c19f\":{},\"85e0ba3f-3aad-4170-b9dc-44ccffe7c19b\":{},\"fc98742f-6a1a-4e8b-9288-7e56ebb303f0\":{}}},\"1f03410e-b478-4c4e-9642-f89d993d2090\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Gender\",\"label\":\"Gender\",\"newName\":\"Gender\",\"indexOrder\":2,\"expression\":\"Gender\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true},\"00a067ce-fd74-40a0-835c-f9a67bc70b22\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Calculated_1\",\"label\":\"CSRD Contract Type\",\"newName\":\"CSRD_Contract_Type\",\"indexOrder\":6,\"expression\":\"\",\"isCalculated\":true,\"length\":5,\"precision\":0,\"scale\":0,\"precisionsTable\":\"SAP.CURRENCY.VIEW.TCURX\",\"configurationTable\":\"SAP.CURRENCY.VIEW.TCURV\",\"prefactorsTable\":\"SAP.CURRENCY.VIEW.TCURF\",\"ratesTable\":\"SAP.CURRENCY.VIEW.TCURR\",\"notationsTable\":\"SAP.CURRENCY.VIEW.TCURN\",\"conversionCodesTable\":\"SAP.CURRENCY.VIEW.TCURC\"},\"9983f37c-55ad-4d17-bfbf-a19531308f95\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Calculated_1\",\"label\":\"CSRD Working Time\",\"newName\":\"CSRD_Working_Time\",\"indexOrder\":7,\"expression\":\"\",\"isCalculated\":true,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"precisionsTable\":\"SAP.CURRENCY.VIEW.TCURX\",\"configurationTable\":\"SAP.CURRENCY.VIEW.TCURV\",\"prefactorsTable\":\"SAP.CURRENCY.VIEW.TCURF\",\"ratesTable\":\"SAP.CURRENCY.VIEW.TCURR\",\"notationsTable\":\"SAP.CURRENCY.VIEW.TCURN\",\"conversionCodesTable\":\"SAP.CURRENCY.VIEW.TCURC\"},\"e7a560fc-3181-4248-9fa4-d0b83084a2c0\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeId\",\"label\":\"EmployeeId\",\"newName\":\"EmployeeId\",\"indexOrder\":9,\"expression\":\"EmployeeId\",\"isCalculated\":true,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true},\"08080450-2799-4721-9f9d-0cdf2530153b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonId\",\"label\":\"PersonId\",\"newName\":\"PersonId\",\"indexOrder\":10,\"expression\":\"PersonId\",\"isCalculated\":true,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"1a88b02e-dd9a-4c3e-871f-54cded48c656\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":14,\"expression\":\"Location\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true},\"2b339543-0660-4dee-87dc-fbbd712f4d57\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EopHc\",\"label\":\"EopHc\",\"newName\":\"EopHc\",\"indexOrder\":24,\"expression\":\"EopHc\",\"isCalculated\":true,\"defaultAggregation\":\"SUM\",\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"isMeasure\":true},\"8d5785eb-0c33-4ec0-b88f-cbf41f762f9b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"AverageHc\",\"label\":\"AverageHc\",\"newName\":\"AverageHc\",\"indexOrder\":25,\"expression\":\"AverageHc\",\"isCalculated\":true,\"defaultAggregation\":\"SUM\",\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"isMeasure\":true},\"61ea8735-dcb8-4d4d-a447-3e81244de031\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Time\",\"label\":\"Time\",\"newName\":\"Time\",\"indexOrder\":16,\"expression\":\"Time\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0},\"7ee9f705-5114-4aae-8958-32674a83ae62\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR\",\"label\":\"Calendar Year\",\"newName\":\"YEAR\",\"indexOrder\":17,\"length\":4,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.calendar.year\",\"isNotNull\":true},\"d21aa51f-0a8f-467c-af7e-700205eee549\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeId\",\"label\":\"EmployeeId\",\"newName\":\"EmployeeId\",\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"6ec777d7-c628-423f-b48e-e6bb01e716c0\"},\"b26aac78-f504-4bab-8be3-cf6c8b5cc382\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonId\",\"label\":\"PersonId\",\"newName\":\"PersonId\",\"indexOrder\":1,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"344f8a44-638d-40df-9d50-0cf2e59b1a6d\"},\"1b8bfe87-9bbe-461a-9008-d1cdcd50893e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonUuid\",\"label\":\"PersonUuid\",\"newName\":\"PersonUuid\",\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"1b6d91dd-1075-4f8e-b541-b5d27495136b\"},\"21b005b9-574e-4d74-8733-eea43c273181\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Gender\",\"label\":\"Gender\",\"newName\":\"Gender\",\"indexOrder\":3,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"7470776c-0805-4130-83d0-41873b61804a\"},\"cf33ad46-1ec5-4abe-81f3-3e8750b62ee3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EeoJobGroup\",\"label\":\"EeoJobGroup\",\"newName\":\"EeoJobGroup\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"97dc6fe5-7dbf-49b7-a86a-9e96e1f962cd\"},\"c6785ae7-1357-4aa8-922e-8c7ff7181adb\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EthnicBackground\",\"label\":\"EthnicBackground\",\"newName\":\"EthnicBackground\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"8bd43157-808f-45c5-86a5-bbf2bd939d8c\"},\"f7116e69-3dcd-400f-83b3-c458d7fc4cb4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"VeteranStatus\",\"label\":\"VeteranStatus\",\"newName\":\"VeteranStatus\",\"indexOrder\":6,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"c6214450-4192-4c85-a850-2d2940a23146\"},\"4e8bd02d-4c22-4562-a12d-bd7db2d0adec\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":7,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"ceaeefc0-1d9f-4f6f-bf52-7a57ff3f286f\"},\"0ac74a0c-3544-4fad-94f3-15ac135b0144\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CalenderYear\",\"label\":\"CalenderYear\",\"newName\":\"CalenderYear\",\"indexOrder\":8,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"09a4e939-68dc-4caa-9770-f3f501ac1cf2\"},\"812b5d6b-1bda-4abf-9f03-972c40596ef8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":9,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"b86bef18-a886-4c94-89fd-ccb26f3012b0\"},\"db825078-2bc8-4668-98c9-904c6fa22667\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":10,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"5cc0ea37-daa1-4a8b-921a-e0b2047a7413\"},\"b5bb2621-b7bc-4e15-940c-f4c1b5b64249\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Agegroup_ID\",\"label\":\"Agegroup_ID\",\"newName\":\"Agegroup_ID\",\"indexOrder\":11,\"length\":5,\"precision\":0,\"scale\":0,\"successorElement\":\"bfdb3ae5-822e-4620-bea7-b6a2d71a247e\"},\"91f8d483-3019-48e9-9ee4-9dac0a48f964\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmploymentStatus\",\"label\":\"EmploymentStatus (CONTRACT_STATUS_ID))\",\"newName\":\"EmploymentStatus\",\"indexOrder\":12,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"8add502e-081f-4523-a98f-f9c6e141a706\"},\"6cdd4c8e-decb-4c48-a723-c074a29701e5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsContingentWorker\",\"label\":\"IsContingentWorker\",\"newName\":\"IsContingentWorker\",\"indexOrder\":13,\"dataType\":\"cds.Boolean\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"7648521c-2b87-4389-acd0-837c8c794722\"},\"4cfe2feb-e2dd-4821-9d24-bc8da3acb2ff\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsFullTimeEmployee\",\"label\":\"IsFullTimeEmployee\",\"newName\":\"IsFullTimeEmployee\",\"indexOrder\":14,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"1309a20a-3dde-4e94-bfc1-a651a02c109b\"},\"d1efe6d9-ded3-4b7e-be98-43efabbde2ba\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Target_Currency\",\"label\":\"Target Currency\",\"newName\":\"Target_Currency\",\"indexOrder\":15,\"length\":3,\"precision\":0,\"scale\":0,\"successorElement\":\"34d0974c-15fe-441c-ac36-c8e9a2f06086\"},\"41f42d06-f28d-4aa7-8921-a7f9823b7aa3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeClass_CONTRACT_TYPE_ID\",\"label\":\"EmployeeClass CONTRACT_TYPE_ID\",\"newName\":\"EmployeeClass_CONTRACT_TYPE_ID\",\"indexOrder\":16,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"ca79f1bb-73c3-49c3-a378-7f78b3b24d43\"},\"b457aacb-a5ed-469c-a49e-e2be0bf9ee04\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"FromDate\",\"label\":\"FromDate\",\"newName\":\"FromDate\",\"indexOrder\":17,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"ec3ab8ad-daf1-4108-be70-6d3e8504cd96\"},\"a18fcf70-bd11-4eb1-821f-dfa2e9c8dd2e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ToDate\",\"label\":\"ToDate\",\"newName\":\"ToDate\",\"indexOrder\":18,\"isKey\":true,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"792a4efc-7d0c-4002-a525-1f0182605821\"},\"4f00faa6-8c8b-47f1-af24-fbd091fa0601\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"indexOrder\":19,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"d07ba354-5ee5-4e75-8c2a-c80e7c200334\"},\"544b1847-97e0-4030-91fb-f1572e881ec7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EeoJobCategory\",\"label\":\"EeoJobCategory\",\"newName\":\"EeoJobCategory\",\"indexOrder\":20,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"da3af0d1-5b4f-40d1-8174-126ba835cd61\"},\"17bff26b-cee2-47bf-90c2-bc38599b1623\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"RELEASE_ID\",\"label\":\"Release ID\",\"newName\":\"RELEASE_ID\",\"indexOrder\":21,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"0aa5ff18-fbf0-49f7-820a-1d22d2c729b6\"},\"03054256-aea0-436d-8990-a2a445fa7431\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeId\",\"label\":\"EmployeeId\",\"newName\":\"EmployeeId\",\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"eb5b91cf-372c-43d9-99fe-6ecd660ecf1a\"},\"fbe35fda-88f1-4c3d-a38c-329ade8b763a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonId\",\"label\":\"PersonId\",\"newName\":\"PersonId\",\"indexOrder\":1,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"a00620fe-1e31-4308-999e-7988e2a51714\"},\"d1eab22b-0861-4e0f-8727-bfbcd757bff0\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonUuid\",\"label\":\"PersonUuid\",\"newName\":\"PersonUuid\",\"isRemoved\":true,\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true},\"78ec8af1-4a2e-4401-a681-2ce78120ac9d\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Gender\",\"label\":\"Gender\",\"newName\":\"Gender\",\"indexOrder\":3,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"d3db8c73-b3e8-457d-83eb-c5aa7dd74b2f\"},\"000e948f-2140-4f0a-af02-acf654d770c8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EeoJobGroup\",\"label\":\"EeoJobGroup\",\"newName\":\"EeoJobGroup\",\"isRemoved\":true,\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true},\"53467de8-5ec7-48bd-b78e-aedac977158f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EthnicBackground\",\"label\":\"EthnicBackground\",\"newName\":\"EthnicBackground\",\"isRemoved\":true,\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true},\"c1101519-b330-4b4d-a38d-9b4d8426cb72\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"VeteranStatus\",\"label\":\"VeteranStatus\",\"newName\":\"VeteranStatus\",\"isRemoved\":true,\"indexOrder\":6,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true},\"977477bb-0ebd-4409-8013-85fd4ae2e10e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":7,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"ea38a71f-e03f-435a-8958-aeb9c0668514\"},\"970a0387-1cff-4998-8e7f-bc3a48954e72\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CalenderYear\",\"label\":\"CalenderYear\",\"newName\":\"CalenderYear\",\"isRemoved\":true,\"indexOrder\":8,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"f793131a-e7d1-403f-95b6-9160caa9cea6\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"isRemoved\":true,\"indexOrder\":9,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true},\"b2c41783-d990-4444-b8a3-ad737a7f06c7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"isRemoved\":true,\"indexOrder\":10,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true},\"ff4f7e8a-6d3b-4a2f-b088-641deee80294\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Agegroup_ID\",\"label\":\"Agegroup_ID\",\"newName\":\"Agegroup_ID\",\"isRemoved\":true,\"indexOrder\":11,\"length\":5,\"precision\":0,\"scale\":0},\"b618758a-27bb-4a04-aef8-01f2c7e46a98\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmploymentStatus\",\"label\":\"EmploymentStatus (CONTRACT_STATUS_ID))\",\"newName\":\"EmploymentStatus\",\"isRemoved\":true,\"indexOrder\":12,\"length\":5000,\"precision\":0,\"scale\":0},\"cc428355-31d1-4d02-93c3-bfec3879d4b7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsContingentWorker\",\"label\":\"IsContingentWorker\",\"newName\":\"IsContingentWorker\",\"indexOrder\":13,\"dataType\":\"cds.Boolean\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"2c5203b0-a6d5-4d42-9bfd-2b58d4c324ff\"},\"a49d99a7-1443-47c5-8f33-54ef0d44b928\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsFullTimeEmployee\",\"label\":\"IsFullTimeEmployee\",\"newName\":\"IsFullTimeEmployee\",\"indexOrder\":14,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"d81999c5-390e-4ef3-827e-ba8512db6c11\"},\"11a05456-62ec-4c51-b1be-303df90caaeb\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Target_Currency\",\"label\":\"Target Currency\",\"newName\":\"Target_Currency\",\"isRemoved\":true,\"indexOrder\":15,\"length\":3,\"precision\":0,\"scale\":0},\"8ea74547-0fdf-4d38-b9e8-87ed4e73d6ab\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeClass_CONTRACT_TYPE_ID\",\"label\":\"EmployeeClass CONTRACT_TYPE_ID\",\"newName\":\"EmployeeClass_CONTRACT_TYPE_ID\",\"isRemoved\":true,\"indexOrder\":16,\"length\":5000,\"precision\":0,\"scale\":0},\"200186c7-197e-49d7-93bc-388ad885b356\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"FromDate\",\"label\":\"FromDate\",\"newName\":\"FromDate\",\"isRemoved\":true,\"indexOrder\":17,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0},\"454fda15-b67b-411d-b95b-28fa86e66af1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ToDate\",\"label\":\"ToDate\",\"newName\":\"ToDate\",\"isRemoved\":true,\"indexOrder\":18,\"isKey\":true,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true},\"a8c4d3b0-4b50-4686-b5e9-91d8b2c2972c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"isRemoved\":true,\"indexOrder\":19,\"length\":5000,\"precision\":0,\"scale\":0},\"693ee4b0-a30d-47b4-827e-80caed9a26ff\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonUuid\",\"label\":\"PersonUuid\",\"newName\":\"PersonUuid\",\"isRemoved\":true,\"indexOrder\":0,\"length\":5000,\"precision\":0,\"scale\":0},\"9d9b3177-44d0-4a08-9102-9f0b42da3cee\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EopHc\",\"label\":\"EopHc\",\"newName\":\"EopHc\",\"indexOrder\":1,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"1ab2b8cc-41cd-4126-986c-f269175934bb\"},\"d66f7536-5681-404c-bcbc-8eaff6806240\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"AverageHc\",\"label\":\"AverageHc\",\"newName\":\"AverageHc\",\"indexOrder\":2,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"5d22ae6b-7e36-4b7b-86de-c00ca70425d3\"},\"e875675f-0353-455d-a486-7c91c24dabd7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ToDate\",\"label\":\"ToDate\",\"newName\":\"ToDate\",\"isRemoved\":true,\"indexOrder\":3,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0},\"9e471b8e-0a65-4351-9540-cb7eba3543f6\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Time\",\"label\":\"Time\",\"newName\":\"Time\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"c65a56f5-3797-4d19-949e-8c02603e6055\"},\"d3db8c73-b3e8-457d-83eb-c5aa7dd74b2f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Gender\",\"label\":\"Gender\",\"newName\":\"Gender\",\"indexOrder\":3,\"expression\":\"Gender\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"6ac3450c-6e56-45be-b88d-058b98a6fee0\"},\"4e996645-eb7d-4d09-b599-238e78f40b44\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Calculated_1\",\"label\":\"CSRD Contract Type\",\"newName\":\"CSRD_Contract_Type\",\"indexOrder\":6,\"expression\":\"CASE WHEN IsContingentWorker = TRUE THEN 'CONTR' ELSE 'EMP' END\",\"isCalculated\":true,\"length\":5,\"precision\":0,\"scale\":0,\"precisionsTable\":\"SAP.CURRENCY.VIEW.TCURX\",\"configurationTable\":\"SAP.CURRENCY.VIEW.TCURV\",\"prefactorsTable\":\"SAP.CURRENCY.VIEW.TCURF\",\"ratesTable\":\"SAP.CURRENCY.VIEW.TCURR\",\"notationsTable\":\"SAP.CURRENCY.VIEW.TCURN\",\"conversionCodesTable\":\"SAP.CURRENCY.VIEW.TCURC\",\"successorElement\":\"f8debdea-ae70-4ea3-af83-af699571c232\"},\"4fdf7337-3aa9-43ed-9b19-59fb8a998449\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Calculated_1\",\"label\":\"CSRD Working Time\",\"newName\":\"CSRD_Working_Time\",\"indexOrder\":6,\"expression\":\"CASE WHEN IsFullTimeEmployee = TRUE THEN 1 ELSE 0 END\",\"isCalculated\":true,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"precisionsTable\":\"SAP.CURRENCY.VIEW.TCURX\",\"configurationTable\":\"SAP.CURRENCY.VIEW.TCURV\",\"prefactorsTable\":\"SAP.CURRENCY.VIEW.TCURF\",\"ratesTable\":\"SAP.CURRENCY.VIEW.TCURR\",\"notationsTable\":\"SAP.CURRENCY.VIEW.TCURN\",\"conversionCodesTable\":\"SAP.CURRENCY.VIEW.TCURC\",\"successorElement\":\"d3c941ce-cdf1-4e5e-858e-2766de782855\"},\"eb5b91cf-372c-43d9-99fe-6ecd660ecf1a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeId\",\"label\":\"EmployeeId\",\"newName\":\"EmployeeId\",\"indexOrder\":0,\"expression\":\"EmployeeId\",\"isCalculated\":true,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"e942e884-09da-493b-aeab-28c51e77abb2\"},\"a00620fe-1e31-4308-999e-7988e2a51714\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonId\",\"label\":\"PersonId\",\"newName\":\"PersonId\",\"indexOrder\":1,\"expression\":\"PersonId\",\"isCalculated\":true,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"810076f7-be0a-4591-9ede-44c56e1b28f9\"},\"ea38a71f-e03f-435a-8958-aeb9c0668514\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":7,\"expression\":\"Location\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"238cc4ca-cf8e-43dc-af04-d30a85a7c60c\"},\"1ab2b8cc-41cd-4126-986c-f269175934bb\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EopHc\",\"label\":\"EopHc\",\"newName\":\"EopHc\",\"indexOrder\":1,\"expression\":\"EopHc\",\"isCalculated\":true,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"80bbf0db-bb4b-4f2a-a2ea-30a5c5ded4fa\"},\"5d22ae6b-7e36-4b7b-86de-c00ca70425d3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"AverageHc\",\"label\":\"AverageHc\",\"newName\":\"AverageHc\",\"indexOrder\":2,\"expression\":\"AverageHc\",\"isCalculated\":true,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"23dbae3f-c6f2-449d-b8af-aa45e836e1d0\"},\"c65a56f5-3797-4d19-949e-8c02603e6055\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Time\",\"label\":\"Time\",\"newName\":\"Time\",\"indexOrder\":4,\"expression\":\"Time\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"33f3cf1a-78ad-4ea1-a017-c7182197f5c1\"},\"2c5203b0-a6d5-4d42-9bfd-2b58d4c324ff\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsContingentWorker\",\"label\":\"IsContingentWorker\",\"newName\":\"IsContingentWorker\",\"indexOrder\":13,\"expression\":\"IsContingentWorker\",\"isCalculated\":true,\"dataType\":\"cds.Boolean\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"92331c63-638b-4197-8c74-1026d95678c8\"},\"d81999c5-390e-4ef3-827e-ba8512db6c11\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsFullTimeEmployee\",\"label\":\"IsFullTimeEmployee\",\"newName\":\"IsFullTimeEmployee\",\"indexOrder\":14,\"expression\":\"IsFullTimeEmployee\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"6d65c754-3ac9-49d0-b4a3-90945321140c\"},\"7de9b398-c3db-4d5a-852f-23d3e9fa9f09\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonUuid\",\"label\":\"PersonUuid\",\"newName\":\"PersonUuid\",\"indexOrder\":0,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"ea41ef81-3b78-4ae0-8353-48910c94839a\"},\"3075c9b4-004d-434a-b5a6-79ae3dfb449b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EopHc\",\"label\":\"EopHc\",\"newName\":\"EopHc\",\"indexOrder\":2,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"7d84189f-9c3d-4b4c-8f91-17d0eb821b56\"},\"bff54861-31d6-42a4-9d9c-9b67cc544f04\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"AverageHc\",\"label\":\"AverageHc\",\"newName\":\"AverageHc\",\"indexOrder\":3,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"28536743-3c8a-4239-a6f3-0b85bd8c62df\"},\"8887801b-ae48-4759-a833-feae9faa2561\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ToDate\",\"label\":\"ToDate\",\"newName\":\"ToDate\",\"indexOrder\":1,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"3fe78c1e-03a1-4dfb-ba90-8ff796960eb4\"},\"19d81388-6435-43bf-a080-cb0abf151176\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Time\",\"label\":\"Time\",\"newName\":\"Time\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"9c0c756b-a15a-4ef8-9b90-197b946f2be1\"},\"0f0e4dcb-0174-4459-8c3b-5e280ccd0bb9\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"RELEASE_ID\",\"label\":\"Release ID\",\"newName\":\"RELEASE_ID\",\"indexOrder\":5,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"9ddd3133-ea9b-40fb-9cd1-56b064f68842\"},\"c57c5f69-7f97-4475-8582-9f7da5b8205f\":{\"classDefinition\":\"sap.cdw.commonmodel.ElementMapping\",\"source\":\"3fe78c1e-03a1-4dfb-ba90-8ff796960eb4\",\"target\":\"14976470-1e26-48e6-af06-c4b1bb205dcc\"},\"651d601a-540e-4b9a-846a-4b01cdf88155\":{\"classDefinition\":\"sap.cdw.commonmodel.ElementMapping\",\"source\":\"ea41ef81-3b78-4ae0-8353-48910c94839a\",\"target\":\"c2c41ab1-7d88-4e4b-a31c-c5fba627dbaf\"},\"ad1c7fdd-9bb7-4019-848a-ab7c8ab71467\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeId\",\"label\":\"EmployeeId\",\"newName\":\"EmployeeId\",\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"03054256-aea0-436d-8990-a2a445fa7431\"},\"0182a13c-b1f5-4235-b33d-de65ca81ddb6\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonId\",\"label\":\"PersonId\",\"newName\":\"PersonId\",\"indexOrder\":2,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"fbe35fda-88f1-4c3d-a38c-329ade8b763a\"},\"f0558f89-e9ac-4ed0-b781-bd79f99b5d43\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonUuid\",\"label\":\"PersonUuid\",\"newName\":\"PersonUuid\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"d1eab22b-0861-4e0f-8727-bfbcd757bff0\"},\"a427457d-65e4-428f-b14d-602f8222ae13\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Gender\",\"label\":\"Gender\",\"newName\":\"Gender\",\"indexOrder\":6,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"78ec8af1-4a2e-4401-a681-2ce78120ac9d\"},\"55f2b6ac-9f69-45a9-a508-0b3ea627995e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EeoJobGroup\",\"label\":\"EeoJobGroup\",\"newName\":\"EeoJobGroup\",\"indexOrder\":8,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"000e948f-2140-4f0a-af02-acf654d770c8\"},\"d441e8e0-a08d-48a3-898a-b60bc501f53a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EthnicBackground\",\"label\":\"EthnicBackground\",\"newName\":\"EthnicBackground\",\"indexOrder\":9,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"53467de8-5ec7-48bd-b78e-aedac977158f\"},\"a148780c-b3a4-433f-83fd-a8ade8e833fd\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"VeteranStatus\",\"label\":\"VeteranStatus\",\"newName\":\"VeteranStatus\",\"indexOrder\":10,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"c1101519-b330-4b4d-a38d-9b4d8426cb72\"},\"e06d1a30-8ed1-4539-a12f-9bf06b632181\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":11,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"977477bb-0ebd-4409-8013-85fd4ae2e10e\"},\"125659fd-07f4-4a09-8597-63fd0988024a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CalenderYear\",\"label\":\"CalenderYear\",\"newName\":\"CalenderYear\",\"indexOrder\":12,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"970a0387-1cff-4998-8e7f-bc3a48954e72\"},\"0e24bad9-ae9c-4e00-844c-ade58337aa88\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":13,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"f793131a-e7d1-403f-95b6-9160caa9cea6\"},\"d47410fd-460d-41d5-af8c-25065f8d6429\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":14,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"b2c41783-d990-4444-b8a3-ad737a7f06c7\"},\"76e72580-965c-47e9-a515-1f70d1ed06a6\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Agegroup_ID\",\"label\":\"Agegroup_ID\",\"newName\":\"Agegroup_ID\",\"indexOrder\":15,\"length\":5,\"precision\":0,\"scale\":0,\"successorElement\":\"ff4f7e8a-6d3b-4a2f-b088-641deee80294\"},\"bf86fae1-0223-4dc2-ab1d-a2b073b38df7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmploymentStatus\",\"label\":\"EmploymentStatus (CONTRACT_STATUS_ID))\",\"newName\":\"EmploymentStatus\",\"indexOrder\":16,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"b618758a-27bb-4a04-aef8-01f2c7e46a98\"},\"1aa52ad0-e067-4359-8397-35cdddfe0bb2\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsContingentWorker\",\"label\":\"IsContingentWorker\",\"newName\":\"IsContingentWorker\",\"indexOrder\":17,\"dataType\":\"cds.Boolean\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"cc428355-31d1-4d02-93c3-bfec3879d4b7\"},\"5bfaec77-9fde-47e8-be0b-9c0d160a9bbd\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsFullTimeEmployee\",\"label\":\"IsFullTimeEmployee\",\"newName\":\"IsFullTimeEmployee\",\"indexOrder\":18,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"a49d99a7-1443-47c5-8f33-54ef0d44b928\"},\"710dc721-7254-44aa-85cb-b7432d7947b2\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Target_Currency\",\"label\":\"Target Currency\",\"newName\":\"Target_Currency\",\"indexOrder\":19,\"length\":3,\"precision\":0,\"scale\":0,\"successorElement\":\"11a05456-62ec-4c51-b1be-303df90caaeb\"},\"66dd89a8-d129-4c1c-bace-15943ee45cf4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeClass_CONTRACT_TYPE_ID\",\"label\":\"EmployeeClass CONTRACT_TYPE_ID\",\"newName\":\"EmployeeClass_CONTRACT_TYPE_ID\",\"indexOrder\":20,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"8ea74547-0fdf-4d38-b9e8-87ed4e73d6ab\"},\"cd4e4492-6250-4ee6-a7b8-0820c0d188fa\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"FromDate\",\"label\":\"FromDate\",\"newName\":\"FromDate\",\"indexOrder\":21,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"200186c7-197e-49d7-93bc-388ad885b356\"},\"a09d9b6a-3a9b-48cc-bcbb-ef8cd2d04bf2\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ToDate\",\"label\":\"ToDate\",\"newName\":\"ToDate\",\"indexOrder\":22,\"isKey\":true,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"454fda15-b67b-411d-b95b-28fa86e66af1\"},\"2ce0bda6-c464-44b3-9bd1-41dc773d2354\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"indexOrder\":23,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"a8c4d3b0-4b50-4686-b5e9-91d8b2c2972c\"},\"bb6d0293-5d8e-471b-80b8-1ef8fd1587a1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonUuid\",\"label\":\"PersonUuid\",\"newName\":\"PersonUuid\",\"indexOrder\":1,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"693ee4b0-a30d-47b4-827e-80caed9a26ff\"},\"00dcd0f7-0c52-40d8-abb6-32d747588993\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EopHc\",\"label\":\"EopHc\",\"newName\":\"EopHc\",\"indexOrder\":3,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"9d9b3177-44d0-4a08-9102-9f0b42da3cee\"},\"3e597547-2ebe-4c1f-9fb5-d96f7a4d5d07\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"AverageHc\",\"label\":\"AverageHc\",\"newName\":\"AverageHc\",\"indexOrder\":5,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"d66f7536-5681-404c-bcbc-8eaff6806240\"},\"5609f37f-8007-455d-a157-b69f82ca2454\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ToDate\",\"label\":\"ToDate\",\"newName\":\"ToDate\",\"indexOrder\":7,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"e875675f-0353-455d-a486-7c91c24dabd7\"},\"6239401c-1713-4e9c-8732-3c65bcda493b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Time\",\"label\":\"Time\",\"newName\":\"Time\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"9e471b8e-0a65-4351-9540-cb7eba3543f6\"},\"b276665a-7666-4479-909c-d45aabf5f04d\":{\"classDefinition\":\"sap.cdw.commonmodel.LevelBasedHierarchy\",\"name\":\"YYYY\",\"label\":\"Year\",\"levels\":{\"3485df4b-fc71-40f5-b830-c76d53ff212b\":{}}},\"0755087c-a53c-48e8-89ae-05863c6a8a39\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR\",\"label\":\"Year\",\"newName\":\"YEAR\",\"indexOrder\":13,\"length\":4,\"precision\":0,\"scale\":0,\"successorElement\":\"3ed61c05-582e-4548-9dcb-65e7a20c9cc8\"},\"7ec601cd-47d5-453b-9bfb-b00013fda9f4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"MONTH\",\"label\":\"Month\",\"newName\":\"MONTH\",\"indexOrder\":0,\"length\":2,\"precision\":0,\"scale\":0,\"successorElement\":\"1097a9df-1069-47b1-8a1c-b8c4a5fc9867\"},\"81142010-542f-42d9-bcba-d8a591cf3695\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"MONTH_INT\",\"label\":\"Month (Number)\",\"newName\":\"MONTH_INT\",\"indexOrder\":1,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"2a1ed9fc-cd90-44fe-8d15-882e7fd8ab59\"},\"4fb7693b-a97f-44a4-bcdf-02b3553420c4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"MONTH_LAST_DAY\",\"label\":\"Month Last Day\",\"newName\":\"MONTH_LAST_DAY\",\"indexOrder\":2,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"e476b877-fe5a-4a61-a9f1-ae124a7159b3\"},\"00a9ede7-e74e-4594-8868-849f7aa4e7e5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"QUARTER\",\"label\":\"Quarter\",\"newName\":\"QUARTER\",\"indexOrder\":3,\"length\":2,\"precision\":0,\"scale\":0,\"successorElement\":\"8e9b95f4-997a-4feb-936f-a353f3c8b68b\"},\"bd0a94a7-01a6-4900-a791-98391847a84e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"QUARTER_INT\",\"label\":\"Quarter (Number)\",\"newName\":\"QUARTER_INT\",\"indexOrder\":4,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"c52d5915-a3d8-4da1-8084-2a8c1710e903\"},\"8225abb5-42bf-4fc3-bcfc-c25e64bd558f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"SECOND\",\"label\":\"Second\",\"newName\":\"SECOND\",\"indexOrder\":5,\"length\":2,\"precision\":0,\"scale\":0,\"successorElement\":\"d6faf050-2416-4f84-b780-8c94469ef4c0\"},\"71250948-a489-40fa-bac9-42b234d32de5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"SECOND_INT\",\"label\":\"Second (Number)\",\"newName\":\"SECOND_INT\",\"indexOrder\":6,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"bc4f3799-57eb-4b14-963e-5c996d74c7aa\"},\"0ef9350f-e910-4512-a250-a406a5f5eff4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"TZNTSTMPL\",\"label\":\"UTC Timestamp (long form)\",\"newName\":\"TZNTSTMPL\",\"indexOrder\":7,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":21,\"scale\":7,\"successorElement\":\"f63c6995-8bc4-4af4-84c5-5c1dbd84676a\"},\"6374494d-5aad-4e66-a74d-b04331faf4d2\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"TZNTSTMPS\",\"label\":\"UTC Timestamp (short form)\",\"newName\":\"TZNTSTMPS\",\"indexOrder\":8,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":15,\"scale\":0,\"successorElement\":\"30b564d4-e91b-4772-8073-a858d02ea7b6\"},\"92ec203a-45c3-4490-bb57-cd1d44c246b1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"WEEK\",\"label\":\"Week\",\"newName\":\"WEEK\",\"indexOrder\":9,\"length\":2,\"precision\":0,\"scale\":0,\"successorElement\":\"e871e7c0-12b7-4da2-8f7f-86984d0167cb\"},\"7f3f365c-1d31-491f-97b8-f05b8e1447c7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"WEEK_INT\",\"label\":\"Week (Number)\",\"newName\":\"WEEK_INT\",\"indexOrder\":10,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"790b9e9e-0fe6-44fd-b0cc-bd06186aafba\"},\"8f920240-0af1-47ef-a9a5-734230d2fea0\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"WEEK_YEAR\",\"label\":\"Week Year\",\"newName\":\"WEEK_YEAR\",\"indexOrder\":11,\"length\":4,\"precision\":0,\"scale\":0,\"successorElement\":\"9232fd49-0b44-4235-9dd2-c94cc2d214c5\"},\"770a9c3d-d422-4f92-b42a-766aedca848f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"WEEK_YEAR_INT\",\"label\":\"Week Year (Number)\",\"newName\":\"WEEK_YEAR_INT\",\"indexOrder\":12,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"616ab486-9237-4b70-9353-f821f9074d6a\"},\"aaf16e8c-c9e4-4f75-98da-daa695cd2fd5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR_INT\",\"label\":\"Year (Number)\",\"newName\":\"YEAR_INT\",\"indexOrder\":14,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"9913f002-9691-44fa-8df9-a7c66a75ff5a\"},\"ac63d7c5-1b16-4930-8cb0-035a15c2c1b5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"MINUTE_INT\",\"label\":\"Minute (Number)\",\"newName\":\"MINUTE_INT\",\"indexOrder\":15,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"791b1e60-6ab3-4460-8d44-9e6ecda488f1\"},\"fcb41dcc-4ca9-4fac-8bcb-826e35cbd0e8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"MINUTE\",\"label\":\"Minute\",\"newName\":\"MINUTE\",\"indexOrder\":16,\"length\":2,\"precision\":0,\"scale\":0,\"successorElement\":\"9f315193-c6d2-4974-8a08-1a698620718a\"},\"408755b6-1a33-4e6d-be12-8cf9a7392d9c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"HOUR_INT\",\"label\":\"Hour (Number)\",\"newName\":\"HOUR_INT\",\"indexOrder\":17,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"02d3ce0e-9421-46c9-abe9-ab682709ef2e\"},\"77e47d86-403b-45ca-a77c-726dea6fdaf5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"HOUR\",\"label\":\"Hour\",\"newName\":\"HOUR\",\"indexOrder\":18,\"length\":2,\"precision\":0,\"scale\":0,\"successorElement\":\"bbae9f06-165d-40f1-8bce-188487f87f8b\"},\"49d6e0c4-7f68-4611-936e-da9d5522db3f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DAY_OF_WEEK_INT\",\"label\":\"Day of Week (Number)\",\"newName\":\"DAY_OF_WEEK_INT\",\"indexOrder\":19,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"79a65d97-50dd-4339-b425-f87a381d646a\"},\"002950f9-96df-405a-956e-0fcfae635822\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DAY_OF_WEEK\",\"label\":\"Day of Week\",\"newName\":\"DAY_OF_WEEK\",\"indexOrder\":20,\"length\":2,\"precision\":0,\"scale\":0,\"successorElement\":\"268b1244-4350-468b-9452-0c7a2cb79fd5\"},\"f7f3748a-55ba-4795-8a30-24a16476deda\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DAY_INT\",\"label\":\"Day (Number)\",\"newName\":\"DAY_INT\",\"indexOrder\":21,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"341c6e02-d8c3-4586-a41e-9c4221ec4383\"},\"d007254d-eb86-4faa-a984-0fb1ea26ee1c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DAY\",\"label\":\"Day\",\"newName\":\"DAY\",\"indexOrder\":22,\"length\":2,\"precision\":0,\"scale\":0,\"successorElement\":\"06230800-c5c5-4c00-9130-99db3b86c8af\"},\"bd9e5040-6a53-4a37-ae8a-f26b7b94d1fc\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DATE_SQL\",\"label\":\"Date\",\"newName\":\"DATE_SQL\",\"indexOrder\":23,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"3f5d3ad3-9cfc-4375-b3d4-cf7394a58c6b\"},\"bc6bf4a9-dc50-489b-9e18-c1747d7f6c30\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DATE_SAP\",\"label\":\"Date (String)\",\"newName\":\"DATE_SAP\",\"indexOrder\":24,\"length\":8,\"precision\":0,\"scale\":0,\"successorElement\":\"150d2637-3059-4b2f-b090-733cc9f7c4cc\"},\"d3cb3c8d-0eff-44bf-a2b8-79b95bb6e175\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DATETIME_SAP\",\"label\":\"Timestamp (String)\",\"newName\":\"DATETIME_SAP\",\"indexOrder\":25,\"length\":14,\"precision\":0,\"scale\":0,\"successorElement\":\"0f6d2ac7-3fec-4107-9a53-7e2cb8b7bfff\"},\"236312c7-ac5a-4d57-9295-e7c44d63a66c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DATETIMESTAMP\",\"label\":\"Timestamp\",\"newName\":\"DATETIMESTAMP\",\"indexOrder\":26,\"isKey\":true,\"dataType\":\"cds.Timestamp\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"2a70b6b9-b0e9-4591-b829-fe1b202012e1\"},\"51ac69e3-e78f-40da-8421-d90256dc204e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CALWEEK\",\"label\":\"Calendar Week\",\"newName\":\"CALWEEK\",\"indexOrder\":27,\"length\":6,\"precision\":0,\"scale\":0,\"successorElement\":\"366c6b02-21ca-4bcd-9559-bdddc203cbaf\"},\"6edf2e8f-095b-42b3-af53-9eebf42b509c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CALQUARTER\",\"label\":\"Calendar Quarter\",\"newName\":\"CALQUARTER\",\"indexOrder\":28,\"length\":5,\"precision\":0,\"scale\":0,\"successorElement\":\"5b839040-b9ad-4978-b498-28d32ff8f708\"},\"607cc71f-8197-4faa-8452-6083dd9a4543\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CALMONTH\",\"label\":\"Calendar Month\",\"newName\":\"CALMONTH\",\"indexOrder\":29,\"length\":6,\"precision\":0,\"scale\":0,\"successorElement\":\"4430ba93-2dd8-48d1-9c51-cfb3b8c2fce7\"},\"65982fab-035a-4064-a785-638abfaf54c8\":{\"classDefinition\":\"sap.cdw.commonmodel.ElementMapping\",\"source\":\"c65a56f5-3797-4d19-949e-8c02603e6055\",\"target\":\"4430ba93-2dd8-48d1-9c51-cfb3b8c2fce7\"},\"6ac3450c-6e56-45be-b88d-058b98a6fee0\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Gender\",\"label\":\"Gender\",\"newName\":\"Gender\",\"indexOrder\":6,\"expression\":\"Gender\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"79249c72-375c-4216-bc4a-bf047e70aca6\"},\"f8debdea-ae70-4ea3-af83-af699571c232\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Calculated_1\",\"label\":\"CSRD Contract Type\",\"newName\":\"CSRD_Contract_Type\",\"indexOrder\":9,\"expression\":\"\",\"isCalculated\":true,\"length\":5,\"precision\":0,\"scale\":0,\"precisionsTable\":\"SAP.CURRENCY.VIEW.TCURX\",\"configurationTable\":\"SAP.CURRENCY.VIEW.TCURV\",\"prefactorsTable\":\"SAP.CURRENCY.VIEW.TCURF\",\"ratesTable\":\"SAP.CURRENCY.VIEW.TCURR\",\"notationsTable\":\"SAP.CURRENCY.VIEW.TCURN\",\"conversionCodesTable\":\"SAP.CURRENCY.VIEW.TCURC\",\"successorElement\":\"73e6ddde-8d08-4e4d-8177-dc773b8d2a5b\"},\"d3c941ce-cdf1-4e5e-858e-2766de782855\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Calculated_1\",\"label\":\"CSRD Working Time\",\"newName\":\"CSRD_Working_Time\",\"indexOrder\":10,\"expression\":\"\",\"isCalculated\":true,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"precisionsTable\":\"SAP.CURRENCY.VIEW.TCURX\",\"configurationTable\":\"SAP.CURRENCY.VIEW.TCURV\",\"prefactorsTable\":\"SAP.CURRENCY.VIEW.TCURF\",\"ratesTable\":\"SAP.CURRENCY.VIEW.TCURR\",\"notationsTable\":\"SAP.CURRENCY.VIEW.TCURN\",\"conversionCodesTable\":\"SAP.CURRENCY.VIEW.TCURC\",\"successorElement\":\"71f038c5-768c-48f9-84ed-b89a24c36e2c\"},\"e942e884-09da-493b-aeab-28c51e77abb2\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeId\",\"label\":\"EmployeeId\",\"newName\":\"EmployeeId\",\"indexOrder\":0,\"expression\":\"EmployeeId\",\"isCalculated\":true,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"7ebbba3d-be05-41c8-b5af-22abfa48a497\"},\"810076f7-be0a-4591-9ede-44c56e1b28f9\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonId\",\"label\":\"PersonId\",\"newName\":\"PersonId\",\"indexOrder\":2,\"expression\":\"PersonId\",\"isCalculated\":true,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"7b75f147-ce9b-4ff3-950a-48ef7a407824\"},\"238cc4ca-cf8e-43dc-af04-d30a85a7c60c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":11,\"expression\":\"Location\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"247ba0ce-9a36-4099-8df2-3a942d8bc186\"},\"80bbf0db-bb4b-4f2a-a2ea-30a5c5ded4fa\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EopHc\",\"label\":\"EopHc\",\"newName\":\"EopHc\",\"indexOrder\":3,\"expression\":\"EopHc\",\"isCalculated\":true,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"702c9cff-569e-4942-8670-99d735cfe8a6\"},\"23dbae3f-c6f2-449d-b8af-aa45e836e1d0\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"AverageHc\",\"label\":\"AverageHc\",\"newName\":\"AverageHc\",\"indexOrder\":5,\"expression\":\"AverageHc\",\"isCalculated\":true,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"992db9e6-46c9-44fd-973f-89189619ce20\"},\"33f3cf1a-78ad-4ea1-a017-c7182197f5c1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Time\",\"label\":\"Time\",\"newName\":\"Time\",\"indexOrder\":8,\"expression\":\"Time\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"14cf84b8-1020-4264-9176-8c6b7f864f76\"},\"439ad2ec-a9be-4997-a3f2-98709a093e8c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR\",\"label\":\"Calendar Year\",\"newName\":\"YEAR\",\"indexOrder\":1,\"length\":4,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.calendar.year\",\"isNotNull\":true,\"successorElement\":\"d348d853-f685-4533-89c5-229a330f6b4d\"},\"cf16207e-4f58-4422-bbbb-5af24be8b941\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CALMONTH\",\"label\":\"Calendar Month\",\"newName\":\"CALMONTH\",\"indexOrder\":29,\"length\":6,\"precision\":0,\"scale\":0,\"successorElement\":\"0778ab03-cafe-4cf3-a70a-f68276dcae8d\"},\"92331c63-638b-4197-8c74-1026d95678c8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsContingentWorker\",\"label\":\"IsContingentWorker\",\"newName\":\"IsContingentWorker\",\"indexOrder\":13,\"expression\":\"IsContingentWorker\",\"isCalculated\":true,\"dataType\":\"cds.Boolean\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"be82bbf9-21ab-45b0-9b34-9c781e590bf0\"},\"6d65c754-3ac9-49d0-b4a3-90945321140c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsFullTimeEmployee\",\"label\":\"IsFullTimeEmployee\",\"newName\":\"IsFullTimeEmployee\",\"indexOrder\":14,\"expression\":\"IsFullTimeEmployee\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"6fad3ed7-3061-4b65-8150-57e508212f72\"},\"3ed61c05-582e-4548-9dcb-65e7a20c9cc8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR\",\"label\":\"Calendar Year\",\"newName\":\"YEAR\",\"indexOrder\":13,\"length\":4,\"precision\":0,\"scale\":0,\"successorElement\":\"439ad2ec-a9be-4997-a3f2-98709a093e8c\"},\"1097a9df-1069-47b1-8a1c-b8c4a5fc9867\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"MONTH\",\"label\":\"Month\",\"newName\":\"MONTH\",\"isRemoved\":true,\"indexOrder\":0,\"length\":2,\"precision\":0,\"scale\":0},\"2a1ed9fc-cd90-44fe-8d15-882e7fd8ab59\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"MONTH_INT\",\"label\":\"Month (Number)\",\"newName\":\"MONTH_INT\",\"isRemoved\":true,\"indexOrder\":1,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"e476b877-fe5a-4a61-a9f1-ae124a7159b3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"MONTH_LAST_DAY\",\"label\":\"Month Last Day\",\"newName\":\"MONTH_LAST_DAY\",\"isRemoved\":true,\"indexOrder\":2,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"8e9b95f4-997a-4feb-936f-a353f3c8b68b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"QUARTER\",\"label\":\"Quarter\",\"newName\":\"QUARTER\",\"isRemoved\":true,\"indexOrder\":3,\"length\":2,\"precision\":0,\"scale\":0},\"c52d5915-a3d8-4da1-8084-2a8c1710e903\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"QUARTER_INT\",\"label\":\"Quarter (Number)\",\"newName\":\"QUARTER_INT\",\"isRemoved\":true,\"indexOrder\":4,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"d6faf050-2416-4f84-b780-8c94469ef4c0\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"SECOND\",\"label\":\"Second\",\"newName\":\"SECOND\",\"isRemoved\":true,\"indexOrder\":5,\"length\":2,\"precision\":0,\"scale\":0},\"bc4f3799-57eb-4b14-963e-5c996d74c7aa\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"SECOND_INT\",\"label\":\"Second (Number)\",\"newName\":\"SECOND_INT\",\"isRemoved\":true,\"indexOrder\":6,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"f63c6995-8bc4-4af4-84c5-5c1dbd84676a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"TZNTSTMPL\",\"label\":\"UTC Timestamp (long form)\",\"newName\":\"TZNTSTMPL\",\"isRemoved\":true,\"indexOrder\":7,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":21,\"scale\":7},\"30b564d4-e91b-4772-8073-a858d02ea7b6\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"TZNTSTMPS\",\"label\":\"UTC Timestamp (short form)\",\"newName\":\"TZNTSTMPS\",\"isRemoved\":true,\"indexOrder\":8,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":15,\"scale\":0},\"e871e7c0-12b7-4da2-8f7f-86984d0167cb\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"WEEK\",\"label\":\"Week\",\"newName\":\"WEEK\",\"isRemoved\":true,\"indexOrder\":9,\"length\":2,\"precision\":0,\"scale\":0},\"790b9e9e-0fe6-44fd-b0cc-bd06186aafba\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"WEEK_INT\",\"label\":\"Week (Number)\",\"newName\":\"WEEK_INT\",\"isRemoved\":true,\"indexOrder\":10,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"9232fd49-0b44-4235-9dd2-c94cc2d214c5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"WEEK_YEAR\",\"label\":\"Week Year\",\"newName\":\"WEEK_YEAR\",\"isRemoved\":true,\"indexOrder\":11,\"length\":4,\"precision\":0,\"scale\":0},\"616ab486-9237-4b70-9353-f821f9074d6a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"WEEK_YEAR_INT\",\"label\":\"Week Year (Number)\",\"newName\":\"WEEK_YEAR_INT\",\"isRemoved\":true,\"indexOrder\":12,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"9913f002-9691-44fa-8df9-a7c66a75ff5a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR_INT\",\"label\":\"Year (Number)\",\"newName\":\"YEAR_INT\",\"isRemoved\":true,\"indexOrder\":14,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"791b1e60-6ab3-4460-8d44-9e6ecda488f1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"MINUTE_INT\",\"label\":\"Minute (Number)\",\"newName\":\"MINUTE_INT\",\"isRemoved\":true,\"indexOrder\":15,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"9f315193-c6d2-4974-8a08-1a698620718a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"MINUTE\",\"label\":\"Minute\",\"newName\":\"MINUTE\",\"isRemoved\":true,\"indexOrder\":16,\"length\":2,\"precision\":0,\"scale\":0},\"02d3ce0e-9421-46c9-abe9-ab682709ef2e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"HOUR_INT\",\"label\":\"Hour (Number)\",\"newName\":\"HOUR_INT\",\"isRemoved\":true,\"indexOrder\":17,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"bbae9f06-165d-40f1-8bce-188487f87f8b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"HOUR\",\"label\":\"Hour\",\"newName\":\"HOUR\",\"isRemoved\":true,\"indexOrder\":18,\"length\":2,\"precision\":0,\"scale\":0},\"79a65d97-50dd-4339-b425-f87a381d646a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DAY_OF_WEEK_INT\",\"label\":\"Day of Week (Number)\",\"newName\":\"DAY_OF_WEEK_INT\",\"isRemoved\":true,\"indexOrder\":19,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"268b1244-4350-468b-9452-0c7a2cb79fd5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DAY_OF_WEEK\",\"label\":\"Day of Week\",\"newName\":\"DAY_OF_WEEK\",\"isRemoved\":true,\"indexOrder\":20,\"length\":2,\"precision\":0,\"scale\":0},\"341c6e02-d8c3-4586-a41e-9c4221ec4383\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DAY_INT\",\"label\":\"Day (Number)\",\"newName\":\"DAY_INT\",\"isRemoved\":true,\"indexOrder\":21,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"06230800-c5c5-4c00-9130-99db3b86c8af\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DAY\",\"label\":\"Day\",\"newName\":\"DAY\",\"isRemoved\":true,\"indexOrder\":22,\"length\":2,\"precision\":0,\"scale\":0},\"3f5d3ad3-9cfc-4375-b3d4-cf7394a58c6b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DATE_SQL\",\"label\":\"Date\",\"newName\":\"DATE_SQL\",\"isRemoved\":true,\"indexOrder\":23,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0},\"150d2637-3059-4b2f-b090-733cc9f7c4cc\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DATE_SAP\",\"label\":\"Date (String)\",\"newName\":\"DATE_SAP\",\"isRemoved\":true,\"indexOrder\":24,\"length\":8,\"precision\":0,\"scale\":0},\"0f6d2ac7-3fec-4107-9a53-7e2cb8b7bfff\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DATETIME_SAP\",\"label\":\"Timestamp (String)\",\"newName\":\"DATETIME_SAP\",\"isRemoved\":true,\"indexOrder\":25,\"length\":14,\"precision\":0,\"scale\":0},\"2a70b6b9-b0e9-4591-b829-fe1b202012e1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DATETIMESTAMP\",\"label\":\"Timestamp\",\"newName\":\"DATETIMESTAMP\",\"isRemoved\":true,\"indexOrder\":26,\"isKey\":true,\"dataType\":\"cds.Timestamp\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true},\"366c6b02-21ca-4bcd-9559-bdddc203cbaf\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CALWEEK\",\"label\":\"Calendar Week\",\"newName\":\"CALWEEK\",\"isRemoved\":true,\"indexOrder\":27,\"length\":6,\"precision\":0,\"scale\":0},\"5b839040-b9ad-4978-b498-28d32ff8f708\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CALQUARTER\",\"label\":\"Calendar Quarter\",\"newName\":\"CALQUARTER\",\"isRemoved\":true,\"indexOrder\":28,\"length\":5,\"precision\":0,\"scale\":0},\"4430ba93-2dd8-48d1-9c51-cfb3b8c2fce7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CALMONTH\",\"label\":\"Calendar Month\",\"newName\":\"CALMONTH\",\"indexOrder\":29,\"length\":6,\"precision\":0,\"scale\":0,\"successorElement\":\"cf16207e-4f58-4422-bbbb-5af24be8b941\"},\"79249c72-375c-4216-bc4a-bf047e70aca6\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Gender\",\"label\":\"Gender\",\"newName\":\"Gender\",\"indexOrder\":6,\"expression\":\"Gender\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"1f03410e-b478-4c4e-9642-f89d993d2090\"},\"73e6ddde-8d08-4e4d-8177-dc773b8d2a5b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Calculated_1\",\"label\":\"CSRD Contract Type\",\"newName\":\"CSRD_Contract_Type\",\"indexOrder\":9,\"expression\":\"\",\"isCalculated\":true,\"length\":5,\"precision\":0,\"scale\":0,\"precisionsTable\":\"SAP.CURRENCY.VIEW.TCURX\",\"configurationTable\":\"SAP.CURRENCY.VIEW.TCURV\",\"prefactorsTable\":\"SAP.CURRENCY.VIEW.TCURF\",\"ratesTable\":\"SAP.CURRENCY.VIEW.TCURR\",\"notationsTable\":\"SAP.CURRENCY.VIEW.TCURN\",\"conversionCodesTable\":\"SAP.CURRENCY.VIEW.TCURC\",\"successorElement\":\"00a067ce-fd74-40a0-835c-f9a67bc70b22\"},\"71f038c5-768c-48f9-84ed-b89a24c36e2c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Calculated_1\",\"label\":\"CSRD Working Time\",\"newName\":\"CSRD_Working_Time\",\"indexOrder\":10,\"expression\":\"\",\"isCalculated\":true,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"precisionsTable\":\"SAP.CURRENCY.VIEW.TCURX\",\"configurationTable\":\"SAP.CURRENCY.VIEW.TCURV\",\"prefactorsTable\":\"SAP.CURRENCY.VIEW.TCURF\",\"ratesTable\":\"SAP.CURRENCY.VIEW.TCURR\",\"notationsTable\":\"SAP.CURRENCY.VIEW.TCURN\",\"conversionCodesTable\":\"SAP.CURRENCY.VIEW.TCURC\",\"successorElement\":\"9983f37c-55ad-4d17-bfbf-a19531308f95\"},\"7ebbba3d-be05-41c8-b5af-22abfa48a497\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeId\",\"label\":\"EmployeeId\",\"newName\":\"EmployeeId\",\"indexOrder\":0,\"expression\":\"EmployeeId\",\"isCalculated\":true,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"e7a560fc-3181-4248-9fa4-d0b83084a2c0\"},\"7b75f147-ce9b-4ff3-950a-48ef7a407824\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonId\",\"label\":\"PersonId\",\"newName\":\"PersonId\",\"indexOrder\":2,\"expression\":\"PersonId\",\"isCalculated\":true,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"08080450-2799-4721-9f9d-0cdf2530153b\"},\"247ba0ce-9a36-4099-8df2-3a942d8bc186\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":11,\"expression\":\"Location\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"1a88b02e-dd9a-4c3e-871f-54cded48c656\"},\"702c9cff-569e-4942-8670-99d735cfe8a6\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EopHc\",\"label\":\"EopHc\",\"newName\":\"EopHc\",\"indexOrder\":3,\"expression\":\"EopHc\",\"isCalculated\":true,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"2b339543-0660-4dee-87dc-fbbd712f4d57\"},\"992db9e6-46c9-44fd-973f-89189619ce20\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"AverageHc\",\"label\":\"AverageHc\",\"newName\":\"AverageHc\",\"indexOrder\":5,\"expression\":\"AverageHc\",\"isCalculated\":true,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"8d5785eb-0c33-4ec0-b88f-cbf41f762f9b\"},\"14cf84b8-1020-4264-9176-8c6b7f864f76\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Time\",\"label\":\"Time\",\"newName\":\"Time\",\"indexOrder\":8,\"expression\":\"Time\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"61ea8735-dcb8-4d4d-a447-3e81244de031\"},\"d348d853-f685-4533-89c5-229a330f6b4d\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR\",\"label\":\"Calendar Year\",\"newName\":\"YEAR\",\"indexOrder\":1,\"length\":4,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.calendar.year\",\"isNotNull\":true,\"successorElement\":\"7ee9f705-5114-4aae-8958-32674a83ae62\"},\"0778ab03-cafe-4cf3-a70a-f68276dcae8d\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CALMONTH\",\"label\":\"Calendar Month\",\"newName\":\"CALMONTH\",\"isRemoved\":true,\"indexOrder\":29,\"length\":6,\"precision\":0,\"scale\":0},\"be82bbf9-21ab-45b0-9b34-9c781e590bf0\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsContingentWorker\",\"label\":\"IsContingentWorker\",\"newName\":\"IsContingentWorker\",\"isRemoved\":true,\"indexOrder\":13,\"expression\":\"IsContingentWorker\",\"isCalculated\":true,\"dataType\":\"cds.Boolean\",\"length\":0,\"precision\":0,\"scale\":0},\"6fad3ed7-3061-4b65-8150-57e508212f72\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsFullTimeEmployee\",\"label\":\"IsFullTimeEmployee\",\"newName\":\"IsFullTimeEmployee\",\"isRemoved\":true,\"indexOrder\":14,\"expression\":\"IsFullTimeEmployee\",\"isCalculated\":true,\"length\":5000,\"precision\":0,\"scale\":0},\"012712c5-f6db-4509-976e-340d8f384100\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.OutputSymbol\",\"x\":553.9999976158142,\"y\":-26.362944523669157,\"width\":140,\"height\":40,\"object\":\"299e286c-1713-4bf2-aeda-4bb882102d69\"},\"7ad6a98a-0f03-4ccc-9609-4cfb670f9915\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.JoinSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":-40,\"y\":-24.88033315383499,\"isHidden\":true},\"00f86e64-77fe-4a70-9695-5e82e82de6de\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.EntitySymbol\",\"_height\":40,\"x\":-669.9999976158142,\"y\":25.705026199466943,\"width\":168,\"object\":\"137fc70e-8e8c-4fe2-bd22-b5dcfc5704cc\"},\"aa444229-0b76-43b8-a7e2-f1116c8c049a\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.RenameSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":62,\"y\":22.302321153858117,\"object\":\"62deb887-7db0-468d-90c8-935e035c7fdd\"},\"5ee345bc-82d7-47f7-b804-706c47693fd3\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.CalculatedSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":239.9999988079071,\"y\":25.379115120101545,\"object\":\"c1eb6444-b165-4935-869d-ffd0e887e8cb\"},\"a401a363-325b-4c4f-8814-67d546a22c06\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"110,38.30232115385812 204.99999940395355,38.30232115385812 204.99999940395355,41.379115120101545 239.9999988079071,41.379115120101545\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"aa444229-0b76-43b8-a7e2-f1116c8c049a\",\"targetSymbol\":\"5ee345bc-82d7-47f7-b804-706c47693fd3\"},\"2d4510cd-7d42-4ba9-b1ce-08a6e198d3a5\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.JoinSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":-96,\"y\":22.302321153858117,\"object\":\"ace659e1-0940-41da-94fe-413b8f204484\"},\"02c55ccd-34cc-40fa-9580-a0da3ba4f21e\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.EntitySymbol\",\"_height\":40,\"x\":-451.9999976158142,\"y\":-60.29497380053306,\"width\":168,\"object\":\"52599ad5-c66b-47d0-9421-d5ef368c0e09\"},\"01a7a680-9997-4270-84e9-5eb34e621c22\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"-48,38.30232115385812 62,38.30232115385812\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"2d4510cd-7d42-4ba9-b1ce-08a6e198d3a5\",\"targetSymbol\":\"aa444229-0b76-43b8-a7e2-f1116c8c049a\"},\"380e49d0-8ca5-4ea5-9c20-e3675032333c\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.JoinSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":357.9999976158142,\"y\":-22.362944523669157,\"object\":\"e29e44b7-a875-4ef3-be65-21908c09335b\"},\"8d997130-fafd-4843-af65-adebe01191b2\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.EntitySymbol\",\"_height\":40,\"x\":2,\"y\":-67.6976788461419,\"width\":168,\"object\":\"e505ed1b-a921-4ced-979c-b7db20e1a69f\"},\"0276ab38-4a9e-42ce-8e42-6ef06c191b1a\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.RenameSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":239.9999988079071,\"y\":-59.248884949993524,\"object\":\"564ee930-f8f0-4cce-88f4-496f5e9cac69\"},\"052ac92c-2d97-44e3-89eb-53d0688d3177\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"170,-47.6976788461419 204.99999940395355,-47.6976788461419 204.99999940395355,-43.248884949993524 239.9999988079071,-43.248884949993524\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"8d997130-fafd-4843-af65-adebe01191b2\",\"targetSymbol\":\"0276ab38-4a9e-42ce-8e42-6ef06c191b1a\"},\"87cd82df-1745-40b8-bf00-05c81cf39cc1\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"isLeftInput\":false,\"points\":\"287.9999988079071,-43.248884949993524 322.99999821186066,-43.248884949993524 322.99999821186066,-11.696277857002485 357.9999976158142,-11.696277857002485\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"0276ab38-4a9e-42ce-8e42-6ef06c191b1a\",\"targetSymbol\":\"380e49d0-8ca5-4ea5-9c20-e3675032333c\",\"object\":\"e29e44b7-a875-4ef3-be65-21908c09335b\"},\"69b682bf-8be7-4697-ba08-5cc09be42ba8\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"287.9999988079071,41.379115120101545 322.99999821186066,41.379115120101545 322.99999821186066,-1.0296111903358138 357.9999976158142,-1.0296111903358138\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"5ee345bc-82d7-47f7-b804-706c47693fd3\",\"targetSymbol\":\"380e49d0-8ca5-4ea5-9c20-e3675032333c\",\"object\":\"e29e44b7-a875-4ef3-be65-21908c09335b\"},\"328a1357-b310-43cc-9b6d-64e6e9b739c6\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.RenameSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":455.9999976158142,\"y\":-22.362944523669157,\"object\":\"100b66ad-8e4e-4761-9356-fb1fe2523e49\"},\"009a88f1-1472-4cfc-a937-2dbc4db85453\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"405.9999976158142,-6.362944523669157 455.9999976158142,-6.362944523669157\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"380e49d0-8ca5-4ea5-9c20-e3675032333c\",\"targetSymbol\":\"328a1357-b310-43cc-9b6d-64e6e9b739c6\"},\"1985cb7c-9f95-4084-a399-aa440b7476d2\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"503.9999976158142,-6.362944523669157 553.9999976158142,-6.362944523669157\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"328a1357-b310-43cc-9b6d-64e6e9b739c6\",\"targetSymbol\":\"012712c5-f6db-4509-976e-340d8f384100\"},\"61471de8-c918-4fe8-b89b-5238a34b8a70\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.RenameSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":-213.9999988079071,\"y\":-48.93032122395317,\"object\":\"3debad97-e258-4845-9ec2-e66ef73de855\"},\"ade0d2eb-ef21-49be-98b6-1cbb69c1d70d\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"-283.9999976158142,-40.29497380053306 -248.99999821186066,-40.29497380053306 -248.99999821186066,-32.93032122395317 -213.9999988079071,-32.93032122395317\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"02c55ccd-34cc-40fa-9580-a0da3ba4f21e\",\"targetSymbol\":\"61471de8-c918-4fe8-b89b-5238a34b8a70\"},\"6c4606fe-68a2-4860-8f03-338695d25fef\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"-165.9999988079071,-32.93032122395317 -130.99999940395355,-32.93032122395317 -130.99999940395355,32.96898782052479 -96,32.96898782052479\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"61471de8-c918-4fe8-b89b-5238a34b8a70\",\"targetSymbol\":\"2d4510cd-7d42-4ba9-b1ce-08a6e198d3a5\",\"object\":\"ace659e1-0940-41da-94fe-413b8f204484\"},\"cbe18851-45ba-4e02-b5c7-1fe00fb423ca\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.RenameSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":-213.9999988079071,\"y\":35.6976788461419,\"object\":\"9725f024-893b-470d-bcaf-7eaaaa86da4f\"},\"98ed902a-ab7f-4fe9-8462-62742edbef22\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"isLeftInput\":false,\"points\":\"-165.9999988079071,51.6976788461419 -130.99999940395355,51.6976788461419 -130.99999940395355,43.63565448719146 -96,43.63565448719146\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"cbe18851-45ba-4e02-b5c7-1fe00fb423ca\",\"targetSymbol\":\"2d4510cd-7d42-4ba9-b1ce-08a6e198d3a5\",\"object\":\"ace659e1-0940-41da-94fe-413b8f204484\"},\"3485df4b-fc71-40f5-b830-c76d53ff212b\":{\"classDefinition\":\"sap.cdw.commonmodel.LevelElement\",\"indexOrder\":0,\"element\":\"0755087c-a53c-48e8-89ae-05863c6a8a39\"},\"ea41ef81-3b78-4ae0-8353-48910c94839a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonUuid\",\"label\":\"PersonUuid\",\"newName\":\"PersonUuid\",\"indexOrder\":0,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"bb6d0293-5d8e-471b-80b8-1ef8fd1587a1\"},\"7d84189f-9c3d-4b4c-8f91-17d0eb821b56\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EopHc\",\"label\":\"EopHc\",\"newName\":\"EopHc\",\"indexOrder\":2,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"00dcd0f7-0c52-40d8-abb6-32d747588993\"},\"28536743-3c8a-4239-a6f3-0b85bd8c62df\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"AverageHc\",\"label\":\"AverageHc\",\"newName\":\"AverageHc\",\"indexOrder\":3,\"dataType\":\"cds.Double\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"3e597547-2ebe-4c1f-9fb5-d96f7a4d5d07\"},\"3fe78c1e-03a1-4dfb-ba90-8ff796960eb4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ToDate\",\"label\":\"ToDate\",\"newName\":\"ToDate\",\"indexOrder\":1,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"5609f37f-8007-455d-a157-b69f82ca2454\"},\"9c0c756b-a15a-4ef8-9b90-197b946f2be1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Time\",\"label\":\"Time\",\"newName\":\"Time\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"6239401c-1713-4e9c-8732-3c65bcda493b\"},\"9ddd3133-ea9b-40fb-9cd1-56b064f68842\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"RELEASE_ID\",\"label\":\"Release ID\",\"newName\":\"RELEASE_ID\",\"isRemoved\":true,\"indexOrder\":5,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"144b9886-0e13-4c62-afe5-579d753959ee\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeId\",\"label\":\"EmployeeId\",\"newName\":\"EmployeeId\",\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"ad1c7fdd-9bb7-4019-848a-ab7c8ab71467\"},\"89b0103d-78d7-4801-8eb9-ef5263b865bd\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonId\",\"label\":\"PersonId\",\"newName\":\"PersonId\",\"indexOrder\":1,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"0182a13c-b1f5-4235-b33d-de65ca81ddb6\"},\"c2c41ab1-7d88-4e4b-a31c-c5fba627dbaf\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonUuid\",\"label\":\"PersonUuid\",\"newName\":\"PersonUuid\",\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"f0558f89-e9ac-4ed0-b781-bd79f99b5d43\"},\"a17a621b-4878-43dd-b81d-0c4818b9e31e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Gender\",\"label\":\"Gender\",\"newName\":\"Gender\",\"indexOrder\":3,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"a427457d-65e4-428f-b14d-602f8222ae13\"},\"9765e1af-7294-4fd9-bb2c-8ffcd87ed282\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EeoJobGroup\",\"label\":\"EeoJobGroup\",\"newName\":\"EeoJobGroup\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"55f2b6ac-9f69-45a9-a508-0b3ea627995e\"},\"b5a887bb-cfeb-4755-a821-64aba2b62a5f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EthnicBackground\",\"label\":\"EthnicBackground\",\"newName\":\"EthnicBackground\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"d441e8e0-a08d-48a3-898a-b60bc501f53a\"},\"fe2f69e6-01ca-40bb-b84f-cac40d9650cd\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"VeteranStatus\",\"label\":\"VeteranStatus\",\"newName\":\"VeteranStatus\",\"indexOrder\":6,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"a148780c-b3a4-433f-83fd-a8ade8e833fd\"},\"a6f70312-e334-43de-9241-1973c351b1a4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":7,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"e06d1a30-8ed1-4539-a12f-9bf06b632181\"},\"59dce2b4-ecd2-4a44-b4fa-d2e1a13a724b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CalenderYear\",\"label\":\"CalenderYear\",\"newName\":\"CalenderYear\",\"indexOrder\":8,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"125659fd-07f4-4a09-8597-63fd0988024a\"},\"97a93b75-d9ed-4e5b-b7be-b679ae27ab63\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":9,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"0e24bad9-ae9c-4e00-844c-ade58337aa88\"},\"0acf928f-c770-4535-b61e-9ed7f0dcf735\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":10,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"d47410fd-460d-41d5-af8c-25065f8d6429\"},\"4550c0e2-4b2f-428d-b6ed-920ce7133909\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Agegroup_ID\",\"label\":\"Agegroup_ID\",\"newName\":\"Agegroup_ID\",\"indexOrder\":11,\"length\":5,\"precision\":0,\"scale\":0,\"successorElement\":\"76e72580-965c-47e9-a515-1f70d1ed06a6\"},\"0e3000a0-6426-4d97-81dc-7314bd7e2564\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmploymentStatus\",\"label\":\"EmploymentStatus (CONTRACT_STATUS_ID))\",\"newName\":\"EmploymentStatus\",\"indexOrder\":12,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"bf86fae1-0223-4dc2-ab1d-a2b073b38df7\"},\"3b8b7ddd-f024-423f-88d5-2590df38afd4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsContingentWorker\",\"label\":\"IsContingentWorker\",\"newName\":\"IsContingentWorker\",\"indexOrder\":13,\"dataType\":\"cds.Boolean\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"1aa52ad0-e067-4359-8397-35cdddfe0bb2\"},\"b3e24d1c-1540-4bec-9e40-5e1a3cd54ec3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsFullTimeEmployee\",\"label\":\"IsFullTimeEmployee\",\"newName\":\"IsFullTimeEmployee\",\"indexOrder\":14,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"5bfaec77-9fde-47e8-be0b-9c0d160a9bbd\"},\"7dacc1ac-6c57-4069-b47c-c5b4d8e8bbba\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Target_Currency\",\"label\":\"Target Currency\",\"newName\":\"Target_Currency\",\"indexOrder\":15,\"length\":3,\"precision\":0,\"scale\":0,\"successorElement\":\"710dc721-7254-44aa-85cb-b7432d7947b2\"},\"9ca31f77-fdd4-4493-80f7-aedcdf61d274\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeClass_CONTRACT_TYPE_ID\",\"label\":\"EmployeeClass CONTRACT_TYPE_ID\",\"newName\":\"EmployeeClass_CONTRACT_TYPE_ID\",\"indexOrder\":16,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"66dd89a8-d129-4c1c-bace-15943ee45cf4\"},\"75c42718-7973-4be2-aa16-9aff9cc4f077\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"FromDate\",\"label\":\"FromDate\",\"newName\":\"FromDate\",\"indexOrder\":17,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"cd4e4492-6250-4ee6-a7b8-0820c0d188fa\"},\"14976470-1e26-48e6-af06-c4b1bb205dcc\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ToDate\",\"label\":\"ToDate\",\"newName\":\"ToDate\",\"indexOrder\":18,\"isKey\":true,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"a09d9b6a-3a9b-48cc-bcbb-ef8cd2d04bf2\"},\"c8d1182b-8ce3-4074-be50-db272024a556\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"indexOrder\":19,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"2ce0bda6-c464-44b3-9bd1-41dc773d2354\"},\"0e9153f3-5b24-4466-9a4f-6bb2130d9863\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EeoJobCategory\",\"label\":\"EeoJobCategory\",\"newName\":\"EeoJobCategory\",\"isRemoved\":true,\"indexOrder\":20,\"length\":5000,\"precision\":0,\"scale\":0},\"861d2600-a9df-4841-b5fa-46e6703ac070\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"RELEASE_ID\",\"label\":\"Release ID\",\"newName\":\"RELEASE_ID\",\"isRemoved\":true,\"indexOrder\":21,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"32121e10-12e6-48c6-b30f-b34ccaf3c4b4\":{\"classDefinition\":\"sap.cdw.querybuilder.Filter\",\"condition\":\"EeoJobCategory = '9197'\",\"name\":\"Filter 1\",\"elements\":{\"6ec777d7-c628-423f-b48e-e6bb01e716c0\":{\"name\":\"EmployeeId\"},\"344f8a44-638d-40df-9d50-0cf2e59b1a6d\":{\"name\":\"PersonId\"},\"1b6d91dd-1075-4f8e-b541-b5d27495136b\":{\"name\":\"PersonUuid\"},\"7470776c-0805-4130-83d0-41873b61804a\":{\"name\":\"Gender\"},\"97dc6fe5-7dbf-49b7-a86a-9e96e1f962cd\":{\"name\":\"EeoJobGroup\"},\"8bd43157-808f-45c5-86a5-bbf2bd939d8c\":{\"name\":\"EthnicBackground\"},\"c6214450-4192-4c85-a850-2d2940a23146\":{\"name\":\"VeteranStatus\"},\"ceaeefc0-1d9f-4f6f-bf52-7a57ff3f286f\":{\"name\":\"Location\"},\"09a4e939-68dc-4caa-9770-f3f501ac1cf2\":{\"name\":\"CalenderYear\"},\"b86bef18-a886-4c94-89fd-ccb26f3012b0\":{\"name\":\"Company\"},\"5cc0ea37-daa1-4a8b-921a-e0b2047a7413\":{\"name\":\"OrganizationalUnit\"},\"bfdb3ae5-822e-4620-bea7-b6a2d71a247e\":{\"name\":\"Agegroup_ID\"},\"8add502e-081f-4523-a98f-f9c6e141a706\":{\"name\":\"EmploymentStatus\"},\"7648521c-2b87-4389-acd0-837c8c794722\":{\"name\":\"IsContingentWorker\"},\"1309a20a-3dde-4e94-bfc1-a651a02c109b\":{\"name\":\"IsFullTimeEmployee\"},\"34d0974c-15fe-441c-ac36-c8e9a2f06086\":{\"name\":\"Target_Currency\"},\"ca79f1bb-73c3-49c3-a378-7f78b3b24d43\":{\"name\":\"EmployeeClass_CONTRACT_TYPE_ID\"},\"ec3ab8ad-daf1-4108-be70-6d3e8504cd96\":{\"name\":\"FromDate\"},\"792a4efc-7d0c-4002-a525-1f0182605821\":{\"name\":\"ToDate\"},\"d07ba354-5ee5-4e75-8c2a-c80e7c200334\":{\"name\":\"Division\"},\"da3af0d1-5b4f-40d1-8174-126ba835cd61\":{\"name\":\"EeoJobCategory\"},\"0aa5ff18-fbf0-49f7-820a-1d22d2c729b6\":{\"name\":\"RELEASE_ID\"}},\"successorNode\":\"9725f024-893b-470d-bcaf-7eaaaa86da4f\"},\"6ec777d7-c628-423f-b48e-e6bb01e716c0\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeId\",\"label\":\"EmployeeId\",\"newName\":\"EmployeeId\",\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"144b9886-0e13-4c62-afe5-579d753959ee\"},\"344f8a44-638d-40df-9d50-0cf2e59b1a6d\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonId\",\"label\":\"PersonId\",\"newName\":\"PersonId\",\"indexOrder\":1,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"89b0103d-78d7-4801-8eb9-ef5263b865bd\"},\"1b6d91dd-1075-4f8e-b541-b5d27495136b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"PersonUuid\",\"label\":\"PersonUuid\",\"newName\":\"PersonUuid\",\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"c2c41ab1-7d88-4e4b-a31c-c5fba627dbaf\"},\"7470776c-0805-4130-83d0-41873b61804a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Gender\",\"label\":\"Gender\",\"newName\":\"Gender\",\"indexOrder\":3,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"a17a621b-4878-43dd-b81d-0c4818b9e31e\"},\"97dc6fe5-7dbf-49b7-a86a-9e96e1f962cd\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EeoJobGroup\",\"label\":\"EeoJobGroup\",\"newName\":\"EeoJobGroup\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"9765e1af-7294-4fd9-bb2c-8ffcd87ed282\"},\"8bd43157-808f-45c5-86a5-bbf2bd939d8c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EthnicBackground\",\"label\":\"EthnicBackground\",\"newName\":\"EthnicBackground\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"b5a887bb-cfeb-4755-a821-64aba2b62a5f\"},\"c6214450-4192-4c85-a850-2d2940a23146\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"VeteranStatus\",\"label\":\"VeteranStatus\",\"newName\":\"VeteranStatus\",\"indexOrder\":6,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"fe2f69e6-01ca-40bb-b84f-cac40d9650cd\"},\"ceaeefc0-1d9f-4f6f-bf52-7a57ff3f286f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":7,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"a6f70312-e334-43de-9241-1973c351b1a4\"},\"09a4e939-68dc-4caa-9770-f3f501ac1cf2\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"CalenderYear\",\"label\":\"CalenderYear\",\"newName\":\"CalenderYear\",\"indexOrder\":8,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"59dce2b4-ecd2-4a44-b4fa-d2e1a13a724b\"},\"b86bef18-a886-4c94-89fd-ccb26f3012b0\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":9,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"97a93b75-d9ed-4e5b-b7be-b679ae27ab63\"},\"5cc0ea37-daa1-4a8b-921a-e0b2047a7413\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":10,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"0acf928f-c770-4535-b61e-9ed7f0dcf735\"},\"bfdb3ae5-822e-4620-bea7-b6a2d71a247e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Agegroup_ID\",\"label\":\"Agegroup_ID\",\"newName\":\"Agegroup_ID\",\"indexOrder\":11,\"length\":5,\"precision\":0,\"scale\":0,\"successorElement\":\"4550c0e2-4b2f-428d-b6ed-920ce7133909\"},\"8add502e-081f-4523-a98f-f9c6e141a706\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmploymentStatus\",\"label\":\"EmploymentStatus (CONTRACT_STATUS_ID))\",\"newName\":\"EmploymentStatus\",\"indexOrder\":12,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"0e3000a0-6426-4d97-81dc-7314bd7e2564\"},\"7648521c-2b87-4389-acd0-837c8c794722\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsContingentWorker\",\"label\":\"IsContingentWorker\",\"newName\":\"IsContingentWorker\",\"indexOrder\":13,\"dataType\":\"cds.Boolean\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"3b8b7ddd-f024-423f-88d5-2590df38afd4\"},\"1309a20a-3dde-4e94-bfc1-a651a02c109b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"IsFullTimeEmployee\",\"label\":\"IsFullTimeEmployee\",\"newName\":\"IsFullTimeEmployee\",\"indexOrder\":14,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"b3e24d1c-1540-4bec-9e40-5e1a3cd54ec3\"},\"34d0974c-15fe-441c-ac36-c8e9a2f06086\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Target_Currency\",\"label\":\"Target Currency\",\"newName\":\"Target_Currency\",\"indexOrder\":15,\"length\":3,\"precision\":0,\"scale\":0,\"successorElement\":\"7dacc1ac-6c57-4069-b47c-c5b4d8e8bbba\"},\"ca79f1bb-73c3-49c3-a378-7f78b3b24d43\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EmployeeClass_CONTRACT_TYPE_ID\",\"label\":\"EmployeeClass CONTRACT_TYPE_ID\",\"newName\":\"EmployeeClass_CONTRACT_TYPE_ID\",\"indexOrder\":16,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"9ca31f77-fdd4-4493-80f7-aedcdf61d274\"},\"ec3ab8ad-daf1-4108-be70-6d3e8504cd96\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"FromDate\",\"label\":\"FromDate\",\"newName\":\"FromDate\",\"indexOrder\":17,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"75c42718-7973-4be2-aa16-9aff9cc4f077\"},\"792a4efc-7d0c-4002-a525-1f0182605821\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"ToDate\",\"label\":\"ToDate\",\"newName\":\"ToDate\",\"indexOrder\":18,\"isKey\":true,\"dataType\":\"cds.Date\",\"length\":0,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"14976470-1e26-48e6-af06-c4b1bb205dcc\"},\"d07ba354-5ee5-4e75-8c2a-c80e7c200334\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"indexOrder\":19,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"c8d1182b-8ce3-4074-be50-db272024a556\"},\"da3af0d1-5b4f-40d1-8174-126ba835cd61\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"EeoJobCategory\",\"label\":\"EeoJobCategory\",\"newName\":\"EeoJobCategory\",\"indexOrder\":20,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"0e9153f3-5b24-4466-9a4f-6bb2130d9863\"},\"0aa5ff18-fbf0-49f7-820a-1d22d2c729b6\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"RELEASE_ID\",\"label\":\"Release ID\",\"newName\":\"RELEASE_ID\",\"indexOrder\":21,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"861d2600-a9df-4841-b5fa-46e6703ac070\"},\"e1c03e95-f74b-4a22-85c5-5c64b523c19f\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.FilterSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":-391.9999976158142,\"y\":29.705026199466943,\"object\":\"32121e10-12e6-48c6-b30f-b34ccaf3c4b4\"},\"85e0ba3f-3aad-4170-b9dc-44ccffe7c19b\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"-501.9999976158142,45.70502619946694 -391.9999976158142,45.70502619946694\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"00f86e64-77fe-4a70-9695-5e82e82de6de\",\"targetSymbol\":\"e1c03e95-f74b-4a22-85c5-5c64b523c19f\"},\"fc98742f-6a1a-4e8b-9288-7e56ebb303f0\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"-343.9999976158142,45.70502619946694 -248.99999821186066,45.70502619946694 -248.99999821186066,51.6976788461419 -213.9999988079071,51.6976788461419\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"e1c03e95-f74b-4a22-85c5-5c64b523c19f\",\"targetSymbol\":\"cbe18851-45ba-4e02-b5c7-1fe00fb423ca\"}}}"
+    }
+  },
+  "$version": "1.0"
+}
