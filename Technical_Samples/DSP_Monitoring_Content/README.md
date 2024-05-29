@@ -8,7 +8,8 @@ SAP_CC_DSP_Monitoring_Reporting_Tables.package
 2023.05
 
 ## What´s New
-Initial Release
+- Data type changed for attribute DURATION (in local table / dimension DURATION_DIM) and TOTAL_EXECUTION_TIME_AS_COL (in Fact view TCT_MDS_STATEMENTS_STATISTICS_V_01) from Integer64 to Decimal(16,1)
+- M_HOST_INFORMATION_SRC: support multi hosts
 
 ## Descripton - What is the Monitoring Content About?
 It offers a configuration that persists data from various monitoring relevant tables and views.
