@@ -9,7 +9,7 @@ SAP_CC_SAC_Sample_Composite.package
 ## What´s New
 N/A
 
-## Descripton
+## Description
 Demo Content to demonstrate the features and functions of Composite based on QRC4 2023.
 A composite is a combination of widgets with configured data and scripting elements, which can be reused across optimized stories.
 
