@@ -54,7 +54,7 @@ const parseMetadata = metadata => {
       if (!dataBinding || dataBinding.state !== 'success') { return }
 
       await getScriptPromisify(
-        'https://cdn.staticfile.org/echarts/5.0.0/echarts.min.js'
+        "https://cdnjs.cloudflare.com/ajax/libs/echarts/5.0.0/echarts.min.js"
       )
 
       const { data, metadata } = dataBinding

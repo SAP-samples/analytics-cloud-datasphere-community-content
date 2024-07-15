@@ -53,7 +53,7 @@ var getScriptPromisify = (src) => {
     }
 
     async render (dataBinding, props) {
-      await getScriptPromisify("https://cdn.staticfile.org/echarts/5.3.0/echarts.min.js");
+      await getScriptPromisify("https://cdnjs.cloudflare.com/ajax/libs/echarts/5.0.0/echarts.min.js");
       this.dispose()
 
       if (dataBinding.state !== 'success') { return }
