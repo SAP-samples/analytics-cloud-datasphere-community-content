@@ -9,7 +9,7 @@ SAP_CC_SAC_Sample_Composite.package
 ## What´s New
 N/A
 
-## Descripton
+## Description
 Demo Content to demonstrate the features and functions of Composite based on QRC4 2023.
 A composite is a combination of widgets with configured data and scripting elements, which can be reused across optimized stories.
 
@@ -24,7 +24,7 @@ This package includes the Demo story, using different composites, Header, Naviga
 The story is based on the BestRunJuice_SampleModel available in every system.
 
 ## Download/Install Instructions
-Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html).
+Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/ef516563b3fe4c69b6f718f17ed94cdf.html).
 
 
 ## More Information

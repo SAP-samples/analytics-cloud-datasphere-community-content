@@ -1,0 +1,967 @@
+{
+  "definitions": {
+    "3VF_GNR_MINIMUM_WAGE": {
+      "kind": "entity",
+      "elements": {
+        "BUSINESS_LOC_EXTERNAL_ID": {
+          "@EndUserText.label": "BUSINESS_LOC_EXTERNAL_ID",
+          "type": "cds.String",
+          "length": 5000,
+          "key": true,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "LEGAL_ENTITY_EXTERNAL_ID": {
+          "@EndUserText.label": "LEGAL_ENTITY_EXTERNAL_ID",
+          "type": "cds.String",
+          "length": 500,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "MEASURE_UNIT": {
+          "@EndUserText.label": "MEASURE_UNIT",
+          "type": "cds.String",
+          "length": 5000
+        },
+        "MEASURE_VALUE": {
+          "@EndUserText.label": "MEASURE_VALUE",
+          "type": "cds.DecimalFloat",
+          "@AnalyticsDetails.measureType": {
+            "#": "BASE"
+          },
+          "@Aggregation.default": {
+            "#": "SUM"
+          }
+        },
+        "PERIOD_YEAR": {
+          "@EndUserText.label": "PERIOD_YEAR",
+          "type": "cds.String",
+          "length": 4,
+          "notNull": true
+        },
+        "PERIOD_TYPE": {
+          "@EndUserText.label": "PERIOD_TYPE",
+          "type": "cds.String",
+          "length": 1
+        },
+        "MEASURE_ID": {
+          "@EndUserText.label": "MEASURE_ID",
+          "type": "cds.String",
+          "length": 16
+        },
+        "SOURCE_EXTERNAL_ID": {
+          "@EndUserText.label": "SOURCE_EXTERNAL_ID",
+          "type": "cds.String",
+          "length": 8
+        }
+      },
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR"
+            ],
+            "as": "3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR(1)_0"
+          },
+          "columns": [
+            {
+              "ref": [
+                "3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR(1)_0",
+                "Location"
+              ],
+              "as": "BUSINESS_LOC_EXTERNAL_ID"
+            },
+            {
+              "ref": [
+                "3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR(1)_0",
+                "Company"
+              ],
+              "as": "LEGAL_ENTITY_EXTERNAL_ID"
+            },
+            {
+              "ref": [
+                "3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR(1)_0",
+                "currency"
+              ],
+              "as": "MEASURE_UNIT"
+            },
+            {
+              "ref": [
+                "3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR(1)_0",
+                "Annual_Minimum_Wage"
+              ],
+              "as": "MEASURE_VALUE"
+            },
+            {
+              "ref": [
+                "3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR(1)_0",
+                "YEAR_Full_Year_Value"
+              ],
+              "as": "PERIOD_YEAR"
+            },
+            {
+              "val": "Y",
+              "as": "PERIOD_TYPE"
+            },
+            {
+              "val": "Y_PWC_GNR_ADQW_A",
+              "as": "MEASURE_ID"
+            },
+            {
+              "val": "EUROSTAT",
+              "as": "SOURCE_EXTERNAL_ID"
+            }
+          ]
+        }
+      },
+      "@EndUserText.label": "3VF_GNR_MINIMUM_WAGE",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_FACT"
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "DATA_STRUCTURE"
+        }
+      ],
+      "@DataWarehouse.consumption.external": false,
+      "@DataWarehouse.sqlEditor.query": "SELECT \"3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR(1)_0\".\"Location\" AS \"BUSINESS_LOC_EXTERNAL_ID\",\n\t\"3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR(1)_0\".\"Company\" AS \"LEGAL_ENTITY_EXTERNAL_ID\",\n\t\"3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR(1)_0\".\"currency\" AS \"MEASURE_UNIT\",   \n\t\"3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR(1)_0\".\"Annual_Minimum_Wage\" AS \"MEASURE_VALUE\",\n\t\"3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR(1)_0\".\"YEAR_Full_Year_Value\" AS \"PERIOD_YEAR\",\n\t'Y' AS \"PERIOD_TYPE\",\n\t'Y_PWC_GNR_ADQW_A' AS \"MEASURE_ID\",\n\t'EUROSTAT' AS \"SOURCE_EXTERNAL_ID\"\nFROM \"3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR\" AS \"3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR(1)_0\"",
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": "Folder_QEFWETIX"
+        }
+      }
+    },
+    "3ED43A7C761D47BEA149": {
+      "kind": "context",
+      "@EndUserText.label": "Workforce Location",
+      "@DataWarehouse.space.schema": "3ED43A7C761D47BEA149",
+      "@DataWarehouse.space.name": "3ED43A7C761D47BEA149"
+    },
+    "3ED43A7C761D47BEA149.3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY": {
+      "kind": "entity",
+      "elements": {
+        "Location": {
+          "@EndUserText.label": "Location",
+          "type": "cds.String",
+          "length": 5000,
+          "key": true,
+          "notNull": true,
+          "@Analytics.dimension": true
+        },
+        "Division": {
+          "@EndUserText.label": "Division",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "OrganizationalUnit": {
+          "@EndUserText.label": "OrganizationalUnit",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "BusinessUnit": {
+          "@EndUserText.label": "BusinessUnit",
+          "type": "cds.String",
+          "length": 256,
+          "@Analytics.dimension": true
+        },
+        "Company": {
+          "@EndUserText.label": "Company",
+          "type": "cds.String",
+          "length": 500,
+          "notNull": true,
+          "@Analytics.dimension": true
+        },
+        "Location_Description": {
+          "@EndUserText.label": "Location Description",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        },
+        "Latitude": {
+          "@EndUserText.label": "Latitude",
+          "precision": 38,
+          "scale": 19,
+          "type": "cds.Decimal",
+          "@Semantics.geoLocation.latitude": true
+        },
+        "Longitude": {
+          "@EndUserText.label": "Longitude",
+          "precision": 38,
+          "scale": 19,
+          "type": "cds.Decimal",
+          "@Semantics.geoLocation.longitude": true
+        },
+        "State_ID": {
+          "@EndUserText.label": "State ID",
+          "type": "cds.String",
+          "length": 5000,
+          "notNull": true,
+          "@Analytics.dimension": true
+        },
+        "City_ID": {
+          "@EndUserText.label": "City ID",
+          "type": "cds.String",
+          "length": 5000,
+          "notNull": true,
+          "@Analytics.dimension": true
+        },
+        "Country_ID": {
+          "@EndUserText.label": "Country ID",
+          "type": "cds.String",
+          "length": 5000,
+          "notNull": true,
+          "@Analytics.dimension": true
+        },
+        "Country_Description": {
+          "@EndUserText.label": "Country Description",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        },
+        "State_Description": {
+          "@EndUserText.label": "State Description",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        },
+        "City_Description": {
+          "@EndUserText.label": "City Description",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        },
+        "RELEASE_ID": {
+          "@EndUserText.label": "Release ID",
+          "type": "cds.Integer"
+        }
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "DATA_STRUCTURE"
+        },
+        {
+          "#": "ANALYTICAL_PROVIDER"
+        }
+      ],
+      "@EndUserText.label": "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+      "@ObjectModel.modelingPattern": {
+        "#": "DATA_STRUCTURE"
+      },
+      "@DataWarehouse.consumption.external": true,
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": null
+        }
+      },
+      "@cds.persistence.exists": true
+    },
+    "Country_Master_Data_by_DCA": {
+      "kind": "entity",
+      "@DataWarehouse.remote.connection": "D4556A162E734F6391E8",
+      "@DataWarehouse.remote.entity": "<NULL>D4556A162E734F6391E8Country_Master_Data_by_DCA",
+      "elements": {
+        "Country": {
+          "type": "cds.String",
+          "length": 5000,
+          "@EndUserText.label": "Country",
+          "@DataWarehouse.native.dataType": "NVARCHAR",
+          "notNull": true,
+          "key": true
+        },
+        "Alpha-2 code": {
+          "type": "cds.String",
+          "length": 5000,
+          "@EndUserText.label": "Alpha-2 code",
+          "@DataWarehouse.native.dataType": "NVARCHAR"
+        },
+        "Alpha-3 code": {
+          "type": "cds.String",
+          "length": 5000,
+          "@EndUserText.label": "Alpha-3 code",
+          "@DataWarehouse.native.dataType": "NVARCHAR"
+        },
+        "Numeric code": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Numeric code",
+          "@DataWarehouse.native.dataType": "BIGINT"
+        },
+        "Latitude (average)": {
+          "type": "cds.Decimal",
+          "precision": 12,
+          "scale": 8,
+          "@EndUserText.label": "Latitude (average)",
+          "@DataWarehouse.native.dataType": "DECIMAL"
+        },
+        "Longitude (average)": {
+          "type": "cds.Decimal",
+          "precision": 12,
+          "scale": 8,
+          "@EndUserText.label": "Longitude (average)",
+          "@DataWarehouse.native.dataType": "DECIMAL"
+        },
+        "RELEASE_ID": {
+          "@EndUserText.label": "Release ID",
+          "type": "cds.Integer"
+        }
+      },
+      "@ObjectModel.modelingPattern": {
+        "#": "DATA_STRUCTURE"
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "DATA_STRUCTURE"
+        },
+        {
+          "#": "SQL_DATA_SOURCE"
+        }
+      ],
+      "@EndUserText.label": "Country_Master_Data_by_DCA",
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": "Folder_QMTMJPJP"
+        }
+      }
+    },
+    "2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS": {
+      "kind": "entity",
+      "elements": {
+        "Alpha-2 code": {
+          "@EndUserText.label": "Alpha-2 code",
+          "type": "cds.String",
+          "length": 5000,
+          "@DataWarehouse.native.dataType": "NVARCHAR"
+        },
+        "Alpha-3 code": {
+          "@EndUserText.label": "Alpha-3 code",
+          "type": "cds.String",
+          "length": 5000,
+          "@DataWarehouse.native.dataType": "NVARCHAR"
+        },
+        "Country_Numeric_code": {
+          "@EndUserText.label": "Country Numeric code",
+          "type": "cds.Integer64",
+          "@DataWarehouse.native.dataType": "BIGINT"
+        },
+        "Location": {
+          "@EndUserText.label": "Location",
+          "type": "cds.String",
+          "length": 5000,
+          "key": true,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "Division": {
+          "@EndUserText.label": "Division",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "OrganizationalUnit": {
+          "@EndUserText.label": "OrganizationalUnit",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "BusinessUnit": {
+          "@EndUserText.label": "BusinessUnit",
+          "type": "cds.String",
+          "length": 256,
+          "@Analytics.dimension": true
+        },
+        "Company": {
+          "@EndUserText.label": "Company",
+          "type": "cds.String",
+          "length": 500,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "Location_Description": {
+          "@EndUserText.label": "Location Description",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        },
+        "Latitude": {
+          "@EndUserText.label": "Latitude",
+          "precision": 38,
+          "scale": 19,
+          "type": "cds.Decimal",
+          "@Semantics.geoLocation.latitude": true
+        },
+        "Longitude": {
+          "@EndUserText.label": "Longitude",
+          "precision": 38,
+          "scale": 19,
+          "type": "cds.Decimal",
+          "@Semantics.geoLocation.longitude": true
+        },
+        "State_ID": {
+          "@EndUserText.label": "State ID",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "City_ID": {
+          "@EndUserText.label": "City ID",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "Country_ID": {
+          "@EndUserText.label": "Country ID",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "Country_Description": {
+          "@EndUserText.label": "Country Description",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        },
+        "State_Description": {
+          "@EndUserText.label": "State Description",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        },
+        "City_Description": {
+          "@EndUserText.label": "City Description",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        }
+      },
+      "query": {
+        "SELECT": {
+          "from": {
+            "join": "left",
+            "args": [
+              {
+                "ref": [
+                  "3ED43A7C761D47BEA149.3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY"
+                ],
+                "as": "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY"
+              },
+              {
+                "ref": [
+                  "Country_Master_Data_by_DCA"
+                ]
+              }
+            ],
+            "on": [
+              {
+                "ref": [
+                  "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                  "Country_ID"
+                ]
+              },
+              "=",
+              {
+                "ref": [
+                  "Country_Master_Data_by_DCA",
+                  "Alpha-3 code"
+                ]
+              }
+            ]
+          },
+          "columns": [
+            {
+              "ref": [
+                "Country_Master_Data_by_DCA",
+                "Alpha-2 code"
+              ]
+            },
+            {
+              "ref": [
+                "Country_Master_Data_by_DCA",
+                "Alpha-3 code"
+              ]
+            },
+            {
+              "as": "Country_Numeric_code",
+              "ref": [
+                "Country_Master_Data_by_DCA",
+                "Numeric code"
+              ]
+            },
+            {
+              "key": true,
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "Location"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "Division"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "OrganizationalUnit"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "BusinessUnit"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "Company"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "Location_Description"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "Latitude"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "Longitude"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "State_ID"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "City_ID"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "Country_ID"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "Country_Description"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "State_Description"
+              ]
+            },
+            {
+              "ref": [
+                "3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY",
+                "City_Description"
+              ]
+            }
+          ]
+        }
+      },
+      "@EndUserText.label": "2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS",
+      "@ObjectModel.modelingPattern": {
+        "#": "DATA_STRUCTURE"
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "DATA_STRUCTURE"
+        }
+      ],
+      "@DataWarehouse.consumption.external": false,
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": "Folder_QDMECPAO"
+        }
+      }
+    },
+    "1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL": {
+      "kind": "entity",
+      "elements": {
+        "YEAR_Full_Year_Value": {
+          "@EndUserText.label": "YEAR (Full Year Value)",
+          "type": "cds.String",
+          "length": 4,
+          "@DataWarehouse.native.dataType": "NVARCHAR"
+        },
+        "OBS_FLAG": {
+          "@EndUserText.label": "OBS_FLAG",
+          "type": "cds.String",
+          "length": 5000,
+          "@DataWarehouse.native.dataType": "NVARCHAR"
+        },
+        "Annual_Minimum_Wage": {
+          "@EndUserText.label": "Annual Minimum Wage",
+          "type": "cds.DecimalFloat",
+          "@DataWarehouse.native.dataType": "DECIMAL"
+        },
+        "Monthly_Minimum_Wage": {
+          "@EndUserText.label": "Monthly Minimum Wage",
+          "precision": 38,
+          "scale": 19,
+          "type": "cds.Decimal",
+          "@DataWarehouse.native.dataType": "DECIMAL"
+        },
+        "TIME_PERIOD": {
+          "@EndUserText.label": "TIME_PERIOD",
+          "type": "cds.String",
+          "length": 5000,
+          "@DataWarehouse.native.dataType": "NVARCHAR"
+        },
+        "geo": {
+          "@EndUserText.label": "geo",
+          "type": "cds.String",
+          "length": 5000,
+          "@DataWarehouse.native.dataType": "NVARCHAR"
+        },
+        "currency": {
+          "@EndUserText.label": "currency",
+          "type": "cds.String",
+          "length": 5000,
+          "@DataWarehouse.native.dataType": "NVARCHAR"
+        },
+        "freq": {
+          "@EndUserText.label": "freq",
+          "type": "cds.String",
+          "length": 5000,
+          "@DataWarehouse.native.dataType": "NVARCHAR"
+        },
+        "LAST UPDATE": {
+          "@EndUserText.label": "LAST UPDATE",
+          "type": "cds.DateTime",
+          "@DataWarehouse.native.dataType": "SECONDDATE"
+        },
+        "DATAFLOW": {
+          "@EndUserText.label": "DATAFLOW",
+          "type": "cds.String",
+          "length": 5000,
+          "@DataWarehouse.native.dataType": "NVARCHAR"
+        },
+        "RELEASE_ID": {
+          "@EndUserText.label": "Release ID",
+          "type": "cds.Integer"
+        }
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "SQL_DATA_SOURCE"
+        },
+        {
+          "#": "DATA_STRUCTURE"
+        }
+      ],
+      "@EndUserText.label": "1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL",
+      "@ObjectModel.modelingPattern": {
+        "#": "DATA_STRUCTURE"
+      },
+      "@DataWarehouse.remote.connection": "4448CE3871784A448035",
+      "@DataWarehouse.remote.entity": "<NULL>4448CE3871784A4480351DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL",
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": "Folder_QMTMJPJP"
+        }
+      }
+    },
+    "3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR": {
+      "kind": "entity",
+      "elements": {
+        "Location": {
+          "@EndUserText.label": "Location",
+          "type": "cds.String",
+          "length": 5000,
+          "key": true,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "Company": {
+          "@EndUserText.label": "Company",
+          "type": "cds.String",
+          "length": 500,
+          "@Analytics.dimension": true,
+          "notNull": true
+        },
+        "Location_Description": {
+          "@EndUserText.label": "Location Description",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        },
+        "OrganizationalUnit": {
+          "@EndUserText.label": "OrganizationalUnit",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "Country_Description": {
+          "@EndUserText.label": "Country Description",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true,
+          "@Semantics.text": true
+        },
+        "currency": {
+          "@EndUserText.label": "currency",
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Monthly_Minimum_Wage": {
+          "@EndUserText.label": "Monthly Minimum Wage",
+          "precision": 38,
+          "scale": 19,
+          "type": "cds.Decimal",
+          "@AnalyticsDetails.measureType": {
+            "#": "BASE"
+          },
+          "@Aggregation.default": {
+            "#": "SUM"
+          }
+        },
+        "Annual_Minimum_Wage": {
+          "@EndUserText.label": "Annual Minimum Wage",
+          "type": "cds.DecimalFloat",
+          "@AnalyticsDetails.measureType": {
+            "#": "BASE"
+          },
+          "@Aggregation.default": {
+            "#": "SUM"
+          }
+        },
+        "OBS_FLAG": {
+          "@EndUserText.label": "OBS_FLAG",
+          "type": "cds.String",
+          "length": 5000
+        },
+        "YEAR_Full_Year_Value": {
+          "@EndUserText.label": "YEAR (Full Year Value)",
+          "type": "cds.String",
+          "length": 4,
+          "notNull": true
+        }
+      },
+      "query": {
+        "SELECT": {
+          "from": {
+            "join": "inner",
+            "args": [
+              {
+                "ref": [
+                  "2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS"
+                ]
+              },
+              {
+                "SELECT": {
+                  "from": {
+                    "ref": [
+                      "1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL"
+                    ]
+                  },
+                  "columns": [
+                    {
+                      "ref": [
+                        "1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL",
+                        "currency"
+                      ]
+                    },
+                    {
+                      "ref": [
+                        "1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL",
+                        "geo"
+                      ]
+                    },
+                    {
+                      "ref": [
+                        "1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL",
+                        "TIME_PERIOD"
+                      ]
+                    },
+                    {
+                      "ref": [
+                        "1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL",
+                        "Monthly_Minimum_Wage"
+                      ]
+                    },
+                    {
+                      "ref": [
+                        "1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL",
+                        "OBS_FLAG"
+                      ]
+                    },
+                    {
+                      "ref": [
+                        "1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL",
+                        "Annual_Minimum_Wage"
+                      ]
+                    },
+                    {
+                      "ref": [
+                        "1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL",
+                        "YEAR_Full_Year_Value"
+                      ]
+                    }
+                  ],
+                  "where": [
+                    {
+                      "ref": [
+                        "1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL",
+                        "YEAR_Full_Year_Value"
+                      ]
+                    },
+                    "<>",
+                    {
+                      "val": ""
+                    }
+                  ]
+                },
+                "as": "Filter 1"
+              }
+            ],
+            "on": [
+              {
+                "ref": [
+                  "2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS",
+                  "Alpha-2 code"
+                ]
+              },
+              "=",
+              {
+                "ref": [
+                  "Filter 1",
+                  "geo"
+                ]
+              }
+            ]
+          },
+          "columns": [
+            {
+              "key": true,
+              "ref": [
+                "2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS",
+                "Location"
+              ]
+            },
+            {
+              "ref": [
+                "2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS",
+                "Company"
+              ]
+            },
+            {
+              "ref": [
+                "2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS",
+                "Location_Description"
+              ]
+            },
+            {
+              "ref": [
+                "2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS",
+                "OrganizationalUnit"
+              ]
+            },
+            {
+              "ref": [
+                "2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS",
+                "Country_Description"
+              ]
+            },
+            {
+              "ref": [
+                "Filter 1",
+                "currency"
+              ]
+            },
+            {
+              "ref": [
+                "Filter 1",
+                "Monthly_Minimum_Wage"
+              ]
+            },
+            {
+              "ref": [
+                "Filter 1",
+                "Annual_Minimum_Wage"
+              ]
+            },
+            {
+              "ref": [
+                "Filter 1",
+                "OBS_FLAG"
+              ]
+            },
+            {
+              "ref": [
+                "Filter 1",
+                "YEAR_Full_Year_Value"
+              ]
+            }
+          ]
+        }
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "DATA_STRUCTURE"
+        }
+      ],
+      "@EndUserText.label": "3VF_MINIMUM WAGE BY LOCATION BY YEAR",
+      "@ObjectModel.modelingPattern": {
+        "#": "ANALYTICAL_FACT"
+      },
+      "@DataWarehouse.consumption.external": false,
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": "Folder_QEFWETIX"
+        }
+      }
+    }
+  },
+  "version": {
+    "csn": "1.0"
+  },
+  "meta": {
+    "creator": "CDS Compiler v1.19.2"
+  },
+  "editorSettings": {
+    "2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS": {
+      "editor": {
+        "lastModifier": "GRAPHICALVIEWBUILDER",
+        "default": "GRAPHICALVIEWBUILDER"
+      },
+      "uiModel": "{\"contents\":{\"83f66070-fdc8-4a8a-827a-afe766465304\":{\"classDefinition\":\"sap.cdw.querybuilder.Model\",\"name\":\"2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS\",\"label\":\"2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS\",\"modificationDate\":0,\"deploymentDate\":0,\"#objectStatus\":0,\"output\":\"02eb602a-c6a1-441e-ae51-1840cbc452bd\",\"nodes\":{\"02eb602a-c6a1-441e-ae51-1840cbc452bd\":{\"name\":\"2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS\"},\"03996008-763f-46bb-9b24-0316ff8d62aa\":{\"name\":\"Country_Master_Data_by_DCA\"},\"b987ca87-78b9-4b9e-869d-48bf13a82f56\":{\"name\":\"3ED43A7C761D47BEA149.3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY\"},\"78f92dd4-aa21-43d2-8689-a760d9cc5551\":{\"name\":\"Join 1\"},\"9887f227-6895-42b9-a4c7-a5f679bad590\":{\"name\":\"Projection 2\"},\"7609adc2-b786-44bf-83b8-cfcafa55681d\":{\"name\":\"Projection 1\"}},\"contexts\":{\"1ed7add6-f314-4655-9a45-fda716a6dbbc\":{\"name\":\"3ED43A7C761D47BEA149\"}},\"diagrams\":{\"4ae9f7b2-886b-4de7-ac65-9f5e98fb5dcc\":{}}},\"02eb602a-c6a1-441e-ae51-1840cbc452bd\":{\"classDefinition\":\"sap.cdw.querybuilder.Output\",\"name\":\"2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS\",\"type\":\"graphicView\",\"isPinToMemoryEnabled\":false,\"isAllowConsumption\":false,\"modificationDate\":0,\"deploymentDate\":0,\"#objectStatus\":0,\"elements\":{\"21d3c4c8-46e6-4cea-88a2-efeec062226a\":{\"name\":\"Alpha-2 code\"},\"70887425-9ad3-4013-9313-5d3f72fda32b\":{\"name\":\"Alpha-3 code\"},\"a5987901-fe83-4e8e-ac97-8f3c2871221c\":{\"name\":\"Numeric code\"},\"a0159d16-d5af-4808-abf4-eccc46bfab80\":{\"name\":\"Location\"},\"47005cb2-083a-4428-810f-f88f88f2cbe8\":{\"name\":\"Division\"},\"f99361fb-3ceb-4fa9-a11d-83779d0d32c8\":{\"name\":\"OrganizationalUnit\"},\"3d7c205e-243d-42f8-b9fd-f39a4ba06c7f\":{\"name\":\"BusinessUnit\"},\"6fc8b6e1-941d-46c8-8512-51924816e8a6\":{\"name\":\"Company\"},\"ee34eeab-db17-4391-bae4-4efc3b99bf1d\":{\"name\":\"Location_Description\"},\"c838f4c9-89fb-4b3e-94dd-2c270533f59c\":{\"name\":\"Latitude\"},\"0f504974-90eb-477f-9510-212bd07ab678\":{\"name\":\"Longitude\"},\"2188e96c-ab90-4db1-8fae-68bd9b0852b3\":{\"name\":\"State_ID\"},\"b66b11e5-8534-4898-9b45-53cadf293ec3\":{\"name\":\"City_ID\"},\"20c73d5a-442d-4477-b6bc-8b5ed13700df\":{\"name\":\"Country_ID\"},\"7882baf7-5b79-4dc3-8d64-3ffdf6a02a8c\":{\"name\":\"Country_Description\"},\"191e2c09-4d27-4c24-9fc2-98a50918f735\":{\"name\":\"State_Description\"},\"adf55488-0038-40a3-be04-e8eec6db84e0\":{\"name\":\"City_Description\"}}},\"4ae9f7b2-886b-4de7-ac65-9f5e98fb5dcc\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.Diagram\",\"symbols\":{\"3d35e1c4-ca4f-4f07-a410-c8b2e1599f8a\":{},\"828469ba-4b9b-4f89-92ff-97fe6421d280\":{\"name\":\"Entity Symbol 1\"},\"6d8132ec-ee3e-4108-9c81-5a07ea5cc3b1\":{},\"672ea635-76d3-4bf7-8353-fbe4302ed6e5\":{},\"a11a1006-4149-4cd7-bca9-e7e0354c2725\":{},\"b601f27c-82d8-4c92-b037-916f29dada09\":{},\"422cfae9-ee26-48df-a7a9-73feef1fded4\":{},\"7096ff6f-a267-4844-bae4-ab13ec9fe15a\":{},\"f79d7b9d-845b-4e53-aa2c-4402a8a5d41e\":{},\"b7e2f02f-c306-4434-8b9e-c8a75f509d4d\":{},\"f0fb4479-ca10-498b-8b1b-b6cc557cc11c\":{}}},\"3d35e1c4-ca4f-4f07-a410-c8b2e1599f8a\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.OutputSymbol\",\"x\":158.99999940395355,\"y\":-36.2147957182397,\"width\":140,\"height\":40,\"object\":\"02eb602a-c6a1-441e-ae51-1840cbc452bd\"},\"03996008-763f-46bb-9b24-0316ff8d62aa\":{\"classDefinition\":\"sap.cdw.querybuilder.Entity\",\"name\":\"Country_Master_Data_by_DCA\",\"label\":\"Country_Master_Data_by_DCA\",\"type\":8,\"remote\":{\"connection\":\"D4556A162E734F6391E8\",\"table\":\"<NULL>D4556A162E734F6391E8Country_Master_Data_by_DCA\"},\"isPinToMemoryEnabled\":false,\"isAllowConsumption\":false,\"isHiddenInUi\":false,\"modificationDate\":0,\"deploymentDate\":1715943380000,\"#objectStatus\":\"1\",\"elements\":{\"21cb516e-c94e-4795-b41e-b960d7fed009\":{\"name\":\"Country\"},\"82540bcd-cdc1-48e1-8adb-da3a9f8738e3\":{\"name\":\"Alpha-2 code\"},\"8bfbad11-8f6f-4b68-afd4-e0106441c1b8\":{\"name\":\"Alpha-3 code\"},\"713ec19d-7b57-4eb3-9e1d-333353fa5f94\":{\"name\":\"Numeric code\"},\"f202f9a2-92db-420d-aaaa-fb070dd392de\":{\"name\":\"Latitude (average)\"},\"dd49ea65-b8bf-45f9-a5e1-5c252c00981a\":{\"name\":\"Longitude (average)\"},\"5506a29b-295a-4fbe-b13c-32da6551f3ec\":{\"name\":\"RELEASE_ID\"}},\"successorNode\":\"9887f227-6895-42b9-a4c7-a5f679bad590\"},\"21cb516e-c94e-4795-b41e-b960d7fed009\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country\",\"label\":\"Country\",\"newName\":\"Country\",\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"isNotNull\":true,\"successorElement\":\"8db6b743-bbae-4399-8ce9-60681a289583\"},\"82540bcd-cdc1-48e1-8adb-da3a9f8738e3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-2 code\",\"label\":\"Alpha-2 code\",\"newName\":\"Alpha-2 code\",\"indexOrder\":1,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"322f6925-efd2-4d70-aab8-808689c2de0a\"},\"8bfbad11-8f6f-4b68-afd4-e0106441c1b8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-3 code\",\"label\":\"Alpha-3 code\",\"newName\":\"Alpha-3 code\",\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"291da06e-116e-47ba-b2ad-649853532fce\"},\"713ec19d-7b57-4eb3-9e1d-333353fa5f94\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Numeric code\",\"label\":\"Numeric code\",\"newName\":\"Numeric code\",\"indexOrder\":3,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"nativeDataType\":\"BIGINT\",\"successorElement\":\"65617ff7-156c-4f84-8b4b-4ab10a0cb391\"},\"f202f9a2-92db-420d-aaaa-fb070dd392de\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Latitude (average)\",\"label\":\"Latitude (average)\",\"newName\":\"Latitude (average)\",\"indexOrder\":4,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":12,\"scale\":8,\"nativeDataType\":\"DECIMAL\",\"successorElement\":\"a0c8d7a0-0090-412b-9519-d0d7d0154d36\"},\"dd49ea65-b8bf-45f9-a5e1-5c252c00981a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Longitude (average)\",\"label\":\"Longitude (average)\",\"newName\":\"Longitude (average)\",\"indexOrder\":5,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":12,\"scale\":8,\"nativeDataType\":\"DECIMAL\",\"successorElement\":\"e86e9b9a-1f45-40f7-a30e-54872541378c\"},\"5506a29b-295a-4fbe-b13c-32da6551f3ec\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"RELEASE_ID\",\"label\":\"Release ID\",\"newName\":\"RELEASE_ID\",\"indexOrder\":6,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"adc726fe-834f-4155-903b-df87c22dd7ff\"},\"828469ba-4b9b-4f89-92ff-97fe6421d280\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.EntitySymbol\",\"name\":\"Entity Symbol 1\",\"x\":-266.99999940395355,\"y\":26.35053763763004,\"width\":160,\"displayName\":\"Entity Symbol 1\",\"object\":\"03996008-763f-46bb-9b24-0316ff8d62aa\"},\"21d3c4c8-46e6-4cea-88a2-efeec062226a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-2 code\",\"label\":\"Alpha-2 code\",\"newName\":\"Alpha-2 code\",\"indexOrder\":1,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\"},\"70887425-9ad3-4013-9313-5d3f72fda32b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-3 code\",\"label\":\"Alpha-3 code\",\"newName\":\"Alpha-3 code\",\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\"},\"a5987901-fe83-4e8e-ac97-8f3c2871221c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Numeric code\",\"label\":\"Country Numeric code\",\"newName\":\"Country_Numeric_code\",\"indexOrder\":3,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"nativeDataType\":\"BIGINT\"},\"b987ca87-78b9-4b9e-869d-48bf13a82f56\":{\"classDefinition\":\"sap.cdw.querybuilder.Entity\",\"name\":\"3ED43A7C761D47BEA149.3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY\",\"label\":\"3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY\",\"type\":3,\"isPersistenceExists\":true,\"isPinToMemoryEnabled\":false,\"isHiddenInUi\":false,\"modificationDate\":0,\"deploymentDate\":1715876024000,\"#objectStatus\":\"1\",\"alias\":\"3VD_LOCATION_WITH_FLAT_GEO_HIERARCHY\",\"context\":\"1ed7add6-f314-4655-9a45-fda716a6dbbc\",\"elements\":{\"cf72fdc9-33f5-47d1-af30-fbbac87fa7a1\":{\"name\":\"Location\"},\"3f59bfaa-26ef-4067-b4a8-fcc2f9e91c68\":{\"name\":\"Division\"},\"e795f7d9-5a16-4d6c-90b6-8d829d3ba918\":{\"name\":\"OrganizationalUnit\"},\"ee192e61-fbc9-47ea-b14b-f195c8984b33\":{\"name\":\"BusinessUnit\"},\"3c36beb4-f332-496c-9774-c226a03cf8ba\":{\"name\":\"Company\"},\"bf36bc0c-0bfc-43f2-b257-f909f47861f7\":{\"name\":\"Location_Description\"},\"f3d07942-4906-441f-b2f8-7d06646a3681\":{\"name\":\"Latitude\"},\"624116bc-7cab-4f38-a9df-9d478561d92d\":{\"name\":\"Longitude\"},\"f1bfbfde-7439-405c-89a6-4a64fe0973ea\":{\"name\":\"State_ID\"},\"4f58553f-0975-4c0b-b247-63ea62461775\":{\"name\":\"City_ID\"},\"3d7099e1-7ad6-48e7-97ff-159568c28782\":{\"name\":\"Country_ID\"},\"acc12c45-958d-4fc1-9b6e-0c287e410cd3\":{\"name\":\"Country_Description\"},\"59b3a576-e65d-4653-afc9-665ccbffc51b\":{\"name\":\"State_Description\"},\"633646a9-b039-4736-b46c-1ca1158b59fa\":{\"name\":\"City_Description\"},\"9e350ca0-7b1e-4304-9ffb-2b07e6a3fb80\":{\"name\":\"RELEASE_ID\"}},\"successorNode\":\"7609adc2-b786-44bf-83b8-cfcafa55681d\"},\"cf72fdc9-33f5-47d1-af30-fbbac87fa7a1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"48bfe3e8-375d-4076-8f0b-15372c791aa1\"},\"3f59bfaa-26ef-4067-b4a8-fcc2f9e91c68\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"indexOrder\":1,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"526f3211-6cd6-4296-a9a6-0187a1c446f1\"},\"e795f7d9-5a16-4d6c-90b6-8d829d3ba918\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"916c239e-10ee-4105-a915-cd39d6cdb44f\"},\"ee192e61-fbc9-47ea-b14b-f195c8984b33\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"BusinessUnit\",\"label\":\"BusinessUnit\",\"newName\":\"BusinessUnit\",\"indexOrder\":3,\"length\":256,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"c7fdac58-8c56-4630-bf57-f87966702d43\"},\"3c36beb4-f332-496c-9774-c226a03cf8ba\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":4,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"831b2816-c4d2-4dd0-b93b-79fece52419e\"},\"bf36bc0c-0bfc-43f2-b257-f909f47861f7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location_Description\",\"label\":\"Location Description\",\"newName\":\"Location_Description\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"bd830fb0-be5e-4ba1-bab3-025f4658f57e\"},\"f3d07942-4906-441f-b2f8-7d06646a3681\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Latitude\",\"label\":\"Latitude\",\"newName\":\"Latitude\",\"indexOrder\":6,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.latitude\",\"successorElement\":\"11da24b7-d411-4d5f-9f62-92e77cfdb975\"},\"624116bc-7cab-4f38-a9df-9d478561d92d\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Longitude\",\"label\":\"Longitude\",\"newName\":\"Longitude\",\"indexOrder\":7,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.longitude\",\"successorElement\":\"8b69af63-6ddb-4057-beac-59663d2fbc40\"},\"f1bfbfde-7439-405c-89a6-4a64fe0973ea\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_ID\",\"label\":\"State ID\",\"newName\":\"State_ID\",\"indexOrder\":8,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"beae4159-6342-4cce-b128-87cd899c1a61\"},\"4f58553f-0975-4c0b-b247-63ea62461775\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_ID\",\"label\":\"City ID\",\"newName\":\"City_ID\",\"indexOrder\":9,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"e5241320-f950-47d9-80b3-6a4c604eb278\"},\"3d7099e1-7ad6-48e7-97ff-159568c28782\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_ID\",\"label\":\"Country ID\",\"newName\":\"Country_ID\",\"indexOrder\":10,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"16b8cdca-92d9-44cd-a8fe-647a1235cfe2\"},\"acc12c45-958d-4fc1-9b6e-0c287e410cd3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Description\",\"label\":\"Country Description\",\"newName\":\"Country_Description\",\"indexOrder\":11,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"8a2ec484-06b7-4019-a463-8272f9266a83\"},\"59b3a576-e65d-4653-afc9-665ccbffc51b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_Description\",\"label\":\"State Description\",\"newName\":\"State_Description\",\"indexOrder\":12,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"d5920fb2-6076-4bf8-92c0-068f23f7cc00\"},\"633646a9-b039-4736-b46c-1ca1158b59fa\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_Description\",\"label\":\"City Description\",\"newName\":\"City_Description\",\"indexOrder\":13,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"d258b6af-3f26-4965-9967-f78997eb771e\"},\"9e350ca0-7b1e-4304-9ffb-2b07e6a3fb80\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"RELEASE_ID\",\"label\":\"Release ID\",\"newName\":\"RELEASE_ID\",\"indexOrder\":14,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"bee66762-2a01-4d14-b0ce-c471e479df01\"},\"1ed7add6-f314-4655-9a45-fda716a6dbbc\":{\"classDefinition\":\"sap.cdw.commonmodel.Context\",\"name\":\"3ED43A7C761D47BEA149\",\"label\":\"Workforce Location\",\"crossSpace\":{\"schema\":\"3ED43A7C761D47BEA149\",\"space\":\"3ED43A7C761D47BEA149\"}},\"78f92dd4-aa21-43d2-8689-a760d9cc5551\":{\"classDefinition\":\"sap.cdw.querybuilder.Join\",\"type\":\"left\",\"name\":\"Join 1\",\"mappings\":{\"7e99d928-8a2a-426b-b8be-ee6bf2b8e6e5\":{}},\"leftInput\":\"7609adc2-b786-44bf-83b8-cfcafa55681d\",\"rightInput\":\"9887f227-6895-42b9-a4c7-a5f679bad590\",\"elements\":{\"774cff87-ac34-4eba-96ac-671ffa7efca5\":{\"name\":\"Alpha-2 code\"},\"3a2c04b9-ce68-4b03-9f47-0c26906da68c\":{\"name\":\"Alpha-3 code\"},\"49096b4d-1eb2-46fc-84a6-447a9dae4d6f\":{\"name\":\"Numeric code\"},\"2322f665-f7f0-4458-a64f-8c73ff231846\":{\"name\":\"Location\"},\"9ad5a2eb-6bd9-4be7-a7c6-66c06d6e7846\":{\"name\":\"Division\"},\"2a012c81-6ba5-49c4-b84d-2062b8b81061\":{\"name\":\"OrganizationalUnit\"},\"e2ff21c2-92b2-4b24-a559-3590ed91d4fa\":{\"name\":\"BusinessUnit\"},\"1fe27bb7-277d-422a-b790-2925d5a6a9f8\":{\"name\":\"Company\"},\"18b98c5c-9b29-4dc5-bbaa-567de3f0c27f\":{\"name\":\"Location_Description\"},\"23cb2490-44a3-4ad2-9add-350c54b9d89c\":{\"name\":\"Latitude\"},\"8e99c829-b976-4cc4-aead-19bcd13ce0cb\":{\"name\":\"Longitude\"},\"84713408-0c25-4f10-8637-85ef57b36b32\":{\"name\":\"State_ID\"},\"882f65cc-e753-4698-a9f1-91224add2085\":{\"name\":\"City_ID\"},\"0e1f5c6a-b8f7-4edb-a6de-db91ceaf4aa7\":{\"name\":\"Country_ID\"},\"6e8c893f-b4ce-4f70-907e-8e17eb1de042\":{\"name\":\"Country_Description\"},\"32b9f529-a9a1-4b5d-9f12-29d9c0c2aaa8\":{\"name\":\"State_Description\"},\"e6b8f058-6cdd-48dd-ab2d-c20386a2bf36\":{\"name\":\"City_Description\"}},\"successorNode\":\"02eb602a-c6a1-441e-ae51-1840cbc452bd\"},\"774cff87-ac34-4eba-96ac-671ffa7efca5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-2 code\",\"label\":\"Alpha-2 code\",\"newName\":\"Alpha-2 code\",\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"21d3c4c8-46e6-4cea-88a2-efeec062226a\"},\"3a2c04b9-ce68-4b03-9f47-0c26906da68c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-3 code\",\"label\":\"Alpha-3 code\",\"newName\":\"Alpha-3 code\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"70887425-9ad3-4013-9313-5d3f72fda32b\"},\"49096b4d-1eb2-46fc-84a6-447a9dae4d6f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Numeric code\",\"label\":\"Country Numeric code\",\"newName\":\"Country_Numeric_code\",\"indexOrder\":6,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"nativeDataType\":\"BIGINT\",\"successorElement\":\"a5987901-fe83-4e8e-ac97-8f3c2871221c\"},\"2322f665-f7f0-4458-a64f-8c73ff231846\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":1,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"a0159d16-d5af-4808-abf4-eccc46bfab80\"},\"a0159d16-d5af-4808-abf4-eccc46bfab80\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":7,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true},\"9ad5a2eb-6bd9-4be7-a7c6-66c06d6e7846\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"indexOrder\":3,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"47005cb2-083a-4428-810f-f88f88f2cbe8\"},\"47005cb2-083a-4428-810f-f88f88f2cbe8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"indexOrder\":8,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true},\"2a012c81-6ba5-49c4-b84d-2062b8b81061\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"f99361fb-3ceb-4fa9-a11d-83779d0d32c8\"},\"f99361fb-3ceb-4fa9-a11d-83779d0d32c8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":9,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true},\"e2ff21c2-92b2-4b24-a559-3590ed91d4fa\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"BusinessUnit\",\"label\":\"BusinessUnit\",\"newName\":\"BusinessUnit\",\"indexOrder\":7,\"length\":256,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"3d7c205e-243d-42f8-b9fd-f39a4ba06c7f\"},\"3d7c205e-243d-42f8-b9fd-f39a4ba06c7f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"BusinessUnit\",\"label\":\"BusinessUnit\",\"newName\":\"BusinessUnit\",\"indexOrder\":10,\"length\":256,\"precision\":0,\"scale\":0,\"isDimension\":true},\"1fe27bb7-277d-422a-b790-2925d5a6a9f8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":9,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"6fc8b6e1-941d-46c8-8512-51924816e8a6\"},\"6fc8b6e1-941d-46c8-8512-51924816e8a6\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":11,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true},\"18b98c5c-9b29-4dc5-bbaa-567de3f0c27f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location_Description\",\"label\":\"Location Description\",\"newName\":\"Location_Description\",\"indexOrder\":11,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"ee34eeab-db17-4391-bae4-4efc3b99bf1d\"},\"ee34eeab-db17-4391-bae4-4efc3b99bf1d\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location_Description\",\"label\":\"Location Description\",\"newName\":\"Location_Description\",\"indexOrder\":12,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\"},\"23cb2490-44a3-4ad2-9add-350c54b9d89c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Latitude\",\"label\":\"Latitude\",\"newName\":\"Latitude\",\"indexOrder\":13,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.latitude\",\"successorElement\":\"c838f4c9-89fb-4b3e-94dd-2c270533f59c\"},\"c838f4c9-89fb-4b3e-94dd-2c270533f59c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Latitude\",\"label\":\"Latitude\",\"newName\":\"Latitude\",\"indexOrder\":13,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.latitude\"},\"8e99c829-b976-4cc4-aead-19bcd13ce0cb\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Longitude\",\"label\":\"Longitude\",\"newName\":\"Longitude\",\"indexOrder\":14,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.longitude\",\"successorElement\":\"0f504974-90eb-477f-9510-212bd07ab678\"},\"0f504974-90eb-477f-9510-212bd07ab678\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Longitude\",\"label\":\"Longitude\",\"newName\":\"Longitude\",\"indexOrder\":14,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.longitude\"},\"84713408-0c25-4f10-8637-85ef57b36b32\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_ID\",\"label\":\"State ID\",\"newName\":\"State_ID\",\"indexOrder\":15,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"2188e96c-ab90-4db1-8fae-68bd9b0852b3\"},\"2188e96c-ab90-4db1-8fae-68bd9b0852b3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_ID\",\"label\":\"State ID\",\"newName\":\"State_ID\",\"indexOrder\":15,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true},\"882f65cc-e753-4698-a9f1-91224add2085\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_ID\",\"label\":\"City ID\",\"newName\":\"City_ID\",\"indexOrder\":16,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"b66b11e5-8534-4898-9b45-53cadf293ec3\"},\"b66b11e5-8534-4898-9b45-53cadf293ec3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_ID\",\"label\":\"City ID\",\"newName\":\"City_ID\",\"indexOrder\":16,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true},\"0e1f5c6a-b8f7-4edb-a6de-db91ceaf4aa7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_ID\",\"label\":\"Country ID\",\"newName\":\"Country_ID\",\"indexOrder\":17,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"20c73d5a-442d-4477-b6bc-8b5ed13700df\"},\"20c73d5a-442d-4477-b6bc-8b5ed13700df\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_ID\",\"label\":\"Country ID\",\"newName\":\"Country_ID\",\"indexOrder\":17,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true},\"6e8c893f-b4ce-4f70-907e-8e17eb1de042\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Description\",\"label\":\"Country Description\",\"newName\":\"Country_Description\",\"indexOrder\":18,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"7882baf7-5b79-4dc3-8d64-3ffdf6a02a8c\"},\"7882baf7-5b79-4dc3-8d64-3ffdf6a02a8c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Description\",\"label\":\"Country Description\",\"newName\":\"Country_Description\",\"indexOrder\":18,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\"},\"32b9f529-a9a1-4b5d-9f12-29d9c0c2aaa8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_Description\",\"label\":\"State Description\",\"newName\":\"State_Description\",\"indexOrder\":19,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"191e2c09-4d27-4c24-9fc2-98a50918f735\"},\"191e2c09-4d27-4c24-9fc2-98a50918f735\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_Description\",\"label\":\"State Description\",\"newName\":\"State_Description\",\"indexOrder\":19,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\"},\"e6b8f058-6cdd-48dd-ab2d-c20386a2bf36\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_Description\",\"label\":\"City Description\",\"newName\":\"City_Description\",\"indexOrder\":20,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"adf55488-0038-40a3-be04-e8eec6db84e0\"},\"adf55488-0038-40a3-be04-e8eec6db84e0\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_Description\",\"label\":\"City Description\",\"newName\":\"City_Description\",\"indexOrder\":20,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\"},\"6d8132ec-ee3e-4108-9c81-5a07ea5cc3b1\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.JoinSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":60.99999940395355,\"y\":-32.2147957182397,\"object\":\"78f92dd4-aa21-43d2-8689-a760d9cc5551\"},\"672ea635-76d3-4bf7-8353-fbe4302ed6e5\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.EntitySymbol\",\"_height\":40,\"x\":-274.99999940395355,\"y\":-66.35053763763004,\"width\":168,\"object\":\"b987ca87-78b9-4b9e-869d-48bf13a82f56\"},\"9887f227-6895-42b9-a4c7-a5f679bad590\":{\"classDefinition\":\"sap.cdw.querybuilder.RenameElements\",\"_isProjectionNode\":false,\"name\":\"Projection 2\",\"elements\":{\"8db6b743-bbae-4399-8ce9-60681a289583\":{\"name\":\"Country\"},\"322f6925-efd2-4d70-aab8-808689c2de0a\":{\"name\":\"Alpha-2 code\"},\"291da06e-116e-47ba-b2ad-649853532fce\":{\"name\":\"Alpha-3 code\"},\"65617ff7-156c-4f84-8b4b-4ab10a0cb391\":{\"name\":\"Numeric code\"},\"a0c8d7a0-0090-412b-9519-d0d7d0154d36\":{\"name\":\"Latitude (average)\"},\"e86e9b9a-1f45-40f7-a30e-54872541378c\":{\"name\":\"Longitude (average)\"},\"adc726fe-834f-4155-903b-df87c22dd7ff\":{\"name\":\"RELEASE_ID\"}},\"successorNode\":\"78f92dd4-aa21-43d2-8689-a760d9cc5551\"},\"8db6b743-bbae-4399-8ce9-60681a289583\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country\",\"label\":\"Country\",\"newName\":\"Country\",\"isRemoved\":true,\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"isNotNull\":true},\"322f6925-efd2-4d70-aab8-808689c2de0a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-2 code\",\"label\":\"Alpha-2 code\",\"newName\":\"Alpha-2 code\",\"indexOrder\":1,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"774cff87-ac34-4eba-96ac-671ffa7efca5\"},\"291da06e-116e-47ba-b2ad-649853532fce\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-3 code\",\"label\":\"Alpha-3 code\",\"newName\":\"Alpha-3 code\",\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"3a2c04b9-ce68-4b03-9f47-0c26906da68c\"},\"65617ff7-156c-4f84-8b4b-4ab10a0cb391\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Numeric code\",\"label\":\"Country Numeric code\",\"newName\":\"Country_Numeric_code\",\"indexOrder\":3,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"nativeDataType\":\"BIGINT\",\"successorElement\":\"49096b4d-1eb2-46fc-84a6-447a9dae4d6f\"},\"a0c8d7a0-0090-412b-9519-d0d7d0154d36\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Latitude (average)\",\"label\":\"Latitude (average)\",\"newName\":\"Latitude (average)\",\"isRemoved\":true,\"indexOrder\":4,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":12,\"scale\":8,\"nativeDataType\":\"DECIMAL\"},\"e86e9b9a-1f45-40f7-a30e-54872541378c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Longitude (average)\",\"label\":\"Longitude (average)\",\"newName\":\"Longitude (average)\",\"isRemoved\":true,\"indexOrder\":5,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":12,\"scale\":8,\"nativeDataType\":\"DECIMAL\"},\"adc726fe-834f-4155-903b-df87c22dd7ff\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"RELEASE_ID\",\"label\":\"Release ID\",\"newName\":\"RELEASE_ID\",\"isRemoved\":true,\"indexOrder\":6,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"a11a1006-4149-4cd7-bca9-e7e0354c2725\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.RenameSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":-56.99999940395355,\"y\":30.35053763763004,\"object\":\"9887f227-6895-42b9-a4c7-a5f679bad590\"},\"b601f27c-82d8-4c92-b037-916f29dada09\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"-106.99999940395355,46.35053763763004 -56.99999940395355,46.35053763763004\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"828469ba-4b9b-4f89-92ff-97fe6421d280\",\"targetSymbol\":\"a11a1006-4149-4cd7-bca9-e7e0354c2725\"},\"422cfae9-ee26-48df-a7a9-73feef1fded4\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"isLeftInput\":false,\"points\":\"-8.999999403953552,46.35053763763004 26,46.35053763763004 26,-10.881462384906357 60.99999940395355,-10.881462384906357\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"a11a1006-4149-4cd7-bca9-e7e0354c2725\",\"targetSymbol\":\"6d8132ec-ee3e-4108-9c81-5a07ea5cc3b1\",\"object\":\"78f92dd4-aa21-43d2-8689-a760d9cc5551\"},\"7e99d928-8a2a-426b-b8be-ee6bf2b8e6e5\":{\"classDefinition\":\"sap.cdw.commonmodel.ElementMapping\",\"source\":\"16b8cdca-92d9-44cd-a8fe-647a1235cfe2\",\"target\":\"291da06e-116e-47ba-b2ad-649853532fce\"},\"7096ff6f-a267-4844-bae4-ab13ec9fe15a\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"108.99999940395355,-16.2147957182397 158.99999940395355,-16.2147957182397\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"6d8132ec-ee3e-4108-9c81-5a07ea5cc3b1\",\"targetSymbol\":\"3d35e1c4-ca4f-4f07-a410-c8b2e1599f8a\"},\"7609adc2-b786-44bf-83b8-cfcafa55681d\":{\"classDefinition\":\"sap.cdw.querybuilder.RenameElements\",\"_isProjectionNode\":false,\"name\":\"Projection 1\",\"elements\":{\"48bfe3e8-375d-4076-8f0b-15372c791aa1\":{\"name\":\"Location\"},\"526f3211-6cd6-4296-a9a6-0187a1c446f1\":{\"name\":\"Division\"},\"916c239e-10ee-4105-a915-cd39d6cdb44f\":{\"name\":\"OrganizationalUnit\"},\"c7fdac58-8c56-4630-bf57-f87966702d43\":{\"name\":\"BusinessUnit\"},\"831b2816-c4d2-4dd0-b93b-79fece52419e\":{\"name\":\"Company\"},\"bd830fb0-be5e-4ba1-bab3-025f4658f57e\":{\"name\":\"Location_Description\"},\"11da24b7-d411-4d5f-9f62-92e77cfdb975\":{\"name\":\"Latitude\"},\"8b69af63-6ddb-4057-beac-59663d2fbc40\":{\"name\":\"Longitude\"},\"beae4159-6342-4cce-b128-87cd899c1a61\":{\"name\":\"State_ID\"},\"e5241320-f950-47d9-80b3-6a4c604eb278\":{\"name\":\"City_ID\"},\"16b8cdca-92d9-44cd-a8fe-647a1235cfe2\":{\"name\":\"Country_ID\"},\"8a2ec484-06b7-4019-a463-8272f9266a83\":{\"name\":\"Country_Description\"},\"d5920fb2-6076-4bf8-92c0-068f23f7cc00\":{\"name\":\"State_Description\"},\"d258b6af-3f26-4965-9967-f78997eb771e\":{\"name\":\"City_Description\"},\"bee66762-2a01-4d14-b0ce-c471e479df01\":{\"name\":\"RELEASE_ID\"}},\"successorNode\":\"78f92dd4-aa21-43d2-8689-a760d9cc5551\"},\"48bfe3e8-375d-4076-8f0b-15372c791aa1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"2322f665-f7f0-4458-a64f-8c73ff231846\"},\"526f3211-6cd6-4296-a9a6-0187a1c446f1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"indexOrder\":1,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"9ad5a2eb-6bd9-4be7-a7c6-66c06d6e7846\"},\"916c239e-10ee-4105-a915-cd39d6cdb44f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"2a012c81-6ba5-49c4-b84d-2062b8b81061\"},\"c7fdac58-8c56-4630-bf57-f87966702d43\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"BusinessUnit\",\"label\":\"BusinessUnit\",\"newName\":\"BusinessUnit\",\"indexOrder\":3,\"length\":256,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"e2ff21c2-92b2-4b24-a559-3590ed91d4fa\"},\"831b2816-c4d2-4dd0-b93b-79fece52419e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":4,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"1fe27bb7-277d-422a-b790-2925d5a6a9f8\"},\"bd830fb0-be5e-4ba1-bab3-025f4658f57e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location_Description\",\"label\":\"Location Description\",\"newName\":\"Location_Description\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"18b98c5c-9b29-4dc5-bbaa-567de3f0c27f\"},\"11da24b7-d411-4d5f-9f62-92e77cfdb975\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Latitude\",\"label\":\"Latitude\",\"newName\":\"Latitude\",\"indexOrder\":6,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.latitude\",\"successorElement\":\"23cb2490-44a3-4ad2-9add-350c54b9d89c\"},\"8b69af63-6ddb-4057-beac-59663d2fbc40\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Longitude\",\"label\":\"Longitude\",\"newName\":\"Longitude\",\"indexOrder\":7,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.longitude\",\"successorElement\":\"8e99c829-b976-4cc4-aead-19bcd13ce0cb\"},\"beae4159-6342-4cce-b128-87cd899c1a61\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_ID\",\"label\":\"State ID\",\"newName\":\"State_ID\",\"indexOrder\":8,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"84713408-0c25-4f10-8637-85ef57b36b32\"},\"e5241320-f950-47d9-80b3-6a4c604eb278\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_ID\",\"label\":\"City ID\",\"newName\":\"City_ID\",\"indexOrder\":9,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"882f65cc-e753-4698-a9f1-91224add2085\"},\"16b8cdca-92d9-44cd-a8fe-647a1235cfe2\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_ID\",\"label\":\"Country ID\",\"newName\":\"Country_ID\",\"indexOrder\":10,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"0e1f5c6a-b8f7-4edb-a6de-db91ceaf4aa7\"},\"8a2ec484-06b7-4019-a463-8272f9266a83\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Description\",\"label\":\"Country Description\",\"newName\":\"Country_Description\",\"indexOrder\":11,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"6e8c893f-b4ce-4f70-907e-8e17eb1de042\"},\"d5920fb2-6076-4bf8-92c0-068f23f7cc00\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_Description\",\"label\":\"State Description\",\"newName\":\"State_Description\",\"indexOrder\":12,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"32b9f529-a9a1-4b5d-9f12-29d9c0c2aaa8\"},\"d258b6af-3f26-4965-9967-f78997eb771e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_Description\",\"label\":\"City Description\",\"newName\":\"City_Description\",\"indexOrder\":13,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"e6b8f058-6cdd-48dd-ab2d-c20386a2bf36\"},\"bee66762-2a01-4d14-b0ce-c471e479df01\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"RELEASE_ID\",\"label\":\"Release ID\",\"newName\":\"RELEASE_ID\",\"isRemoved\":true,\"indexOrder\":14,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"f79d7b9d-845b-4e53-aa2c-4402a8a5d41e\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.RenameSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":-56.99999940395355,\"y\":-62.35053763763004,\"object\":\"7609adc2-b786-44bf-83b8-cfcafa55681d\"},\"b7e2f02f-c306-4434-8b9e-c8a75f509d4d\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"-106.99999940395355,-46.35053763763004 -56.99999940395355,-46.35053763763004\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"672ea635-76d3-4bf7-8353-fbe4302ed6e5\",\"targetSymbol\":\"f79d7b9d-845b-4e53-aa2c-4402a8a5d41e\"},\"f0fb4479-ca10-498b-8b1b-b6cc557cc11c\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"-8.999999403953552,-46.35053763763004 26,-46.35053763763004 26,-21.548129051573028 60.99999940395355,-21.548129051573028\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"f79d7b9d-845b-4e53-aa2c-4402a8a5d41e\",\"targetSymbol\":\"6d8132ec-ee3e-4108-9c81-5a07ea5cc3b1\",\"object\":\"78f92dd4-aa21-43d2-8689-a760d9cc5551\"}}}"
+    },
+    "3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR": {
+      "editor": {
+        "lastModifier": "GRAPHICALVIEWBUILDER",
+        "default": "GRAPHICALVIEWBUILDER"
+      },
+      "uiModel": "{\"contents\":{\"c3a07893-221a-4846-b609-db74f5770d86\":{\"classDefinition\":\"sap.cdw.querybuilder.Model\",\"name\":\"3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR\",\"label\":\"3VF_MINIMUM WAGE BY LOCATION BY YEAR\",\"modificationDate\":1716038512815,\"deploymentDate\":1716038512815,\"#objectStatus\":2,\"output\":\"28f97678-0c86-4ee3-a835-12ea55f0703d\",\"nodes\":{\"28f97678-0c86-4ee3-a835-12ea55f0703d\":{\"name\":\"3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR\"},\"4f6a821e-5b20-4c19-86f8-ab0c6d932c88\":{\"name\":\"2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS\"},\"2449b980-b438-47fe-8afb-334cf18b9014\":{\"name\":\"1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL\"},\"86a911b5-e9f3-4b37-8135-8c7c2553e46b\":{\"name\":\"Join 1\"},\"5e8673b2-bc85-4b9b-8fd5-c3fc51e35e37\":{\"name\":\"Projection 1\"},\"9741c425-8c1d-4185-9317-38831388303b\":{\"name\":\"Filter 1\"},\"7fdca75b-c132-4f3b-8ad1-f2cc05f4a159\":{\"name\":\"Projection 2\"},\"23d71126-608d-4091-ada8-736709804306\":{\"name\":\"Projection 3\"}},\"diagrams\":{\"d4b75e34-fa98-4e6a-b16e-f80df3e4def0\":{}}},\"28f97678-0c86-4ee3-a835-12ea55f0703d\":{\"classDefinition\":\"sap.cdw.querybuilder.Output\",\"name\":\"3VF_MINIMUM_WAGE_BY_LOCATION_BY_YEAR\",\"type\":\"graphicView\",\"isPinToMemoryEnabled\":false,\"dataCategory\":\"SQLFACT\",\"isAllowConsumption\":false,\"modificationDate\":1716038512815,\"deploymentDate\":1716038512815,\"#objectStatus\":2,\"elements\":{\"c4f9fb5e-02fd-49f2-8aa9-cdca02287d9e\":{\"name\":\"Location\"},\"ab35f952-5443-455a-aa85-48bce3ef7559\":{\"name\":\"Company\"},\"1bfa3b48-31eb-4165-8587-5a31ad11ac34\":{\"name\":\"Location_Description\"},\"b7439b44-426f-4055-b54d-0708cbe4a26b\":{\"name\":\"Country_Description\"},\"ddd2fe6f-4562-4705-809a-b5e090d8ab0f\":{\"name\":\"currency\"},\"394dd2fc-ef00-4536-a5b9-f9b28a885f1b\":{\"name\":\"Monthly_Minimum_Wage\"},\"ab6001b4-34c4-4832-a692-31e3488df408\":{\"name\":\"OBS_FLAG\"},\"2a4db2f4-ebbe-448a-b537-d56077235749\":{\"name\":\"Annual_Minimum_Wage\"},\"9956b254-da14-42d6-a9cc-e9d4af475a0c\":{\"name\":\"YEAR_Full_Year_Value\"},\"e9b1c013-ecac-474b-9ecd-3828a90bc631\":{\"name\":\"OrganizationalUnit\"}}},\"4f6a821e-5b20-4c19-86f8-ab0c6d932c88\":{\"classDefinition\":\"sap.cdw.querybuilder.Entity\",\"name\":\"2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS\",\"label\":\"2VD_WORKFORCE_LOCATION_WITH_GEO_IDENTIFIERS\",\"type\":3,\"isPinToMemoryEnabled\":false,\"isAllowConsumption\":false,\"isHiddenInUi\":false,\"modificationDate\":1716038273094,\"deploymentDate\":1716038305091,\"#objectStatus\":\"1\",\"elements\":{\"93aaef8d-edac-4193-b109-cc35c392105f\":{\"name\":\"Location\"},\"605bae44-dc01-40eb-9c99-3bd1c9d69cb0\":{\"name\":\"Division\"},\"8347dd3f-d82f-4f77-b091-a98d06735890\":{\"name\":\"OrganizationalUnit\"},\"31ad0e86-a81a-413b-9fed-74e1129ddfb9\":{\"name\":\"BusinessUnit\"},\"0fcdc14d-f51e-4847-9b38-3a8a83907b21\":{\"name\":\"Company\"},\"f1e7de3f-1dd4-44f9-b8a2-d0da3d853c2d\":{\"name\":\"Location_Description\"},\"b4354190-cf61-4068-bbfc-a185de5de9dd\":{\"name\":\"Latitude\"},\"36130ff0-15be-4262-903b-2f4bf5729212\":{\"name\":\"Longitude\"},\"8a2c0542-37c6-44a8-8352-6dd004e11538\":{\"name\":\"State_ID\"},\"ee9e8154-f385-45dd-a58d-88289ac1cae4\":{\"name\":\"City_ID\"},\"21954661-e3bd-4de8-836b-2c2b67917bbd\":{\"name\":\"Country_ID\"},\"07942a5b-ec37-4e4b-b8c1-d649b1c5af64\":{\"name\":\"Country_Description\"},\"17cc20c8-125f-49b9-b1a0-deb6f70f5e66\":{\"name\":\"State_Description\"},\"842703ae-86d3-4744-9dc8-9c3a44a8041e\":{\"name\":\"City_Description\"},\"c13afd38-d1e9-474b-b9e5-464bd54f11f3\":{\"name\":\"Alpha-2 code\"},\"25043b04-84b5-4bdd-8608-05c7fd9eda02\":{\"name\":\"Alpha-3 code\"},\"d0e4f486-158b-452e-b22e-888fddf5c47d\":{\"name\":\"Country_Numeric_code\"}},\"successorNode\":\"23d71126-608d-4091-ada8-736709804306\"},\"2449b980-b438-47fe-8afb-334cf18b9014\":{\"classDefinition\":\"sap.cdw.querybuilder.Entity\",\"name\":\"1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL\",\"label\":\"1DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL\",\"type\":8,\"remote\":{\"connection\":\"4448CE3871784A448035\",\"table\":\"<NULL>4448CE3871784A4480351DP_EUROSTAT_MINIMUM_WAGES_MON_4DPL\"},\"isPinToMemoryEnabled\":false,\"isAllowConsumption\":false,\"isHiddenInUi\":false,\"modificationDate\":1715947565413,\"deploymentDate\":1715947586328,\"#objectStatus\":\"1\",\"elements\":{\"82d944e2-54e5-4d53-98a0-b66bec46c0e7\":{\"name\":\"DATAFLOW\"},\"1d92f87e-38a1-415b-8789-f3c3e5af5215\":{\"name\":\"LAST UPDATE\"},\"fc9e15b5-7458-4efd-ac45-76511e8101a7\":{\"name\":\"freq\"},\"4352bd64-c81c-4d0e-8b33-8b60394720ab\":{\"name\":\"currency\"},\"5082f402-a452-4286-9b79-32dd486b87c4\":{\"name\":\"geo\"},\"24718480-34b3-437f-95f3-8662ad3a6b66\":{\"name\":\"TIME_PERIOD\"},\"5cf8504f-eed3-4b7f-8e3e-15c8bfdcd5b7\":{\"name\":\"Monthly_Minimum_Wage\"},\"d962274c-15bd-4de2-9340-811d10bbe413\":{\"name\":\"OBS_FLAG\"},\"3c79041e-d366-42b5-91a0-738a377630be\":{\"name\":\"Annual_Minimum_Wage\"},\"5fa45881-5d08-4cdf-b6b8-c0cafd5b496c\":{\"name\":\"YEAR_Full_Year_Value\"},\"7ffe62bc-8a5c-4cbf-81d2-9240cdb66af3\":{\"name\":\"RELEASE_ID\"}},\"successorNode\":\"5e8673b2-bc85-4b9b-8fd5-c3fc51e35e37\"},\"86a911b5-e9f3-4b37-8135-8c7c2553e46b\":{\"classDefinition\":\"sap.cdw.querybuilder.Join\",\"name\":\"Join 1\",\"mappings\":{\"5696f55b-a5b7-4505-852f-adb97148b9ae\":{}},\"leftInput\":\"23d71126-608d-4091-ada8-736709804306\",\"rightInput\":\"9741c425-8c1d-4185-9317-38831388303b\",\"elements\":{\"668dffe4-2d4d-4efd-9cef-aa7be0022358\":{\"name\":\"Location\"},\"8eeeb85d-cd85-4f1b-bb7d-da171669f4e1\":{\"name\":\"Division\"},\"20fea7e3-bdcf-4b69-96e8-f473d98bd68d\":{\"name\":\"OrganizationalUnit\"},\"136944af-c1dd-4d50-a467-11adee802ea2\":{\"name\":\"BusinessUnit\"},\"7f0d62cb-ce74-46fc-b0ae-d25a83b4a2f4\":{\"name\":\"Company\"},\"4e31a365-04e1-4ac0-ba45-b7d4c3ef94a6\":{\"name\":\"Location_Description\"},\"91838273-3617-4210-847f-37a34666f798\":{\"name\":\"Latitude\"},\"42ad84d1-5c8e-4757-a301-375685a7b78a\":{\"name\":\"Longitude\"},\"05dbdf46-ce96-4ac9-ad42-ace25d13745e\":{\"name\":\"State_ID\"},\"60badbcc-e3fe-46c9-b228-de91028e0f9e\":{\"name\":\"City_ID\"},\"4820da4d-df37-4c11-a801-6712aac16a2a\":{\"name\":\"Country_ID\"},\"422812a7-5aac-417f-af9f-c8266f6914d7\":{\"name\":\"Country_Description\"},\"537c0f72-9699-4aea-aed5-b5c8bbb04e65\":{\"name\":\"State_Description\"},\"11c3beb8-5987-4217-91b2-2f83e7728e00\":{\"name\":\"City_Description\"},\"e8052399-70bb-41dd-a9d8-ee5b877f67d5\":{\"name\":\"Alpha-2 code\"},\"ea3e7aab-5b43-4a61-9b52-138da47c764e\":{\"name\":\"Alpha-3 code\"},\"79a413f7-c19f-4713-b35d-b64dece20bf3\":{\"name\":\"Country_Numeric_code\"},\"e1bb2305-e4b4-4e57-8262-2f804d868a0a\":{\"name\":\"currency\"},\"16d2738b-477a-4b10-b523-9dd931053263\":{\"name\":\"geo\"},\"5bfd2f4a-ad30-44ec-b0e0-48a504e640e2\":{\"name\":\"TIME_PERIOD\"},\"a2cf585b-32eb-4a88-b1a9-e304097a04b5\":{\"name\":\"Monthly_Minimum_Wage\"},\"a21fb51e-1205-44b3-9b87-0a42c91c20ec\":{\"name\":\"OBS_FLAG\"},\"bf6fbe47-6919-47cd-a127-6960d211886f\":{\"name\":\"Annual_Minimum_Wage\"},\"4d2dd06b-408b-4029-ae6f-5c55f47ca3be\":{\"name\":\"YEAR_Full_Year_Value\"}},\"successorNode\":\"7fdca75b-c132-4f3b-8ad1-f2cc05f4a159\"},\"5e8673b2-bc85-4b9b-8fd5-c3fc51e35e37\":{\"classDefinition\":\"sap.cdw.querybuilder.RenameElements\",\"_isProjectionNode\":false,\"name\":\"Projection 1\",\"elements\":{\"0a21f723-37a2-4fba-839b-8dfdd1648a96\":{\"name\":\"DATAFLOW\"},\"79956fa5-3896-43f6-bd5d-0cb342f77542\":{\"name\":\"LAST UPDATE\"},\"02470e9b-38ff-45db-977e-61efd41811b9\":{\"name\":\"freq\"},\"41a68b35-5d80-40a9-a328-db642786e379\":{\"name\":\"currency\"},\"df04ad09-e0af-477b-902a-5ea89b366240\":{\"name\":\"geo\"},\"4edfe5c1-46b5-4257-b35c-3d7449f7229f\":{\"name\":\"TIME_PERIOD\"},\"9eb31507-63de-4d38-a681-e2cc07c0b801\":{\"name\":\"Monthly_Minimum_Wage\"},\"a4e8ab96-9661-44ee-92e9-5b03e118bef8\":{\"name\":\"OBS_FLAG\"},\"65cbbb77-063e-4739-9f17-97c3efaece0a\":{\"name\":\"Annual_Minimum_Wage\"},\"5192facf-4673-4899-b6a3-5ffa69910c35\":{\"name\":\"YEAR_Full_Year_Value\"},\"34db0e6e-8da1-4416-a689-a24d0367d794\":{\"name\":\"RELEASE_ID\"}},\"successorNode\":\"9741c425-8c1d-4185-9317-38831388303b\"},\"9741c425-8c1d-4185-9317-38831388303b\":{\"classDefinition\":\"sap.cdw.querybuilder.Filter\",\"condition\":\"YEAR_Full_Year_Value <> ''\",\"name\":\"Filter 1\",\"elements\":{\"9208d456-f699-44bc-9dce-4d493d74bb31\":{\"name\":\"currency\"},\"cd0d53aa-6cba-4993-88cc-43dea9fee432\":{\"name\":\"geo\"},\"d3362c81-a791-4618-8d4d-44c9960b9db1\":{\"name\":\"TIME_PERIOD\"},\"b653f2b8-38aa-42eb-9e4d-906e6299a14b\":{\"name\":\"Monthly_Minimum_Wage\"},\"53c3ead4-7c17-44e2-bdb3-e6d2f80cdfcf\":{\"name\":\"OBS_FLAG\"},\"3faa07a5-657b-4101-807c-64310e291d84\":{\"name\":\"Annual_Minimum_Wage\"},\"f99e3356-831f-48cb-be8e-191faa9fc4e2\":{\"name\":\"YEAR_Full_Year_Value\"}},\"successorNode\":\"86a911b5-e9f3-4b37-8135-8c7c2553e46b\"},\"7fdca75b-c132-4f3b-8ad1-f2cc05f4a159\":{\"classDefinition\":\"sap.cdw.querybuilder.RenameElements\",\"_isProjectionNode\":false,\"name\":\"Projection 2\",\"elements\":{\"078ca6f1-1320-47f1-9b07-c47cf853f4f7\":{\"name\":\"Location\"},\"5951f335-f5d7-43d5-8526-916c902035d3\":{\"name\":\"Division\"},\"af4fb2d9-fae8-4215-b81d-d5280e7adf9c\":{\"name\":\"OrganizationalUnit\"},\"cdcb50d6-0005-4f98-9487-78ef336e15a3\":{\"name\":\"BusinessUnit\"},\"424b2d96-7364-42c2-8974-ee51cb076f3a\":{\"name\":\"Company\"},\"a2fb7469-5b10-4efe-a1a8-8b4be3399f33\":{\"name\":\"Location_Description\"},\"a48f96d2-1cca-4cf0-b710-5a0aa0ccc9bf\":{\"name\":\"Latitude\"},\"6eddee04-af52-49af-b93e-65c104439614\":{\"name\":\"Longitude\"},\"805ce33e-22d8-405d-a1bd-181675d0e89a\":{\"name\":\"State_ID\"},\"00e5260c-531c-44ad-a56f-0a3feb6a6ac1\":{\"name\":\"City_ID\"},\"acb4b8b0-75b1-4753-874e-90ced57fee3b\":{\"name\":\"Country_ID\"},\"1dda6503-fd72-4394-8e92-999c54d0b088\":{\"name\":\"Country_Description\"},\"91a1c89f-b7fc-4e50-9d8f-c632c6a9ea29\":{\"name\":\"State_Description\"},\"17d4d0fa-1dba-40e6-9206-ff399761cca5\":{\"name\":\"City_Description\"},\"9a887043-1f4d-4d30-b963-f6a834610491\":{\"name\":\"Alpha-2 code\"},\"50587c35-7ffe-486e-a319-afc1ef18a0b9\":{\"name\":\"Alpha-3 code\"},\"4e2a2c55-7072-4969-aa28-96214da9de77\":{\"name\":\"Country_Numeric_code\"},\"82efd7a6-9c8a-4d25-9a87-cb2424a317c6\":{\"name\":\"currency\"},\"d82aa034-331f-41a4-b1e8-a07dc9422d6d\":{\"name\":\"geo\"},\"3b14a6a5-d27f-49e8-ab92-de975dce0847\":{\"name\":\"TIME_PERIOD\"},\"b58594aa-f4c1-4516-b96c-4debff0a60f8\":{\"name\":\"Monthly_Minimum_Wage\"},\"00fb4865-5c64-4fd4-a7e9-4f790d1d99a4\":{\"name\":\"OBS_FLAG\"},\"57d17377-5db5-4ccf-8488-a84ebae756f8\":{\"name\":\"Annual_Minimum_Wage\"},\"90cfc301-3d5c-493c-a74f-bfa531ecaec4\":{\"name\":\"YEAR_Full_Year_Value\"}},\"successorNode\":\"28f97678-0c86-4ee3-a835-12ea55f0703d\"},\"23d71126-608d-4091-ada8-736709804306\":{\"classDefinition\":\"sap.cdw.querybuilder.RenameElements\",\"_isProjectionNode\":false,\"name\":\"Projection 3\",\"elements\":{\"1a8c87f9-e48f-4102-a87e-850f18b7adcb\":{\"name\":\"Location\"},\"9c0c41c7-9387-4cdb-936b-cbf611027698\":{\"name\":\"Division\"},\"8597aa7e-b7fa-47e5-9503-ce325717819e\":{\"name\":\"OrganizationalUnit\"},\"a8219960-1fb7-44ee-a9a3-5d81c0df7f08\":{\"name\":\"BusinessUnit\"},\"ae243d3c-5619-4732-b77f-35c41bed98d0\":{\"name\":\"Company\"},\"bcf54926-4c16-438e-85b1-b506b002e265\":{\"name\":\"Location_Description\"},\"81eb4631-e495-4f26-8a9a-12ccca2500cc\":{\"name\":\"Latitude\"},\"382b9878-6a66-41c4-bb0a-fad606f781a4\":{\"name\":\"Longitude\"},\"49dbaeec-f4cc-417c-bea4-1692d22561df\":{\"name\":\"State_ID\"},\"76457de0-03fd-4181-bc4f-60749ad23e36\":{\"name\":\"City_ID\"},\"0aa43994-b47f-4cf9-bdbc-d12e52eae927\":{\"name\":\"Country_ID\"},\"4cd4d360-76c2-4474-b761-eebd33a2ca4e\":{\"name\":\"Country_Description\"},\"c90e47be-7270-4d7b-8a5a-31f03b157727\":{\"name\":\"State_Description\"},\"14f8ec2f-8c05-4d26-8122-07d3abdf4957\":{\"name\":\"City_Description\"},\"6150d65c-7fc0-4070-9da3-b02eb7d6e8cd\":{\"name\":\"Alpha-2 code\"},\"8bbac195-374f-4d92-8010-96653b492561\":{\"name\":\"Alpha-3 code\"},\"f199101d-7909-494d-9ca8-a185edcb19c1\":{\"name\":\"Country_Numeric_code\"}},\"successorNode\":\"86a911b5-e9f3-4b37-8135-8c7c2553e46b\"},\"d4b75e34-fa98-4e6a-b16e-f80df3e4def0\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.Diagram\",\"symbols\":{\"3203ea26-ad7d-4ef3-80db-a786569ca5e7\":{},\"000b8a6a-e154-492c-b6b6-47a2218fed6e\":{\"name\":\"Entity Symbol 1\"},\"e7143a49-8cc7-4128-bbae-8600b6cb87ed\":{},\"d9951b98-d45a-4b43-97ea-8ab7e7cfb3a4\":{\"name\":\"Entity Symbol 2\"},\"b9e3efa0-b034-4060-b614-fb5017633615\":{},\"ad71710d-a112-404e-91d1-5f3ec9552caf\":{},\"fc34e8de-ce23-45bb-85a3-21cdedd402a9\":{},\"c8d0003e-fa16-4065-ae53-f6fb9c853860\":{},\"d5b0d90a-5ca6-4ef1-af9b-f7ef4b79cce1\":{},\"4caed837-3c26-4031-9e23-ce3e32b1bdb8\":{},\"f0fe79ae-146a-4c05-a8b8-48066dbdfee9\":{},\"3b30e7f1-da62-4a2a-80dd-26c52e903cc8\":{},\"f0b1a727-c22d-497c-896a-48269d5e9581\":{},\"22cb47d0-e69e-4539-bf9c-6e53174f89c6\":{},\"db4d42b4-393a-4e73-9750-232c6a960207\":{}}},\"c4f9fb5e-02fd-49f2-8aa9-cdca02287d9e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true},\"ab35f952-5443-455a-aa85-48bce3ef7559\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":4,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true},\"1bfa3b48-31eb-4165-8587-5a31ad11ac34\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location_Description\",\"label\":\"Location Description\",\"newName\":\"Location_Description\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\"},\"b7439b44-426f-4055-b54d-0708cbe4a26b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Description\",\"label\":\"Country Description\",\"newName\":\"Country_Description\",\"indexOrder\":11,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\"},\"ddd2fe6f-4562-4705-809a-b5e090d8ab0f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"currency\",\"label\":\"currency\",\"newName\":\"currency\",\"indexOrder\":20,\"length\":5000,\"precision\":0,\"scale\":0},\"394dd2fc-ef00-4536-a5b9-f9b28a885f1b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Monthly_Minimum_Wage\",\"label\":\"Monthly Minimum Wage\",\"newName\":\"Monthly_Minimum_Wage\",\"indexOrder\":23,\"defaultAggregation\":\"SUM\",\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"isMeasure\":true},\"ab6001b4-34c4-4832-a692-31e3488df408\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OBS_FLAG\",\"label\":\"OBS_FLAG\",\"newName\":\"OBS_FLAG\",\"indexOrder\":25,\"length\":5000,\"precision\":0,\"scale\":0},\"2a4db2f4-ebbe-448a-b537-d56077235749\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Annual_Minimum_Wage\",\"label\":\"Annual Minimum Wage\",\"newName\":\"Annual_Minimum_Wage\",\"indexOrder\":24,\"defaultAggregation\":\"SUM\",\"dataType\":\"cds.DecimalFloat\",\"length\":0,\"precision\":0,\"scale\":0,\"isMeasure\":true},\"9956b254-da14-42d6-a9cc-e9d4af475a0c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR_Full_Year_Value\",\"label\":\"YEAR (Full Year Value)\",\"newName\":\"YEAR_Full_Year_Value\",\"indexOrder\":26,\"length\":4,\"precision\":0,\"scale\":0,\"isNotNull\":true},\"e9b1c013-ecac-474b-9ecd-3828a90bc631\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":9,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true},\"93aaef8d-edac-4193-b109-cc35c392105f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":3,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"1a8c87f9-e48f-4102-a87e-850f18b7adcb\"},\"605bae44-dc01-40eb-9c99-3bd1c9d69cb0\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"9c0c41c7-9387-4cdb-936b-cbf611027698\"},\"8347dd3f-d82f-4f77-b091-a98d06735890\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"8597aa7e-b7fa-47e5-9503-ce325717819e\"},\"31ad0e86-a81a-413b-9fed-74e1129ddfb9\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"BusinessUnit\",\"label\":\"BusinessUnit\",\"newName\":\"BusinessUnit\",\"indexOrder\":6,\"length\":256,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"a8219960-1fb7-44ee-a9a3-5d81c0df7f08\"},\"0fcdc14d-f51e-4847-9b38-3a8a83907b21\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":7,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"ae243d3c-5619-4732-b77f-35c41bed98d0\"},\"f1e7de3f-1dd4-44f9-b8a2-d0da3d853c2d\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location_Description\",\"label\":\"Location Description\",\"newName\":\"Location_Description\",\"indexOrder\":8,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"bcf54926-4c16-438e-85b1-b506b002e265\"},\"b4354190-cf61-4068-bbfc-a185de5de9dd\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Latitude\",\"label\":\"Latitude\",\"newName\":\"Latitude\",\"indexOrder\":9,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.latitude\",\"successorElement\":\"81eb4631-e495-4f26-8a9a-12ccca2500cc\"},\"36130ff0-15be-4262-903b-2f4bf5729212\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Longitude\",\"label\":\"Longitude\",\"newName\":\"Longitude\",\"indexOrder\":10,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.longitude\",\"successorElement\":\"382b9878-6a66-41c4-bb0a-fad606f781a4\"},\"8a2c0542-37c6-44a8-8352-6dd004e11538\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_ID\",\"label\":\"State ID\",\"newName\":\"State_ID\",\"indexOrder\":11,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"49dbaeec-f4cc-417c-bea4-1692d22561df\"},\"ee9e8154-f385-45dd-a58d-88289ac1cae4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_ID\",\"label\":\"City ID\",\"newName\":\"City_ID\",\"indexOrder\":12,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"76457de0-03fd-4181-bc4f-60749ad23e36\"},\"21954661-e3bd-4de8-836b-2c2b67917bbd\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_ID\",\"label\":\"Country ID\",\"newName\":\"Country_ID\",\"indexOrder\":13,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"0aa43994-b47f-4cf9-bdbc-d12e52eae927\"},\"07942a5b-ec37-4e4b-b8c1-d649b1c5af64\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Description\",\"label\":\"Country Description\",\"newName\":\"Country_Description\",\"indexOrder\":14,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"4cd4d360-76c2-4474-b761-eebd33a2ca4e\"},\"17cc20c8-125f-49b9-b1a0-deb6f70f5e66\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_Description\",\"label\":\"State Description\",\"newName\":\"State_Description\",\"indexOrder\":15,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"c90e47be-7270-4d7b-8a5a-31f03b157727\"},\"842703ae-86d3-4744-9dc8-9c3a44a8041e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_Description\",\"label\":\"City Description\",\"newName\":\"City_Description\",\"indexOrder\":16,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"14f8ec2f-8c05-4d26-8122-07d3abdf4957\"},\"c13afd38-d1e9-474b-b9e5-464bd54f11f3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-2 code\",\"label\":\"Alpha-2 code\",\"newName\":\"Alpha-2 code\",\"indexOrder\":0,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"6150d65c-7fc0-4070-9da3-b02eb7d6e8cd\"},\"25043b04-84b5-4bdd-8608-05c7fd9eda02\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-3 code\",\"label\":\"Alpha-3 code\",\"newName\":\"Alpha-3 code\",\"indexOrder\":1,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"8bbac195-374f-4d92-8010-96653b492561\"},\"d0e4f486-158b-452e-b22e-888fddf5c47d\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Numeric_code\",\"label\":\"Country Numeric code\",\"newName\":\"Country_Numeric_code\",\"indexOrder\":2,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"nativeDataType\":\"BIGINT\",\"successorElement\":\"f199101d-7909-494d-9ca8-a185edcb19c1\"},\"82d944e2-54e5-4d53-98a0-b66bec46c0e7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DATAFLOW\",\"label\":\"DATAFLOW\",\"newName\":\"DATAFLOW\",\"indexOrder\":9,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"0a21f723-37a2-4fba-839b-8dfdd1648a96\"},\"1d92f87e-38a1-415b-8789-f3c3e5af5215\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"LAST UPDATE\",\"label\":\"LAST UPDATE\",\"newName\":\"LAST UPDATE\",\"indexOrder\":8,\"dataType\":\"cds.DateTime\",\"length\":0,\"precision\":0,\"scale\":0,\"nativeDataType\":\"SECONDDATE\",\"successorElement\":\"79956fa5-3896-43f6-bd5d-0cb342f77542\"},\"fc9e15b5-7458-4efd-ac45-76511e8101a7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"freq\",\"label\":\"freq\",\"newName\":\"freq\",\"indexOrder\":7,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"02470e9b-38ff-45db-977e-61efd41811b9\"},\"4352bd64-c81c-4d0e-8b33-8b60394720ab\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"currency\",\"label\":\"currency\",\"newName\":\"currency\",\"indexOrder\":6,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"41a68b35-5d80-40a9-a328-db642786e379\"},\"5082f402-a452-4286-9b79-32dd486b87c4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"geo\",\"label\":\"geo\",\"newName\":\"geo\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"df04ad09-e0af-477b-902a-5ea89b366240\"},\"24718480-34b3-437f-95f3-8662ad3a6b66\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"TIME_PERIOD\",\"label\":\"TIME_PERIOD\",\"newName\":\"TIME_PERIOD\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"4edfe5c1-46b5-4257-b35c-3d7449f7229f\"},\"5cf8504f-eed3-4b7f-8e3e-15c8bfdcd5b7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Monthly_Minimum_Wage\",\"label\":\"Monthly Minimum Wage\",\"newName\":\"Monthly_Minimum_Wage\",\"indexOrder\":3,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"nativeDataType\":\"DECIMAL\",\"successorElement\":\"9eb31507-63de-4d38-a681-e2cc07c0b801\"},\"d962274c-15bd-4de2-9340-811d10bbe413\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OBS_FLAG\",\"label\":\"OBS_FLAG\",\"newName\":\"OBS_FLAG\",\"indexOrder\":1,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"a4e8ab96-9661-44ee-92e9-5b03e118bef8\"},\"3c79041e-d366-42b5-91a0-738a377630be\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Annual_Minimum_Wage\",\"label\":\"Annual Minimum Wage\",\"newName\":\"Annual_Minimum_Wage\",\"indexOrder\":2,\"dataType\":\"cds.DecimalFloat\",\"length\":0,\"precision\":0,\"scale\":0,\"nativeDataType\":\"DECIMAL\",\"successorElement\":\"65cbbb77-063e-4739-9f17-97c3efaece0a\"},\"5fa45881-5d08-4cdf-b6b8-c0cafd5b496c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR_Full_Year_Value\",\"label\":\"YEAR (Full Year Value)\",\"newName\":\"YEAR_Full_Year_Value\",\"indexOrder\":0,\"length\":4,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"5192facf-4673-4899-b6a3-5ffa69910c35\"},\"7ffe62bc-8a5c-4cbf-81d2-9240cdb66af3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"RELEASE_ID\",\"label\":\"Release ID\",\"newName\":\"RELEASE_ID\",\"indexOrder\":10,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"34db0e6e-8da1-4416-a689-a24d0367d794\"},\"5696f55b-a5b7-4505-852f-adb97148b9ae\":{\"classDefinition\":\"sap.cdw.commonmodel.ElementMapping\",\"source\":\"6150d65c-7fc0-4070-9da3-b02eb7d6e8cd\",\"target\":\"cd0d53aa-6cba-4993-88cc-43dea9fee432\"},\"668dffe4-2d4d-4efd-9cef-aa7be0022358\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"078ca6f1-1320-47f1-9b07-c47cf853f4f7\"},\"8eeeb85d-cd85-4f1b-bb7d-da171669f4e1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"5951f335-f5d7-43d5-8526-916c902035d3\"},\"20fea7e3-bdcf-4b69-96e8-f473d98bd68d\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"af4fb2d9-fae8-4215-b81d-d5280e7adf9c\"},\"136944af-c1dd-4d50-a467-11adee802ea2\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"BusinessUnit\",\"label\":\"BusinessUnit\",\"newName\":\"BusinessUnit\",\"indexOrder\":6,\"length\":256,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"cdcb50d6-0005-4f98-9487-78ef336e15a3\"},\"7f0d62cb-ce74-46fc-b0ae-d25a83b4a2f4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":8,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"424b2d96-7364-42c2-8974-ee51cb076f3a\"},\"4e31a365-04e1-4ac0-ba45-b7d4c3ef94a6\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location_Description\",\"label\":\"Location Description\",\"newName\":\"Location_Description\",\"indexOrder\":10,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"a2fb7469-5b10-4efe-a1a8-8b4be3399f33\"},\"91838273-3617-4210-847f-37a34666f798\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Latitude\",\"label\":\"Latitude\",\"newName\":\"Latitude\",\"indexOrder\":12,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.latitude\",\"successorElement\":\"a48f96d2-1cca-4cf0-b710-5a0aa0ccc9bf\"},\"42ad84d1-5c8e-4757-a301-375685a7b78a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Longitude\",\"label\":\"Longitude\",\"newName\":\"Longitude\",\"indexOrder\":14,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.longitude\",\"successorElement\":\"6eddee04-af52-49af-b93e-65c104439614\"},\"05dbdf46-ce96-4ac9-ad42-ace25d13745e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_ID\",\"label\":\"State ID\",\"newName\":\"State_ID\",\"indexOrder\":16,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"805ce33e-22d8-405d-a1bd-181675d0e89a\"},\"60badbcc-e3fe-46c9-b228-de91028e0f9e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_ID\",\"label\":\"City ID\",\"newName\":\"City_ID\",\"indexOrder\":18,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"00e5260c-531c-44ad-a56f-0a3feb6a6ac1\"},\"4820da4d-df37-4c11-a801-6712aac16a2a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_ID\",\"label\":\"Country ID\",\"newName\":\"Country_ID\",\"indexOrder\":20,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"acb4b8b0-75b1-4753-874e-90ced57fee3b\"},\"422812a7-5aac-417f-af9f-c8266f6914d7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Description\",\"label\":\"Country Description\",\"newName\":\"Country_Description\",\"indexOrder\":21,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"1dda6503-fd72-4394-8e92-999c54d0b088\"},\"537c0f72-9699-4aea-aed5-b5c8bbb04e65\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_Description\",\"label\":\"State Description\",\"newName\":\"State_Description\",\"indexOrder\":22,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"91a1c89f-b7fc-4e50-9d8f-c632c6a9ea29\"},\"11c3beb8-5987-4217-91b2-2f83e7728e00\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_Description\",\"label\":\"City Description\",\"newName\":\"City_Description\",\"indexOrder\":23,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"17d4d0fa-1dba-40e6-9206-ff399761cca5\"},\"e8052399-70bb-41dd-a9d8-ee5b877f67d5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-2 code\",\"label\":\"Alpha-2 code\",\"newName\":\"Alpha-2 code\",\"indexOrder\":24,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"9a887043-1f4d-4d30-b963-f6a834610491\"},\"ea3e7aab-5b43-4a61-9b52-138da47c764e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-3 code\",\"label\":\"Alpha-3 code\",\"newName\":\"Alpha-3 code\",\"indexOrder\":25,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"50587c35-7ffe-486e-a319-afc1ef18a0b9\"},\"79a413f7-c19f-4713-b35d-b64dece20bf3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Numeric_code\",\"label\":\"Country Numeric code\",\"newName\":\"Numeric code\",\"indexOrder\":26,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"4e2a2c55-7072-4969-aa28-96214da9de77\"},\"e1bb2305-e4b4-4e57-8262-2f804d868a0a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"currency\",\"label\":\"currency\",\"newName\":\"currency\",\"indexOrder\":7,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"82efd7a6-9c8a-4d25-9a87-cb2424a317c6\"},\"16d2738b-477a-4b10-b523-9dd931053263\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"geo\",\"label\":\"geo\",\"newName\":\"geo\",\"indexOrder\":9,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"d82aa034-331f-41a4-b1e8-a07dc9422d6d\"},\"5bfd2f4a-ad30-44ec-b0e0-48a504e640e2\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"TIME_PERIOD\",\"label\":\"TIME_PERIOD\",\"newName\":\"TIME_PERIOD\",\"indexOrder\":11,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"3b14a6a5-d27f-49e8-ab92-de975dce0847\"},\"a2cf585b-32eb-4a88-b1a9-e304097a04b5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Monthly_Minimum_Wage\",\"label\":\"Monthly Minimum Wage\",\"newName\":\"Monthly_Minimum_Wage\",\"indexOrder\":13,\"defaultAggregation\":\"SUM\",\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"isMeasure\":true,\"successorElement\":\"b58594aa-f4c1-4516-b96c-4debff0a60f8\"},\"a21fb51e-1205-44b3-9b87-0a42c91c20ec\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OBS_FLAG\",\"label\":\"OBS_FLAG\",\"newName\":\"OBS_FLAG\",\"indexOrder\":15,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"00fb4865-5c64-4fd4-a7e9-4f790d1d99a4\"},\"bf6fbe47-6919-47cd-a127-6960d211886f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Annual_Minimum_Wage\",\"label\":\"Annual Minimum Wage\",\"newName\":\"Annual_Minimum_Wage\",\"indexOrder\":17,\"dataType\":\"cds.DecimalFloat\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"57d17377-5db5-4ccf-8488-a84ebae756f8\"},\"4d2dd06b-408b-4029-ae6f-5c55f47ca3be\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR_Full_Year_Value\",\"label\":\"YEAR (Full Year Value)\",\"newName\":\"YEAR_Full_Year_Value\",\"indexOrder\":19,\"length\":4,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"90cfc301-3d5c-493c-a74f-bfa531ecaec4\"},\"0a21f723-37a2-4fba-839b-8dfdd1648a96\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"DATAFLOW\",\"label\":\"DATAFLOW\",\"newName\":\"DATAFLOW\",\"isRemoved\":true,\"indexOrder\":0,\"length\":5000,\"precision\":0,\"scale\":0},\"79956fa5-3896-43f6-bd5d-0cb342f77542\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"LAST UPDATE\",\"label\":\"LAST UPDATE\",\"newName\":\"LAST UPDATE\",\"isRemoved\":true,\"indexOrder\":1,\"dataType\":\"cds.DateTime\",\"length\":0,\"precision\":0,\"scale\":0},\"02470e9b-38ff-45db-977e-61efd41811b9\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"freq\",\"label\":\"freq\",\"newName\":\"freq\",\"isRemoved\":true,\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0},\"41a68b35-5d80-40a9-a328-db642786e379\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"currency\",\"label\":\"currency\",\"newName\":\"currency\",\"indexOrder\":3,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"9208d456-f699-44bc-9dce-4d493d74bb31\"},\"df04ad09-e0af-477b-902a-5ea89b366240\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"geo\",\"label\":\"geo\",\"newName\":\"geo\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"cd0d53aa-6cba-4993-88cc-43dea9fee432\"},\"4edfe5c1-46b5-4257-b35c-3d7449f7229f\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"TIME_PERIOD\",\"label\":\"TIME_PERIOD\",\"newName\":\"TIME_PERIOD\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"d3362c81-a791-4618-8d4d-44c9960b9db1\"},\"9eb31507-63de-4d38-a681-e2cc07c0b801\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Monthly_Minimum_Wage\",\"label\":\"Monthly Minimum Wage\",\"newName\":\"Monthly_Minimum_Wage\",\"indexOrder\":6,\"defaultAggregation\":\"SUM\",\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"isMeasure\":true,\"successorElement\":\"b653f2b8-38aa-42eb-9e4d-906e6299a14b\"},\"a4e8ab96-9661-44ee-92e9-5b03e118bef8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OBS_FLAG\",\"label\":\"OBS_FLAG\",\"newName\":\"OBS_FLAG\",\"indexOrder\":7,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"53c3ead4-7c17-44e2-bdb3-e6d2f80cdfcf\"},\"65cbbb77-063e-4739-9f17-97c3efaece0a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Annual_Minimum_Wage\",\"label\":\"Annual Minimum Wage\",\"newName\":\"Annual_Minimum_Wage\",\"indexOrder\":8,\"dataType\":\"cds.DecimalFloat\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"3faa07a5-657b-4101-807c-64310e291d84\"},\"5192facf-4673-4899-b6a3-5ffa69910c35\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR_Full_Year_Value\",\"label\":\"YEAR (Full Year Value)\",\"newName\":\"YEAR_Full_Year_Value\",\"indexOrder\":9,\"length\":4,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"f99e3356-831f-48cb-be8e-191faa9fc4e2\"},\"34db0e6e-8da1-4416-a689-a24d0367d794\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"RELEASE_ID\",\"label\":\"Release ID\",\"newName\":\"RELEASE_ID\",\"isRemoved\":true,\"indexOrder\":10,\"dataType\":\"cds.Integer\",\"length\":0,\"precision\":0,\"scale\":0},\"9208d456-f699-44bc-9dce-4d493d74bb31\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"currency\",\"label\":\"currency\",\"newName\":\"currency\",\"indexOrder\":3,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"e1bb2305-e4b4-4e57-8262-2f804d868a0a\"},\"cd0d53aa-6cba-4993-88cc-43dea9fee432\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"geo\",\"label\":\"geo\",\"newName\":\"geo\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"16d2738b-477a-4b10-b523-9dd931053263\"},\"d3362c81-a791-4618-8d4d-44c9960b9db1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"TIME_PERIOD\",\"label\":\"TIME_PERIOD\",\"newName\":\"TIME_PERIOD\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"5bfd2f4a-ad30-44ec-b0e0-48a504e640e2\"},\"b653f2b8-38aa-42eb-9e4d-906e6299a14b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Monthly_Minimum_Wage\",\"label\":\"Monthly Minimum Wage\",\"newName\":\"Monthly_Minimum_Wage\",\"indexOrder\":6,\"defaultAggregation\":\"SUM\",\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"isMeasure\":true,\"successorElement\":\"a2cf585b-32eb-4a88-b1a9-e304097a04b5\"},\"53c3ead4-7c17-44e2-bdb3-e6d2f80cdfcf\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OBS_FLAG\",\"label\":\"OBS_FLAG\",\"newName\":\"OBS_FLAG\",\"indexOrder\":7,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"a21fb51e-1205-44b3-9b87-0a42c91c20ec\"},\"3faa07a5-657b-4101-807c-64310e291d84\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Annual_Minimum_Wage\",\"label\":\"Annual Minimum Wage\",\"newName\":\"Annual_Minimum_Wage\",\"indexOrder\":8,\"dataType\":\"cds.DecimalFloat\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"bf6fbe47-6919-47cd-a127-6960d211886f\"},\"f99e3356-831f-48cb-be8e-191faa9fc4e2\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR_Full_Year_Value\",\"label\":\"YEAR (Full Year Value)\",\"newName\":\"YEAR_Full_Year_Value\",\"indexOrder\":9,\"length\":4,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"4d2dd06b-408b-4029-ae6f-5c55f47ca3be\"},\"078ca6f1-1320-47f1-9b07-c47cf853f4f7\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":0,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"c4f9fb5e-02fd-49f2-8aa9-cdca02287d9e\"},\"5951f335-f5d7-43d5-8526-916c902035d3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"isRemoved\":true,\"indexOrder\":2,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true},\"af4fb2d9-fae8-4215-b81d-d5280e7adf9c\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"e9b1c013-ecac-474b-9ecd-3828a90bc631\"},\"cdcb50d6-0005-4f98-9487-78ef336e15a3\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"BusinessUnit\",\"label\":\"BusinessUnit\",\"newName\":\"BusinessUnit\",\"isRemoved\":true,\"indexOrder\":6,\"length\":256,\"precision\":0,\"scale\":0,\"isDimension\":true},\"424b2d96-7364-42c2-8974-ee51cb076f3a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":8,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"ab35f952-5443-455a-aa85-48bce3ef7559\"},\"a2fb7469-5b10-4efe-a1a8-8b4be3399f33\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location_Description\",\"label\":\"Location Description\",\"newName\":\"Location_Description\",\"indexOrder\":10,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"1bfa3b48-31eb-4165-8587-5a31ad11ac34\"},\"a48f96d2-1cca-4cf0-b710-5a0aa0ccc9bf\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Latitude\",\"label\":\"Latitude\",\"newName\":\"Latitude\",\"isRemoved\":true,\"indexOrder\":12,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.latitude\"},\"6eddee04-af52-49af-b93e-65c104439614\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Longitude\",\"label\":\"Longitude\",\"newName\":\"Longitude\",\"isRemoved\":true,\"indexOrder\":14,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.longitude\"},\"805ce33e-22d8-405d-a1bd-181675d0e89a\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_ID\",\"label\":\"State ID\",\"newName\":\"State_ID\",\"isRemoved\":true,\"indexOrder\":16,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true},\"00e5260c-531c-44ad-a56f-0a3feb6a6ac1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_ID\",\"label\":\"City ID\",\"newName\":\"City_ID\",\"isRemoved\":true,\"indexOrder\":18,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true},\"acb4b8b0-75b1-4753-874e-90ced57fee3b\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_ID\",\"label\":\"Country ID\",\"newName\":\"Country_ID\",\"isRemoved\":true,\"indexOrder\":20,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true},\"1dda6503-fd72-4394-8e92-999c54d0b088\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Description\",\"label\":\"Country Description\",\"newName\":\"Country_Description\",\"indexOrder\":21,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"b7439b44-426f-4055-b54d-0708cbe4a26b\"},\"91a1c89f-b7fc-4e50-9d8f-c632c6a9ea29\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_Description\",\"label\":\"State Description\",\"newName\":\"State_Description\",\"isRemoved\":true,\"indexOrder\":22,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\"},\"17d4d0fa-1dba-40e6-9206-ff399761cca5\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_Description\",\"label\":\"City Description\",\"newName\":\"City_Description\",\"isRemoved\":true,\"indexOrder\":23,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\"},\"9a887043-1f4d-4d30-b963-f6a834610491\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-2 code\",\"label\":\"Alpha-2 code\",\"newName\":\"Alpha-2 code\",\"isRemoved\":true,\"indexOrder\":24,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true},\"50587c35-7ffe-486e-a319-afc1ef18a0b9\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-3 code\",\"label\":\"Alpha-3 code\",\"newName\":\"Alpha-3 code\",\"isRemoved\":true,\"indexOrder\":25,\"length\":5000,\"precision\":0,\"scale\":0},\"4e2a2c55-7072-4969-aa28-96214da9de77\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Numeric_code\",\"label\":\"Country Numeric code\",\"newName\":\"Numeric code\",\"isRemoved\":true,\"indexOrder\":26,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0},\"82efd7a6-9c8a-4d25-9a87-cb2424a317c6\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"currency\",\"label\":\"currency\",\"newName\":\"currency\",\"indexOrder\":7,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"ddd2fe6f-4562-4705-809a-b5e090d8ab0f\"},\"d82aa034-331f-41a4-b1e8-a07dc9422d6d\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"geo\",\"label\":\"geo\",\"newName\":\"geo\",\"isRemoved\":true,\"indexOrder\":9,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true},\"3b14a6a5-d27f-49e8-ab92-de975dce0847\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"TIME_PERIOD\",\"label\":\"TIME_PERIOD\",\"newName\":\"TIME_PERIOD\",\"isRemoved\":true,\"indexOrder\":11,\"length\":5000,\"precision\":0,\"scale\":0,\"isNotNull\":true},\"b58594aa-f4c1-4516-b96c-4debff0a60f8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Monthly_Minimum_Wage\",\"label\":\"Monthly Minimum Wage\",\"newName\":\"Monthly_Minimum_Wage\",\"indexOrder\":13,\"defaultAggregation\":\"SUM\",\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"isMeasure\":true,\"successorElement\":\"394dd2fc-ef00-4536-a5b9-f9b28a885f1b\"},\"00fb4865-5c64-4fd4-a7e9-4f790d1d99a4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OBS_FLAG\",\"label\":\"OBS_FLAG\",\"newName\":\"OBS_FLAG\",\"indexOrder\":15,\"length\":5000,\"precision\":0,\"scale\":0,\"successorElement\":\"ab6001b4-34c4-4832-a692-31e3488df408\"},\"57d17377-5db5-4ccf-8488-a84ebae756f8\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Annual_Minimum_Wage\",\"label\":\"Annual Minimum Wage\",\"newName\":\"Annual_Minimum_Wage\",\"indexOrder\":17,\"dataType\":\"cds.DecimalFloat\",\"length\":0,\"precision\":0,\"scale\":0,\"successorElement\":\"2a4db2f4-ebbe-448a-b537-d56077235749\"},\"90cfc301-3d5c-493c-a74f-bfa531ecaec4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"YEAR_Full_Year_Value\",\"label\":\"YEAR (Full Year Value)\",\"newName\":\"YEAR_Full_Year_Value\",\"indexOrder\":19,\"length\":4,\"precision\":0,\"scale\":0,\"isNotNull\":true,\"successorElement\":\"9956b254-da14-42d6-a9cc-e9d4af475a0c\"},\"3203ea26-ad7d-4ef3-80db-a786569ca5e7\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.OutputSymbol\",\"x\":318.9999988079071,\"y\":21.239684046287607,\"width\":140,\"height\":40,\"object\":\"28f97678-0c86-4ee3-a835-12ea55f0703d\"},\"000b8a6a-e154-492c-b6b6-47a2218fed6e\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.EntitySymbol\",\"name\":\"Entity Symbol 1\",\"x\":-224.9999988079071,\"y\":-18,\"width\":160,\"displayName\":\"Entity Symbol 1\",\"object\":\"4f6a821e-5b20-4c19-86f8-ab0c6d932c88\"},\"e7143a49-8cc7-4128-bbae-8600b6cb87ed\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.JoinSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":122.9999988079071,\"y\":25.239684046287607,\"object\":\"86a911b5-e9f3-4b37-8135-8c7c2553e46b\"},\"d9951b98-d45a-4b43-97ea-8ab7e7cfb3a4\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.EntitySymbol\",\"name\":\"Entity Symbol 2\",\"x\":-434.9999988079071,\"y\":68,\"width\":160,\"displayName\":\"Entity Symbol 2\",\"object\":\"2449b980-b438-47fe-8afb-334cf18b9014\"},\"b9e3efa0-b034-4060-b614-fb5017633615\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.RenameSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":-168.9999988079071,\"y\":72,\"object\":\"5e8673b2-bc85-4b9b-8fd5-c3fc51e35e37\"},\"ad71710d-a112-404e-91d1-5f3ec9552caf\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"-274.9999988079071,88 -168.9999988079071,88\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"d9951b98-d45a-4b43-97ea-8ab7e7cfb3a4\",\"targetSymbol\":\"b9e3efa0-b034-4060-b614-fb5017633615\"},\"fc34e8de-ce23-45bb-85a3-21cdedd402a9\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.FilterSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":5,\"y\":72,\"object\":\"9741c425-8c1d-4185-9317-38831388303b\"},\"c8d0003e-fa16-4065-ae53-f6fb9c853860\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"-120.9999988079071,88 5,88\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"b9e3efa0-b034-4060-b614-fb5017633615\",\"targetSymbol\":\"fc34e8de-ce23-45bb-85a3-21cdedd402a9\"},\"d5b0d90a-5ca6-4ef1-af9b-f7ef4b79cce1\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"isLeftInput\":false,\"points\":\"53,88 87.99999940395355,88 87.99999940395355,46.57301737962092 122.9999988079071,46.57301737962092\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"fc34e8de-ce23-45bb-85a3-21cdedd402a9\",\"targetSymbol\":\"e7143a49-8cc7-4128-bbae-8600b6cb87ed\",\"object\":\"86a911b5-e9f3-4b37-8135-8c7c2553e46b\"},\"4caed837-3c26-4031-9e23-ce3e32b1bdb8\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.RenameSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":220.9999988079071,\"y\":25.239684046287607,\"object\":\"7fdca75b-c132-4f3b-8ad1-f2cc05f4a159\"},\"f0fe79ae-146a-4c05-a8b8-48066dbdfee9\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"170.9999988079071,41.23968404628761 220.9999988079071,41.23968404628761\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"e7143a49-8cc7-4128-bbae-8600b6cb87ed\",\"targetSymbol\":\"4caed837-3c26-4031-9e23-ce3e32b1bdb8\"},\"3b30e7f1-da62-4a2a-80dd-26c52e903cc8\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"268.9999988079071,41.23968404628761 318.9999988079071,41.23968404628761\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"4caed837-3c26-4031-9e23-ce3e32b1bdb8\",\"targetSymbol\":\"3203ea26-ad7d-4ef3-80db-a786569ca5e7\"},\"f0b1a727-c22d-497c-896a-48269d5e9581\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.RenameSymbol\",\"font\":\"bold 11px \\\"72\\\",\\\"72full\\\",Arial,Helvetica,sans-serif\",\"x\":5,\"y\":-11.612388636756194,\"object\":\"23d71126-608d-4091-ada8-736709804306\"},\"22cb47d0-e69e-4539-bf9c-6e53174f89c6\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"-64.9999988079071,2 -29.999999403953552,2 -29.999999403953552,4.387611363243806 5,4.387611363243806\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"000b8a6a-e154-492c-b6b6-47a2218fed6e\",\"targetSymbol\":\"f0b1a727-c22d-497c-896a-48269d5e9581\"},\"db4d42b4-393a-4e73-9750-232c6a960207\":{\"classDefinition\":\"sap.cdw.querybuilder.ui.AssociationSymbol\",\"points\":\"53,4.387611363243806 87.99999940395355,4.387611363243806 87.99999940395355,35.906350712954264 122.9999988079071,35.906350712954264\",\"contentOffsetX\":5,\"contentOffsetY\":5,\"sourceSymbol\":\"f0b1a727-c22d-497c-896a-48269d5e9581\",\"targetSymbol\":\"e7143a49-8cc7-4128-bbae-8600b6cb87ed\",\"object\":\"86a911b5-e9f3-4b37-8135-8c7c2553e46b\"},\"c11d4181-5edd-4184-b8fe-2d7ab87c089f\":{\"classDefinition\":\"sap.cdw.commonmodel.ElementMapping\",\"source\":\"25043b04-84b5-4bdd-8608-05c7fd9eda02\",\"target\":\"5082f402-a452-4286-9b79-32dd486b87c4\"},\"1a8c87f9-e48f-4102-a87e-850f18b7adcb\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location\",\"label\":\"Location\",\"newName\":\"Location\",\"indexOrder\":3,\"isKey\":true,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"668dffe4-2d4d-4efd-9cef-aa7be0022358\"},\"9c0c41c7-9387-4cdb-936b-cbf611027698\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Division\",\"label\":\"Division\",\"newName\":\"Division\",\"indexOrder\":4,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"8eeeb85d-cd85-4f1b-bb7d-da171669f4e1\"},\"8597aa7e-b7fa-47e5-9503-ce325717819e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"OrganizationalUnit\",\"label\":\"OrganizationalUnit\",\"newName\":\"OrganizationalUnit\",\"indexOrder\":5,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"20fea7e3-bdcf-4b69-96e8-f473d98bd68d\"},\"a8219960-1fb7-44ee-a9a3-5d81c0df7f08\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"BusinessUnit\",\"label\":\"BusinessUnit\",\"newName\":\"BusinessUnit\",\"indexOrder\":6,\"length\":256,\"precision\":0,\"scale\":0,\"isDimension\":true,\"successorElement\":\"136944af-c1dd-4d50-a467-11adee802ea2\"},\"ae243d3c-5619-4732-b77f-35c41bed98d0\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Company\",\"label\":\"Company\",\"newName\":\"Company\",\"indexOrder\":7,\"length\":500,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"7f0d62cb-ce74-46fc-b0ae-d25a83b4a2f4\"},\"bcf54926-4c16-438e-85b1-b506b002e265\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Location_Description\",\"label\":\"Location Description\",\"newName\":\"Location_Description\",\"indexOrder\":8,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"4e31a365-04e1-4ac0-ba45-b7d4c3ef94a6\"},\"81eb4631-e495-4f26-8a9a-12ccca2500cc\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Latitude\",\"label\":\"Latitude\",\"newName\":\"Latitude\",\"indexOrder\":9,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.latitude\",\"successorElement\":\"91838273-3617-4210-847f-37a34666f798\"},\"382b9878-6a66-41c4-bb0a-fad606f781a4\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Longitude\",\"label\":\"Longitude\",\"newName\":\"Longitude\",\"indexOrder\":10,\"dataType\":\"cds.Decimal\",\"length\":0,\"precision\":38,\"scale\":19,\"semanticType\":\"@Semantics.geoLocation.longitude\",\"successorElement\":\"42ad84d1-5c8e-4757-a301-375685a7b78a\"},\"49dbaeec-f4cc-417c-bea4-1692d22561df\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_ID\",\"label\":\"State ID\",\"newName\":\"State_ID\",\"indexOrder\":11,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"05dbdf46-ce96-4ac9-ad42-ace25d13745e\"},\"76457de0-03fd-4181-bc4f-60749ad23e36\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_ID\",\"label\":\"City ID\",\"newName\":\"City_ID\",\"indexOrder\":12,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"60badbcc-e3fe-46c9-b228-de91028e0f9e\"},\"0aa43994-b47f-4cf9-bdbc-d12e52eae927\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_ID\",\"label\":\"Country ID\",\"newName\":\"Country_ID\",\"indexOrder\":13,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"isNotNull\":true,\"successorElement\":\"4820da4d-df37-4c11-a801-6712aac16a2a\"},\"4cd4d360-76c2-4474-b761-eebd33a2ca4e\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Description\",\"label\":\"Country Description\",\"newName\":\"Country_Description\",\"indexOrder\":14,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"422812a7-5aac-417f-af9f-c8266f6914d7\"},\"c90e47be-7270-4d7b-8a5a-31f03b157727\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"State_Description\",\"label\":\"State Description\",\"newName\":\"State_Description\",\"indexOrder\":15,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"537c0f72-9699-4aea-aed5-b5c8bbb04e65\"},\"14f8ec2f-8c05-4d26-8122-07d3abdf4957\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"City_Description\",\"label\":\"City Description\",\"newName\":\"City_Description\",\"indexOrder\":16,\"length\":5000,\"precision\":0,\"scale\":0,\"isDimension\":true,\"semanticType\":\"@Semantics.text\",\"successorElement\":\"11c3beb8-5987-4217-91b2-2f83e7728e00\"},\"6150d65c-7fc0-4070-9da3-b02eb7d6e8cd\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-2 code\",\"label\":\"Alpha-2 code\",\"newName\":\"Alpha-2 code\",\"indexOrder\":0,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"e8052399-70bb-41dd-a9d8-ee5b877f67d5\"},\"8bbac195-374f-4d92-8010-96653b492561\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Alpha-3 code\",\"label\":\"Alpha-3 code\",\"newName\":\"Alpha-3 code\",\"indexOrder\":1,\"length\":5000,\"precision\":0,\"scale\":0,\"nativeDataType\":\"NVARCHAR\",\"successorElement\":\"ea3e7aab-5b43-4a61-9b52-138da47c764e\"},\"f199101d-7909-494d-9ca8-a185edcb19c1\":{\"classDefinition\":\"sap.cdw.querybuilder.Element\",\"name\":\"Country_Numeric_code\",\"label\":\"Country Numeric code\",\"newName\":\"Numeric code\",\"indexOrder\":2,\"dataType\":\"cds.Integer64\",\"length\":0,\"precision\":0,\"scale\":0,\"nativeDataType\":\"BIGINT\",\"successorElement\":\"79a413f7-c19f-4713-b35d-b64dece20bf3\"}}}"
+    }
+  },
+  "$version": "1.0"
+}

@@ -25,10 +25,10 @@ This package contains a SAP Analytics Cloud story and a corresponding data model
 A live connection to SAP Datasphere is required. Please use the connection name SAPDWC
 
 ## Download/Install Instructions
-Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/603e26204ce14bd8b5f9729a8123636f.html)
+Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/ef516563b3fe4c69b6f718f17ed94cdf.html)
 
 
-Before installing this package, ensure that the Time Tables & Date Dimensions have been generated in the destination space. Details [here](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/b462239ffb644d9baab4442a10a72edf.html).
+Before installing this package, ensure that the Time Tables & Date Dimensions have been generated in the destination space. Details [here](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/c5cfce4d22b04650b2fd6078762cdeb9.html).
 
 ## Contact
 [Rafiq Islam](mailto:rafiq.islam@sap.com), [Hamza Jamal](mailto:hamza.jamal@sap.com) 
