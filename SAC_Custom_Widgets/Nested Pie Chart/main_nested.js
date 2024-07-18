@@ -37,7 +37,7 @@ var getScriptPromisify = (src) => {
 
     async render() {
       await getScriptPromisify(
-        "https://cdnjs.cloudflare.com/ajax/libs/echarts/5.0.0/echarts.min.js"
+        "https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"
         
       );
 

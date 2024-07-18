@@ -17,14 +17,14 @@
       "tag": "com-sap-sac-sample-echarts-sankeyyg",
       "url": "/main.js",
       "integrity": "sha256-6Jr/asl/QIhzXIKTPujY2A2VAuwjaTeRt2xMkIsgmE4=",
-      "ignoreIntegrity": false
+      "ignoreIntegrity": true
     },
     {
       "kind": "styling",
       "tag": "com-sap-sac-sample-echarts-sankeyyg-styling",
       "url": "/sankeyChartStyling.js",
       "integrity": "sha256-AR0uDO+9h8nu9EyJotSinZ2APDWD5Ja2JmdFcZCH1Xo=",
-      "ignoreIntegrity": false
+      "ignoreIntegrity": true
     }
   ],
   "properties": {
