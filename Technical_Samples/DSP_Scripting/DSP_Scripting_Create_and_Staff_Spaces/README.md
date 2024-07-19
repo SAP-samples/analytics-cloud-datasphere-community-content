@@ -1,7 +1,7 @@
 # SAP Datasphere Scripting: Create and Staff Spaces via the "datasphere" Command Line Interface
 
 ## Files
-Juniper Notebook: dsp_create_and_staff_spaces.ipynb
+Jupyter Notebook: dsp_create_and_staff_spaces.ipynb
 
 6 json files containing demo space, user, and scoped role definitions:
 

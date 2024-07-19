@@ -1,7 +1,7 @@
 # SAP Datasphere Scripting: Login
 
 ## Files
-Juniper Notebook: dsp_login.ipynb
+Jupyter Notebook: dsp_login.ipynb
 
 3 json files to store OAuth client credentials for different SAP Datasphere tenants.
 

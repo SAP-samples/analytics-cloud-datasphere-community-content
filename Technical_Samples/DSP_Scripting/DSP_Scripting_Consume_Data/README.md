@@ -1,7 +1,7 @@
 # SAP Datasphere Scripting: Consume Data from the SAP Datasphere OData API
 
 ## Files
-Juniper Notebook: dsp_consume_data.ipynb
+Jupyter Notebook: dsp_consume_data.ipynb
 
 Json file to store OAuth client credentials: dsp_secrets.json
 
