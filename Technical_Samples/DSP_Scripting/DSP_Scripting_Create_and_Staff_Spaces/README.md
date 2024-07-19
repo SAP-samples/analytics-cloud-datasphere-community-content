@@ -3,7 +3,7 @@
 ## Files
 Jupyter Notebook: dsp_create_and_staff_spaces.ipynb
 
-6 json files containing demo space, user, and scoped role definitions:
+5 json files containing demo space, user, and scoped role definitions:
 
 *  1_create_first_space.json
 *  2_create_second_space.json
