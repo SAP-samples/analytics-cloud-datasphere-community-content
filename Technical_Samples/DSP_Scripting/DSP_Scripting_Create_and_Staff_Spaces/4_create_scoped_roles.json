@@ -1,0 +1,5 @@
+{
+    "name": "Demo_Space_Admin",
+    "description": "Demo Space Admin",
+    "inheritance": "Data_Warehouse_Cloud_Space_Administrator"
+  }

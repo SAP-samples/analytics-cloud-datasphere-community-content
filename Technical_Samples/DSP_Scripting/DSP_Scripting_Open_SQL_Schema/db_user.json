@@ -1,0 +1,9 @@
+{
+    "name": "<SPACE#DBUSER>",
+    "password": "<PWD>",
+    "host": "<HOST>",
+    "port": "<PORT>",
+    "schema": "<SPACE#DBUSER>",
+    "dbSpaceSchema": "<SPACE>",
+    "dbExposedView": "<EXPOSED_VIEW>"
+}
