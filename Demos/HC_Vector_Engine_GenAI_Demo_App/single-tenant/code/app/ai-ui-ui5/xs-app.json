@@ -1,0 +1,25 @@
+{
+  "welcomeFile": "/index.html#/main",
+  "logout": {
+    "logoutEndpoint": "/logout"
+  },
+  "routes": [
+    {
+      "source": "^/api/odata/v4/reference-documents/(.*)$",
+      "target": "/odata/v4/reference-documents/$1",
+      "destination": "ai-srv-api",
+      "authenticationType": "xsuaa"
+    },
+		{
+			"source": "^/movie-api/odata/v4/movies/(.*)$",
+			"target": "/odata/v4/movies/$1",
+			"destination": "ai-srv-api",
+			"authenticationType": "xsuaa"
+		},
+    {
+      "source": "^/(.*)$",
+      "target": "$1",
+      "destination": "ui"
+    }
+  ]
+}
