@@ -5,13 +5,13 @@ SAP_CC_DSP_Monitoring_Source_Tables.package
 SAP_CC_DSP_Monitoring_Reporting_Tables.package
 
 ## Last Released:
-2023.07 (1.1.0)
+2023.07 (1.2.0)
 
 ## What´s New
-- Data type changed for attribute DURATION (in local table / dimension DURATION_DIM) and TOTAL_EXECUTION_TIME_AS_COL (in Fact view TCT_MDS_STATEMENTS_STATISTICS_V_01) from Integer64 to Decimal(16,1)
-- M_HOST_INFORMATION_SRC: support multi hosts
+- various updates and improvements
+- missing folders to structure the content artefacts fixed
 
-## Descripton - What is the Monitoring Content About?
+## Description - What is the Monitoring Content About?
 It offers a configuration that persists data from various monitoring relevant tables and views.
  - This persistence runs are delta enabled (by timestamp)
  - Task chains are defined to schedule the update
