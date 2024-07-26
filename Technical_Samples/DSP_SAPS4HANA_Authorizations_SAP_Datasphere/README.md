@@ -5,12 +5,13 @@
 SAP_CC_DSP_Authorization_Import.package
 
 ## Last Released:
-2024.11
+SAP Datasphere 2024.15
 
 ## What´s New
-Initial release
+- Update to support combined authorizations (e. g. combinations of distribution channel and sales organization)
+- Simplification of content by replacing tables AGR_1251 and AGR_1252 by view SUIM_AGR_1251_52
 
-## Descripton
+## Description
 This community content package helps you to easily integrate authorization values from SAP S/4HANA utilizing the SAP Datasphere feature _"Operator and Values Data Access Control"_.
 It provides a graphical view that provides authorization data from SAP S/4HANA in format that can be used as the basis for Data Access Controls in SAP Datasphere.
 
@@ -23,19 +24,17 @@ A. Table to configure the relevant authorization objects (SAP_CC_S4AUTH_REL_OBJE
 B. View based on remote tables tjat (SAP_CC_AUTHORIZATION_VALUES)
 C. Remote tables for the relevant data from SAP S/4HANA
 
-![Integrate SAP S/4HANA authorizations into SAP Datasphere - Data Model](SAP_CC_DSP_SAPS4HANA_Authorizations_SAP_Datasphere.png)
-
 ## Details
 **Recommmenation:**  
-First create a connection for your SAP S/4HANA system in the SAP_COMMUNITY space called "SAP_S4H". Now you can import the content package.
+First create a connection for your SAP S/4HANA system called "SAP_S4H" and import the desired package.
 
-The corresponding remote tables are called and the user in the connection must be authorized to access the following tables:  
-AGR_1251  
-AGR_1252  
+The corresponding remote tables are called and the user in the connection must be authorized to access the following tables/views:  
+SUIM_AGR_1251_52
 AGR_USERS  
 PUSER002  
 
-Now maintain the technical names of the relevant authorization objects in table SAP_CC_S4AUTH_REL_OBJECTS (using the Data Editor in the local table editor).
+Now maintain the technical names of the relevant authorization objects and authorization fields in table SAP_CC_S4AUTH_REL_OBJECTS (using the Data Editor in the local table editor).
+You can maintain more than one authorization field from one authorization object to create combined authorizations. This way it is possible to authorize users for combinations of two fields.
 Then create a new Data Access Control with structure "Operator and Values. based on the view and map the fields from the fields according to their name.
 For more information on this feature see [here](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/501594bf2afb4e49ab5ce254e35e3504.html).
 
