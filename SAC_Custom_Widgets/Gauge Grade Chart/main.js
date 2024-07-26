@@ -27,7 +27,7 @@ var getScriptPromisify = (src) => {
     return value
   }
 
-  const COLORS = ['#FF6E76', '#FDDD60', '#58D9F9', '#7CFFB2']
+  const COLORS = ['#89D1FF', '#0070F2', '#0040B0', '#1D2D3E']
 
   class Renderer {
     constructor (root) {
@@ -36,7 +36,7 @@ var getScriptPromisify = (src) => {
     }
 
     async render (dataBinding, stops, reverse) {
-      await getScriptPromisify("https://cdnjs.cloudflare.com/ajax/libs/echarts/5.0.0/echarts.min.js");
+      await getScriptPromisify("https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js");
       this.dispose()
 
       if (dataBinding.state !== 'success') { return }

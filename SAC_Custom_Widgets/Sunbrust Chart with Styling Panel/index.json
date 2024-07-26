@@ -17,15 +17,15 @@
       "kind": "main",
       "tag": "com-sap-sample-init-example-echarts-sunburst",
       "url": "/main.js",
-      "integrity": "sha256-S45HecIhMOne4pYQI8ug/oPEoVfIPWV3dK8QT2xFqxE=",
-      "ignoreIntegrity": false
+      "integrity": "",
+      "ignoreIntegrity": true
     },
     {
       "kind": "styling",
       "tag": "com-sap-sample-init-example-echarts-sunburst-styling",
       "url": "/styling.js",
-      "integrity": "sha256-PVC7vMUOwmuw4LdIx8CbBWR0USwlEDwpZeYvILkq1wo=",
-      "ignoreIntegrity": false
+      "integrity": "",
+      "ignoreIntegrity": true
     }
   ],
   "properties": {
