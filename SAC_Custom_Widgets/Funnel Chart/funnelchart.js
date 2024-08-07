@@ -71,7 +71,7 @@ var getScriptPromisify = (src) => {
           },
         },
         legend: {
-          data: ["Show", "Click", "Visit", "Inquiry", "Order"],
+          data: [data],
         },
         series: [
           {

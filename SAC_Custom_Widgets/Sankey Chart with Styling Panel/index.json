@@ -16,14 +16,14 @@
       "kind": "main",
       "tag": "com-sap-sac-sample-echarts-sankeyyg",
       "url": "/main.js",
-      "integrity": "sha256-K1x3Wudbn+ouVRrTEcsP/rNnUWrbBNGmsV/cWGPeXik=",
+      "integrity": "sha256-HAHlBWe9J7FN0Zr5lPbBAkNpepQN3v4XXtmHgE2JOdY=",
       "ignoreIntegrity": false
     },
     {
       "kind": "styling",
       "tag": "com-sap-sac-sample-echarts-sankeyyg-styling",
       "url": "/sankeyChartStyling.js",
-      "integrity": "sha256-PVC7vMUOwmuw4LdIx8CbBWR0USwlEDwpZeYvILkq1wo=",
+      "integrity": "sha256-AR0uDO+9h8nu9EyJotSinZ2APDWD5Ja2JmdFcZCH1Xo=",
       "ignoreIntegrity": false
     }
   ],
