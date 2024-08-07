@@ -4,7 +4,7 @@
   "license": "",
   "id": "com.sap.sac.sample.echarts.sankeyyg",
   "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAACV0lEQVQ4jZ2TT0hUURTGf+f6JkcMKoS2UhERIlnzrKBCIywQhDYD1iLn9T+IFhXYZDIN1cxU1CJq4WA6umghEbQKQqghlKwZpEIING2ENi36S5aj750WakxDQfQtz7m/73C+ey+2E1f+U7YTVwvADsVOI2ZEfd/T2WR06q9EJGI25MoaRLQOpQLAACgsV9WTki/NBULx1rqWiL8YrG25dCgwWfpa8C4CeYEhALGduGa6wwKw8eCFFd6sdQXRNa64TcNd7blNocurXdyuOSfTmkmdGSxcwQCrFgrPOtsnMqlwUJF7xrMe2aFY2MUbUJW+TOV0XSG8IEuVADBeWBThvsJ+lEgJpnqop3W0sF+9N77M52MlgCVCHyAAASexVfCO4bHdqBdRMXtmcXcBo5uD18pmy/OHVQgJ1PwaNneN+hiVKhV9L9C5SEpuD3a1fl1/ILG2xNU0qqdUJCrCivnQvwDjAjXzBl695erY095z737fUMV2EmlgG4CqDovhvFoVD7LJIzO2E1dLlf5sqi1dHE4w2FcyUZ7oWIBRbiyunD6VjkZnfwsxmwo3FMOBwx2+8ZmxXkGaUaYU7RaknrdYQKHBEWM78UwhXLsvUSX5D08EaQY+IV5jNnX2ODDyzfivFs3qt4BAwImdEGUZwhZV3YFgQCfFNY3Pe9tGAMzMj6Ouzz9gh2LXM5XTp4lGPeCNFH8mhR/Azfw0sVd3wh8Le+taIkst47+L6hKjmlRjktZ8urcQPovyMp+Xh8Xggl70RD8RiewM5PxNnrBbYO49/+nwv8h24voT/SkCecEhGgkAAAAASUVORK5CYII=",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "supportsMobile": true,
   "supportsBookmark": true,
   "supportsLinkedAnalysisFilterOnSelection": true,
