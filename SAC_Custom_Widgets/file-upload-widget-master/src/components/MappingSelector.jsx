@@ -12,14 +12,15 @@ import {
   Label,
   Option,
   Panel,
-  Select,
   Text,
 } from "@ui5/webcomponents-react";
 import "@ui5/webcomponents-icons/dist/combine";
 import { createPortal } from "react-dom";
 import FileHandler from "../api/fileHandler";
-import {fileIsOfType} from './endUser/EndUserEntryDialog';
+import { fileIsOfType } from './endUser/EndUserEntryDialog';
 import ImportRunningDialogContents from "./endUser/ImportRunningDialogContents";
+import Select from "react-select";
+import { SELECT_STYLE } from "./Constants";
 
 function MappingsMatcher(props) {
   const [fileHeaders, setFileHeaders] = React.useState([]);
@@ -44,7 +45,7 @@ function MappingsMatcher(props) {
 
   React.useEffect(() => {
 
-    if((file && file.name !== parsedFile) || (file && selectedSheetName !== parsedSheetName)) {
+    if ((file && file.name !== parsedFile) || (file && selectedSheetName !== parsedSheetName)) {
       const handleFileHeaders = (fileHeaders) => {
 
         const fileHeadersAsStrings = fileHeaders.map((value) => String(value));
@@ -74,6 +75,9 @@ function MappingsMatcher(props) {
         const sheetNames = responseFromFileHandler[1]
         handleFileHeaders(fileHeaders)
         setSheetNames(sheetNames)
+        if(selectedSheetName === "" && sheetNames.length > 0) {
+          setSelectedSheetName(sheetNames[0])
+        }
         props.setFileParserRunning(false)
       }
 
@@ -83,9 +87,9 @@ function MappingsMatcher(props) {
       }
 
       props.setFileParserRunning(true)
-      if(fileIsOfType(file, "xlsx")) {
+      if (fileIsOfType(file, "xlsx")) {
         new FileHandler().parseXLSXFileSimple(file, selectedSheetName, handleXLSXFile)
-      } else if(fileIsOfType(file, "csv")) {
+      } else if (fileIsOfType(file, "csv")) {
         setSheetNames([])
         new FileHandler().parseCSVFileSimple(file, (data) => handleCSVFile(data[0]))
       }
@@ -96,10 +100,10 @@ function MappingsMatcher(props) {
 
 
   // If Loading Dialog is Running
-  if(props.fileParserRunning) {
+  if (props.fileParserRunning) {
     return (
       <FlexBox direction="column">
-        <ImportRunningDialogContents text="Parsing File"/>
+        <ImportRunningDialogContents text="Parsing File" />
       </FlexBox>
     )
   }
@@ -107,7 +111,7 @@ function MappingsMatcher(props) {
   if (fileHeaders.length > 0) {
     return (
       <FlexBox direction="Column">
-        {props.metadata.columns.map((column) => {
+        {props.metadata && props.metadata.columns.map((column) => {
           return (
             <FlexBox
               direction="Row"
@@ -128,30 +132,18 @@ function MappingsMatcher(props) {
                 name="combine"
               />
               <Select
+                styles={SELECT_STYLE}
                 onChange={(e) =>
                   props.setMappings({
                     ...props.mappings,
-                    [column.columnName]: e.detail.selectedOption.dataset.id,
+                    [column.columnName]: e ? e.value : ""
                   })
                 }
+                menuPosition="fixed"
+                options={fileHeaders.map((header) => ({ value: header, label: header }))}
+                isClearable={true}
+                value={props.mappings[column.columnName] ? { value: props.mappings[column.columnName], label: props.mappings[column.columnName] } : null}
               >
-                {fileHeaders.map((header) => {
-                  return (
-                    <Option
-                      selected={props.mappings[column.columnName] === header}
-                      key={header}
-                      data-id={header}
-                    >
-                      {header}
-                    </Option>
-                  );
-                })}
-                <Option
-                  selected={props.mappings[column.columnName] === ""}
-                  data-id={""}
-                >
-                  {""}
-                </Option>
               </Select>
             </FlexBox>
           );
@@ -170,48 +162,41 @@ function MappingsMatcher(props) {
             <Button style={{ height: "23px" }}>Upload Template File</Button>
           </FileUploader>
           <Icon
-                style={{ margin: "auto", marginLeft: "10px", marginRight: 0 }}
-                name="document-text"
-            />
-          <Label style={{margin: "auto"}}>
+            style={{ margin: "auto", marginLeft: "10px", marginRight: 0 }}
+            name="document-text"
+          />
+          <Label style={{ margin: "auto" }}>
             {file ? file.name : "No File"}
           </Label>
           <Button
-              style={{
-                margin: "auto",
-                marginRight: 0,
-                marginLeft: 0,
-                minWidth: 0,
-                height: "20px",
-                width: "20px",
-              }}
-              design="Transparent"
-              icon="decline"
-              onClick={clearState}
-            />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+            style={{
+              margin: "auto",
+              marginRight: 0,
+              marginLeft: 0,
+              minWidth: 0,
+              height: "20px",
+              width: "20px",
+            }}
+            design="Transparent"
+            icon="decline"
+            onClick={clearState}
+          />
         </FlexBox>
         {sheetNames.length > 0 ?
-          <FlexBox style={{marginBottom: "0.5rem", justifyContent: "space-between"}}>
-          <Label style={{marginTop: "0.5rem"}}>Select Sheet Name:</Label>
+          <FlexBox style={{ marginBottom: "0.5rem", justifyContent: "space-between" }}>
+            <Label style={{ marginTop: "0.5rem", marginRight: "0.5rem" }}>Select Sheet Name:</Label>
             <Select
+              styles={SELECT_STYLE}
+              menuPosition="fixed"
               onChange={(e) => {
-                setSelectedSheetName(e.detail.selectedOption.dataset.id)
+                setSelectedSheetName(e.value)
               }}
+              options={sheetNames.map((sheetName) => ({ value: sheetName, label: sheetName }))}
+              value={selectedSheetName ? { value: selectedSheetName, label: selectedSheetName } : null}
             >
-              {sheetNames.map((sheetName) => {
-                return (
-                  <Option
-                    key={sheetName}
-                    data-id={sheetName}
-                    selected={sheetName === props.selectedSheetName}
-                  >
-                    {sheetName}
-                  </Option>
-                )
-          })}
-        </Select>
-      </FlexBox>
-       :<BusyIndicator /> }
+            </Select>
+          </FlexBox>
+          : <BusyIndicator />}
         <Button
           onClick={() => {
             clearState();
@@ -248,6 +233,7 @@ function MappingsMatcher(props) {
                 name="combine"
               />
               <Input
+                style={{ border: '1px solid lightgrey' }}
                 value={props.mappings[column.columnName] || ""}
                 onChange={(e) =>
                   props.setMappings({
@@ -285,28 +271,28 @@ function MappingsMatcher(props) {
             }
           }}
         >
-        <Button style={{ height: "23px" }}>Upload Template File</Button>
-      </FileUploader>
-       <Icon
-            style={{ margin: "auto", marginLeft: "10px", marginRight: 0 }}
-            name="document-text"
+          <Button style={{ height: "23px" }}>Upload Template File</Button>
+        </FileUploader>
+        <Icon
+          style={{ margin: "auto", marginLeft: "10px", marginRight: 0 }}
+          name="document-text"
         />
-        <Label style={{margin: "auto"}}>
+        <Label style={{ margin: "auto" }}>
           {file ? file.name : "No File"}
         </Label>
         <Button
-            style={{
-              margin: "auto",
-              marginRight: 0,
-              marginLeft: 0,
-              minWidth: 0,
-              height: "20px",
-              width: "20px",
-            }}
-            design="Transparent"
-            icon="decline"
-            onClick={clearState}
-          />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+          style={{
+            margin: "auto",
+            marginRight: 0,
+            marginLeft: 0,
+            minWidth: 0,
+            height: "20px",
+            width: "20px",
+          }}
+          design="Transparent"
+          icon="decline"
+          onClick={clearState}
+        />
       </FlexBox>
       <Label
         style={{
@@ -317,27 +303,20 @@ function MappingsMatcher(props) {
         OR
       </Label>
       {sheetNames.length > 0 ?
-      <FlexBox style={{marginBottom: "0.5rem"}}>
-       <Label>Select Sheet Name:</Label>
-        <Select
-          onChange={(e) => {
-            setSelectedSheetName(e.detail.selectedOption.dataset.id)
-          }}
-        >
-          {sheetNames.map((sheetName) => {
-            return (
-              <Option
-                key={sheetName}
-                data-id={sheetName}
-                selected={sheetName === props.selectedSheetName}
-              >
-                {sheetName}
-              </Option>
-            )
-          })}
-        </Select>
-      </FlexBox>
-       :<BusyIndicator /> }
+        <FlexBox style={{ marginBottom: "0.5rem" }}>
+          <Label>Select Sheet Name:</Label>
+          <Select
+            menuPosition="fixed"
+            styles={SELECT_STYLE}
+            onChange={(e) => {
+              setSelectedSheetName(e.value)
+            }}
+            options={sheetNames.map((sheetName) => ({ value: sheetName, label: sheetName }))}
+            value={selectedSheetName ? { value: selectedSheetName, label: selectedSheetName } : null}
+          >
+          </Select>
+        </FlexBox>
+        : <BusyIndicator />}
       <Button
         onClick={() => {
           props.setMappings([])
@@ -392,16 +371,16 @@ function MappingSelector(props) {
               design="Footer"
               endContent={
                 <>
-                <Button onClick={() => {
-                  setDialogOpen(false)
-                  setFileParserRunning(false);
-                  props.setMappings(tempMappings)
-                }}>Save</Button>
-                <Button onClick={() => {
-                  setFileParserRunning(false);
-                  setDialogOpen(false);
-                }
-                }>Cancel</Button>
+                  <Button onClick={() => {
+                    setDialogOpen(false)
+                    setFileParserRunning(false);
+                    props.setMappings(tempMappings)
+                  }}>Save</Button>
+                  <Button onClick={() => {
+                    setFileParserRunning(false);
+                    setDialogOpen(false);
+                  }
+                  }>Cancel</Button>
                 </>
 
               }

@@ -36,6 +36,7 @@ function DefaultValuesInput(props) {
               name="arrow-right"
             />
             <Input
+              style={{ border: '1px solid lightgrey' }}
               value={props.defaultValues[column.columnName] || ""}
               onChange={(e) =>
                 props.setDefaultValues({

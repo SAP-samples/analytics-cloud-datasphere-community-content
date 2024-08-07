@@ -1,17 +1,18 @@
 {
   "name": "file-upload-widget",
-  "version": "2.0.0",
+  "version": "2.0.8",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/user-event": "^13.5.0",
-    "@ui5/webcomponents": "^1.16.0",
-    "@ui5/webcomponents-fiori": "^1.16.0",
-    "@ui5/webcomponents-icons": "^1.16.0",
-    "@ui5/webcomponents-react": "^1.18.0",
+    "@ui5/webcomponents": "^1.24.5",
+    "@ui5/webcomponents-fiori": "^1.24.5",
+    "@ui5/webcomponents-icons": "^1.24.5",
+    "@ui5/webcomponents-react": "^1.24.5",
     "fuse.js": "^6.6.2",
     "papaparse": "^5.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-select": "^5.8.0",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.19.3/xlsx-0.19.3.tgz"
   },
   "devDependencies": {
@@ -25,6 +26,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "jsdom": "^22.1.0",
+    "node-fetch": "^3.0.0",
+    "papaparse": "^5.4.1",
     "resize-observer-polyfill": "^1.5.1",
     "vite": "^4.4.5",
     "vitest": "^0.34.6"

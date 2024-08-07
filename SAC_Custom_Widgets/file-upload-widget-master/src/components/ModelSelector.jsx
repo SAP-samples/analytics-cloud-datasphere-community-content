@@ -75,14 +75,14 @@ function ModelSelector(props) {
       <div
         style={{ display: "flex", flexDirection: "column", paddingLeft: 30 }}
       >
-        <Error message={error} />
+        <Error message={error} close={() => setError("")}/>
         <ModelInfo
           networkLoading={networkLoading}
           models={models}
           modelId={props.modelId}
         />
         <ComboBox
-          style={{ width: '100%' }}
+          style={{ width: '100%', border: '1px solid lightgrey' }}
           onSelectionChange={(e) => props.setModelId(e.detail.item.dataset.id)}
           onInput={(e) => setFilter(e.target.value)}
           value={selectedModel ? selectedModel.modelName : ""}

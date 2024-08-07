@@ -28,8 +28,15 @@ function EndUserEntryDialog(props) {
   const [sheetNames, setSheetNames] = React.useState([])
 
   const [version, setVersion] = React.useState("")
-  const [availableVersions, setAvailableVersions] = React.useState([])
   const [fileParserRunning, setFileParserRunning] = React.useState(false);
+
+  const setVersionHandler = (version) => {
+    setVersion(version)
+  }
+
+  const setSheetNameHandler = (sheetName) => {
+    setSelectedSheetName(sheetName)
+  }
 
   React.useEffect(() => {
     if (file === undefined) {
@@ -61,6 +68,9 @@ function EndUserEntryDialog(props) {
         const sheetNames = responseArray[1]
         setImportData(importData)
         setSheetNames(sheetNames)
+        if(sheetNames.length > 0 && selectedSheetName === "") {
+          setSelectedSheetName(sheetNames[0])
+        }
         setFileParserRunning(false) // Need to set this value in callback to prevent batch state setting
       }
 
@@ -139,18 +149,6 @@ function EndUserEntryDialog(props) {
   }, [importData, importNetworkImport, importDataValidationCompleted, props]);
 
 
-  //Network effect to fetch versions
-  React.useEffect(() => {
-    if (props.modelId) {
-      DataImportServiceApi.INSTANCE.getModel(props.modelId).then((resp) => {
-        if (resp.versions !== undefined) {
-            setAvailableVersions(resp.versions)
-        }
-      })
-    }
-  }, [props.modelId])
-
-
   const defaultValues = DataImportServiceApi.INSTANCE.getDefaultValues()
   let defaultVersion = defaultValues.hasOwnProperty('Version') ? defaultValues.Version : "" 
 
@@ -200,13 +198,12 @@ function EndUserEntryDialog(props) {
           }
         >
         <MainDialogContents
-          setSelectedSheetName={setSelectedSheetName}
+          setSelectedSheetName={setSheetNameHandler}
           selectedSheetName={selectedSheetName}
           setFile={setFile}
           setParsedFileName={setParsedFileName}
           file={file}
-          versions={availableVersions}
-          setVersion={setVersion}
+          setVersion={setVersionHandler}
           version={version}
           defaultVersion={defaultVersion}
           shouldDisplayVersionDropdown={shouldDisplayVersionDropdown && defaultVersion === ""}
@@ -218,7 +215,6 @@ function EndUserEntryDialog(props) {
           sheetNames={sheetNames}
           setSheetNames={setSheetNames}
           fileParserRunning={fileParserRunning}
-          setAvailableVersions={setAvailableVersions}
           modelId={props.modelId}
           />
         </Dialog>,
@@ -232,7 +228,7 @@ function EndUserEntryDialog(props) {
           style={{ padding: 0 }}
           footer={
             <Bar
-              style={{ minWidth: "100%", height: "38px" }}
+              style={{ minWidth: "100%", height: "38px", background : "transparent" }}
               endContent={
                 <>
                   <Button

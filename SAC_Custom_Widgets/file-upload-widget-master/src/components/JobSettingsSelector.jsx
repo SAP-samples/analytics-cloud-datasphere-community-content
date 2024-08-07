@@ -2,6 +2,7 @@ import {
   Button,
   CheckBox,
   FlexBox,
+  Input,
   Label,
   Option,
   Panel,
@@ -54,10 +55,10 @@ function PivotSettings(props) {
         </FlexBox>
         <FlexBox direction="Row">
           <Label style={{ alignSelf: "center" }}>Pivot Column Start</Label>
-          <input
+          <Input
             type="text"
             value={(props.pivotSettings && props.pivotSettings["pivotColumnStart"]) ? props.pivotSettings["pivotColumnStart"] : ""}
-            style={{ marginLeft: "auto", height: '20px', border: '1px solid rgb(191, 191, 191)', minWidth: '204px' }}
+            style={{ marginLeft: "auto", height: '25px', border: '1px solid rgb(191, 191, 191)', minWidth: '204px' }}
             onInput={(e) => {
               e.preventDefault();
               handleChange(
@@ -71,7 +72,10 @@ function PivotSettings(props) {
         <FlexBox direction="Row">
           <Label style={{ alignSelf: "center" }}>Pivot Key</Label>
           <Select
-            style={{ marginLeft: "auto" }}
+            style={{ 
+              marginLeft: "auto", 
+              border: '1px solid lightgrey',  
+            }}
             onChange={(e) =>
               handleChange("pivotKeyName", e.detail.selectedOption.dataset.id)
             }
@@ -103,9 +107,9 @@ function PivotSettings(props) {
           </Select>
         </FlexBox>
         <FlexBox direction="Row">
-          <Label style={{ alignSelf: "center" }}>Pivot Value</Label>
+          <Label style={{ alignSelf: "center"}}>Pivot Value</Label>
           <Select
-            style={{ marginLeft: "auto" }}
+            style={{ marginLeft: "auto", border: '1px solid lightgrey'}}
             onChange={(e) =>
               handleChange("pivotValueName", e.detail.selectedOption.dataset.id)
             }
@@ -148,7 +152,7 @@ function ImportMethod(props) {
         <FlexBox>
           <Label style={{ alignSelf: "center" }}>Import Method:</Label>
           <Select
-            style={{ marginLeft: "auto" }}
+            style={{ marginLeft: "auto", border: '1px solid rgb(191, 191, 191)' }}
             onChange={(e) =>
               props.setImportMethod(e.detail.selectedOption.dataset.id)
             }

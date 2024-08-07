@@ -6,6 +6,7 @@ import "@ui5/webcomponents-icons/dist/pending";
 import "@ui5/webcomponents-icons/dist/edit";
 import "@ui5/webcomponents-icons/dist/expand-group";
 import "@ui5/webcomponents-icons/dist/copy";
+import "@ui5/webcomponents-icons/dist/delete";
 import { beautifyImportTypeName } from "./ImportTypeSelector"
 import { prettifyJobStatus } from "./endUser/EndUserUpload"
 
@@ -19,8 +20,7 @@ function ModelJobsTimelineWrapper(props) {
 
     const filteredJobs = jobs.filter((job) => job.modelID === props.modelId)
 
-    React.useEffect(() => {
-        if (jobs.length === 0 && error === "") {
+    const fetchJobs = async function() {
             setNetworkLoading(true)
             DataImportServiceApi.INSTANCE.getJobs().then((resp) => {
                 setNetworkLoading(false)
@@ -30,8 +30,15 @@ function ModelJobsTimelineWrapper(props) {
                 setNetworkLoading(false)
                 setError(err.message)
             })
+        
+    }
+
+    React.useEffect(() => {
+        if (jobs.length === 0 && error === "") { 
+            fetchJobs()
         }
     }, [props.modelId, jobs, error])
+
     if (props.modelId === "") {
         return (
             <Panel headerText="Job Timeline" collapsed={true}>
@@ -42,11 +49,11 @@ function ModelJobsTimelineWrapper(props) {
     return (
         <Panel headerText="Jobs Timeline" collapsed={true}>
             <div
-                style={{ display: "flex", flexDirection: "column"}}
+                style={{ display: "flex", flexDirection: "column" }}
             >
                 <Error message={error} close={() => setError("")} />
                 {networkLoading ? <BusyIndicator active /> : undefined}
-                <ModelJobsTimeline jobs={filteredJobs.slice(0, shownTimelineItems)} />
+                <ModelJobsTimeline jobs={filteredJobs.slice(0, shownTimelineItems)} fetchJobs={fetchJobs} />
                 <Button hidden={filteredJobs.length < 5} onClick={(() => setShownTimelineItems(Math.min(shownTimelineItems + 5, filteredJobs.length)))}>Load More ({shownTimelineItems} / {filteredJobs.length})</Button>
             </div>
         </Panel>
@@ -65,7 +72,7 @@ function ModelJobsTimeline(props) {
                     waitForDefine={true}
                 >
                     <div key={job.jobID}>
-                        <ModelTimelineItem key={job.jobID} job={job} />
+                        <ModelTimelineItem key={job.jobID} job={job} fetchJobs={props.fetchJobs}/>
                     </div>
                 </TimelineItem>
             )}
@@ -96,9 +103,9 @@ function ModelTimelineItem(props) {
         <FlexBox direction="Column">
             <Error message={error} />
             <AdditionalInformationTimelineItem additionalInformation={additionalInfo ? additionalInfo.additionalInformation : undefined} />
-            <CopyJobButtons additionalInfo={additionalInfo} />
+            <CopyJobButtons additionalInfo={additionalInfo} jobID={job.jobID} fetchJobs={props.fetchJobs} />
             <BusyIndicator active style={{ marginTop: '.5rem', display: networkLoading ? '' : 'None' }} />
-            <Button style={{marginTop: '.5rem'}} disabled={additionalInfo !== undefined} icon="expand-group" design="Transparent" onClick={() => fetchAdditionalInfo()}><span>Fetch Additional Info</span></Button>
+            <Button style={{ marginTop: '.5rem' }} disabled={additionalInfo !== undefined} icon="expand-group" design="Transparent" onClick={() => fetchAdditionalInfo()}><span>Fetch Additional Info</span></Button>
         </FlexBox>
     )
 }
@@ -123,24 +130,34 @@ function AdditionalInformationTimelineItem(props) {
 
 function CopyJobButtons(props) {
     if (props.additionalInfo === undefined) {
-        return(
+        return (
             <FlexBox direction="Row"></FlexBox>
         )
     }
     return (
         <FlexBox direction="Column">
             <Button
-                style={{marginTop: '.5rem'}}
+                style={{ marginTop: '.5rem' }}
                 design="Transparent"
                 onClick={() => navigator.clipboard.writeText(JSON.stringify(props.additionalInfo))}
                 icon="copy">Copy JSON Stats</Button>
             <Button
-                style={{marginTop: '.5rem'}}
+                style={{ marginTop: '.5rem' }}
                 disabled={!props.additionalInfo.invalidRowsURL}
                 tooltip={!props.additionalInfo.invalidRowsURL ? "You must validate or run the job to see invalid rows" : ""}
                 design="Transparent"
                 onClick={() => navigator.clipboard.writeText(props.additionalInfo.invalidRowsURL)}
                 icon="copy">Copy Invalid Rows URL</Button>
+            <Button
+                style={{ marginTop: '.5rem' }}
+                tooltip={"Deletes the current job"}
+                design="Transparent"
+                onClick={() => {
+                    DataImportServiceApi.INSTANCE.deleteJob(props.jobID).then(() => {
+                        props.fetchJobs();
+                    });
+                } }
+                icon="delete">Delete Job</Button>
         </FlexBox>
     )
 }

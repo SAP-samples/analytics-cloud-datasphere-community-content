@@ -56,7 +56,7 @@ function ImportTypeSelector(props) {
           onChange={(e) =>
             props.setImportType(e.detail.selectedOption.dataset.id)
           }
-          style={{ width: "100%" }}
+          style={{ width: '100%', border: '1px solid lightgrey' }}
         >
           <Option key="" data-id="" selected={props.importType === ""}>
             {importTypes && importTypes.length === 0 ? "Loading..." : ""}

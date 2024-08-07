@@ -18,6 +18,10 @@ export default class DataImportServiceApi {
   JOBS_ENDPOINT = "/jobs";
   WIDGET_ENDPOINT = "/widget"
 
+  BASE_HEADER = {
+     "x-sap-dis-request-source"  : "fileUploadWidget"
+  }
+
   constructor(URL) {
     this.URL = URL;
     this.mappings = {};
@@ -70,25 +74,25 @@ export default class DataImportServiceApi {
 
   /** Get Based Requests */
 
-    async getXLSXScriptURL() {
-      // Used to generate a consistent URL for the XLSX script, used to parse XLSX data within a webworker
-      const widgetXLSXUrl = this.URL + this.WIDGET_ENDPOINT + "/xlsx.mini.min.js"
-      let response = await fetch(widgetXLSXUrl)
-      if (!response.ok) {
-        return "https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.mini.min.js"
-      }
-      return widgetXLSXUrl
+  async getXLSXScriptURL() {
+    // Used to generate a consistent URL for the XLSX script, used to parse XLSX data within a webworker
+    const widgetXLSXUrl = this.URL + this.WIDGET_ENDPOINT + "/xlsx.mini.min.js"
+    let response = await fetch(widgetXLSXUrl, {headers: this.BASE_HEADER});
+    if (!response.ok) {
+      return "https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.mini.min.js"
     }
+    return widgetXLSXUrl
+  }
 
-    /**
-       * Fetches a list of models from Data Import Service
-       *
-       * @throws {Error} Throws an error if the HTTP response status is not 2xx
-       *
-       * @returns {Promise<Array>} A promise that resolves with the list of models
-    */
+  /**
+     * Fetches a list of models from Data Import Service
+     *
+     * @throws {Error} Throws an error if the HTTP response status is not 2xx
+     *
+     * @returns {Promise<Array>} A promise that resolves with the list of models
+  */
   async getModels() {
-    let response = await fetch(this.URL + this.MODELS_ENDPOINT);
+    let response = await fetch(this.URL + this.MODELS_ENDPOINT, {headers: this.BASE_HEADER});
     if (!response.ok) {
       throw new Error("Unable to get list of models");
     }
@@ -106,7 +110,7 @@ export default class DataImportServiceApi {
      * @returns {Promise<Object>} A promise that resolves with the model information as an object.
    */
   async getModel(modelId) {
-    let response = await fetch(this.URL + this.MODELS_ENDPOINT + "/" + modelId);
+    let response = await fetch(this.URL + this.MODELS_ENDPOINT + "/" + modelId, {headers: this.BASE_HEADER});
     if (!response.ok) {
       throw new Error("Unable to get model information");
     }
@@ -124,7 +128,8 @@ export default class DataImportServiceApi {
    */
   async getModelMetadata(modelId) {
     let response = await fetch(
-      this.URL + this.MODELS_ENDPOINT + "/" + modelId + "/metadata"
+      this.URL + this.MODELS_ENDPOINT + "/" + modelId + "/metadata",
+      {headers: this.BASE_HEADER}
     );
     if (!response.ok) {
       throw new Error("Unable to get model metadata");
@@ -146,6 +151,7 @@ export default class DataImportServiceApi {
       headers: {
         "Content-Type": "application/json",
         "X-Csrf-Token": "fetch",
+        ...this.BASE_HEADER
       },
     };
     const response = await fetch(jobUrl, options);
@@ -299,7 +305,7 @@ export default class DataImportServiceApi {
     Object.keys(this.mappings).forEach((key) => {
       // Checks if the user has specified mappings for a column
       if (this.mappings[key] === undefined || this.mappings[key] === "") {
-        this.mappings[key] = key;
+        delete this.mappings[key];
       }
     });
 
@@ -316,6 +322,7 @@ export default class DataImportServiceApi {
       headers: {
         "Content-Type": "application/json",
         "x-csrf-token": this.csrfToken,
+        ...this.BASE_HEADER
       },
       body: JSON.stringify({
         Mapping: this.mappings,
@@ -347,6 +354,7 @@ export default class DataImportServiceApi {
       headers: {
         "Content-Type": "text/csv",
         "x-csrf-token": this.csrfToken,
+        ...this.BASE_HEADER
       },
       body: data,
     };
@@ -385,6 +393,7 @@ export default class DataImportServiceApi {
       headers: {
         "Content-Type": "application/json",
         "x-csrf-token": this.csrfToken,
+        ...this.BASE_HEADER
       },
       data: { jobSettings: this.jobSettings },
     };
@@ -408,6 +417,7 @@ export default class DataImportServiceApi {
       this.URL + this.JOBS_ENDPOINT + "/" + jobId + "/status";
     let options = {
       method: "GET",
+      headers : this.BASE_HEADER
     };
     let response = await fetch(jobStatusUrl, options);
     if (!response.ok) {
@@ -426,6 +436,7 @@ export default class DataImportServiceApi {
       this.URL + this.JOBS_ENDPOINT;
     let options = {
       method: "GET",
+      headers : this.BASE_HEADER
     };
     let response = await fetch(jobStatusUrl, options);
     if (!response.ok) {
@@ -444,6 +455,7 @@ export default class DataImportServiceApi {
       this.URL + this.JOBS_ENDPOINT + "/" + jobId + "/invalidRows";
     let options = {
       method: "GET",
+      headers : this.BASE_HEADER
     };
 
     let response = await fetch(invalidRowsUrl, options);
@@ -452,6 +464,27 @@ export default class DataImportServiceApi {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     return await response.json();
+  }
+
+  /**
+   * Delete a given job by its jobID
+   * 
+   * @param {string} jobId - The jobID of the job we want to delete
+   * @returns 
+   */
+  async deleteJob(jobId) {
+    const jobUrl = this.URL + this.JOBS_ENDPOINT + "/" + jobId;
+
+    this.csrfToken = await this.getCSRFToken();
+
+    const options = {
+      method: "DELETE",
+      headers: {
+        "x-csrf-token": this.csrfToken,
+        ...this.BASE_HEADER
+      }
+    };
+    return await fetch(jobUrl, options);
   }
 
   /**
@@ -508,7 +541,7 @@ export default class DataImportServiceApi {
     }
 
     // Additional Columns can be ignored with this Job Setting
-    if(!this.jobSettings["ignoreAdditionalColumns"]) { 
+    if (!this.jobSettings["ignoreAdditionalColumns"]) {
       for (let headerName of headerRow) {
         if (
           !columnNames.includes(headerName) &&   // header is not the same as metadata
@@ -536,9 +569,9 @@ export default class DataImportServiceApi {
 
     if (this.jobSettings.pivotOptions !== undefined && this.jobSettings.pivotOptions.pivotColumnStart !== undefined) {
       checkToColumn = this.jobSettings.pivotOptions.pivotColumnStart
-      if (headerRow.length < this.jobSettings.pivotColumnStart) {
+      if (headerRow.length < this.jobSettings.pivotOptions.pivotColumnStart) {
         // fail fast because the parsing is difficult and nonsensical otherwise
-        return [`The data should contain at least ${this.jobSettings.pivotColumnStart} columns in order to support pivot import sedttings, found only ${headerRow.length}`]
+        return [`The data should contain at least ${this.jobSettings.pivotOptions.pivotColumnStart} columns in order to support pivot import settings, found only ${headerRow.length}`]
       }
       while (headerRow.length >= checkToColumn) {
         headerRow.pop()

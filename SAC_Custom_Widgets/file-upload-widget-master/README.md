@@ -39,4 +39,3 @@ Please use this repository responsibly and at your own risk.
 - https://blogs.sap.com/2023/11/03/how-to-upload-data-to-a-public-or-private-planning-version-using-a-file-upload-custom-widget-within-sap-analytics-cloud./
 - https://blogs.sap.com/2023/11/29/file-upload-widget-how-to-develop-custom-widgets-with-the-react-framework/
   
-
