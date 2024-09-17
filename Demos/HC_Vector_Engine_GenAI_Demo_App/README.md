@@ -70,8 +70,6 @@ You can download the sample data set [here](https://d.dam.sap.com/a/NnpLcEG?rc=1
 This application was build on code from [SAP-samples/btp-cap-genai-rag](https://github.com/SAP-samples/btp-cap-genai-rag/tree/main).
 Deployment should be similar, however the current state of this app is Single Tenant on Cloud Foundry (CF) only.
 
-The folder [data_retrieval](./data_retrieval/) contains various scripts and the data used in this dmeo.
-
 This is only necessary for preparation of the demo. Once all data is imported, the demo be used without further data retrieval.
 
 
