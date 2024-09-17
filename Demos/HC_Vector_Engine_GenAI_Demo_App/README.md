@@ -64,7 +64,7 @@ Cosine Similarity: `0.766`
 
 ## Connectivity
 Your SAP HANA Cloud needs to be at least on the QRC1 2024 version.
-A sample data set is included in the content package.
+You can download the sample data set [here](https://d.dam.sap.com/a/NnpLcEG?rc=10&doi=SAP1119893).
 
 ## Download/Install Instructions
 This application was build on code from [SAP-samples/btp-cap-genai-rag](https://github.com/SAP-samples/btp-cap-genai-rag/tree/main).
@@ -187,6 +187,6 @@ Therefore, the following issues are open. Be aware when hosting it or use as tem
 N/A
 
 ## How to obtain support
-[Create an issue](https://github.com/SAP-samples/btp-cap-multitenant-ai/issues) in this repository if you find a bug or have questions about the content.
+[Create an issue](https://github.com/SAP-samples/btp-cap-genai-rag/issues) in this repository if you find a bug or have questions about the content.
  
 For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
