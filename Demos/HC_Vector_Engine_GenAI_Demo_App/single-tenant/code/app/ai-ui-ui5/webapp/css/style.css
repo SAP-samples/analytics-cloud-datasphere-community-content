@@ -1,0 +1,22 @@
+
+.similarityCell[data-nodecolor='green'] {
+	color: green;
+	font-weight: bold;
+}
+.similarityCell[data-nodecolor='yellow'] {
+	color: #ffaa00;
+	font-weight: bold;
+}
+.similarityCell[data-nodecolor='red'] {
+	color: red;
+	font-weight: bold;
+}
+#getHelpPopover--internalList-header, #getHelpPopover--externalList-header{
+	font-size: 1em;
+}
+#__component0---standard--applicationFlowGraph-toolbar{
+	display: none;
+}
+#__component0---expert--applicationFlowGraph-toolbar{
+	display: none;
+}
