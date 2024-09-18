@@ -31,6 +31,8 @@ N/A
 ## Download/Install Instructions
 Please check the documentation [here](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/ef516563b3fe4c69b6f718f17ed94cdf.html).
 
+The package has not been migrated to Optimized Design Experience (ODE) and can therefore not be installed in tenants that are limited to ODE.
+
 ## More Information
 N/A
 

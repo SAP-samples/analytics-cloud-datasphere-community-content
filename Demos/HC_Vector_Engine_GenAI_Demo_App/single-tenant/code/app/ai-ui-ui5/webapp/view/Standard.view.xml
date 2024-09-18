@@ -1,0 +1,188 @@
+<mvc:View
+    controllerName="ai.ui.controller.Standard"
+    displayBlock="true"
+    height="100%"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:grid="sap.ui.layout.cssgrid"
+    xmlns:f="sap.f"
+>
+	<Page showFooter="true" showHeader="false" enableScrolling="false">
+<l:Splitter id="splitterLayout">
+    <ScrollContainer
+        width="100%"
+        height="100%"
+        vertical="true"
+        focusable="true"
+    >
+    <layoutData><l:SplitterLayoutData size="70%" resizable="false" /></layoutData>
+        <Panel
+            id="StandardPromptSelectPanel"
+            expandable="false"
+            expanded="true"
+            width="auto"
+            class="sapUiSmallMargin"
+        >
+						<headerToolbar>
+							<OverflowToolbar>
+								<Title text="{= ${suggestedQuestions>/scenario/name} === 'MOVIES'? ${i18n>movie.questionSelection} : ${i18n>cap.questionSelection}}" />
+								<ToolbarSpacer />
+								<Button
+									icon="sap-icon://database"
+									text="{= ${suggestedQuestions>/scenario/name} === 'MOVIES'? ${i18n>movie.browse} : ${i18n>cap.browse}}"
+									press="onOpenMovieList"
+								/>
+							</OverflowToolbar>
+						</headerToolbar>
+            <content>
+                <f:GridList
+                    id="StandardSelectList"
+										items="{suggestedQuestions>/scenario/prompts}"
+										width="auto"
+                    class="sapUiResponsiveMargin"
+                    busy="{suggestedQuestions>/standard/ragAnswerListItemIsBusy}"
+                >
+                    <f:customLayout>
+                        <grid:GridBasicLayout
+                            gridTemplateColumns="repeat(auto-fit, minmax(12rem, 12rem))"
+                            gridGap="0.5rem"
+                        />
+                    </f:customLayout>
+
+                    <f:GridListItem
+                        type="Active"
+                        press="onMovieLLMWithRagPromptSelect"
+                        highlight="{= ${suggestedQuestions>/standard/llmWithRagPrompt} !== ${suggestedQuestions>label}? 'None' : 'Success'}"
+                        tooltip="{suggestedQuestions>label}"
+                    >
+                        <ScrollContainer
+                            width="100%"
+                            height="100%"
+                            vertical="true"
+                            focusable="true"
+                        >
+                            <VBox class="sapUiSmallMargin">
+                                <layoutData>
+                                    <FlexItemData
+                                        growFactor="1"
+                                        shrinkFactor="0"
+                                    />
+                                </layoutData>
+
+                                <Title
+                                    text="{suggestedQuestions>title} {suggestedQuestions>index}"
+                                    wrapping="true"
+                                />
+                                <Label
+                                    text="{suggestedQuestions>label}"
+                                    wrapping="true"
+                                />
+                            </VBox>
+                        </ScrollContainer>
+                    </f:GridListItem>
+                </f:GridList>
+            </content>
+        </Panel>
+        <Panel
+            id="MovieLlmWithRagInputPanel"
+            expandable="false"
+            expanded="true"
+            stickyHeader="true"
+            width="auto"
+            class="sapUiSmallMargin"
+        >
+            <headerToolbar>
+                <OverflowToolbar>
+                    <Title text="{i18n>questionInput}" />
+                    <ToolbarSpacer />
+									<Select
+										selectedKey="{suggestedQuestions>/scenario/standard/selectedModel}"
+										items="{suggestedQuestions>/models}"
+										busy="{suggestedQuestions>/standard/ragAnswerListItemIsBusy}"
+									>
+										<core:ListItem
+											key="{suggestedQuestions>name}"
+											text="{suggestedQuestions>name}"
+											icon="{suggestedQuestions>icon}"
+										/>
+									</Select>
+                    <Button
+                        icon="sap-icon://error"
+                        text="Cancel"
+                        press="onCancelPress"
+                        enabled="{suggestedQuestions>/standard/ragAnswerListItemIsBusy}"
+                    />
+                </OverflowToolbar>
+            </headerToolbar>
+            <content>
+                <FlexBox alignItems="Center" justifyContent="Center" class="sapUiContentPadding">
+                    <Label text="With Retrieval Augmented Generation:"/>
+                    <Switch state="{suggestedQuestions>/standard/withRag}"
+                            customTextOn="Yes"
+                            customTextOff="No"
+                            change="onWithRagToggle">
+                        <layoutData>
+                            <FlexItemData growFactor="1" />
+                        </layoutData>
+                    </Switch>
+                </FlexBox>
+                <l:Grid binding="" class="sapUiSmallMarginTop" hSpacing="2" defaultSpan="L10 M10 S12">
+                    <FeedInput
+                            id="MovieLlmWithRagInput"
+                            post="onPromptLlmWithRagSubmit"
+                            showIcon="true"
+                            growing="true"
+                            busy="{suggestedQuestions>/standard/ragAnswerListItemIsBusy}"
+                            class="sapUiResponsiveContentPadding"
+                            placeholder="Ask a question or choose one from the selection above."
+                            value="{suggestedQuestions>/standard/llmWithRagPrompt}"
+                    >
+                        <layoutData>
+                            <l:GridData span="L10 M10 S12" linebreakL="true" linebreakM="true" linebreakS="true"/>
+                        </layoutData>
+                    </FeedInput>
+                </l:Grid>
+            </content>
+                </Panel>
+        <Panel
+            id="MovieLlmResponseWithRagPanel"
+            expandable="false"
+            expanded="true"
+            stickyHeader="true"
+            headerText="{= ${suggestedQuestions>/standard/withRag} ? ${i18n>LLMWithRagResponse} : ${i18n>LLMWithoutRagResponse}}"
+            width="auto"
+            class="sapUiSmallMargin"
+        >
+            <content>
+                <!-- <core:Icon src="sap-icon://customer"></core:Icon> -->
+                <FeedListItem
+                    id="MovieRagAnswerListItem"
+                    icon="sap-icon://ai"
+                    iconActive="false"
+                    busy="{suggestedQuestions>/standard/ragAnswerListItemIsBusy}"
+                    class="sapUiResponsiveMargin"
+                    text="{suggestedQuestions>/standard/llmAnswer}"
+                    maxCharacters="2000"
+                />
+            </content>
+        </Panel>
+    </ScrollContainer>
+    <core:Fragment fragmentName="ai.ui.view.GraphRepresentation" type="XML" />
+</l:Splitter>
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+
+				<Text
+					text="{= ${suggestedQuestions>/scenario/name} === 'MOVIES'? 'Credits: Lists of American films, Wikipedia, 14 November 2023,' : 'Credits：'}"/>
+				<Link
+					text="{= ${suggestedQuestions>/scenario/name} === 'MOVIES'? 'https://en.wikipedia.org/wiki/Lists_of_American_films' : 'https://github.com/cap-js/docs'}"
+					target="_blank"
+					href="{= ${suggestedQuestions>/scenario/name} === 'MOVIES'? 'https://en.wikipedia.org/wiki/Lists_of_American_films' : 'https://github.com/cap-js/docs'}"/>
+				<ToolbarSpacer/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

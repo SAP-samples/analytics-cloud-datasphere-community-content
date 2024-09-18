@@ -1,0 +1,18 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	placement="Left"
+	xmlns:core="sap.ui.core">
+	<Popover
+		title="Prompt"
+		placement="Left"
+		class="sapUiResponsivePadding--header sapUiResponsivePadding--footer"
+	>
+		<VBox class="sapUiResponsiveMargin">
+		<Text
+			renderWhitespace="true"
+			wrapping="true"
+			text="{suggestedQuestions>/inputForLLM}"
+		/>
+		</VBox>
+	</Popover>
+</core:FragmentDefinition>

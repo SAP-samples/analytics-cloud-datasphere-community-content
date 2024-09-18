@@ -1,0 +1,184 @@
+{
+	"scenario": {},
+	"inputForLLM": "",
+	"promptChain": {},
+	"version": "",
+	"infoMaterial": {
+		"internal": [
+			{
+				"title": "Interal Resource",
+				"label": "Single Source of Truth: Your one-stop-shop on SharePoint",
+				"src": "images/VectorStoreSharePoint.png",
+				"url": "https://sap.sharepoint.com/sites/126676/SitePages/Database/Vector-Engine.aspx"
+			},
+			{
+				"title": "Interal Resource",
+				"label": "The SAP HANA Cloud Vector Engine L2 Deck – excite your customers!",
+				"src": "images/VectorEngineL2Deck.png",
+				"url": "https://dam.sap.com/mac/app/p/pdf/asset/preview/tqN2SSF?ltr=a&rc=10&includeRelatedAssets=true (L2 Vector Engine)"
+			}
+		],
+		"external": [
+			{
+				"title": "Interal Resource",
+				"label": "The SAP HANA Cloud Multi Model L1 Deck – the combined power of SAP HANA Cloud Engines",
+				"src": "images/MultiModelL1Deck.png",
+				"url": "https://dam.sap.com/mac/app/asset/preview/16940535b621e6b8cf498ebbb1bcb7fd498a80f0?rc=10 (L1 Multi Model)"
+			},
+			{
+				"title": "External Resource",
+				"label": "The SAP HANA Cloud Vector Engine Early Adopter Care Program",
+				"src": "images/EarlyAdopterCareProgram.png",
+				"url": "https://influence.sap.com/sap/ino/#campaign/3614"
+			}
+		]
+	},
+	"models": [
+		{
+			"name": "GPT-4",
+			"description": "GPT-4 is great",
+			"icon": "sap-icon://ai",
+			"value": "CHATGPT4"
+		},
+		{
+			"name": "GPT-3.5-turbo",
+			"description": "GPT-3.5-turbo is great",
+			"icon": "sap-icon://ai",
+			"value": "CHATGPT35"
+		}
+	],
+	"standard": {
+		"withRag": false,
+		"ragAnswerPanelIsExpanded": false,
+		"ragAnswerListItemIsBusy": false,
+		"llmAnswer": "",
+		"llmWithRagPrompt": ""
+	},
+	"expert": {
+		"semanticSearchQuestion": "",
+		"ragAnswerPanelIsExpanded": false,
+		"ragAnswerListItemIsBusy": false,
+		"llmAnswer": "",
+		"llmWithRagPrompt": "",
+		"movieSemanticSearchAnswerListItemIsExpanded": false,
+		"movieSemanticSearchAnswerListItemIsBusy": false,
+		"movieSemanticSearchAnswers": []
+	},
+	"applicationFlowGraph": {
+		"nodes": [
+			{
+				"key": "naturalPrompt",
+				"icon": "sap-icon://customer",
+				"title": "User input",
+				"status": "CustomStandard",
+				"enabled": false,
+				"attributes": [
+					{
+						"label": "Task duration",
+						"value": ""
+					}
+				]
+			},
+			{
+				"key": "embedPrompt",
+				"icon": "sap-icon://chart-axis",
+				"title": "Transform the user input to a vector",
+				"group": "ragGroup",
+				"status": "CustomInactive",
+				"enabled": false,
+				"attributes": [
+					{
+						"label": "Task duration",
+						"value": ""
+					}
+				]
+			},
+			{
+				"key": "semanticSearch",
+				"icon": "sap-icon://database",
+				"title": "Run vector search in SAP HANA cloud",
+				"group": "ragGroup",
+				"status": "CustomInactive",
+				"enabled": false,
+				"attributes": [
+					{
+						"label": "Task duration",
+						"value": ""
+					}
+				]
+			},
+			{
+				"key": "llm",
+				"icon": "sap-icon://ai",
+				"title": "Prompt the LLM with the user input",
+				"group": "llmGroup",
+				"status": "CustomStandard",
+				"busy": false,
+				"enabled": true,
+				"attributes": [
+					{
+						"label": "Task duration",
+						"value": ""
+					}
+				]
+			},
+			{
+				"key": "response",
+				"icon": "sap-icon://goal",
+				"title": "Display LLM response",
+				"status": "CustomStandard",
+				"enabled": false,
+				"attributes": [
+					{
+						"label": "Task duration",
+						"value": "N/A"
+					}
+				]
+			}
+		],
+		"lines": [
+			{
+				"from": "naturalPrompt",
+				"to": "embedPrompt",
+				"group": "ragGroup",
+				"status": "CustomInactive",
+				"title": "Generate vector from natural language input using LLM"
+			},
+			{
+				"from": "embedPrompt",
+				"to": "semanticSearch",
+				"group": "ragGroup",
+				"status": "CustomInactive",
+				"title": "Retrieve results best fitting to natural prompt from HANA Cloud using its Vector Engine"
+			},
+			{
+				"from": "semanticSearch",
+				"to": "llm",
+				"group": "ragGroup",
+				"status": "CustomInactive",
+				"title": "Retrieval Augmented Generation"
+			},
+			{
+				"from": "llm",
+				"to": "response",
+				"group": "llmGroup",
+				"status": "CustomStandard",
+				"title": "Return response"
+			}
+		],
+		"groups": [
+			{
+				"key": "llmGroup",
+				"title": "Default LLM",
+				"status": "CustomStandard",
+				"busy": false
+			},
+			{
+				"key": "ragGroup",
+				"title": "Vector Search using SAP HANA Cloud",
+				"status": "CustomStandardGroup",
+				"busy": false
+			}
+		]
+	}
+}
