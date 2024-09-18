@@ -53,13 +53,6 @@ _The expert mode proved a very fast search of fitting movies for a question. Con
  * Use the Movie Browser
  * Compare RAG and No-RAG:
    * Just if a sementic search and question sounds promissing, it doesn't mean, that it a well suited.
- * Get an overview of "new" movies:
-   * [Movies 2022](./data_retrieval/movies/movie_summaries/movie_summary_2022.md)
-   * [Movies 2023](./data_retrieval/movies/movie_summaries/movie_summary_2023.md)
-   * [Movies 2024](./data_retrieval/movies/movie_summaries/movie_summary_2024.md)
-
-_These lists of movies were created by applying an LLM to the Wikipedia pages and extracting director, genre and brief summary._
-
 
 ## Question design - How to phrase the question right
 
