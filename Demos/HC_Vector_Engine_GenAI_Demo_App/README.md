@@ -185,6 +185,4 @@ Therefore, the following issues are open. Be aware when hosting it or use as tem
 N/A
 
 ## How to obtain support
-[Create an issue](https://github.com/SAP-samples/btp-cap-genai-rag/issues) in this repository if you find a bug or have questions about the content.
- 
 For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
