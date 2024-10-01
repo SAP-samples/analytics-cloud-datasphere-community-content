@@ -1,0 +1,249 @@
+{
+    "eula": "",
+    "vendor": "SAP",
+    "license": "",
+    "id": "com.sap.sac.en.tree.chart",
+    "version": "1.0.0",
+    "name": "Tree Chart",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAzklEQVQ4jWNgoBAwkqLYOLGjguH//1RGxv+7z8yvymBgYGBgIcm2//8lGRgZlP7/Z5CDiTGRYgA2QLEBOL2gFVrPxsXDYcfAwMDw7cuPQ9dWN/4iyQBebi75vwz/dkPZagwMDLexqaOeF4wT2jcyMjL4Mfz/33tmQVUJsQYgueA/K4RmZCXFBQMfjQNvADwWGBkZHv3/z3CPgZHxOQMDAwPjv9/fGJiZ7sLZDAwM/xkZnzP8/3+PkZHhEaUWwwGjSWL7f0oMYGFgYFCmxAAACtUz95booNoAAAAASUVORK5CYII=",
+    "newInstancePrefix": "LinnaChart",
+    "description": "A Tree Custom Widget",
+    "supportsExport": true,
+    "webcomponents": [
+      {
+        "kind": "main",
+        "tag": "com-sap-sac-en-tree-main",
+        "url": "/main.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      },
+      {
+        "kind": "styling",
+        "tag": "com-sap-sac-en-tree-styling",
+        "url": "/styling.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      }
+    ],
+    "properties": {
+      "width": {
+        "type": "integer",
+        "default": 600
+      },
+      "height": {
+        "type": "integer",
+        "default": 420
+      },
+      "seriesLineType": {
+        "type": "string",
+        "default": "curve",
+        "description": "default Series Line type"
+        },
+      "seriesType": {
+        "type": "string",
+        "default": "LR",
+        "description": "default Series type"
+      },
+      "treeStructName": {
+        "type": "string",
+        "default": "root",
+        "description": "root node name"
+      },
+      "nodeFontsize": {
+        "type": "integer",
+        "default": 10,
+        "description": "fontsize"
+      },
+      "treeNodeType": {
+        "type": "string",
+        "default": "emptyCircle",
+        "description": "node shape"
+      },
+      "treeNodeColor": {
+        "type": "string",
+        "default": "#99C3D6",
+        "description": "node color"
+      },
+      "nodeSymbolSize": {
+        "type": "integer",
+        "default": 9,
+        "description": "node zise"
+      },
+      "treeNodeLineWidth": {
+        "type": "integer",
+        "default": 2,
+        "description": "line weight"
+      },
+      "nodeHighLigbt": {
+        "type": "integer",
+        "default": 500000,
+        "description": "the threshold value"
+      },
+      "seriesLayout": {
+        "type": "string",
+        "default": "orthogonal",
+        "description": "orthogonal or radial"
+      }
+    },
+
+    "methods":{
+      "setSeriesLayout": {
+        "description": "Set series layout type",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "string",
+            "description": "setSeriesLayout according to value"
+          }
+        ]
+      },
+      "setSeriesLineType": {
+        "description": "Set series line type",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "string",
+            "description": "set Series Line type according to value"
+          }
+        ]
+      },
+      "setSeriesType": {
+        "description": "Set series type",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "string",
+            "description": "set Series type according to value"
+          }
+        ]
+      },
+      "setTreeStructName": {
+        "description": "Set treeStruct Name",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "string",
+            "description": "set treeStruct Name according to value"
+          }
+        ]
+      },
+      "setNodeFontsize": {
+        "description": "Set node Fontsize",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "integer",
+            "description": "set node Fontsize according to value"
+          }
+        ]
+      },
+      "setTreeNodeType": {
+        "description": "Set node Type",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "string",
+            "description": "set node Type according to value"
+          }
+        ]
+      },
+      "setTreeNodeColor": {
+        "description": "Set treeNodeColor Name",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "string",
+            "description": "set treeNodeColor according to value"
+          }
+        ]
+      },
+      "setNodeSymbolSize": {
+        "description": "Set symbolSize",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "integer",
+            "description": "set node symbolSize according to value"
+          }
+        ]
+      },
+      "setNodeHighLigbt": {
+        "description": "Set nodeHighLigbt",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "integer",
+            "description": "set nodeHighLigbt according to value"
+          }
+        ]
+      },
+      "setTreeNodeLineWidth": {
+        "description": "Set nodeLineWidth",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "integer",
+            "description": "set node Line Width according to value"
+          }
+        ]
+      },
+      "getSelectedDataPoint": {
+        "description": "Get selected data point",
+        "returnType": "EChartDataPoint"
+      }
+    },
+    "events":{
+      "onClick": {
+        "description": "Dispatch when user click a data point on eChart"
+      }
+    },
+    "types": {
+      "EChartDataPoint": {
+        "description": "EChart data point",
+        "properties": [
+          {
+            "name": "seriesIndex",
+            "type": "integer",
+            "description": "series index in incoming option.series (make sense when componentType is 'series')"
+          },
+          {
+            "name": "seriesName",
+            "type": "string",
+            "description": "series name (make sense when componentType is 'series')"
+          },
+          {
+            "name": "dataIndex",
+            "type": "integer",
+            "description": "data index in input data array"
+          },
+          {
+            "name": "data",
+            "type": "number",
+            "description": "data value"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "data name, or category name"
+          }
+        ]
+      }
+    },
+    "dataBindings": {
+      "dataBinding": {
+        "feeds": [
+          {
+            "id": "dimensions",
+            "description": "Dimensions",
+            "type": "dimension"
+          },
+          {
+            "id": "measures",
+            "description": "Measures",
+            "type": "mainStructureMember"
+          }
+        ]
+      }
+    }
+  }
+  

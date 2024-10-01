@@ -1,0 +1,67 @@
+<core:FragmentDefinition
+	xmlns:m="sap.m"
+	xmlns="sap.ui.table"
+	xmlns:core="sap.ui.core"
+	core:require="{ formatter:
+	'ai/ui/model/formatter' }">
+	<m:Dialog id="MovieListDialog" title="{=${suggestedQuestions>/scenario/name} === 'MOVIES' ? ${i18n>movieList.title} + ' (' + ${/Movies/$count} + ')' : ${i18n>capList.title} + ' (' + ${/CapDocs/$count} + ')'}" contentWidth="80%" resizable="true" draggable="true" verticalScrolling="false">
+		<!-- <m:content>
+			<Table
+				id="table"
+				selectionMode="None"
+				enableSelectAll="false"
+				alternateRowColors="true"
+				enableCellFilter="true"
+				rows="{
+					path: '/Movies',
+					parameters: {operationMode: 'Server'}
+				}"
+				threshold="15"
+				enableBusyIndicator="true"
+				ariaLabelledBy="title">
+				<rowMode>
+					<rowmodes:Interactive
+						minRowCount="20"
+						rowCount="20"
+						xmlns:rowmodes="sap.ui.table.rowmodes"
+					/>
+				</rowMode>
+				<noData>
+					<m:BusyIndicator class="sapUiMediumMargin"/>
+				</noData>
+				<columns>
+					<Column
+						sortProperty="title"
+						filterProperty="title"
+						autoResizable="true"
+						width="auto">
+						<m:Label text="Title" />
+						<template>
+							<m:Text text="{title}" wrapping="false" />
+						</template>
+					</Column>
+					<Column
+						sortProperty="releaseDate"
+						filterProperty="releaseDate"
+						autoResizable="true"
+						width="auto">
+						<m:Label text="Release Date" />
+						<template>
+							<m:Text text="{path: 'releaseDate',formatter:'formatter.formatDate'}" wrapping="false" />
+						</template>
+					</Column>
+					<Column
+						sortProperty="text"
+						filterProperty="text"
+						autoResizable="true"
+						width="60%">
+						<m:Label text="{= ${suggestedQuestions>/scenario/name} === 'MOVIES'? ${i18n>movie.text} : ${i18n>cap.text}}" />
+						<template>
+							<m:Text text="{text}" wrapping="false" />
+						</template>
+					</Column>
+				</columns>
+			</Table>
+		</m:content> -->
+	</m:Dialog>
+</core:FragmentDefinition>

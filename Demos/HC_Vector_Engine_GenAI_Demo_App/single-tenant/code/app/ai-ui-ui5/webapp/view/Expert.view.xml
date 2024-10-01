@@ -1,0 +1,354 @@
+<mvc:View
+    controllerName="ai.ui.controller.Expert"
+    displayBlock="true"
+    height="100%"
+    xmlns:t="sap.ui.table"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+    xmlns:grid="sap.ui.layout.cssgrid"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core"
+    core:require="{ formatter: 'ai/ui/model/formatter' }"
+>
+	<Page showFooter="true" showHeader="false" enableScrolling="false">
+    <l:Splitter id="splitterLayout">
+        <ScrollContainer
+            width="100%"
+            height="100%"
+            vertical="true"
+            focusable="true"
+        >
+            <layoutData>
+                <l:SplitterLayoutData
+                    size="70%"
+                    resizable="false"
+                />
+            </layoutData>
+            <Panel
+                id="MovieSemanticSearchInputPanel"
+                expandable="true"
+                expanded="true"
+                stickyHeader="true"
+                width="auto"
+                class="sapUiSmallMargin"
+                busy="{suggestedQuestions>/expert/movieSemanticSearchAnswerListItemIsBusy}"
+            >
+                <headerToolbar>
+                    <OverflowToolbar>
+                        <Title text="{= ${suggestedQuestions>/scenario/name} === 'MOVIES'? ${i18n>movie.questionSelection} : ${i18n>cap.questionSelection}}" />
+                        <ToolbarSpacer />
+                        <Button
+                            icon="sap-icon://database"
+														text="{= ${suggestedQuestions>/scenario/name} === 'MOVIES'? ${i18n>movie.browse} : ${i18n>cap.browse}}"
+														press="onOpenMovieList"
+                        />
+                    </OverflowToolbar>
+                </headerToolbar>
+                <content>
+                    <f:GridList
+                        id="MovieSemanticSearchPreparedQuestionsList"
+                        items="{suggestedQuestions>/scenario/semanticSearchQuestions}"
+                        width="auto"
+                        class="sapUiResponsiveMargin"
+                        mode="Delete"
+                        delete="onDeletePromptPress"
+                    >
+                        <f:customLayout>
+                            <grid:GridBasicLayout
+                                gridTemplateColumns="repeat(auto-fit, minmax(12rem, 12rem))"
+                                gridGap="0.5rem"
+                            />
+                        </f:customLayout>
+
+                        <f:GridListItem
+                            type="Active"
+                            press="onSemanticSearchPromptSelect"
+                            highlight="{= ${suggestedQuestions>/expert/semanticSearchQuestion} !== ${suggestedQuestions>label}? 'None' : 'Success'}"
+                            tooltip="{suggestedQuestions>label}"
+                        >
+                            <ScrollContainer
+                                width="100%"
+                                height="120px"
+                                vertical="true"
+                                focusable="true"
+                            >
+                                <VBox class="sapUiSmallMargin">
+                                    <layoutData>
+                                        <FlexItemData
+                                            growFactor="1"
+                                            shrinkFactor="0"
+                                        />
+                                    </layoutData>
+
+                                    <Title
+                                        text="{suggestedQuestions>title} {suggestedQuestions>index}"
+                                        wrapping="true"
+                                    />
+                                    <Label
+                                        text="{suggestedQuestions>label}"
+                                        wrapping="true"
+                                    />
+                                </VBox>
+                            </ScrollContainer>
+                        </f:GridListItem>
+                    </f:GridList>
+                    <FeedInput
+                        id="MovieSemanticSearchInput"
+                        post="onSubmit"
+                        showIcon="true"
+                        growing="true"
+                        class="sapUiResponsiveContentPadding"
+                        placeholder="Ask a question or choose one from the selection above."
+                        value="{suggestedQuestions>/expert/semanticSearchQuestion}"
+                    />
+                </content>
+            </Panel>
+            <Panel
+                id="HanaResponsePanel"
+                expandable="false"
+                expanded="true"
+                stickyHeader="true"
+                headerText="Here’s what we could find based on your request:"
+                width="auto"
+                class="sapUiSmallMargin"
+            >
+                <content>
+                    <t:Table
+                        id="HanaResultsTable"
+                        alternateRowColors="true"
+                        selectionMode="MultiToggle"
+                        busy="{suggestedQuestions>/expert/movieSemanticSearchAnswerListItemIsBusy}"
+                        rows="{suggestedQuestions>/expert/movieSemanticSearchAnswers}"
+                    >
+                        <t:rowMode>
+                            <rowmodes:Interactive
+                                minRowCount="5"
+                                rowCount="5"
+                                xmlns:rowmodes="sap.ui.table.rowmodes"
+                            />
+                        </t:rowMode>
+                        <t:columns>
+                            <t:Column
+                                sortProperty="title"
+                                width="20%"
+                                autoResizable="true"
+                            >
+                                <Label text="Title" />
+                                <t:template>
+                                    <Text
+                                        text="{suggestedQuestions>title}"
+                                        wrapping="false"
+                                        tooltip="{suggestedQuestions>title}"
+                                    />
+                                </t:template>
+                            </t:Column>
+                            <t:Column
+                                sortProperty="similarity"
+                                width="auto"
+                                autoResizable="true"
+                            >
+                                <Label text="Cosine Similarity" />
+                                <t:template>
+                                    <Text
+                                        text="{path: 'suggestedQuestions>similarity', formatter:'formatter.formatMatrix'}"
+                                        tooltip="{suggestedQuestions>similarity}"
+                                        wrapping="false"
+                                        class="similarityCell"
+                                    >
+                                        <customData>
+                                            <core:CustomData
+                                                xmlns:core="sap.ui.core"
+                                                key="nodeColor"
+                                                value="{= ${suggestedQuestions>similarity} > 0.82? 'green' : ${suggestedQuestions>similarity} > 0.78? 'yellow' : 'red'}"
+                                                writeToDom="true"
+                                            />
+                                        </customData>
+                                    </Text>
+                                </t:template>
+                            </t:Column>
+                            <t:Column
+                                sortProperty="Euclidean Distance"
+                                width="auto"
+                                autoResizable="true"
+                            >
+                                <Label text="Euclidean Distance" />
+                                <t:template>
+                                    <Text
+                                        text="{path: 'suggestedQuestions>euclideanDistance', formatter:'formatter.formatMatrix'}"
+                                        tooltip="{suggestedQuestions>euclideanDistance}"
+                                        wrapping="false"
+                                    />
+                                </t:template>
+                            </t:Column>
+                            <t:Column
+                                sortProperty="text"
+                                width="50%"
+                                autoResizable="true"
+                            >
+															<Label
+																text="{= ${suggestedQuestions>/scenario} === 'MOVIES'? ${i18n>movie.text} : ${i18n>cap.text}}"/>
+															<t:template>
+																<ExpandableText
+																	text="{suggestedQuestions>text}"
+																	overflowMode="Popover"
+																	maxCharacters="70"
+                                    />
+                                </t:template>
+                            </t:Column>
+                            <t:Column
+                                sortProperty="releaseDate"
+                                width="auto"
+                                autoResizable="true"
+                            >
+                                <Label text="Release Date" />
+                                <t:template>
+                                    <Text
+                                        text="{path: 'suggestedQuestions>releaseDate', formatter:'formatter.formatDate'}"
+                                        wrapping="false"
+                                        tooltip="{suggestedQuestions>releaseDate}"
+                                    />
+                                </t:template>
+                            </t:Column>
+                        </t:columns>
+                    </t:Table>
+                </content>
+            </Panel>
+            <Panel
+                id="MovieLlmWithRagInputPanel"
+                expandable="false"
+                expanded="true"
+                stickyHeader="true"
+                headerText="Add your follow-up question here:"
+                width="auto"
+                class="sapUiSmallMargin"
+            >
+                <headerToolbar>
+                    <OverflowToolbar>
+                        <Title
+                            text="Ask LLM using the selected results from HANA..."
+                        />
+                        <ToolbarSpacer />
+                        <Select
+                            selectedKey="{suggestedQuestions>/scenario/expert/selectedModel}"
+                            items="{suggestedQuestions>/models}"
+                            busy="{suggestedQuestions>/expert/ragAnswerListItemIsBusy}"
+                        >
+                            <core:ListItem
+                                key="{suggestedQuestions>name}"
+                                text="{suggestedQuestions>name}"
+                                icon="{suggestedQuestions>icon}"
+                            />
+                        </Select>
+                        <Button
+                            icon="sap-icon://error"
+                            text="Cancel"
+                            press="onCancelPress"
+                            enabled="{suggestedQuestions>/expert/ragAnswerListItemIsBusy}"
+                        />
+                    </OverflowToolbar>
+                </headerToolbar>
+                <content>
+                    <f:GridList
+                        id="MovieLLMWithRagPromptSelectList"
+                        items="{suggestedQuestions>/scenario/movieLLMWithRagPrompts}"
+                        width="auto"
+                        class="sapUiResponsiveMargin"
+                        mode="Delete"
+                        delete="onMovieLLMWithRagPromptDeletePress"
+                        busy="{suggestedQuestions>/expert/ragAnswerListItemIsBusy}"
+                    >
+                        <f:customLayout>
+                            <grid:GridBasicLayout
+                                gridTemplateColumns="repeat(auto-fit, minmax(12rem, 12rem))"
+                                gridGap="0.5rem"
+                            />
+                        </f:customLayout>
+
+                        <f:GridListItem
+                            type="Active"
+                            press="onMovieLLMWithRagPromptSelect"
+                            highlight="{= ${suggestedQuestions>/expert/llmWithRagPrompt} !== ${suggestedQuestions>label}? 'None' : 'Success'}"
+                            tooltip="{suggestedQuestions>label}"
+                        >
+                            <ScrollContainer
+                                width="100%"
+                                height="120px"
+                                vertical="true"
+                                focusable="true"
+                            >
+                                <VBox class="sapUiSmallMargin">
+                                    <layoutData>
+                                        <FlexItemData
+                                            growFactor="1"
+                                            shrinkFactor="0"
+                                        />
+                                    </layoutData>
+
+                                    <Title
+                                        text="{suggestedQuestions>title} {suggestedQuestions>index}"
+                                        wrapping="true"
+                                    />
+                                    <Label
+                                        text="{suggestedQuestions>label}"
+                                        wrapping="true"
+                                    />
+                                </VBox>
+                            </ScrollContainer>
+                        </f:GridListItem>
+                    </f:GridList>
+                    <FeedInput
+                        id="MovieLlmWithRagInput"
+                        post="onPromptLlmWithRagSubmit"
+                        showIcon="true"
+                        growing="true"
+                        busy="{suggestedQuestions>/expert/ragAnswerListItemIsBusy}"
+                        class="sapUiResponsiveContentPadding"
+                        placeholder="Ask a question or choose one from the selection above."
+                        value="{suggestedQuestions>/expert/llmWithRagPrompt}"
+                    />
+                </content>
+            </Panel>
+            <Panel
+                id="MovieLlmResponseWithRagPanel"
+                expandable="false"
+                expanded="true"
+                stickyHeader="true"
+                headerText="Here’s what the SAP HANA Cloud Vector Engine and your chosen GPT model could find: "
+                width="auto"
+                class="sapUiSmallMargin"
+            >
+                <content>
+                    <!-- <core:Icon src="sap-icon://customer"></core:Icon> -->
+                    <FeedListItem
+                        id="MovieRagAnswerListItem"
+                        icon="sap-icon://ai"
+                        iconActive="false"
+                        busy="{suggestedQuestions>/expert/ragAnswerListItemIsBusy}"
+                        class="sapUiResponsiveMargin"
+                        text="{suggestedQuestions>/expert/llmAnswer}"
+                        maxCharacters="2000"
+                    />
+                </content>
+            </Panel>
+        </ScrollContainer>
+        <core:Fragment
+            fragmentName="ai.ui.view.GraphRepresentation"
+            type="XML"
+        />
+    </l:Splitter>
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+
+				<Text
+					text="{= ${suggestedQuestions>/scenario/name} === 'MOVIES'? 'Credits: Lists of American films, Wikipedia, 14 November 2023,' : 'Credits：'}"/>
+				<Link
+					text="{= ${suggestedQuestions>/scenario/name} === 'MOVIES'? 'https://en.wikipedia.org/wiki/Lists_of_American_films' : 'https://github.com/cap-js/docs'}"
+					target="_blank"
+					href="{= ${suggestedQuestions>/scenario/name} === 'MOVIES'? 'https://en.wikipedia.org/wiki/Lists_of_American_films' : 'https://github.com/cap-js/docs'}"/>
+				<ToolbarSpacer/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

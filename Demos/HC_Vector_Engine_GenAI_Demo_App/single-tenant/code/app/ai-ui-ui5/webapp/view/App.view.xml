@@ -1,0 +1,48 @@
+<mvc:View
+    controllerName="ai.ui.controller.App"
+    displayBlock="true"
+    xmlns="sap.f"
+    xmlns:m="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <l:FixFlex>
+        <l:fixContent>
+					<ShellBar
+						title="{=${suggestedQuestions>/version} === '' ? ${i18n>appTitle} : ${i18n>appTitle} + ' - ' +  ${suggestedQuestions>/version} + ' View'}"
+						homeIcon="images/sap-logo.svg"
+						showNavButton="{=${suggestedQuestions>/scenario/name} === undefined ? false : true}"
+						navButtonPressed="onNavButtonPress"
+					>
+					<menu>
+                    <m:Menu>
+                        <m:MenuItem
+                            text="Standard View"
+                            icon="sap-icon://customer"
+                            press="onNavToStandardModePress"
+														visible="{=${suggestedQuestions>/scenario/name}? true:false}"
+												/>
+                        <m:MenuItem
+                            text="Expert View"
+                            icon="sap-icon://study-leave"
+                            press="onNavToExpertModePress"
+														visible="{=${suggestedQuestions>/scenario/name}? true:false}"
+                        />
+											<m:MenuItem
+												text="Please select Scenario first"
+												icon="sap-icon://message-warning"
+												enabled="false"
+												visible="{=${suggestedQuestions>/scenario/name}? false:true}"
+											/>
+                    </m:Menu>
+                </menu>
+                <additionalContent>
+                    <m:OverflowToolbarButton icon="sap-icon://sys-help" press="onOpenHelpButtonPress"/>
+                </additionalContent>
+            </ShellBar>
+        </l:fixContent>
+        <l:flexContent>
+            <m:App id="app" />
+        </l:flexContent>
+    </l:FixFlex>
+</mvc:View>
