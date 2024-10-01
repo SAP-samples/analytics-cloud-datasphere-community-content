@@ -5,10 +5,11 @@ SAP_CC_DSP_Simple_Start_with_SAP_Datasphere.package<br>
 SAP_CC_SAC_Simple_Start_with_SAP_Datasphere.package
 
 ## Last Released:
-2023.10
+2024.20
 
 ## What´s New
 Initial Release
+v1.1.0: Re-publication because of a certificate update
 
 ## Descripton
 This demo shows how a BestRun Business User can quickly and easily combine and analyze data coming from different sources in SAP Datasphere using SAP Analytics Cloud as the visualization.
