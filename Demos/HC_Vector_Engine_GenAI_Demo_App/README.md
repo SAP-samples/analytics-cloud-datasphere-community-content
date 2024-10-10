@@ -7,8 +7,8 @@ HC_Vector_Engine_GenAI_Demo_App
 2024.07
 
 ## Descripton
-This content package will enable you to experience hands-on how the powerful vector engine in SAP HANA Cloud transforms simple queries into detailed, context-aware responses. The content package contains everything you need to build your own movie insights app. 
-By leveraging the power of vector-based storage and retrieval augmented generation, one can unlock unprecedented efficiency and scalability, that is crucial for managing vast datasets like in this example the movie collection. The SAP HANA Cloud Vector Engine empowers the movie insights app to deliver contextaware responses, enhancing user experiences and enabling more meaningful interactions. Additionally, its advanced analytics capabilities, including cosine similarity and L2 Euclidean distances, provide deeper insights into data relationships, enriching the exploration process. The SAP HANA Cloud Vector Engine serves as the underlying knowledge base for an Large Language Model (LLM), enhancing its ability to provide context-aware responses. By storing data in vector form, the engine enables the LLM to understand user queries more effectively, leading to more accurate and detailed responses. Ultimately, this showcases SAP HANA Cloud's capabilities in driving innovation, efficiency, and intelligence in data-driven
+This content package will enable you to experience hands-on how the powerful vector engine in SAP HANA Cloud transforms simple queries into detailed, context-aware responses. The content package contains everything you need to build your own intelligent data app. 
+By leveraging the power of vector-based storage and retrieval augmented generation, one can unlock unprecedented efficiency and scalability, that is crucial for managing vast datasets like in this example the movie collection. The SAP HANA Cloud Vector Engine empowers the intelligent data app to deliver contextaware responses, enhancing user experiences and enabling more meaningful interactions. Additionally, its advanced analytics capabilities, including cosine similarity and L2 Euclidean distances, provide deeper insights into data relationships, enriching the exploration process. The SAP HANA Cloud Vector Engine serves as the underlying knowledge base for an Large Language Model (LLM), enhancing its ability to provide context-aware responses. By storing data in vector form, the engine enables the LLM to understand user queries more effectively, leading to more accurate and detailed responses. Ultimately, this showcases SAP HANA Cloud's capabilities in driving innovation, efficiency, and intelligence in data-driven
 applications.
 
 ![HANA CLOUD Vector Engine](./images/VectorEngineDemo-App.png)
@@ -69,8 +69,6 @@ You can download the sample data set [here](https://d.dam.sap.com/a/NnpLcEG?rc=1
 ## Download/Install Instructions
 This application was build on code from [SAP-samples/btp-cap-genai-rag](https://github.com/SAP-samples/btp-cap-genai-rag/tree/main).
 Deployment should be similar, however the current state of this app is Single Tenant on Cloud Foundry (CF) only.
-
-The folder [data_retrieval](./data_retrieval/) contains various scripts and the data used in this dmeo.
 
 This is only necessary for preparation of the demo. Once all data is imported, the demo be used without further data retrieval.
 
@@ -187,6 +185,4 @@ Therefore, the following issues are open. Be aware when hosting it or use as tem
 N/A
 
 ## How to obtain support
-[Create an issue](https://github.com/SAP-samples/btp-cap-genai-rag/issues) in this repository if you find a bug or have questions about the content.
- 
 For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
