@@ -4,7 +4,7 @@
 SAP_CC_SAC_Smart_Plantation_Management.package
 
 ## Last Released:
-2023.11
+2024.10
 
 ## Descripton
  
