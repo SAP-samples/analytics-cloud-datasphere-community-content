@@ -5,7 +5,7 @@
 SAP_CC_SAC_Waste_Management.package
 
 ## Last Released:
-2023.12
+2024.21
 
 ## What´s New
 N/A
