@@ -4,7 +4,7 @@
 SAP_CC_SAC_Sample_Composite.package
 
 ## Last Released:
-2023.11
+2024.21
 
 ## What´s New
 N/A
