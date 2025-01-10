@@ -15,7 +15,7 @@ SAP_CC_DSP_Hierarchy_With_Directory_Sample_CostCenter_for_Remote_Table_for_S4HCl
 SAP_CC_DSP_Hierarchy_With_Directory_Sample_ProfitCenter_for_Remote_Table_for_S4HCloud.package  
 
 ## Last Released:
-2024.03
+2025.01
 
 ## What´s New
 - Profit Center Hierarchy added (three new .package files)  
