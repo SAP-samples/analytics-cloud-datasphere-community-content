@@ -15,13 +15,13 @@ SAP_CC_DSP_Hierarchy_With_Directory_Sample_CostCenter_for_Remote_Table_for_S4HCl
 SAP_CC_DSP_Hierarchy_With_Directory_Sample_ProfitCenter_for_Remote_Table_for_S4HCloud.package  
 
 ## Last Released:
-2024.03
+2025.01
 
 ## What´s New
 - Profit Center Hierarchy added (three new .package files)  
 - Fix for using SAP S/4HANA 2021 with the local table SAP_CC_FI_HRF_IL_I_COSTCENTERHIERARCHY ( SAP_CC_DSP_Hierarchy_With_Directory_Sample_CostCenter_for_Replication_Flow.package), and for the local table SAP_CC_FI_HRTOP_IL_IFICOSTCENTERH (SAP_CC_DSP_Hierarchy_With_Directory_Sample_CostCenter_for_Remote_Table_for_S4HOnPremise.package).
 
-## Descripton
+## Description
 These community content packages help you to easily utilize the SAP Datasphere feature _"Hierarchies with External Hierarchy Directory"_.
 
 **Note**: Don't miss to read the blog series _Hierarchy with Directory in SAP Datasphere_ of currently 5 blog post starting with:   [An Introduction to Hierarchy with Directory in SAP Datasphere](https://blogs.sap.com/2024/01/15/an-introduction-to-hierarchy-with-directory-in-sap-datasphere)  
