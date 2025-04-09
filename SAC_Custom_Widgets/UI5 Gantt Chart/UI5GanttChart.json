@@ -1,0 +1,263 @@
+{
+	"id": "com.alex.khobotov.ui5ganttchart",
+	"version": "0.0.33",
+	"name": "UI5 Gantt Chart",
+	"description": "UI5 Gantt Chart by Alexander Khobotov",
+	"newInstancePrefix": "GanttChart",
+	"icon": "sap-icon://gantt-bars",
+	"vendor": "Alexander Khobotov (a.khobotov@sap.com)",
+	"eula": "EULA",
+	"license": "1.0",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "ui5-gantt-chart",
+			"url": "/UI5GanttChart.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "styling",
+			"tag": "ui5-gantt-chart-styling",
+			"url": "/UI5GanttChartStyling.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "builder",
+			"tag": "ui5-gantt-chart-builder",
+			"url": "/UI5GanttChartBuilder.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+	],
+	"types": {
+		"Event": {
+			"description": "Event",
+			"properties": [
+				{
+					"name": "id",
+					"type": "string",
+					"description": "id",
+					"mandatory": true
+				},
+				{
+					"name": "name",
+					"type": "string",
+					"description": "name",
+					"mandatory": true
+				},
+				{
+					"name": "tooltip",
+					"type": "string",
+					"description": "tooltip",
+					"mandatory": true
+				},
+				{
+					"name": "parent_id",
+					"type": "string",
+					"description": "parent_id",
+					"mandatory": false
+				},
+				{
+					"name": "start_time",
+					"type": "string",
+					"description": "start_time",
+					"mandatory": true
+				},
+				{
+					"name": "end_time",
+					"type": "string",
+					"description": "end_time",
+					"mandatory": true
+				},
+				{
+					"name": "color",
+					"type": "string",
+					"description": "color",
+					"mandatory": false
+				}
+			]
+		}
+	},
+	"properties": {
+		"horizon_start_time": {
+			"type": "string",
+			"description": "Horizon start time",
+			"default": "20250101000000"
+		},
+		"horizon_end_time": {
+			"type": "string",
+			"description": "Horizon end time",
+			"default": "20260101000000"
+		},
+		"event_id_field_name": {
+			"type": "string",
+			"description": "",
+			"default": "Event_Id"
+		},
+		"event_name_field_name": {
+			"type": "string",
+			"description": "",
+			"default": "Event_Name"
+		},
+		"event_tooltip_field_name": {
+			"type": "string",
+			"description": "",
+			"default": "Event_Tooltip"
+		},
+		"event_parent_id_field_name": {
+			"type": "string",
+			"description": "",
+			"default": "Parent_id"
+		},
+		"event_start_time_field_name": {
+			"type": "string",
+			"description": "",
+			"default": "Start_Date"
+		},
+		"event_end_time_field_name": {
+			"type": "string",
+			"description": "",
+			"default": "End_Date"
+		},
+		"event_color_field_name": {
+			"type": "string",
+			"description": "",
+			"default": "Color"
+		},
+		"bars_color": {
+			"type": "string",
+			"description": "",
+			"default": ""
+		},
+		"bars_text_color": {
+			"type": "string",
+			"description": "",
+			"default": "#000000"
+		},
+		"bars_opacity": {
+			"type": "string",
+			"description": "",
+			"default": "0.8"
+		},
+		"table_columns": {
+			"type": "string",
+			"description": "",
+			"default": "[{\"field\":\"Event_Name\", \"label\": \"Events\"}]"
+		},
+		"pause_data_refresh": {
+			"type": "boolean",
+			"description": "",
+			"default": true
+		},
+		"compact_mode": {
+			"type": "boolean",
+			"description": "",
+			"default": true
+		},
+		"dynamic_visual_horizon": {
+			"type": "boolean",
+			"description": "",
+			"default": true
+		},
+		"dynamic_total_horizon": {
+			"type": "boolean",
+			"description": "",
+			"default": true
+		},
+		"total_horizon_start_time_shift_in_minutes": {
+			"type": "integer",
+			"description": "",
+			"default": -1440
+		},
+		"total_horizon_end_time_shift_in_minutes": {
+			"type": "integer",
+			"description": "",
+			"default": 0
+		},
+		"data_utc_offset": {
+			"type": "integer",
+			"description": "",
+			"default": 0
+		},
+		"svg_patterns": {
+			"type": "string",
+			"description": "",
+			"default": ""
+		},
+		"automatic_bars_text_color": {
+			"type": "boolean",
+			"description": "",
+			"default": false
+		}
+
+
+	},
+	"methods": {
+		"setTotalHorizon": {
+			"parameters": [{"name": "start_time", "type": "string"}, {"name": "end_time", "type": "string"}]
+		},
+		"setVisualHorizon": {
+			"parameters": [{"name": "start_time", "type": "string"}, {"name": "end_time", "type": "string"}]
+		},
+		"setEqualTotalAndVisualHorizon": {
+			"parameters": [{"name": "start_time", "type": "string"}, {"name": "end_time", "type": "string"}]
+		},
+		"setDataSet": {
+			"parameters": [{"name": "data_set", "type": "ResultSet[]"}]
+		},
+		"addEvent": {
+			"parameters": [
+				{"name": "event", "type": "Event"}
+			]
+		},
+		"addEvents": {
+			"parameters": [
+				{"name": "events", "type": "Event[]"}
+			]
+		},
+		"removeManualEvents": {
+		},
+		"removeModelEvents": {
+		},
+		"removeAllEvents": {
+		},
+		"setTheme": {
+			"description": "Sets UI5 theme.",
+			"parameters": [
+				{
+					"name": "theme",
+					"type": "string",
+					"description": "Technical name of UI5 theme"
+				}
+			]
+		},
+		"setBarsColorInversion": {
+			"parameters": [
+				{"name": "isInverted", "type": "boolean"}
+			]
+		},
+		"getBarsColorInversion": {
+			"returnType": "boolean"
+		}
+	},
+	"events": {
+	},
+	"dataBindings": {
+		"myDataBinding": {
+		  "feeds": [
+			{
+			  "id": "dimensions",
+			  "description": "Dimensions",
+			  "type": "dimension"
+			},
+			{
+			  "id": "measures",
+			  "description": "Measures",
+			  "type": "mainStructureMember"
+			}
+		  ]
+		}
+	}
+}
