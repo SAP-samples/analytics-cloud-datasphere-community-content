@@ -4,7 +4,7 @@
 SAP_CC_SAC_Fiori_Morning_Horizon_Theme.package
 
 ## Last Released:
-2024.03
+2025.08 - certificate update
 
 ## What´s New
 New theme and template version offered, minor bugs fixed
