@@ -1,10 +1,10 @@
 # Fiori Morning Horizon Theme
 
 ## Content Package Files
-SAP_CC_SAC_Fiori_Morning_Horizon_Theme.package
+SAP_CC_SAC_Fiori_Morning_Horizon_Theme (1.0.4).package
 
 ## Last Released:
-2025.08 - certificate update
+2024.03
 
 ## What´s New
 New theme and template version offered, minor bugs fixed
