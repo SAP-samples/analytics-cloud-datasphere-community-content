@@ -1,6 +1,6 @@
 {
 	"id": "com.alex.khobotov.ui5ganttchart",
-	"version": "0.0.33",
+	"version": "0.0.34",
 	"name": "UI5 Gantt Chart",
 	"description": "UI5 Gantt Chart by Alexander Khobotov",
 	"newInstancePrefix": "GanttChart",
