@@ -2,7 +2,7 @@
 
 ## Content Package Files
 SAP_CC_SAC_Fiori_Morning_Horizon_Theme (1.0.4).package  
-SAP_CC_SAC_Fiori_Morning_Horizon_Theme_(2025.12) (1.0.0).package  
+SAP_CC_SAC_Fiori_Morning_Horizon_Theme_(2025.14) (1.0.0).package  
 External_SAC_Dashboard_Schematics_UI_Kit.fig  
 
 ## Last Released:
@@ -10,7 +10,7 @@ External_SAC_Dashboard_Schematics_UI_Kit.fig
 
 ## What´s New
 New theme and template version offered, minor bugs fixed  
-Preview of the updated Theme for Fast Track SAP Analytic Cloud tenants   (SAP_CC_SAC_Fiori_Morning_Horizon_Theme_(2025.12) (1.0.0).package)  
+Preview of the updated Theme for Fast Track SAP Analytic Cloud tenants   (SAP_CC_SAC_Fiori_Morning_Horizon_Theme_(2025.14) (1.0.0).package)(updated)  
 Figma Design file (External_SAC_Dashboard_Schematics_UI_Kit.fig) - please also check [www.figma.com](https://www.figma.com).  
 
 ## Descripton
@@ -23,7 +23,7 @@ The content packages includes:
 	* sample story: Fiori_Morning_Horizon_Sample_Story
 	* template: Exploration
 	* template: Reporting
-* SAP_CC_SAC_Fiori_Morning_Horizon_Theme_(2025.12) (1.0.0).package including
+* SAP_CC_SAC_Fiori_Morning_Horizon_Theme_(2025.14) (1.0.0).package including
 	* theme: Fiori Evening Horizon
 	* theme: Fiori Morning Horizon
 	* template: Horizon template
