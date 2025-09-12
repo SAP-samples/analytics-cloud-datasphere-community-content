@@ -5,7 +5,7 @@ SAP_CC_DSP_Monitoring_Source_Tables.package
 SAP_CC_DSP_Monitoring_Reporting_Tables.package
 
 ## Last Released:
-2023.07 (1.2.0)
+2025.09 (1.2.1)
 
 ## What´s New
 - various updates and improvements
