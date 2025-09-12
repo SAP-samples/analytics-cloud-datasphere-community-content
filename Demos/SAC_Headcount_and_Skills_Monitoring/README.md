@@ -4,7 +4,7 @@
 SAP_CC_SAC_HC_Skills_Monitoring.package
 
 ## Last Released:
-2023.11
+2025.14
 
 ## What´s New
 N/A
