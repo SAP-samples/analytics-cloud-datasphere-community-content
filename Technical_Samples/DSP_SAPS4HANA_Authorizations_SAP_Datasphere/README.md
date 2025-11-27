@@ -2,14 +2,13 @@
 
 ## Content Package Files
 
-SAP_CC_DSP_Authorization_Import.package
+SAP_CC_DSP_Authorization_Import (1.2.0).package
 
 ## Last Released:
-SAP Datasphere 2024.15
+SAP Datasphere 2025.23
 
 ## What´s New
-- Update to support combined authorizations (e. g. combinations of distribution channel and sales organization)
-- Simplification of content by replacing tables AGR_1251 and AGR_1252 by view SUIM_AGR_1251_52
+- Updated to have a package on a more recent SAP Datasphere Release
 
 ## Description
 This community content package helps you to easily integrate authorization values from SAP S/4HANA utilizing the SAP Datasphere feature _"Operator and Values Data Access Control"_.
@@ -27,9 +26,10 @@ C. Remote tables for the relevant data from SAP S/4HANA
 ## Details
 **Recommmenation:**  
 First create a connection for your SAP S/4HANA system called "SAP_S4H" and import the desired package.
+If you want to use the connection that is included in this package, please first only import the connection and maintain the connection credentials. Then please again import the package, but exclude the connection to not get it overwritten accidentially.
 
 The corresponding remote tables are called and the user in the connection must be authorized to access the following tables/views:  
-SUIM_AGR_1251_52
+SUIM_AGR_1251_52 (ABAP view available with SAP S/4HANA version 2023)
 AGR_USERS  
 PUSER002  
 
