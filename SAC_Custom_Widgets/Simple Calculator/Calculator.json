@@ -1,0 +1,23 @@
+{
+  "id": "com.rohitchouhan.sap.simple.calculator",
+  "version": "1.0.0",
+  "name": "Simple Calculator",
+  "description": "A simple calculator widget for SAC applications.",
+  "newInstancePrefix": "Sample",
+  "vendor": "rohitchouhan.com",
+  "eula": "rohitchouhan.com",
+  "license": "MIT",
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAPBQTFRFJuq5hJqlbIeUAAAATmJrTF9lAAAAgZahX3eCSFtjdYiSQlNaZnd/laixPOu/NNWvkKCoLOq75O/tztTYpLS8uvHjN+u+mau0JeW1ucLHPcaoJ+a22NzdUHJzQ6+cd5CcAQQDItOneoiNxc7TU2huY4aPb4qXFHphSuzDH7yUS5aKb+7OIcqgaHl/JN2uYHB2SaOUU66jNua6IiwwHKSCmq22Td25I9irG6aDUmZuToiBNEpOM+m7cYOKDE09GZp6Zn+LCCAah5ynUmVuMj5ElqmyEnJbGZh4DlVDBiYeCDEmaI+XH76WK+i5f5OdYKOghotmHAAAAFB0Uk5T////AP//Bv9FSEVYTE3/////////////+P//6/////8WtP//////HP8i//+j/+L///9/EpERA8xfHf9cQww3H9gB29wtRSZOGigt/1ibDf+q9BZHAAABIElEQVR4nIXT2XKCMBSA4dAQ6E4EWmRREKm2FpXu+77v7/829SQwJBTqf5EZ+eYclhkRPnpaK1sVusIYo+97pUwnatnD2YyXFYlFX6phMofJHI5pElORHRuiOSeWa45FtvuQkzOhpvvf8kAPaDNPx2QaNzOvmdVEZV7HnZFnGIaXdUgdnxstxDIyxosLYqMcoe4f/kFi+8cyfxgS+5cFD0I495DcV8HUhdODa611iD2Df1dwH062e3sD2mXjO4wdKzAtd8BZmM45VGxL0YtpE+LTN9Jyfu9NiN9byzmkcHYrT96T33tLfu/2Z+WrZRKnQ4wObsVxcf3JcPbN8eOK0MWhX2xOn+FPhLEmFr2kkzZCk97pK+ZcSYvert8jjf/4BQNnHmyixm0UAAAAAElFTkSuQmCC",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-rohitchouhan-sap-simple-calculator",
+      "url": "/Main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {},
+  "methods": {},
+  "events": {}
+}
