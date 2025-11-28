@@ -1,7 +1,7 @@
 # Sample Composite
 
 ## Content Package Files
-SAP_CC_SAC_Sample_Composite.package
+SAP_CC_SAC_Sample_Composite (1.0.0).package
 
 ## Last Released:
 2024.21
