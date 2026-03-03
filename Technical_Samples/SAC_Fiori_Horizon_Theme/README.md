@@ -1,25 +1,42 @@
 # Fiori Morning Horizon Theme
 
 ## Content Package Files
-SAP_CC_SAC_Fiori_Morning_Horizon_Theme (1.0.4).package
+SAP_CC_SAC_Fiori_Morning_Horizon_Theme (1.0.4).package  
+SAP_CC_SAC_Fiori_Morning_Horizon_Theme_(2025.14) (1.0.0).package  
+SAC_Dashboard_Schematics_UI_Kit.fig  
+SAC_Dashboard_Hi-Fi_UI_Kit.fig 
 
 ## Last Released:
-2024.03
+2025.21
 
 ## What´s New
-New theme and template version offered, minor bugs fixed
+Figma Design file renamed from "External_SAC_Dashboard_Schematics_UI_Kit.fig" to "SAC_Dashboard_Schematics_UI_Kit.fig"  
+Figma Design file added: SAC_Dashboard_Hi-Fi_UI_Kit.fig  
+ -> please also check [www.figma.com](https://www.figma.com).
 
 ## Descripton
-This content package includes the Fiori Morning Horizon sample theme, along with a related sample story and two story templates. 
+This content package includes the Fiori Morning Horizon sample theme, along with a related sample story, two story templates and Figma design files. 
 
 ## Details
 The content packages includes:
-* Fiori Morning Horizon Theme 
-* sample story: Fiori_Morning_Horizon_Sample_Story
-* template: Exploration
-* template: Reporting
+* SAP_CC_SAC_Fiori_Morning_Horizon_Theme (1.0.4).package including:
+	* Fiori Morning Horizon Theme
+	* sample story: Fiori_Morning_Horizon_Sample_Story
+	* template: Exploration
+	* template: Reporting
+* SAP_CC_SAC_Fiori_Morning_Horizon_Theme_(2025.14) (1.0.0).package including
+	* theme: Fiori Evening Horizon
+	* theme: Fiori Morning Horizon
+	* template: Horizon template
+*Page Header Composite
 
-![Fiori Morning Horizon example](Fiori_Morning_Horizon_Theme_Screenshot.png)
+* Figma Design File "Schematics UI KIT"
+
+![Fiori Morning Horizon example](SAC_Dashboard_Schematics_UI-Kit.png)
+
+* Figma Design File "Hi-Fi UI KIT"
+
+![Fiori Morning Horizon example](SAC_Dashboard_Hi-Fi_UI-Kit.png)
 
 ## Connectivity
 The sample story is based on the Best Run Juice sample data model (already available in all SAP Analytics Cloud tenants).

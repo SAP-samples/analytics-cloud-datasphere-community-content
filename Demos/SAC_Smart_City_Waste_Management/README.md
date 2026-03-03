@@ -2,7 +2,7 @@
 
 
 ## Content Package Files
-SAP_CC_SAC_Waste_Management.package
+SAP_CC_SAC_Waste_Management (1.2.0).package
 
 ## Last Released:
 2024.21
