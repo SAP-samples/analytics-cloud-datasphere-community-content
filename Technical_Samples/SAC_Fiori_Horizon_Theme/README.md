@@ -1,12 +1,12 @@
 # Fiori Morning Horizon Theme
 
 ## Content Package Files
-SAP_CC_SAC_Fiori_Morning_Horizon_Theme_(2025.14) (1.0.0).package  
+SAP_CC_SAC_Fiori_Morning_Horizon_Theme (2.0.0).package  
 SAC_Dashboard_Schematics_UI_Kit.fig  
 SAC_Dashboard_Hi-Fi_UI_Kit.fig 
 
 ## Last Released:
-2026.12
+2026.08
 
 ## What´s New
 Figma Design file renamed from "External_SAC_Dashboard_Schematics_UI_Kit.fig" to "SAC_Dashboard_Schematics_UI_Kit.fig"  
@@ -18,7 +18,7 @@ This content package includes the Fiori Morning Horizon sample theme, along with
 
 ## Details
 The content packages includes:
-* SAP_CC_SAC_Fiori_Morning_Horizon_Theme_(2025.14) (1.0.0).package including
+* SAP_CC_SAC_Fiori_Morning_Horizon_Theme (2.0.0).package including
 	* theme: Fiori Evening Horizon
 	* theme: Fiori Morning Horizon
 	* template: Horizon template
