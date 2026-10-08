@@ -1,0 +1,56 @@
+{
+  "id": "custom.dimMasterExport",
+  "version": "1.0.1",
+  "name": "Dimension Master Data CSV Export",
+  "description": "Export full dimension master data (incl. hierarchy & DAC attributes) to CSV via the SAC Data Export Service OData API.",
+  "newInstancePrefix": "DimExport",
+  "vendor": "Custom",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "custom-dim-master-export",
+      "url": "/main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "providerId": {
+      "type": "string",
+      "description": "Model technical name (e.g. PLAN_NEW_CAL) or GUID. Leave empty to enter in the widget.",
+      "default": ""
+    },
+    "dimensionId": {
+      "type": "string",
+      "description": "Dimension ID to export (e.g. Region). Leave empty to enter in the widget.",
+      "default": ""
+    },
+    "isPublicDimension": {
+      "type": "boolean",
+      "description": "If true, uses the sac_public_dimensions endpoint (no model needed).",
+      "default": false
+    },
+    "includeHierarchy": {
+      "type": "boolean",
+      "description": "If true, uses the {DimName}MasterWithHierarchy endpoint to include parent-child hierarchy columns.",
+      "default": false
+    },
+    "selectColumns": {
+      "type": "string",
+      "description": "Comma-separated columns to include ($select). Empty = all columns.",
+      "default": ""
+    },
+    "filterExpression": {
+      "type": "string",
+      "description": "Optional OData $filter expression.",
+      "default": ""
+    },
+    "filenamePrefix": {
+      "type": "string",
+      "description": "Prefix for the downloaded CSV filename.",
+      "default": "MasterData"
+    }
+  },
+  "methods": {},
+  "events": {}
+}
