@@ -7,7 +7,7 @@ SAP\_CC\_DSP\_Monitoring\_Reporting\_Tables.package
 
 ## Last Released:
 
-2025.09 (1.2.1)
+2026.21 (1.5.0)
 
 ## What´s New
 
