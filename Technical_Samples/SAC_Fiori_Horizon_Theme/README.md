@@ -1,30 +1,35 @@
 # Fiori Morning Horizon Theme
 
 ## Content Package Files
+SAP_CC_SAC_Fiori_Horizon_Template (3.0.0).package
 SAP_CC_SAC_Fiori_Morning_Horizon_Theme (2.0.0).package  
 SAC_Dashboard_Schematics_UI_Kit.fig  
 SAC_Dashboard_Hi-Fi_UI_Kit.fig 
 
 ## Last Released:
-2026.08
+2026.10
 
 ## What´s New
-Figma Design file renamed from "External_SAC_Dashboard_Schematics_UI_Kit.fig" to "SAC_Dashboard_Schematics_UI_Kit.fig"  
-Figma Design file added: SAC_Dashboard_Hi-Fi_UI_Kit.fig  
- -> please also check [www.figma.com](https://www.figma.com).
+SAP_CC_SAC_Fiori_Horizon_Template (3.0.0).package
 
 ## Descripton
 This content package includes the Fiori Morning Horizon sample theme, along with a related sample story, two story templates and Figma design files. 
 
 ## Details
 The content packages includes:
-* SAP_CC_SAC_Fiori_Morning_Horizon_Theme (2.0.0).package including
-	* theme: Fiori Evening Horizon
-	* theme: Fiori Morning Horizon
-	* template: Horizon template
-*Page Header Composite
+* SAP_CC_SAC_Fiori_Horizon_Template (3.0.0).package including
+	* Template: Horizon template
+    * Page Header: Composite
+The template contained in this package connects to the new default Theme delivered in SAP Analytics Cloud Stories.
 
-* Figma Design File "Schematics UI KIT"
+* SAP_CC_SAC_Fiori_Morning_Horizon_Theme (2.0.0).package including
+	* Theme: Fiori Evening Horizon
+	* Theme: Fiori Morning Horizon
+	* Template: Horizon template
+    * Page Header: Composite
+The template contained in this package connects to the Themes contained in this package.
+
+* Figma Design File "Schematics UI KIT" (please also check [www.figma.com](https://www.figma.com))
 
 ![Fiori Morning Horizon example](SAC_Dashboard_Schematics_UI-Kit.png)
 
