@@ -1,7 +1,7 @@
 # Fiori Morning Horizon Theme
 
 ## Content Package Files
-SAP_CC_SAC_Fiori_Horizon_Template (3.0.0).package
+SAP_CC_SAC_Fiori_Horizon_Template (3.0.0).package  
 SAP_CC_SAC_Fiori_Morning_Horizon_Theme (2.0.0).package  
 SAC_Dashboard_Schematics_UI_Kit.fig  
 SAC_Dashboard_Hi-Fi_UI_Kit.fig 
